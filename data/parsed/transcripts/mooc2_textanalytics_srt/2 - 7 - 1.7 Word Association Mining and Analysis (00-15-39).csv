@@ -1,0 +1,187 @@
+name,id,from,to,text
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,1,0.025,4.546,[SOUND] This lecture is 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,2,4.546,10.323,about the word association 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,3,10.323,15.1,mining and analysis. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,4,15.1,19.884,_In this lecture, we're going to talk about how to mine _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,5,19.884,22.902,associations of words from text. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,6,22.902,27.9,Now this is an example of knowledge about the natural language that 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,7,27.9,29.96,we can mine from text data. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,8,33.942,35.09,Here's the outline. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,9,35.09,39.828,We're going to first talk about what is word association and 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,10,39.828,45.1,then explain why discovering such relations is useful and finally 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,11,45.1,50.07,we're going to talk about some general ideas about how to mine word associations. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,12,50.07,55.209,In general there are two word relations and these are quite basic. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,13,56.68,58.68,One is called a paradigmatic relation. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,14,58.68,63.0,The other is syntagmatic relation. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,15,63.0,67.78,A and B have paradigmatic relation 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,16,67.78,71.7,if they can be substituted for each other. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,17,71.7,77.91,That means the two words that have paradigmatic relation 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,18,77.91,83.13,_would be in the same semantic class, or syntactic class. _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,19,83.13,86.91,And we can in general replace one by the other 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,20,86.91,90.31,without affecting the understanding of the sentence. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,21,90.31,93.81,That means we would still have a valid sentence. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,22,93.81,101.53,_For example, cat and dog, these two words have a paradigmatic relation _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,23,101.53,107.71000000000001,because they are in the same class of animal. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,24,107.71000000000001,111.827,_And in general, if you replace cat with dog in a sentence, _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,25,111.827,116.88,the sentence would still be a valid sentence that you can make sense of. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,26,118.32,121.99,Similarly Monday and Tuesday have paradigmatical relation. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,27,124.93,129.39,The second kind of relation is called syntagmatical relation. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,28,130.61,137.2,_In this case, the two words that have this relation, can be combined with each other. _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,29,137.2,142.19,So A and B have syntagmatic relation if they can be combined with each other in 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,30,142.19,149.5,_a sentence, that means these two words are semantically related. _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,31,150.72,156.82999999999998,_So for example, cat and sit are related because a cat can sit somewhere. _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,32,158.06,163.87,_Similarly, car and drive are related semantically and _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,33,163.87,167.55,they can be combined with each other to convey meaning. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,34,167.55,174.15,_However, in general, we can not replace cat with sit in a sentence or _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,35,174.15,179.59,_car with drive in the sentence to still get a valid sentence, _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,36,179.59,183.95,_meaning that if we do that, the sentence will become somewhat meaningless. _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,37,183.95,190.135,So this is different from paradigmatic relation. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,38,190.135,195.875,And these two relations are in fact so fundamental that they can be 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,39,197.365,204.18,generalized to capture basic relations between units in arbitrary sequences. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,40,204.18,207.88,And definitely they can be generalized to describe 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,41,207.88,211.63,relations of any items in a language. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,42,211.63,216.62,_So, A and B don't have to be words and they can be phrases, for example. _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,43,217.96,224.71,And they can even be more complex phrases than just a non-phrase. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,44,224.71,228.82,If you think about the general problem of the sequence mining 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,45,228.82,233.066,then we can think about the units being and the sequence data. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,46,233.066,238.98,Then we think of paradigmatic relation as relations that 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,47,238.98,245.89,_are applied to units that tend to occur in a singular locations in a sentence, _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,48,245.89,251.66,or in a sequence of data elements in general. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,49,251.66,260.98,So they occur in similar locations relative to the neighbors in the sequence. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,50,260.98,265.415,Syntagmatical relation on the other hand is related to 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,51,265.415,270.21,co-occurrent elements that tend to show up in the same sequence. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,52,273.15,278.47,So these two are complimentary and are basic relations of words. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,53,278.47,282.81,And we're interested in discovering them automatically from text data. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,54,282.81,286.42,Discovering such worded relations has many applications. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,55,287.48,292.92,_First, such relations can be directly useful for improving accuracy of many NLP _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,56,292.92,298.88,_tasks, and this is because this is part of our knowledge about a language. _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,57,298.88,302.44,_So if you know these two words are synonyms, for example, _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,58,302.44,304.97,and then you can help a lot of tasks. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,59,305.98,310.97,And grammar learning can be also done by using such techniques. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,60,310.97,315.13,_Because if we can learn paradigmatic relations, _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,61,315.13,320.0,_then we form classes of words, syntactic classes for example. _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,62,320.0,325.63,_And if we learn syntagmatic relations, then we would be able to know _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,63,325.63,332.4,the rules for putting together a larger expression based on component expressions. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,64,332.4,337.39,So we learn the structure and what can go with what else. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,65,339.855,343.07,Word relations can be also very useful for 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,66,343.07,346.58,many applications in text retrieval and mining. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,67,346.58,350.52,_For example, in search and text retrieval, we can use word _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,68,350.52,355.93,_associations to modify a query, and this can be used to _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,69,355.93,360.48,introduce additional related words into a query and make the query more effective. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,70,361.59,363.39,It's often called a query expansion. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,71,365.29,370.03,Or you can use related words to suggest related queries to the user 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,72,370.03,371.66,to explore the information space. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,73,372.74,375.61,Another application is to use word associations to 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,74,375.61,379.79,automatically construct the top of the map for browsing. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,75,379.79,384.54,We can have words as nodes and associations as edges. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,76,384.54,387.93,A user could navigate from one word to another to 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,77,388.99,391.18,find information in the information space. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,78,393.62,400.62,_Finally, such word associations can also be used to compare and summarize opinions. _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,79,400.62,405.68,_For example, we might be interested in understanding positive and _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,80,405.68,408.62,negative opinions about the iPhone 6. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,81,408.62,415.18,_In order to do that, we can look at what words are most strongly associated with _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,82,415.18,421.63,a feature word like battery in positive versus negative reviews. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,83,421.63,425.147,Such a syntagmatical relations would help us 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,84,425.147,428.854,show the detailed opinions about the product. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,85,436.696,440.837,_So, how can we discover such associations automatically? _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,86,440.837,444.45,_Now, here are some intuitions about how to do that. _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,87,444.45,447.479,Now let's first look at the paradigmatic relation. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,88,449.08,452.94,Here we essentially can take advantage of similar context. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,89,454.15,458.44,So here you see some simple sentences about cat and dog. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,90,458.44,463.416,_You can see they generally occur in similar context, _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,91,463.416,468.39,and that after all is the definition of paradigmatic relation. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,92,469.54,474.51,On the right side you can kind of see I extracted expressly 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,93,474.51,479.09000000000003,the context of cat and dog from this small sample of text data. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,94,480.64,485.23,_I've taken away cat and dog from these sentences, so _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,95,485.23,487.28,that you can see just the context. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,96,488.81,492.66,_Now, of course we can have different perspectives to look at the context. _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,97,493.81,499.528,_For example, we can look at what words occur in the left _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,98,499.528,504.222,part of this context. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,99,504.222,508.0,So we can call this left context. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,100,508.0,514.8,What words occur before we see cat or dog? 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,101,514.8,519.91,_So, you can see in this case, clearly dog and cat have similar left context. _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,102,521.81,527.86,_You generally say his cat or my cat and you say also, my dog and his dog. _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,103,527.86,532.29,So that makes them similar in the left context. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,104,533.66,538.88,_Similarly, if you look at the words that occur after cat and dog, _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,105,538.88,543.97,_which we can call right context, they are also very similar in this case. _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,106,543.97,547.49,_Of course, it's an extreme case, where you only see eats. _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,107,548.67,552.883,_And in general, you'll see many other words, of course, _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,108,552.883,555.17,that can't follow cat and dog. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,109,557.83,561.7,You can also even look at the general context. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,110,561.7,564.69,And that might include all the words in the sentence or 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,111,564.69,566.64,in sentences around this word. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,112,567.658,574.3,_And even in the general context, you also see similarity between the two words. _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,113,575.4,581.48,So this was just a suggestion that we can discover paradigmatic 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,114,581.48,587.0,relation by looking at the similarity of context of words. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,115,587.0,590.9,_So, for example, if we think about the following questions. _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,116,590.9,594.76,How similar are context of cat and context of dog? 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,117,596.24,601.63,In contrast how similar are context of cat and context of computer? 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,118,602.66,607.61,_Now, intuitively, we're to imagine the context of cat and _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,119,607.61,611.03,the context of dog would be more similar than 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,120,611.03,616.55,the context of cat and context of the computer. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,121,616.55,620.68,_That means, in the first case the similarity value would be high, _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,122,621.91,625.94,_between the context of cat and dog, where as in the second, _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,123,625.94,630.248,the similarity between context of cat and computer would be low 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,124,630.248,635.75,because they all not having a paradigmatic 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,125,635.75,640.55,relationship and imagine what words occur after computer in general. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,126,640.55,644.9,It would be very different from what words occur after cat. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,127,646.62,650.34,_So this is the basic idea of what this covering, paradigmatic relation. _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,128,652.04,654.18,What about the syntagmatic relation? 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,129,654.18,658.55,_Well, here we're going to explore the correlated occurrences, _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,130,658.55,662.43,again based on the definition of syntagmatic relation. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,131,663.99,665.6,Here you see the same sample of text. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,132,666.64,670.71,But here we're interested in knowing what other words are correlated 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,133,670.71,674.78,with the verb eats and what words can go with eats. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,134,676.38,680.88,And if you look at the right side of this slide and 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,135,680.88,685.245,_you see, I've taken away the two words around eats. _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,136,687.11,690.14,I've taken away the word to its left and 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,137,690.14,693.97,also the word to its right in each sentence. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,138,695.34,701.9,_And then we ask the question, what words tend to occur to the left of eats? _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,139,703.65,707.96,And what words tend to occur to the right of eats? 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,140,709.56,714.997,Now thinking about this question would help us discover syntagmatic 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,141,714.997,720.83,relations because syntagmatic relations essentially captures such correlations. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,142,723.07,727.29,_So the important question to ask for syntagmatical relation is, _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,143,727.29,734.57,_whenever eats occurs, what other words also tend to occur? _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,144,736.18,739.12,So the question here has to do with whether there 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,145,739.12,743.94,are some other words that tend to co-occur together with each. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,146,743.94,748.24,Meaning that whenever you see eats you tend to see the other words. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,147,749.62,754.66,_And if you don't see eats, probably, you don't see other words often either. _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,148,756.56,760.21,So this intuition can help discover syntagmatic relations. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,149,761.53,763.2,_Now again, consider example. _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,150,764.21,768.17,How helpful is occurrence of eats for predicting occurrence of meat? 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,151,769.87,773.056,_Right. All right, so knowing whether eats occurs _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,152,773.056,778.93,in a sentence would generally help us predict whether meat also occurs indeed. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,153,778.93,781.801,_And if we see eats occur in the sentence, and _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,154,781.801,785.77,that should increase the chance that meat would also occur. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,155,788.49,792.15,_In contrast, if you look at the question in the bottom, _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,156,792.15,795.71,how helpful is the occurrence of eats for predicting of occurrence of text? 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,157,797.33,800.27,_Because eats and text are not really related, so _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,158,800.27,804.84,knowing whether eats occurred in the sentence doesn't 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,159,804.84,810.14,_really help us predict the weather, text also occurs in the sentence. _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,160,810.14,814.1,So this is in contrast to the question about eats and meat. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,161,815.55,818.79,This also helps explain that intuition 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,162,818.79,823.1,behind the methods of what discovering syntagmatic relations. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,163,823.1,829.09,Mainly we need to capture the correlation between the occurrences of two words. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,164,830.44,832.86,So to summarize the general ideas for 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,165,832.86,835.81,discovering word associations are the following. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,166,836.88,842.24,_For paradigmatic relation, we present each word by its context. _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,167,842.24,844.83,And then compute its context similarity. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,168,844.83,849.03,We're going to assume the words that have high context similarity 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,169,849.03,852.26,to have paradigmatic relation. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,170,854.64,859.97,_For syntagmatic relation, we will count how many times two words occur together _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,171,859.97,865.18,_in a context, which can be a sentence, a paragraph, or a document even. _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,172,865.18,868.18,And we're going to compare 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,173,868.18,871.66,their co-occurrences with their individual occurrences. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,174,873.28,876.66,We're going to assume words with high co-occurrences but 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,175,876.66,882.335,relatively low individual occurrences to have syntagmatic relations 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,176,882.335,886.581,because they attempt to occur together and they don't usually occur alone. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,177,886.581,891.635,Note that the paradigmatic relation and the syntagmatic relation 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,178,891.635,897.065,are actually closely related in that paradigmatically 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,179,897.065,902.81,related words tend to have syntagmatic relation with the same word. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,180,902.81,905.42,_They tend to be associated with the same word, and _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,181,905.42,910.87,that suggests that we can also do join the discovery of the two relations. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,182,910.87,915.19,So these general ideas can be implemented in many different ways. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,183,915.19,919.129,_And the course won't cover all of them, but _
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,184,919.129,924.774,we will cover at least some of the methods that are effective for 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,185,924.774,927.669,discovering these relations. 
+2 - 7 - 1.7 Word Association Mining and Analysis (00-15-39).srt,186,927.669,937.669,[MUSIC] 

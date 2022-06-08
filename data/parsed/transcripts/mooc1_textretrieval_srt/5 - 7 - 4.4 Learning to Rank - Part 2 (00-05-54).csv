@@ -1,0 +1,144 @@
+name,id,from,to,text
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,1,0.025,8.649000000000001,_[SOUND] So now let's take a look at the specific, _
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,2,8.649000000000001,14.921,method that's based on regression. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,3,14.921,17.564,_Now this is one of the many different methods in fact, _
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,4,17.564,19.94,it's the one of the simplest methods. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,5,19.94,24.55,And I choose this to explain the idea because it's it's so simple. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,6,26.36,34.33,So in this approach we simply assume that the relevance of a document 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,7,34.33,39.73,_with respect to the query, is related to a linear combination of all the features. _
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,8,39.73,47.39,Here I used the Xi to emote the feature. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,9,47.39,51.76,So Xi of Q and D is a feature. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,10,51.76,54.72,_And we can have as many features as, we would like. _
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,11,55.89,61.71,And we assume that these features can be combined in a linear manner. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,12,63.58,66.14,And each feature is controlled by a parameter here. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,13,66.14,70.78999999999999,_And this beta is a parameter, that's a weighting parameter. _
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,14,70.78999999999999,76.08,A larger value would mean the feature would have a higher weight and 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,15,76.08,78.58,it would contribute more to the scoring function. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,16,78.58,83.62,The specific form of the function actually also involves 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,17,83.62,87.37,a transformation of the probability of relevance. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,18,87.37,89.399,So this is the probability of relevance. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,19,90.74,96.35,We know that the probability of relevance is within the range from 0 to 1. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,20,96.35,100.84,And we could have just assumed that the scoring function is 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,21,100.84,103.86,related to this linear combination. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,22,103.86,107.85,_Right, so we can do a, a linear regression but _
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,23,107.85,113.9,then the value of this linear combination could easily go beyond 1. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,24,113.9,118.75800000000001,_So this transformation here would map ze, _
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,25,118.75800000000001,125.706,0 to 1 range through the whole range of real values. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,26,125.706,128.33,_You can, you can verify it, it by yourself. _
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,27,130.35,137.603,So this allows us then to connect to the probability of relevance 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,28,137.603,143.0,which is between 0 and 1 to a linear combination of arbitrary efficients. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,29,143.0,148.42000000000002,_And if we rewrite this into a probability function, we will get the next one. _
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,30,148.42000000000002,154.299,_So on this side on this equation, we will have the probability of relevance. _
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,31,155.46,158.23,_And on the right hand side, we will have this form. _
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,32,159.46,162.62,Now this form is created non-active. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,33,162.62,166.57,And it still involves the linear combination of features. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,34,166.57,171.638,_And it's also clear that is, if this value is, _
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,35,171.638,174.58100000000002,is. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,36,174.58100000000002,179.25,Of the linear combination in the equation above. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,37,179.25,183.31,_If this this, this value here, _
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,38,185.78,192.19,if this value is large then it will mean this value is small. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,39,192.19,196.92000000000002,_And therefore, this probability, this whole probability, would be large. _
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,40,196.92000000000002,198.53,And that's what we expect. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,41,198.53,202.95,_Basically, it would be if this combination gives us a high value, _
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,42,202.95,205.234,then the document's more likely relevant. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,43,206.715,208.995,So this is our hypothesis. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,44,208.995,212.54500000000002,_Again, this is not necessarily the best hypothesis. _
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,45,212.54500000000002,215.215,That this is a simple way to connect 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,46,215.215,219.109,these features with the probability of relevance. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,47,220.5,224.2,So now we have this this combination function. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,48,224.2,229.44,The next task is to see how we need to estimate the parameters so 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,49,229.44,232.67000000000002,that the function can truly be applied. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,50,232.67000000000002,233.59,Right. Without them knowing 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,51,233.59,238.52,_that they have values, it's, it's harder to apply this function, okay. _
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,52,238.52,241.961,_So let's how we can estimate, beta values. _
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,53,244.214,247.23,_All right. Let's take a look, at a simple example. _
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,54,248.78,251.49,_In this example, we have three features. _
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,55,251.49,255.07,One is BM25 score of the document under the query. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,56,255.07,259.06,_One is the page rank score of the document, which might or _
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,57,259.06,260.77,might not depend on the query. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,58,260.77,264.66,_Hm, we might have a top sensitive page rank. _
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,59,264.66,265.93,That would depend on the query. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,60,265.93,270.98,_Otherwise, the general page rank doesn't really depend on the query. _
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,61,270.98,274.40999999999997,And then we have BM25 score on the Anchor task of the document. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,62,275.67,280.72,_These are then the feature values for a particular doc, document query pair. _
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,63,281.9,284.87,And in this case the document is D1. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,64,284.87,287.21,_And the, the judgment says that it's relevant. _
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,65,287.21,292.3,_Here's another training instance, and these features values. _
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,66,294.86,298.03499999999997,_But in this case it's non-relevant, okay? _
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,67,298.03499999999997,302.565,_This is a overly simplified case, where we just have two instances. _
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,68,303.665,306.675,_But it, it's sufficient to illustrate the point. _
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,69,306.675,311.057,So what we can do is we use the maximum likelihood estimator to actually estimate 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,70,311.057,313.17,the parameters. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,71,313.17,318.921,_Basically, we're going to do, predict the relevance status of the document, _
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,72,318.921,322.04,_the, based on the feature values. _
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,73,322.04,325.42,That is given that we observe these feature values here. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,74,328.49,332.0,Can we predict the relevance? 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,75,332.0,332.98,Yeah. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,76,332.98,339.07,_And of course, the prediction will be using this function that you see here. _
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,77,339.07,342.68,And we hypothesize this that the probability of relevance is related 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,78,342.68,343.92,features in this way. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,79,343.92,346.57,So we're going to see for 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,80,346.57,351.51,what values of beta we can predict that the relevance well. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,81,351.51,352.44,What do we mean? 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,82,352.44,358.52,_Well, what, what do we mean by predicting the relevance well? _
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,83,358.52,359.77,Well we just mean. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,84,359.77,363.96,_In the first case for D1, this expression here, _
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,85,363.96,366.96,_right here, should give higher values. _
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,86,366.96,370.81,_In fact, they would hope this to give a value close to one. _
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,87,370.81,374.678,Why? Because this is a relevant document. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,88,374.678,381.58,_On the other hand, in the second case for D2 we hope this value would be small. _
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,89,381.58,382.31,Right. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,90,382.31,385.23,Why? It's because it's a non-relevant document. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,91,386.58,390.25,So now let's see how this can be mathematical expressed. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,92,390.25,395.64,_And this is similar to, expressing the probability of a document. _
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,93,395.64,398.93,Only that we are not talking about the probability of words but 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,94,398.93,401.68,_talking about the probability of relevance, 1 or 0. _
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,95,401.68,406.78,So what's the probability of this document? 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,96,408.42,412.87,The relevant if it has these feature values. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,97,414.25,415.77,Well this is. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,98,415.77,417.89,_Just this expression, right? _
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,99,417.89,420.97,_We just need to pluck in the X, the Xis. _
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,100,420.97,422.166,So that's what we'll get. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,101,422.166,427.542,_It's exactly like, what we have seen that, _
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,102,427.542,431.49,only that we replace these Xis. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,103,431.49,434.78,With now specific values. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,104,434.78,440.91,_And so, for example, this 0.7 goes to here and this 0.11 goes to here. _
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,105,440.91,448.2,And these are different feature values and we'll combine them in this particular way. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,106,448.2,451.75,The beta values are still unknown. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,107,451.75,454.40999999999997,But this gives us the probability 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,108,454.40999999999997,459.65,that this document is relevant if we assume such a model. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,109,459.65,462.42,_Okay, and we want to maximize this probability since _
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,110,462.42,463.77,this is a random document. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,111,464.88,468.14,What we do for the second document. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,112,468.14,472.09000000000003,_Well, we want to compute to the probability that the predictions is, is n, _
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,113,472.09000000000003,473.63,non-relevant. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,114,473.63,482.29,_So, this would mean, we have to compute a 1 minus, right this expression. _
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,115,482.29,484.19,Since this expression. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,116,485.4,490.49,_Is actually the probability of relevance, so to compute the non relevance _
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,117,490.49,498.48,_from relevance, we just do 1 minus the probability of relevance, okay? _
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,118,498.48,500.73,So this whole expression then. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,119,500.73,509.21,Just is our probability of predicting these two relevance values. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,120,509.21,510.59,One is 1. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,121,510.59,511.94,_Here, one is a 0. _
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,122,511.94,517.77,And this whole equation is our probability. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,123,517.77,522.57,Of observing a 1 here and observing a 0 here. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,124,524.09,530.13,_Of course this probability depends on the beta values, right? _
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,125,530.13,532.84,So then our goal is to 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,126,532.84,537.84,adjust the beta values to make this whole thing reach its maximum. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,127,537.84,539.27,Make that as large as possible. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,128,540.46,542.54,So that means we are going to compute this. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,129,542.54,548.22,_The beta is just the, the parameter values that would maximize this for _
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,130,548.22,550.29,like holder expression. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,131,552.21,556.26,And what it means is if look at the function is 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,132,556.26,560.29,we're going to choose betas to make this as large as possible. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,133,560.29,565.02,And make this also as large as possible 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,134,565.02,569.39,which is equivalent to say make this the part as small as possible. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,135,570.56,572.36,And this is precisely what we want. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,136,574.5,579.06,_So once we do the training, now we will know the beta values. _
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,137,579.06,585.716,So then this function will be well defined once their values are known. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,138,585.716,590.69,Both this and this will become pretty less specified. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,139,590.69,595.857,So for any new query and new document we can simply compute the features [NOISE] 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,140,595.857,600.961,For that pair and then we just use this formula to generate a ranking score. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,141,600.961,606.67,And this scoring function can be used in for rank documents for a particular query. 
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,142,606.67,610.211,_So that's the basic idea of, learning to rank. _
+5 - 7 - 4.4 Learning to Rank - Part 2 (00-05-54).srt,143,611.711,621.711,[MUSIC] 

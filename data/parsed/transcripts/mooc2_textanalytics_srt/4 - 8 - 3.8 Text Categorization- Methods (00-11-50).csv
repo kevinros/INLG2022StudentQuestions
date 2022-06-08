@@ -1,0 +1,156 @@
+name,id,from,to,text
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,1,6.8629999999999995,10.6,This lecture is about the methods for text categorization. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,2,12.65,16.16,So in this lecture we're going to discuss how to do text for categorization. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,3,19.643,24.259,_First, there're many methods for text categorization. _
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,4,25.69,30.3,In such a method the idea is to determine the category 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,5,30.3,33.59,based on some rules that we design carefully 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,6,33.59,37.56,to reflect the domain knowledge about the category prediction problem. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,7,37.56,42.66,_So for example, if you want to do topic categorization for news articles you _
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,8,42.66,48.75,_can say well, if the news article mentions word like a game and sports three times. _
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,9,48.75,55.65,That we're going to say it's about sports things like that and this would allow us 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,10,55.65,59.909,to deterministically decide which category a document that should be put into. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,11,62.09,69.28999999999999,Now such a strategy would work well if the following conditions hold. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,12,69.28999999999999,74.14,First the categories must be very well defined and this allows the person to 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,13,74.14,79.309,clearly decide the category based on some clear rules. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,14,81.7,84.42,A certainly the categories as 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,15,85.6,91.31,half to be easy to distinguished at the based on a surface features in text. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,16,91.31,96.43,So that means some official features like keywords or 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,17,96.43,100.4,_punctuations or whatever, you can easily identify in text to data. _
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,18,101.91,106.68,_For example, if there is some special vocabulary that is known _
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,19,106.68,109.44,to only occur in a particular category. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,20,109.44,113.1,And that would be most effective because we can easily use such a vocabulary or 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,21,113.1,116.41,padding of such a vocabulary to recognize this category. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,22,117.69,122.93,Now we also should have sufficient knowledge for 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,23,122.93,130.03,_designing these words, and so if that's the case then such a can be effective. _
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,24,130.03,137.28,And so it does have a in some domains and sometimes. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,25,137.28,142.79,_However, in general, there are several problems with this approach. _
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,26,142.79,147.01,_First off, because it's label intensive it requires a lot of manual work. _
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,27,147.01,150.73,_Obviously, we can't do this for all kinds of categorization problems. _
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,28,150.73,155.19,We have to do it from scratch for a different problem. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,29,155.19,158.42000000000002,_problem because given the rules, what they need. _
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,30,158.42000000000002,159.73,So it doesn't scale up well. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,31,161.14,166.07,_Secondly, it cannot handle uncertainty in rules, _
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,32,166.07,171.44,often the rules Aren't 100% reliable. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,33,171.44,175.34,Take for example looking at occurrences of words in texts and 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,34,175.34,176.56,trying to decide the topic. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,35,177.57,182.81,It's actually very hard to have 100% correct rule. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,36,182.81,186.46,_So for example you can say well, if it has game, sports, _
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,37,186.46,189.71,basketball Then for sure it's about sports. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,38,189.71,195.65,_But one can also imagine some types of articles that mention these cures, but _
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,39,195.65,201.47,may not be exactly about sports or only marginally touching sports. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,40,201.47,206.0,_The main topic could be another topic, a different topic than sports. _
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,41,207.45,210.47,So that's one disadvantage of this approach. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,42,210.47,214.63,_And then finally, the rules maybe inconsistent and _
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,43,214.63,218.02,this would lead to robustness. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,44,218.02,222.55,_More specifically, and sometimes, the results of categorization may be different _
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,45,222.55,225.16,that depending on which rule to be applied. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,46,225.16,228.27,So as in that case that you are facing uncertainty. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,47,228.27,232.57,_And you will also have to decide an order of applying the rules, _
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,48,232.57,237.07,or combination of results that are contradictory. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,49,237.07,240.77,So all these are problems with this approach. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,50,240.77,244.58,And it turns out that both problems can be solved or 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,51,244.58,246.179,alleviated by using machine learning. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,52,247.28,253.19,So these machine learning methods are more automatic. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,53,253.19,256.75,_But, I still put automatic in quotation marks because _
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,54,256.75,261.94,they are not really completely automatic cause it still require many work. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,55,261.94,266.55,More specifically we have to use a human experts to help in two ways. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,56,266.55,270.64,First the human experts must annotate data cells was category labels. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,57,270.64,276.53,And would tell the computer which documents should receive which categories. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,58,276.53,277.78,And this is called training data. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,59,278.81,283.65999999999997,_And then secondly, the human experts also need to provide a set of features to _
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,60,283.65999999999997,286.18,represent each text object. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,61,286.18,290.29,That can potentially provide a clue about the category. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,62,290.29,294.99,_So, we need to provide some basic features for the computers to look into. _
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,63,295.99,299.40999999999997,In the case of tax a natural choice would be the words. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,64,299.40999999999997,305.54,_So, using each has a feature is a very common choice to start with, _
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,65,305.54,308.86,but of course there are other sophisticated features like phrases or 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,66,308.86,313.02,even parts of ancients tags or even syntax to the structures. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,67,313.02,318.24,So once human experts can provide this then we can use machine running to learn 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,68,318.24,322.25,soft rules for categorization from the training data. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,69,322.25,324.33,_So, soft rules just means, _
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,70,324.33,327.9,_we're going to get decided which category we should be assigned for a document, _
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,71,327.9,332.99,but it's not going to be use using a rule that is deterministic. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,72,332.99,338.69,_So we might use something similar to saying that if it matches games, _
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,73,338.69,341.63,_sports many times, it's likely to be sports. _
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,74,341.63,344.62,_But, we're not going to say exactly for sure but instead, _
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,75,344.62,347.18,we're going to use probabilities or weights. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,76,347.18,350.38,So that we can combine much more evidences. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,77,350.38,353.45,_So, the learning process, basically is going to figure out which _
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,78,353.45,357.14,features are most useful for separating different categories. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,79,357.14,361.88,And it's going to also figure out how to optimally combine features to minimize 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,80,361.88,364.91,errors of the categorization of the training data. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,81,364.91,368.93,_So the training data, as you can see here, is very important. _
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,82,368.93,370.98,It's the basis for learning. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,83,370.98,375.05,_And then, the trained classifier can be applied to a new text object to predict _
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,84,375.05,376.85,the most likely category. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,85,376.85,380.82,And that's to simulate the prediction of what 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,86,380.82,384.675,human Would assign to this text object. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,87,384.675,387.535,If the human were to make a judgement. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,88,387.535,393.195,So when we use machine learning for text categorization we can also 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,89,393.195,399.295,talk about the problem in the general setting of supervisement. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,90,399.295,405.8,So the set up is to learn a classifier to map a value of X. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,91,405.8,411.38,Into a map of Y so here X is all the text objects and 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,92,411.38,415.26,_Y is all the categories, a set of categories. _
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,93,415.26,420.29,So the class phi will take any value in x as input and 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,94,420.29,423.28,would generate a value in y as output. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,95,423.28,428.67,We hope that output y with this right category for x. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,96,428.67,432.55,_And here correct, of course, is judged based on the training data. _
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,97,432.55,437.74,So that's a general goal in machine learning problems or supervised learning 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,98,437.74,443.26,problems where you are given some examples of input and output for a function. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,99,443.26,447.12,_And then the computer's going to figure out the, _
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,100,447.12,450.68,how the function behaves like based on this examples. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,101,450.68,454.26,And then try to be able to compute the values for 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,102,454.26,456.325,future x's that when we have not seen. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,103,458.795,463.305,So in general all methods would rely on discriminative 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,104,463.305,466.555,features of text objects to distinguish different categories. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,105,466.555,469.295,So that's why these features are very important and 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,106,469.295,472.775,they have to be provided by humans. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,107,472.775,477.435,And they will also combine multiple features in a weight map with weights 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,108,477.435,482.8,to be optimized to minimize errors on the training data. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,109,482.8,486.355,So after the learning processes optimization problem. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,110,486.355,490.71,An objective function is often tied into the errors on the training data. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,111,492.61,496.96,Different methods tend to vary in their ways of measuring the errors on 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,112,496.96,498.41,the training data. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,113,498.41,501.9,_They might optimize a different objective function, _
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,114,501.9,505.25,which is often also called a loss function or cost function. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,115,506.52,511.26,They also tend to vary in their ways of combining the features. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,116,511.26,517.22,_So a linear combination for example is simple, is often used. _
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,117,517.22,520.36,But they are not as powerful as nonlinear combinations. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,118,520.36,523.25,But nonlinear models might be more complex for 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,119,523.25,525.88,_training, so there are tradeoffs as well. _
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,120,525.88,528.409,But that would lead to different variations of 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,121,530.25,533.55,many variations of these learning methods. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,122,533.55,539.18,So in general we can distinguish two kinds of classifiers at a high level. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,123,539.18,541.12,One is called generative classifiers. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,124,541.12,543.95,The other is called discriminative classifiers. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,125,543.95,550.783,The generative classifiers try to learn what the data looks like in each category. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,126,550.783,556.715,So it attempts to model the joint distribution of the data and 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,127,556.715,561.599,the label x and y and this can then be factored out to 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,128,561.599,566.043,a product of why the distribution of labels. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,129,566.043,572.128,And the joint probability of sorry the conditional 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,130,572.128,576.663,_probability of X given Y, so it's Y. _
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,131,576.663,580.813,So we first model the distribution of labels and 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,132,580.813,586.32,then we model how the data is generate a particular label here. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,133,588.55,591.74,_And once we can estimate these models, _
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,134,591.74,596.698,then we can compute this conditional probability of label given data 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,135,596.698,601.23,based on the probability of data given label. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,136,602.68,605.81,And the label distribution here by using the Bayes Rule. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,137,607.2,611.84,_Now this is the most important thing, because this conditional probability _
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,138,611.84,616.82,of the label can then be used directly to decide which label is most likely. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,139,618.78,622.11,So in such approaches objective function is actually likelihood. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,140,622.11,626.79,_And so, we model how the data are generated. _
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,141,626.79,631.34,So it only indirectly captures the training errors. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,142,631.34,634.85,_But if we can model the data in each category accurately, _
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,143,634.85,636.93,then we can also classify accurately. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,144,638.08,643.47,_One example is Naïve Bayes classifier, in this case. _
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,145,643.47,648.72,_The other kind of approaches are called discriminative classifies, _
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,146,648.72,653.6,and these classifies try to learn what features separate categories. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,147,653.6,657.885,So they direct or attack the problem of categorization for separation of classes. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,148,657.885,663.132,So sorry for the problem. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,149,664.28,668.86,_So, these discriminative classifiers attempt to model _
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,150,668.86,675.67,the conditional probability of the label given the data point directly. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,151,677.23,681.29,_So, the objective function tends to directly measure the errors of _
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,152,681.29,682.9,categorization on the training data. 
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,153,684.55,687.09,_Some examples include a logistical regression, _
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,154,687.09,691.71,_support vector machines, and k-nearest neighbors. _
+4 - 8 - 3.8 Text Categorization- Methods (00-11-50).srt,155,691.71,697.953,We will cover some of these classifiers in detail in the next few lectures. 

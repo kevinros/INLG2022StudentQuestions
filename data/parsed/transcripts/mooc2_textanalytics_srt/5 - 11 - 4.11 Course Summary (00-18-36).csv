@@ -1,0 +1,253 @@
+name,id,from,to,text
+5 - 11 - 4.11 Course Summary (00-18-36).srt,1,6.91,9.57,This lecture is a summary of this whole course. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,2,10.81,14.512,_First, let's revisit the topics that we covered in this course. _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,3,14.512,18.662,_In the beginning, we talked about the natural language processing and _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,4,18.662,21.025,how it can enrich text representation. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,5,21.025,26.207,_We then talked about how to mine knowledge about the language, _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,6,26.207,29.434,_natural language used to express the, _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,7,29.434,33.27,what's observing the world in text and data. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,8,34.32,38.41,_In particular, we talked about how to mine word associations. _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,9,38.41,42.3,We then talked about how to analyze topics in text. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,10,42.3,45.13,How to discover topics and analyze them. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,11,47.58,51.314,_This can be regarded as knowledge about observed world, _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,12,51.314,55.747,and then we talked about how to mine knowledge about the observer and 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,13,55.747,60.988,_particularly talk about the, how to mine opinions and do sentiment analysis. _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,14,60.988,66.048,_And finally, we will talk about the text-based prediction, which has to _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,15,66.048,71.20400000000001,do with predicting values of other real world variables based on text data. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,16,71.20400000000001,76.27,_And in discussing this, we will also discuss the role of non-text data, _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,17,76.27,81.42099999999999,_which can contribute additional predictors for the prediction problem, _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,18,81.42099999999999,85.425,_and also can provide context for analyzing text data, and _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,19,85.425,90.11,in particular we talked about how to use context to analyze topics. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,20,93.24000000000001,99.078,So here are the key high-level take away messages from this cost. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,21,99.078,101.67,I going to go over these major topics and 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,22,101.67,106.4,point out what are the key take-away messages that you should remember. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,23,107.56,110.63,First the NLP and text representation. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,24,113.53,116.84,You should realize that NLP is always very important for 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,25,116.84,121.51,any text replication because it enriches text representation. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,26,121.51,125.06,The more NLP the better text representation we can have. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,27,125.06,128.5,_And this further enables more accurate knowledge discovery, _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,28,128.5,131.71,_to discover deeper knowledge, buried in text. _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,29,132.95,137.51,_However, the current estate of art of natural energy processing is, _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,30,137.51,139.13,still not robust enough. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,31,139.13,143.586,_So, as an result, the robust text mining technologies today, _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,32,143.586,146.96,tend to be based on world [INAUDIBLE]. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,33,146.96,150.71,_And tend to rely a lot on statistical analysis, _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,34,150.71,153.52,as we've discussed in this course. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,35,153.52,159.7,And you may recall we've mostly used word based representations. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,36,159.7,162.478,_And we've relied a lot on statistical techniques, _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,37,162.478,165.202,statistical learning techniques particularly. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,38,167.79,172.77100000000002,_In word-association mining and analysis the important points first, _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,39,172.77100000000002,176.28199999999998,we are introduced the two concepts for two basic and 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,40,176.28199999999998,182.835,_complementary relations of words, paradigmatic and syntagmatic relations. _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,41,182.835,188.13,These are actually very general relations between elements sequences. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,42,188.13,194.33,If you take it as meaning elements that occur in similar 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,43,194.33,198.84,context in the sequence and elements that tend to co-occur with each other. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,44,198.84,204.09,And these relations might be also meaningful for other sequences of data. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,45,205.81,209.81,We also talked a lot about test the similarity then we 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,46,209.81,214.35,discuss how to discover paradynamic similarities compare 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,47,214.35,218.39,the context of words discover words that share similar context. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,48,218.39,219.858,_At that point level, _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,49,219.858,224.437,we talked about representing text data with a vector space model. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,50,224.437,228.638,And we talked about some retrieval techniques such as BM25 for 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,51,228.638,232.995,_measuring similarity of text and for assigning weights to terms, _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,52,232.995,235.19299999999998,_tf-idf weighting, et cetera. _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,53,235.19299999999998,239.48,And this part is well-connected to text retrieval. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,54,239.48,242.33,There are other techniques that can be relevant here also. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,55,243.89,248.65,_The next point is about co-occurrence analysis of text, and _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,56,248.65,252.77,_we introduce some information theory concepts such as entropy, _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,57,252.77,255.17,_conditional entropy, and mutual information. _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,58,255.17,258.293,These are not only very useful for 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,59,258.293,263.68,_measuring the co-occurrences of words, they are also very useful for _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,60,263.68,266.94,_analyzing other kind of data, and they are useful for, for example, for _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,61,266.94,269.6,feature selection in text categorization as well. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,62,270.92,274.46,_So this is another important concept, good to know. _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,63,275.48,278.64,_And then we talked about the topic mining and analysis, and _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,64,278.64,281.57,that's where we introduce in the probabilistic topic model. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,65,281.57,285.96,_We spent a lot of time to explain the basic topic model, _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,66,285.96,292.93,_PLSA in detail and this is, those are the basics for understanding LDA which is. _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,67,292.93,296.19,_Theoretically, a more opinion model, but _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,68,296.19,301.46,we did not have enough time to really go in depth in introducing LDA. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,69,302.96,306.6,_But in practice, PLSA seems as effective as LDA and _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,70,306.6,309.52,it's simpler to implement and it's also more efficient. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,71,311.52,315.93,In this part of Wilson videos is some general concepts that would be useful to 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,72,315.93,320.41,_know, one is generative model, and this is a general method for _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,73,320.41,323.63,modeling text data and modeling other kinds of data as well. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,74,324.74,330.25,_And we talked about the maximum life erase data, the EM algorithm for _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,75,330.25,335.29,solving the problem of computing maximum estimator. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,76,335.29,338.72,_So, these are all general techniques that tend to be very useful _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,77,338.72,339.84000000000003,in other scenarios as well. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,78,340.94,345.02,Then we talked about the text clustering and the text categorization. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,79,345.02,350.45,Those are two important building blocks in any text mining application systems. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,80,350.45,356.11,In text with clustering we talked about how we can solve the problem by 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,81,356.11,362.4,using a slightly different mixture module than the probabilistic topic model. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,82,362.4,367.06,and we then also prefer to view the similarity based 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,83,367.06,370.0,approaches to test for cuss word. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,84,371.34,375.35,In categorization we also talk about the two kinds of approaches. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,85,375.35,379.39,One is generative classifies that rely on to base word to 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,86,380.69,384.87,_infer the condition of or probability of a category given text data, _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,87,384.87,388.25,in deeper we'll introduce you should use [INAUDIBLE] base in detail. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,88,389.28,396.15999999999997,_This is the practical use for technique, for a lot of text, capitalization tasks. _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,89,397.21,401.01,_We also introduce the some discriminative classifiers, _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,90,401.01,405.3,_particularly logistical regression, can nearest labor and SBN. _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,91,405.3,409.03,_They also very important, they are very popular, they are very useful for _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,92,409.03,410.49,text capitalization as well. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,93,412.37,417.1,_In both parts, we'll also discuss how to evaluate the results. _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,94,417.1,423.11,Evaluation is quite important because if the matches that you use don't really 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,95,423.11,427.43,reflect the volatility of the method then it would give you misleading results so 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,96,427.43,430.53,its very important to get the variation right. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,97,430.53,435.42,And we talked about variation of categorization in detail was a lot of 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,98,435.42,436.55,specific measures. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,99,438.53,441.725,Then we talked about the sentiment analysis and the paradigm and 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,100,441.725,445.053,that's where we introduced sentiment classification problem. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,101,445.053,449.681,_And although it's a special case of text recalculation, but _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,102,449.681,454.932,we talked about how to extend or improve the text recalculation method 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,103,454.932,461.261,by using more sophisticated features that would be needed for sentiment analysis. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,104,461.261,466.24,_We did a review of some common use for complex features for text analysis, and _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,105,466.24,470.836,_then we also talked about how to capture the order of these categories, _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,106,470.836,475.511,_in sentiment classification, and in particular we introduced ordinal _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,107,475.511,480.822,logistical regression then we also talked about Latent Aspect Rating Analysis. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,108,480.822,485.104,This is an unsupervised way of using a generative model to understand and 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,109,485.104,487.28,review data in more detail. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,110,487.28,492.65,_In particular, it allows us to understand the composed ratings of _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,111,494.58,498.49,a reviewer on different aspects of a topic. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,112,498.49,500.998,_So given text reviews with overall ratings, _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,113,500.998,504.503,the method allows even further ratings on different aspects. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,114,504.503,506.781,_And it also allows us to infer, _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,115,506.781,510.638,the viewers laying their weights on these aspects or 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,116,510.638,515.74,which aspects are more important to a viewer can be revealed as well. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,117,515.74,519.14,And this enables a lot of interesting applications. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,118,521.33,526.26,_Finally, in the discussion of prediction, we mainly talk about the joint mining _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,119,526.26,530.34,_of text and non text data, as they are both very important for prediction. _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,120,531.96,537.07,We particularly talked about how text data can help non-text data and vice versa. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,121,538.1,541.863,_In the case of using non-text data to help text data analysis, _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,122,541.863,544.565,we talked about the contextual text mining. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,123,544.565,548.921,We introduced the contextual PLSA as a generalizing or generalized model of PLSA 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,124,548.921,553.354,_to allows us to incorporate the context of variables, such as time and location. _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,125,553.354,558.328,And this is a general way to allow us to reveal a lot of interesting topic 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,126,558.328,560.248,of patterns in text data. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,127,560.248,564.75,_We also introduced the net PLSA, in this case we used social network or _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,128,564.75,570.55,network in general of text data to help analyze puppets. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,129,571.95,576.52,And finally we talk about how can be used as context to 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,130,576.52,580.56,mine potentially causal Topics in text layer. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,131,583.11,586.56,_Now, in the other way of using text to _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,132,587.99,591.47,_help interpret patterns discovered from LAM text data, _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,133,591.47,597.3,we did not really discuss anything in detail but just provide a reference but 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,134,597.3,602.67,_I should stress that that's after a very important direction to know about, _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,135,602.67,606.7,_if you want to build a practical text mining systems, _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,136,606.7,610.73,because understanding and interpreting patterns is quite important. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,137,613.87,618.56,_So this is a summary of the key take away messages, and _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,138,618.56,622.71,I hope these will be very useful to you for building any 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,139,622.71,627.01,text mining applications or to you for the starting of these algorithms. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,140,627.01,631.1,_And this should provide a good basis for you to read from your research papers, _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,141,631.1,633.58,to know more about more of allowance for 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,142,633.58,637.32,other organisms or to invent new hours in yourself. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,143,640.32,643.76,_So to know more about this topic, _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,144,643.76,647.519,I would suggest you to look into other areas in more depth. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,145,648.55,651.82,_And during this short period of time of this course, _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,146,651.82,657.83,_we could only touch the basic concepts, basic principles, of text mining and _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,147,657.83,663.39,we emphasize the coverage of practical algorithms. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,148,663.39,669.128,And this is after the cost of covering algorithms and 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,149,669.128,675.062,in many cases we omit the discussion of a lot of algorithms. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,150,675.062,679.24,So to learn more about the subject you should definitely learn more 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,151,679.24,682.12,about the natural language process because this is foundation for 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,152,682.12,684.2,all text based applications. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,153,684.2,688.79,_The more NLP you can do, the better the additional text that you can get, and _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,154,688.79,692.52,then the deeper knowledge you can discover. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,155,692.52,694.01,So this is very important. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,156,697.01,699.91,The second area you should look into is the Statistical Machine Learning. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,157,701.12,705.09,And these techniques are now the backbone techniques for 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,158,706.16,709.97,not just text analysis applications but also for NLP. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,159,709.97,715.31,A lot of NLP techniques are nowadays actually based on supervised machinery. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,160,716.9,720.79,_So, they are very important because they are a key _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,161,720.79,724.57,to also understanding some advancing NLP techniques and 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,162,724.57,728.22,naturally they will provide more tools for doing text analysis in general. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,163,729.77,733.93,_Now, a particularly interesting area, _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,164,733.93,737.64,called deep learning has attracted a lot of attention recently. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,165,737.64,741.11,_It has also shown promise in many application areas, _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,166,741.11,746.66,_especially in speech and vision, and has been applied to text data as well. _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,167,746.66,750.82,_So, for example, recently there has work on using deep learning to do _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,168,750.82,754.33,segment analysis to achieve better accuracy. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,169,754.33,758.32,_So that's one example of [INAUDIBLE] techniques that we weren't able to cover, _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,170,758.32,760.05,but that's also very important. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,171,761.39,765.4,And the other area that has emerged in status learning is the water and 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,172,765.4,770.72,_baring technique, where they can learn better recognition of words. _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,173,770.72,775.21,And then these better recognitions will allow you confuse similarity of words. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,174,775.21,775.82,_As you can see, _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,175,775.82,781.23,this provides directly a way to discover the paradigmatic relations of words. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,176,781.23,786.6,_And results that people have got, so far, are very impressive. _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,177,786.6,790.36,_That's another promising technique that we did not have time to touch, _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,178,792.51,796.29,_but, of course, whether these new techniques _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,179,796.29,800.97,would lead to practical useful techniques that work much better than the current 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,180,800.97,805.172,technologies is still an open question that has to be examined. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,181,805.172,808.0,And no serious evaluation has been done yet. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,182,808.0,812.31,_In, for example, examining the practical value of word embedding, _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,183,812.31,814.99,other than word similarity and basic evaluation. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,184,816.71,819.65,_But nevertheless, these are advanced techniques _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,185,819.65,823.52,that surely will make impact in text mining in the future. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,186,823.52,826.86,So its very important to know more about these. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,187,826.86,830.78,Statistical learning is also the key to predictive modeling which is very crucial 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,188,830.78,835.18,for many big data applications and we did not talk about that predictive modeling 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,189,835.18,839.994,component but this is mostly about the regression or categorization 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,190,839.994,845.05,techniques and this is another reason why statistical learning is important. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,191,847.35,851.73,_We also suggest that you learn more about data mining, and that's simply because _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,192,851.73,856.61,_general data mining algorithms can always be applied to text data, which can be _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,193,856.61,861.66,regarded as as special case of general data. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,194,863.52,866.03,So there are many applications of data mining techniques. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,195,866.03,870.51,_In particular for example, pattern discovery would be very useful to generate _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,196,870.51,875.86,the interesting features for test analysis and the reason that an information network 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,197,875.86,880.94,that mining techniques can also be used to analyze text information at work. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,198,882.36,884.98,So these are all good to know. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,199,884.98,889.05,In order to develop effective text analysis techniques. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,200,889.05,892.86,_And finally, we also recommend you to learn more about the text retrieval, _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,201,892.86,895.93,_information retrieval, of search engines. _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,202,895.93,900.403,This is especially important if you are interested in building practical text 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,203,900.403,902.75,application systems. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,204,902.75,905.95,And a search ending would be an essential system 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,205,905.95,908.632,component in any text-based applications. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,206,908.632,913.91,And that's because texts data are created for humans to consume. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,207,913.91,919.33,So humans are at the best position to understand text data and 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,208,919.33,924.91,_it's important to have human in the loop in big text data applications, so _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,209,924.91,929.87,it can in particular help text mining systems in two ways. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,210,929.87,935.099,One is through effectively reduce the data size from a large collection to 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,211,935.099,940.158,a small collection with the most relevant text data that only matter for 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,212,940.158,942.627,the particular interpretation. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,213,942.627,947.901,_So the other is to provide a way to annotate it, to explain parents, _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,214,947.901,951.521,and this has to do with knowledge providence. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,215,951.521,954.853,_Once we discover some knowledge, we have to figure out whether or _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,216,954.853,957.37,not the discovery is really reliable. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,217,957.37,960.0,So we need to go back to the original text to verify that. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,218,960.0,962.38,And that is why the search engine is very important. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,219,964.07,968.04,_Moreover, some techniques of information retrieval, _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,220,968.04,973.38,_for example BM25, vector space and are also very useful for text data mining. _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,221,973.38,976.4,_We only mention some of them, but if you know more about _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,222,976.4,980.5,text retrieval you'll see that there are many techniques that are used for it. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,223,980.5,985.03,Another technique that it's used for is indexing technique that enables quick 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,224,985.03,988.45,_response of search engine to a user's query, and such techniques can be _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,225,988.45,992.15,very useful for building efficient text mining systems as well. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,226,995.16,999.83,_So, finally, I want to remind you of this big picture for _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,227,999.83,1003.9,harnessing big text data that I showed you at your beginning of the semester. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,228,1005.35,1008.97,_So in general, to deal with a big text application system, _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,229,1008.97,1011.76,_we need two kinds text, text retrieval and text mining. _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,230,1013.38,1018.04,_And text retrieval, as I explained, is to help convert big text data into _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,231,1018.04,1022.93,_a small amount of most relevant data for a particular problem, and can also help _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,232,1022.93,1027.24,_providing knowledge provenance, help interpreting patterns later. _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,233,1027.24,1032.06,Text mining has to do with further analyzing the relevant data to discover 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,234,1032.06,1036.46,the actionable knowledge that can be directly useful for decision making or 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,235,1036.46,1038.51,many other tasks. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,236,1038.51,1040.53,So this course covers text mining. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,237,1040.53,1044.02,And there's a companion course called Text Retrieval and 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,238,1044.02,1047.13,Search Engines that covers text retrieval. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,239,1047.13,1052.04,_If you haven't taken that course, it would be useful for you to take it, _
+5 - 11 - 4.11 Course Summary (00-18-36).srt,240,1052.04,1057.49,especially if you are interested in building a text caching system. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,241,1057.49,1062.138,And taking both courses will give you a complete set of practical skills for 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,242,1062.138,1063.708,building such a system. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,243,1063.708,1069.25,So in [INAUDIBLE] I just would like to thank you for 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,244,1069.25,1071.05,taking this course. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,245,1071.05,1077.915,I hope you have learned useful knowledge and skills in test mining and [INAUDIBLE]. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,246,1077.915,1082.185,As you see from our discussions there are a lot of opportunities for 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,247,1082.185,1086.235,this kind of techniques and there are also a lot of open channels. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,248,1086.235,1090.91,So I hope you can use what you have learned to build a lot of use for 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,249,1090.91,1095.55,applications will benefit society and to also join 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,250,1095.55,1100.759,the research community to discover new techniques for text mining and benefits. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,251,1100.759,1101.259,Thank you. 
+5 - 11 - 4.11 Course Summary (00-18-36).srt,252,1101.259,1111.259,[MUSIC] 

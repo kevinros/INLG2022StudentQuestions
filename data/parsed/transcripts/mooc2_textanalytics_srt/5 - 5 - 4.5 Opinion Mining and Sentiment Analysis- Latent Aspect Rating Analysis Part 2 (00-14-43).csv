@@ -1,0 +1,216 @@
+name,id,from,to,text
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,1,0.025,5.3629999999999995,[SOUND] This lecture is a continued 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,2,5.3629999999999995,12.997,discussion of Latent Aspect Rating Analysis. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,3,12.997,18.44,_Earlier, we talked about how to solve the problem of LARA in two stages. _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,4,18.44,22.44,But we first do segmentation of different aspects. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,5,22.44,26.856,And then we use a latent regression model to learn the aspect ratings and 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,6,26.856,28.334,then later the weight. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,7,28.334,33.372,Now it's also possible to develop a unified generative model for 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,8,33.372,35.478,_solving this problem, and _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,9,35.478,41.36,that is we not only model the generational over-rating based on text. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,10,41.36,45.03,_We also model the generation of text, and so _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,11,45.03,47.41,a natural solution would be to use topic model. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,12,47.41,49.35,_So given the entity, _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,13,49.35,54.7,we can assume there are aspects that are described by word distributions. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,14,54.7,55.83,Topics. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,15,55.83,60.55,And then we an use a topic model to model the generation of the reviewed text. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,16,61.592,67.045,I will assume words in the review text are drawn from these distributions. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,17,68.475,72.265,In the same way as we assumed for generating model like PRSA. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,18,73.605,78.47,And then we can then plug in the latent regression model to 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,19,78.47,83.71000000000001,use the text to further predict the overrating. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,20,83.71000000000001,86.22,And that means when we first predict the aspect rating and 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,21,86.22,90.52,then combine them with aspect weights to predict the overall rating. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,22,90.52,94.28,_So this would give us a unified generated model, _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,23,94.28,99.87,where we model both the generation of text and the overall ready condition on text. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,24,100.91,106.15,So we don't have time to discuss this model in detail as in 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,25,106.15,111.99000000000001,_many other cases in this part of the cause where we discuss the cutting edge topics, _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,26,111.99000000000001,115.94,but there's a reference site here where you can find more details. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,27,117.13,120.07,So now I'm going to show you some simple results that you can get 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,28,120.07,122.76,by using these kind of generated models. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,29,122.76,125.45,_First, it's about rating decomposition. _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,30,125.45,129.07,_So here, what you see are the decomposed ratings for _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,31,129.07,133.1,three hotels that have the same overall rating. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,32,133.1,135.57,_So if you just look at the overall rating, _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,33,135.57,138.98,you can't really tell much difference between these hotels. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,34,138.98,144.27,But by decomposing these ratings into aspect ratings 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,35,144.27,148.559,_we can see some hotels have higher ratings for some dimensions, _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,36,148.559,153.57999999999998,_like value, but others might score better in other dimensions, like location. _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,37,153.57999999999998,157.68,And so this can give you detailed opinions at the aspect level. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,38,158.75,162.94,_Now here, the ground-truth is shown in the parenthesis, so _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,39,162.94,166.53,it also allows you to see whether the prediction is accurate. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,40,166.53,172.49,It's not always accurate but It's mostly still reflecting some of the trends. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,41,173.49,178.88,The second result you compare different reviewers on the same hotel. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,42,178.88,185.49,So the table shows the decomposed ratings for two reviewers about same hotel. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,43,185.49,188.47,Again their high level overall ratings are the same. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,44,188.47,193.44,_So if you just look at the overall ratings, you don't really get that much _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,45,193.44,195.73,information about the difference between the two reviewers. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,46,195.73,197.36,_But after you decompose the ratings, _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,47,197.36,201.87,you can see clearly that they have high scores on different dimensions. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,48,201.87,206.03,So this shows that model can review differences in opinions of different 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,49,206.03,210.26,reviewers and such a detailed understanding can help us understand 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,50,210.26,215.96,better about reviewers and also better about their feedback on the hotel. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,51,215.96,218.42000000000002,_This is something very interesting, _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,52,218.42000000000002,220.8,because this is in some sense some byproduct. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,53,220.8,223.9,_In our problem formulation, we did not really have to do this. _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,54,223.9,227.77,But the design of the generating model has this component. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,55,227.77,232.93,And these are sentimental weights for words in different aspects. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,56,232.93,238.75,And you can see the highly weighted words versus the negatively loaded weighted 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,57,238.75,241.19,words here for each of the four dimensions. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,58,241.19,245.31,_Value, rooms, location, and cleanliness. _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,59,245.31,248.99,_The top words clearly make sense, and the bottom words also make sense. _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,60,250.23,252.54,_So this shows that with this approach, _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,61,252.54,256.3,we can also learn sentiment information directly from the data. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,62,256.3,261.41,_Now, this kind of lexicon is very useful because in general, a word like long, _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,63,261.41,266.24,_let's say, may have different sentiment polarities for different context. _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,64,266.24,271.27,_So if I say the battery life of this laptop is long, then that's positive. _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,65,271.27,276.44,_But if I say the rebooting time for the laptop is long, that's bad, right? _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,66,276.44,280.21,_So even for reviews about the same product, laptop, _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,67,280.21,286.01,_the word long is ambiguous, it could mean positive or it could mean negative. _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,68,286.01,290.5,_But this kind of lexicon, that we can learn by using this kind of generated _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,69,290.5,295.81,_models, can show whether a word is positive for a particular aspect. _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,70,295.81,301.59,_So this is clearly very useful, and in fact such a lexicon can be directly used _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,71,301.59,304.81,to tag other reviews about hotels or 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,72,304.81,307.89,tag comments about hotels in social media like Tweets. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,73,308.91,315.03,_And what's also interesting is that since this is almost completely unsupervised, _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,74,315.03,320.45,well assuming the reviews whose overall rating are available And 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,75,320.45,324.4,then this can allow us to learn form potentially larger amount of data on 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,76,324.4,327.07,the internet to reach sentiment lexicon. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,77,328.19,331.53,And here are some results to validate the preference words. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,78,331.53,336.165,Remember the model can infer wether a reviewer cares more about service or 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,79,336.165,337.55,the price. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,80,337.55,341.38,Now how do we know whether the inferred weights are correct? 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,81,341.38,345.5,And this poses a very difficult challenge for evaluation. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,82,345.5,349.48,Now here we show some interesting way of evaluating. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,83,350.84000000000003,355.03,_What you see here are the prices of hotels in different cities, and _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,84,355.03,361.01,these are the prices of hotels that are favored by different groups of reviewers. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,85,361.01,364.4,The top ten are the reviewers was the highest 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,86,364.4,368.46,inferred value to other aspect ratio. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,87,369.6,373.84,_So for example value versus location, value versus room, etcetera. _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,88,373.84,380.11,Now the top ten of the reviewers that have the highest ratios by this measure. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,89,380.11,383.21,And that means these reviewers tend to put a lot of 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,90,383.21,386.12,weight on value as compared with other dimensions. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,91,386.12,388.76,So that means they really emphasize on value. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,92,390.43,392.95,The bottom ten on the other hand of the reviewers. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,93,392.95,394.61,_The lowest ratio, what does that mean? _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,94,394.61,399.42,Well it means these reviewers have put higher weights on other aspects 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,95,399.42,401.11,than value. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,96,401.11,406.74,So those are people that cared about another dimension and they didn't care so 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,97,406.74,411.45,_much the value in some sense, at least as compared with the top ten group. _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,98,412.47,416.61,Now these ratios are computer based on the inferred weights from the model. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,99,417.82,422.02,So now you can see the average prices of hotels favored by top ten reviewers 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,100,422.02,427.36,are indeed much cheaper than those that are favored by the bottom ten. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,101,427.36,434.72,And this provides some indirect way of validating the inferred weights. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,102,434.72,436.95,It just means the weights are not random. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,103,436.95,439.43,They are actually meaningful here. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,104,439.43,442.57,_In comparison, the average price in these three cities, _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,105,442.57,446.94,_you can actually see the top ten tend to have below average in price, _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,106,446.94,450.78,_whereas the bottom half, where they care a lot about other things like a service or _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,107,450.78,456.87,room condition tend to have hotels that have higher prices than average. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,108,456.87,460.59000000000003,So with these results we can build a lot of interesting applications. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,109,460.59000000000003,465.098,_For example, a direct application would be to generate the rated aspect, the summary, _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,110,465.098,468.92,and because of the decomposition we have now generated the summaries for 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,111,468.92,469.97,each aspect. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,112,469.97,474.05,The positive sentences the negative sentences about each aspect. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,113,474.05,477.75,It's more informative than original review that just has an overall rating and 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,114,477.75,478.28,review text. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,115,478.28,481.94,Here are some other results 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,116,481.94,486.99,about the aspects that's covered from reviews with no ratings. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,117,486.99,488.81,_These are mp3 reviews, _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,118,488.81,493.91,and these results show that the model can discover some interesting aspects. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,119,493.91,498.32,Commented on low overall ratings versus those higher overall per ratings. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,120,498.32,501.55,And they care more about the different aspects. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,121,502.59,505.79,Or they comment more on the different aspects. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,122,505.79,509.796,_So that can help us discover for example, consumers' _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,123,509.796,514.46,trend in appreciating different features of products. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,124,514.46,519.98,_For example, one might have discovered the trend that people tend to _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,125,519.98,525.55,_like larger screens of cell phones or light weight of laptop, etcetera. _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,126,525.55,529.96,Such knowledge can be useful for 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,127,529.96,536.15,manufacturers to design their next generation of products. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,128,536.15,541.02,Here are some interesting results on analyzing users rating behavior. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,129,541.02,544.65,So what you see is average weights 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,130,544.65,549.47,along different dimensions by different groups of reviewers. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,131,549.47,556.95,And on the left side you see the weights of viewers that like the expensive hotels. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,132,556.95,561.0,_They gave the expensive hotels 5 Stars, and _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,133,561.0,564.81,you can see their average rates tend to be more for some service. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,134,564.81,569.52,_And that suggests that people like expensive hotels because of good service, _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,135,569.52,570.99,and that's not surprising. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,136,570.99,573.62,That's also another way to validate it by inferred weights. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,137,574.8,580.33,_If you look at the right side where, look at the column of 5 Stars. _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,138,580.33,583.46,_These are the reviewers that like the cheaper hotels, and _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,139,583.46,585.77,they gave cheaper hotels five stars. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,140,585.77,588.6,_As we expected and they put more weight on value, _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,141,588.6,591.11,and that's why they like the cheaper hotels. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,142,592.57,596.77,_But if you look at the, when they didn't like expensive hotels, or cheaper hotels, _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,143,596.77,600.6,then you'll see that they tended to have more weights on the condition of 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,144,600.6,603.07,the room cleanness. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,145,604.21,608.84,_So this shows that by using this model, we can infer some _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,146,608.84,613.9,information that's very hard to obtain even if you read all the reviews. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,147,613.9,618.74,Even if you read all the reviews it's very hard to infer such preferences or 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,148,618.74,620.89,such emphasis. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,149,620.89,624.45,So this is a case where text mining algorithms can go beyond what 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,150,624.45,627.44,_humans can do, to review interesting patterns in the data. _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,151,627.44,629.9,And this of course can be very useful. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,152,629.9,632.34,_You can compare different hotels, _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,153,632.34,637.55,_compare the opinions from different consumer groups, in different locations. _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,154,637.55,639.43,_And of course, the model is general. _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,155,639.43,643.27,It can be applied to any reviews with overall ratings. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,156,643.27,645.87,So this is a very useful technique that can 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,157,645.87,647.97,support a lot of text mining applications. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,158,650.25,654.83,Finally the results of applying this model for personalized ranking or 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,159,654.83,656.09,recommendation of entities. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,160,657.79,662.27,_So because we can infer the reviewers weights on different dimensions, _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,161,662.27,666.24,we can allow a user to actually say what do you care about. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,162,666.24,669.55,_So for example, I have a query here that shows 90% of the weight _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,163,669.55,672.93,should be on value and 10% on others. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,164,672.93,675.18,So that just means I don't care about other aspect. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,165,675.18,677.62,I just care about getting a cheaper hotel. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,166,677.62,681.45,My emphasis is on the value dimension. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,167,681.45,686.31,Now what we can do with such query is we can use reviewers that we 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,168,686.31,691.0,believe have a similar preference to recommend a hotels for you. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,169,691.0,691.86,How can we know that? 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,170,691.86,696.525,_Well, we can infer the weights of those reviewers on different aspects. _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,171,696.525,700.325,_We can find the reviewers whose weights are more precise, _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,172,700.325,703.795,of course inferred rates are similar to yours. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,173,703.795,706.885,And then use those reviewers to recommend hotels for you and 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,174,706.885,711.212,this is what we call personalized or rather query specific recommendations. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,175,711.212,716.03,_Now the non-personalized recommendations now shown on the top, _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,176,716.03,721.87,_and you can see the top results generally have much higher price, than the lower _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,177,721.87,726.25,group and that's because when the reviewer's cared more about the value as 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,178,726.25,732.76,dictated by this query they tended to really favor low price hotels. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,179,732.76,736.86,So this is yet another application of this technique. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,180,738.28,742.22,It shows that by doing text mining we can understand the users better. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,181,742.22,745.57,And once we can handle users better we can solve these users better. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,182,745.57,748.79,_So to summarize our discussion of opinion mining in general, _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,183,748.79,751.65,this is a very important topic and with a lot of applications. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,184,753.22,757.78,And as a text sentiment analysis can be readily done by 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,185,757.78,759.28,using just text categorization. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,186,759.28,761.43,But standard technique tends to not be enough. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,187,761.43,764.02,And so we need to have enriched feature implementation. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,188,765.02,768.41,And we also need to consider the order of those categories. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,189,768.41,772.63,And we'll talk about ordinal regression for some of these problem. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,190,772.63,775.58,We have also assume that the generating models are powerful for 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,191,775.58,777.11,mining latent user preferences. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,192,777.11,782.12,This in particular in the generative model for mining latent regression. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,193,782.12,785.56,And we embed some interesting preference information and 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,194,785.56,789.66,send the weights of words in the model as a result we can learn most 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,195,789.66,793.82,useful information when fitting the model to the data. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,196,793.82,796.96,Now most approaches have been proposed and evaluated. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,197,796.96,801.91,_For product reviews, and that was because in such a context, the opinion holder and _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,198,801.91,803.79,the opinion target are clear. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,199,803.79,806.22,And they are easy to analyze. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,200,806.22,809.71,_And there, of course, also have a lot of practical applications. _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,201,809.71,815.8,_But opinion mining from news and social media is also important, but that's _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,202,815.8,820.98,_more difficult than analyzing review data, mainly because the opinion holders and _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,203,820.98,825.22,opinion targets are all interested. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,204,825.22,826.61,So that calls for 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,205,826.61,829.79,natural management processing techniques to uncover them accurately. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,206,830.99,833.39,Here are some suggested readings. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,207,833.39,839.79,_The first two are small books that are of some use of this topic, _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,208,839.79,844.37,where you can find a lot of discussion about other variations of the problem and 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,209,844.37,847.05,techniques proposed for solving the problem. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,210,848.28,852.43,The next two papers about generating models for 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,211,852.43,854.33,rating the aspect rating analysis. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,212,854.33,858.456,_The first one is about solving the problem using two stages, and _
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,213,858.456,863.194,the second one is about a unified model where the topic model is integrated 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,214,863.194,867.726,with the regression model to solve the problem using a unified model. 
+5 - 5 - 4.5 Opinion Mining and Sentiment Analysis- Latent Aspect Rating Analysis Part 2 (00-14-43).srt,215,870.977,880.977,[MUSIC] 

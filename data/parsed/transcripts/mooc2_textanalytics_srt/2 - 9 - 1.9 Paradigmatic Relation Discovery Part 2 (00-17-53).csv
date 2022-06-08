@@ -1,0 +1,244 @@
+name,id,from,to,text
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,1,0.025,6.397,[SOUND] In this lecture we continue discussing 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,2,6.397,11.6,Paradigmatic Relation Discovery. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,3,11.6,17.15,Earlier we introduced a method called Expected Overlap of Words in Context. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,4,17.15,22.03,In this method we represent each context by a word of vector 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,5,22.03,26.62,that represents the probability of a word in the context. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,6,26.62,32.88,And we measure the similarity by using the dot product which can be interpreted as 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,7,32.88,38.88,the probability that two randomly picked words from the two contexts are identical. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,8,38.88,42.91,We also discussed the two problems of this method. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,9,42.91,47.09,The first is that it favors matching one frequent term 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,10,47.09,49.79,very well over matching more distinct terms. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,11,51.03,54.64,It put too much emphasis on matching one term very well. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,12,55.84,59.68,The second is that it treats every word equally. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,13,61.09,65.69,Even a common word like the would contribute equally 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,14,65.69,69.31,as content word like eats. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,15,69.31,74.08,So now we are going to talk about how to solve this problems. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,16,74.08,78.24,More specifically we're going to introduce some retrieval heuristics 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,17,78.24,83.21000000000001,used in text retrieval and these heuristics can effectively solve these 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,18,83.21000000000001,88.43,problems as these problems also occur in text retrieval when we match a query 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,19,88.43,93.2,_with a document, so to address the first problem, _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,20,93.2,96.72999999999999,we can use a sublinear transformation of term frequency. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,21,96.72999999999999,101.19,_That is, we don't have to use raw frequency count of the term to represent _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,22,101.19,102.45,the context. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,23,102.45,107.24000000000001,We can transform it into some form that wouldn't emphasize so much on the raw 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,24,107.24000000000001,113.42,_frequency to address the problem, we can put more weight on rare terms. _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,25,113.42,115.69,_And that is, we ran reward a matching a rare word. _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,26,115.69,121.4,And this heuristic is called IDF term weighting in text retrieval. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,27,121.4,124.28,IDF stands for inverse document frequency. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,28,125.96,130.54,So now we're going to talk about the two heuristics in more detail. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,29,130.54,134.31,_First, let's talk about the TF transformation. _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,30,134.31,139.87,_That is, it'll convert the raw count of a word in the document into some weight _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,31,139.87,145.5,that reflects our belief about how important this wording. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,32,145.5,146.21,The document. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,33,147.77,151.805,_And so, that would be denoted by TF of w and d. _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,34,151.805,156.91,That's shown in the Y axis. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,35,156.91,160.24,_Now, in general, there are many ways to map that. _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,36,160.24,163.45,And let's first look at the the simple way of mapping. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,37,164.92000000000002,171.82,_In this case, we're going to say, well, any non zero counts will be mapped to one. _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,38,173.25,175.81,And the zero count will be mapped to zero. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,39,175.81,181.23,_So with this mapping, all the frequencies will be mapped to only two values, _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,40,181.23,183.01,zero or one. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,41,183.01,187.694,And the mapping function is 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,42,187.694,193.0,shown here as a flat line here. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,43,193.0,197.4,_This is naive because in order the frequency of words, however, _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,44,197.4,201.4,_this actually has advantage of emphasizing, _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,45,203.01,206.0,matching all the words in the context. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,46,206.0,211.13,It does not allow a frequent word to dominate the match now 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,47,211.13,216.92000000000002,the approach that we have taken earlier in the overlap account approach 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,48,216.92000000000002,222.22,is a linear transformation we basically take y as the same as x so 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,49,222.22,225.958,we use the raw count as a representation and 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,50,225.958,229.68,that created the problem that we just talked about. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,51,229.68,235.36,_Namely, it emphasizes too much on matching one frequent term. _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,52,235.36,239.97,Matching one frequent term can contribute a lot. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,53,241.3,245.51,We can have a lot of other interesting transformations in between 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,54,245.51,247.39,the two extremes. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,55,247.39,250.13,And they generally form a sub linear transformation. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,56,251.18,256.36,_So for example, one a logarithm of the row count. _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,57,256.36,260.64,And this will give us curve that looks like this that you are seeing here. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,58,261.97,265.4,_In this case, you can see the high frequency counts. _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,59,265.4,269.7,_The high counts are penalized a little bit all right, _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,60,269.7,272.0,so the curve is a sub linear curve. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,61,272.0,277.40999999999997,And it brings down the weight of those really high counts. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,62,277.40999999999997,282.5,And this what we want because it prevents 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,63,282.5,286.335,that kind of terms from dominating the scoring function. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,64,289.745,294.105,_Now, there is also another interesting transformation called a BM25 _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,65,294.105,300.3,_transformation, which as been shown to be very effective for retrieval. _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,66,300.3,307.58,And in this transformation we have a form that looks like this. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,67,307.58,311.87,_So it's k plus one multiplies by x, divided by x plus k. _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,68,311.87,313.15,Where k is a parameter. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,69,314.6,316.66,X is the count. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,70,316.66,318.15,The raw count of a word. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,71,319.33,324.1,_Now the transformation is very interesting, in that it can actually _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,72,324.1,329.13,_kind of go from one extreme to the other extreme by varying k, _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,73,331.19,337.59000000000003,_and it also is interesting that it has upper bound, k + 1 in this case. _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,74,337.59000000000003,343.11,_So, this puts a very strict constraint on high frequency terms, _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,75,343.11,346.87,because their weight will never exceed k + 1. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,76,346.87,351.1,_As we vary k, we can simulate the two extremes. _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,77,351.1,354.471,_So, when is set to zero, we roughly have the zero one vector. _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,78,356.29,359.11,_Whereas, when we set the k to a very large value, _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,79,359.11,361.48,_it will behave more like, immediate transformation. _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,80,362.79,367.72,So this transformation function is by far the most effective transformation function 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,81,367.72,374.735,_for tax and retrieval, and it also makes sense for our problem set up. _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,82,374.735,379.365,_So we just talked about how to solve the problem of overemphasizing a frequently, _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,83,379.365,381.045,a frequently tongue. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,84,381.045,386.075,_Now let's look at the second problem, and that is how we can penalize popular terms, _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,85,387.235,390.865,matching the is not surprising because the occurs everywhere. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,86,390.865,395.495,But matching eats would count a lot so how can we address that problem. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,87,395.495,398.039,In this case we can use the IDF weight. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,88,399.06,402.29,Pop that's commonly used in retrieval. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,89,402.29,405.32,IDF stands for inverse document frequency. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,90,405.32,408.63,Now frequency means the count of 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,91,408.63,411.45,the total number of documents that contain a particular word. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,92,413.0,419.18,So here we show that the IDF measure is defined as a logarithm function 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,93,419.18,424.25,of the number of documents that match a term or document frequency. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,94,425.92,429.83,_So, k is the number of documents containing a word, or document frequency. _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,95,430.86,433.909,And M here is the total number of documents in the collection. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,96,435.27,440.19,The IDF function is giving a higher value for 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,97,440.19,445.44,_a lower k, meaning that it rewards a rare term, and _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,98,445.44,448.552,the maximum value is log of M+1. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,99,448.552,456.64,_That's when the word occurred just once in the context, so that's a very rare term. _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,100,457.76,460.01,The rarest term in the whole collection. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,101,461.52,468.318,_The lowest value you can see here is when K reaches its maximum, which would be M. _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,102,468.318,472.81,_All right so, that would be a very low value, _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,103,475.12,479.34000000000003,close to zero in fact. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,104,479.34000000000003,484.66,_So, this of course measure is used in search. _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,105,484.66,486.28,Where we naturally have a collection. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,106,487.29,490.19,_In our case, what would be our collection? _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,107,490.19,494.03,_Well, we can also use the context that we had collected for _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,108,494.03,496.94,all the words as our collection. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,109,496.94,501.609,_And that is to say, a word that's populating the collection in general. _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,110,502.61,507.87,Would also have a low IDF because depending 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,111,507.87,515.45,on the dataset we can Construct the context vectors in the different ways. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,112,515.45,521.25,_But in the end, if a term is very frequently original data set. _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,113,521.25,526.201,Then it will still be frequenting the collective context documents. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,114,528.617,533.507,So how can we add these heuristics to improve our 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,115,533.507,538.04,similarity function well here's one way. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,116,538.04,541.16,And there are many other ways that are possible. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,117,541.16,542.71,But this is a reasonable way. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,118,542.71,546.25,Where we can adapt the BM25 retrieval model for 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,119,546.25,550.765,paradigmatic relation mining. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,120,550.765,555.08,_So here, we define, _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,121,555.08,560.05,in this case we define the document vector as 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,122,560.05,565.42,containing elements representing normalized BM25 values. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,123,567.59,574.826,_So in this normalization function, we see, we take a sum over, sum of all the words. _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,124,574.826,580.355,And we normalize the weight 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,125,580.355,587.475,of each word by the sum of the weights of all the words. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,126,588.795,594.255,_And this is to, again, ensure all the xi's will sum to 1 in this vector. _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,127,594.255,597.925,_So this would be very similar to what we had before, _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,128,597.925,604.55,in that this vector is actually something similar to a word distribution. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,129,604.55,608.02,Or the xis with sum to 1. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,130,608.02,612.4,Now the weight of BM25 for each word is defined here. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,131,615.27,620.98,And if you compare this with our old definition where we just have a normalized 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,132,620.98,624.87,_count, of this one so we only have this one and _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,133,624.87,629.14,the document lens of the total counts of words. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,134,629.14,633.69,Being that context document and that's what we had before. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,135,633.69,637.56,_But now with the BM25 transformation, we're introduced to something else. _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,136,639.07,643.582,_First off, because this extra occurrence of this count is just to achieve _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,137,643.582,645.559,the of normalization. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,138,646.62,649.32,But we also see we introduced the parameter k here. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,139,650.9,657.96,And this parameter is generally non active number although zero is also possible. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,140,659.77,664.56,This controls the upper bound and the kind of all 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,141,665.81,671.835,to what extent it simulates the linear transformation. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,142,671.835,678.36,_And so this is one parameter, but we also see there was another parameter here, B. _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,143,678.36,680.47,And this would be within 0 an 1. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,144,680.47,684.61,And this is a parameter to control length] normalization. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,145,685.62,691.26,_And in this case, the normalization formula has average document length here. _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,146,692.3,696.18,And this is computed by taking the average of 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,147,697.31,700.01,the lengths of all the documents in the collection. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,148,700.01,703.56,_In this case, all the lengths of all the context documents. _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,149,703.56,704.51,That we are considering. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,150,706.25,710.68,So this average document will be a constant for any given collection. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,151,710.68,715.87,So it actually is only affecting the factor of 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,152,715.87,720.549,the parameter b here because this is a constant. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,153,721.89,728.71,But I kept it here because it's constant and that's useful 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,154,728.71,735.08,in retrieval where it would give us a stabilized interpretation of parameter B. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,155,735.08,737.8,_But, for our purpose it would be a constant. _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,156,737.8,742.374,So it would only be affecting the length 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,157,742.374,747.51,normalization together with parameter b. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,158,750.51,757.97,_Now with this definition then, we have a new way to define our document of vectors. _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,159,757.97,762.08,And we can compute the vector d2 in the same way. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,160,762.08,765.82,The difference is that the high frequency terms will now have a somewhat 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,161,765.82,766.39,lower weight. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,162,766.39,774.08,And this would help us control the influence of these high frequency terms. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,163,774.08,778.28,_Now, the idea can be added here in the scoring function. _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,164,778.28,782.43,That means we will introduce a way for matching each time. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,165,782.43,786.21,_You may recall, this is sum that indicates _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,166,786.21,791.56,all the possible words that can be overlapped between the two contacts. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,167,791.56,795.88,And the Xi and the Yi are probabilities 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,168,797.82,800.73,_of picking the word from both context, therefore, _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,169,800.73,805.17,it indicates how likely we'll see a match on this word. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,170,805.17,809.62,_Now, IDF would give us the importance of matching this word. _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,171,809.62,813.85,_A common word will be worth less than a rare word, and so _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,172,813.85,817.1,we emphasize more on matching rare words now. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,173,817.1,820.58,_So, with this modification, then the new function. _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,174,820.58,823.59,When likely to address those two problems. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,175,823.59,824.51,_Now interestingly, _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,176,824.51,828.93,we can also use this approach to discover syntagmatical relations. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,177,830.27,837.14,_In general, when we represent a term vector to replant _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,178,837.14,841.93,_a context with a term vector we would likely see, _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,179,841.93,846.38,_some terms have higher weights, and other terms have lower weights. _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,180,846.38,849.68,_Depending on how we assign weights to these terms, _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,181,849.68,852.91,we might be able to use these weights to discover 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,182,852.91,857.826,the words that are strongly associated with a candidate of word in the context. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,183,858.91,862.79,It's interesting that we can also use this context for 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,184,862.79,867.47,similarity function based on BM25 to discover syntagmatic relations. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,185,868.49,874.17,_So, the idea is to use the converted implantation of the context. _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,186,874.17,877.31,To see which terms are scored high. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,187,877.31,879.5,_And if a term has high weight, _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,188,879.5,884.53,then that term might be more strongly related to the candidate word. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,189,885.69,889.71,So let's take a look at the vector in more detail here. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,190,889.71,893.888,And we have 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,191,893.888,899.385,each Xi defined as a normalized weight of BM25. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,192,901.185,907.28,Now this weight alone only reflects how frequent the word occurs in the context. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,193,908.35,912.45,_But, we can't just say an infrequent term in the context would be _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,194,912.45,914.43,correlated with the candidate word 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,195,915.99,920.209,because many common words like the will occur frequently out of context. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,196,922.09,927.715,_But if we apply IDF weighting as you see here, _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,197,927.715,934.06,we can then re weigh these terms based on IDF. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,198,934.06,938.76,_That means the words that are common, like the, will get penalized. _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,199,938.76,943.72,so now the highest weighted terms will not be those common terms because they have 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,200,943.72,945.29,lower IDFs. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,201,945.29,951.02,_Instead, those terms would be the terms that are frequently in the context but _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,202,951.02,952.86,not frequent in the collection. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,203,952.86,957.41,So those are clearly the words that tend to occur in the context 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,204,957.41,960.76,_of the candidate word, for example, cat. _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,205,960.76,965.95,_So, for this reason, the highly weighted terms in this idea of weighted vector _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,206,967.0,972.78,can also be assumed to be candidates for syntagmatic relations. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,207,972.78,977.28,_Now, of course, this is only a byproduct of how approach is for _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,208,977.28,979.369,discovering parathmatic relations. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,209,980.42,982.269,_And in the next lecture, _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,210,982.269,987.656,we're going to talk more about how to discover syntagmatic relations. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,211,989.817,995.92,But it clearly shows the relation between discovering the two relations. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,212,995.92,998.22,And indeed they can be discussed. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,213,998.22,1003.504,Discovered in a joined manner by leveraging 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,214,1003.504,1008.502,_such associations, namely syntactical _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,215,1008.502,1013.928,_relation words that are similar in, _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,216,1013.928,1018.64,yeah it also shows the relation between 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,217,1018.64,1023.068,syntagmatic relation discovery and 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,218,1023.068,1028.94,the paradgratical relations discovery. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,219,1028.94,1032.27,We may be able to leverage the relation to 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,220,1034.21,1037.36,join the discovery of two kinds of relations. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,221,1038.41,1042.06,This also shows some interesting connections between the discovery of 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,222,1042.06,1046.08,syntagmatic relation and the paradigmatic relation. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,223,1048.62,1054.27,Specifically those words that are paradigmatic related tend to be 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,224,1056.16,1060.24,having a syntagmatic relation with the same word. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,225,1063.64,1069.57,So to summarize the main idea of what is covering paradigmatic relations 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,226,1069.57,1074.76,_is to collect the context of a candidate word to form a pseudo document, _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,227,1074.76,1078.78,and this is typically represented as a bag of words. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,228,1078.78,1082.9,And then compute similarity of the corresponding context documents 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,229,1082.9,1084.21,of two candidate words. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,230,1085.63,1091.18,And then we can take the highly similar word pairs and 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,231,1091.18,1094.449,treat them as having paradigmatic relations. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,232,1095.45,1097.45,These are the words that share similar contexts. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,233,1098.64,1103.399,_There are many different ways to implement this general idea, _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,234,1103.399,1107.348,_and we just talked about some of the approaches, and _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,235,1107.348,1112.647,more specifically we talked about using text retrieval models to help 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,236,1112.647,1118.979,us design effective similarity function to compute the paradigmatic relations. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,237,1121.404,1126.128,More specifically we have used the BM25 and 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,238,1126.128,1132.05,IDF weighting to discover paradigmatic relation. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,239,1132.05,1136.07,And these approaches also represent the state of the art. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,240,1136.07,1138.23,In text retrieval techniques. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,241,1138.23,1142.421,_Finally, syntagmatic relations can also be discovered as a by _
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,242,1142.421,1145.909,product when we discover paradigmatic relations. 
+2 - 9 - 1.9 Paradigmatic Relation Discovery Part 2 (00-17-53).srt,243,1145.909,1155.909,[MUSIC] 

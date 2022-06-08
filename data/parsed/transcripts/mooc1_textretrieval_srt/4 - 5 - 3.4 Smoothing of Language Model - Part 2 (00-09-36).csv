@@ -1,0 +1,134 @@
+name,id,from,to,text
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,1,0.006,3.503,[SOUND] 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,2,12.503,16.409,_So, I showed you how we rewrite the into _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,3,16.409,21.64,_a form that looks like a, the formula on this slide. _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,4,21.64,26.39,After we make the assumption about smoothing the language model 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,5,27.54,30.476,based on the collection of the language model. 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,6,30.476,36.16,_Now, if we look at the, this rewriting, it actually would give us two benefits. _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,7,36.16,42.47,_The first benefit is, it helps us better understand that this ranking function. _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,8,42.47,47.55,_In particular, we're going to show that from this formula we can see smoothing is _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,9,47.55,51.47,the correction that we model will give us something like a TF-IDF weighting and 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,10,51.47,52.22,length normalization. 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,11,52.22,57.58,The second benefit is that it also allows us to 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,12,57.58,61.1,compute the query likelihood more efficiently. 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,13,62.94,63.59,_In particular, _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,14,63.59,67.87,we see that the main part of the formula is a sum over the matching query terms. 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,15,69.61,74.91,_So, this is much better than if we take the sum over all the words. _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,16,74.91,76.92,_After we smooth the document the language model, _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,17,76.92,81.4,we essentially have nonzero probabilities for all the words. 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,18,81.4,85.76,_So, this new form of the formula is much easier to score, or to compute. _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,19,87.58,91.59,It's also interesting to note that the last of term here 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,20,91.59,94.42,is actually independent of the document. 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,21,94.42,96.63,Since our goal is to rank the documents for 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,22,96.63,100.61,_the same query, we can ignore this term for ranking. _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,23,100.61,103.64,Because it's going to be the same for all the documents. 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,24,103.64,106.68,Ignoring it wouldn't effect the order of the documents. 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,25,109.07,114.78,_Inside the sum, we also see that each matched _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,26,114.78,119.75999999999999,query term would contribute a weight. 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,27,119.75999999999999,121.98,_And this weight actually, _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,28,121.98,127.07,is very interesting because it looks like TF-IDF weighting. 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,29,127.07,131.79,_First, we can already see it has a frequency of the word in the query, _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,30,131.79,134.25,just like in the vector space model. 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,31,134.25,136.24,_When we take adult product, _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,32,136.24,140.97,we see the word frequency in the query to show up in such a sum. 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,33,142.25,145.67000000000002,_And so naturally, this part will correspond to _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,34,145.67000000000002,150.34,the vector element from the document vector. 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,35,150.34,154.17000000000002,_And here, indeed, we can see it actually _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,36,155.42000000000002,159.972,encodes a weight that has similar factor to TF-IDF weighting. 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,37,161.35,163.13,I let you examine it. 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,38,163.13,163.67000000000002,Can you see it? 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,39,163.67000000000002,169.49,_Can you see which part is capturing TF, and which part is capturing IDF weighting? _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,40,169.49,174.63,_So if you want, you can pause the video to think more about it. _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,41,175.82999999999998,182.64,_So, have you noticed that this p sub-seen is related to the term frequency _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,42,182.64,188.24,_in the sense that if a word occurs very frequently in the document, _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,43,188.24,190.97,then the S probability here will tend to be larger. 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,44,190.97,191.98,Right? 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,45,191.98,196.66,_So, this means this term is really doing something like TF weighting. _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,46,198.13,202.07999999999998,Have you also noticed that this time in the denominator 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,47,203.31,206.09,is actually achieving the factor of IDF? 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,48,206.09,209.24,Why? Because this is the popularity of the term 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,49,209.24,213.3,_in the collection, but it's in the denominator. _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,50,213.3,217.11,_So, if the probability in the collection is larger _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,51,217.11,219.7,than the weight is actually smaller. 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,52,219.7,221.79,_And, this means a popular term. _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,53,221.79,223.29,We actually have a smaller weight. 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,54,223.29,225.99,_And, this is precisely what IDF weighting is doing. _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,55,227.04,230.37,_Only not, we now have a different form of TF and IDF. _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,56,231.55,236.05,_Remember, IDF has a log, logarithm of document frequency, but _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,57,236.05,238.28,here we have something different. 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,58,238.28,242.46,_But intuitively, it achieves a similar effect. _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,59,242.46,245.73,_Interestingly, we also have something related to the length normalization. _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,60,245.73,254.421,_Again, can you see which factor is related to the length in this formula. _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,61,254.421,258.35,_Well, I just say that, that this term is related to IDF weighting. _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,62,259.51,263.57,_This, this collection probability. _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,63,263.57,266.29,_But, it turns out this term here _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,64,266.29,268.548,is actually related to a document length normalization. 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,65,268.548,275.1,_In particular, D might be related to document N, length. _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,66,275.1,280.48,_So, it, it encodes how much probability mass we want to give to unseen words. _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,67,281.88,283.69,How much smoothing you are allowed to do. 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,68,283.69,288.68,_Intuitively, if a document is long, then we need to do less smoothing. _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,69,288.68,290.97,_Because we can assume that it is large enough that, _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,70,290.97,295.72,we have probably observed all of the words that the author could have written. 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,71,295.72,300.26,_But if the document is short, the unseen are expected to be to be large, _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,72,300.26,302.33,and we need to do more smoothing. 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,73,302.33,306.218,It's like that there are words that have not been retained yet by the author. 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,74,306.218,312.049,_So, this term appears to paralyze long documents _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,75,312.049,318.125,_tend to be longer than, larger than for long document. _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,76,318.125,321.83,But note that the also occurs here. 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,77,322.94,326.95,_And so, this may not actually be necessary, _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,78,326.95,330.6,_penalizing long documents, and in fact is not so clear here. _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,79,331.93,336.56,_But as we will see later, when we consider some specific smoothing methods, _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,80,336.56,340.07,it turns out that they do penalize long documents. 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,81,340.07,342.5,Just like in TF-IDF weighting and 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,82,342.5,345.89,the document ends formulas in the vector space model. 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,83,347.49,350.67,_So, that's a very interesting observation because it means _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,84,350.67,354.87,we don't even have to think about the specific way of doing smoothing. 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,85,354.87,359.90999999999997,_We just need to assume that if we smooth with this language model, _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,86,359.90999999999997,365.57,then we would have a formula that looks like a TF-IDF weighting and 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,87,365.57,366.71,document length normalization. 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,88,368.22,373.14,What's also interesting that we have a very fixed form of the ranking function. 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,89,374.17,377.97,_And see, we have not heuristically put a logarithm here. _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,90,379.31,383.16,_In fact, if you can think about, why we would have a logarithm here? _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,91,383.16,386.97,_If you look at the assumptions that we have made, it will be clear. _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,92,386.97,392.23,It's because we have used a logarithm of query likelihood for scoring. 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,93,393.68,397.96,_And, we turned the product into a sum of logarithm of probability. _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,94,397.96,399.239,_And, that's why we have this logarithm. _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,95,400.47,404.73,Note that if we only want to heuristically implement a TF weighting and 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,96,404.73,408.82,_IDF weighting, we don't necessarily have to have a logarithm here. _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,97,408.82,413.69,_Imagine if we drop this logarithm, we would still have TF and IDF weighting. _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,98,415.01,417.8,_But, what's nice with probabilistic modeling is that we _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,99,417.8,421.95,are automatically given a logarithm function here. 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,100,421.95,424.25,_And, that's basically, _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,101,424.25,429.82,a fixed reform of the formula that we did not really have to hueristically line. 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,102,429.82,434.5,_And in this case, if you try to drop this logarithm _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,103,434.5,439.41,_the model probably won't, won't work as well as if you keep the logarithm. _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,104,439.41,444.31,_So, a nice property of probabilistic modeling is that by following some _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,105,444.31,448.42,_assumptions and the probability rules, we'll get a formula automatically. _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,106,449.42,453.39,_And, the formula would have a particular form, like in this case. _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,107,454.6,456.74,_And, if we hueristically design the formula, _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,108,456.74,460.42,we may not necessarily end up having such a specific form. 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,109,461.7,466.93,_So to summarize, we talked about the need for smoothing a document and model. _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,110,466.93,471.27,_Otherwise, it would give zero probability for unseen words in the document. _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,111,472.35,477.63,_And, that's not good for scoring a query with such an unseen word. _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,112,479.37,482.6,_It's also necessary, in general, to improve the acc, _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,113,482.6,488.51,accuracy of estimating the model representing the topic of this document. 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,114,490.26,496.806,The general idea of smoothing in retrieval is to use the connection language model 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,115,496.806,502.76,to give us some clue about which unseen word would have a higher probability. 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,116,502.76,506.85,That is the probability of the unseen word is assumed to be proportional 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,117,506.85,508.34,to its probability in the collection. 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,118,509.6,514.34,_With this assumption, we've shown that we can derive a general ranking formula for _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,119,514.34,515.89,query likelihood. 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,120,515.89,519.96,That has a fact of TF-IDF waiting and document length normalization. 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,121,519.96,524.79,_We also see that through some rewriting, the scoring of such ranking function, _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,122,524.79,528.39,_is primarily based on sum of weights on matched query terms, _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,123,528.39,530.53,just like in the vector space model. 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,124,530.53,535.85,_But, the actual ranking function is given us automatically by _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,125,535.85,539.01,the probability rules and assumptions we have made. 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,126,539.01,540.59,_Unlike in the vector space model, _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,127,540.59,544.58,where we have to heuristically think about the form of the function. 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,128,544.58,548.47,_However, we still need to address the question, _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,129,548.47,551.83,how exactly we should we should smooth a document image model? 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,130,551.83,555.964,How exactly we should use the reference language model based on 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,131,555.964,560.568,the connection to adjusting the probability of the maximum. 
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,132,560.568,562.8389999999999,_And, this is the topic of the next to that. _
+4 - 5 - 3.4 Smoothing of Language Model - Part 2 (00-09-36).srt,133,562.8389999999999,572.8389999999999,[MUSIC] 

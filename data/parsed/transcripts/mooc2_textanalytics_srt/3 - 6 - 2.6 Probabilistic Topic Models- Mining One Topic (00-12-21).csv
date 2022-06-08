@@ -1,0 +1,154 @@
+name,id,from,to,text
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,1,0.025,5.683,[SOUND] This lecture is a continued 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,2,5.683,13.37,discussion of probabilistic topic models. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,3,13.37,19.99,_In this lecture, we're going to continue discussing probabilistic models. _
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,4,19.99,24.97,We're going to talk about a very simple case where we 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,5,24.97,28.3,are interested in just mining one topic from one document. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,6,30.88,35.91,_So in this simple setup, we are interested in analyzing _
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,7,35.91,41.06,one document and trying to discover just one topic. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,8,41.06,44.81,So this is the simplest case of topic model. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,9,44.81,49.921,_The input now no longer has k, which is the number of topics because we _
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,10,49.921,55.67,_know there is only one topic and the collection has only one document, also. _
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,11,55.67,60.738,_In the output, we also no longer have coverage because _
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,12,60.738,66.15,we assumed that the document covers this topic 100%. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,13,66.15,70.532,So the main goal is just to discover the world of probabilities for 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,14,70.532,72.93,_this single topic, as shown here. _
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,15,74.77,79.275,_As always, when we think about using a generating model to solve such a problem, _
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,16,79.275,84.28,we start with thinking about what kind of data we are going to model or 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,17,84.28,88.88,from what perspective we're going to model the data or data representation. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,18,88.88,92.268,And then we're going to design a specific model for 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,19,92.268,96.52000000000001,_the generating of the data, from our perspective. _
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,20,96.52000000000001,101.31,Where our perspective just means we want to take a particular angle of looking at 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,21,101.31,105.7,_the data, so that the model will have the right parameters for _
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,22,105.7,108.77000000000001,discovering the knowledge that we want. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,23,108.77000000000001,114.21000000000001,And then we'll be thinking about the microfunction or 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,24,114.21000000000001,120.48,write down the microfunction to capture more formally how likely 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,25,120.48,124.86,a data point will be obtained from this model. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,26,125.9,130.37,And the likelihood function will have some parameters in the function. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,27,130.37,135.78,_And then we argue our interest in estimating those parameters for example, _
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,28,135.78,141.68,by maximizing the likelihood which will lead to maximum likelihood estimated. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,29,141.68,146.71,These estimator parameters will then become the output 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,30,146.71,151.64,_of the mining hours, which means we'll take the estimating _
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,31,151.64,155.32,parameters as the knowledge that we discover from the text. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,32,155.32,159.69,So let's look at these steps for this very simple case. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,33,159.69,165.97,Later we'll look at this procedure for some more complicated cases. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,34,165.97,170.17000000000002,_So our data, in this case is, just a document which is a sequence of words. _
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,35,170.17000000000002,172.52,Each word here is denoted by x sub i. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,36,172.52,176.8,Our model is a Unigram language model. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,37,176.8,183.42,A word distribution that we hope to denote a topic and that's our goal. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,38,183.42,188.95,_So we will have as many parameters as many words in our vocabulary, in this case M. _
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,39,189.95,194.58,And for convenience we're going to use theta sub i to 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,40,194.58,198.27,denote the probability of word w sub i. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,41,200.45,203.38400000000001,And obviously these theta sub i's will sum to 1. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,42,204.48,207.11,Now what does a likelihood function look like? 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,43,207.11,210.97,_Well, this is just the probability of generating this whole document, _
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,44,210.97,211.948,that given such a model. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,45,211.948,216.92000000000002,Because we assume the independence in generating each word so the probability of 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,46,216.92000000000002,221.01,the document will be just a product of the probability of each word. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,47,222.79,226.9,And since some word might have repeated occurrences. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,48,226.9,231.07,So we can also rewrite this product in a different form. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,49,232.57999999999998,238.55,_So in this line, we have rewritten the formula into a product _
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,50,238.55,245.36,_over all the unique words in the vocabulary, w sub 1 through w sub M. _
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,51,245.36,249.17,Now this is different from the previous line. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,52,249.17,253.99,_Well, the product is over different positions of words in the document. _
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,53,255.04,259.694,_Now when we do this transformation, we then would need to _
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,54,259.694,264.12,introduce a counter function here. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,55,264.12,269.395,This denotes the count of word one in document and 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,56,269.395,273.39,similarly this is the count of words of n in the document 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,57,273.39,277.89,because these words might have repeated occurrences. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,58,277.89,280.459,You can also see if a word did not occur in the document. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,59,281.81,286.79,_It will have a zero count, therefore that corresponding term will disappear. _
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,60,286.79,290.40999999999997,So this is a very useful form of 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,61,290.40999999999997,295.06,writing down the likelihood function that we will often use later. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,62,295.06,301.23,_So I want you to pay attention to this, just get familiar with this notation. _
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,63,301.23,307.12,It's just to change the product over all the different words in the vocabulary. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,64,307.12,312.013,_So in the end, of course, we'll use theta sub i to express this likelihood _
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,65,312.013,314.512,function and it would look like this. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,66,314.512,319.468,_Next, we're going to find the theta values or probabilities _
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,67,319.468,324.53,of these words that would maximize this likelihood function. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,68,324.53,330.539,So now lets take a look at the maximum likelihood estimate problem more closely. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,69,332.52,335.87,This line is copied from the previous slide. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,70,335.87,337.34000000000003,It's just our likelihood function. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,71,338.59000000000003,343.95,So our goal is to maximize this likelihood function. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,72,343.95,346.21,We will find it often easy to 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,73,347.31,351.11,maximize the local likelihood instead of the original likelihood. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,74,351.11,356.531,And this is purely for mathematical convenience because after 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,75,356.531,363.698,the logarithm transformation our function will becomes a sum instead of product. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,76,363.698,370.704,And we also have constraints over these these probabilities. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,77,370.704,376.743,_The sum makes it easier to take derivative, which is often needed for _
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,78,376.743,381.022,finding the optimal solution of this function. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,79,381.022,387.349,_So please take a look at this sum again, here. _
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,80,387.349,392.43399999999997,And this is a form of a function that you will often 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,81,392.43399999999997,398.43,_see later also, the more general topic models. _
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,82,398.43,402.34000000000003,So it's a sum over all the words in the vocabulary. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,83,402.34000000000003,408.105,And inside the sum there is a count of a word in the document. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,84,408.105,414.98,And this is macroed by the logarithm of a probability. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,85,415.99,417.92,So let's see how we can solve this problem. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,86,418.92,424.03,Now at this point the problem is purely a mathematical problem because we are going 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,87,424.03,431.36,to just the find the optimal solution of a constrained maximization problem. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,88,431.36,434.694,The objective function is the likelihood function and 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,89,434.694,438.621,the constraint is that all these probabilities must sum to one. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,90,438.621,443.234,_So, one way to solve the problem is to use Lagrange multiplier approace. _
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,91,444.52,449.04,Now this command is beyond the scope of this course but 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,92,449.04,453.67,_since Lagrange multiplier is a very useful approach, I also would like _
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,93,453.67,457.94,_to just give a brief introduction to this, for those of you who are interested. _
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,94,459.72,463.85699999999997,_So in this approach we will construct a Lagrange function, here. _
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,95,463.85699999999997,469.887,And this function will combine our objective function 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,96,469.887,475.392,with another term that encodes our constraint and 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,97,475.392,479.98,_we introduce Lagrange multiplier here, _
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,98,479.98,484.978,_lambda, so it's an additional parameter. _
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,99,484.978,490.432,_Now, the idea of this approach is just to turn the constraint optimization into, _
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,100,490.432,494.8,_in some sense, an unconstrained optimizing problem. _
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,101,494.8,498.318,Now we are just interested in optimizing this Lagrange function. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,102,499.46,504.022,_As you may recall from calculus, an optimal point _
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,103,504.022,509.91,would be achieved when the derivative is set to zero. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,104,509.91,511.673,This is a necessary condition. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,105,511.673,513.182,_It's not sufficient, though. _
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,106,513.182,518.205,_So if we do that you will see the partial derivative, _
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,107,518.205,522.785,_with respect to theta i here ,is equal to this. _
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,108,522.785,530.815,And this part comes from the derivative of the logarithm function and 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,109,530.815,535.39,this lambda is simply taken from here. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,110,535.39,540.178,And when we set it to zero we can 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,111,540.178,545.61,easily see theta sub i is related to lambda in this way. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,112,546.82,549.9,Since we know all the theta i's must a sum to one 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,113,549.9,552.423,_we can plug this into this constraint, here. _
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,114,552.423,555.6,And this will allow us to solve for lambda. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,115,556.63,560.84,And this is just a net sum of all the counts. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,116,560.84,567.35,_And this further allows us to then solve the optimization problem, _
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,117,567.35,571.38,_eventually, to find the optimal setting for theta sub i. _
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,118,571.38,577.28,And if you look at this formula it turns out that it's actually very intuitive 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,119,577.28,583.0889999999999,_because this is just the normalized count of these words by the document ns, _
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,120,583.0889999999999,587.751,which is also a sum of all the counts of words in the document. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,121,587.751,592.157,_So, after all this mess, after all, _
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,122,592.157,599.044,we have just obtained something that's very intuitive and 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,123,599.044,604.415,this will be just our intuition where we want to 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,124,604.415,610.338,maximize the data by assigning as much probability 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,125,610.338,616.419,mass as possible to all the observed the words here. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,126,616.419,621.408,And you might also notice that this is the general result of maximum likelihood 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,127,621.408,623.45,raised estimator. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,128,623.45,629.333,_In general, the estimator would be to normalize counts and it's just sometimes _
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,129,629.333,635.05,_the counts have to be done in a particular way, as you will also see later. _
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,130,635.05,641.73,So this is basically an analytical solution to our optimization problem. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,131,641.73,646.303,_In general though, when the likelihood function is very complicated, we're not _
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,132,646.303,650.919,going to be able to solve the optimization problem by having a closed form formula. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,133,650.919,655.134,Instead we have to use some numerical algorithms and 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,134,655.134,658.787,_we're going to see such cases later, also. _
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,135,658.787,662.385,So if you imagine what would we get if we use such a maximum 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,136,662.385,667.146,likelihood estimator to estimate one topic for a single document d here? 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,137,667.146,669.903,Let's imagine this document is a text mining paper. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,138,669.903,676.277,_Now, what you might see is something that looks like this. _
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,139,676.277,680.555,_On the top, you will see the high probability words tend to be those very _
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,140,680.555,683.71,_common words, often functional words in English. _
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,141,683.71,687.742,And this will be followed by some content words that really 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,142,687.742,691.622,_characterize the topic well like text, mining, etc. _
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,143,691.622,696.275,_And then in the end, you also see there is more probability of _
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,144,696.275,700.017,words that are not really related to the topic but 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,145,700.017,704.32,they might be extraneously mentioned in the document. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,146,704.32,709.59,_As a topic representation, you will see this is not ideal, right? _
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,147,709.59,712.452,_That because the high probability words are functional words, _
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,148,712.452,715.31,they are not really characterizing the topic. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,149,715.31,718.28,So my question is how can we get rid of such common words? 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,150,719.72,722.68,Now this is the topic of the next module. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,151,722.68,726.913,We're going to talk about how to use probabilistic models to somehow get rid of 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,152,726.913,728.077,these common words. 
+3 - 6 - 2.6 Probabilistic Topic Models- Mining One Topic (00-12-21).srt,153,728.077,738.077,[MUSIC] 

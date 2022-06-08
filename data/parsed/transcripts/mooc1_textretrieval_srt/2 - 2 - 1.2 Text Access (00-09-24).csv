@@ -1,0 +1,133 @@
+name,id,from,to,text
+2 - 2 - 1.2 Text Access (00-09-24).srt,1,8.45,14.319,_[SOUND] In this lecture, we're going to talk about text access. _
+2 - 2 - 1.2 Text Access (00-09-24).srt,2,14.319,17.92,_In the previously lecture, we talked about natural language content analysis. _
+2 - 2 - 1.2 Text Access (00-09-24).srt,3,19.36,23.97,We explained that the state of the art natural language processing techniques 
+2 - 2 - 1.2 Text Access (00-09-24).srt,4,23.97,28.97,are still not good enough to process a lot of unrestricted text data 
+2 - 2 - 1.2 Text Access (00-09-24).srt,5,28.97,30.55,in a robust manner. 
+2 - 2 - 1.2 Text Access (00-09-24).srt,6,30.55,33.74,_As a result, bag of words representation _
+2 - 2 - 1.2 Text Access (00-09-24).srt,7,33.74,37.246,remains very popular in applications like search engines. 
+2 - 2 - 1.2 Text Access (00-09-24).srt,8,39.14,43.21,In this lecture we're going to talk about some high level strategies 
+2 - 2 - 1.2 Text Access (00-09-24).srt,9,43.21,48.13,to help users get access to the text data. 
+2 - 2 - 1.2 Text Access (00-09-24).srt,10,48.13,53.35,_This is also important step to convert raw, big text data into small _
+2 - 2 - 1.2 Text Access (00-09-24).srt,11,53.35,59.52,relevant data that are actually needed in a specific application. 
+2 - 2 - 1.2 Text Access (00-09-24).srt,12,59.52,64.4,_So the main question we address here is, how can a text information system _
+2 - 2 - 1.2 Text Access (00-09-24).srt,13,64.4,67.45,help users get access to the relevant text data? 
+2 - 2 - 1.2 Text Access (00-09-24).srt,14,67.45,71.53999999999999,_We're going to cover two complementary strategies, push vs pull. _
+2 - 2 - 1.2 Text Access (00-09-24).srt,15,72.61,77.268,_And then we're going to talk about two ways to implement the pull mode, _
+2 - 2 - 1.2 Text Access (00-09-24).srt,16,77.268,79.07,querying vs browsing. 
+2 - 2 - 1.2 Text Access (00-09-24).srt,17,80.77,82.86,_So first, push vs pull. _
+2 - 2 - 1.2 Text Access (00-09-24).srt,18,84.51,89.25,These are two different ways to connect users with the right information 
+2 - 2 - 1.2 Text Access (00-09-24).srt,19,89.25,89.9,at the right time. 
+2 - 2 - 1.2 Text Access (00-09-24).srt,20,91.18,95.91,_The difference is which takes the initiative, _
+2 - 2 - 1.2 Text Access (00-09-24).srt,21,97.22999999999999,98.74000000000001,which party it takes in the initiative. 
+2 - 2 - 1.2 Text Access (00-09-24).srt,22,100.28999999999999,101.38,_In the pull mode, _
+2 - 2 - 1.2 Text Access (00-09-24).srt,23,101.38,106.439,the users would take the initiative to start the information access process. 
+2 - 2 - 1.2 Text Access (00-09-24).srt,24,107.7,113.42,_And in this case, a user typically would use a search engine to fulfill the goal. _
+2 - 2 - 1.2 Text Access (00-09-24).srt,25,113.42,117.142,_For example, the user may type in a query, and _
+2 - 2 - 1.2 Text Access (00-09-24).srt,26,117.142,121.64,then browse results to find the relevant information. 
+2 - 2 - 1.2 Text Access (00-09-24).srt,27,122.76,125.796,So this is usually appropriate for 
+2 - 2 - 1.2 Text Access (00-09-24).srt,28,125.796,129.995,satisfying a user's ad hoc information need. 
+2 - 2 - 1.2 Text Access (00-09-24).srt,29,129.995,134.28,An ad hoc information need is a temporary information need. 
+2 - 2 - 1.2 Text Access (00-09-24).srt,30,134.28,137.86,_For example, you want to buy a product so _
+2 - 2 - 1.2 Text Access (00-09-24).srt,31,137.86,142.55,you suddenly have a need to read reviews about related products. 
+2 - 2 - 1.2 Text Access (00-09-24).srt,32,142.55,144.65,_But after you have collected information, _
+2 - 2 - 1.2 Text Access (00-09-24).srt,33,144.65,148.77,_you have purchased your product, you generally no longer need such information. _
+2 - 2 - 1.2 Text Access (00-09-24).srt,34,148.77,150.2,So it's a temporary information need. 
+2 - 2 - 1.2 Text Access (00-09-24).srt,35,151.36,155.22,_In such a case, it's very hard for a system to predict your need, and _
+2 - 2 - 1.2 Text Access (00-09-24).srt,36,155.22,159.37,it's more appropriate for the users to take the initiative. 
+2 - 2 - 1.2 Text Access (00-09-24).srt,37,159.37,162.57999999999998,_And that's why search engines are very useful today, _
+2 - 2 - 1.2 Text Access (00-09-24).srt,38,162.57999999999998,168.37,because many people have many ad hoc information needs all the time. 
+2 - 2 - 1.2 Text Access (00-09-24).srt,39,168.37,172.73,_So as we are speaking Google probably is processing many queries from this, and _
+2 - 2 - 1.2 Text Access (00-09-24).srt,40,172.73,176.62,_those are all, or mostly ad hoc information needs. _
+2 - 2 - 1.2 Text Access (00-09-24).srt,41,177.95,179.68,So this is a pull mode. 
+2 - 2 - 1.2 Text Access (00-09-24).srt,42,179.68,183.57,_In contrast, in the push mode the system will take the initiative _
+2 - 2 - 1.2 Text Access (00-09-24).srt,43,183.57,187.51,to push the information to the user or to recommend the information to the user. 
+2 - 2 - 1.2 Text Access (00-09-24).srt,44,187.51,191.09,_So in this case, this is usually supported by a recommender system. _
+2 - 2 - 1.2 Text Access (00-09-24).srt,45,193.1,197.9,Now this would be appropriate if the user has a stable information need. 
+2 - 2 - 1.2 Text Access (00-09-24).srt,46,197.9,202.05,_For example, you may have a research interest in some topic, and _
+2 - 2 - 1.2 Text Access (00-09-24).srt,47,202.05,206.88,_that interest tends to stay for a while, so it's relatively stable. _
+2 - 2 - 1.2 Text Access (00-09-24).srt,48,206.88,211.21,Your hobby is another example of a stable information need. 
+2 - 2 - 1.2 Text Access (00-09-24).srt,49,211.21,216.11,_In such a case, the system can interact with you and can learn your interest, and _
+2 - 2 - 1.2 Text Access (00-09-24).srt,50,216.11,218.85,then can monitor the information stream. 
+2 - 2 - 1.2 Text Access (00-09-24).srt,51,218.85,223.71,_If it is, the system hasn't seen any relevant items to your interest, _
+2 - 2 - 1.2 Text Access (00-09-24).srt,52,223.71,227.9,the system could then take the initiative to recommend information to you. 
+2 - 2 - 1.2 Text Access (00-09-24).srt,53,227.9,229.629,_So for example, a news filter or _
+2 - 2 - 1.2 Text Access (00-09-24).srt,54,229.629,232.767,news recommender system could monitor the news stream and 
+2 - 2 - 1.2 Text Access (00-09-24).srt,55,232.767,236.88,_identify interest in news to you, and simply push the news articles to you. _
+2 - 2 - 1.2 Text Access (00-09-24).srt,56,239.13,243.43,This mode of information access may be also appropriate when 
+2 - 2 - 1.2 Text Access (00-09-24).srt,57,243.43,246.46,the system has a good knowledge about the user's need. 
+2 - 2 - 1.2 Text Access (00-09-24).srt,58,246.46,248.79,And this happens in the search context. 
+2 - 2 - 1.2 Text Access (00-09-24).srt,59,248.79,252.89,_So for example, when you search for information on the web a search _
+2 - 2 - 1.2 Text Access (00-09-24).srt,60,252.89,257.53,engine might infer you might be also interested in some related information. 
+2 - 2 - 1.2 Text Access (00-09-24).srt,61,257.53,259.55,And they would recommend the information to you. 
+2 - 2 - 1.2 Text Access (00-09-24).srt,62,259.55,264.88,_So that should remind you for example, advertisement placed on a search page. _
+2 - 2 - 1.2 Text Access (00-09-24).srt,63,267.79,274.53,_So this is about the, the two high level strategies or two modes of text access. _
+2 - 2 - 1.2 Text Access (00-09-24).srt,64,275.72,278.45,Now let's look at the pull mode in more detail. 
+2 - 2 - 1.2 Text Access (00-09-24).srt,65,279.9,283.86,_In the pull mode, we can further this in usually two ways to help users, _
+2 - 2 - 1.2 Text Access (00-09-24).srt,66,283.86,286.01,querying vs browsing. 
+2 - 2 - 1.2 Text Access (00-09-24).srt,67,286.01,290.05,_In querying, a user would just enter a query, typically a keyword query, and _
+2 - 2 - 1.2 Text Access (00-09-24).srt,68,290.05,294.49,the search engine system would return relevant documents to users. 
+2 - 2 - 1.2 Text Access (00-09-24).srt,69,294.49,298.569,_And this works well when the user knows what exactly key, _
+2 - 2 - 1.2 Text Access (00-09-24).srt,70,298.569,300.71,are the keywords to be used. 
+2 - 2 - 1.2 Text Access (00-09-24).srt,71,300.71,302.47,So if you know exactly what you're looking for 
+2 - 2 - 1.2 Text Access (00-09-24).srt,72,302.47,306.74,_you tend to know the right keywords, and then query would work very well. _
+2 - 2 - 1.2 Text Access (00-09-24).srt,73,306.74,307.87,And we do that all the time. 
+2 - 2 - 1.2 Text Access (00-09-24).srt,74,309.29,312.38,But we also know that sometimes it doesn't work so 
+2 - 2 - 1.2 Text Access (00-09-24).srt,75,312.38,316.96,_well, when you don't know the right keywords to use in the query or _
+2 - 2 - 1.2 Text Access (00-09-24).srt,76,316.96,321.78,you want to browse information in some topic area. 
+2 - 2 - 1.2 Text Access (00-09-24).srt,77,321.78,324.78,In this case browsing would be more useful. 
+2 - 2 - 1.2 Text Access (00-09-24).srt,78,324.78,329.9,So in this case in the case of browsing the users would simply navigate 
+2 - 2 - 1.2 Text Access (00-09-24).srt,79,329.9,333.33,into the relevant information by following the path that's 
+2 - 2 - 1.2 Text Access (00-09-24).srt,80,334.74,339.87,supported by the structures on the documents. 
+2 - 2 - 1.2 Text Access (00-09-24).srt,81,339.87,342.72,_So the system would maintain some kind of structures, and _
+2 - 2 - 1.2 Text Access (00-09-24).srt,82,342.72,347.36,then the user could follow these structures to navigate. 
+2 - 2 - 1.2 Text Access (00-09-24).srt,83,347.36,353.699,So this strategy works well when the user wants to explore information space or 
+2 - 2 - 1.2 Text Access (00-09-24).srt,84,353.699,359.75,the user doesn't know what are the keywords to use in the query. 
+2 - 2 - 1.2 Text Access (00-09-24).srt,85,359.75,365.08,_Or simply because the user, finds it inconvenient to type in the query. _
+2 - 2 - 1.2 Text Access (00-09-24).srt,86,365.08,370.45,_So even if a user knows what query to type in, if the user is using a cell phone _
+2 - 2 - 1.2 Text Access (00-09-24).srt,87,370.45,374.76,_to search for information, then it's still hard to enter the query. _
+2 - 2 - 1.2 Text Access (00-09-24).srt,88,374.76,378.547,_In such a case again, browsing tends to be more convenient. _
+2 - 2 - 1.2 Text Access (00-09-24).srt,89,378.547,381.41,The relationship between browsing and 
+2 - 2 - 1.2 Text Access (00-09-24).srt,90,381.41,385.23,the query is best understood by making an analogy to sightseeing. 
+2 - 2 - 1.2 Text Access (00-09-24).srt,91,385.23,386.837,Imagine if you are touring a city. 
+2 - 2 - 1.2 Text Access (00-09-24).srt,92,386.837,391.627,_Now if you know the exact address of a attraction, then taking a taxi _
+2 - 2 - 1.2 Text Access (00-09-24).srt,93,391.627,396.682,_there is perhaps the fastest way, you can go directly to the site. _
+2 - 2 - 1.2 Text Access (00-09-24).srt,94,396.682,400.464,_But if you don't know the exact address, you may need to walk around, or _
+2 - 2 - 1.2 Text Access (00-09-24).srt,95,400.464,403.579,_you can take a taxi to a nearby place, and then walk around. _
+2 - 2 - 1.2 Text Access (00-09-24).srt,96,404.67,408.15999999999997,It turns out that we do exactly the same in the information space. 
+2 - 2 - 1.2 Text Access (00-09-24).srt,97,408.15999999999997,411.48,_If you know exactly what you are looking for, then you can _
+2 - 2 - 1.2 Text Access (00-09-24).srt,98,411.48,415.35,use the right keywords in your query to find the information directly. 
+2 - 2 - 1.2 Text Access (00-09-24).srt,99,415.35,418.32,That's usually the fastest way to do find information. 
+2 - 2 - 1.2 Text Access (00-09-24).srt,100,419.48,422.16,But what if you don't know the exact keywords to use? 
+2 - 2 - 1.2 Text Access (00-09-24).srt,101,422.16,426.275,_Well, your query probably won't work so well, and you will land on some related _
+2 - 2 - 1.2 Text Access (00-09-24).srt,102,426.275,429.921,_pages, and then you need to also walk around in the information space. _
+2 - 2 - 1.2 Text Access (00-09-24).srt,103,429.921,433.134,_Meaning by following the links or by browsing, _
+2 - 2 - 1.2 Text Access (00-09-24).srt,104,433.134,436.44,you can then finally get into the relevant page. 
+2 - 2 - 1.2 Text Access (00-09-24).srt,105,437.58,443.28,_If you want to learn about a topic again, you you will likely do a lot of browsing. _
+2 - 2 - 1.2 Text Access (00-09-24).srt,106,444.38,448.05,So just like you are looking around in some area and 
+2 - 2 - 1.2 Text Access (00-09-24).srt,107,448.05,453.35,you want to see some interesting attractions in a related 
+2 - 2 - 1.2 Text Access (00-09-24).srt,108,455.54,459.2,in the same region. 
+2 - 2 - 1.2 Text Access (00-09-24).srt,109,459.2,465.22,So this analogy also tells us that today we have very good support for 
+2 - 2 - 1.2 Text Access (00-09-24).srt,110,465.22,469.52,_querying, but we don't really have good support for browsing. _
+2 - 2 - 1.2 Text Access (00-09-24).srt,111,470.6,476.51,_And this is because in order to browse effectively, we need a a map to guide us, _
+2 - 2 - 1.2 Text Access (00-09-24).srt,112,476.51,480.22,just like you need a map of Chicago to tour the city of Chicago. 
+2 - 2 - 1.2 Text Access (00-09-24).srt,113,480.22,484.06,You need a topical map to tour the information space. 
+2 - 2 - 1.2 Text Access (00-09-24).srt,114,484.06,488.19,So how to construct such a topical map is in fact a very interesting 
+2 - 2 - 1.2 Text Access (00-09-24).srt,115,488.19,492.73,research question that likely will bring us 
+2 - 2 - 1.2 Text Access (00-09-24).srt,116,492.73,496.97,more interesting browsing experience on the web or in other applications. 
+2 - 2 - 1.2 Text Access (00-09-24).srt,117,499.17,503.93,_So to summarize this lecture, we have talked about two high level strategies for _
+2 - 2 - 1.2 Text Access (00-09-24).srt,118,503.93,506.54,_text access, push and pull. _
+2 - 2 - 1.2 Text Access (00-09-24).srt,119,506.54,509.1,Push tends to be supported by a recommender system and 
+2 - 2 - 1.2 Text Access (00-09-24).srt,120,509.1,511.77,pull tends to be supported by a search engine. 
+2 - 2 - 1.2 Text Access (00-09-24).srt,121,511.77,515.73,_Of course in the sophisticated intent in the information system, _
+2 - 2 - 1.2 Text Access (00-09-24).srt,122,515.73,516.78,we should combine the two. 
+2 - 2 - 1.2 Text Access (00-09-24).srt,123,518.59,521.83,In the pull mode we have further distinguished querying and browsing. 
+2 - 2 - 1.2 Text Access (00-09-24).srt,124,521.83,526.612,_Again, we generally want to combine the two ways to help users so _
+2 - 2 - 1.2 Text Access (00-09-24).srt,125,526.612,530.08,that you can support both querying and browsing. 
+2 - 2 - 1.2 Text Access (00-09-24).srt,126,531.21,535.42,If you want to know more about the relationship between pull and 
+2 - 2 - 1.2 Text Access (00-09-24).srt,127,535.42,538.608,_push, you can read this article. _
+2 - 2 - 1.2 Text Access (00-09-24).srt,128,538.608,543.536,This gives a excellent discussion of the relationship between information filtering 
+2 - 2 - 1.2 Text Access (00-09-24).srt,129,543.536,545.231,and information retrieval. 
+2 - 2 - 1.2 Text Access (00-09-24).srt,130,545.231,550.083,_Here information filtering is similar to information recommendation, _
+2 - 2 - 1.2 Text Access (00-09-24).srt,131,550.083,552.753,or the push mode of information access. 
+2 - 2 - 1.2 Text Access (00-09-24).srt,132,552.753,562.753,[MUSIC] 

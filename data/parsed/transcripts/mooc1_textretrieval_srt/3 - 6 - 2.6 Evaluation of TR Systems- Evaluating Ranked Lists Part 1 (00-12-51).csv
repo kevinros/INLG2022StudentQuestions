@@ -1,0 +1,239 @@
+name,id,from,to,text
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,1,0.199,3.699,[MUSIC] 
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,2,7.099,11.07,_This lecture is about, how we can evaluate a ranked list? _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,3,13.29,17.81,_In this lecture, we will continue the discussion of evaluation. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,4,17.81,18.47,_In particular, _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,5,18.47,21.799,_we are going to look at, how we can evaluate a ranked list of results. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,6,24.97,30.41,_In the previous lecture, we talked about, precision-recall. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,7,30.41,33.43,_These are the two basic measures for, _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,8,33.43,38.41,quantitatively measuring the performance of a search result. 
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,9,40.42,44.247,_But, as we talked about, ranking, before, _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,10,44.247,49.42,_we framed that the text of retrieval problem, as a ranking problem. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,11,50.8,55.82,_So, we also need to evaluate the, the quality of a ranked list. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,12,56.91,61.097,_How can we use precision-recall to evaluate, a ranked list? _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,13,61.097,67.18,_Well, naturally, we have to look after the precision-recall at different, cut-offs. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,14,67.18,72.33,_Because in the end, the approximation of relevant documents, set, _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,15,72.33,77.64,_given by a ranked list, is determined by where the user stops browsing. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,16,77.64,81.47,_Right? If we assume the user, securely browses, _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,17,81.47,85.52,_the list of results, the user would, stop at some point, and _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,18,85.52,87.78999999999999,that point would determine the set. 
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,19,87.78999999999999,91.68,_And then, that's the most important, cut-off, _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,20,91.68,95.4,_that we have to consider, when we compute the precision-recall. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,21,95.4,97.99000000000001,_Without knowing where exactly user would stop, _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,22,97.99000000000001,102.38,_then we have to consider, all the positions where the user could stop. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,23,102.38,104.72,_So, let's look at these positions. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,24,104.72,109.02000000000001,_Look at this slide, and then, let's look at the, _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,25,109.02000000000001,111.718,_what if the user stops at the, the first document? _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,26,111.718,115.14,What's the precision-recall at this point? 
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,27,115.14,115.8,What do you think? 
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,28,116.97,122.92,_Well, it's easy to see, that this document is So, the precision is one out of one. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,29,122.92,125.96,_We have, got one document, and that's relevent. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,30,125.96,127.38,What about the recall? 
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,31,127.38,131.99,_Well, note that, we're assuming that, there are ten relevant documents, for _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,32,131.99,134.98,_this query in the collection, so, it's one out of ten. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,33,136.31,138.65,What if the user stops at the second position? 
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,34,139.82,140.32,Top two. 
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,35,141.47,145.82,_Well, the precision is the same, 100%, two out of two. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,36,145.82,147.06,_And, the record is two out of ten. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,37,148.6,151.63,What if the user stops at the third position? 
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,38,151.63,155.98,_Well, this is interesting, because in this case, we have not got any, _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,39,155.98,160.03,_additional relevant document, so, the record does not change. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,40,161.17000000000002,165.6,_But the precision is lower, because we've got number [INAUDIBLE] so, _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,41,165.6,166.68,what's exactly the precision? 
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,42,169.11,172.02,_Well, it's two out of three, right? _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,43,172.02,174.92000000000002,_And, recall is the same, two out of ten. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,44,174.92000000000002,178.93,_So, when would see another point, where the recall would be different? _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,45,178.93,182.473,_Now, if you look down the list, well, it won't happen until, _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,46,182.473,186.11,_we have, seeing another relevant document. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,47,186.11,190.8,_In this case D5, at that point, the, the recall is increased through _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,48,190.8,193.84,_three out of ten, and, the precision is three out of five. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,49,195.15,200.2,_So, you can see, if we keep doing this, we can also get to D8. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,50,200.2,203.78,_And then, we will have a precision of four out of eight, _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,51,203.78,206.15,_because there are eight documents, and four of them are relevant. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,52,206.15,208.2,_And, the recall is a four out of ten. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,53,209.54,213.5,_Now, when can we get, a recall of five out of ten? _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,54,213.5,219.74,_Well, in this list, we don't have it, so, we have to go down on the list. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,55,219.74,220.56,_We don't know, where it is? _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,56,220.56,225.7,_But, as convenience, we often assume that, the precision is zero, _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,57,227.23,231.89,_at all the, the othe, the precision are zero at _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,58,231.89,236.55,_all the other levels of recall, that are beyond the search results. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,59,236.55,239.14,_So, of course, this is a pessimistic assumption, _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,60,239.14,244.04,_the actual position would be higher, but we make, make this assumption, _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,61,245.23,249.39,_in order to, have an easy way to, _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,62,249.39,252.98,_compute another measure called Average Precision, that we will discuss later. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,63,254.3,256.56,_Now, I should also say, now, here you see, _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,64,256.56,261.23,_we make these assumptions that are clearly not, accurate. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,65,262.27,268.95,_But, this is okay, for the purpose of comparing to, text methods. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,66,268.95,274.87,_And, this is for the relative comparison, so, it's okay, if the actual measure, _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,67,274.87,279.56,_or actual, actual number deviates a little bit, from the true number. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,68,279.56,281.97,_As long as the deviation, _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,69,281.97,286.81,_is not biased toward any particular retrieval method, we are okay. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,70,286.81,290.56,_We can still, accurately tell which method works better. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,71,290.56,293.36,_And, this is important point, to keep in mind. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,72,293.36,295.55,_When you compare different algorithms, _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,73,295.55,298.81,the key's to avoid any bias toward each method. 
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,74,298.81,302.13,_And, as long as, you can avoid that. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,75,302.13,306.58,_It's okay, for you to do transformation of these measures anyway, so, _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,76,306.58,307.64,you can preserve the order. 
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,77,309.38,311.17,_Okay, so, we'll just talk about, _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,78,311.17,316.03,we can get a lot of precision-recall numbers at different positions. 
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,79,316.03,319.0,_So, now, you can imagine, we can plot a curve. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,80,319.0,322.389,_And, this just shows on the, x-axis, we show the recalls. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,81,323.61,330.11,_And, on the y-axis, we show the precision. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,82,330.11,335.336,_So, the precision line was marked as .1, .2, .3, and, 1.0. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,83,335.336,335.998,_Right? So, _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,84,335.998,338.618,_this is, the different, levels of recall. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,85,338.618,344.39,_And,, the y-axis also has, different amounts, that's for precision. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,86,345.45,349.15,_So, we plot the, these, precision-recall numbers, that we have got, _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,87,349.15,351.36,as points on this picture. 
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,88,351.36,356.40999999999997,_Now, we can further, and link these points to form a curve. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,89,356.40999999999997,357.29,_As you'll see, _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,90,357.29,362.04,_we assumed all the other, precision as the high-level recalls, be zero. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,91,362.04,368.23199999999997,_And, that's why, they are down here, so, they are all zero. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,92,368.23199999999997,374.98,_And this, the actual curve probably will be something like this, but, as we just _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,93,374.98,379.41,_discussed, it, it doesn't matter that much, for comparing two methods. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,94,380.43,384.6,_because this would be, underestimated, for all the method. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,95,385.95,391.016,_Okay, so, now that we, have this precision-recall curve, _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,96,391.016,394.29,how can we compare ranked to back list? 
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,97,394.29,397.049,_All right, so, that means, we have to compare two PR curves. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,98,398.43,400.88,_And here, we show, two cases. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,99,400.88,407.26,_Where system A is showing red, system B is showing blue, there's crosses. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,100,408.61,410.82,_All right, so, which one is better? _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,101,410.82,414.08,_I hope you can see, where system A is clearly better. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,102,414.08,416.9,_Why? Because, for the same level of recall, _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,103,418.34000000000003,421.5,_see same level of recall here, and you can see, _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,104,421.5,426.8,_the precision point by system A is better, system B. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,105,426.8,428.26,_So, there's no question. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,106,428.26,433.36,_In here, you can imagine, what does the code look like, for ideal search system? _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,107,433.36,437.47,_Well, it has to have perfect, precision at all the recall points, so, _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,108,437.47,438.45,it has to be this line. 
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,109,438.45,441.3,That would be the ideal system. 
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,110,441.3,444.23,_In general, the higher the curve is, the better, right? _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,111,444.23,447.16,_The problem is that, we might see a case like this. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,112,447.16,449.11,This actually happens often. 
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,113,449.11,450.79,_Like, the two curves cross each other. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,114,452.43,454.24,_Now, in this case, which one is better? _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,115,455.3,455.8,What do you think? 
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,116,458.24,461.73,_Now, this is a real problem, that you actually, might have face. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,117,461.73,467.15,_Suppose, you build a search engine, and you have a old algorithm, _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,118,467.15,470.99,_that's shown here in blue, or system B. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,119,470.99,473.58,_And, you have come up with a new idea. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,120,473.58,474.5,_And, you test it. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,121,474.5,478.49,_And, the results are shown in red, curve A. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,122,479.99,484.55,_Now, your question is, is your new method better than the old method? _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,123,485.63,490.51,_Or more, practically, do you have to replace the algorithm that _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,124,490.51,495.41,_you're already using, your, in your search engine, with another, new algorithm? _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,125,495.41,500.76,_So, should we use system, method A, to replace method B? _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,126,500.76,503.25,_This is going to be a real decision, that you to have to make. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,127,503.25,509.43,_If you make the replacement, the search engine would behave like system A here, _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,128,509.43,514.17,_whereas, if you don't do that, it will be like a system B. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,129,514.17,514.77,_So, what do you do? _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,130,516.21,520.58,_Now, if you want to spend more time to think about this, pause the video. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,131,520.58,522.84,_And, it's actually very useful to think about that. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,132,522.84,526.35,_As I said, it's a real decision that you have to make, if you are building your own _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,133,526.35,531.329,_search engine, or if you're working, for a company that, cares about the search. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,134,532.33,534.63,_Now, if you have thought about this for _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,135,534.63,539.63,_a moment, you might realize that, well, in this case, it's hard to say. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,136,539.63,544.615,_Now, some users might like a system A, some users might like, like system B. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,137,544.615,545.895,_So, what's the difference here? _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,138,545.895,548.545,_Well, the difference is just that, you know, _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,139,548.545,554.145,_in the, low level of recall, in this region, system B is better. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,140,554.145,555.845,There's a higher precision. 
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,141,555.845,559.52,_But in high recall region, system A is better. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,142,560.91,564.04,_Now, so, that also means, it depends on whether the user _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,143,564.04,568.63,_cares about the high recall, or low recall, but high precision. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,144,568.63,572.2,_You can imagine, if someone is just going to check out, what's happening today, and _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,145,572.2,573.489,want to find out something relevant in the news. 
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,146,574.75,576.53,_Well, which one is better? _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,147,576.53,577.06,What do you think? 
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,148,578.11,581.51,_In this case, clearly, system B is better, _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,149,581.51,584.92,because the user is unlikely examining a lot of results. 
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,150,584.92,586.5,The user doesn't care about high recall. 
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,151,587.78,590.673,_On the other hand, if you think about a case, _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,152,590.673,594.8,_where a user is doing you are, starting a problem. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,153,594.8,600.32,_You want to find, whether your idea ha, has been started before. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,154,600.32,603.13,_In that case, you emphasize high recall. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,155,603.13,606.63,_So, you want to see, as many relevant documents as possible. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,156,606.63,609.57,_Therefore, you might, favor, system A. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,157,609.57,612.09,_So, that means, which one is better? _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,158,612.09,618.42,_That actually depends on users, and more precisely, users task. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,159,619.52,624.04,_So, this means, you may not necessarily be able to come up with one number, _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,160,625.29,628.81,that would accurately depict the performance. 
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,161,629.86,631.75,You have to look at the overall picture. 
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,162,631.75,635.62,_Yet, as I said, when you have a practical decision to make, _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,163,635.62,638.21,_whether you replace ours with another, _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,164,638.21,644.32,_then you may have to actually come up with a single number, to quantify each, method. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,165,644.32,649.8,_Or, when we compare many different methods in research, ideally, we have _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,166,649.8,654.59,_one number to compare, them with, so, that we can easily make a lot of comparisons. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,167,654.59,660.258,_So, for all these reasons, it is desirable to have one, single number to match it up. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,168,660.258,661.51,_So, how do we do that? _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,169,661.51,665.86,_And, that, needs a number to summarize the range. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,170,665.86,669.56,_So, here again it's the precision-recall curve, right? _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,171,669.56,673.57,_And, one way to summarize this whole ranked, list, for _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,172,673.57,678.09,_this whole curve, is look at the area underneath the curve. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,173,679.33,681.82,_Right? So, this is one way to measure that. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,174,681.82,685.209,_There are other ways to measure that, but, it just turns out that,, _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,175,686.43,691.11,_this particular way of matching it has been very, popular, and _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,176,691.11,696.26,_has been used, since a long time ago for text And, this is, _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,177,696.26,701.14,_basically, in this way, and it's called the average precision. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,178,701.14,706.26,_Basically, we're going to take a, a look at the, every different, recall point. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,179,707.6,709.54,_And then, look out for the precision. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,180,709.54,711.93,_So, we know, you know, this is one precision. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,181,711.93,716.59,_And, this is another, with, different recall. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,182,716.59,719.362,_Now, this, we don't count to this one, _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,183,719.362,724.511,_because the recall level is the same, and we're going to, look at the, _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,184,724.511,730.12,_this number, and that's precision at a different recall level et cetera. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,185,730.12,733.58,_So, we have all these, you know, added up. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,186,733.58,736.18,_These are the precisions at the different points, _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,187,736.18,741.13,_corresponding to retrieving the first relevant document, the second, and _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,188,741.13,745.26,_then, the third, that follows, et cetera. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,189,745.26,749.265,_Now, we missed the many relevant documents, so, in all of those cases, _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,190,749.265,752.38,_we just, assume, that they have zero precisions. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,191,753.54,755.74,_And then, finally, we take the average. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,192,755.74,757.9,_So, we divide it by ten, and _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,193,757.9,760.51,which is the total number of relevant documents in the collection. 
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,194,761.67,766.61,_Note that here, we're not dividing this sum by four. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,195,766.61,769.44,Which is a number retrieved relevant documents. 
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,196,769.44,772.98,_Now, imagine, if I divide by four, what would happen? _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,197,774.37,775.82,_Now, think about this, for a moment. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,198,777.05,781.3,_It's a common mistake that people, sometimes, overlook. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,199,782.72,788.208,_Right, so, if we, we divide this by four, it's actually not very good. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,200,788.208,793.18,_In fact, that you are favoring a system, that would retrieve very few random _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,201,793.18,798.785,_documents, as in that case, the denominator would be very small. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,202,798.785,802.115,_So, this would be, not a good matching. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,203,802.115,805.862,_So, note that this denomina, denominator is ten, _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,204,805.862,809.17,the total number of relevant documents. 
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,205,809.17,813.62,_And, this will basically ,compute the area, and the needs occur. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,206,813.62,820.08,_And, this is the standard method, used for evaluating a ranked list. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,207,821.21,824.86,_Note that, it actually combines recall and, precision. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,208,824.86,829.23,_But first, you know, we have precision numbers here, but secondly, _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,209,829.23,833.24,_we also consider recall, because if missed many, there would be many zeros here. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,210,833.24,837.47,_All right, so, it combines precision and recall. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,211,837.47,842.19,_And furthermore, you can see this measure is sensitive to a small change _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,212,842.19,844.77,of a position of a relevant document. 
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,213,844.77,849.52,_Let's say, if I move this relevant document up a little bit, now, _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,214,849.52,852.67,_it would increase this means, this average precision. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,215,852.67,857.63,_Whereas, if I move any relevant document, down, let's say, I move this relevant _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,216,857.63,863.72,_document down, then it would decrease, uh,the average precision. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,217,863.72,865.266,_So, this is a very good, _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,218,865.266,870.57,because it's a very sensitive to the ranking of every relevant document. 
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,219,870.57,874.74,_It can tell, small differences between two ranked lists. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,220,874.74,875.88,_And, that is what we want, _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,221,875.88,880.43,sometimes one algorithm only works slightly better than another. 
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,222,880.43,882.44,_And, we want to see this difference. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,223,882.44,886.11,_In contrast, if we look at the precision at the ten documents. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,224,886.11,889.52,_If we look at this, this whole set, well, _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,225,889.52,892.0,_what, what's the precision, what do you think? _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,226,892.0,894.328,_Well, it's easy to see, that's a four out of ten, right? _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,227,894.328,902.2,_So, that precision is very meaningful, because it tells us, what user would see? _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,228,902.2,904.58,_So, that's pretty useful, right? _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,229,904.58,907.85,_So, it's a meaningful measure, from a users perspective. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,230,907.85,911.77,_But, if we use this measure to compare systems, it wouldn't be good, _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,231,911.77,916.48,because it wouldn't be sensitive to where these four relevant documents are ranked. 
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,232,916.48,921.91,_If I move them around the precision at ten, still, the same. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,233,921.91,922.57,_Right. So, _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,234,922.57,925.59,this is not a good measure for comparing different algorithms. 
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,235,925.59,929.99,_In contrast, the average precision is a much better measure. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,236,929.99,934.511,_It can tell the difference of, different, _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,237,934.511,939.269,_a difference in ranked list in, subtle ways. _
+3 - 6 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 1 (00-12-51).srt,238,939.269,949.269,[MUSIC] 

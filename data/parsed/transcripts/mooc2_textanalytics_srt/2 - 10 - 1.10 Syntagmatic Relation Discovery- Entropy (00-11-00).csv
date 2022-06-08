@@ -1,0 +1,145 @@
+name,id,from,to,text
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,1,0.25,6.38,[SOUND]. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,2,6.38,13.22,_This lecture is about the syntagmatic relation discovery, and entropy. _
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,3,13.22,17.76,_In this lecture, we're going to continue talking about word association mining. _
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,4,17.76,22.42,_In particular, we're going to talk about how to discover syntagmatic relations. _
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,5,22.42,25.77,_And we're going to start with the introduction of entropy, _
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,6,25.77,29.86,which is the basis for designing some measures for discovering such relations. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,7,32.48,33.11,_By definition, _
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,8,33.11,39.89,syntagmatic relations hold between words that have correlated co-occurrences. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,9,39.89,44.19,_That means, when we see one word occurs in context, _
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,10,44.19,47.35,we tend to see the occurrence of the other word. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,11,48.37,53.56,_So, take a more specific example, here. _
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,12,53.56,55.47,_We can ask the question, _
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,13,55.47,59.75,_whenever eats occurs, what other words also tend to occur? _
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,14,61.14,66.0,_Looking at the sentences on the left, we see some words that might occur _
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,15,66.0,71.03,_together with eats, like cat, dog, or fish is right. _
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,16,71.03,75.87,But if I take them out and if you look at the right side where we 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,17,75.87,81.55,_only show eats and some other words, the question then is. _
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,18,81.55,87.05,Can you predict what other words occur to the left or to the right? 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,19,88.315,91.03999999999999,Right so this would force us to think about what 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,20,91.03999999999999,93.63,other words are associated with eats. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,21,93.63,97.61,_If they are associated with eats, they tend to occur in the context of eats. _
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,22,98.625,103.06,More specifically our prediction problem is to take 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,23,103.06,107.072,_any text segment which can be a sentence, a paragraph, or a document. _
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,24,107.072,111.34,_And then ask I the question, is a particular word present or _
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,25,111.34,112.64,absent in this segment? 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,26,114.55,117.4,Right here we ask about the word W. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,27,117.4,120.16,Is W present or absent in this segment? 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,28,122.4,125.1,Now what's interesting is that 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,29,125.1,128.23,some words are actually easier to predict than other words. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,30,130.15,134.57,_If you take a look at the three words shown here, meat, the, and _
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,31,134.57,137.97,_unicorn, which one do you think is easier to predict? _
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,32,140.63,143.53,Now if you think about it for a moment you might conclude that 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,33,144.53,147.91,the is easier to predict because it tends to occur everywhere. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,34,147.91,150.77,_So I can just say, well that would be in the sentence. _
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,35,151.94,157.946,_Unicorn is also relatively easy because unicorn is rare, is very rare. _
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,36,157.946,161.47,And I can bet that it doesn't occur in this sentence. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,37,162.78,166.07999999999998,But meat is somewhere in between in terms of frequency. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,38,166.07999999999998,170.57999999999998,And it makes it harder to predict because it's possible that it occurs in a sentence 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,39,170.57999999999998,172.52,_or the segment, more accurately. _
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,40,173.84199999999998,178.82,_But it may also not occur in the sentence, so _
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,41,178.82,181.5,now let's study this problem more formally. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,42,182.68,186.09,So the problem can be formally defined 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,43,186.09,190.03,as predicting the value of a binary random variable. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,44,190.03,194.08,_Here we denote it by X sub w, w denotes a word, so _
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,45,194.08,197.34,this random variable is associated with precisely one word. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,46,198.38,203.02,_When the value of the variable is 1, it means this word is present. _
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,47,203.02,206.11,_When it's 0, it means the word is absent. _
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,48,206.11,211.01,_And naturally, the probabilities for 1 and 0 should sum to 1, _
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,49,211.01,214.187,because a word is either present or absent in a segment. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,50,215.24,216.07,There's no other choice. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,51,218.29,223.61,So the intuition with this concept earlier can be formally stated as follows. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,52,223.61,228.28,_The more random this random variable is, the more difficult the prediction will be. _
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,53,229.71,233.6,Now the question is how does one quantitatively measure the randomness of 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,54,233.6,235.59,a random variable like X sub w? 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,55,236.94,241.85,_How in general, can we quantify the randomness of a variable and _
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,56,241.85,244.69,that's why we need a measure called entropy and 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,57,244.69,250.56,this measure introduced in information theory to measure the randomness of X. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,58,250.56,253.79,There is also some connection with information here but 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,59,253.79,255.62,that is beyond the scope of this course. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,60,257.46,260.75,So for our purpose we just treat entropy function 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,61,260.75,262.91,as a function defined on a random variable. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,62,262.91,267.0,_In this case, it is a binary random variable, although the definition can _
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,63,267.0,270.93,be easily generalized for a random variable with multiple values. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,64,272.07,274.95,_Now the function form looks like this, _
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,65,274.95,279.40999999999997,there's the sum of all the possible values for this random variable. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,66,279.40999999999997,284.03,Inside the sum for each value we have a product of the probability 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,67,285.21,292.06,that the random variable equals this value and log of this probability. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,68,293.38,295.25,And note that there is also a negative sign there. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,69,296.27,299.9,Now entropy in general is non-negative. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,70,299.9,301.48,And that can be mathematically proved. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,71,302.62,310.32,_So if we expand this sum, we'll see that the equation looks like the second one. _
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,72,310.32,314.13,_Where I explicitly plugged in the two values, 0 and 1. _
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,73,314.13,318.37,_And sometimes when we have 0 log of 0, _
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,74,318.37,325.96,_we would generally define that as 0, because log of 0 is undefined. _
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,75,328.48,330.33,So this is the entropy function. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,76,330.33,333.02,And this function will give a different value for 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,77,333.02,335.52,different distributions of this random variable. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,78,337.26,340.65,And it clearly depends on the probability 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,79,340.65,343.85,that the random variable taking value of 1 or 0. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,80,343.85,349.78,If we plot this function against 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,81,349.78,355.114,the probability that the random variable is equal to 1. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,82,356.99,359.08,And then the function looks like this. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,83,361.31,366.82,_At the two ends, that means when the probability of X _
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,84,367.95,373.698,_equals 1 is very small or very large, then the entropy function has a low value. _
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,85,373.698,378.28,When it's 0.5 in the middle then it reaches the maximum. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,86,380.18,384.15,Now if we plot the function against the probability that X 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,87,385.95,391.09,is taking a value of 0 and the function 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,88,391.09,397.81,_would show exactly the same curve here, and you can imagine why. _
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,89,397.81,400.62,And so that's because 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,90,402.34000000000003,406.73,_the two probabilities are symmetric, and completely symmetric. _
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,91,408.74,412.85,So an interesting question you can think about in general is for 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,92,412.85,419.39,what kind of X does entropy reach maximum or minimum. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,93,419.39,422.96,And we can in particular think about some special cases. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,94,422.96,427.7,_For example, in one case, we might have a random variable that _
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,95,428.84,430.6,always takes a value of 1. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,96,430.6,434.304,The probability is 1. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,97,436.39,438.65,Or there's a random variable that 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,98,439.89,444.32,is equally likely taking a value of one or zero. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,99,444.32,448.75,So in this case the probability that X equals 1 is 0.5. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,100,450.7,452.25,Now which one has a higher entropy? 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,101,454.65,458.53,It's easier to look at the problem by thinking of a simple example 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,102,460.8,462.38,using coin tossing. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,103,463.42,467.65999999999997,_So when we think about random experiments like tossing a coin, _
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,104,468.77,475.74,_it gives us a random variable, that can represent the result. _
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,105,475.74,477.86,It can be head or tail. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,106,477.86,483.04,_So we can define a random variable X sub coin, so that it's 1 _
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,107,483.04,488.47,_when the coin shows up as head, it's 0 when the coin shows up as tail. _
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,108,489.8,495.39,So now we can compute the entropy of this random variable. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,109,495.39,500.05,And this entropy indicates how difficult it is to predict the outcome 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,110,502.05,502.89,of a coin toss. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,111,505.44,507.53,So we can think about the two cases. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,112,507.53,509.59,_One is a fair coin, it's completely fair. _
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,113,509.59,514.16,The coin shows up as head or tail equally likely. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,114,514.16,519.16,So the two probabilities would be a half. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,115,519.16,522.89,Right? So both are equal to one half. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,116,524.68,527.62,_Another extreme case is completely biased coin, _
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,117,527.62,530.42,where the coin always shows up as heads. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,118,530.42,532.76,So it's a completely biased coin. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,119,534.67,537.91,Now let's think about the entropies in the two cases. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,120,537.91,544.85,And if you plug in these values you can see the entropies would be as follows. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,121,544.85,549.524,_For a fair coin we see the entropy reaches its maximum, that's 1. _
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,122,551.27,554.46,_For the completely biased coin, we see it's 0. _
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,123,554.46,557.36,And that intuitively makes a lot of sense. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,124,557.36,560.49,Because a fair coin is most difficult to predict. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,125,562.08,564.95,Whereas a completely biased coin is very easy to predict. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,126,564.95,566.86,_We can always say, well, it's a head. _
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,127,566.86,569.19,Because it is a head all the time. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,128,569.19,574.4,So they can be shown on the curve as follows. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,129,574.4,580.3,So the fair coin corresponds to the middle point where it's very uncertain. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,130,580.3,585.41,The completely biased coin corresponds to the end 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,131,585.41,588.058,point where we have a probability of 1.0 and the entropy is 0. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,132,588.058,594.87,_So, now let's see how we can use entropy for word prediction. _
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,133,594.87,599.67,Let's think about our problem is to predict whether W is present or 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,134,599.67,601.65,absent in this segment. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,135,601.65,605.3,_Again, think about the three words, particularly think about their entropies. _
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,136,606.54,610.13,Now we can assume high entropy words are harder to predict. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,137,611.91,618.79,And so we now have a quantitative way to tell us which word is harder to predict. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,138,620.89,625.81,_Now if you look at the three words meat, the, unicorn, again, and _
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,139,625.81,633.31,we clearly would expect meat to have a higher entropy than the unicorn. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,140,633.31,639.18,_In fact if you look at the entropy of the, it's close to zero. _
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,141,639.18,641.57,Because it occurs everywhere. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,142,641.57,643.39,So it's like a completely biased coin. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,143,644.61,646.38,Therefore the entropy is zero. 
+2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).srt,144,648.71,658.71,[MUSIC] 

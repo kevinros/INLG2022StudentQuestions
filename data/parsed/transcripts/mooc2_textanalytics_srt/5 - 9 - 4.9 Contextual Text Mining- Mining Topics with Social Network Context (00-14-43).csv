@@ -1,0 +1,195 @@
+name,id,from,to,text
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,1,0.025,5.098,[SOUND] This lecture is about 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,2,5.098,9.728,how to mine text data with 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,3,9.728,15.028,social network as context. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,4,15.028,18.4,In this lecture we're going to continue discussing contextual text mining. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,5,18.4,25.0,_In particular, we're going to look at the social network of others as context. _
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,6,26.16,31.67,_So first, what's our motivation for using network context for analysis of text? _
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,7,32.97,36.44,The context of a text article can form a network. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,8,37.46,40.47,For example the authors of research articles 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,9,40.47,42.0,might form collaboration networks. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,10,44.14,48.3,But authors of social media content might form social networks. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,11,48.3,51.91,_For example, in Twitter people might follow each other. _
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,12,51.91,60.57,_Or in Facebook as people might claim friends of others, etc. _
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,13,60.57,67.94,So such context connects the content of the others. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,14,67.94,72.422,_Similarly, locations associated with text can also be connected to form _
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,15,72.422,73.952,geographical network. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,16,73.952,78.507,But in general you can can imagine the metadata of the text data 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,17,78.507,82.809,can form some kind of network if they have some relations. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,18,84.55,89.65,Now there is some benefit in jointly analyzing text and 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,19,89.65,94.45,its social network context or network context in general. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,20,94.45,100.59,And that's because we can use network to impose some constraints on topics of text. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,21,101.86,105.71600000000001,So for example it's reasonable to assume that authors 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,22,105.71600000000001,110.56,connected in collaboration networks tend to write about the similar topics. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,23,113.75999999999999,117.85,So such heuristics can be used to guide us in analyzing topics. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,24,117.85,126.54,Text also can help characterize the content associated with each subnetwork. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,25,126.54,130.52,And this is to say that both 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,26,131.98,135.37,_kinds of data, the network and text, can help each other. _
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,27,136.85,141.99099999999999,So for example the difference in opinions expressed that are in 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,28,141.99099999999999,147.72,two subnetworks can be reviewed by doing this type of joint analysis. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,29,150.56,158.98,So here briefly you could use a model called a network supervised topic model. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,30,160.38,163.97,In this slide we're going to give some general ideas. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,31,163.97,166.88,And then in the next slide we're going to give some more details. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,32,168.52,173.93,But in general in this part of the course we don't have enough time to cover 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,33,173.93,176.94,these frontier topics in detail. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,34,176.94,181.87,But we provide references that would allow you to 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,35,181.87,184.3,read more about the topic to know the details. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,36,185.56,189.4,But it should still be useful to know the general ideas. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,37,189.4,196.19,And to know what they can do to know when you might be able to use them. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,38,196.19,202.14,So the general idea of network supervised topic model is the following. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,39,202.14,208.32,Let's start with viewing the regular topic models. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,40,208.32,213.75,Like if you had an LDA as sorting optimization problem. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,41,213.75,214.81,_Of course, in this case, _
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,42,214.81,218.17000000000002,the optimization objective function is a likelihood function. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,43,218.17000000000002,222.91,So we often use maximum likelihood estimator to obtain the parameters. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,44,222.91,227.45600000000002,And these parameters will give us useful information that we want to 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,45,227.45600000000002,230.0,obtain from text data. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,46,230.0,231.76,_For example, topics. _
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,47,231.76,236.59,So we want to maximize the probability of tests that are given the parameters 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,48,236.59,241.49,generally denoted by number. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,49,241.49,246.49,The main idea of incorporating network is 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,50,246.49,252.52,to think about the constraints that can be imposed based on the network. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,51,252.52,256.11,_In general, the idea is to use the network to _
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,52,256.11,260.35,_impose some constraints on the model parameters, lambda here. _
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,53,260.35,261.01,_For example, _
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,54,261.01,267.34,the text at adjacent nodes of the network can be similar to cover similar topics. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,55,267.34,271.36,_Indeed, in many cases, they tend to cover similar topics. _
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,56,274.01,278.039,So we may be able to smooth the topic distributions 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,57,279.17,283.51,on the graph on the network so that adjacent nodes will have 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,58,283.51,288.253,very similar topic distributions. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,59,288.253,293.78,So they will share a common distribution on the topics. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,60,293.78,300.46,_Or have just a slight variations of the topic of distributions, of the coverage. _
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,61,302.21,307.2,_So, technically, what we can do is simply to add a network and _
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,62,307.2,311.53,use the regularizers to the likelihood of objective function as shown here. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,63,311.53,314.48,So instead of just optimize the probability of test 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,64,314.48,318.59,_data given parameters lambda, we're going to optimize another function F. _
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,65,319.77,326.4,This function combines the likelihood with a regularizer function called R here. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,66,326.4,331.82,And the regularizer defines the the parameters lambda and the Network. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,67,331.82,334.33,It tells us basically 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,68,334.33,338.54,what kind of parameters are preferred from a network constraint perspective. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,69,338.54,341.47,So you can easily see this is in effect 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,70,341.47,345.73,implementing the idea of imposing some prior on the model parameters. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,71,345.73,350.06,_Only that we're not necessary having a probabilistic model, but _
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,72,350.06,351.14,the idea is the same. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,73,351.14,355.45,We're going to combine the two in one single objective function. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,74,357.77,362.13,_So, the advantage of this idea is that it's quite general. _
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,75,362.13,366.27,Here the top model can be any generative model for text. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,76,367.35,371.37,_It doesn't have to be PLSA or LEA, or the current topic models. _
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,77,372.83,377.08,_And similarly, the network can be also in a network. _
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,78,377.08,379.28,Any graph that connects these text objects. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,79,382.531,386.47,This regularizer can also be any regularizer. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,80,386.47,391.44,We can be flexible in capturing different heuristics that we want to capture. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,81,392.59000000000003,396.21,_And finally, the function F can also vary, so _
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,82,396.21,398.84000000000003,there can be many different ways to combine them. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,83,398.84000000000003,402.49,_So, this general idea is actually quite, quite powerful. _
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,84,402.49,407.53,It offers a general approach to combining these different 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,85,407.53,412.62,types of data in single optimization framework. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,86,412.62,414.80899999999997,And this general idea can really be applied for any problem. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,87,416.9,419.28,_But here in this paper reference here, _
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,88,419.28,425.54,a particular instantiation called a NetPLSA was started. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,89,425.54,426.962,_In this case, it's just for _
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,90,426.962,431.99,instantiating of PLSA to incorporate this simple constraint imposed by network. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,91,431.99,435.73,And the prior here is the neighbors on 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,92,435.73,438.07,the network must have similar topic distribution. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,93,438.07,440.5,They must cover similar topics in similar ways. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,94,440.5,442.72,And that's basically what it says in English. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,95,444.08,447.47,So technically we just have a modified objective function here. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,96,447.47,452.78,Let's define both the texts you can actually see in the network graph G here. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,97,454.07,456.05,_And if you look at this formula, _
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,98,456.05,458.489,you can actually recognize some part fairly familiarly. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,99,460.1,465.046,_Because they are, they should be fairly familiar to you by now. _
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,100,465.046,469.182,So can you recognize which part is the likelihood for 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,101,469.182,471.72,the test given the topic model? 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,102,472.72,478.962,_Well if you look at it, you will see this part is precisely the PLSA log-likelihood _
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,103,478.962,484.16,that we want to maximize when we estimate parameters for PLSA alone. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,104,484.16,490.305,But the second equation shows some additional constraints on the parameters. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,105,490.305,495.61,_And in particular, we'll see here it's to measure _
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,106,495.61,501.3,the difference between the topic coverage at node u and node v. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,107,501.3,505.57,The two adjacent nodes on the network. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,108,505.57,507.68,We want their distributions to be similar. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,109,507.68,511.88,So here we are computing the square of their differences and 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,110,511.88,514.4,we want to minimize this difference. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,111,514.4,520.825,_And note that there's a negative sign in front of this sum, this whole sum here. _
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,112,520.825,526.204,So this makes it possible to find 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,113,526.204,531.385,the parameters that are both to 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,114,531.385,537.78,maximize the PLSA log-likelihood. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,115,537.78,541.56,_That means the parameters will fit the data well and, _
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,116,541.56,545.6,also to respect that this constraint from the network. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,117,546.7,549.64,And this is the negative sign that I just mentioned. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,118,549.64,552.742,_Because this is an negative sign, when we maximize this _
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,119,552.742,556.78,object in function we'll actually minimize this statement term here. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,120,559.5889999999999,563.906,So if we look further in this picture we'll see 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,121,563.906,569.56,the results will weight of edge between u and v here. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,122,569.56,572.12,And that space from out network. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,123,572.12,574.495,_If you have a weight that says well, _
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,124,574.495,578.47,these two nodes are strong collaborators of researchers. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,125,578.47,585.51,These two are strong connections between two people in a social network. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,126,585.51,586.74,And they would have weight. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,127,586.74,592.59,Then that means it would be more important that they're topic coverages are similar. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,128,592.59,594.07,And that's basically what it says here. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,129,595.46,597.66,And finally you see a parameter lambda here. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,130,597.66,602.26,This is a new parameter to control the influence of network constraint. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,131,602.26,607.46,_We can see easily, if lambda is set to 0, we just go back to the standard PLSA. _
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,132,607.46,609.47,_But when lambda is set to a larger value, _
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,133,609.47,614.92,then we will let the network influence the estimated models more. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,134,614.92,619.65,_So as you can see, the effect here is that we're going to do basically PLSA. _
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,135,619.65,624.02,But we're going to also try to make the topic coverages 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,136,624.02,628.86,on the two nodes that are strongly connected to be similar. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,137,628.86,630.93,And we ensure their coverages are similar. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,138,633.8,637.86,_So here are some of the several results, from that paper. _
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,139,637.86,641.44,This is slide shows the record results of using PLSA. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,140,641.44,645.917,_And the data here is DBLP data, bibliographic data, _
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,141,645.917,648.97,about research articles. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,142,648.97,655.14,And the experiments have to do with using four communities of applications. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,143,655.14,656.8,IR information retrieval. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,144,656.8,659.4,DM stands for data mining. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,145,659.4,660.86,ML for machinery and web. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,146,660.86,665.24,_There are four communities of articles, and we were hoping _
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,147,666.78,674.59,to see that the topic mining can help us uncover these four communities. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,148,674.59,679.86,But from these assembled topics that you have seen here that are generated by PLSA. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,149,679.86,684.4,And PLSA is unable to generate the four communities that 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,150,684.4,686.75,correspond to our intuition. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,151,686.75,690.31,The reason was because they are all mixed together and 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,152,690.31,693.62,there are many words that are shared by these communities. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,153,693.62,697.9,So it's not that easy to use four topics to separate them. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,154,697.9,701.75,_If we use more topics, perhaps we will have more coherent topics. _
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,155,702.96,708.42,_But what's interesting is that if we use the NetPLSA where the network, _
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,156,708.42,714.18,the collaboration network in this case of authors is used to impose constraints. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,157,714.18,717.21,And in this case we also use four topics. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,158,717.21,721.78,But Ned Pierre said we gave much more meaningful topics. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,159,721.78,727.69,So here we'll see that these topics correspond well to the four communities. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,160,727.69,729.34,The first is information retrieval. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,161,729.34,731.26,The second is data mining. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,162,731.26,732.41,Third is machine learning. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,163,732.41,733.97,And the fourth is web. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,164,733.97,738.771,So that separation was mostly because of the influence of network 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,165,738.771,744.0,where with leverage is a collaboration network information. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,166,744.0,748.3,Essentially the people that form a collaborating network 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,167,748.3,752.28,would then be kind of assumed to write about similar topics. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,168,752.28,755.21,And that's why we're going to have more coherent topics. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,169,755.21,759.5,_And if you just listen to text data alone based on the occurrences, _
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,170,759.5,762.7,you won't get such coherent topics. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,171,762.7,765.72,_Even though a topic model, like PLSA or _
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,172,765.72,770.79,LDA also should be able to pick up co-occurring words. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,173,770.79,775.581,So in general the topics that they generate represent 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,174,775.581,778.68,words that co-occur each other. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,175,778.68,783.98,_But still they cannot generate such a coherent results as NetPLSA, _
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,176,783.98,787.7,showing that the network contest is very useful here. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,177,788.74,793.143,Now a similar model could have been also useful to to characterize the content 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,178,793.143,796.27,associated with each subnetwork of collaborations. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,179,799.497,804.585,So a more general view of text mining in context of network is you 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,180,804.585,809.87,treat text as living in a rich information network environment. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,181,809.87,815.7,And that means we can connect all the related data together as a big network. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,182,815.7,821.75,And text data can be associated with a lot of structures in the network. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,183,821.75,826.42,_For example, text data can be associated with the nodes of the network, and _
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,184,826.42,831.1,that's basically what we just discussed in the NetPLSA. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,185,831.1,836.614,_But text data can be associated with age as well, or paths or even subnetworks. _
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,186,836.614,841.01,And such a way to represent texts that are in the big environment of 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,187,841.01,844.17,all the context information is very powerful. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,188,844.17,849.86,_Because it allows to analyze all the data, all the information together. _
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,189,849.86,856.13,_And so in general, analysis of text should be using the entire network _
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,190,856.13,861.27,information that's related to the text data. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,191,861.27,863.35,So here's one suggested reading. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,192,863.35,867.742,And this is the paper about NetPLSA where you can find more details about the model 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,193,867.742,869.3,and how to make such a model. 
+5 - 9 - 4.9 Contextual Text Mining- Mining Topics with Social Network Context (00-14-43).srt,194,869.3,879.3,[MUSIC] 

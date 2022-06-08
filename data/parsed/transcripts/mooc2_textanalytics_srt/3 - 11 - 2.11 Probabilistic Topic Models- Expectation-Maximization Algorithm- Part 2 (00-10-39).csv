@@ -1,0 +1,154 @@
+name,id,from,to,text
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,1,0.012,8.224,[SOUND] So 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,2,8.224,12.538,_this is indeed a general idea of the Expectation-Maximization, or EM, _
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,3,12.538,13.31,Algorithm. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,4,14.64,19.21,So in all the EM algorithms we introduce a hidden variable 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,5,19.21,21.97,to help us solve the problem more easily. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,6,21.97,25.453,In our case the hidden variable is a binary variable for 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,7,25.453,27.203,each occurrence of a word. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,8,27.203,32.02,And this binary variable would indicate whether the word has 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,9,32.02,35.144,been generated from 0 sub d or 0 sub p. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,10,35.144,38.42,And here we show some possible values of these variables. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,11,38.42,43.47,_For example, for the it's from background, the z value is one. _
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,12,43.47,45.105,And text on the other hand. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,13,45.105,52.04,_Is from the topic then it's zero for z, etc. _
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,14,53.26,58.915,_Now, of course, we don't observe these z values, we just imagine they're all such. _
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,15,58.915,61.875,Values of z attaching to other words. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,16,62.905,64.975,And that's why we call these hidden variables. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,17,66.135,68.905,_Now, the idea that we talked about before for _
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,18,68.905,72.93,predicting the word distribution that has been used when we generate the word 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,19,72.93,78.84,_is it a predictor, the value of this hidden variable? _
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,20,78.84,85.08,_And, so, the EM algorithm then, would work as follows. _
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,21,85.08,90.06,_First, we'll initialize all the parameters with random values. _
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,22,90.06,94.96000000000001,_In our case, the parameters are mainly the probability. _
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,23,94.96000000000001,97.84,_of a word, given by theta sub d. _
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,24,97.84,99.68,So this is an initial addition stage. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,25,99.68,104.15,These initialized values would allow us to use base roll to take a guess 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,26,104.15,108.50999999999999,_of these z values, so we'd guess these values. _
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,27,108.50999999999999,113.58,We can't say for sure whether textt is from background or not. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,28,113.58,115.09,But we can have our guess. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,29,115.09,117.62,This is given by this formula. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,30,117.62,119.71000000000001,It's called an E-step. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,31,119.71000000000001,126.52,And so the algorithm would then try to use the E-step to guess these z values. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,32,126.52,132.19,_After that, it would then invoke another that's called M-step. _
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,33,132.19,137.49,In this step we simply take advantage of the inferred z values and 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,34,137.49,142.825,then just group words that are in the same distribution like these 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,35,142.825,146.315,from that ground including this as well. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,36,147.585,152.865,We can then normalize the count to estimate the probabilities or 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,37,152.865,155.47899999999998,to revise our estimate of the parameters. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,38,156.59,162.31,So let me also illustrate that we can group the words 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,39,162.31,166.76,_that are believed to have come from zero sub d, and _
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,40,166.76,170.01,_that's text, mining algorithm, for example, and clustering. _
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,41,171.76,175.71800000000002,And we group them together to help us 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,42,175.71800000000002,181.17,re-estimate the parameters that we're interested in. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,43,181.17,185.12,So these will help us estimate these parameters. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,44,186.17,189.97,Note that before we just set these parameter values randomly. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,45,189.97,195.67,_But with this guess, we will have somewhat improved estimate of this. _
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,46,195.67,198.74,_Of course, we don't know exactly whether it's zero or one. _
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,47,198.74,204.85,So we're not going to really do the split in a hard way. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,48,204.85,206.8,But rather we're going to do a softer split. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,49,206.8,207.98,And this is what happened here. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,50,209.15,214.42000000000002,So we're going to adjust the count by the probability that would believe 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,51,214.42000000000002,218.41,this word has been generated by using the theta sub d. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,52,219.84,222.57999999999998,_And you can see this, where does this come from? _
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,53,222.57999999999998,226.63,_Well, this has come from here, right? _
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,54,226.63,228.12,From the E-step. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,55,228.12,232.472,So the EM Algorithm would iteratively improve uur initial 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,56,232.472,237.375,estimate of parameters by using E-step first and then M-step. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,57,237.375,242.458,_The E-step is to augment the data with additional information, like z. _
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,58,242.458,245.91,And the M-step is to take advantage 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,59,245.91,248.66,of the additional information to separate the data. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,60,248.66,253.467,To split the data accounts and then collect the right data accounts to 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,61,253.467,257.87,re-estimate our parameter. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,62,257.87,262.4,_And then once we have a new generation of parameter, we're going to repeat this. _
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,63,262.4,265.15,We are going the E-step again. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,64,265.15,268.52,To improve our estimate of the hidden variables. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,65,268.52,273.63,And then that would lead to another generation of re-estimated parameters. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,66,274.77,277.90999999999997,For the word distribution that we are interested in. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,67,279.61,284.67,_Okay, so, as I said, the bridge between the two _
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,68,284.67,290.38,_is really the variable z, hidden variable, which indicates how likely _
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,69,290.38,295.2,_this water is from the top water distribution, theta sub p. _
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,70,296.81,300.78,_So, this slide has a lot of content and you may need to. _
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,71,300.78,303.85,Pause the reader to digest it. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,72,303.85,307.3,But this basically captures the essence of EM Algorithm. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,73,307.3,312.5,Start with initial values that are often random themself. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,74,312.5,318.15,And then we invoke E-step followed by M-step to get an improved 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,75,318.15,319.69,setting of parameters. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,76,319.69,323.34,_And then we repeated this, so this a Hill-Climbing algorithm _
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,77,323.34,327.06,that would gradually improve the estimate of parameters. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,78,327.06,330.05,As I will explain later there is some guarantee for 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,79,330.05,335.34000000000003,reaching a local maximum of the log-likelihood function. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,80,335.34000000000003,340.18,_So lets take a look at the computation for a specific case, so _
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,81,340.18,341.84000000000003,these formulas are the EM. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,82,341.84000000000003,348.22,_Formulas that you see before, and you can also see there are superscripts, _
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,83,348.22,353.72,_here, like here, n, to indicate the generation of parameters. _
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,84,353.72,356.04,Like here for example we have n plus one. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,85,356.04,359.728,That means we have improved. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,86,359.728,364.047,From here to here we have an improvement. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,87,364.047,368.106,So in this setting we have assumed the two numerals have equal probabilities and 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,88,368.106,369.689,the background model is null. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,89,369.689,371.872,So what are the relevance of the statistics? 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,90,371.872,373.892,Well these are the word counts. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,91,373.892,378.29,_So assume we have just four words, and their counts are like this. _
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,92,378.29,382.68,And this is our background model that assigns high probabilities to common 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,93,382.68,383.38,words like the. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,94,385.91,389.86,_And in the first iteration, you can picture what will happen. _
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,95,389.86,392.28,Well first we initialize all the values. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,96,392.28,397.36,_So here, this probability that we're interested in is normalized into a uniform _
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,97,397.36,398.89,distribution of all the words. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,98,400.33,405.94,And then the E-step would give us a guess of the distribution that has been used. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,99,405.94,408.47,That will generate each word. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,100,408.47,411.45,We can see we have different probabilities for different words. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,101,411.45,412.43,Why? 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,102,412.43,416.84000000000003,_Well, that's because these words have different probabilities in the background. _
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,103,416.84000000000003,420.02,So even though the two distributions are equally likely. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,104,420.02,425.32,And then our initial audition say uniform distribution because of the difference 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,105,425.32,429.27,_in the background of the distribution, we have different guess the probability. _
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,106,429.27,434.28,So these words are believed to be more likely from the topic. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,107,435.82,437.93,These on the other hand are less likely. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,108,437.93,439.03,Probably from background. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,109,440.62,443.04,_So once we have these z values, _
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,110,443.04,448.81,we know in the M-step these probabilities will be used to adjust the counts. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,111,448.81,453.67,So four must be multiplied by this 0.33 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,112,453.67,458.19,in order to get the allocated accounts toward the topic. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,113,459.55,463.77,And this is done by this multiplication. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,114,463.77,469.7,_Note that if our guess says this is 100% If this is one point zero, _
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,115,472.38,478.01,then we just get the full count of this word for this topic. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,116,478.01,481.2,In general it's not going to be one point zero. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,117,481.2,486.76,So we're just going to get some percentage of this counts toward this topic. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,118,486.76,489.55,Then we simply normalize these counts 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,119,489.55,493.17,to have a new generation of parameters estimate. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,120,493.17,496.6,_So you can see, compare this with the older one, which is here. _
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,121,498.33,503.06,So compare this with this one and we'll see the probability is different. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,122,503.06,505.93,_Not only that, we also see some _
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,123,505.93,510.11,words that are believed to have come from the topic will have a higher probability. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,124,510.11,511.4,_Like this one, text. _
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,125,512.53,515.93,_And of course, this new generation of parameters would allow us to further _
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,126,515.93,522.68,adjust the inferred latent variable or hidden variable values. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,127,522.68,525.742,_So we have a new generation of values, _
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,128,525.742,531.115,because of the E-step based on the new generation of parameters. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,129,531.115,536.343,And these new inferred values of Zs will give us then 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,130,536.343,543.166,another generation of the estimate of probabilities of the word. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,131,543.166,547.99,And so on and so forth so this is what would actually happen when we compute 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,132,547.99,551.75,these probabilities using the EM Algorithm. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,133,551.75,556.745,_As you can see in the last row where we show the log-likelihood, _
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,134,556.745,560.985,and the likelihood is increasing as we do the iteration. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,135,560.985,565.875,And note that these log-likelihood is negative because the probability is 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,136,565.875,570.07,_between 0 and 1 when you take a logarithm, it becomes a negative value. _
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,137,570.07,573.18,_Now what's also interesting is, you'll note the last column. _
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,138,573.18,576.6,And these are the inverted word split. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,139,576.6,582.15,And these are the probabilities that a word is believed to 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,140,582.15,587.98,_have come from one distribution, in this case the topical distribution, all right. _
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,141,587.98,590.58,And you might wonder whether this would be also useful. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,142,590.58,595.54,Because our main goal is to estimate these word distributions. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,143,595.54,597.4,So this is our primary goal. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,144,597.4,600.9,We hope to have a more discriminative order of distribution. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,145,600.9,604.4,But the last column is also bi-product. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,146,604.4,607.17,This also can actually be very useful. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,147,607.17,608.38,You can think about that. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,148,608.38,610.22,_We want to use, is to for _
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,149,610.22,616.08,example is to estimate to what extent this document has covered background words. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,150,616.08,618.165,_And this, when we add this up or _
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,151,618.165,623.304,take the average we will kind of know to what extent it has covered background 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,152,623.304,627.823,versus content was that are not explained well by the background. 
+3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).srt,153,627.823,637.823,[MUSIC] 

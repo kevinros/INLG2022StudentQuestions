@@ -1,0 +1,146 @@
+name,id,from,to,text
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,1,0.025,6.573,[SOUND] This lecture is a continued discussion 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,2,6.573,12.439,of evaluation of text categorization. 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,3,12.439,18.302,Earlier we have introduced measures that can be used with computer provision and 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,4,18.302,19.92,recall. 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,5,19.92,26.09,For each category and each document now in this lecture we're going to 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,6,27.68,32.53,further examine how to combine the performance of the different categories of 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,7,32.53,36.98,_different documents how to aggregate them, how do we take average? _
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,8,36.98,41.22,You see on the title here I indicated it's called a macro average and 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,9,41.22,46.19,this is in contrast to micro average that we'll talk more about later. 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,10,47.75,53.71,_So, again, for each category we're going to compute the precision require an f1 so _
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,11,53.71,59.88,_for example category c1 we have precision p1, recall r1 and F value f1. _
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,12,59.88,66.38,And similarly we can do that for category 2 and and all the other categories. 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,13,66.38,71.05,_Now once we compute that and we can aggregate them, so for _
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,14,71.05,73.84,example we can aggregate all the precision values. 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,15,73.84,77.61,_For all the categories, for computing overall precision. _
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,16,77.61,84.16,And this is often very useful to summarize what we have seen in the whole data set. 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,17,84.16,86.78,And aggregation can be done many different ways. 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,18,86.78,92.55,_Again as I said, in a case when you need to aggregate different values, _
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,19,92.55,96.63,it's always good to think about what's the best way of doing the aggregation. 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,20,96.63,101.75,_For example, we can consider arithmetic mean, which is very commonly used, or _
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,21,101.75,106.18,_you can use geometric mean, which would have different behavior. _
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,22,106.18,110.53999999999999,_Depending on the way you aggregate, you might have got different conclusions. _
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,23,110.53999999999999,114.37,_in terms of which method works better, so it's important to consider these _
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,24,114.37,120.86,differences and choosing the right one or a more suitable one for your task. 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,25,120.86,123.77,So the difference fore example between arithmetically and 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,26,123.77,128.36,geometrically is that the arithmetically would be dominated by high 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,27,128.36,132.17,values whereas geometrically would be more affected by low values. 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,28,132.17,136.94,Base and so whether you are want to emphasis low values or 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,29,136.94,142.04,high values would be a question relate with all you And 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,30,142.04,144.72,similar we can do that for recal and F score. 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,31,144.72,149.4,_So that's how we can generate the overall precision, recall and F score. _
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,32,151.66,156.99,Now we can do the same for aggregation of other all the document All right. 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,33,156.99,160.3,So it's exactly the same situation for each document on our computer. 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,34,160.3,162.34,_Precision, recall, and F. _
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,35,162.34,167.13,_And then after we have completed the computation for all these documents, _
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,36,167.13,171.59,_we're going to aggregate them to generate the overall precision, overall recall, and _
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,37,171.59,172.49,overall F score. 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,38,173.51,177.38,_These are, again, examining the results from different angles. _
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,39,177.38,180.39,Which one's more useful will depend on your application. 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,40,180.39,186.18,_In general, it's beneficial to look at the results from all these perspectives. _
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,41,186.18,190.85,_And especially if you compare different methods in different dimensions, _
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,42,190.85,196.37,it might reveal which method Is better in which measure or 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,43,196.37,199.82999999999998,in what situations and this provides insightful. 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,44,199.82999999999998,203.07,Understanding the strands of a method or a weakness and 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,45,203.07,205.1,this provides further insight for improving them. 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,46,208.26,212.18,_So as I mentioned, there is also micro-average _
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,47,212.18,215.89,in contrast to the macro average that we talked about earlier. 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,48,215.89,221.11,_In this case, what we do is you pool together all the decisions, _
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,49,221.11,224.38,and then compute the precision and recall. 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,50,225.46,230.48,So we can compute the overall precision and recall by just counting 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,51,230.48,235.832,_how many cases are in true positive, how many cases in false positive, _
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,52,235.832,241.66,_etc, it's computing the values in the contingency table, _
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,53,241.66,244.09,and then we can compute the precision and recall just once. 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,54,246.06,250.296,_In contrast, in macro-averaging, we're going to do that for each category first. _
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,55,250.296,256.07,And then aggregate over these categories or we do that for each document and 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,56,256.07,259.95,then aggregate all the documents but here we pooled them together. 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,57,261.13,264.66,Now this would be very similar to the classification accuracy that we 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,58,264.66,266.39,_used earlier, and _
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,59,266.39,271.27,_one problem here of course to treat all the instances, all the decisions equally. _
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,60,272.4,274.99,And this may not be desirable. 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,61,276.31,279.15999999999997,_But it may be a property for some applications, _
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,62,279.15999999999997,285.57,_especially if we associate the, for example, the cost for each combination. _
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,63,285.57,290.09000000000003,_Then we can actually compute for example, weighted classification accuracy. _
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,64,290.09000000000003,295.14,_Where you associate the different cost or utility for each specific decision, _
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,65,296.21,299.62,so there could be variations of these methods that would be more useful. 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,66,299.62,306.398,_But in general macro average tends to be more information than micro average, _
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,67,306.398,313.889,just because it might reflect the need for understanding performance 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,68,314.89,320.62,on each category or performance on each document which are needed in applications. 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,69,320.62,327.21,_But macro averaging and micro averaging, they are both very common, _
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,70,327.21,332.78,and you might see both reported in research papers on Categorization. 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,71,332.78,336.75,Also sometimes categorization results might actually 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,72,336.75,339.29,be evaluated from ranking prospective. 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,73,340.4,343.99,And this is because categorization results are sometimes or 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,74,343.99,349.61,often indeed passed it to a human for various purposes. 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,75,349.61,353.3,_For example, it might be passed to humans for further editing. _
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,76,353.3,358.81,_For example, news articles can be tempted to be categorized by using a system and _
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,77,358.81,361.04,then human editors would then correct them. 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,78,362.68,367.5,And all the email messages might be throughout to the right person for 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,79,367.5,369.89,handling in the help desk. 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,80,369.89,374.09,And in such a case the categorizations will help prioritizing 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,81,374.09,378.6,the task for particular customer service person. 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,82,379.69,385.36,_So, in this case the results have to be prioritized _
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,83,386.37,392.45,and if the system can't give a score to the categorization decision for 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,84,392.45,399.83,confidence then we can use the scores to rank these decisions and 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,85,399.83,404.65999999999997,_then evaluate the results as a rank list, just as in a search engine. _
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,86,404.65999999999997,407.99,Evaluation where you rank the documents in responsible query. 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,87,409.04,413.84000000000003,So for example a discovery of spam emails can be evaluated 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,88,415.79,420.14,based on ranking emails for the spam category. 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,89,420.14,424.66,And this is useful if you want people to to verify whether this is really 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,90,424.66,425.77,_spam, right? _
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,91,425.77,430.17,The person would then take the rank To check one by one and 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,92,430.17,434.77,then verify whether this is indeed a spam. 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,93,434.77,439.18,_So to reflect the utility for humans in such a task, it's _
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,94,439.18,443.86,better to evaluate Ranking Chris and this is basically similar to a search again. 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,95,445.02,447.65,And in such a case often the problem can be 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,96,447.65,451.81,better formulated as a ranking problem instead of a categorization problem. 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,97,451.81,455.545,_So for example, ranking documents in a search engine can also be framed _
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,98,455.545,459.255,_as a binary categorization problem, distinguish the relevant documents that _
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,99,459.255,463.505,_are useful to users from those that are not useful, but typically we _
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,100,463.505,467.045,_frame this as a ranking problem, and we evaluate it as a rank list. _
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,101,467.045,470.54,That's because people tend to examine the results so 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,102,472.15999999999997,476.42,ranking evaluation more reflects utility from user's perspective. 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,103,478.18,482.23,_So to summarize categorization evaluation, _
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,104,482.23,485.22,first evaluation is always very important for all these tasks. 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,105,485.22,486.09,So get it right. 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,106,487.2,490.12,_If you don't get it right, you might get misleading results. _
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,107,490.12,494.16,_And you might be misled to believe one method is better than the other, _
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,108,494.16,495.81,which is in fact not true. 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,109,495.81,497.46,So it's very important to get it right. 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,110,498.88,502.27,Measures must also reflect the intended use of the results for 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,111,502.27,504.1,a particular application. 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,112,504.1,505.76,_For example, in spam filtering and _
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,113,505.76,509.67,news categorization the results are used in maybe different ways. 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,114,510.68,513.76,So then we would need to consider the difference and 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,115,513.76,515.49,design measures appropriately. 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,116,516.65,521.66,We generally need to consider how will the results be further processed by the user 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,117,521.66,523.63,and think from a user's perspective. 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,118,523.63,526.22,What quality is important? 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,119,526.22,527.88,What aspect of quality is important? 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,120,529.24,532.44,Sometimes there are trade offs between multiple aspects like precision and 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,121,532.44,537.61,_recall and so we need to know for this application is high recall more important, _
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,122,537.61,538.86,or high precision is more important. 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,123,539.91,543.57,Ideally we associate the different cost with each different decision arrow. 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,124,543.57,546.81,And this of course has to be designed in an application specific way. 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,125,548.14,552.95,Some commonly used measures for relative comparison methods are the following. 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,126,552.95,557.268,_Classification accuracy, it's very commonly used for especially balance. _
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,127,557.268,562.23,[INAUDIBLE] preceding [INAUDIBLE] Scores are common and 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,128,562.23,567.266,_report characterizing performances, given angles and give us some _
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,129,567.266,572.44,[INAUDIBLE] like a [INAUDIBLE] Per document basis [INAUDIBLE] And then 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,130,572.44,577.79,_take a average of all of them, different ways micro versus macro [INAUDIBLE]. _
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,131,577.79,582.91,_In general, you want to look at the results from multiple perspectives and for _
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,132,582.91,586.97,particular applications some perspectives would be more important than others but 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,133,586.97,590.12,diagnoses and analysis of categorization methods. 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,134,590.12,594.92,It's generally useful to look at as many perspectives as possible 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,135,594.92,600.22,to see subtle differences between methods or tow see where a method might be weak 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,136,600.22,603.1,from which you can obtain sight for improving a method. 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,137,604.67,607.34,Finally sometimes ranking may be more appropriate so 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,138,607.34,611.59,be careful sometimes categorization has got may be better frame as a ranking tasks 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,139,611.59,616.39,and there're machine running methods for optimizing ranking measures as well. 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,140,617.48,619.99,So here are two suggested readings. 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,141,619.99,625.12,One is some chapters of this book where you can find more discussion about 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,142,625.12,627.09,evaluation measures. 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,143,627.09,631.916,The second is a paper about comparison of different approaches to 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,144,631.916,633.759,text categorization and 
+4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).srt,145,633.759,639.738,it also has an excellent discussion of how to evaluate textual categorization. 

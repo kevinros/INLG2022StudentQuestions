@@ -1,0 +1,104 @@
+name,id,from,to,text
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,1,0.025,6.885,[SOUND] >> This 
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,2,6.885,11.19,lecture is about topic mining and analysis. 
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,3,11.19,14.27,We're going to talk about its motivation and task definition. 
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,4,17.78,22.63,In this lecture we're going to talk about different kind of mining task. 
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,5,23.77,28.31,_As you see on this road map, we have just covered _
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,6,28.31,33.19,_mining knowledge about language, namely discovery of _
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,7,33.19,37.987,word associations such as paradigmatic and relations and syntagmatic relations. 
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,8,39.19,43.1,_Now, starting from this lecture, we're going to talk about mining another kind of _
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,9,43.1,47.57,_knowledge, which is content mining, and _
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,10,47.57,55.031,trying to discover knowledge about the main topics in the text. 
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,11,56.14,58.81,And we call that topic mining and analysis. 
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,12,59.92,64.35,_In this lecture, we're going to talk about its motivation and the task definition. _
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,13,64.35,68.26,_So first of all, let's look at the concept of topic. _
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,14,68.26,72.6,_So topic is something that we all understand, I think, but _
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,15,72.6,75.84,it's actually not that easy to formally define. 
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,16,75.84,80.42,_Roughly speaking, topic is the main idea discussed in text data. _
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,17,80.42,85.86,And you can think of this as a theme or subject of a discussion or conversation. 
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,18,85.86,88.42,It can also have different granularities. 
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,19,88.42,91.24,_For example, we can talk about the topic of a sentence. _
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,20,91.24,94.8,_A topic of article, aa topic of paragraph or _
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,21,94.8,100.53999999999999,_the topic of all the research articles in the research library, right, _
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,22,100.53999999999999,105.62899999999999,so different grand narratives of topics obviously have different applications. 
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,23,106.75999999999999,111.628,_Indeed, there are many applications that require discovery of topics in text, and _
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,24,111.628,112.97999999999999,they're analyzed then. 
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,25,112.97999999999999,114.3,Here are some examples. 
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,26,114.3,118.28,_For example, we might be interested in knowing about what are Twitter _
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,27,118.28,120.47,users are talking about today? 
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,28,120.47,123.6,_Are they talking about NBA sports, or _
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,29,123.6,128.54,_are they talking about some international events, etc.? _
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,30,128.54,132.97,Or we are interested in knowing about research topics. 
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,31,132.97,137.09,_For example, one might be interested in knowing what are the current research _
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,32,137.09,141.84,_topics in data mining, and how are they different from those five years ago? _
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,33,141.84,146.82,Now this involves discovery of topics in data mining literatures and 
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,34,146.82,152.91,also we want to discover topics in today's literature and those in the past. 
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,35,152.91,154.69,And then we can make a comparison. 
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,36,154.69,158.4,We might also be also interested in knowing what do people like about 
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,37,158.4,163.71,_some products like the iPhone 6, and what do they dislike? _
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,38,163.71,168.36,And this involves discovering topics in positive opinions about 
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,39,168.36,172.47,iPhone 6 and also negative reviews about it. 
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,40,172.47,176.81,Or perhaps we're interested in knowing what are the major topics debated in 2012 
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,41,176.81,178.11,presidential election? 
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,42,179.78,184.8,_And all these have to do with discovering topics in text and analyzing them, _
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,43,184.8,188.68,and we're going to talk about a lot of techniques for doing this. 
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,44,188.68,192.92,In general we can view a topic as some knowledge about the world. 
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,45,192.92,197.82999999999998,_So from text data we expect to discover a number of topics, and _
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,46,197.82999999999998,202.65,then these topics generally provide a description about the world. 
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,47,202.65,205.69,And it tells us something about the world. 
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,48,205.69,208.23,_About a product, about a person etc. _
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,49,209.35,212.39,_Now when we have some non-text data, _
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,50,212.39,216.42000000000002,then we can have more context for analyzing the topics. 
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,51,216.42000000000002,221.62,_For example, we might know the time associated with the text data, or _
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,52,221.62,227.11,_locations where the text data were produced, _
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,53,227.11,232.945,_or the authors of the text, or the sources of the text, etc. _
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,54,232.945,234.4,_All such meta data, or _
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,55,234.4,239.61,_context variables can be associated with the topics that we discover, and _
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,56,239.61,245.34,then we can use these context variables help us analyze patterns of topics. 
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,57,245.34,249.32,_For example, looking at topics over time, we would be able to discover _
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,58,249.32,254.29,_whether there's a trending topic, or some topics might be fading away. _
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,59,255.62,258.95,Soon you are looking at topics in different locations. 
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,60,258.95,264.185,We might know some insights about people's opinions in different locations. 
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,61,266.15,269.9,So that's why mining topics is very important. 
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,62,269.9,274.54,_Now, let's look at the tasks of topic mining and analysis. _
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,63,274.54,279.38,_In general, it would involve first discovering a lot of topics, in this case, _
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,64,279.38,280.81,k topics. 
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,65,280.81,285.43,_And then we also would like to know, which topics are covered in which documents, _
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,66,285.43,286.6,to what extent. 
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,67,286.6,292.97,_So for example, in document one, we might see that Topic 1 is covered a lot, _
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,68,292.97,297.39,Topic 2 and Topic k are covered with a small portion. 
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,69,298.89,300.712,_And other topics, perhaps, are not covered. _
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,70,300.712,306.778,_Document two, on the other hand, covered Topic 2 very well, _
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,71,306.778,310.553,_but it did not cover Topic 1 at all, and _
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,72,310.553,315.873,_it also covers Topic k to some extent, etc., right? _
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,73,315.873,319.995,_So now you can see there are generally two different tasks, or _
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,74,319.995,325.76,_sub-tasks, the first is to discover k topics from a collection of text laid out. _
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,75,325.76,327.14,What are these k topics? 
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,76,327.14,328.92,_Okay, major topics in the text they are. _
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,77,328.92,333.18,The second task is to figure out which documents cover which topics 
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,78,333.18,334.43,to what extent. 
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,79,334.43,337.81,_So more formally, we can define the problem as follows. _
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,80,337.81,342.365,_First, we have, as input, a collection of N text documents. _
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,81,342.365,347.05,_Here we can denote the text collection as C, and _
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,82,347.05,351.74,denote text article as d i. 
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,83,351.74,356.7,_And, we generally also need to have as input the number of topics, k. _
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,84,356.7,361.73,But there may be techniques that can automatically suggest a number of topics. 
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,85,361.73,366.735,_But in the techniques that we will discuss, which are also the most useful _
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,86,366.735,372.34,_techniques, we often need to specify a number of topics. _
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,87,374.58,379.86,_Now the output would then be the k topics that we would like to discover, _
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,88,379.86,383.21,in order as theta sub one through theta sub k. 
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,89,384.54,389.82,Also we want to generate the coverage of topics in each document of d sub i And 
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,90,389.82,392.51800000000003,this is denoted by pi sub i j. 
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,91,393.562,398.073,And pi sub ij is the probability of document d sub i 
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,92,398.073,401.29,covering topic theta sub j. 
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,93,401.29,405.45,_So obviously for each document, we have a set of such values to indicate to _
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,94,405.45,407.83,_what extent the document covers, each topic. _
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,95,408.93,413.61,And we can assume that these probabilities sum to one. 
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,96,413.61,417.0,Because a document won't be able to cover 
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,97,417.0,422.52,_other topics outside of the topics that we discussed, that we discovered. _
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,98,422.52,428.17,_So now, the question is, how do we define theta sub i, how do we define the topic? _
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,99,428.17,431.5,Now this problem has not been completely defined 
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,100,431.5,435.18,until we define what is exactly theta. 
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,101,436.97,439.381,_So in the next few lectures, _
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,102,439.381,444.211,we're going to talk about different ways to define theta. 
+3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).srt,103,444.211,454.211,[MUSIC] 

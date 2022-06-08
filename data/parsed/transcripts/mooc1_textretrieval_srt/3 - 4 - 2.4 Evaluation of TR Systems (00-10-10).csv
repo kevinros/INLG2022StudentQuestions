@@ -1,0 +1,146 @@
+name,id,from,to,text
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,1,0.025,5.569,[SOUND] This lecture is about 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,2,5.569,13.773,evaluation of text retrieval systems. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,3,13.773,20.36,_In the previous lectures, we have talked about a number of text retrieval methods. _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,4,20.36,22.12,Different kinds of ranking functions. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,5,23.55,26.07,But how do we know which one works the best? 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,6,27.1,29.39,_In order to answer this question, we have to compare them, _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,7,29.39,33.0,and that means we'll have to evaluate these retrieval methods. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,8,34.78,37.0,So this is the main topic of this lecture. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,9,40.44,42.73,_First, let's think about why do we have to do evaluation? _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,10,42.73,44.29,I already gave one reason. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,11,44.29,45.027,_And that is, _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,12,45.027,50.34,we have to use evaluation to figure out which retrieval method works better. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,13,50.34,54.27,Now this is very important for advancing our knowledge. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,14,54.27,58.12,Otherwise we wouldn't know whether a new idea works better than old idea. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,15,58.12,63.17,_In the beginning of this course we talked about the, _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,16,63.17,67.2,the problem of text retrieval we compare it with database retrieval. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,17,68.44,74.39,_There, we mentioned that text retrieval is imperative to find the problem. _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,18,74.39,77.451,_So, evaluation must rely on users, _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,19,77.451,82.21000000000001,_which system works better, that would have to be judged by our users. _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,20,85.02,88.81,So this becomes very challenging problem. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,21,88.81,92.43,_Because how can we get users involved in, in matters, and _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,22,92.43,94.899,how can we draw a fair comparison of different methods. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,23,97.46000000000001,99.97,So just go back to the reasons for evaluation. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,24,101.25999999999999,102.66,I listed two reasons here. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,25,102.66,107.50999999999999,_The second reason is basically what I just said but there is also another reason, _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,26,107.50999999999999,111.93,which is to assess the actual utility of a test regional system. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,27,111.93,115.19,Now imagine you're building your own applications. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,28,115.19,121.67,Would be interested in knowing how well your search engine works for your users. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,29,121.67,124.03,So in this case measures must 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,30,124.03,127.85,reflect the utility to the actual users in the the real application. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,31,127.85,131.84,_And typically, this has been done by using user studies and _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,32,131.84,133.96,using the real search engine. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,33,136.34,141.16,_In the second case or for the second reason, the measures _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,34,141.16,145.13,actually all need to be correlated with the utility to actual users. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,35,146.185,150.12,_Thus they don't have to accurately reflect the, the exact utility to users. _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,36,151.98,157.68,So the measure only needs to be good enough to tell which method works better. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,37,158.86,161.78,And this is usually done through test collection. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,38,161.78,168.11,And this is the main idea that we'll be talking about in this course. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,39,168.11,173.29500000000002,This has been very important for comparing different algorithms and 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,40,173.29500000000002,176.9,for improving search engines systems in general. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,41,178.91,181.97,So next we will talk about what to measure. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,42,181.97,187.0,_There are many aspects of a search engine we can measure, we can evaluate and _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,43,187.0,189.0,here I list the three major aspects. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,44,189.0,193.73,_One is effectiveness or accuracy, how accurate are the search results? _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,45,193.73,198.11,In this case we're measuring a system's capability of ranking relevant documents 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,46,198.11,200.15,on top of non relevant ones. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,47,200.15,201.85,The second is efficiency. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,48,201.85,204.47,How quickly can a user get the results? 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,49,204.47,207.68,How much computing resources are needed to answer a query? 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,50,207.68,211.11,So in this case we need to measure the space and time overhead of the system. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,51,212.54,214.87,The third aspect is usability. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,52,214.87,218.95,Basically the question is how useful is the system for real user tasks? 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,53,218.95,224.14,_Here, obviously, interfaces and many other things are also important and _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,54,224.14,225.87,we typically would have to do user studies. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,55,227.41,231.75,_Now, in this course, we're going to talk more, mostly about the effectiveness and _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,56,231.75,235.36,_accuracy measures because, the efficiency and _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,57,235.36,240.78,_usability dimensions are, not really unique to search engines, and so, _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,58,242.81,248.64,_they are, needed for evaluating any other software systems. _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,59,248.64,252.33,And there is also good coverage of such materials in other courses. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,60,253.35,258.78,_But how to evaluate a search engine is quite, you know accuracy is _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,61,258.78,263.11,_something you need to text retrieval, and we're going to talk a lot about this. _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,62,263.11,268.84,_The main idea that people have proposed before using a attitude, evaluate _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,63,268.84,273.83,_a text retrieval algorithm, is called the Cranfield Evaluation Methodology. _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,64,273.83,280.145,_This one actually was developed long time ago, developed in the 1960s. _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,65,280.145,286.545,_It's a methodology for laboratory test of system components, it's actually _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,66,286.545,290.88,_a methodology that has been very useful, not just for search engine evaluation. _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,67,290.88,295.62,But also for evaluating virtually all kinds of empirical tasks. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,68,295.62,301.24,_And, for example in processing or in other fields where the problem _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,69,301.24,305.65,is empirically defined we typically would need to use to use such a methodology. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,70,305.65,312.83,And today was the big data challenge with the use of machine learning every where. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,71,312.83,317.44,_We general, this methodology has been very popular, but it was first developed for _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,72,317.44,320.1,search engine application in the 1960s. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,73,320.1,325.14,So the basic idea of this approach is it'll build a reusable test collections 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,74,325.14,326.2,and define measures. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,75,327.22,330.35,Once such a test collection is build it can be used again and 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,76,330.35,332.998,again to test the different algorithms. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,77,332.998,336.18,And we're going to define measures that would allow you to quantify 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,78,336.18,339.67,_performance of a system or an, an algorithm. _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,79,341.06,342.70799999999997,So how exactly would this work? 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,80,342.70799999999997,345.76,_Well, we're going to do, have assembled collection of documents and _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,81,345.76,350.01,this is just similar to real document collection in your search application. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,82,350.01,353.21,We can also have a sample set of queries or topics. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,83,353.21,355.24,This is to simulate the user's queries. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,84,356.29,358.98,Then we'll have to have relevance judgments. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,85,358.98,363.93,These are judgments of which documents should be returned for which queries. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,86,363.93,368.25,_Ideally, they have to made by users who formulated the queries _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,87,368.25,372.22,because those are the people that know exactly what documents would be used for. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,88,372.22,377.21,And then finally we have to have measures to quantify how well a system's result 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,89,377.21,379.83,matches the ideal ranked list. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,90,379.83,385.663,That would be constructed and based on users' relevant judgements. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,91,385.663,390.7,So this methodology is very useful for starting retrieval 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,92,390.7,396.06,_algorithms because the test can actually, can be reused many times. _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,93,396.06,401.34000000000003,And it will also provide a fair comparison for all the methods. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,94,401.34000000000003,405.38,_We have the same criteria, same data set to use and _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,95,405.38,407.57,to compare different algorithms. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,96,407.57,411.96,_This allows us to compare a new algorithm with an old algorithm, _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,97,411.96,413.78,that was the method of many years ago. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,98,413.78,415.65999999999997,By using the same standard. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,99,415.65999999999997,418.78,_So this is the illustration of how this works, so _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,100,418.78,423.6,_as I said, we need a queries that are shown here. _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,101,423.6,425.19,_We have Q1, Q2, et cetera. _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,102,425.19,427.91,_We also need a documents, and that's called the document collection, _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,103,427.91,431.43,_and on the right side, you see we need relevance judgment. _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,104,431.43,439.15,These are basically the binary judgments of documents with respect to a query. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,105,439.15,443.95,_So, for example D1 is judged as being relevant to Q1, _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,106,443.95,446.6,D2 is judged as being relevant as well. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,107,446.6,449.54,_And D3 is judged as non relevant in the two, Q1, et cetera. _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,108,450.56,452.51,These would be created by users. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,109,454.19,458.59000000000003,_Once we have these, and we basically have a test, correction, and _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,110,458.59000000000003,462.76,_then, if you have two systems, you want to, compare them. _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,111,462.76,467.38,Then you can just run each system on these queries and 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,112,467.38,470.58,documents and each system will then return results. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,113,470.58,476.37,_Let's say if the query is Q1 and then we would have the results here, _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,114,476.37,482.31,here I show R sub A as results from system A. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,115,482.31,488.4,_So, this is remember we talked about task of computing approximation of the, _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,116,488.4,489.88,relevant document setter. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,117,489.88,495.38,_So A is, the system A's approximation here, and _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,118,495.38,500.0,also B is system B's approximation of relevant documents. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,119,501.11,502.81,Now let's take a look at these results. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,120,502.81,504.21,So which is better? 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,121,504.21,506.52,Now imagine for a user which one would you like? 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,122,506.52,511.135,All right lets take a look at both results. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,123,511.135,513.27,And there are some differences and 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,124,513.27,520.15,there are some documents that are return to both systems. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,125,520.15,522.96,_But if you look at the results you will feel that well, _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,126,522.96,528.64,maybe an A is better in the sense that we don't have many number in documents. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,127,528.64,532.41,_And among the three documents returned the two of them are relevant, so _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,128,532.41,535.43,_that's good, it's precise. _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,129,535.43,539.61,On the other hand can also say maybe B is better because 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,130,539.61,542.88,_we've got more relevant documents, we've got three instead of two. _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,131,544.16,546.819,So which one is better and how do we quantify this? 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,132,548.82,552.36,_Well obviously, this question highly depends on a user's task. _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,133,552.36,554.82,_And, it depends on users as well. _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,134,554.82,559.95,_You might be able to imagine, for some users may be system made is better. _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,135,559.95,563.795,_If the user is not interested in getting all the relevant documents, _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,136,563.795,567.76,_right, in this case this is the user doesn't have to read. _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,137,567.76,571.02,User would see most relevant documents. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,138,571.02,575.29,_On the other hand on one count, imagine user might need to have _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,139,575.29,579.39,_as many relevant documents as possible, for example, taking a literature survey. _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,140,579.39,580.82,_You might be in the second category, and _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,141,580.82,584.02,then you might find that system B's better. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,142,584.02,588.951,_So in either case, we'll have to also define measures that would quantify them. _
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,143,588.951,593.421,And we might need to define multiple measures because 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,144,593.421,597.994,users have different perspectives of looking at results. 
+3 - 4 - 2.4 Evaluation of TR Systems (00-10-10).srt,145,597.994,607.994,[MUSIC] 

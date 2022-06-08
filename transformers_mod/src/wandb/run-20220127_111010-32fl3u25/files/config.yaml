@@ -1,0 +1,67 @@
+wandb_version: 1
+
+LEARNING_RATE:
+  desc: null
+  value: 0.0001
+MAX_SOURCE_TEXT_LENGTH:
+  desc: null
+  value: 512
+MAX_TARGET_TEXT_LENGTH:
+  desc: null
+  value: 50
+MODEL:
+  desc: null
+  value: castorini/doc2query-t5-base-msmarco
+SEED:
+  desc: null
+  value: 42
+TEST_BATCH_SIZE:
+  desc: null
+  value: 1
+TRAIN_BATCH_SIZE:
+  desc: null
+  value: 1
+TRAIN_EPOCHS:
+  desc: null
+  value: 10
+VALID_BATCH_SIZE:
+  desc: null
+  value: 1
+VAL_EPOCHS:
+  desc: null
+  value: 1
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.12.9
+    framework: huggingface
+    huggingface_version: 4.16.0.dev0
+    is_jupyter_run: true
+    is_kaggle_kernel: false
+    python_version: 3.8.10
+    start_time: 1643303410
+    t:
+      1:
+      - 1
+      - 5
+      - 11
+      3:
+      - 16
+      4: 3.8.10
+      5: 0.12.9
+      6: 4.16.0.dev0
+      8:
+      - 1
+      - 5
+hidden:
+  desc: null
+  value: '800'
+input_dim:
+  desc: null
+  value: 768*20
+output_dim:
+  desc: null
+  value: 768*100
+type:
+  desc: null
+  value: prefix-dropout

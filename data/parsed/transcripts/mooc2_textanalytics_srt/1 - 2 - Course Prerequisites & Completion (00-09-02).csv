@@ -1,0 +1,111 @@
+name,id,from,to,text
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,1,0.124,7.641,[SOUND] This 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,2,7.641,10.03,lecture is a brief introduction to the course. 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,3,12.58,17.607,_We're going to cover the objectives of the course, the prerequisites and _
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,4,17.607,22.093,_course formats, reference books and how to complete the course. _
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,5,22.093,25.598,The objectives of the course are the following. 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,6,25.598,29.555,_First, we would like to cover the basic context and _
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,7,29.555,32.97,practical techniques of text data mining. 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,8,32.97,40.234,_So this means we will not be able to cover some advanced techniques in detail, _
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,9,40.234,44.258,but whether we choose the practical use for 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,10,44.258,48.196,techniques and then treat them in order. 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,11,48.196,53.055,We're going to also cover the basic concepts that are very useful for 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,12,53.055,54.579,many applications. 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,13,54.579,59.814,The second objective is to cover more general techniques for 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,14,59.814,65.047,_text or data mining, so we emphasize the coverage of general _
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,15,65.047,72.05,techniques that can be applicable to any text in any natural language. 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,16,72.05,76.424,We also hope that these techniques to either 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,17,76.424,82.334,automatically work on problems without any human effort or 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,18,82.334,86.246,only requiring minimum human effort. 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,19,86.246,90.8,So these criteria have helped others to choose 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,20,90.8,96.787,techniques that can be applied to many applications. 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,21,96.787,102.497,_This is in contrast to some more detailed analysis of text data, _
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,22,102.497,106.31700000000001,particularly using natural language processing techniques. 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,23,106.31700000000001,109.768,Now such techniques are also very important. 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,24,109.768,114.94,_And they are indeed, necessary for some of the applications, _
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,25,114.94,121.61,_where we would like to go in-depth to understand text, they are in more detail. _
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,26,121.61,125.22,_Such detail in understanding techniques, however, _
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,27,125.22,131.36,are generally not scalable and they tend to require a lot of human effort. 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,28,131.36,134.16,So they cannot be easy to apply to any domain. 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,29,135.47,138.188,_So as you can imagine in practice, _
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,30,138.188,143.253,it would be beneficial to combine both kinds of techniques using 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,31,143.253,149.161,the general techniques that we'll be covering in this course as a basis and 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,32,149.161,155.757,improve these techniques by using more human effort whenever it's appropriate. 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,33,155.757,162.397,We also would like to provide a hands-on experience to you in multiple aspects. 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,34,162.397,168.049,_First, you'll do some experiments using a text mining toolkit and _
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,35,168.049,171.43,implementing text mining algorithms. 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,36,171.43,177.037,_Second, you will have opportunity to experiment with some algorithms for _
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,37,177.037,181.309,text mining and analytics to try them on some datasets and 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,38,181.309,184.159,to understand how to do experiments. 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,39,185.39,190.3,_And finally, you have opportunity to participate in a competition _
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,40,190.3,192.808,of text-based prediction task. 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,41,192.808,195.826,You're expected to know the basic concepts of computer science. 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,42,195.826,199.701,_For example, the data structures and _
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,43,199.701,205.403,some other really basic concepts in computer science. 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,44,205.403,209.277,You are also expected to be familiar with programming and 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,45,209.277,213.45,_comfortable with programming, particularly with C++. _
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,46,213.45,216.09300000000002,_This course, however is not about programming. _
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,47,216.09300000000002,219.53300000000002,_So you are not expected to do a lot of coding, but _
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,48,219.53300000000002,224.53199999999998,we're going to give you C++ toolkit that's fairly sophisticated. 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,49,224.53199999999998,229.392,So you have to be comfortable with handling such a toolkit and 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,50,229.392,233.21699999999998,you may be asked to write a small amount of code. 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,51,236.617,240.753,It's also useful if you know some concepts and 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,52,240.753,247.13,_techniques in probability and statistics, but it's not necessary. _
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,53,248.54,253.55,Knowing such knowledge would help you understand some of the algorithm in 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,54,253.55,254.22,more depth. 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,55,256.24,263.87,The format of the course is lectures plus quizzes that will be given to you 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,56,265.69,271.879,in the regular basis and there is also optional programming assignment. 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,57,273.23,276.38,_Now, we've made programming assignments optional. _
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,58,276.38,280.053,_Not because it's not important, but _
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,59,280.053,286.019,because we suspect that the not all of you will have the need for 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,60,286.019,291.087,computing resources to do the program assignment. 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,61,291.087,295.948,_So naturally, we would encourage all of you to try to do _
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,62,295.948,301.657,_the program assignments, if possible as that will be a great way _
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,63,301.657,306.86,to learn about the knowledge that we teach in this course. 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,64,306.86,310.948,_There's no required reading for this course, _
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,65,310.948,315.66,but I was list some of the useful reference books here. 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,66,318.27,322.68,So we expect you to be able to understand all the essential materials by just 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,67,322.68,327.81,watching the actual videos and you should be able to answer all the quiz 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,68,327.81,332.54,questions by just watching the videos. 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,69,333.82,338.4,_But it's always good to read additional books in the larger scope of knowledge, _
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,70,339.48,343.26,so here is this the four books. 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,71,343.26,347.795,The first is a textbook about statistical language processing. 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,72,347.795,352.599,Some of the chapters [INAUDIBLE] are especially relevant to this course. 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,73,352.599,357.258,_The second one is a textbook about information retrieval, _
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,74,357.258,361.449,but it has broadly covered a number of techniques that 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,75,361.449,365.752,are really in the category of text mining techniques. 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,76,365.752,370.46,_So it's also useful, because of that. _
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,77,370.46,376.02,The third book is actually a collection of silly articles and 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,78,376.02,380.29,it has broadly covered all the aspects of mining text data. 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,79,381.95,386.048,The mostly relevant chapters are also listed here. 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,80,386.048,391.474,_In these chapters, you can find some in depth discussion of cutting _
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,81,391.474,396.439,edge research on the topics that we discussed in this course. 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,82,396.439,400.993,And the last one is actually a book that Sean Massung and 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,83,400.993,405.745,I are currently writing and we're going to make the rough 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,84,405.745,411.37,draft chapters available at this URL listed right here. 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,85,411.37,414.22,You can also find additional reference books and 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,86,414.22,418.17,other readings at the URL listed at the bottom. 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,87,419.28,422.491,_So finally, some information about how _
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,88,422.491,427.218,to complete the course this information is also on the web. 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,89,427.218,429.755,So I just briefly go over it and 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,90,429.755,435.552,you can complete the course by earning one of the following badges. 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,91,435.552,438.014,One is Course Achievement Badge. 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,92,438.014,443.318,_To earn that, you have to have at least a 70% _
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,93,443.318,448.35699999999997,average score on all the quizzes combined. 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,94,448.35699999999997,455.034,It does mean every quiz has to be 70% or better. 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,95,455.034,459.294,_The second batch here, this is a Course Mastery Badge and _
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,96,459.294,464.912,_this just requires a higher score, 90% average score for the quizzes. _
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,97,468.731,472.19,There are also three optional programming badges. 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,98,472.19,476.721,_I said earlier that we encourage you to do programming assignments, but _
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,99,476.721,479.925,_they're not necessary, they're not required. _
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,100,479.925,482.188,The first is Programming Achievement Badge. 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,101,482.188,485.648,This is similar to the call switching from the badge. 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,102,485.648,492.649,Here would require you to get at least 70% average score on programming assignments. 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,103,492.649,497.696,_And similarly, the mastery badge _
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,104,497.696,502.046,is given to those who can score 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,105,502.046,506.928,90% average score or better. 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,106,506.928,513.095,The last badge is a Text Mining Competition Leader Badge and 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,107,513.095,519.768,this is given to those of you who do well in the competition task. 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,108,519.768,524.53,_And specifically, we're planning to give _
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,109,524.53,529.684,the badge to the top 30% in the leaderboard. 
+1 - 2 - Course Prerequisites & Completion (00-09-02).srt,110,529.684,539.684,[MUSIC] 

@@ -1,0 +1,198 @@
+[SOUND]
+This
+lecture is a brief
+introduction to the course.
+We're going to cover the objectives
+of the course, the prerequisites and
+course formats, reference books and
+how to complete the course.
+The objectives of the course
+are the following.
+First, we would like to
+cover the basic context and
+practical techniques of text data mining.
+So this means we will not be able to
+cover some advanced techniques in detail,
+but whether we choose
+the practical use for
+techniques and then treat them in order.
+We're going to also cover the basic
+concepts that are very useful for
+many applications.
+The second objective is to cover
+more general techniques for
+text or data mining, so
+we emphasize the coverage of general
+techniques that can be applicable to
+any text in any natural language.
+We also hope that these
+techniques to either
+automatically work on problems
+without any human effort or
+only requiring minimum human effort.
+So these criteria have
+helped others to choose
+techniques that can be
+applied to many applications.
+This is in contrast to some more
+detailed analysis of text data,
+particularly using natural
+language processing techniques.
+Now such techniques
+are also very important.
+And they are indeed, necessary for
+some of the applications,
+where we would like to go in-depth to
+understand text, they are in more detail.
+Such detail in understanding techniques,
+however,
+are generally not scalable and they
+tend to require a lot of human effort.
+So they cannot be easy
+to apply to any domain.
+So as you can imagine in practice,
+it would be beneficial to combine
+both kinds of techniques using
+the general techniques that we'll be
+covering in this course as a basis and
+improve these techniques by using more
+human effort whenever it's appropriate.
+We also would like to provide a hands-on
+experience to you in multiple aspects.
+First, you'll do some experiments
+using a text mining toolkit and
+implementing text mining algorithms.
+Second, you will have opportunity to
+experiment with some algorithms for
+text mining and
+analytics to try them on some datasets and
+to understand how to do experiments.
+And finally, you have opportunity
+to participate in a competition
+of text-based prediction task.
+You're expected to know the basic
+concepts of computer science.
+For example, the data structures and
+some other really basic
+concepts in computer science.
+You are also expected to be
+familiar with programming and
+comfortable with programming,
+particularly with C++.
+This course,
+however is not about programming.
+So you are not expected to
+do a lot of coding, but
+we're going to give you C++ toolkit
+that's fairly sophisticated.
+So you have to be comfortable
+with handling such a toolkit and
+you may be asked to write
+a small amount of code.
+It's also useful if you
+know some concepts and
+techniques in probability and
+statistics, but it's not necessary.
+Knowing such knowledge would help you
+understand some of the algorithm in
+more depth.
+The format of the course is lectures
+plus quizzes that will be given to you
+in the regular basis and there is
+also optional programming assignment.
+Now, we've made programming
+assignments optional.
+Not because it's not important, but
+because we suspect that the not
+all of you will have the need for
+computing resources to do
+the program assignment.
+So naturally,
+we would encourage all of you to try to do
+the program assignments,
+if possible as that will be a great way
+to learn about the knowledge
+that we teach in this course.
+There's no required reading for
+this course,
+but I was list some of
+the useful reference books here.
+So we expect you to be able to understand
+all the essential materials by just
+watching the actual videos and
+you should be able to answer all the quiz
+questions by just watching the videos.
+But it's always good to read additional
+books in the larger scope of knowledge,
+so here is this the four books.
+The first is a textbook about
+statistical language processing.
+Some of the chapters [INAUDIBLE]
+are especially relevant to this course.
+The second one is a textbook
+about information retrieval,
+but it has broadly covered
+a number of techniques that
+are really in the category
+of text mining techniques.
+So it's also useful, because of that.
+The third book is actually
+a collection of silly articles and
+it has broadly covered all
+the aspects of mining text data.
+The mostly relevant chapters
+are also listed here.
+In these chapters, you can find
+some in depth discussion of cutting
+edge research on the topics that
+we discussed in this course.
+And the last one is actually
+a book that Sean Massung and
+I are currently writing and
+we're going to make the rough
+draft chapters available at
+this URL listed right here.
+You can also find additional
+reference books and
+other readings at the URL
+listed at the bottom.
+So finally, some information about how
+to complete the course this
+information is also on the web.
+So I just briefly go over it and
+you can complete the course by
+earning one of the following badges.
+One is Course Achievement Badge.
+To earn that,
+you have to have at least a 70%
+average score on all the quizzes combined.
+It does mean every quiz has to be 70% or
+better.
+The second batch here,
+this is a Course Mastery Badge and
+this just requires a higher score,
+90% average score for the quizzes.
+There are also three
+optional programming badges.
+I said earlier that we encourage you
+to do programming assignments, but
+they're not necessary,
+they're not required.
+The first is
+Programming Achievement Badge.
+This is similar to the call
+switching from the badge.
+Here would require you to get at least 70%
+average score on programming assignments.
+And similarly, the mastery badge
+is given to those who can score
+90% average score or better.
+The last badge is
+a Text Mining Competition Leader Badge and
+this is given to those of you who
+do well in the competition task.
+And specifically, we're planning to give
+the badge to the top
+30% in the leaderboard.
+[MUSIC]
+

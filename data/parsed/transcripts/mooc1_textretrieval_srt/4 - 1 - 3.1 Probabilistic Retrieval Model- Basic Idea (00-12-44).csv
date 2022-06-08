@@ -1,0 +1,176 @@
+name,id,from,to,text
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,1,0.0,5.14,[SOUND] This lecture is about 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,2,5.14,12.297,the probabilistic retrieval model. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,3,12.297,18.545,_In this lecture, we're going to continue the discussion of text retrieval methods. _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,4,18.545,23.177,We're going to look at another kind of very different way to design ranking 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,5,23.177,27.382,_functions, then the Vector Space Model that we discussed before. _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,6,32.131,37.098,In probabilistic models we define the ranking function based 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,7,37.098,42.17,on the probability that this document is random to this query. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,8,42.17,48.175,_In other words, we are, we introduced a binary random variable here. _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,9,48.175,53.42,This is the variable R here. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,10,53.42,56.069,And we also assume that the query and 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,11,56.069,60.586,the documents are all observations from random variables. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,12,60.586,63.462,_Note that in the vector space model, we assume they are vectors. _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,13,63.462,70.79599999999999,But here we assumed we assumed they are the data observed from random variables. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,14,70.79599999999999,74.482,_And so the problem, model retrieval _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,15,74.482,79.129,becomes to estimate the probability of relevance. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,16,79.129,82.67,_In this category of models, there are different variants. _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,17,82.67,87.662,_The classic probabilistic model has led to the BM25 retrieval function, _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,18,87.662,90.70400000000001,_which we discussed in the vector space model, _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,19,90.70400000000001,94.92,because it's form is actually similar to a vector space model. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,20,94.92,99.991,_In this lecture, we're going to discuss another subclass in _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,21,99.991,105.255,this big class called a language modeling approaches to retrieval. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,22,105.255,111.417,_In particular, we're going to discuss the Query Likelihood retrieval model, _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,23,111.417,116.753,which is one of the most effective models in probabilistic models. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,24,116.753,122.881,_There is also another line called a divergence-from-randomness model, _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,25,122.881,126.048,which has latitude the PL2 function. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,26,126.048,130.797,It's also one of the most effective state of the art attribute functions. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,27,130.797,136.851,_In query likelihood, our assumption is that this probability readiness _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,28,136.851,143.503,can be approximated by the probability of query given a document and readiness. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,29,143.503,149.711,_So, intuitively, this probability just captures the following probability. _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,30,149.711,154.791,_And that is if a user likes document d, how likely would _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,31,154.791,159.878,the user enter query q in order to retrieve document d. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,32,159.878,167.336,_So we'll assume that the user likes d, because we have a relevance value here. _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,33,167.336,171.859,And the we ask the question about how likely we will see this 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,34,171.859,174.54500000000002,particular query from this user? 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,35,174.54500000000002,176.754,So this is the basic idea. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,36,176.754,180.756,_Now to understand this idea, let's take a look at the general idea or _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,37,180.756,183.795,the basic idea of probabilistic retrieval models. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,38,183.795,190.184,_So here, I listed some imagined relevance status values or _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,39,190.184,194.711,relevance judgments of queries and documents. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,40,194.711,200.484,_For example, in this slide, it shows that query one _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,41,200.484,207.701,is a query that the user typed in and d1 is a document the user has seen and 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,42,207.701,213.379,one means the user thinks d1 is relevant to to q1. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,43,213.379,218.973,So this R here can be also approximated by the clicks little data that the search 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,44,218.973,224.42000000000002,engine can collect it by watching how you interact with the search results. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,45,224.42000000000002,228.052,_So, in this case, let's say, the user clicked on this document, so _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,46,228.052,229.17000000000002,there's a one here. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,47,229.17000000000002,236.128,_Similarly, the user clicked on d2 also, so there's a one here. _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,48,236.128,240.42,_In other words, d2 is assumed to relevant at two, q1. _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,49,240.42,247.086,_On the other hand, d3 is non relevant, there's a zero here. _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,50,247.086,253.128,And d4 is non-relevant and then d 5 is again relevant and so on and so forth. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,51,253.128,257.378,_And this part of maybe, they are collected from a different user. _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,52,257.378,259.681,Right. So this user typed in q1 and 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,53,259.681,265.798,_then found that d1 is actually not useful, so d1 is actually non-relevant. _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,54,265.798,270.89,_In contrast here we see it's relevant and, _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,55,270.89,278.592,_or this could be the same query typing by the same user at different times, _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,56,278.592,282.586,_but d2 is also relevant, et cetera. _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,57,282.586,288.046,_And then here, we can see more data that about other queries. _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,58,288.046,292.545,_Now we can imagine, we have a lot of search data. _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,59,292.545,294.931,_Now we can ask the question, _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,60,294.931,299.711,how can we then estimated the probability of relevance? 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,61,299.711,300.271,Right. So 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,62,300.271,303.339,how can we compute this probability of relevance? 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,63,303.339,307.334,_Well, intuitively, that just means if we look at the, _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,64,307.334,312.264,_all the entries where we see this particular d and this particular q, _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,65,312.264,315.67,how likely will we see a one on the third column? 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,66,315.67,319.42,_Basically, that just means we can correct the counts. _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,67,319.42,324.435,We can first count how many times where we see q and 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,68,324.435,329.693,d as a pair in this table and then count how many times 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,69,329.693,335.562,we actually have also seen one in the third column and 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,70,335.562,339.378,then we just compute the ratio. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,71,339.378,342.256,So let's take a look at some specific examples. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,72,342.256,350.378,_Suppose we are trying to computed this probability for d1, d2 and d3 for q1. _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,73,350.378,353.586,What is the estimated probability? 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,74,353.586,355.92,Now think about that. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,75,355.92,358.961,You can pause the video if needed. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,76,358.961,362.246,Try to take a look at the table and 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,77,362.246,367.004,try to give your estimate of the probability. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,78,367.004,373.509,_Have you seen that if we are interested in q1 and d1, we've been looking at the, _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,79,373.509,378.601,_these two pairs and in both cases or actually in one of the cases, _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,80,378.601,382.878,_the user has said that this is one, this is relevant. _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,81,382.878,386.503,So R is equal to 1 in only one of the two cases. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,82,386.503,388.795,_In the other case, this is zero. _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,83,388.795,392.004,So that's one out of two. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,84,392.004,395.128,What about the d1 and the d2? 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,85,395.128,400.17,_Well, they're are here, you want d2, d1, d2. _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,86,400.17,402.754,_In both cases, in this case R is equal to 1. _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,87,402.754,406.128,_So, it's two out of two and so and so forth. _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,88,406.128,408.606,_So you can see with this approach, _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,89,408.606,412.378,we captured it score these documents for the query. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,90,412.378,412.878,Right? 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,91,412.878,416.92,_We now have a score for d1, d2 and d3 for this query. _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,92,416.92,420.702,We can simply ranked them based on these probabilities and so 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,93,420.702,424.42,that's the basic idea of probabilistic retrieval model. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,94,424.42,426.045,_And you can see, it makes a lot of sense. _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,95,426.045,429.961,_In this case, it's going to rank d2 above all the other documents. _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,96,429.961,436.253,_Because in all the cases, when you have seen q1 and d2, R is equal to 1. _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,97,436.253,439.336,The user clicked on this document. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,98,439.336,444.93,_So this also showed showed that with a lot of click through data, _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,99,444.93,450.549,a search engine can learn a lot from the data to improve the search engine. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,100,450.549,455.622,_This is a simple example that shows that with even a small number of entries here, _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,101,455.622,458.378,we can already estimate some probabilities. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,102,458.378,463.321,These probabilities would give us some sense about which document might be more 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,103,463.321,466.797,read or more useful to a user for typing this query. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,104,466.797,471.291,_Now, of course, the problem is that we don't observe all the queries and _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,105,471.291,474.42,all of the documents and all the relevance values. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,106,474.42,475.003,Right? 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,107,475.003,477.049,There will be a lot of unseen documents. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,108,477.049,481.78,_In general, we can only collect data from the document's that we have shown to _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,109,481.78,482.811,the users. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,110,482.811,485.207,_There are even more unseen queries, _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,111,485.207,489.547,because you cannot predict what queries will be typed in by users. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,112,489.547,493.473,_So, obviously, this approach won't work _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,113,493.473,497.796,if we apply it to unseen queries or unseen documents. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,114,497.796,502.543,_Nevertheless, this shows the basic idea of the probabilistic retrieval model and _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,115,502.543,504.255,it makes sense intuitively. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,116,504.255,508.67,_So what do we do in such a case when we have a lot of unseen documents and, and _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,117,508.67,509.753,unseen queries? 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,118,509.753,512.798,_Well, the solutions that we have to approximate in some way. _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,119,512.798,516.275,_Right. So, in this particular case called _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,120,516.275,521.892,_the Query LIkelihood Retrieval Model, we just approximate this _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,121,521.892,527.42,_by another conditional probability, p q | d, R is equal to 1. _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,122,527.42,532.023,_So, in the condition part, we assume that the user likes the document, _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,123,532.023,535.878,because we have seen that the user clicked on this document. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,124,535.878,536.717,_And this part, _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,125,536.717,541.378,shows that we're interested in how likely the user would actually enter this query. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,126,541.378,544.628,How likely we will see this query in the same row. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,127,544.628,548.503,_So note that here, we have made an interesting assumption here. _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,128,548.503,553.49,_Basically, we, we're going to assume that whether the user types in this _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,129,553.49,557.586,query has something to do with whether user likes the document. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,130,557.586,562.192,_In other words, we actually make the foreign assumption and _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,131,562.192,567.711,that is a user formula to query based on an imaginary relevant document. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,132,567.711,570.471,_Well, if you just look at this as a conditional probability, _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,133,570.471,572.711,it's not obvious we are making this assumption. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,134,572.711,577.636,So what I really meant is that to use this new 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,135,577.636,582.931,conditional probability to help us score 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,136,582.931,587.255,then this new condition of probability. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,137,587.255,591.4639999999999,We have to somehow be able to estimate this conditional 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,138,591.4639999999999,594.924,probability without relying on this big table. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,139,594.924,599.128,_Otherwise, it would be having similar problems as before. _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,140,599.128,604.816,_And by making this assumption, we have some way to bypass this big table and _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,141,604.816,608.712,try to just mortar how to use a formula to the query. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,142,608.712,611.919,_Okay. So this is how you can simplify the, _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,143,611.919,618.253,the general model so that we can give either specific function later. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,144,618.253,621.4639999999999,So let's look at how this model works for our example. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,145,621.4639999999999,622.52,_And basically, _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,146,622.52,627.128,what we are going to do in this case is to ask the following question. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,147,627.128,631.073,Which of these documents is most likely the imaginary relevant document in 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,148,631.073,633.961,the user's mind when the user formulates this query? 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,149,633.961,637.722,And so we ask this question and we quantify the probability and this 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,150,637.722,642.36,probability is a conditional probability of observing this query if a particular 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,151,642.36,646.545,document is in fact the imaginary relevant document in the user's mind. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,152,646.545,651.439,_Here you can see we compute all these query likelihood probabilities, _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,153,651.439,654.586,the likelihood of queries given each document. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,154,654.586,656.374,_Once we have these values, _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,155,656.374,660.045,we can then rank these documents based on these values. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,156,660.045,665.574,_So to summarize, the general idea of modern relevance in the probability _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,157,665.574,671.295,_risk model is to assume that we introduce a binary random variable, R here. _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,158,671.295,675.25,And then let the scoring function be defined based on this conditional 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,159,675.25,676.128,probability. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,160,676.128,682.091,We also talked about a proximate in this [SOUND] by using the query likelihood. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,161,682.091,686.03,_And in this case, we have a ranking function that's _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,162,686.03,690.878,basically based on a probability of a query given the document. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,163,690.878,695.681,And this probability should be interpreted as the probability 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,164,695.681,699.587,that a user who likes document d would pose query q. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,165,699.587,704.295,_Now the question, of course is how do we compute this additional probability? _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,166,704.295,709.999,_At this in general has to do with how to compute the probability of text, _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,167,709.999,711.629,because q is a text. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,168,711.629,716.212,And this has to do with a model called a Language Model. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,169,716.212,721.878,And this kind of models are proposed to model text. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,170,721.878,727.409,_So most specifically, we will be very interested in the following _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,171,727.409,731.756,_conditional probability as I show you, you this here. _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,172,731.756,739.045,_If the user like this document, how likely the user would approve this query? _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,173,739.045,745.66,_And in the next lecture, we're going to give introduction to Language Model, _
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,174,745.66,752.295,so that we can see how we can model text with a probability risk model in general. 
+4 - 1 - 3.1 Probabilistic Retrieval Model- Basic Idea (00-12-44).srt,175,752.295,762.295,[MUSIC] 

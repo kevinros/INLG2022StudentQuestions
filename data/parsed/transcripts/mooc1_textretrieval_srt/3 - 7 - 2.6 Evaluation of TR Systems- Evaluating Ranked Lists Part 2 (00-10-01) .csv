@@ -1,0 +1,158 @@
+name,id,from,to,text
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,1,0.012,3.467,[SOUND] 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,2,11.647,13.963,So average precision is computer for 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,3,13.963,14.69,just one. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,4,14.69,18.29,one query. But we generally experiment with many 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,5,18.29,24.57,different queries and this is to avoid the variance across queries. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,6,24.57,29.53,Depending on the queries you use you might make different conclusions. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,7,29.53,31.87,_Right, so it's better then using more queries. _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,8,33.61,36.58,_If you use more queries then, you will also have to _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,9,36.58,39.85,take the average of the average precision over all these queries. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,10,41.6,42.47,So how can we do that? 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,11,43.56,46.16,_Well, you can naturally. _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,12,46.16,49.26,Think of just doing arithmetic mean as we 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,13,50.67,56.0,_always tend to, to think in, in this way. _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,14,56.0,62.0,_So, this would give us what's called a "Mean Average Position", or MAP. _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,15,62.0,62.54,_In this case, _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,16,62.54,68.37,we take arithmetic mean of all the average precisions over several queries or topics. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,17,69.93,73.84,_But as I just mentioned in another lecture, is this good? _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,18,75.37,76.58,We call that. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,19,76.58,81.19,We talked about the different ways of combining precision and recall. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,20,81.19,87.34,And we conclude that the arithmetic mean is not as good as the MAP measure. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,21,87.34,88.42,But here it's the same. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,22,88.42,92.12,We can also think about the alternative ways of aggregating the numbers. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,23,92.12,94.85,_Don't just automatically assume that, though. _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,24,94.85,97.785,Let's just also take the arithmetic mean of the average position over 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,25,97.785,98.59,these queries. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,26,98.59,102.91,Let's think about what's the best way of aggregating them. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,27,102.91,106.66,_If you think about the different ways, naturally you will, _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,28,106.66,109.88,_probably be able to think about another way, which is geometric mean. _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,29,111.22999999999999,113.68,And we call this kind of average a gMAP. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,30,115.65,116.86,This is another way. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,31,116.86,119.52000000000001,_So now, once you think about the two different ways. _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,32,119.52000000000001,120.82,Of doing the same thing. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,33,120.82,123.4,_The natural question to ask is, which one is better? _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,34,123.4,123.9,So. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,35,125.23,128.06,_So, do you use MAP or gMAP? _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,36,129.83,131.2,_Again, that's important question. _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,37,131.2,134.49,_Imagine you are again testing a new algorithm in, _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,38,134.49,137.109,by comparing the ways your old algorithms made the search engine. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,39,138.39,142.07999999999998,Now you tested multiple topics. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,40,142.07999999999998,145.15,Now you've got the average precision for these topics. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,41,145.15,148.47,Now you are thinking of looking at the overall performance. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,42,148.47,149.47,You have to take the average. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,43,150.95,152.84,_But which, which strategy would you use? _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,44,154.04,158.36,_Now first, you should also think about the question, well did it make a difference? _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,45,158.36,163.1,Can you think of scenarios where using one of them would make a difference? 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,46,163.1,165.92000000000002,That is they would give different rankings of those methods. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,47,165.92000000000002,172.44,And that also means depending on the way you average or detect the. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,48,172.44,174.45,Average of these average positions. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,49,175.6,177.46,You will get different conclusions. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,50,177.46,180.379,This makes the question becoming even more important. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,51,181.62,183.48,_Right? So, which one would you use? _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,52,185.35,188.32,_Well again, if you look at the difference between these. _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,53,188.32,192.75,Different ways of aggregating the average position. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,54,192.75,198.51,_You'll realize in arithmetic mean, the sum is dominating by large values. _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,55,198.51,200.25,So what does large value here mean? 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,56,200.25,202.26,It means the query is relatively easy. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,57,202.26,204.75,_You can have a high pres, average position. _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,58,205.95,209.707,Whereas gMAP tends to be affected more by low values. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,59,210.87,214.79,And those are the queries that don't have good performance. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,60,214.79,216.37,The average precision is low. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,61,217.41,221.26,_So if you think about the, improving the search engine for _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,62,221.26,225.84,_those difficult queries, then gMAP would be preferred, right? _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,63,227.48,230.0,_On the other hand, if you just want to. _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,64,230.0,230.96,Have improved a lot. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,65,232.06,235.75,Over all the kinds of queries or particular popular queries that might be 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,66,235.75,240.89,easy and you want to make the perfect and maybe MAP would be then preferred. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,67,240.89,245.15,_So again, the answer depends on your users, your users tasks and _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,68,245.15,246.71,_their pref, their preferences. _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,69,248.02,253.72,So the point that here is to think about the multiple ways to solve 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,70,253.72,258.75,_the same problem, and then compare them, and think carefully about the differences. _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,71,258.75,260.61,And which one makes more sense. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,72,260.61,264.97,_Often, when one of them might make sense in one situation and _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,73,264.97,267.64,another might make more sense in a different situation. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,74,267.64,271.62,So it's important to pick out under what situations one is preferred. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,75,275.209,278.967,_As a special case of the mean average position, we can also think about _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,76,278.967,283.1,the case where there was precisely one rank in the document. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,77,283.1,287.21,_And this happens often, for example, in what's called a known item search. _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,78,287.21,292.67,_Where you know a target page, let's say you have to find Amazon, homepage. _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,79,292.67,296.14,_You have one relevant document there, and you hope to find it. _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,80,296.14,298.25,That's call a "known item search". 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,81,298.25,301.33,_In that case, there's precisely one relevant document. _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,82,301.33,303.47,_Or in another application, like a question and answering, _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,83,303.47,304.64,maybe there's only one answer. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,84,304.64,305.25,Are there. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,85,305.25,307.11,_So if you rank the answers, _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,86,307.11,312.1,_then your goal is to rank that one particular answer on top, right? _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,87,312.1,316.48,_So in this case, you can easily verify the average position, _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,88,316.48,321.71,will basically boil down to reciprocal rank. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,89,321.71,328.22,_That is, 1 over r where r is the rank position of that single relevant document. _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,90,328.22,332.21,_So if that document is ranked on the very top or is 1, and _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,91,332.21,335.93,then it's 1 for reciprocal rank. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,92,335.93,339.515,_If it's ranked at the, the second, then it's 1 over 2. _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,93,339.515,340.015,Et cetera. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,94,341.145,345.335,_And then we can also take a, a average of all these average precision or _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,95,345.335,348.025,_reciprocal rank over a set of topics, and _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,96,348.025,352.555,that would give us something called a mean reciprocal rank. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,97,352.555,354.83,It's a very popular measure. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,98,354.83,357.273,_For no item search or, you know, _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,99,357.273,361.69,an problem where you have just one relevant item. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,100,363.07,369.17,_Now again here, you can see this r actually is meaningful here. _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,101,369.17,373.57,And this r is basically indicating how much effort 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,102,373.57,378.7,a user would have to make in order to find that relevant document. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,103,378.7,383.78,_If it's ranked on the top it's low effort that you have to make, or little effort. _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,104,383.78,386.86,_But if it's ranked at 100 then you actually have to, _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,105,387.94,392.26,read presumably 100 documents in order to find it. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,106,392.26,397.38,_So, in this sense r is also a meaningful measure and the reciprocal rank will _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,107,397.38,401.52,_take the reciprocal of r, instead of using r directly. _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,108,402.75,405.895,So my natural question here is why not simply using r? 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,109,405.895,410.55,_I imagine if you were to design a ratio to, measure the performance _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,110,410.55,414.68,_of a random system, when there is only one relevant item. _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,111,415.76,420.07,You might have thought about using r directly as the measure. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,112,420.07,422.906,_After all, that measures the user's effort, right? _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,113,422.906,430.959,_But, think about if you take a average of this over a large number of topics. _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,114,432.2,433.73,Again it would make a difference. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,115,433.73,436.33,_Right, for one single topic, using r or _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,116,436.33,439.14,using 1 over r wouldn't make any difference. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,117,439.14,441.64,It's the same. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,118,441.64,444.79,_Larger r with corresponds to a small 1 over r, right? _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,119,446.4,452.7,_But the difference would only show when, show up when you have many topics. _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,120,452.7,459.29,_So again, think about the average of Mean Reciprocal Rank versus average of just r. _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,121,459.29,459.93,What's the difference? 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,122,459.93,461.73,Do you see any difference? 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,123,461.73,466.05,_And would, would this difference change the oath of systems. _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,124,466.05,466.76,In our conclusion. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,125,469.05,473.38,_And this, it turns out that, there is actually a big difference, and _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,126,473.38,477.21,_if you think about it, if you want to think about it and then, yourself, _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,127,477.21,478.23,then pause the video. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,128,479.40999999999997,484.35,_Basically, the difference is, if you take some of our directory, then. _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,129,484.35,487.81,Again it will be dominated by large values of r. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,130,487.81,488.84,So what are those values? 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,131,488.84,495.24,Those are basically large values that indicate that lower ranked results. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,132,495.24,500.53,That means the relevant items rank very low down on the list. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,133,500.53,505.16,And the sum that's also the average that would then be dominated by. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,134,505.16,508.328,_Where those relevant documents are ranked in, in ,in, _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,135,508.328,510.774,in the lower portion of the ranked. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,136,510.774,515.85,But from a users perspective we care more about the highly ranked documents. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,137,515.85,519.529,So by taking this transformation by using reciprocal rank. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,138,520.65,523.92,Here we emphasize more on the difference on the top. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,139,523.92,528.121,_You know, think about the difference between 1 and the 2, _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,140,528.121,532.39,_it would make a big difference, in 1 over r, but think about the 100, and 1, and _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,141,532.39,537.03,where and when won't make much difference if you use this. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,142,537.03,541.37,But if you use this there will be a big difference in 100 and 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,143,541.37,543.468,_let's say 1,000, right. _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,144,543.468,545.0,So this is not the desirable. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,145,546.26,549.32,_On the other hand, a 1 and 2 won't make much difference. _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,146,549.32,553.15,So this is yet another case where there may be multiple choices of doing the same 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,147,553.15,555.84,thing and then you need to figure out which one makes more sense. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,148,557.47,562.36,_So to summarize, we showed that the precision-recall curve. _
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,149,562.36,565.738,Can characterize the overall accuracy of a ranked list. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,150,565.738,570.65,And we emphasized that the actual utility of a ranked list depends 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,151,570.65,574.57,on how many top ranked results a user would actually examine. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,152,574.57,577.0,Some users will examine more. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,153,577.0,578.39,Than others. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,154,578.39,582.1,An average person uses a standard measure for comparing two ranking methods. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,155,582.1,584.837,It combines precision and recall and 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,156,584.837,588.904,it's sensitive to the rank of every random document. 
+3 - 7 - 2.6 Evaluation of TR Systems- Evaluating Ranked Lists Part 2 (00-10-01) .srt,157,588.904,598.904,[MUSIC] 

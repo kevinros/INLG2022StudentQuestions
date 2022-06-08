@@ -1,0 +1,159 @@
+name,id,from,to,text
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,1,7.17,10.42,This lecture is about smoothing of language models. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,2,11.7,15.09,In this lecture we're going to continue talking about the probabilistic 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,3,15.09,16.12,retrieval model. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,4,16.12,20.53,_In particular, we're going to talk about smoothing of language model and _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,5,20.53,22.46,_the query likelihood of it, which will method. _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,6,23.8,26.71,So you have seen this slide from a previous lecture. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,7,26.71,30.45,This is the ranking function based on the query likelihood. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,8,32.53,35.76,Here we assume that the independence of generating each query word 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,9,38.94,42.0,and the formula would look like the following. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,10,42.0,48.23,Where we take a sum over all of the query words and inside is the sum there is 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,11,48.23,52.78,_a log of probability of a word given by the document, or document language model. _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,12,53.81,58.7,So the main task now is to estimate this document language model. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,13,59.94,62.11,As we said before different methods for 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,14,62.11,66.53,estimating this model would lead to different retrieval functions. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,15,66.53,70.8,_So, in this lecture we're going to look into this in more detail. _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,16,70.8,73.07,_So, how do I estimate this language model? _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,17,73.07,76.34,_Well, the obvious choice would be the Maximum Likelihood Estimate _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,18,76.34,77.99,that we have seen before. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,19,77.99,82.2,And that is we're going to normalize the word frequencies in the document. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,20,84.11,86.878,And the estimated probability would look like this. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,21,90.503,92.99000000000001,This is a step function here. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,22,96.14,99.6,Which means all the words that have the same frequency 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,23,99.6,101.97,count will have an equal probability. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,24,103.21000000000001,108.57,This is another frequency in the count that has a different probability. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,25,108.57,111.75,_Note that for words that have not occurred in the document here, _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,26,111.75,115.13,they all have zero probability. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,27,115.13,121.11,_So we know this is just like a model that we assume earlier in the lecture, where _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,28,121.11,127.65,we assume the user with the sample word from the document to formulate the query. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,29,129.19,133.39,And there is no chance of sampling any word that is not in the document. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,30,133.39,135.41,And we know that's not good. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,31,135.41,137.21,So how would we improve this? 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,32,137.21,143.1,_Well, in order to assign a non-zero probability _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,33,143.1,148.28,_to words that have not been observed in the document, we would have to take _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,34,148.28,155.19,away some probability to mass from the words that are observing the document. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,35,155.19,158.15,_So for example here, we have to take away some [INAUDIBLE] mass, _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,36,158.15,163.45,because we need some extra problem in the mass for the unseen words. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,37,163.45,165.25,_Otherwise, they won't sum to 1. _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,38,165.25,168.18,So all these probabilities must be sum to 1. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,39,168.18,173.81,_So to make this transformation, and to improve the maximum [INAUDIBLE]. _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,40,173.81,180.44,By assigning nonzero probabilities to words that are not observed in the data. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,41,181.97,187.42,_We have to do smoothing, and smoothing has to do with improving the estimate _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,42,187.42,192.37,_by considering the possibility that, if the author had been written. _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,43,193.9,199.02,_Helping, asking to write more words for the document. _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,44,199.02,202.91,_The user, the author might have rethink other words. _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,45,202.91,207.05,If you think about this factor then a smoothed LM model 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,46,207.05,210.82999999999998,would be a more accurate representation of the actual topic. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,47,210.82999999999998,215.27,Imagine you have seen abstract of such article. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,48,215.27,217.23,Let's say this document is abstract. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,49,218.47,219.26,Right. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,50,219.26,225.05,_If we assume and see words in this abstract we have or, _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,51,225.05,231.31,or probability of 0 that would mean it's no chance 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,52,231.31,237.17000000000002,of sampling a word outside the abstract that the formula to query. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,53,237.17000000000002,243.03,_But imagine the user who is interested in the topic of this abstract, the user might _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,54,243.03,248.48,actually choose a word that is not in the abstractor to to use as query. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,55,250.0,254.63,_So obviously if we had asked this author to write more, _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,56,254.63,258.97,the author would have written a full text of that article. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,57,258.97,263.45,So smoothing of the language model is attempted to 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,58,263.45,268.12,_to try to recover the model for the whole, whole article. _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,59,268.12,274.95,And then of course we don't have written knowledge about any words are not observed 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,60,274.95,279.25,_in the abstract there, so that's why smoothing is actually a tricky problem. _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,61,279.25,283.62,So let's talk a little more about how to smooth a LM word. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,62,283.62,288.53,The key question here is what probability should be assigned to those unseen words. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,63,290.07,290.58,Right. And 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,64,290.58,293.29,there are many different ways of doing that. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,65,293.29,296.12,_One idea here, that's very useful for _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,66,296.12,300.73,retrieval is let the probability of an unseen word be proportional 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,67,300.73,303.79,to its probability given by a reference language model. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,68,303.79,307.95,_That means if you don't observe the word in the data set, _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,69,307.95,311.38,we're going to assume that its probability is kind of 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,70,312.4,316.31,governed by another reference language model that we were constructing. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,71,316.31,320.49,It will tell us which unseen words we have likely a higher probability. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,72,322.44,326.07,In the case of retrieval a natural choice would be to 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,73,326.07,330.08,take the Collection Language Model as a Reference Language Model. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,74,330.08,333.39,That is to say if you don't observe a word in the document 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,75,333.39,335.08,we're going to assume that. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,76,335.08,337.44,The probability of this word 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,77,337.44,341.65999999999997,would be proportional to the probability of the word in the whole collection. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,78,341.65999999999997,342.99,_So, more formally, _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,79,342.99,346.79,we'll be estimating the probability of a word getting a document as follows. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,80,348.21,354.55,_If the word is seen in the document, then the probability _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,81,354.55,360.83,would be a discounted the maximum [INAUDIBLE] estimated p sub c here. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,82,362.39,367.19,_Otherwise, if the word is not seen in the document, we'll then let _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,83,367.19,372.22,_probability be proportional to the probability of the word in the collection, _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,84,372.22,377.06,and here the coefficient of is to 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,85,377.06,381.36,control the amount of probability mass that we assign to unseen words. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,86,382.44,385.02,Obviously all these probabilities must sum to 1. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,87,385.02,388.33,_So, alpha sub d is constrained in some way. _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,88,389.39,393.37,_So, what if we plug in this smoothing formula into our _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,89,393.37,395.12,query likelihood Ranking Function? 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,90,395.12,396.29,This is what we would get. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,91,397.8,402.1,_In this formula, you can see, right, we have _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,92,403.53,408.8,this as a sum over all the query words. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,93,408.8,412.32,And note that we have written in the form of a sum over all the vocabulary. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,94,412.32,416.77,_You see here this is a sum of all the words in the vocabulary, _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,95,416.77,420.31,but note that we have a count of the word in the query. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,96,420.31,424.52,_So, in effect we are just taking a sum of query words, right. _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,97,424.52,430.26,This is in now a common way that 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,98,430.26,436.17,we will use because of its convenience in some transformations. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,99,438.71,441.949,_So, this is as I said, this is sum of all the query words. _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,100,443.12,447.29,_In our smoothing method, we're assuming the words that are not _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,101,447.29,451.34,_observed in the document, that we have a somewhat different form of probability. _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,102,451.34,452.79,And then it's for this form. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,103,454.2,457.09000000000003,So we're going to then decompose this sum into two parts. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,104,458.62,464.52,One sum is over all the query words that are matched in the document. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,105,464.52,469.72,_That means in this sum, all the words have a non _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,106,469.72,475.17,_zero probability, in the document, sorry. _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,107,475.17,479.67,_It's, the non zero count of the word in the document. _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,108,479.67,481.23,They all occur in the document. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,109,482.23,488.02,_And they also have to, of course, have a non-zero count in the query. _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,110,488.02,489.76,_So, these are the words that are matched. _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,111,491.46,493.52,These are the query words that are matched in the document. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,112,495.02,499.62,_On the other hand in this sum we are s, taking the sum over all the words that _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,113,499.62,504.14,are note our query was not matched in the document. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,114,505.8,513.2,So they occur in the query due to this term but they don't occur in the document. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,115,513.2,513.91,_In this case, _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,116,513.91,519.29,these words have this probability because of our assumption about the smoothing. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,117,520.34,524.88,_But that here, these c words have a different probability. _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,118,527.47,531.56,Now we can go further by rewriting the second sum 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,119,532.57,534.79,as a difference of two other sums. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,120,534.79,540.05,Basically the first sum is actually the sum over all the query words. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,121,540.05,545.14,Now we know that the original sum is not over the query words. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,122,545.14,550.98,This is over all the query words that are not matched in the document. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,123,552.4,559.74,So here we pretend that they are actually over all the query words. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,124,559.74,561.92,_So, we take a sum over all the query words. _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,125,561.92,565.13,_Obviously this sum has extra terms that are, _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,126,565.13,568.72,this sum has extra terms that are not in this sum. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,127,570.76,573.71,Because here we're taking sum over all the query words. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,128,573.71,577.88,There it's not matched in the document. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,129,577.88,584.38,_So in order to make them equal, we have to then subtract another sum here. _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,130,584.38,588.64,And this is a sum over all the query words that are mentioned in the document. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,131,591.23,595.62,And this makes sense because here we're considering all query words. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,132,595.62,599.41,And then we subtract the query that was matched in the document. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,133,599.41,604.02,That will give us the query rules that not matched in the document. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,134,605.88,611.11,And this is almost a reverse process of the first step here. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,135,612.77,614.538,And you might wonder why we want to do that. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,136,614.538,620.81,_Well, that's because if we do this then _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,137,620.81,625.36,we'll have different forms of terms inside these sums. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,138,625.36,630.92,_So, now we can see in the sum we have, all the words, _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,139,630.92,636.76,_matched query words, matched in the document with this kind of terms. _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,140,636.76,642.22,Here we have another sum over the same set of terms. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,141,643.38,645.74,Matched query terms in document. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,142,645.74,647.87,But inside the sum it's different. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,143,649.24,652.64,But these two sums can clearly be merged. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,144,654.3,657.53,_So, if we do that we'll get another form _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,145,657.53,662.14,of the formula that looks like the following at the bottom here. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,146,664.34,670.971,_And note that this is a very interesting, because here we combine the, these two, _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,147,670.971,676.961,that are a sum of the query words matched in the document in the one sum here. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,148,678.92,683.749,_And the other sum, now is the compose [INAUDIBLE] to two parts, and, _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,149,683.749,686.71,and these two parts look much simpler. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,150,686.71,690.13,Just because these are the probabilities of unseen words. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,151,691.54,697.23,_But this formula is very interesting, because you can see the sum is now over _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,152,697.23,700.05,all the matched query terms. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,153,701.34,707.17,_And just like in the vector space model, we take a sum of terms, _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,154,707.17,710.09,that intersection of query vector and the document vector. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,155,711.31,715.336,So it all already looks a little bit like the vector space model. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,156,715.336,719.378,In fact there is even more severity here. 
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,157,719.378,721.837,_As we, we explain on this slide. _
+4 - 4 - 3.4 Smoothing of Language Model - Part 1 (00-12-15).srt,158,721.837,731.837,[MUSIC] 

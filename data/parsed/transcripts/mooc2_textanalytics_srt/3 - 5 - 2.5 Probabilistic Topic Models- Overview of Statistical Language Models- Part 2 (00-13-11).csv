@@ -1,0 +1,163 @@
+name,id,from,to,text
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,1,0.0,6.605,[MUSIC] 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,2,6.605,11.574,_So now let's talk about the problem a little bit more, and specifically let's _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,3,11.574,15.67,talk about the two different ways of estimating the parameters. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,4,15.67,19.74,One is called the Maximum Likelihood estimate that I already just mentioned. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,5,19.74,22.18,The other is Bayesian estimation. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,6,22.18,27.14,_So in maximum likelihood estimation, we define best as _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,7,27.14,31.55,meaning the data likelihood has reached the maximum. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,8,31.55,36.95,_So formally it's given by this expression here, _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,9,36.95,45.19,where we define the estimate as a arg max of the probability of x given theta. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,10,46.28,53.55,_So, arg max here just means its actually a function that will turn. _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,11,53.55,58.66,_The argument that gives the function maximum value, adds the value. _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,12,58.66,61.85,So the value of arg max is not the value of this function. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,13,61.85,66.09,_But rather, the argument that has made it the function reaches maximum. _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,14,66.09,69.975,So in this case the value of arg max is theta. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,15,69.975,76.475,_It's the theta that makes the probability of X, given theta, reach it's maximum. _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,16,76.475,82.122,_So this estimate that in due it also makes sense and it's often very useful, _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,17,82.122,87.07,and it seeks the premise that best explains the data. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,18,87.07,91.89,_But it has a problem, when the data is too small because when the data _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,19,91.89,95.12,_points are too small, there are very few data points. _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,20,95.12,99.05,_The sample is small, then if we trust data in entirely and _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,21,99.05,102.37,try to fit the data and then we'll be biased. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,22,102.37,107.64,_So in the case of text data, let's say, all observed 100 _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,23,107.64,112.95,words did not contain another word related to text mining. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,24,112.95,117.93,_Now, our maximum likelihood estimator will give that word a zero probability. _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,25,117.93,120.528,Because giving the non-zero probability 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,26,120.528,124.144,would take away probability mass from some observer word. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,27,124.144,128.629,Which obviously is not optimal in terms of maximizing the likelihood of 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,28,128.629,129.91,the observer data. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,29,131.3,135.15,But this zero probability for 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,30,135.15,140.18,all the unseen words may not be reasonable sometimes. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,31,140.18,145.14,_Especially, if we want the distribution to characterize the topic of text mining. _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,32,145.14,149.77,_So one way to address this problem is actually to use Bayesian estimation, _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,33,149.77,153.31,_where we actually would look at the both the data, and _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,34,153.31,156.76,our prior knowledge about the parameters. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,35,156.76,162.18,We assume that we have some prior belief about the parameters. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,36,162.18,166.53,_Now in this case of course, so we are not _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,37,167.91,172.46,_going to look at just the data, but also look at the prior. _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,38,174.15,179.6,_So the prior here is defined by P of theta, and _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,39,179.6,185.81,_this means, we will impose some preference on certain theta's of others. _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,40,186.86,190.49,_And by using Bayes Rule, that I have shown here, _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,41,192.63,198.13,we can then combine the likelihood function. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,42,198.13,202.31,With the prior to give us this 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,43,203.73,209.14,posterior probability of the parameter. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,44,209.14,214.09,_Now, a full explanation of Bayes rule, and some of these things _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,45,214.09,219.32999999999998,_related to Bayesian reasoning, would be outside the scope of this course. _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,46,219.32999999999998,222.14,But I just gave a brief introduction because this is 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,47,222.14,224.87,general knowledge that might be useful to you. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,48,224.87,229.22,_The Bayes Rule is basically defined here, and _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,49,229.22,234.32,allows us to write down one conditional probability of X 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,50,234.32,240.33,given Y in terms of the conditional probability of Y given X. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,51,240.33,243.06,And you can see the two probabilities 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,52,243.06,248.48,are different in the order of the two variables. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,53,249.65,254.936,But often the rule is used for making inferences 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,54,254.936,263.07,_of the variable, so let's take a look at it again. _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,55,263.07,270.68,We can assume that p(X) Encodes our prior belief about X. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,56,270.68,275.25,_That means before we observe any other data, that's our belief about X, _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,57,275.25,279.33,what we believe some X values have higher probability than others. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,58,280.72,285.58,And this probability of X given Y 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,59,285.58,290.90999999999997,_is a conditional probability, and this is our posterior belief about X. _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,60,290.90999999999997,297.85,Because this is our belief about X values after we have observed the Y. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,61,297.85,302.78,_Given that we have observed the Y, now what do we believe about X? _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,62,302.78,308.45,_Now, do we believe some values have higher probabilities than others? _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,63,309.97,314.72,_Now the two probabilities are related through this one, _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,64,314.72,318.86,this can be regarded as the probability of 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,65,319.89,326.685,_the observed evidence Y, given a particular X. _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,66,326.685,330.845,_So you can think about X as our hypothesis, and _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,67,330.845,335.155,we have some prior belief about which hypothesis to choose. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,68,335.155,340.47,_And after we have observed Y, we will update our belief and _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,69,340.47,346.3,this updating formula is based on the combination of our prior. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,70,348.39,356.01,_And the likelihood of observing this Y if X is indeed true, _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,71,357.2,362.25,so much for detour about Bayes Rule. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,72,362.25,367.55,_In our case, what we are interested in is inferring the theta values. _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,73,367.55,374.6,_So, we have a prior here that includes our prior knowledge about the parameters. _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,74,375.64,378.97,_And then we have the data likelihood here, _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,75,378.97,383.74,that would tell us which parameter value can explain the data well. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,76,383.74,388.59,_The posterior probability combines both of them, _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,77,390.22,394.4,so it represents a compromise of the the two preferences. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,78,394.4,401.072,_And in such a case, we can maximize this posterior probability. _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,79,401.072,407.8,_To find this theta that would maximize this posterior probability, _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,80,407.8,414.38,_and this estimator is called a Maximum a Posteriori, or MAP estimate. _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,81,415.47,418.52,And this estimator is 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,82,418.52,422.86,a more general estimator than the maximum likelihood estimator. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,83,422.86,428.7,_Because if we define our prior as a noninformative prior, _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,84,428.7,431.95,meaning that it's uniform over all the theta values. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,85,431.95,436.88,_No preference, then we basically would go back to the maximum likelihood estimated. _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,86,436.88,441.27,_Because in such a case, it's mainly going to be determined by _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,87,441.27,445.47,_this likelihood value, the same as here. _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,88,448.45,453.96,_But if we have some not informative prior, some bias towards _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,89,453.96,459.65999999999997,the different values then map estimator can allow us to incorporate that. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,90,459.65999999999997,463.12,_But the problem here of course, is how to define the prior. _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,91,464.14,469.46,_There is no free lunch and if you want to solve the problem with more knowledge, _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,92,469.46,471.15999999999997,we have to have that knowledge. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,93,471.15999999999997,474.33,_And that knowledge, ideally, should be reliable. _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,94,474.33,478.34000000000003,_Otherwise, your estimate may not necessarily be more accurate than that _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,95,478.34000000000003,479.499,maximum likelihood estimate. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,96,481.16,486.89,_So, now let's look at the Bayesian estimation in more detail. _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,97,488.07,492.72,_So, I show the theta values as just a one _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,98,492.72,498.04,dimension value and that's a simplification of course. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,99,498.04,504.55,_And so, we're interested in which variable of theta is optimal. _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,100,504.55,506.87,_So now, first we have the Prior. _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,101,506.87,509.98,The Prior tells us that some of the variables 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,102,509.98,513.133,are more likely the others would believe. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,103,513.133,518.71,_For example, these values are more likely than the values over here, _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,104,518.71,520.95,_or here, or other places. _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,105,522.05,525.907,_So this is our Prior, and _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,106,525.907,531.44,then we have our theta likelihood. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,107,531.44,536.8,_And in this case, the theta also tells us which values of theta are more likely. _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,108,536.8,539.71,And that just means loose syllables can best expand our theta. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,109,541.85,545.1,_And then when we combine the two we get the posterior distribution, _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,110,545.1,547.81,and that's just a compromise of the two. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,111,547.81,551.96,It would say that it's somewhere in-between. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,112,551.96,556.54,_So, we can now look at some interesting point that is made of. _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,113,556.54,561.27,_This point represents the mode of prior, that means the most likely parameter _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,114,561.27,564.16,_value according to our prior, before we observe any data. _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,115,565.18,567.55,_This point is the maximum likelihood estimator, _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,116,567.55,571.35,it represents the theta that gives the theta of maximum probability. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,117,572.39,576.4,_Now this point is interesting, it's the posterior mode. _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,118,578.96,583.74,It's the most likely value of the theta given by the posterior of this. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,119,583.74,588.47,And it represents a good compromise of the prior mode and 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,120,588.47,589.82,the maximum likelihood estimate. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,121,591.48,595.93,_Now in general in Bayesian inference, we are interested in _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,122,595.93,599.34,the distribution of all these parameter additives as you see here. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,123,599.34,604.648,If there's a distribution over see how values that you can see. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,124,604.648,607.88,_Here, P of theta given X. _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,125,609.12,613.06,So the problem of Bayesian inference is 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,126,614.31,618.97,_to infer this posterior, this regime, and _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,127,618.97,624.78,also to infer other interesting quantities that might depend on theta. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,128,624.78,627.99,_So, I show f of theta here _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,129,627.99,630.78,as an interesting variable that we want to compute. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,130,630.78,634.64,_But in order to compute this value, we need to know the value of theta. _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,131,634.64,639.62,_In Bayesian inference, we treat theta as an uncertain variable. _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,132,639.62,642.87,So we think about all the possible variables of theta. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,133,642.87,650.06,_Therefore, we can estimate the value of this function f as extracted value of f, _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,134,650.06,657.04,_according to the posterior distribution of theta, given the observed evidence X. _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,135,658.06,664.62,_As a special case, we can assume f of theta is just equal to theta. _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,136,664.62,668.32,_In this case, we get the expected value of the theta, _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,137,668.32,671.13,that's basically the posterior mean. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,138,671.13,675.53,_That gives us also one point of theta, and _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,139,675.53,679.89,_it's sometimes the same as posterior mode, but it's not always the same. _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,140,679.89,682.87,_So, it gives us another way to estimate the parameter. _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,141,684.45,689.22,_So, this is a general illustration of Bayesian estimation and its an influence. _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,142,689.22,693.92,_And later, you will see this can be useful for _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,143,693.92,699.5,topic mining where we want to inject the sum prior knowledge about the topics. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,144,699.5,703.56,_So to summarize, we've used the language model _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,145,703.56,706.35,which is basically probability distribution over text. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,146,706.35,708.67,It's also called a generative model for text data. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,147,708.67,711.98,_The simplest language model is Unigram Language Model, _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,148,711.98,713.39,it's basically a word distribution. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,149,714.74,717.84,_We introduced the concept of likelihood function, _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,150,717.84,720.809,which is the probability of the a data given some model. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,151,722.26,723.88,_And this function is very important, _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,152,725.52,729.86,_given a particular set of parameter values this function can tell us which X, _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,153,729.86,733.12,_which data point has a higher likelihood, higher probability. _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,154,736.75,742.7,_Given a data sample X, we can use this function to determine _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,155,742.7,747.84,_which parameter values would maximize the probability of the observed data, _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,156,747.84,749.64,and this is the maximum livelihood estimate. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,157,751.05,754.36,We also talk about the Bayesian estimation or inference. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,158,754.36,759.11,_In this case we, must define a prior on the parameters p of theta. _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,159,759.11,763.34,_And then we're interested in computing the posterior distribution of the parameters, _
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,160,763.34,767.82,which is proportional to the prior and the likelihood. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,161,768.962,776.867,And this distribution would allow us then to infer any derive that is from theta. 
+3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).srt,162,776.867,786.867,[MUSIC] 

@@ -1,0 +1,145 @@
+name,id,from,to,text
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,1,0.025,7.147,[SOUND] >> This 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,2,7.147,9.992,_lecture is about the Overview of Statistical Language Models, _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,3,9.992,12.001,which cover proper models as special cases. 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,4,12.001,15.906,In this lecture we're going to give 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,5,15.906,21.32,a overview of Statical Language Models. 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,6,21.32,24.32,These models are general models that cover 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,7,24.32,28.12,probabilistic topic models as a special cases. 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,8,28.12,30.53,_So first off, what is a Statistical Language Model? _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,9,31.78,36.07,A Statistical Language Model is basically a probability distribution 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,10,36.07,37.87,over word sequences. 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,11,37.87,41.52,_So, for example, we might have a distribution that gives, _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,12,41.52,44.48,today is Wednesday a probability of .001. 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,13,44.48,49.04,_It might give today Wednesday is, which _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,14,49.04,53.56,_is a non-grammatical sentence, a very, very small probability as shown here. _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,15,54.58,56.17,_And similarly another sentence, _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,16,56.17,61.43,the eigenvalue is positive might get the probability of .00001. 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,17,61.43,66.2,So as you can see such a distribution clearly is Context Dependent. 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,18,66.2,69.83,It depends on the Context of Discussion. 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,19,69.83,75.37,Some Word Sequences might have higher probabilities than others but the same 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,20,75.37,79.06,Sequence of Words might have different probability in different context. 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,21,80.49,84.87,And so this suggests that such a distribution can actually categorize topic 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,22,86.96000000000001,91.44,such a model can also be regarded as Probabilistic Mechanism for 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,23,91.44,92.52000000000001,generating text. 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,24,93.88,102.37,And that just means we can view text data as data observed from such a model. 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,25,102.37,109.225,_For this reason, we call such a model as Generating Model. _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,26,109.225,114.31,_So, now given a model we can then assemble sequences of words. _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,27,114.31,119.78999999999999,_So, for example, based on the distribution that I have shown here on this slide, _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,28,119.78999999999999,124.24,when matter it say assemble a sequence like today is Wednesday 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,29,124.24,127.13,because it has a relative high probability. 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,30,127.13,130.1,We might often get such a sequence. 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,31,130.1,134.47,We might also get the item value as positive sometimes 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,32,134.47,139.12,_with a smaller probability and very, very occasionally we might _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,33,139.12,142.94,get today is Wednesday because it's probability is so small. 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,34,144.65,148.96,_So in general, in order to categorize such a distribution we must specify probability _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,35,148.96,153.94,values for all these different sequences of words. 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,36,153.94,157.827,_Obviously, it's impossible to specify that because it's _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,37,157.827,162.54,impossible to enumerate all of the possible sequences of words. 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,38,162.54,169.3,_So in practice, we will have to simplify the model in some way. _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,39,169.3,172.71,_So, the simplest language model is called the Unigram Language Model. _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,40,172.71,177.27,_In such a case, it was simply a the text _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,41,177.27,181.83,is generated by generating each word independently. 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,42,182.98,186.66,_But in general, the words may not be generated independently. _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,43,186.66,191.02,_But after we make this assumption, we can significantly simplify the language more. _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,44,192.23,196.7,_Basically, now the probability of a sequence of words, w1 through wn, _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,45,196.7,201.5,will be just the product of the probability of each word. 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,46,204.85,206.21,_So for such a model, _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,47,206.21,210.47,we have as many parameters as the number of words in our vocabulary. 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,48,210.47,215.26,_So here we assume we have n words, so we have n probabilities. _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,49,215.26,216.59,One for each word. 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,50,216.59,218.7,And then some to 1. 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,51,218.7,223.01,_So, now we assume that our text is a sample _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,52,223.01,226.22,drawn according to this word distribution. 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,53,226.22,230.87,_That just means, we're going to draw a word each time and _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,54,230.87,232.36,then eventually we'll get a text. 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,55,233.69,236.163,_So for example, now again, _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,56,236.163,242.05,we can try to assemble words according to a distribution. 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,57,242.05,245.11,We might get Wednesday often or today often. 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,58,246.61,251.91,_And some other words like eigenvalue might have a small probability, etcetera. _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,59,251.91,259.37,_But with this, we actually can also compute the probability of _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,60,259.37,265.98,_every sequence, even though our model only specify the probabilities of words. _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,61,265.98,267.78,And this is because of the independence. 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,62,267.78,272.97,_So specifically, we can compute the probability of today is Wednesday. _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,63,274.01,277.74,_Because it's just a product of the probability of today, _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,64,277.74,282.0,_the probability of is, and probability of Wednesday. _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,65,282.0,285.38,_For example, I show some fake numbers here and when you _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,66,285.38,289.65,multiply these numbers together you get the probability that today's Wednesday. 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,67,289.65,295.9,_So as you can see, with N probabilities, one for each word, we actually _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,68,295.9,302.67,can characterize the probability situation over all kinds of sequences of words. 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,69,302.67,306.1,_And so, this is a very simple model. _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,70,306.1,307.89,Ignore the word order. 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,71,307.89,312.29,_So it may not be, in fact, in some problems, such as for speech recognition, _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,72,312.29,315.41,where you may care about the order of words. 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,73,315.41,318.31,But it turns out to be quite sufficient for 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,74,318.31,320.95,many tasks that involve topic analysis. 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,75,320.95,324.59,And that's also what we're interested in here. 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,76,324.59,331.0,_So when we have a model, we generally have two problems that we can think about. _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,77,331.0,338.52,_One is, given a model, how likely are we to observe a certain kind of data points? _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,78,338.52,341.89,_That is, we are interested in the Sampling Process. _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,79,341.89,344.4,The other is the Estimation Process. 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,80,344.4,349.94,_And that, is to think of the parameters of a model given, _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,81,349.94,353.51,some observe the data and we're going to talk about that in a moment. 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,82,353.51,356.11,Let's first talk about the sampling. 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,83,356.11,362.48,_So, here I show two examples of Water Distributions or Unigram Language Models. _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,84,362.48,364.76,The first one has higher probabilities for 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,85,364.76,368.53,_words like a text mining association, it's separate. _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,86,370.12,376.03,Now this signals a topic about text mining because when we assemble words from 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,87,376.03,381.97,_such a distribution, we tend to see words that often occur in text mining contest. _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,88,383.71,387.46,_So in this case, if we ask the question about _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,89,387.46,390.56,what is the probability of generating a particular document. 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,90,390.56,396.61,_Then, we likely will see text that looks like a text mining paper. _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,91,396.61,402.11,_Of course, the text that we generate by drawing words. _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,92,402.11,405.15,This distribution is unlikely coherent. 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,93,405.15,409.079,_Although, the probability of generating attacks mine _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,94,409.079,413.53499999999997,[INAUDIBLE] publishing in the top conference is 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,95,413.53499999999997,419.09000000000003,non-zero assuming that no word has a zero probability in the distribution. 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,96,419.09000000000003,422.59,_And that just means, we can essentially generate all kinds of _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,97,422.59,426.56,text documents including very meaningful text documents. 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,98,427.83,429.66,_Now, the second distribution show, _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,99,429.66,434.31,_on the bottom, has different than what was high probabilities. _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,100,434.31,437.94,_So food [INAUDIBLE] healthy [INAUDIBLE], etcetera. _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,101,437.94,440.38,So this clearly indicates a different topic. 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,102,440.38,443.19,In this case it's probably about health. 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,103,443.19,446.46,_So if we sample a word from such a distribution, _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,104,446.46,451.39,_then the probability of observing a text mining paper would be very, very small. _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,105,452.83,457.02,_On the other hand, the probability of observing a text that looks like a food _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,106,457.02,460.4,_nutrition paper would be high, relatively higher. _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,107,461.51,468.113,_So that just means, given a particular distribution, different than the text. _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,108,468.113,471.83,Now let's look at the estimation problem now. 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,109,471.83,474.90999999999997,_In this case, we're going to assume that we have observed the data. _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,110,474.90999999999997,477.40999999999997,I will know exactly what the text data looks like. 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,111,477.40999999999997,479.71500000000003,_In this case, let's assume we have a text mining paper. _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,112,479.71500000000003,486.98,_In fact, it's abstract of the paper, so the total number of words is 100. _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,113,486.98,490.96,And I've shown some counts of individual words here. 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,114,492.55,496.88,_Now, if we ask the question, what is the most likely _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,115,497.95,502.44,Language Model that has been used to generate this text data? 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,116,502.44,506.4,_Assuming that the text is observed from some Language Model, _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,117,506.4,508.92,what's our best guess of this Language Model? 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,118,510.74,515.51,_Okay, so the problem now is just to estimate the probabilities of these words. _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,119,515.51,516.49,As I've shown here. 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,120,517.56,518.37,So what do you think? 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,121,518.37,519.61,What would be your guess? 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,122,520.68,525.59,_Would you guess text has a very small probability, or _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,123,525.59,527.18,a relatively large probability? 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,124,528.36,530.31,What about query? 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,125,530.31,533.2,_Well, your guess probably would be dependent on _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,126,533.2,536.516,_how many times we have observed this word in the text data, right? _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,127,536.516,540.55,And if you think about it for a moment. 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,128,540.55,544.96,_And if you are like many others, you would have guessed that, _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,129,544.96,550.14,_well, text has a probability of 10 out of 100 because I've observed _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,130,550.14,555.04,the text 10 times in the text that has a total of 100 words. 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,131,555.04,559.64,_And similarly, mining has 5 out of 100. _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,132,559.64,565.18,_And query has a relatively small probability, just observed for once. _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,133,565.18,567.13,So it's 1 out of 100. 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,134,567.13,572.22,_Right, so that, intuitively, is a reasonable guess. _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,135,572.22,576.44,_But the question is, is this our best guess or best estimate of the parameters? _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,136,577.84,580.0,_Of course, in order to answer this question, _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,137,580.0,585.07,_we have to define what do we mean by best, in this case, _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,138,585.07,590.54,it turns out that our guesses are indeed the best. 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,139,590.54,594.68,In some sense and this is called Maximum Likelihood Estimate. 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,140,594.68,600.789,_And it's the best thing that, it will give the observer data our maximum probability. _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,141,601.96,605.74,_Meaning that, if you change the estimate somehow, even slightly, _
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,142,605.74,610.76,then the probability of the observed text data will be somewhat smaller. 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,143,610.76,613.952,And this is called a Maximum Likelihood Estimate. 
+3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).srt,144,613.952,623.952,[MUSIC] 

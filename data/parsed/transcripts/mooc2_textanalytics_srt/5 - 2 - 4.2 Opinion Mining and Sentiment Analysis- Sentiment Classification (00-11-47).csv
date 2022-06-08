@@ -1,0 +1,160 @@
+name,id,from,to,text
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,1,0.012,7.163,[NOISE] This 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,2,7.163,9.92,lecture is about the sentiment classification. 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,3,11.08,12.15,If we assume that 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,4,13.33,17.84,_most of the elements in the opinion representation are all ready known, _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,5,17.84,23.25,_then our only task may be just a sentiment classification, as shown in this case. _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,6,23.25,28.92,_So suppose we know who's the opinion holder and what's the opinion target, _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,7,28.92,33.44,_and also know the content and the context of the opinion, then we mainly need to _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,8,33.44,38.75,decide the opinion sentiment of the review. 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,9,38.75,45.54,So this is a case of just using sentiment classification for understanding opinion. 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,10,46.57,51.47,Sentiment classification can be defined more specifically as follows. 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,11,51.47,57.664,_The input is opinionated text object, the output is typically a sentiment label, _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,12,57.664,62.59,_or a sentiment tag, and that can be designed in two ways. _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,13,62.59,67.0,_One is polarity analysis, where we have categories such as positive, negative, _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,14,67.0,67.5,or neutral. 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,15,68.99,74.336,The other is emotion analysis that can go beyond 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,16,74.336,80.55,a polarity to characterize the feeling of the opinion holder. 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,17,81.61,84.61,_In the case of polarity analysis, we sometimes _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,18,84.61,89.45,also have numerical ratings as you often see in some reviews on the web. 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,19,90.53999999999999,97.50999999999999,_Five might denote the most positive, and one maybe the most negative, for example. _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,20,97.50999999999999,102.36,_In general, you have just disk holder categories to characterize the sentiment. _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,21,103.71000000000001,106.82,_In emotion analysis, of course, there are also different ways for _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,22,106.82,108.03,design the categories. 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,23,109.12,112.62,_The six most frequently used categories are happy, _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,24,112.62,117.15,_sad, fearful, angry, surprised, and disgusted. _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,25,119.28,124.066,_So as you can see, the task is essentially a classification task, or categorization _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,26,124.066,128.66,_task, as we've seen before, so it's a special case of text categorization. _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,27,128.66,133.034,This also means any textual categorization method can be used to do sentiment 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,28,133.034,134.12,classification. 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,29,135.32,138.97,_Now of course if you just do that, the accuracy may not be good _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,30,138.97,144.04,because sentiment classification does requires some improvement over 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,31,144.04,149.74,_regular text categorization technique, or simple text categorization technique. _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,32,149.74,153.22,_In particular, it needs two kind of improvements. _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,33,153.22,157.324,One is to use more sophisticated features that may be more appropriate for 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,34,157.324,160.05,sentiment tagging as I will discuss in a moment. 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,35,161.42000000000002,165.878,_The other is to consider the order of these categories, and _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,36,165.878,171.677,_especially in polarity analysis, it's very clear there's an order here, _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,37,171.677,176.115,and so these categories are not all that independent. 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,38,176.115,180.84,_There's order among them, and so it's useful to consider the order. _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,39,180.84,183.72,_For example, we could use ordinal regression to do that, _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,40,183.72,186.76,and that's something that we'll talk more about later. 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,41,186.76,191.08,_So now, let's talk about some features that are often very useful for _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,42,191.08,194.048,_text categorization and text mining in general, but _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,43,194.048,197.449,some of them are especially also needed for sentiment analysis. 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,44,198.66,203.48,_So let's start from the simplest one, which is character n-grams. _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,45,203.48,206.49,_You can just have a sequence of characters as a unit, _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,46,206.49,212.21,_and they can be mixed with different n's, different lengths. _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,47,212.21,215.26,_All right, and this is a very general way and _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,48,215.26,218.68,very robust way to represent the text data. 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,49,218.68,221.18,_And you could do that for any language, pretty much. _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,50,222.26,226.43,_And this is also robust to spelling errors or recognition errors, right? _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,51,226.43,230.68,So if you misspell a word by one character and this representation actually would 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,52,230.68,235.62,allow you to match this word when it occurs in the text correctly. 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,53,235.62,240.7,_Right, so misspell the word and the correct form can be matched because _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,54,240.7,244.67,they contain some common n-grams of characters. 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,55,244.67,248.901,But of course such a recommendation would not be as discriminating as words. 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,56,250.08,254.03,_So next, we have word n-grams, a sequence of words and again, _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,57,254.03,257.92,we can mix them with different n's. 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,58,257.92,263.331,Unigram's are actually often very effective for a lot of text processing 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,59,263.331,269.177,_tasks, and it's mostly because words are word designed features by humans for _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,60,269.177,274.097,_communication, and so they are often good enough for many tasks. _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,61,274.097,278.71,_But it's not good, or not sufficient for sentiment analysis clearly. _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,62,278.71,282.25,_For example, we might see a sentence like, _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,63,282.25,287.42,_it's not good or it's not as good as something else, right? _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,64,287.42,289.81,So in such a case if you just take a good and 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,65,289.81,294.24,_that would suggest positive that's not good, all right so it's not accurate. _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,66,294.24,299.586,_But if you take a bigram, not good together, and then it's more accurate. _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,67,299.586,303.93,_So longer n-grams are generally more discriminative, and they're more specific. _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,68,303.93,307.86,_If you match it, and it says a lot, and _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,69,307.86,311.25,_it's accurate it's unlikely, very ambiguous. _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,70,311.25,316.77,But it may cause overfitting because with such very unique features that machine 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,71,316.77,321.884,oriented program can easily pick up such features from the training set and 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,72,321.884,326.284,to rely on such unique features to distinguish the categories. 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,73,326.284,330.97,_And obviously, that kind of classify, one would generalize word to future there when _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,74,330.97,334.85,such discriminative features will not necessarily occur. 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,75,334.85,339.09000000000003,So that's a problem of overfitting that's not desirable. 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,76,339.09000000000003,343.99,_We can also consider part of speech tag, n-grams if we can do part of _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,77,343.99,349.31,_speech tagging an, for example, adjective noun could form a pair. _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,78,349.31,355.04,We can also mix n-grams of words and n-grams of part of speech tags. 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,79,355.04,359.79,_For example, the word great might be followed by a noun, and this could become _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,80,359.79,365.14,_a feature, a hybrid feature, that could be useful for sentiment analysis. _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,81,366.82,369.96,So next we can also have word classes. 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,82,369.96,375.42,_So these classes can be syntactic like a part of speech tags, or could be semantic, _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,83,375.42,380.731,_and they might represent concepts in the thesaurus or ontology, like WordNet. _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,84,380.731,385.36,_Or they can be recognized the name entities, like people or place, and _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,85,385.36,391.24,these categories can be used to enrich the presentation as additional features. 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,86,391.24,395.884,_We can also learn word clusters and parodically, for example, _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,87,395.884,400.26,we've talked about the mining associations of words. 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,88,400.26,403.325,And so we can have cluster of paradigmatically related words or 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,89,403.325,405.09000000000003,_syntaxmatically related words, and _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,90,405.09000000000003,410.90999999999997,these clusters can be features to supplement the word base representation. 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,91,410.90999999999997,414.1,_Furthermore, we can also have frequent pattern syntax, and _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,92,414.1,417.03,_these could be frequent word set, the words that _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,93,417.03,421.94,form the pattern do not necessarily occur together or next to each other. 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,94,421.94,424.41,But we'll also have locations where 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,95,424.41,429.34,_the words my occur more closely together, and such _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,96,429.34,433.5,patterns provide a more discriminative features than words obviously. 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,97,434.695,438.092,And they may also generalize better than just regular n-grams because they 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,98,438.092,438.815,are frequent. 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,99,438.815,442.337,So you expected them to occur also in tested data. 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,100,442.337,447.244,_So they have a lot of advantages, but they might still face the problem _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,101,447.244,451.0,of overfeeding as the features become more complex. 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,102,451.0,457.5,_This is a problem in general, and the same is true for parse tree-based features, _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,103,457.5,462.61,_when you can use a parse tree to derive features such as frequent subtrees, or _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,104,462.61,466.405,_paths, and those are even more discriminating, but _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,105,466.405,471.15999999999997,they're also are more likely to cause over fitting. 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,106,471.15999999999997,475.51,_And in general, pattern discovery algorithm's are very useful for _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,107,475.51,479.33,feature construction because they allow us to search in a large space of possible 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,108,479.33,484.35,features that are more complex than words that are sometimes useful. 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,109,484.35,488.9,_So in general, natural language processing is very important that _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,110,488.9,494.03,_they derive complex features, and they can enrich text representation. _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,111,494.03,494.76,_So for example, _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,112,494.76,501.16,this is a simple sentence that I showed you a long time ago in another lecture. 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,113,501.16,506.57,_So from these words we can only derive simple word n-grams, _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,114,506.57,509.21,representations or character n-grams. 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,115,509.21,512.23,_But with NLP, we can enrich the representation _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,116,512.23,517.196,_with a lot of other information such as part of speech tags, parse trees or _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,117,517.196,520.34,_entities, or even speech act. _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,118,520.34,525.392,_Now with such enriching information of course, then we can generate a lot _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,119,525.392,530.361,_of other features, more complex features like a mixed grams of a word and _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,120,530.361,534.13,_the part of speech tags, or even a part of a parse tree. _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,121,535.87,540.89,_So in general, feature design actually affects categorization accuracy _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,122,540.89,545.78,_significantly, and it's a very important part of any machine learning application. _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,123,545.78,550.75,_In general, I think it would be most effective if you can combine _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,124,550.75,555.75,_machine learning, error analysis, and domain knowledge in design features. _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,125,555.75,558.16,_So first you want to use the main knowledge, _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,126,558.16,562.82,_your understanding of the problem, the design seed features, and _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,127,562.82,567.92,you can also define a basic feature space with a lot of possible features for 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,128,567.92,572.11,_the machine learning program to work on, and machine can be applied to select _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,129,572.11,575.41,the most effective features or construct the new features. 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,130,575.41,577.57,_That's feature learning, and _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,131,577.57,583.63,these features can then be further analyzed by humans through error analysis. 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,132,583.63,586.386,_And you can look at the categorization errors, and _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,133,586.386,590.488,_then further analyze what features can help you recover from those errors, _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,134,590.488,594.46,or what features cause overfitting and cause those errors. 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,135,594.46,598.177,And so this can lead into feature validation that will 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,136,598.177,601.823,_revised the feature set, and then you can iterate. _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,137,601.823,605.14,And we might consider using a different features space. 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,138,607.52,611.26,_So NLP enriches text recognition as I just said, and _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,139,611.26,614.15,_because it enriches the feature space, _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,140,614.15,619.165,_it allows much larger such a space of features and there are also many, _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,141,619.165,623.514,many more features that can be very useful for a lot of tasks. 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,142,623.514,628.871,But be careful not to use a lot of category features because 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,143,628.871,633.4639999999999,_it can cause overfitting, or otherwise you would _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,144,633.4639999999999,638.401,have to training careful not to let overflow happen. 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,145,638.401,641.375,_So a main challenge in design features, _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,146,641.375,646.534,a common challenge is to optimize a trade off between exhaustivity and 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,147,646.534,651.616,_the specificity, and this trade off turns out to be very difficult. _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,148,651.616,656.485,Now exhaustivity means we want the features to actually have 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,149,656.485,659.449,high coverage of a lot of documents. 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,150,659.449,664.263,_And so in that sense, you want the features to be frequent. _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,151,664.263,668.086,_Specifity requires the feature to be discriminative, so _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,152,668.086,673.09,naturally infrequent the features tend to be more discriminative. 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,153,673.09,677.652,So this really cause a trade off between 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,154,677.652,682.36,frequent versus infrequent features. 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,155,682.36,682.896,And that's why a featured design is usually odd. 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,156,682.896,687.693,And that's probably the most important part in machine learning any 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,157,687.693,692.076,_problem in particularly in our case, for text categoration or _
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,158,692.076,695.723,more specifically the senitment classification. 
+5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).srt,159,695.723,705.723,[MUSIC] 

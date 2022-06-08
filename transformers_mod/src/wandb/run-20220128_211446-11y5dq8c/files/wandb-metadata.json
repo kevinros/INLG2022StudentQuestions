@@ -1,0 +1,34 @@
+{
+    "os": "Linux-5.4.0-92-generic-x86_64-with-glibc2.29",
+    "python": "3.8.10",
+    "heartbeatAt": "2022-01-29T03:14:48.235921",
+    "startedAt": "2022-01-29T03:14:46.411877",
+    "docker": null,
+    "gpu": "NVIDIA GeForce GTX 1080",
+    "gpu_count": 8,
+    "cpu_count": 48,
+    "cuda": null,
+    "args": [
+        "--ip=127.0.0.1",
+        "--stdin=9013",
+        "--control=9011",
+        "--hb=9010",
+        "--Session.signature_scheme=\"hmac-sha256\"",
+        "--Session.key=b\"1914b852-5914-4ebd-b74d-ecbe7d05fcf0\"",
+        "--shell=9012",
+        "--transport=\"tcp\"",
+        "--iopub=9014",
+        "--f=/tmp/tmp-3283866x8VwKiN7vx46.json"
+    ],
+    "state": "running",
+    "program": "<python with no main file>",
+    "git": {
+        "remote": "https://github.com/huggingface/transformers",
+        "commit": "6ac77534bfe97c00e0127bb4fc846ae0faf1c9c5"
+    },
+    "email": null,
+    "root": "/home/kjros2/cs546/project/2021cs546project/transformers_mod",
+    "host": "timan107",
+    "username": "kjros2",
+    "executable": "/bin/python3"
+}

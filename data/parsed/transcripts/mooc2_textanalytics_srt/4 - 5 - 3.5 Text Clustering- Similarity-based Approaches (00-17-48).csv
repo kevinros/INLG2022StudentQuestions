@@ -1,0 +1,240 @@
+name,id,from,to,text
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,1,0.231,7.027,[MUSIC] 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,2,7.027,11.32,This lecture is about the similarity-based approaches to text clustering. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,3,13.29,16.86,In this lecture we're going to to continue the discussion of how to do a text 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,4,16.86,17.57,clustering. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,5,18.77,22.84,_In particular, we're going to to cover different kinds of approaches _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,6,22.84,28.34,_than generative models, and that is similarity-based approaches. _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,7,28.34,33.99,So the general idea of similarity-based clustering is to explicitly 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,8,33.99,40.31,specify a similarity function to measure the similarity between two text objects. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,9,40.31,42.98,Now this is in contrast with 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,10,42.98,48.01,a generative model where we implicitly define the clustering bias 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,11,48.01,51.468,by using a particular object to function like a [INAUDIBLE] function. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,12,52.675,56.055,_The whole process is driven by optimizing the [INAUDIBLE,] but _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,13,56.055,62.055,here we explicitly provide a view of what we think are similar. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,14,62.055,67.392,And this is often very useful because then it allows us to inject 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,15,67.392,72.272,any particular view of similarity into the clustering program. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,16,72.272,78.229,_So once we have a similarity function, we can then aim at optimally partitioning, _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,17,78.229,83.96000000000001,to partitioning the data into clusters or into different groups. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,18,83.96000000000001,89.19,And try to maximize the inter-group similarity and 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,19,89.19,91.58,minimize the inter-group similarity. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,20,91.58,96.7,_That is to ensure the objects that are put into the same group to be similar, but _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,21,96.7,101.59,the objects that are put into different groups to be not similar. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,22,101.59,105.155,_And these are the general goals of clustering, _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,23,105.155,109.714,and there is often a trade off between achieving both goals. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,24,109.714,114.664,_Now there are many different methods for doing similarity based clustering, _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,25,114.664,119.405,and in general I think we can distinguish the two strategies at high level. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,26,119.405,124.81,_One is to progressively construct the hierarchy of clusters, and _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,27,124.81,127.52,so this often leads to hierarchical clustering. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,28,127.52,132.99,_And we can further distinguish it two ways, to construct a hierarchy _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,29,132.99,138.36,depending on whether we started with the collection to divide the connection. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,30,138.36,143.02,_Or started with individual objectives and gradually group them together, so _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,31,143.02,146.69,one is bottom-up that can be called agglomerative. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,32,146.69,151.44,Well we gradually group a similar objects into larger and larger clusters. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,33,151.44,156.351,_Until we group everything together, the other is top-down or divisive, in this _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,34,156.351,161.67000000000002,case we gradually partition the whole data set into smaller and smaller clusters. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,35,161.67000000000002,166.5,The other general strategy is to start with the initial tentative clustering and 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,36,166.5,168.66,then iteratively improve it. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,37,168.66,174.67000000000002,_And this often leads for a flat clustering, one example is k-Means, _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,38,174.67000000000002,178.52,_so as I just said, there are many different clustering methods available. _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,39,178.52,184.18,And a full coverage of all the clustering methods would be 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,40,184.18,186.8,beyond the scope of this course. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,41,186.8,193.21,_But here we are going to talk about the two representative methods, in some detail _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,42,194.34,200.35,_one is Hierarchical Agglomerative Clustering or HAC, the other is k-Means. _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,43,200.35,206.28,_So first of it we'll get the agglomerative hierarchical clustering, in this case, _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,44,206.28,210.85,we're given a similarity function to measure similarity between two objects. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,45,210.85,216.11,And then we can gradually group similar objects together in a bottom-up fashion to 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,46,216.11,218.25,form larger and larger groups. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,47,218.25,220.55,_And they always form a hierarchy, and _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,48,220.55,224.19,then we can stop when some stopping criterion is met. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,49,224.19,228.78,It could be either some number of clusters has been achieved or 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,50,228.78,231.06,the threshold for similarity has been reached. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,51,232.24,234.47,_There are different variations here, and _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,52,234.47,238.61,they mainly differ in the ways to compute a group similarity. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,53,238.61,241.47,_Based on the individual objects similarity, so _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,54,241.47,247.41,let's illustrate how again induced a structure based on just similarity. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,55,247.41,250.91,So start with all the text objects and 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,56,250.91,254.07,we can then measure the similarity between them. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,57,254.07,257.384,_Of course based on the provided similarity function, and _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,58,257.384,260.503,then we can see which pair has the highest similarity. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,59,260.503,264.238,_And then just group them together, and _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,60,264.238,269.68,then we're going to see which pair is the next one to group. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,61,270.73,274.81,_Maybe these two now have the highest similarity, and _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,62,274.81,276.852,then we're going to gradually group them together. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,63,276.852,282.33,_And then every time we're going to pick the highest similarity, _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,64,282.33,283.97,the similarity of pairs to group. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,65,285.25,289.05,This will give us a binary tree eventually to group everything together. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,66,290.36,292.98,_Now, depending on our applications, _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,67,292.98,297.64,_we can use the whole hierarchy as a structure for browsing, for example. _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,68,297.64,303.401,_Or we can choose a cutoff, let's say cut here to get four clusters, _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,69,303.401,306.15,or we can use a threshold to cut. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,70,306.15,311.24,_Or we can cut at this high level to get just two clusters, so _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,71,311.24,315.86,_this is a general idea, now if you think about how to implement this algorithm. _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,72,315.86,320.93,You'll realize that we have everything specified except for 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,73,320.93,323.17,how to compute group similarity. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,74,324.3,328.41,_We are only given the similarity function of two objects, but as _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,75,328.41,333.78,_we group groups together, we also need to assess the similarity between two groups. _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,76,333.78,338.21500000000003,There are also different ways to do that and there are the three popular methods. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,77,338.21500000000003,343.004,_Single-link, complete-link, and average-link, so _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,78,343.004,347.46,given two groups and the single-link algorithm. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,79,347.46,351.96,Is going to define the group similarity as the similarity of the closest pair of 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,80,351.96,353.005,the two groups. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,81,353.005,356.01,Complete-link defines the similarity of the two groups 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,82,356.01,359.755,as the similarity of the farthest system pair. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,83,359.755,363.8,Average-link defines the similarity as average of similarity of 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,84,363.8,366.49,all the pairs of the two groups. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,85,366.49,372.22,_So it's much easier to understand the methods by illustrating them, _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,86,372.22,377.78,_so here are two groups, g1 and g2 with some objects in each group. _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,87,377.78,383.34,_And we know how to compute the similarity between two objects, but _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,88,383.34,387.33,_the question now is, how can we compute the similarity between the two groups? _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,89,389.24,392.97,And then we can in general base this on the similarities of the objects 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,90,392.97,393.9,in the two groups. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,91,395.1,398.12,_So, in terms of single-link and _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,92,398.12,400.975,_we're just looking at the closest pair so in this case, _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,93,400.975,405.64,these two paired objects will defined the similarities of the two groups. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,94,407.27,410.24,_As long as they are very close, we're going to say the two groups are very _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,95,411.71,416.09000000000003,close so it is an optimistic view of similarity. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,96,417.9,424.4,_The complete link on the other hand were in some sense pessimistic, and by _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,97,424.4,430.956,taking the similarity of the two farthest pair as the similarity for the two groups. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,98,430.956,436.0,So we are going to make sure that 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,99,436.0,440.06,if the two groups are having a high similarity. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,100,440.06,443.71,_Then every pair of the two groups, or _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,101,443.71,448.24,_the objects in the two groups will have, will be ensured to have high similarity. _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,102,449.36,454.75,_Now average link is in between, so it takes the average of all these pairs. _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,103,454.75,459.3,Now these different ways of computing group similarities will lead 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,104,459.3,460.9,to different clustering algorithms. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,105,460.9,466.64,_And they would in general give different results, so _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,106,466.64,471.11,it's useful to take a look at their differences and to make a comparison. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,107,473.812,478.71,_First, single-link can be expected to _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,108,478.71,483.99,_generally the loose clusters, the reason is because as long as two objects _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,109,483.99,488.14,_are very similar in the two groups, it will bring the two groups together. _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,110,489.24,495.17,_If you think about this as similar to having parties with people, _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,111,495.17,502.01,then it just means two groups of people would be partying together. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,112,502.01,506.01,As long as in each group there is a person that 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,113,507.15,509.78,is well connected with the other group. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,114,509.78,515.1,So the two leaders of the two groups can have a good 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,115,515.1,519.62,relationship with each other and then they will bring together the two groups. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,116,519.62,523.22,_In this case, the cluster is loose, because there's no guarantee that _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,117,523.22,527.05,other members of the two groups are actually very close to each other. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,118,527.05,531.78,_Sometimes they may be very far away, now in this case it's also _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,119,531.78,535.086,_based on individual decisions, so it could be sensitive to outliers. _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,120,535.086,539.93,_The complete-link is in the opposite situation, _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,121,539.93,543.37,where we can expect the clusters to be tight. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,122,543.37,548.77,And it's also based on individual decision so it can be sensitive to outliers. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,123,548.77,551.89,_Again to continue the analogy to having a party of people, _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,124,551.89,557.5,then complete-link would mean when two groups come together. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,125,557.5,559.1,They want to ensure that even 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,126,561.59,567.02,the people that are unlikely to talk to each other would be comfortable. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,127,567.02,571.9,_Always talking to each other, so ensure the whole class to be coherent. _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,128,571.9,576.5,_The average link of clusters in between and as group decision, so it's _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,129,577.51,582.92,_going to be insensitive to outliers, now in practice which one is the best. _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,130,582.92,588.27,_Well, this would depend on the application and sometimes you need a lose clusters. _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,131,588.27,593.05,And aggressively cluster objects together that maybe single-link is good. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,132,593.05,596.148,But other times you might need a tight clusters and 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,133,596.148,598.98,a complete-link might be better. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,134,598.98,602.12,_But in general, you have to empirically evaluate these methods for _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,135,602.12,604.36,your application to know which one is better. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,136,607.12,611.453,_Now, next let's look at another example of a method for similarity-based clustering. _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,137,611.453,615.82,_In this case, which is called k-Means clustering, _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,138,615.82,620.81,we will represent each text object as a term vector. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,139,620.81,626.39,_And then assume a similarity function defined on two objects, now we're going to _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,140,626.39,631.828,start with some tentative clustering results by just selecting k randomly. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,141,631.828,637.17,selected vectors as centroids of k clusters and 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,142,637.17,643.38,_treat them as centers as if they represent, they each represent a cluster. _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,143,643.38,647.16,_So this gives us the initial tentative cluster, _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,144,647.16,649.47,then we're going to iteratively improve it. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,145,649.47,653.77,_And the process goes like this, and once we have these centroids Decide. _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,146,653.77,658.895,We're going to assign a vector to the cluster whose 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,147,658.895,663.53,centroid is closest to the current vector. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,148,663.53,667.712,_So basically we're going to measure the distance between this vector, and _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,149,667.712,671.568,_each of the centroids, and see which one is the closest to this one. _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,150,671.568,675.516,_And then just put this object into that cluster, _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,151,675.516,680.84,this is to have tentative assignment of objects into clusters. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,152,680.84,683.81,And we're going to partition all the objects 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,153,683.81,687.36,into k clusters based on our tentative clustering and centroids. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,154,688.74,692.57,Then we can do re-compute the centroid based on 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,155,692.57,695.56,the locate the object in each cluster. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,156,695.56,699.84,_And this is to adjust the centroid, and _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,157,699.84,704.4,then we can repeat this process until the similarity-based objective function. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,158,704.4,709.197,_In this case, it's within cluster sum of squares converges, and _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,159,709.197,711.604,theoretically we can show that. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,160,711.604,716.57,This process actually is going to minimize the within cluster sum of squares 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,161,716.57,719.9,where define object and function. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,162,719.9,723.363,_Given k clusters, so it can be also shown, _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,163,723.363,727.225,this process will converge to a local minimum. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,164,727.225,731.781,_I think about this process for a moment, it might remind you the Algorithm for _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,165,731.781,732.739,mixture model. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,166,733.9,738.59,Indeed this algorithm is very similar to the Algorithm for 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,167,738.59,740.74,the mixture model for clustering. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,168,740.74,746.51,More specifically we also initialize these parameters 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,169,746.51,752.24,in the Algorithm so the random initialization is similar. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,170,754.21,757.619,_And then in the Algorithm, you may recall that, _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,171,757.619,763.17,we're going to repeat E-step and M-step to improve our parameter estimation. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,172,763.17,767.34,_In this case, we're going to improve the clustering result _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,173,767.34,770.76,iteratively by also doing two steps. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,174,770.76,777.81,_And in fact that the two steps are very similar to Algorithm, in that when we _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,175,777.81,783.02,locate the vector into one of the clusters based on our tentative clustering. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,176,783.02,787.0,It's very similar to inferring the distribution that has been used to 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,177,787.0,789.02,_generate the document, the mixture model. _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,178,789.02,792.1,_So it is essentially similar to E-step, so _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,179,792.1,796.13,_what's the difference, well the difference is here. _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,180,796.13,800.17,_We don't make a probabilistic allocation as in the case of E-step, _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,181,800.17,802.515,the brother will make a choice. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,182,802.515,808.365,_We're going to make a call if this, there upon this closest to cluster two, _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,183,808.365,811.105,then we're going to say you are in cluster two. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,184,811.105,812.355,_So there's no choice, and _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,185,812.355,817.3,_we're not going to say, you assume the set is belonging to a cluster two. _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,186,817.3,820.425,_And so we're not going to have a probability, but _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,187,820.425,824.508,we're just going to put one object into precisely one cluster. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,188,824.508,831.09,_In the E-step however, we do a probability location, so we split in counts. _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,189,831.09,836.009,And we're not going to say exactly which distribution has 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,190,836.009,839.153,been used to generate a data point. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,191,839.153,841.926,_Now next, we're going to adjust the centroid, and _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,192,841.926,845.9,this is very similar to M-step where we re-estimate the parameters. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,193,845.9,850.54,_That's when we'll have a better estimate of the parameter, so _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,194,850.54,855.56,here we'll have a better clustering result by adjusting the centroid. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,195,855.56,863.17,And note that centroid is based on the average of the vectors in the cluster. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,196,863.17,867.731,_So this is also similar to the M-step where we do counts,pull together counts _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,197,867.731,869.84,and then normalize them. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,198,869.84,874.247,_The difference of course is also because of the difference in the E-step, and _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,199,874.247,878.94,we're not going to consider probabilities when we count the points. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,200,878.94,879.918,_In this case, _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,201,879.918,885.595,k-Means we're going to all make count of the objects as allocated to this cluster. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,202,885.595,890.76,_And this is only a subset of data points, but in the Algorithm, _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,203,890.76,895.375,we in principle consider all the data points based on probabilistic allocations. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,204,896.71,898.86,But in nature they are very similar and 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,205,898.86,903.51,that's why it's also maximizing well defined object of functions. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,206,903.51,906.657,_And it's guaranteed to convert local minimum, so _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,207,906.657,910.7,to summarize our discussion of clustering methods. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,208,910.7,914.64,_We first discussed model based approaches, mainly the mixture model. _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,209,914.64,922.83,Here we use the implicit similarity function to define the clustering bias. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,210,922.83,927.44,_There is no explicit define similarity function, the model defines clustering _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,211,927.44,933.08,bias and the clustering structure is built into a generative model. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,212,933.08,937.16,That's why we can use potentially a different model to 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,213,937.16,938.34,recover different structure. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,214,940.07,947.2,Complex generative models can be used to discover complex clustering structures. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,215,947.2,950.6,_We do not talk about in full, but we can easily design, _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,216,950.6,954.82,generate a model to generate a hierarchical clusters. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,217,954.82,959.76,We can also use prior to further customize the clustering algorithm to for 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,218,959.76,964.97,example control the topic of one cluster or multiple clusters. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,219,964.97,968.525,However one disadvantage of this approach is that there is no easy way to 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,220,968.525,970.63,directly control the similarity measure. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,221,971.73,974.65,_Sometimes we want to that, but it's very hard to _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,222,974.65,979.02,inject such a special definition of similarity into such a model. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,223,980.21,982.91,_We also talked about similarity-based approaches, _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,224,982.91,987.63,these approaches are more flexible to actually specify similarity functions. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,225,989.11,992.41,But one major disadvantage is that 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,226,992.41,994.487,their objective function is not always very clear. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,227,995.534,999.73,_The k-Means algorithm has clearly defined the objective function, but _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,228,999.73,1002.066,it's also very similar to a model based approach. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,229,1002.066,1007.556,The hierarchical clustering algorithm on 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,230,1007.556,1015.75,the other hand is harder to specify the objective function. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,231,1015.75,1019.36,_So it's not clear what exactly is being optimized, _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,232,1020.8,1023.89,both approaches can generate term clusters. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,233,1023.89,1028.52,_And document clusters, and term clusters can be in general, _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,234,1028.52,1033.04,generated by representing each term with some text content. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,235,1033.04,1038.54,_For example, take the context of each term as a representation of each term, _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,236,1038.54,1042.61,as we have done in semantic relation learning. 
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,237,1042.61,1049.11,_And then we can certainly cluster terms, based on actual text [INAUDIBLE]. _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,238,1049.11,1054.682,_Of course, term clusters can be generated by using generative models as well, _
+4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).srt,239,1054.682,1055.855,as we've seen. 

@@ -1,0 +1,99 @@
+name,id,from,to,text
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,1,0.0,5.731,[SOUND] This lecture is about 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,2,5.731,12.712,the Feedback in Text Retrieval. 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,3,12.712,14.176,_So, in this lecture, _
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,4,14.176,18.503,we're going to continue the discussion on text retrieval methods. 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,5,18.503,24.713,_In particular, we're going to talk about Feedback in Text Retrieval. _
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,6,24.713,30.461,This is a diagram that shows the retrieval process. 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,7,30.461,34.906,We can see the user would typed in a query and 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,8,34.906,40.217,then the query would be sent to a Retrieval Engine or 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,9,40.217,45.67,search engine and the engine would return results. 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,10,45.67,49.438,These results would be shown to the user. 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,11,49.438,55.253,_After the user has seen these results, the user can actually make judgments. _
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,12,55.253,58.673,_So for example, the user has say, well, this is good and _
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,13,58.673,60.753,this document is not very useful. 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,14,60.753,63.045,_This is good again, et cetera. _
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,15,63.045,67.869,_Now this is called a relevance judgment or Relevance Feedback, because we've _
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,16,67.869,72.336,got some feedback information from the user based on the judgments. 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,17,72.336,74.712,This can be very useful to the system. 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,18,74.712,78.17,Learn what exactly is interesting to the user. 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,19,78.17,82.218,So the feedback module would then take this as input and 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,20,82.218,86.712,also use the document collection to try to improve ranking. 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,21,86.712,90.08,_Typically, it would involve updating the query. _
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,22,90.08,94.711,So the system can now rank the results more accurately for the user. 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,23,94.711,96.92,So this is called Relevance Feedback. 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,24,96.92,102.17,The feedback is based on relevance judgements made by the users. 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,25,102.17,104.86,_Now these judgements are reliable, but _
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,26,104.86,110.253,_the users generally don't want to make extra effort, unless they have to. _
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,27,110.253,117.003,So the downside's that involves some extra effort by the user. 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,28,117.003,120.663,_There is another form of feedback called a Pseudo Relevance Feedback, _
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,29,120.663,123.86,or a blind feedback also called an automatic feedback. 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,30,123.86,128.645,_In this case, you can see once the user has got without an effect, _
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,31,128.645,131.086,we don't have to involve users. 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,32,131.086,134.73,So you can see there's no user involved here. 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,33,134.73,139.628,And we simply assume that the top ranked documents to be relevant. 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,34,139.628,144.878,_Let's say, we have assumed the top ten is relevant. _
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,35,144.878,148.989,And then we will then use these assumed 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,36,148.989,153.878,documents to learn and to improve the query. 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,37,153.878,155.897,_Now you might wonder, you know, _
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,38,155.897,160.67000000000002,how could this help if we simply assume the top rank documents would be random. 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,39,160.67000000000002,167.04500000000002,Well you can imagine these top rank documents are actually similar to relevant 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,40,167.04500000000002,173.253,_documents, even if they are not relevant, they look like relevant documents. _
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,41,173.253,179.086,_So, it's possible to learn some related terms to the query from this set. _
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,42,179.086,183.545,_In fact, you may recall that we talked about using language model to _
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,43,183.545,188.253,analyze word association to learn related words to the word computer. 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,44,188.253,189.211,Right? 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,45,189.211,191.061,_And then what we did is first, _
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,46,191.061,195.295,use computer to retrieve all the documents that contain computer. 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,47,195.295,198.54500000000002,_So, imagine now the query here is a computer. _
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,48,198.54500000000002,199.087,Right? 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,49,199.087,203.712,And then the results will be those documents that contain computer. 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,50,203.712,208.836,And what we can do then is to take the top end results. 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,51,208.836,213.661,They can match computer very well and we're going to count 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,52,213.661,218.85,the terms in this set and then we're going to then use the background 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,53,218.85,224.131,_language model to choose the terms that are frequent the in this set, _
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,54,224.131,227.711,but not frequent the in the whole collection. 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,55,227.711,232.774,_So, if we make a contrast between these two, what we can find is that _
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,56,232.774,238.586,_we'll learn some related terms too, the work computer as what I've seen before. _
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,57,238.586,244.753,And these related words can then be added to the original query to expand the query. 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,58,244.753,248.843,_And this would help us free documents that don't necessarily match computer, _
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,59,248.843,251.42,but match other words like program and software. 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,60,251.42,258.378,So this is factored for improving the search doubt. 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,61,258.378,261.754,_But of course, pseudo relevancy feedback is completely unreliable. _
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,62,261.754,263.961,We have to arbitrarily set a cutoff. 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,63,263.961,266.795,So there is also something in between called Implicit Feedback. 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,64,266.795,270.263,_In this case, what we do, we do involve users, but _
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,65,270.263,273.503,we don't have to ask users to make judgements. 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,66,273.503,278.503,_Instead, we are going to observe how the user interacts with the search results. _
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,67,278.503,281.503,_So, in this case, we're going to look at the clickthroughs. _
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,68,281.503,285.6,_So the user clicked on this one and the, the user viewed this one. _
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,69,285.6,290.17,And the user skipped this one and the user viewed this one again. 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,70,290.17,296.099,Now this also is a clue about whether a document is useful to the user and 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,71,296.099,303.253,we can even assume that we're going to use only the snippet here in this document. 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,72,303.253,306.815,_The text that's actually seen by the user, _
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,73,306.815,311.835,instead of the actual document of this entry in the link. 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,74,311.835,315.211,_There that same web search may be broken, but that, it doesn't matter. _
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,75,315.211,320.459,_If the user tries to fetch this document that because of the displayed text, _
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,76,320.459,326.282,_we can assume this displayed text is probably relevant is interesting to user, _
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,77,326.282,329.003,so we can learn from such information. 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,78,329.003,332.626,_And this is called Implicit Feedback and we can again, _
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,79,332.626,335.17,use the information to update the query. 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,80,335.17,339.545,This is a very important technique used in modern search engines. 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,81,339.545,345.086,_You know, think about Google and Bing and they can collect a lot of user activities. _
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,82,345.086,346.77,Why they are serverless? 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,83,346.77,349.081,Right. So they would observe what documents we 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,84,349.081,351.128,_click on, what documents we skip. _
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,85,351.128,354.75,And this information is very valuable and 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,86,354.75,358.795,they can use this to encode the search engine. 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,87,358.795,359.868,_So to summarize, _
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,88,359.868,364.378,we would talk about the three kinds of feedback here rather than feedback. 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,89,364.378,368.206,_Where the use exquisite judgement, it takes some used effort, but _
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,90,368.206,370.84,the judgement that information is reliable. 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,91,370.84,376.42,_We talked about the Pseudo Feedback, where we simply assumed top random documents. _
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,92,376.42,378.628,_We get random, we don't have to involve the user. _
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,93,378.628,382.247,_Therefore, we could do that actually before we, _
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,94,382.247,384.753,we return the results to the user. 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,95,384.753,389.586,_And the third is Implicit Feedback, where we use clickthroughs. _
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,96,389.586,392.054,_Where we don't, we involve users, but _
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,97,392.054,396.42,the user doesn't have to make explicit effort to make judgement. 
+4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).srt,98,396.42,406.42,[MUSIC] 

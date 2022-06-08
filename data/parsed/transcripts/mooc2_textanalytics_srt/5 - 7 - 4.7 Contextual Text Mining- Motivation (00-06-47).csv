@@ -1,0 +1,101 @@
+name,id,from,to,text
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,1,0.16,7.187,[SOUND] This 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,2,7.187,9.83,lecture is about the contextual text mining. 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,3,11.01,14.4,Contextual text mining is related to multiple 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,4,14.4,18.88,_kinds of knowledge that we mine from text data, as I'm showing here. _
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,5,18.88,23.58,_It's related to topic mining because you can make topics associated with context, _
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,6,23.58,25.26,like time or location. 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,7,25.26,29.72,_And similarly, we can make opinion mining more contextualized, _
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,8,29.72,32.59,making opinions connected to context. 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,9,34.09,38.32,It's related to text based prediction because it allows us to combine non-text 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,10,38.32,43.69,data with text data to derive sophisticated predictors for 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,11,43.69,45.11,the prediction problem. 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,12,45.11,49.29,_So more specifically, why are we interested in contextual text mining? _
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,13,49.29,54.51,_Well, that's first because text often has rich context information. _
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,14,54.51,61.74,_And this can include direct context such as meta-data, and also indirect context. _
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,15,61.74,66.26,_So, the direct context can grow the meta-data such as time, _
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,16,66.26,70.03,_location, authors, and source of the text data. _
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,17,70.03,72.71000000000001,And they're almost always available to us. 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,18,74.28,79.69,Indirect context refers to additional data related to the meta-data. 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,19,79.69,84.44,_So for example, from office, we can further obtain additional _
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,20,84.44,89.28,_context such as social network of the author, or the author's age. _
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,21,90.3,94.02799999999999,_Such information is not in general directly related to the text, yet _
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,22,94.02799999999999,97.35,_through the process, we can connect them. _
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,23,97.35,101.08,_There could be other text data from the same source, _
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,24,101.08,106.75999999999999,as this one through the other text can be connected with this text as well. 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,25,106.75999999999999,111.4,_So in general, any related data can be regarded as context. _
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,26,111.4,113.83,So there could be removed or rated for context. 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,27,115.46000000000001,116.87,And so what's the use? 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,28,116.87,119.1,What is text context used for? 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,29,119.1,125.88,_Well, context can be used to partition text data in many interesting ways. _
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,30,125.88,131.49,It can almost allow us to partition text data in other ways as we need. 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,31,131.49,134.18,And this is very important because this allows 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,32,134.18,138.06,us to do interesting comparative analyses. 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,33,138.06,141.622,_It also in general, provides meaning to the discovered topics, _
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,34,141.622,143.77,if we associate the text with context. 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,35,145.29,150.54,So here's illustration of how context 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,36,150.54,155.52,can be regarded as interesting ways of partitioning of text data. 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,37,155.52,159.449,So here I just showed some research papers published in different years. 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,38,161.74,163.122,_On different venues, _
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,39,163.122,168.15,_different conference names here listed on the bottom like the SIGIR or ACL, etc. _
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,40,169.64,173.07999999999998,Now such text data can be partitioned 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,41,173.07999999999998,175.48,in many interesting ways because we have context. 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,42,176.86,181.62,So the context here just includes time and the conference venues. 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,43,181.62,184.93,But perhaps we can include some other variables as well. 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,44,186.48,188.89,But let's see how we can partition this interesting of ways. 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,45,188.89,192.84,_First, we can treat each paper as a separate unit. _
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,46,192.84,197.987,_So in this case, a paper ID and the, each paper has its own context. _
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,47,197.987,202.575,It's independent. 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,48,202.575,207.825,But we can also treat all the papers within 1998 as one group and 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,49,207.825,212.53,this is only possible because of the availability of time. 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,50,212.53,214.605,And we can partition data in this way. 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,51,214.605,218.012,_This would allow us to compare topics for example, in different years. _
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,52,219.84,222.745,_Similarly, we can partition the data based on the menus. _
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,53,222.745,227.74,We can get all the SIGIR papers and compare those papers with the rest. 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,54,227.74,231.039,_Or compare SIGIR papers with KDD papers, with ACL papers. _
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,55,232.7,238.74,_We can also partition the data to obtain the papers written by authors in the U.S., _
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,56,238.74,243.34,_and that of course, uses additional context of the authors. _
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,57,243.34,248.24,And this would allow us to then compare such a subset with 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,58,248.24,252.39,another set of papers written by also seen in other countries. 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,59,253.91,257.81,_Or we can obtain a set of papers about text mining, and _
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,60,257.81,261.89,this can be compared with papers about another topic. 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,61,261.89,265.31,And note that these partitionings can be also 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,62,265.31,268.86,intersected with each other to generate even more complicated partitions. 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,63,269.89,274.28,_And so in general, this enables discovery of knowledge associated with _
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,64,274.28,275.89,different context as needed. 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,65,277.15,280.3,_And in particular, we can compare different contexts. _
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,66,280.3,283.62,And this often gives us a lot of useful knowledge. 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,67,283.62,289.35,_For example, comparing topics over time, we can see trends of topics. _
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,68,289.35,293.13,Comparing topics in different contexts can also reveal differences 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,69,293.13,295.23,about the two contexts. 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,70,295.23,299.68,So there are many interesting questions that require contextual text mining. 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,71,299.68,301.78,Here I list some very specific ones. 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,72,301.78,305.3,_For example, what topics have been getting increasing attention _
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,73,305.3,307.42,recently in data mining research? 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,74,307.42,308.57,_Now to answer this question, _
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,75,308.57,311.724,obviously we need to analyze text in the context of time. 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,76,313.815,317.455,So time is context in this case. 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,77,317.455,320.675,Is there any difference in the responses of people in different regions 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,78,320.675,322.885,_to the event, to any event? _
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,79,322.885,325.515,So this is a very broad an answer to this question. 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,80,325.515,328.635,_In this case of course, location is the context. _
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,81,328.635,331.26,What are the common research interests of two researchers? 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,82,331.26,334.11,_In this case, authors can be the context. _
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,83,334.11,338.25,Is there any difference in the research topics published by authors in the USA and 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,84,338.25,339.92,those outside? 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,85,339.92,343.99,_Now in this case, the context would include the authors and _
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,86,343.99,346.03,their affiliation and location. 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,87,347.81,351.7,So this goes beyond just the author himself or herself. 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,88,351.7,355.52,We need to look at the additional information connected to the author. 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,89,355.52,358.58,Is there any difference in the opinions of all the topics expressed on 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,90,358.58,360.72,one social network and another? 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,91,360.72,364.87,_In this case, the social network of authors and the topic can be a context. _
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,92,366.128,370.25,Other topics in news data that are correlated with sudden changes in 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,93,370.25,371.47,stock prices. 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,94,371.47,376.06,_In this case, we can use a time series such as stock prices as context. _
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,95,377.23,380.78,_What issues mattered in the 2012 presidential campaign, or _
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,96,380.78,381.41,presidential election? 
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,97,381.41,386.35,_Now in this case, time serves again as context. _
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,98,386.35,389.005,_So, as you can see, the list can go on and on. _
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,99,389.005,394.911,_Basically, contextual text mining can have many applications. _
+5 - 7 - 4.7 Contextual Text Mining- Motivation (00-06-47).srt,100,394.911,404.911,[MUSIC] 

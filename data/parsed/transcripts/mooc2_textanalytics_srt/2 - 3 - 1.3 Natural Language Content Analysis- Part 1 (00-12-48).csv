@@ -1,0 +1,170 @@
+name,id,from,to,text
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,1,0.3,3.38,[SOUND] 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,2,9.17,13.893,This lecture is about natural language 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,3,13.893,16.33,content analysis. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,4,16.33,21.51,Natural language content analysis is the foundation of text mining. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,5,21.51,23.78,So we're going to first talk about this. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,6,24.98,26.33,_And in particular, _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,7,26.33,31.54,natural language processing with a factor how we can present text data. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,8,33.21,38.23,And this determines what algorithms can be used to analyze and mine text data. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,9,40.82,44.991,We're going to take a look at the basic concepts in natural language first. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,10,46.33,48.97,And I'm going to explain these concepts 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,11,48.97,52.6,using a similar example that you've all seen here. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,12,52.6,55.65,A dog is chasing a boy on the playground. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,13,55.65,58.31,Now this is a very simple sentence. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,14,58.31,61.16,When we read such a sentence we don't have to think 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,15,61.16,65.2,about it to get the meaning of it. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,16,65.2,69.46000000000001,_But when a computer has to understand the sentence, _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,17,69.46000000000001,72.34,the computer has to go through several steps. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,18,73.43,76.532,_First, the computer needs to know what are the words, _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,19,76.532,78.63,how to segment the words in English. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,20,78.63,82.01,_And this is very easy, we can just look at the space. _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,21,82.01,86.136,_And then the computer will need the know the categories of these words, _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,22,86.136,87.87,syntactical categories. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,23,87.87,94.50999999999999,_So for example, dog is a noun, chasing's a verb, boy is another noun etc. _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,24,94.50999999999999,97.35,And this is called a Lexical analysis. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,25,97.35,101.59,_In particular, tagging these words with these syntactic categories _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,26,101.59,103.27000000000001,is called a part-of-speech tagging. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,27,105.03,108.38300000000001,After that the computer also needs to figure out the relationship between 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,28,108.38300000000001,109.03999999999999,these words. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,29,109.03999999999999,113.3,So a and dog would form a noun phrase. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,30,113.3,117.59,_On the playground would be a prepositional phrase, etc. _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,31,117.59,121.378,And there is certain way for them to be connected together in order for 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,32,121.378,123.62,them to create meaning. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,33,123.62,126.469,Some other combinations may not make sense. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,34,127.72,132.62,_And this is called syntactical parsing, or _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,35,132.62,137.09,_syntactical analysis, parsing of a natural language sentence. _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,36,137.09,141.18,The outcome is a parse tree that you are seeing here. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,37,141.18,144.05,_That tells us the structure of the sentence, so _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,38,144.05,147.43,that we know how we can interpret this sentence. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,39,147.43,149.74,But this is not semantics yet. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,40,149.74,154.53,So in order to get the meaning we would have to map these phrases and 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,41,154.53,159.86,these structures into some real world antithesis that we have in our mind. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,42,159.86,165.5,_So dog is a concept that we know, and boy is a concept that we know. _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,43,165.5,170.87,So connecting these phrases that we know is understanding. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,44,172.16,178.788,_Now for a computer, would have to formally represent these entities by using symbols. _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,45,178.788,183.63,_So dog, d1 means d1 is a dog. _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,46,184.69,189.42,_Boy, b1 means b1 refers to a boy etc. _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,47,189.42,193.43,And also represents the chasing action as a predicate. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,48,193.43,198.334,_So, chasing is a predicate here with _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,49,198.334,203.72,_three arguments, d1, b1, and p1. _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,50,203.72,205.92000000000002,Which is playground. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,51,205.92000000000002,211.32,So this formal rendition of the semantics of this sentence. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,52,211.32,215.95,_Once we reach that level of understanding, we might also make inferences. _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,53,215.95,222.05,_For example, if we assume there's a rule that says if someone's being chased then _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,54,222.05,228.42000000000002,_the person can get scared, then we can infer this boy might be scared. _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,55,228.42000000000002,232.8,_This is the inferred meaning, based on additional knowledge. _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,56,232.8,238.485,_And finally, we might even further infer _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,57,238.485,246.17,_what this sentence is requesting, _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,58,246.17,252.92,_or why the person who say it in a sentence, is saying the sentence. _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,59,252.92,258.31,_And so, this has to do with purpose of saying the sentence. _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,60,258.31,264.55,This is called speech act analysis or pragmatic analysis. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,61,264.55,267.92,Which first to the use of language. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,62,267.92,272.704,_So, in this case a person saying this may be reminding another person to _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,63,272.704,274.07,bring back the dog. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,64,275.24,282.32,_So this means when saying a sentence, the person actually takes an action. _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,65,282.32,284.769,So the action here is to make a request. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,66,286.77,291.408,_Now, this slide clearly shows that in order to really understand _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,67,291.408,295.72,a sentence there are a lot of things that a computer has to do. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,68,295.72,300.337,_Now, in general it's very hard for a computer will do everything, _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,69,300.337,304.91,especially if you would want it to do everything correctly. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,70,304.91,306.45,This is very difficult. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,71,308.19,311.094,_Now, the main reason why natural language processing is very difficult, _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,72,311.094,314.82,it's because it's designed it will make human communications efficient. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,73,315.99,320.04,_As a result, for example, with only a lot of common sense knowledge. _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,74,321.25,325.15,_Because we assume all of us have this knowledge, _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,75,325.15,328.17,there's no need to encode this knowledge. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,76,329.78,331.36,That makes communication efficient. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,77,332.48,337.46,_We also keep a lot of ambiguities, like, ambiguities of words. _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,78,339.09000000000003,345.13,_And this is again, because we assume we have the ability to disambiguate the word. _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,79,345.13,348.8,_So, there's no problem with having the same word to mean _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,80,348.8,350.869,possibly different things in different context. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,81,352.61,355.88,Yet for a computer this would be very difficult 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,82,355.88,360.25,because a computer does not have the common sense knowledge that we do. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,83,360.25,363.62,So the computer will be confused indeed. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,84,363.62,366.98,And this makes it hard for natural language processing. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,85,366.98,369.44,_Indeed, it makes it very hard for _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,86,369.44,375.14,every step in the slide that I showed you earlier. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,87,376.55,379.38,Ambiguity is a main killer. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,88,379.38,382.82,_Meaning that in every step there are multiple choices, _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,89,382.82,386.79,and the computer would have to decide whats the right choice and 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,90,386.79,390.55,that decision can be very difficult as you will see also in a moment. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,91,391.69,392.3,_And in general, _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,92,392.3,397.53,we need common sense reasoning in order to fully understand the natural language. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,93,397.53,400.595,And computers today don't yet have that. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,94,400.595,402.82,That's why it's very hard for 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,95,402.82,407.31,computers to precisely understand the natural language at this point. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,96,408.31,411.28,So here are some specific examples of challenges. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,97,411.28,413.39,Think about the world-level ambiguity. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,98,413.39,416.94,_A word like design can be a noun or a verb, so _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,99,416.94,419.2,we've got ambiguous part of speech tag. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,100,420.98,426.19,_Root also has multiple meanings, it can be of mathematical sense, _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,101,426.19,430.67,_like in the square of, or can be root of a plant. _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,102,432.31,437.31,Syntactic ambiguity refers to different interpretations 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,103,439.44,441.67,of a sentence in terms structures. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,104,441.67,443.01,_So for example, _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,105,443.01,446.219,natural language processing can actually be interpreted in two ways. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,106,448.24,453.40999999999997,So one is the ordinary meaning that we 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,107,453.40999999999997,458.69,will be getting as we're talking about this topic. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,108,458.69,461.67,_So, it's processing of natural language. _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,109,461.67,464.6,But there's is also another possible interpretation 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,110,464.6,467.19,which is to say language processing is natural. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,111,468.95,473.5,_Now we don't generally have this problem, but imagine for the computer to determine _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,112,473.5,476.96,_the structure, the computer would have to make a choice between the two. _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,113,479.04,483.53,Another classic example is a man saw a boy with a telescope. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,114,483.53,490.23,And this ambiguity lies in the question who had the telescope? 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,115,490.23,493.63,This is called a prepositional phrase attachment ambiguity. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,116,494.96,500.44,Meaning where to attach this prepositional phrase with the telescope. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,117,500.44,502.67,Should it modify the boy? 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,118,502.67,508.33,_Or should it be modifying, saw, the verb. _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,119,508.33,511.33,Another problem is anaphora resolution. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,120,511.33,515.74,In John persuaded Bill to buy a TV for himself. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,121,515.74,517.96,Does himself refer to John or Bill? 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,122,519.38,521.79,Presupposition is another difficulty. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,123,521.79,525.4590000000001,_He has quit smoking implies that he smoked before, and _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,124,525.4590000000001,530.18,we need to have such a knowledge in order to understand the languages. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,125,532.63,537.614,_Because of these problems, the state of the art natural language processing _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,126,537.614,541.41,techniques can not do anything perfectly. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,127,541.41,544.56,_Even for the simplest part of speech tagging, _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,128,544.56,547.7,we still can not solve the whole problem. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,129,547.7,552.93,_The accuracy that are listed here, which is about 97%, _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,130,552.93,556.1,was just taken from some studies earlier. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,131,557.33,562.84,And these studies obviously have to be using particular data sets so 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,132,562.84,567.64,the numbers here are not really meaningful if you 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,133,567.64,573.21,take it out of the context of the data set that are used for evaluation. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,134,573.21,579.35,_But I show these numbers mainly to give you some sense about the accuracy, _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,135,579.35,582.08,or how well we can do things like this. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,136,582.08,587.67,It doesn't mean any data set accuracy would be precisely 97%. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,137,587.67,592.78,_But, in general, we can do parsing speech tagging fairly well although not perfect. _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,138,593.98,599.03,_Parsing would be more difficult, but for partial parsing, meaning to get some _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,139,599.03,604.87,_phrases correct, we can probably achieve 90% or better accuracy. _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,140,606.92,612.33,_But to get the complete parse tree correctly is still very, very difficult. _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,141,613.61,618.21,_For semantic analysis, we can also do some aspects of semantic analysis, _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,142,618.21,622.57,_particularly, extraction of entities and relations. _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,143,622.57,627.91,_For example, recognizing this is the person, that's a location, and _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,144,627.91,633.38,this person and that person met in some place etc. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,145,633.38,636.47,We can also do word sense to some extent. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,146,638.0,645.36,The occurrence of root in this sentence refers to the mathematical sense etc. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,147,645.36,649.33,Sentiment analysis is another aspect of semantic analysis that we can do. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,148,650.48,655.84,That means we can tag the senses as generally positive when 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,149,655.84,660.67,it's talking about the product or talking about the person. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,150,662.79,668.6,_Inference, however, is very hard, and we generally cannot do that for _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,151,668.6,674.04,any big domain and if it's only feasible for a very limited domain. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,152,674.04,678.8,And that's a generally difficult problem in artificial intelligence. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,153,678.8,681.961,Speech act analysis is also very difficult and 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,154,681.961,686.48,we can only do this probably for very specialized cases. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,155,686.48,692.09,And with a lot of help from humans to annotate enough data for 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,156,692.09,694.18,the computers to learn from. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,157,696.38,698.89,So the slide also shows that 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,158,698.89,704.3,computers are far from being able to understand natural language precisely. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,159,704.3,710.32,And that also explains why the text mining problem is difficult. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,160,710.32,714.39,Because we cannot rely on mechanical approaches or 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,161,714.39,718.94,computational methods to understand the language precisely. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,162,718.94,724.77,_Therefore, we have to use whatever we have today. _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,163,724.77,730.09,A particular statistical machine learning method of statistical analysis methods 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,164,730.09,736.092,to try to get as much meaning out from the text as possible. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,165,736.092,739.32,_And, later you will see that there are actually _
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,166,740.36,745.45,many such algorithms that can indeed extract 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,167,745.45,750.79,interesting model from text even though we cannot really fully understand it. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,168,750.79,756.01,Meaning of all the natural language sentences precisely. 
+2 - 3 - 1.3 Natural Language Content Analysis- Part 1 (00-12-48).srt,169,756.01,766.01,[MUSIC] 

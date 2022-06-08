@@ -1,0 +1,1220 @@
+1
+00:00:06,910 --> 00:00:09,570
+This lecture is a summary
+of this whole course.
+
+2
+00:00:10,810 --> 00:00:14,512
+First, let's revisit the topics
+that we covered in this course.
+
+3
+00:00:14,512 --> 00:00:18,662
+In the beginning, we talked about
+the natural language processing and
+
+4
+00:00:18,662 --> 00:00:21,025
+how it can enrich text representation.
+
+5
+00:00:21,025 --> 00:00:26,207
+We then talked about how to mine
+knowledge about the language,
+
+6
+00:00:26,207 --> 00:00:29,434
+natural language used to express the,
+
+7
+00:00:29,434 --> 00:00:33,270
+what's observing the world in text and
+data.
+
+8
+00:00:34,320 --> 00:00:38,410
+In particular, we talked about
+how to mine word associations.
+
+9
+00:00:38,410 --> 00:00:42,300
+We then talked about how
+to analyze topics in text.
+
+10
+00:00:42,300 --> 00:00:45,130
+How to discover topics and analyze them.
+
+11
+00:00:47,580 --> 00:00:51,314
+This can be regarded as
+knowledge about observed world,
+
+12
+00:00:51,314 --> 00:00:55,747
+and then we talked about how to mine
+knowledge about the observer and
+
+13
+00:00:55,747 --> 00:01:00,988
+particularly talk about the, how to
+mine opinions and do sentiment analysis.
+
+14
+00:01:00,988 --> 00:01:06,048
+And finally, we will talk about
+the text-based prediction, which has to
+
+15
+00:01:06,048 --> 00:01:11,204
+do with predicting values of other real
+world variables based on text data.
+
+16
+00:01:11,204 --> 00:01:16,270
+And in discussing this, we will also
+discuss the role of non-text data,
+
+17
+00:01:16,270 --> 00:01:21,421
+which can contribute additional
+predictors for the prediction problem,
+
+18
+00:01:21,421 --> 00:01:25,425
+and also can provide context for
+analyzing text data, and
+
+19
+00:01:25,425 --> 00:01:30,110
+in particular we talked about how
+to use context to analyze topics.
+
+20
+00:01:33,240 --> 00:01:39,078
+So here are the key high-level
+take away messages from this cost.
+
+21
+00:01:39,078 --> 00:01:41,670
+I going to go over these major topics and
+
+22
+00:01:41,670 --> 00:01:46,400
+point out what are the key take-away
+messages that you should remember.
+
+23
+00:01:47,560 --> 00:01:50,630
+First the NLP and text representation.
+
+24
+00:01:53,530 --> 00:01:56,840
+You should realize that NLP
+is always very important for
+
+25
+00:01:56,840 --> 00:02:01,510
+any text replication because it
+enriches text representation.
+
+26
+00:02:01,510 --> 00:02:05,060
+The more NLP the better text
+representation we can have.
+
+27
+00:02:05,060 --> 00:02:08,500
+And this further enables more
+accurate knowledge discovery,
+
+28
+00:02:08,500 --> 00:02:11,710
+to discover deeper knowledge,
+buried in text.
+
+29
+00:02:12,950 --> 00:02:17,510
+However, the current estate of art
+of natural energy processing is,
+
+30
+00:02:17,510 --> 00:02:19,130
+still not robust enough.
+
+31
+00:02:19,130 --> 00:02:23,586
+So, as an result,
+the robust text mining technologies today,
+
+32
+00:02:23,586 --> 00:02:26,960
+tend to be based on world [INAUDIBLE].
+
+33
+00:02:26,960 --> 00:02:30,710
+And tend to rely a lot
+on statistical analysis,
+
+34
+00:02:30,710 --> 00:02:33,520
+as we've discussed in this course.
+
+35
+00:02:33,520 --> 00:02:39,700
+And you may recall we've mostly
+used word based representations.
+
+36
+00:02:39,700 --> 00:02:42,478
+And we've relied a lot on
+statistical techniques,
+
+37
+00:02:42,478 --> 00:02:45,202
+statistical learning
+techniques particularly.
+
+38
+00:02:47,790 --> 00:02:52,771
+In word-association mining and
+analysis the important points first,
+
+39
+00:02:52,771 --> 00:02:56,282
+we are introduced the two concepts for
+two basic and
+
+40
+00:02:56,282 --> 00:03:02,835
+complementary relations of words,
+paradigmatic and syntagmatic relations.
+
+41
+00:03:02,835 --> 00:03:08,130
+These are actually very general
+relations between elements sequences.
+
+42
+00:03:08,130 --> 00:03:14,330
+If you take it as meaning
+elements that occur in similar
+
+43
+00:03:14,330 --> 00:03:18,840
+context in the sequence and elements
+that tend to co-occur with each other.
+
+44
+00:03:18,840 --> 00:03:24,090
+And these relations might be also
+meaningful for other sequences of data.
+
+45
+00:03:25,810 --> 00:03:29,810
+We also talked a lot about
+test the similarity then we
+
+46
+00:03:29,810 --> 00:03:34,350
+discuss how to discover
+paradynamic similarities compare
+
+47
+00:03:34,350 --> 00:03:38,390
+the context of words discover
+words that share similar context.
+
+48
+00:03:38,390 --> 00:03:39,858
+At that point level,
+
+49
+00:03:39,858 --> 00:03:44,437
+we talked about representing text
+data with a vector space model.
+
+50
+00:03:44,437 --> 00:03:48,638
+And we talked about some retrieval
+techniques such as BM25 for
+
+51
+00:03:48,638 --> 00:03:52,995
+measuring similarity of text and
+for assigning weights to terms,
+
+52
+00:03:52,995 --> 00:03:55,193
+tf-idf weighting, et cetera.
+
+53
+00:03:55,193 --> 00:03:59,480
+And this part is well-connected
+to text retrieval.
+
+54
+00:03:59,480 --> 00:04:02,330
+There are other techniques that
+can be relevant here also.
+
+55
+00:04:03,890 --> 00:04:08,650
+The next point is about
+co-occurrence analysis of text, and
+
+56
+00:04:08,650 --> 00:04:12,770
+we introduce some information
+theory concepts such as entropy,
+
+57
+00:04:12,770 --> 00:04:15,170
+conditional entropy,
+and mutual information.
+
+58
+00:04:15,170 --> 00:04:18,293
+These are not only very useful for
+
+59
+00:04:18,293 --> 00:04:23,680
+measuring the co-occurrences of words,
+they are also very useful for
+
+60
+00:04:23,680 --> 00:04:26,940
+analyzing other kind of data, and
+they are useful for, for example, for
+
+61
+00:04:26,940 --> 00:04:29,600
+feature selection in text
+categorization as well.
+
+62
+00:04:30,920 --> 00:04:34,460
+So this is another important concept,
+good to know.
+
+63
+00:04:35,480 --> 00:04:38,640
+And then we talked about
+the topic mining and analysis, and
+
+64
+00:04:38,640 --> 00:04:41,570
+that's where we introduce in
+the probabilistic topic model.
+
+65
+00:04:41,570 --> 00:04:45,960
+We spent a lot of time to
+explain the basic topic model,
+
+66
+00:04:45,960 --> 00:04:52,930
+PLSA in detail and this is, those are the
+basics for understanding LDA which is.
+
+67
+00:04:52,930 --> 00:04:56,190
+Theoretically, a more opinion model, but
+
+68
+00:04:56,190 --> 00:05:01,460
+we did not have enough time to really
+go in depth in introducing LDA.
+
+69
+00:05:02,960 --> 00:05:06,600
+But in practice,
+PLSA seems as effective as LDA and
+
+70
+00:05:06,600 --> 00:05:09,520
+it's simpler to implement and
+it's also more efficient.
+
+71
+00:05:11,520 --> 00:05:15,930
+In this part of Wilson videos is some
+general concepts that would be useful to
+
+72
+00:05:15,930 --> 00:05:20,410
+know, one is generative model,
+and this is a general method for
+
+73
+00:05:20,410 --> 00:05:23,630
+modeling text data and
+modeling other kinds of data as well.
+
+74
+00:05:24,740 --> 00:05:30,250
+And we talked about the maximum life
+erase data, the EM algorithm for
+
+75
+00:05:30,250 --> 00:05:35,290
+solving the problem of
+computing maximum estimator.
+
+76
+00:05:35,290 --> 00:05:38,720
+So, these are all general techniques
+that tend to be very useful
+
+77
+00:05:38,720 --> 00:05:39,840
+in other scenarios as well.
+
+78
+00:05:40,940 --> 00:05:45,020
+Then we talked about the text
+clustering and the text categorization.
+
+79
+00:05:45,020 --> 00:05:50,450
+Those are two important building blocks
+in any text mining application systems.
+
+80
+00:05:50,450 --> 00:05:56,110
+In text with clustering we talked
+about how we can solve the problem by
+
+81
+00:05:56,110 --> 00:06:02,400
+using a slightly different mixture module
+than the probabilistic topic model.
+
+82
+00:06:02,400 --> 00:06:07,060
+and we then also prefer to
+view the similarity based
+
+83
+00:06:07,060 --> 00:06:10,000
+approaches to test for cuss word.
+
+84
+00:06:11,340 --> 00:06:15,350
+In categorization we also talk
+about the two kinds of approaches.
+
+85
+00:06:15,350 --> 00:06:19,390
+One is generative classifies
+that rely on to base word to
+
+86
+00:06:20,690 --> 00:06:24,870
+infer the condition of or
+probability of a category given text data,
+
+87
+00:06:24,870 --> 00:06:28,250
+in deeper we'll introduce you should
+use [INAUDIBLE] base in detail.
+
+88
+00:06:29,280 --> 00:06:36,160
+This is the practical use for technique,
+for a lot of text, capitalization tasks.
+
+89
+00:06:37,210 --> 00:06:41,010
+We also introduce the some
+discriminative classifiers,
+
+90
+00:06:41,010 --> 00:06:45,300
+particularly logistical regression,
+can nearest labor and SBN.
+
+91
+00:06:45,300 --> 00:06:49,030
+They also very important, they are very
+popular, they are very useful for
+
+92
+00:06:49,030 --> 00:06:50,490
+text capitalization as well.
+
+93
+00:06:52,370 --> 00:06:57,100
+In both parts, we'll also discuss
+how to evaluate the results.
+
+94
+00:06:57,100 --> 00:07:03,110
+Evaluation is quite important because if
+the matches that you use don't really
+
+95
+00:07:03,110 --> 00:07:07,430
+reflect the volatility of the method then
+it would give you misleading results so
+
+96
+00:07:07,430 --> 00:07:10,530
+its very important to
+get the variation right.
+
+97
+00:07:10,530 --> 00:07:15,420
+And we talked about variation of
+categorization in detail was a lot of
+
+98
+00:07:15,420 --> 00:07:16,550
+specific measures.
+
+99
+00:07:18,530 --> 00:07:21,725
+Then we talked about the sentiment
+analysis and the paradigm and
+
+100
+00:07:21,725 --> 00:07:25,053
+that's where we introduced
+sentiment classification problem.
+
+101
+00:07:25,053 --> 00:07:29,681
+And although it's a special
+case of text recalculation, but
+
+102
+00:07:29,681 --> 00:07:34,932
+we talked about how to extend or
+improve the text recalculation method
+
+103
+00:07:34,932 --> 00:07:41,261
+by using more sophisticated features that
+would be needed for sentiment analysis.
+
+104
+00:07:41,261 --> 00:07:46,240
+We did a review of some common use for
+complex features for text analysis, and
+
+105
+00:07:46,240 --> 00:07:50,836
+then we also talked about how to
+capture the order of these categories,
+
+106
+00:07:50,836 --> 00:07:55,511
+in sentiment classification, and
+in particular we introduced ordinal
+
+107
+00:07:55,511 --> 00:08:00,822
+logistical regression then we also talked
+about Latent Aspect Rating Analysis.
+
+108
+00:08:00,822 --> 00:08:05,104
+This is an unsupervised way of using
+a generative model to understand and
+
+109
+00:08:05,104 --> 00:08:07,280
+review data in more detail.
+
+110
+00:08:07,280 --> 00:08:12,650
+In particular, it allows us to
+understand the composed ratings of
+
+111
+00:08:14,580 --> 00:08:18,490
+a reviewer on different
+aspects of a topic.
+
+112
+00:08:18,490 --> 00:08:20,998
+So given text reviews
+with overall ratings,
+
+113
+00:08:20,998 --> 00:08:24,503
+the method allows even further
+ratings on different aspects.
+
+114
+00:08:24,503 --> 00:08:26,781
+And it also allows us to infer,
+
+115
+00:08:26,781 --> 00:08:30,638
+the viewers laying their
+weights on these aspects or
+
+116
+00:08:30,638 --> 00:08:35,740
+which aspects are more important to
+a viewer can be revealed as well.
+
+117
+00:08:35,740 --> 00:08:39,140
+And this enables a lot of
+interesting applications.
+
+118
+00:08:41,330 --> 00:08:46,260
+Finally, in the discussion of prediction,
+we mainly talk about the joint mining
+
+119
+00:08:46,260 --> 00:08:50,340
+of text and non text data, as they
+are both very important for prediction.
+
+120
+00:08:51,960 --> 00:08:57,070
+We particularly talked about how text data
+can help non-text data and vice versa.
+
+121
+00:08:58,100 --> 00:09:01,863
+In the case of using non-text
+data to help text data analysis,
+
+122
+00:09:01,863 --> 00:09:04,565
+we talked about
+the contextual text mining.
+
+123
+00:09:04,565 --> 00:09:08,921
+We introduced the contextual PLSA as a
+generalizing or generalized model of PLSA
+
+124
+00:09:08,921 --> 00:09:13,354
+to allows us to incorporate the context
+of variables, such as time and location.
+
+125
+00:09:13,354 --> 00:09:18,328
+And this is a general way to allow us
+to reveal a lot of interesting topic
+
+126
+00:09:18,328 --> 00:09:20,248
+of patterns in text data.
+
+127
+00:09:20,248 --> 00:09:24,750
+We also introduced the net PLSA,
+in this case we used social network or
+
+128
+00:09:24,750 --> 00:09:30,550
+network in general of text
+data to help analyze puppets.
+
+129
+00:09:31,950 --> 00:09:36,520
+And finally we talk about how
+can be used as context to
+
+130
+00:09:36,520 --> 00:09:40,560
+mine potentially causal
+Topics in text layer.
+
+131
+00:09:43,110 --> 00:09:46,560
+Now, in the other way of using text to
+
+132
+00:09:47,990 --> 00:09:51,470
+help interpret patterns
+discovered from LAM text data,
+
+133
+00:09:51,470 --> 00:09:57,300
+we did not really discuss anything in
+detail but just provide a reference but
+
+134
+00:09:57,300 --> 00:10:02,670
+I should stress that that's after a very
+important direction to know about,
+
+135
+00:10:02,670 --> 00:10:06,700
+if you want to build a practical
+text mining systems,
+
+136
+00:10:06,700 --> 00:10:10,730
+because understanding and
+interpreting patterns is quite important.
+
+137
+00:10:13,870 --> 00:10:18,560
+So this is a summary of the key
+take away messages, and
+
+138
+00:10:18,560 --> 00:10:22,710
+I hope these will be very
+useful to you for building any
+
+139
+00:10:22,710 --> 00:10:27,010
+text mining applications or to you for
+the starting of these algorithms.
+
+140
+00:10:27,010 --> 00:10:31,100
+And this should provide a good basis for
+you to read from your research papers,
+
+141
+00:10:31,100 --> 00:10:33,580
+to know more about more of allowance for
+
+142
+00:10:33,580 --> 00:10:37,320
+other organisms or
+to invent new hours in yourself.
+
+143
+00:10:40,320 --> 00:10:43,760
+So to know more about this topic,
+
+144
+00:10:43,760 --> 00:10:47,519
+I would suggest you to look
+into other areas in more depth.
+
+145
+00:10:48,550 --> 00:10:51,820
+And during this short period
+of time of this course,
+
+146
+00:10:51,820 --> 00:10:57,830
+we could only touch the basic concepts,
+basic principles, of text mining and
+
+147
+00:10:57,830 --> 00:11:03,390
+we emphasize the coverage
+of practical algorithms.
+
+148
+00:11:03,390 --> 00:11:09,128
+And this is after the cost
+of covering algorithms and
+
+149
+00:11:09,128 --> 00:11:15,062
+in many cases we omit the discussion
+of a lot of algorithms.
+
+150
+00:11:15,062 --> 00:11:19,240
+So to learn more about the subject
+you should definitely learn more
+
+151
+00:11:19,240 --> 00:11:22,120
+about the natural language process
+because this is foundation for
+
+152
+00:11:22,120 --> 00:11:24,200
+all text based applications.
+
+153
+00:11:24,200 --> 00:11:28,790
+The more NLP you can do, the better
+the additional text that you can get, and
+
+154
+00:11:28,790 --> 00:11:32,520
+then the deeper knowledge
+you can discover.
+
+155
+00:11:32,520 --> 00:11:34,010
+So this is very important.
+
+156
+00:11:37,010 --> 00:11:39,910
+The second area you should look into
+is the Statistical Machine Learning.
+
+157
+00:11:41,120 --> 00:11:45,090
+And these techniques are now
+the backbone techniques for
+
+158
+00:11:46,160 --> 00:11:49,970
+not just text analysis applications but
+also for NLP.
+
+159
+00:11:49,970 --> 00:11:55,310
+A lot of NLP techniques are nowadays
+actually based on supervised machinery.
+
+160
+00:11:56,900 --> 00:12:00,790
+So, they are very important
+because they are a key
+
+161
+00:12:00,790 --> 00:12:04,570
+to also understanding some
+advancing NLP techniques and
+
+162
+00:12:04,570 --> 00:12:08,220
+naturally they will provide more tools for
+doing text analysis in general.
+
+163
+00:12:09,770 --> 00:12:13,930
+Now, a particularly interesting area,
+
+164
+00:12:13,930 --> 00:12:17,640
+called deep learning has attracted
+a lot of attention recently.
+
+165
+00:12:17,640 --> 00:12:21,110
+It has also shown promise
+in many application areas,
+
+166
+00:12:21,110 --> 00:12:26,660
+especially in speech and vision, and
+has been applied to text data as well.
+
+167
+00:12:26,660 --> 00:12:30,820
+So, for example, recently there has
+work on using deep learning to do
+
+168
+00:12:30,820 --> 00:12:34,330
+segment analysis to
+achieve better accuracy.
+
+169
+00:12:34,330 --> 00:12:38,320
+So that's one example of [INAUDIBLE]
+techniques that we weren't able to cover,
+
+170
+00:12:38,320 --> 00:12:40,050
+but that's also very important.
+
+171
+00:12:41,390 --> 00:12:45,400
+And the other area that has emerged
+in status learning is the water and
+
+172
+00:12:45,400 --> 00:12:50,720
+baring technique, where they can
+learn better recognition of words.
+
+173
+00:12:50,720 --> 00:12:55,210
+And then these better recognitions will
+allow you confuse similarity of words.
+
+174
+00:12:55,210 --> 00:12:55,820
+As you can see,
+
+175
+00:12:55,820 --> 00:13:01,230
+this provides directly a way to discover
+the paradigmatic relations of words.
+
+176
+00:13:01,230 --> 00:13:06,600
+And results that people have got,
+so far, are very impressive.
+
+177
+00:13:06,600 --> 00:13:10,360
+That's another promising technique
+that we did not have time to touch,
+
+178
+00:13:12,510 --> 00:13:16,290
+but, of course,
+whether these new techniques
+
+179
+00:13:16,290 --> 00:13:20,970
+would lead to practical useful techniques
+that work much better than the current
+
+180
+00:13:20,970 --> 00:13:25,172
+technologies is still an open
+question that has to be examined.
+
+181
+00:13:25,172 --> 00:13:28,000
+And no serious evaluation
+has been done yet.
+
+182
+00:13:28,000 --> 00:13:32,310
+In, for example, examining
+the practical value of word embedding,
+
+183
+00:13:32,310 --> 00:13:34,990
+other than word similarity and
+basic evaluation.
+
+184
+00:13:36,710 --> 00:13:39,650
+But nevertheless,
+these are advanced techniques
+
+185
+00:13:39,650 --> 00:13:43,520
+that surely will make impact
+in text mining in the future.
+
+186
+00:13:43,520 --> 00:13:46,860
+So its very important to
+know more about these.
+
+187
+00:13:46,860 --> 00:13:50,780
+Statistical learning is also the key to
+predictive modeling which is very crucial
+
+188
+00:13:50,780 --> 00:13:55,180
+for many big data applications and we did
+not talk about that predictive modeling
+
+189
+00:13:55,180 --> 00:13:59,994
+component but this is mostly about
+the regression or categorization
+
+190
+00:13:59,994 --> 00:14:05,050
+techniques and this is another reason
+why statistical learning is important.
+
+191
+00:14:07,350 --> 00:14:11,730
+We also suggest that you learn more about
+data mining, and that's simply because
+
+192
+00:14:11,730 --> 00:14:16,610
+general data mining algorithms can always
+be applied to text data, which can be
+
+193
+00:14:16,610 --> 00:14:21,660
+regarded as as special
+case of general data.
+
+194
+00:14:23,520 --> 00:14:26,030
+So there are many applications
+of data mining techniques.
+
+195
+00:14:26,030 --> 00:14:30,510
+In particular for example, pattern
+discovery would be very useful to generate
+
+196
+00:14:30,510 --> 00:14:35,860
+the interesting features for test analysis
+and the reason that an information network
+
+197
+00:14:35,860 --> 00:14:40,940
+that mining techniques can also be used
+to analyze text information at work.
+
+198
+00:14:42,360 --> 00:14:44,980
+So these are all good to know.
+
+199
+00:14:44,980 --> 00:14:49,050
+In order to develop effective
+text analysis techniques.
+
+200
+00:14:49,050 --> 00:14:52,860
+And finally, we also recommend you to
+learn more about the text retrieval,
+
+201
+00:14:52,860 --> 00:14:55,930
+information retrieval, of search engines.
+
+202
+00:14:55,930 --> 00:15:00,403
+This is especially important if you
+are interested in building practical text
+
+203
+00:15:00,403 --> 00:15:02,750
+application systems.
+
+204
+00:15:02,750 --> 00:15:05,950
+And a search ending would
+be an essential system
+
+205
+00:15:05,950 --> 00:15:08,632
+component in any text-based applications.
+
+206
+00:15:08,632 --> 00:15:13,910
+And that's because texts data
+are created for humans to consume.
+
+207
+00:15:13,910 --> 00:15:19,330
+So humans are at the best position
+to understand text data and
+
+208
+00:15:19,330 --> 00:15:24,910
+it's important to have human in the loop
+in big text data applications, so
+
+209
+00:15:24,910 --> 00:15:29,870
+it can in particular help text
+mining systems in two ways.
+
+210
+00:15:29,870 --> 00:15:35,099
+One is through effectively reduce
+the data size from a large collection to
+
+211
+00:15:35,099 --> 00:15:40,158
+a small collection with the most
+relevant text data that only matter for
+
+212
+00:15:40,158 --> 00:15:42,627
+the particular interpretation.
+
+213
+00:15:42,627 --> 00:15:47,901
+So the other is to provide a way to
+annotate it, to explain parents,
+
+214
+00:15:47,901 --> 00:15:51,521
+and this has to do with
+knowledge providence.
+
+215
+00:15:51,521 --> 00:15:54,853
+Once we discover some knowledge,
+we have to figure out whether or
+
+216
+00:15:54,853 --> 00:15:57,370
+not the discovery is really reliable.
+
+217
+00:15:57,370 --> 00:16:00,000
+So we need to go back to
+the original text to verify that.
+
+218
+00:16:00,000 --> 00:16:02,380
+And that is why the search
+engine is very important.
+
+219
+00:16:04,070 --> 00:16:08,040
+Moreover, some techniques
+of information retrieval,
+
+220
+00:16:08,040 --> 00:16:13,380
+for example BM25, vector space and
+are also very useful for text data mining.
+
+221
+00:16:13,380 --> 00:16:16,400
+We only mention some of them,
+but if you know more about
+
+222
+00:16:16,400 --> 00:16:20,500
+text retrieval you'll see that there
+are many techniques that are used for it.
+
+223
+00:16:20,500 --> 00:16:25,030
+Another technique that it's used for
+is indexing technique that enables quick
+
+224
+00:16:25,030 --> 00:16:28,450
+response of search engine to a user's
+query, and such techniques can be
+
+225
+00:16:28,450 --> 00:16:32,150
+very useful for building efficient
+text mining systems as well.
+
+226
+00:16:35,160 --> 00:16:39,830
+So, finally, I want to remind
+you of this big picture for
+
+227
+00:16:39,830 --> 00:16:43,900
+harnessing big text data that I showed
+you at your beginning of the semester.
+
+228
+00:16:45,350 --> 00:16:48,970
+So in general, to deal with
+a big text application system,
+
+229
+00:16:48,970 --> 00:16:51,760
+we need two kinds text,
+text retrieval and text mining.
+
+230
+00:16:53,380 --> 00:16:58,040
+And text retrieval, as I explained,
+is to help convert big text data into
+
+231
+00:16:58,040 --> 00:17:02,930
+a small amount of most relevant data for
+a particular problem, and can also help
+
+232
+00:17:02,930 --> 00:17:07,240
+providing knowledge provenance,
+help interpreting patterns later.
+
+233
+00:17:07,240 --> 00:17:12,060
+Text mining has to do with further
+analyzing the relevant data to discover
+
+234
+00:17:12,060 --> 00:17:16,460
+the actionable knowledge that can be
+directly useful for decision making or
+
+235
+00:17:16,460 --> 00:17:18,510
+many other tasks.
+
+236
+00:17:18,510 --> 00:17:20,530
+So this course covers text mining.
+
+237
+00:17:20,530 --> 00:17:24,020
+And there's a companion course
+called Text Retrieval and
+
+238
+00:17:24,020 --> 00:17:27,130
+Search Engines that covers text retrieval.
+
+239
+00:17:27,130 --> 00:17:32,040
+If you haven't taken that course,
+it would be useful for you to take it,
+
+240
+00:17:32,040 --> 00:17:37,490
+especially if you are interested
+in building a text caching system.
+
+241
+00:17:37,490 --> 00:17:42,138
+And taking both courses will give you
+a complete set of practical skills for
+
+242
+00:17:42,138 --> 00:17:43,708
+building such a system.
+
+243
+00:17:43,708 --> 00:17:49,250
+So in [INAUDIBLE]
+I just would like to thank you for
+
+244
+00:17:49,250 --> 00:17:51,050
+taking this course.
+
+245
+00:17:51,050 --> 00:17:57,915
+I hope you have learned useful knowledge
+and skills in test mining and [INAUDIBLE].
+
+246
+00:17:57,915 --> 00:18:02,185
+As you see from our discussions
+there are a lot of opportunities for
+
+247
+00:18:02,185 --> 00:18:06,235
+this kind of techniques and
+there are also a lot of open channels.
+
+248
+00:18:06,235 --> 00:18:10,910
+So I hope you can use what you have
+learned to build a lot of use for
+
+249
+00:18:10,910 --> 00:18:15,550
+applications will benefit society and
+to also join
+
+250
+00:18:15,550 --> 00:18:20,759
+the research community to discover new
+techniques for text mining and benefits.
+
+251
+00:18:20,759 --> 00:18:21,259
+Thank you.
+
+252
+00:18:21,259 --> 00:18:31,259
+[MUSIC]
+

@@ -1,0 +1,177 @@
+name,id,from,to,text
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,1,0.025,7.9350000000000005,[SOUND] This 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,2,7.9350000000000005,14.253,lecture is about the Paradigmatics Relation Discovery. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,3,14.253,19.131,In this lecture we are going to talk about how to discover a particular kind of word 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,4,19.131,22.16,association called a paradigmatical relation. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,5,25.4,30.307,_By definition, two words are paradigmatically _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,6,30.307,34.503,related if they share a similar context. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,7,34.503,39.086,_Namely, they occur in similar positions in text. _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,8,39.086,44.28,So naturally our idea of discovering such a relation is to look at the context 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,9,44.28,49.08,of each word and then try to compute the similarity of those contexts. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,10,50.16,54.36,_So here is an example of context of a word, cat. _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,11,55.8,61.69,Here I have taken the word cat out of the context and 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,12,61.69,68.08,you can see we are seeing some remaining words in the sentences that contain cat. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,13,69.61,72.479,_Now, we can do the same thing for another word like dog. _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,14,73.66,78.37,So in general we would like to capture such a context and then try to assess 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,15,78.37,83.34,the similarity of the context of cat and the context of a word like dog. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,16,84.78999999999999,89.97,So now the question is how can we formally represent the context and 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,17,89.97,91.458,then define the similarity function. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,18,93.34,98.56,_So first, we note that the context actually contains a lot of words. _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,19,98.56,103.637,_So, they can be regarded as a pseudo document, a imagine _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,20,103.637,109.37,_document, but there are also different ways of looking at the context. _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,21,109.37,117.47,_For example, we can look at the word that occurs before the word cat. _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,22,117.47,120.44,We can call this context Left1 context. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,23,120.44,124.98,_All right, so in this case you will see words like my, his, or _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,24,124.98,127.43,_big, a, the, et cetera. _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,25,127.43,132.69,These are the words that can occur to left of the word cat. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,26,132.69,139.28,_So we say my cat, his cat, big cat, a cat, et cetera. _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,27,139.28,144.18,_Similarly, we can also collect the words that occur right after the word cat. _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,28,144.18,148.156,_We can call this context Right1, and _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,29,148.156,154.128,_here we see words like eats, ate, is, has, et cetera. _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,30,154.128,155.90699999999998,_Or, more generally, _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,31,155.90699999999998,161.253,we can look at all the words in the window of text around the word cat. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,32,161.253,166.96,_Here, let's say we can take a window of 8 words around the word cat. _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,33,166.96,168.72,We call this context Window8. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,34,169.85,174.68,_Now, of course, you can see all the words from left or from right, and _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,35,174.68,178.829,so we'll have a bag of words in general to represent the context. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,36,181.27,186.41,_Now, such a word based representation would actually give us _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,37,186.41,192.23,an interesting way to define the perspective of measuring the similarity. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,38,192.23,195.911,_Because if you look at just the similarity of Left1, _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,39,195.911,201.75,_then we'll see words that share just the words in the left context, _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,40,201.75,207.65,and we kind of ignored the other words that are also in the general context. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,41,207.65,212.38,_So that gives us one perspective to measure the similarity, and similarly, _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,42,212.38,214.244,_if we only use the Right1 context, _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,43,214.244,218.42000000000002,we will capture this narrative from another perspective. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,44,218.42000000000002,223.04,Using both the Left1 and Right1 of course would allow us to capture 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,45,223.04,227.72,the similarity with even more strict criteria. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,46,229.91,234.744,_So in general, context may contain adjacent words, like eats and _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,47,234.744,239.575,_my, that you see here, or non-adjacent words, like Saturday, _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,48,239.575,242.961,_Tuesday, or some other words in the context. _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,49,245.461,250.174,And this flexibility also allows us to match the similarity in somewhat 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,50,250.174,251.66,different ways. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,51,251.66,253.5,_Sometimes this is useful, _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,52,253.5,259.13,as we might want to capture similarity base on general content. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,53,259.13,265.27,That would give us loosely related paradigmatical relations. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,54,265.27,269.34,Whereas if you use only the words immediately to the left and 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,55,269.34,275.52,_to the right of the word, then you likely will capture words that are very _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,56,275.52,279.95,much related by their syntactical categories and semantics. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,57,281.17,286.304,So the general idea of discovering paradigmatical relations 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,58,286.304,290.754,is to compute the similarity of context of two words. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,59,290.754,295.264,_So here, for example, we can measure the similarity of cat and _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,60,295.264,299.11,dog based on the similarity of their context. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,61,299.11,302.89,_In general, we can combine all kinds of views of the context. _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,62,302.89,306.395,_And so the similarity function is, in general, _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,63,306.395,310.336,a combination of similarities on different context. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,64,310.336,314.849,_And of course, we can also assign weights to these different _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,65,314.849,320.17,similarities to allow us to focus more on a particular kind of context. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,66,320.17,324.395,_And this would be naturally application specific, but again, _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,67,324.395,328.935,here the main idea for discovering pardigmatically related words is 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,68,328.935,332.47,to computer the similarity of their context. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,69,332.47,337.67,So next let's see how we exactly compute these similarity functions. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,70,337.67,342.235,_Now to answer this question, it is useful to think of bag of words _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,71,342.235,346.52,representation as vectors in a vector space model. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,72,348.34000000000003,353.016,Now those of you who have been familiar with information retrieval or 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,73,353.016,357.936,textual retrieval techniques would realize that vector space model has 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,74,357.936,362.711,been used frequently for modeling documents and queries for search. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,75,362.711,368.115,But here we also find it convenient to model the context of a word for 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,76,368.115,371.13,paradigmatic relation discovery. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,77,371.13,375.44,So the idea of this approach is to view each 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,78,375.44,380.14,word in our vocabulary as defining one dimension in a high dimensional space. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,79,380.14,383.615,_So we have N words in total in the vocabulary, _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,80,383.615,387.462,_then we have N dimensions, as illustrated here. _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,81,387.462,394.311,_And on the bottom, you can see a frequency vector representing a context, _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,82,394.311,399.855,_and here we see where eats occurred 5 times in this context, _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,83,399.855,403.14,_ate occurred 3 times, et cetera. _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,84,403.14,408.003,So this vector can then be placed in this vector space model. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,85,408.003,413.347,_So in general, we can represent a pseudo document or _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,86,413.347,418.933,_context of cat as one vector, d1, and another word, _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,87,418.933,424.045,_dog, might give us a different context, so d2. _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,88,424.045,427.88,And then we can measure the similarity of these two vectors. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,89,427.88,430.98,_So by viewing context in the vector space model, _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,90,430.98,435.1,we convert the problem of paradigmatical relation discovery 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,91,435.1,438.82,into the problem of computing the vectors and their similarity. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,92,440.3,444.17,_So the two questions that we have to address are first, _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,93,444.17,448.75,_how to compute each vector, and that is how to compute xi or yi. _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,94,451.05,453.579,And the other question is how do you compute the similarity. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,95,455.58,460.515,_Now in general, there are many approaches that can be used to solve the problem, and _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,96,460.515,463.795,most of them are developed for information retrieval. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,97,463.795,467.821,And they have been shown to work well for 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,98,467.821,472.712,matching a query vector and a document vector. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,99,472.712,477.555,But we can adapt many of the ideas to compute a similarity 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,100,477.555,481.378,of context documents for our purpose here. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,101,481.378,485.829,_So let's first look at the one plausible approach, _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,102,485.829,490.481,where we try to match the similarity of context based on 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,103,490.481,495.15,_the expected overlap of words, and we call this EOWC. _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,104,497.02,502.495,So the idea here is to represent a context by a word vector 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,105,502.495,508.438,where each word has a weight that's equal to the probability 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,106,508.438,515.336,_that a randomly picked word from this document vector, is this word. _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,107,515.336,519.956,_So in other words, xi is defined as the normalized _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,108,519.956,523.476,_account of word wi in the context, and _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,109,523.476,528.756,this can be interpreted as the probability that you would 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,110,528.756,534.6,actually pick this word from d1 if you randomly picked a word. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,111,536.76,541.62,_Now, of course these xi's would sum to one because they are normalized frequencies, _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,112,542.93,545.75,and this means the vector is 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,113,545.75,548.193,actually probability of the distribution over words. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,114,550.5,555.883,_So, the vector d2 can be also computed in the same way, and _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,115,555.883,563.54,this would give us then two probability distributions representing two contexts. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,116,564.84,568.22,_So, that addresses the problem how to compute the vectors, and _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,117,568.22,571.76,next let's see how we can define similarity in this approach. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,118,571.76,575.668,_Well, here, we simply define the similarity as a dot product of two _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,119,575.668,579.89,_vectors, and this is defined as a sum of the products _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,120,581.41,583.96,of the corresponding elements of the two vectors. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,121,586.63,591.847,_Now, it's interesting to see that this similarity function _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,122,591.847,597.36,_actually has a nice interpretation, and that is this. _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,123,597.36,602.548,_Dot product, in fact that gives us the probability that two _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,124,602.548,608.57,randomly picked words from the two contexts are identical. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,125,608.57,612.63,That means if we try to pick a word from one context and try to pick another 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,126,612.63,617.86,_word from another context, we can then ask the question, are they identical? _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,127,617.86,622.65,_If the two contexts are very similar, then we should expect we frequently will _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,128,622.65,627.39,see the two words picked from the two contexts are identical. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,129,627.39,630.9,_If they are very different, then the chance of seeing _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,130,630.9,634.89,identical words being picked from the two contexts would be small. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,131,634.89,639.865,_So this intuitively makes sense, right, for measuring similarity of contexts. _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,132,641.49,646.819,Now you might want to also take a look at the exact formulas and 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,133,646.819,651.627,see why this can be interpreted as the probability that 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,134,651.627,655.41,two randomly picked words are identical. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,135,657.44,664.55,_So if you just stare at the formula to check what's inside this sum, _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,136,664.55,672.034,then you will see basically in each case it gives us the probability that 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,137,672.034,677.17,_we will see an overlap on a particular word, wi. _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,138,677.17,683.6610000000001,_And where xi gives us a probability that we will pick this particular word from d1, _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,139,683.6610000000001,688.503,and yi gives us the probability of picking this word from d2. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,140,688.503,692.024,_And when we pick the same word from the two contexts, _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,141,692.024,694.92,_then we have an identical pick, right so. _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,142,694.92,702.38,_That's one possible approach, EOWC, extracted overlap of words in context. _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,143,702.38,709.44,_Now as always, we would like to assess whether this approach it would work well. _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,144,709.44,712.88,_Now of course, ultimately we have to test the approach with real data and _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,145,712.88,716.259,see if it gives us really semantically related words. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,146,717.73,721.01,_Really give us paradigmatical relations, but _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,147,721.01,725.38,analytically we can also analyze this formula a little bit. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,148,725.38,731.02,_So first, as I said, it does make sense, right, because this _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,149,731.02,735.802,formula will give a higher score if there is more overlap between the two contexts. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,150,735.802,737.988,So that's exactly what we want. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,151,737.988,741.17,_But if you analyze the formula more carefully, _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,152,741.17,744.2860000000001,_then you also see there might be some potential problems, _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,153,744.2860000000001,747.735,and specifically there are two potential problems. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,154,747.735,753.935,_First, it might favor matching one frequent term very well, _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,155,753.935,755.795,over matching more distinct terms. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,156,756.825,764.3,_And that is because in the dot product, if one element has a high value and this _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,157,764.3,770.19,_element is shared by both contexts and it contributes a lot to the overall sum, _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,158,771.25,775.71,_it might indeed make the score higher than in another case, _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,159,775.71,781.15,where the two vectors actually have a lot of overlap in different terms. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,160,781.15,786.878,_But each term has a relatively low frequency, so this may not be desirable. _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,161,786.878,789.586,_Of course, this might be desirable in some other cases. _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,162,789.586,794.527,_But in our case, we should intuitively prefer a case where we match _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,163,794.527,799.645,_more different terms in the context, so that we have more confidence _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,164,799.645,804.253,in saying that the two words indeed occur in similar context. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,165,804.253,807.02,If you only rely on one term and 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,166,807.02,812.465,_that's a little bit questionable, it may not be robust. _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,167,814.675,818.795,_Now the second problem is that it treats every word equally, right. _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,168,818.795,822.131,So if you match a word like the and 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,169,822.131,827.443,_it will be the same as matching a word like eats, but _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,170,827.443,832.388,intuitively we know matching the isn't really 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,171,832.388,837.816,surprising because the occurs everywhere. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,172,837.816,842.787,So matching the is not as such strong evidence as matching what 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,173,842.787,847.956,_a word like eats, which doesn't occur frequently. _
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,174,847.956,851.216,So this is another problem of this approach. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,175,853.426,859.003,In the next chapter we are going to talk about how to address these problems. 
+2 - 8 - 1.8 Paradigmatic Relation Discovery Part 1 (00-14-31).srt,176,859.003,869.003,[MUSIC] 

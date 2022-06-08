@@ -1,0 +1,141 @@
+name,id,from,to,text
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,1,7.0,14.567,This lecture is about that Latent Dirichlet Allocation or LDA. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,2,14.567,17.885,_In this lecture, we are going to continue talking about topic models. _
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,3,17.885,22.468,_In particular, we are going to talk about some extension of PLSA, _
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,4,22.468,30.858,and one of them is LDA or Latent Dirichlet Allocation. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,5,30.858,33.765,So the plan for this lecture is to cover two things. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,6,33.765,37.73,One is to extend the PLSA with prior knowledge and that 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,7,37.73,41.795,_would allow us to have in some sense a user-controlled PLSA, _
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,8,41.795,44.329,_so it doesn't apply to they just listen to data, _
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,9,44.329,47.36,but also would listen to our needs. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,10,47.36,52.22,_The second is to extend the PLSA as a generative model, _
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,11,52.22,54.158,a fully generative model. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,12,54.158,60.887,This has led to the development of Latent Dirichlet Allocation or LDA. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,13,60.887,64.52,_So first, let's talk about the PLSA with prior knowledge. _
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,14,64.52,69.06,_Now in practice, when we apply PLSA to analyze text data, _
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,15,69.06,74.66499999999999,we might have additional knowledge that we want to inject to guide the analysis. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,16,74.66499999999999,80.935,The standard PLSA is going to blindly listen to the data by using maximum [inaudible]. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,17,80.935,85.69,We are going to just fit data as much as we can and get some insight about data. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,18,85.69,87.155,_This is also very useful, _
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,19,87.155,92.5,but sometimes a user might have some expectations about which topics to analyze. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,20,92.5,95.723,_For example, we might expect to see retrieval models as a topic in _
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,21,95.723,100.531,_information retrieval or we also may be interesting in certain aspects, _
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,22,100.531,103.745,_such as battery and memory, _
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,23,103.745,106.5,when looking at opinions about a laptop because 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,24,106.5,110.075,the user is particularly interested in these aspects. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,25,110.075,115.16,A user may also have knowledge about topic coverage and we may 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,26,115.16,120.39,know which topic is definitely not covering which document or is covering the document. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,27,120.39,123.53,_For example, we might have seen those tags, _
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,28,123.53,126.52,topic tags assigned to documents. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,29,126.52,129.8,And those tags could be treated as topics. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,30,129.8,133.275,If we do that then a document account will be generated using 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,31,133.275,137.42000000000002,topics corresponding to the tags already assigned to the document. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,32,137.42000000000002,139.087,_If the document is not assigned a tag, _
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,33,139.087,145.925,we're going to say there is no way for using that topic to generate document. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,34,145.925,152.291,The document must be generated by using the topics corresponding to that assigned tags. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,35,152.291,155.835,So question is how can we incorporate such knowledge into PLSA. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,36,155.835,159.41,It turns out that there is a very elegant way of doing 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,37,159.41,164.235,that and that would incorporate such knowledge as priors on the models. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,38,164.235,167.19400000000002,_And you may recall in Bayesian inference, _
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,39,167.19400000000002,169.935,we use prior together with data 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,40,169.935,174.185,to estimate parameters and this is precisely what would happen. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,41,174.185,175.207,_So in this case, _
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,42,175.207,177.095,we can use maximum 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,43,177.095,182.73,a posteriori estimate also called MAP estimate and the formula is given here. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,44,182.73,186.23,_Basically, this is to maximize the posteriori distribution probability. _
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,45,186.23,189.65,And this is a combination of the likelihood of data and the prior. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,46,189.65,193.895,So what would happen is that we are going to have an estimate 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,47,193.895,199.4,that listens to the data and also listens to our prior preferences. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,48,199.4,203.195,We can use this prior which is denoted as p of lambda 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,49,203.195,208.07,to encode all kinds of preferences and the constraints. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,50,208.07,211.615,_So for example, we can use this to encode _
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,51,211.615,215.87,the need of having precise background of the topic. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,52,215.87,223.995,Now this could be encoded as a prior because we can say the prior for the parameters is 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,53,223.995,226.565,only a non-zero if 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,54,226.565,232.74,the parameters contain one topic that is equivalent to the background language model. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,55,232.74,236.06,_In other words, in other cases if it is not like that, _
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,56,236.06,239.2,we are going to say the prior says it is impossible. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,57,239.2,247.708,So the probability of that kind of models I think would be zero according to our prior. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,58,247.708,252.455,So now we can also for example use the prior to 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,59,252.455,259.31,force particular choice of topic to have a probability of a certain number. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,60,259.31,266.175,_For example, we can force document D to choose topic one with probability of _
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,61,266.175,273.395,one half or we can prevent topic from being used in generating document. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,62,273.395,276.44,_So we can say the third topic should not be used in generating document D, _
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,63,276.44,281.51,we will set to the Pi zero for that topic. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,64,281.51,284.72,We can also use the prior to favor a set of parameters 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,65,284.72,288.65999999999997,with topics that assign high probability to some particular words. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,66,288.65999999999997,292.34000000000003,_In this case, we are not going to say it is impossible but we can just strongly _
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,67,292.34000000000003,297.59000000000003,favor certain kind of distributions and you will see example later. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,68,297.59000000000003,300.031,The MAP can be computed using a similar EM algorithm as we have used 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,69,300.031,304.345,for the maximum likelihood estimate. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,70,304.345,306.177,_With just some modifications, _
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,71,306.177,310.97,most of the parameters would reflect the prior preferences and in 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,72,310.97,316.306,_such an estimate if we use a special form of the prior code or conjugate the prior, _
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,73,316.306,320.145,then the functional form of the prior will be similar to the data. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,74,320.145,323.9,_As a result, we can combine the two and the consequence is _
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,75,323.9,328.707,that you can basically convert the inference of the prior 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,76,328.707,333.18399999999997,into the inference of having additional pseudo data 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,77,333.18399999999997,337.772,because the two functional forms are the same and they can be combined. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,78,337.772,344.395,So the effect is as if we had more data and this is convenient for computation. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,79,344.395,349.68,It does not mean conjugate prior is the best way to define prior. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,80,349.68,352.78,So now let us look at the specific example. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,81,352.78,355.444,Suppose the user is particularly interested in 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,82,355.444,359.27,battery life of a laptop and we are analyzing reviews. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,83,359.27,362.875,So the prior says that the distribution should contain 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,84,362.875,369.551,one distribution that would assign high probability to battery and life. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,85,369.551,374.77,So we could say well there is distribution that is kind of concentrated on 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,86,374.77,380.421,battery life and prior says that one of distributions should be very similar to this. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,87,380.421,384.794,_Now if we use MAP estimate with conjugate prior, _
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,88,384.794,387.463,_which is the original prior, _
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,89,387.463,392.565,_the original distribution based on this preference, _
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,90,392.565,398.991,_then the only difference in the EM is that when we re-estimate words distributions, _
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,91,398.991,404.7,we are going to add additional counts to reflect our prior. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,92,404.7,409.047,So here you can see the pseudo counts 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,93,409.047,413.826,are defined based on the probability of words in a prior. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,94,413.826,415.78,So battery obviously would have 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,95,415.78,420.365,high pseudo counts and similarly life would have also high pseudo counts. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,96,420.365,424.14,All the other words would have zero pseudo counts because their probability is 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,97,424.14,427.9,zero in the prior and we see this is also controlled by 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,98,427.9,435.13,a parameter mu and we are going to add a mu much by the probability of W given 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,99,435.13,440.26,prior distribution to the connected accounts when we 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,100,440.26,446.92,re-estimate this word distribution. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,101,446.92,450.91,So this is the only step that is changed and the change is happening here. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,102,450.91,454.57,And before we just connect the counts of words that 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,103,454.57,458.23,we believe have been generated from this topic but now we 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,104,458.23,462.455,force this distribution to give more probabilities 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,105,462.455,467.714,to these words by adding them to the pseudo counts. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,106,467.714,473.18,So in fact we artificially inflated their probabilities. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,107,473.18,475.641,_To make this distribution, _
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,108,475.641,480.19,we also need to add this many pseudo counts to the denominator. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,109,480.19,482.995,This is total sum of all the pseudo counts we have added 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,110,482.995,487.3,for all the words This would make this a gamma distribution. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,111,487.3,494.142,_Now this is intuitively very reasonable way of modifying EM and theoretically speaking, _
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,112,494.142,497.376,this works and it computes the MAP estimate. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,113,497.376,502.884,It is useful to think about the two specific extreme cases of mu. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,114,502.884,504.9,_Now, [inaudible] the picture. _
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,115,504.9,507.555,Think about what would happen if we set mu to zero. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,116,507.555,509.26,Well that essentially to remove this prior. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,117,509.26,515.529,So mu in some sense indicates our strengths on prior. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,118,515.529,518.59,Now what would happen if we set mu to positive infinity. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,119,518.59,520.687,Well that is to say that prior is so 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,120,520.687,524.14,strong that we are not going to listen to the data at all. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,121,524.14,526.765,_So in the end, you see in this case _
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,122,526.765,530.01,we are going to make one of the distributions fixed to the prior. You see why? 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,123,530.01,537.36,_When mu is infinitive, we basically let this one dominate. _
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,124,537.36,542.961,In fact we are going to set this one to precise this distribution. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,125,542.961,546.68,_So in this case, it is this distribution. _
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,126,546.68,548.605,And that is why we said 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,127,548.605,551.384,the background language model is in fact a way to impose the prior 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,128,551.384,557.89,_because it would force one distribution to be exactly the same as what we give, _
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,129,557.89,559.898,that is background distribution. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,130,559.898,565.98,_So in this case, we can even force the distribution to entirely focus on battery life. _
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,131,565.98,569.915,But of course this would not work well because it cannot attract other words. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,132,569.915,574.24,It would affect the accuracy of counting topics about battery life. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,133,574.24,578.77,_So in practice, mu is set somewhere in between of course. _
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,134,578.77,581.625,So this is one way to impose a prior. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,135,581.625,584.5,We can also impose some other constraints. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,136,584.5,588.88,_For example, we can set any parameters that will constantly include zero as needed. _
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,137,588.88,592.515,_For example, we may want to set one of the Pi's to _
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,138,592.515,596.497,zero and this would mean 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,139,596.497,601.08,we do not allow that topic to participate in generating that document. 
+3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).srt,140,601.08,603.28,And this is only reasonable of course when we 

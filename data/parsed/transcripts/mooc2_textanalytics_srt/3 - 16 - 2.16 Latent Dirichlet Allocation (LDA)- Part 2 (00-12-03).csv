@@ -1,0 +1,173 @@
+name,id,from,to,text
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,1,0.025,5.631,[SOUND] So now let's talk about the exchanging of 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,2,5.631,10.816,_PLSA to of LDA and to motivate that, _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,3,10.816,17.145,we need to talk about some deficiencies of PLSA. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,4,17.145,21.085,_First, it's not really a generative model because we can compute the probability of _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,5,21.085,22.335,a new document. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,6,22.335,26.67,_You can see why, and that's because the pis are needed to generate the document, _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,7,26.67,31.18,but the pis are tied to the document that we have in the training data. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,8,31.18,33.79,So we can't compute the pis for future document. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,9,34.81,39.03,_And there's some heuristic workaround, though. _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,10,39.03,42.99,_Secondly, it has many parameters, and I've asked you to compute how many parameters _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,11,42.99,47.17,_exactly there are in PLSA, and you will see there are many parameters. _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,12,47.17,49.75,That means that model is very complex. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,13,49.75,53.01,And this also means that there are many local maxima and 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,14,53.01,55.09,it's prone to overfitting. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,15,55.09,61.569,And that means it's very hard to also find a good local maximum. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,16,62.63,65.83,And that we are representing global maximum. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,17,65.83,69.59,_And in terms of explaining future data, we might find that _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,18,69.59,73.26,it will overfit the training data because of the complexity of the model. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,19,73.26,78.01,The model is so flexible to fit precisely what the training data looks like. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,20,78.01,82.98,And then it doesn't allow us to generalize the model for using other data. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,21,83.99,88.53,This however is not a necessary problem for text mining because here we're often 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,22,88.53,92.15,only interested in hitting the training documents that we have. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,23,92.15,96.97999999999999,_We are not always interested in modern future data, but in other cases, _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,24,96.97999999999999,100.49000000000001,_or if we would care about the generality, we would worry about this overfitting. _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,25,102.33,106.86,_So LDA is proposing to improve that, and basically to make _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,26,106.86,111.47,PLSA a generative model by imposing a Dirichlet prior on the model parameters. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,27,111.47,116.13,Dirichlet is just a special distribution that we can use to specify product. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,28,116.13,120.12,_So in this sense, LDA is just a Bayesian version of PLSA, and _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,29,120.12,122.29,the parameters are now much more regularized. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,30,122.29,125.57,You will see there are many few parameters and 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,31,125.57,129.26,you can achieve the same goal as PLSA for text mining. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,32,129.26,135.13,It means it can compute the top coverage and topic word distributions as in PLSA. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,33,135.13,137.44,_However, there's no. _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,34,137.44,141.66,_Why are the parameters for PLSA here are much fewer, _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,35,141.66,146.53,there are fewer parameters and in order to compute a topic coverage and 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,36,146.53,149.65,_word distributions, we again face a problem _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,37,149.65,154.3,of influence of these variables because they are not parameters of the model. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,38,154.3,158.19,So the influence part again face the local maximum problem. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,39,158.19,161.77,_So essentially they are doing something very similar, but theoretically, _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,40,161.77,168.11,LDA is a more elegant way of looking at the top and bottom problem. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,41,168.11,172.81,So let's see how we can generalize the PLSA to LDA or 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,42,172.81,176.36,a standard PLSA to have LDA. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,43,176.36,179.753,Now a full treatment of LDA is beyond the scope of this course and 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,44,179.753,183.285,we just don't have time to go in depth on that talking about that. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,45,183.285,187.04,_But here, I just want to give you a brief idea about what's extending and _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,46,187.04,188.59,_what it enables, all right. _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,47,188.59,190.831,So this is the picture of LDA. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,48,190.831,194.94,_Now, I remove the background of model just for simplicity. _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,49,195.96,199.96,_Now, in this model, all these parameters are free to change and _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,50,199.96,202.22,we do not impose any prior. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,51,202.22,208.65,So these word distributions are now represented as theta vectors. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,52,208.65,212.49,_So these are word distributions, so here. _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,53,212.49,215.52,And the other set of parameters are pis. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,54,215.52,217.47,And we would present it as a vector also. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,55,217.47,220.76,And this is more convenient to introduce LDA. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,56,220.76,224.04,And we have one vector for each document. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,57,224.04,228.82,_And in this case, in theta, we have one vector for each topic. _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,58,230.14,233.47,_Now, the difference between LDA and _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,59,233.47,238.39,_PLSA is that in LDA, we're not going to allow them to free the chain. _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,60,238.39,242.17,_Instead, we're going to force them to be drawn from another distribution. _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,61,243.4,244.9,_So more specifically, _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,62,244.9,249.76,_they will be drawn from two Dirichlet distributions respectively, but _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,63,249.76,252.88,the Dirichlet distribution is a distribution over vectors. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,64,252.88,256.6,So it gives us a probability of four particular choice of a vector. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,65,256.6,259.19,_Take, for example, pis, right. _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,66,259.19,265.1,So this Dirichlet distribution tells us which vectors of pi is more likely. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,67,265.1,269.39,And this distribution in itself is controlled by another vector of parameters 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,68,269.39,270.04,of alphas. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,69,271.79,275.13,_Depending on the alphas, we can characterize the distribution in different _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,70,275.13,279.65,ways but with full certain choices of pis to be more likely than others. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,71,279.65,280.23,_For example, _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,72,280.23,285.90999999999997,you might favor the choice of a relatively uniform distribution of all the topics. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,73,285.90999999999997,291.09000000000003,_Or you might favor generating a skewed coverage of topics, _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,74,291.09000000000003,293.0,and this is controlled by alpha. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,75,293.0,296.892,_And similarly here, the topic or word distributions are drawn _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,76,296.892,301.47,from another Dirichlet distribution with beta parameters. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,77,301.47,304.45,_And note that here, alpha has k parameters, _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,78,304.45,310.26,corresponding to our inference on the k values of pis for our document. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,79,310.26,310.94,_Whereas here, _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,80,310.94,316.67,beta has n values corresponding to controlling the m words in our vocabulary. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,81,317.7,322.74,_Now once we impose this price, then the generation process will be different. _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,82,322.74,327.66700000000003,And we start with joined pis from 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,83,327.66700000000003,332.38,the Dirichlet distribution and this pi will tell us these probabilities. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,84,335.37,340.99,_And then, we're going to use the pi to further choose which topic _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,85,340.99,345.75,_to use, and this is of course very similar to the PLSA model. _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,86,347.25,351.58,_And similar here, we're not going to have these distributions free. _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,87,351.58,356.9,_Instead, we're going to draw one from the Dirichlet distribution. _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,88,356.9,361.96,_And then from this, then we're going to further sample a word. _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,89,361.96,364.739,And the rest is very similar to the. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,90,364.739,367.55,The likelihood function now is more complicated for LDA. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,91,367.55,372.13,But there's a close connection between the likelihood function of LDA and the PLSA. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,92,372.13,375.24,So I'm going to illustrate the difference here. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,93,375.24,376.09,_So in the top, _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,94,376.09,380.73,you see PLSA likelihood function that you have already seen before. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,95,380.73,382.76,It's copied from previous slide. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,96,382.76,385.82,Only that I dropped the background for simplicity. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,97,387.16,392.1,So in the LDA formulas you see very similar things. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,98,392.1,394.97,You see the first equation is essentially the same. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,99,394.97,399.14,And this is the probability of generating a word from multiple word distributions. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,100,400.69,405.44,And this formula is a sum of all the possibilities of generating a word. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,101,405.44,410.23,Inside a sum is a product of the probability of choosing a topic 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,102,410.23,414.08,multiplied by the probability of observing the word from that topic. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,103,415.18,419.1,_So this is a very important formula, as I've stressed multiple times. _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,104,419.1,422.8,And this is actually the core assumption in all the topic models. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,105,422.8,426.76,And you might see other topic models that are extensions of LDA or PLSA. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,106,426.76,428.23,And they all rely on this. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,107,428.23,431.04,So it's very important to understand this. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,108,431.04,435.14,And this gives us a probability of getting a word from a mixture model. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,109,435.14,440.93,_Now, next in the probability of a document, we see there is a PLSA _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,110,440.93,446.71,_component in the LDA formula, but the LDA formula will add a sum integral here. _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,111,446.71,452.93,And that's to account for the fact that the pis are not fixed. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,112,452.93,459.18,_So they are drawn from the original distribution, and that's shown here. _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,113,459.18,463.21,_That's why we have to take an integral, to consider all the possible pis that we _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,114,463.21,468.374,could possibly draw from this Dirichlet distribution. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,115,468.374,472.90999999999997,_And similarly in the likelihood for the whole collection, _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,116,472.90999999999997,476.57,_we also see further components added, another integral here. _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,117,478.19,478.76,Right? 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,118,478.76,483.345,So basically in the area we're just adding this integrals to account for 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,119,483.345,488.306,the uncertainties and we added of course the Dirichlet distributions to cover 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,120,488.306,491.48,_the choice of this parameters, pis, and theta. _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,121,492.91,495.276,So this is a likelihood function for LDA. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,122,495.276,499.76,_Now, next to this, let's talk about the parameter as estimation and inferences. _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,123,499.76,503.73,Now the parameters can be now estimated using exactly the same approach 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,124,503.73,505.28,maximum likelihood estimate for LDA. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,125,505.28,511.27,Now you might think about how many parameters are there in LDA versus PLSA. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,126,511.27,515.05,You'll see there're a fewer parameters in LDA because in this case the only 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,127,515.05,517.85,parameters are alphas and the betas. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,128,517.85,521.33,So we can use the maximum likelihood estimator to compute that. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,129,521.33,525.51,_Of course, it's more complicated because the form of likelihood function is _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,130,525.51,526.89,more complicated. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,131,526.89,531.74,But what's also important is notice that now these 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,132,531.74,536.35,_parameters that we are interested in name and topics, and _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,133,536.35,540.24,the coverage are no longer parameters in LDA. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,134,540.24,544.11,In this case we have to use basic inference or 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,135,544.11,549.7,posterior inference to compute them based on the parameters of alpha and the beta. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,136,549.7,553.9,_Unfortunately, this computation is intractable. _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,137,553.9,557.57,So we generally have to resort to approximate inference. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,138,558.72,564.22,And there are many methods available for that and I'm sure you will 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,139,564.22,569.1,_see them when you use different tool kits for LDA, or when you read papers about _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,140,570.8,575.12,these different extensions of LDA. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,141,575.12,579.21,_Now here we, of course, can't give in-depth instruction to that, but _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,142,579.21,583.189,just know that they are computed based in 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,143,583.189,590.386,inference by using the parameters alphas and betas. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,144,590.386,593.82,_But our math [INAUDIBLE], actually, in the end, _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,145,593.82,597.9,_in some of our math list, it's very similar to PLSA. _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,146,597.9,602.72,_And, especially when we use algorithm called class assembly, _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,147,602.72,606.26,then the algorithm looks very similar to the Algorithm. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,148,606.26,608.8,_So in the end, they are doing something very similar. _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,149,610.66,614.95,_So to summarize our discussion of properties of topic models, _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,150,614.95,617.34,these models provide a general principle or 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,151,617.34,622.3,way of mining and analyzing topics in text with many applications. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,152,622.3,627.01,The best basic task setup is to take test data as input and 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,153,627.01,629.54,we're going to output the k topics. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,154,629.54,632.61,Each topic is characterized by word distribution. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,155,632.61,636.999,And we're going to also output proportions of these topics covered in each document. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,156,638.99,645.32,_And PLSA is the basic topic model, and in fact the most basic of the topic model. _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,157,645.32,648.31,And this is often adequate for most applications. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,158,648.31,651.8,That's why we spend a lot of time to explain PLSA in detail. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,159,653.19,657.05,Now LDA improves over PLSA by imposing priors. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,160,657.05,660.65,This has led to theoretically more appealing models. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,161,660.65,665.74,_However, in practice, LDA and PLSA tend to give similar performance, so _
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,162,665.74,670.89,in practice PLSA and LDA would work equally well for most of the tasks. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,163,672.29,676.14,Now here are some suggested readings if you want to know more about the topic. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,164,676.14,679.34,First is a nice review of probabilistic topic models. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,165,680.49,685.61,The second has a discussion about how to automatically label a topic model. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,166,685.61,689.84,Now I've shown you some distributions and they intuitively suggest a topic. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,167,689.84,691.69,But what exactly is a topic? 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,168,691.69,695.6,Can we use phrases to label the topic? 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,169,695.6,697.72,To make it the more easy to understand and 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,170,697.72,700.48,this paper is about the techniques for doing that. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,171,700.48,705.82,The third one is empirical comparison of LDA and the PLSA for various tasks. 
+3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).srt,172,705.82,708.985,The conclusion is that they tend to perform similarly. 

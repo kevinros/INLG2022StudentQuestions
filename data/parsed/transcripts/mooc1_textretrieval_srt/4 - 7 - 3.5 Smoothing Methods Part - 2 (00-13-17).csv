@@ -1,0 +1,189 @@
+name,id,from,to,text
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,1,0.006,3.253,[SOUND] 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,2,13.295,15.326,So let's plug in these model masses 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,3,15.326,18.61,_into the ranking function to see what we will get, okay? _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,4,18.61,20.78,This is a general smoothing. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,5,20.78,24.57,So a general ranking function for smoothing with subtraction and 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,6,24.57,26.5,you have seen this before. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,7,28.06,32.55,_And now we have a very specific smoothing method, the JM smoothing method. _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,8,33.69,39.19,So now let's see what what's a value for office of D here. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,9,40.45,42.9,And what's the value for p sub c here? 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,10,42.9,46.93,_Right, so we may need to decide this _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,11,46.93,50.47,in order to figure out the exact form of the ranking function. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,12,50.47,52.598,And we also need to figure out of course alpha. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,13,52.598,55.91,So let's see. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,14,55.91,60.666,_Well this ratio is basically this, right, so, _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,15,60.666,65.315,_here, this is the probability of c board on the top, _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,16,65.315,69.33,_and this is the probability of unseen war or, _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,17,69.33,74.935,_in other words basically 11 times basically the alpha here, _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,18,74.935,78.53,_this, so it's easy to see that. _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,19,78.53,81.681,This can be then rewritten as this. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,20,81.681,84.5,Very simple. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,21,84.5,86.81,So we can plug this into here. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,22,88.65,90.71000000000001,_And then here, what's the value for alpha? _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,23,90.71000000000001,91.66,What do you think? 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,24,91.66,95.25,_So it would be just lambda, right? _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,25,98.25,103.9,_And what would happen if we plug in this value here, if this is lambda. _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,26,103.9,105.35,What can we say about this? 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,27,107.94,109.64,Does it depend on the document? 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,28,110.66,112.17,_No, so it can be ignored. _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,29,113.57,115.03999999999999,Right? 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,30,115.03999999999999,118.69,So we'll end up having this ranking function shown here. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,31,120.52,122.69,_And in this case you can easy to see, _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,32,122.69,127.78,this a precisely a vector space model because this part is 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,33,127.78,133.48,_a sum over all the matched query terms, this is an element of the query map. _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,34,133.48,136.14,What do you think is a element of the document up there? 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,35,138.67000000000002,140.2,_Well it's this, right. _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,36,140.2,143.21,So that's our document left element. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,37,143.21,149.21,And let's further examine what's inside of this logarithm. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,38,150.37,152.44,Well one plus this. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,39,152.44,156.63,_So it's going to be nonnegative, this log of this, _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,40,156.63,157.85,_it's going to be at least 1, right? _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,41,159.45,162.9,_And these, this is a parameter, so lambda is parameter. _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,42,162.9,164.34,And let's look at this. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,43,164.34,165.48,Now this is a TF. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,44,165.48,168.07,Now we see very clearly this TF weighting here. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,45,169.25,174.07999999999998,_And the larger the count is, the higher the weighting will be. _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,46,174.07999999999998,177.07999999999998,_We also see IDF weighting, which is given by this. _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,47,178.72,180.996,And we see docking the lan's relationship here. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,48,180.996,183.27,So all these heuristics are captured in this formula. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,49,184.532,188.48,What's interesting that we kind of have got this 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,50,188.48,192.33,weighting function automatically by making various assumptions. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,51,192.33,194.27,_Whereas in the vector space model, _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,52,194.27,199.32999999999998,we had to go through those heuristic design in order to get this. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,53,199.32999999999998,201.88,And in this case note that there's a specific form. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,54,201.88,205.12,And when you see whether this form actually makes sense. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,55,206.69,211.05,_All right so what do you think is the denominator here, hm? _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,56,211.05,213.32,This is a math of document. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,57,213.32,217.34,_Total number of words, multiplied by the probability of the word _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,58,218.4,222.727,_given by the collection, right? _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,59,222.727,228.09,So this actually can be interpreted as expected account over word. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,60,228.09,233.73,_If we're going to draw, a word, from the connection that we model. _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,61,233.73,237.98,_And, we're going to draw as many as the number of words in the document. _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,62,239.31,242.94,_If you do that, the expected account of a word, w, _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,63,242.94,246.95,would be precisely given by this denominator. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,64,248.24,254.4,_So, this ratio basically, is comparing the actual count, here. _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,65,255.86,261.28,The actual count of the word in the document with expected count given by this 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,66,261.28,269.57,product if the word is in fact following the distribution in the clutch this. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,67,269.57,273.25,_And if this counter is larger than the expected counter in this part, _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,68,273.25,274.789,this ratio would be larger than one. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,69,277.1,280.46,_So that's actually a very interesting interpretation, right? _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,70,280.46,283.93,_It's very natural and intuitive, it makes a lot of sense. _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,71,285.24,289.58,And this is one advantage of using this kind of probabilistic reasoning 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,72,289.58,293.24,where we have made explicit assumptions. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,73,293.24,296.49,_And, we know precisely why we have a logarithm here. _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,74,296.49,298.8,_And, why we have these probabilities here. _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,75,300.28,304.29,_And, we also have a formula that intuitively makes a lot of sense and _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,76,304.29,307.19,does TF-IDF weighting and documenting and some others. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,77,309.01,311.44,_Let's look at the, the Dirichlet Prior Smoothing. _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,78,311.44,316.852,It's very similar to the case of JM smoothing. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,79,316.852,321.54,_In this case, the smoothing parameter is mu and _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,80,321.54,327.66,that's different from lambda that we saw before. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,81,327.66,330.66,But the format looks very similar. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,82,330.66,332.57,The form of the function looks very similar. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,83,334.54,336.73,So we still have linear operation here. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,84,338.09000000000003,340.13,_And when we compute this ratio, _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,85,340.13,345.46,one will find that is that the ratio is equal to this. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,86,346.93,351.62,And what's interesting here is that we are doing another comparison here now. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,87,351.62,354.44,We're comparing the actual count. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,88,354.44,359.4,Which is the expected account of the world if we sampled meal worlds according to 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,89,359.4,362.66,the collection world probability. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,90,362.66,367.266,So note that it's interesting we don't even see docking the lens here and 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,91,367.266,368.91,lighter in the JMs model. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,92,368.91,373.88,All right so this of course should be plugged into this part. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,93,375.29,378.2,_So you might wonder, so where is docking lens. _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,94,378.2,383.65,Interestingly the docking lens is here in alpha sub d so 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,95,383.65,386.85,this would be plugged into this part. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,96,386.85,391.86,As a result what we get is the following function here and 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,97,391.86,395.239,this is again a sum over all the match query words. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,98,396.29,400.05,_And we're against the queer, the query, time frequency here. _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,99,401.40999999999997,405.425,_And you can interpret this as the element of a document vector, _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,100,405.425,408.7,_but this is no longer a single dot product, right? _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,101,410.1,415.165,_Because we have this part, I know that n is the name of the query, _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,102,415.165,417.81,right? 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,103,417.81,421.51,_So that just means if we score this function, _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,104,421.51,425.16,_we have to take a sum over all the query words, and _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,105,425.16,429.27,then do some adjustment of the score based on the document. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,106,431.51,435.974,_But it's still, it's still clear that it does documents lens _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,107,435.974,439.765,modulation because this lens is in the denominator so 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,108,439.765,443.237,a longer document will have a lower weight here. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,109,443.237,447.6,And we can also see it has tf here and now idf. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,110,447.6,452.038,Only that this time the form of the formula is different from the previous one 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,111,452.038,454.58,in JMs one. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,112,454.58,459.78,_But intuitively it still implements TFIDF waiting and document lens rendition again, _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,113,459.78,464.34000000000003,the form of the function is dictated by the probabilistic reasoning and 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,114,464.34000000000003,465.938,assumptions that we have made. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,115,465.938,470.42,Now there are also disadvantages of this approach. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,116,470.42,473.6,_And that is, there's no guarantee that there's such a form _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,117,473.6,475.8,of the formula will actually work well. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,118,475.8,481.037,_So if we look about at this geo function, all those TF-IDF waiting and document lens _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,119,481.037,486.86,rendition for example it's unclear whether we have sub-linear transformation. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,120,486.86,493.11,Unfortunately we can see here there is a logarithm function here. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,121,493.11,497.58,_So we do have also the, so it's here right? _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,122,497.58,500.986,_So we do have the sublinear transformation, but _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,123,500.986,503.32,we do not intentionally do that. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,124,503.32,507.75,_That means there's no guarantee that we will end up in this, in this way. _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,125,507.75,511.8,_Suppose we don't have logarithm, then there's no sub-linear transformation. _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,126,511.8,515.81,_As we discussed before, perhaps the formula is not going to work so well. _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,127,515.81,520.87,So that's an example of the gap between a formal model like this and 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,128,520.87,523.08,_the relevance that we have to model, _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,129,523.08,528.72,which is really a subject motion that is tied to users. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,130,530.64,533.39,So it doesn't mean we cannot fix this. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,131,533.39,537.39,_For example, imagine if we did not have this logarithm, right? _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,132,537.39,539.25,_So we can take a risk and we're going to add one, _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,133,539.25,541.935,or we can even add double logarithm. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,134,541.935,546.2,_But then, it would mean that the function is no longer a proper risk model. _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,135,546.2,550.78,So the consequence of the modification is no 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,136,550.78,554.67,longer as predictable as what we have been doing now. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,137,555.81,561.41,_So, that's also why, for example, PM45 remains very competitive and _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,138,561.41,566.72,_still, open channel how to use public risk models as they arrive, _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,139,566.72,568.69,better model than the PM25. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,140,570.42,574.5,In particular how do we use query like how to derive a model and 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,141,574.5,577.65,that would work consistently better than DM 25. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,142,577.65,579.07,Currently we still cannot do that. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,143,580.24,581.64,Still interesting open question. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,144,583.45,586.975,_So to summarize this part, we've talked about the two smoothing methods. _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,145,586.975,592.55,Jelinek-Mercer which is doing the fixed coefficient linear interpolation. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,146,592.55,598.43,Dirichlet Prior this is what add a pseudo counts to every word and is doing adaptive 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,147,598.43,604.16,interpolation in that the coefficient would be larger for shorter documents. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,148,605.94,610.89,_In most cases we can see, by using these smoothing methods, we will be able to _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,149,610.89,616.67,reach a retrieval function where the assumptions are clearly articulate. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,150,616.67,617.79,So they are less heuristic. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,151,619.09,623.81,_Explaining the results also show that these, retrieval functions. _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,152,623.81,631.0360000000001,Also are very effective and they are comparable to BM 25 or pm lens adultation. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,153,631.0360000000001,636.26,So this is a major advantage of probably smaller 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,154,636.26,639.48,where we don't have to do a lot of heuristic design. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,155,640.77,644.24,Yet in the end that we naturally implemented TF-IDF weighting and 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,156,644.24,645.239,doc length normalization. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,157,646.48,651.12,Each of these functions also has precise ones smoothing parameter. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,158,651.12,654.84,In this case of course we still need to set this smoothing parameter. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,159,654.84,658.85,There are also methods that can be used to estimate these parameters. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,160,659.95,664.02,_So overall, this shows by using a probabilistic model, _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,161,664.02,668.9,we follow very different strategies then the vector space model. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,162,668.9,672.98,_Yet, in the end, we end up uh,with some retrievable functions that _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,163,672.98,675.54,look very similar to the vector space model. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,164,675.54,681.16,With some advantages in having assumptions clearly stated. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,165,681.16,684.94,_And then, the form dictated by a probabilistic model. _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,166,684.94,689.74,_Now, this also concludes our discussion of the query likelihood probabilistic model. _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,167,689.74,694.68,And let's recall what assumptions we have made 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,168,694.68,699.39,in order to derive the functions that we have seen in this lecture. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,169,699.39,702.13,Well we basically have made four assumptions that I listed here. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,170,702.13,708.399,The first assumption is that the relevance can be modeled by the query likelihood. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,171,709.47,713.45,_And the second assumption with med is, are query words are generated independently _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,172,713.45,717.24,that allows us to decompose the probability of the whole query 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,173,717.24,721.69,into a product of probabilities of old words in the query. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,174,723.09,727.85,_And then, the third assumption that we have made is, _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,175,727.85,730.55,_if a word is not seen, the document or in the late, _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,176,730.55,734.87,its probability proportional to its probability in the collection. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,177,734.87,737.29,That's a smoothing with a collection ama model. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,178,737.29,740.98,_And finally, we made one of these two assumptions about the smoothing. _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,179,740.98,744.94,So we either used JM smoothing or Dirichlet prior smoothing. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,180,744.94,748.82,If we make these four assumptions then we have no choice but 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,181,748.82,753.43,to take the form of the retrieval function that we have seen earlier. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,182,753.43,757.73,Fortunately the function has a nice property in that it implements TF-IDF 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,183,757.73,764.51,weighting and document machine and these functions also work very well. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,184,764.51,765.44,_So in that sense, _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,185,765.44,768.92,these functions are less heuristic compared with the vector space model. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,186,770.46,774.282,_And there are many extensions of this, this basic model and _
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,187,774.282,779.336,you can find the discussion of them in the reference at the end of this lecture. 
+4 - 7 - 3.5 Smoothing Methods Part - 2 (00-13-17).srt,188,784.921,794.921,[MUSIC] 

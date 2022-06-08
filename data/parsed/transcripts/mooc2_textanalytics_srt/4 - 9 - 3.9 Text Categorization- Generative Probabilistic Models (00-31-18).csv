@@ -1,0 +1,447 @@
+name,id,from,to,text
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,1,0.012,8.521,[SOUND] This lecture is 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,2,8.521,13.23,about how to use generative probabilistic models for text categorization. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,3,14.45,19.47,There are in general about two kinds of approaches to text categorization 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,4,19.47,20.58,by using machine learning. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,5,20.58,22.97,One is by generating probabilistic models. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,6,22.97,25.75,The other is discriminative approaches. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,7,25.75,29.74,_In this lecture, we're going to talk about the generative models. _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,8,29.74,34.46,_In the next lecture, we're going to talk about discriminative approaches. _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,9,34.46,36.99,So the problem of text categorization 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,10,36.99,39.4,is actually a very similar to document clustering. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,11,39.4,44.82,_In that, we'll assume that each document it belongs to one category or one cluster. _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,12,44.82,48.5,The main difference is that in clustering we don't really know 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,13,48.5,51.81,_what are the predefined categories are, what are the clusters. _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,14,51.81,54.66,_In fact, that's the goal of text clustering. _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,15,55.78,58.26,We want to find such clusters in the data. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,16,59.28,62.31,_But in the case of categorization, we are given the categories. _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,17,62.31,67.47,So we kind of have pre-defined categories and 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,18,67.47,71.81,_then based on these categories and training data, we would like to allocate _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,19,71.81,78.71000000000001,a document to one of these categories or sometimes multiple categories. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,20,78.71000000000001,81.16,_But because of the similarity of the two problems, _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,21,81.16,86.93,we can actually get the document clustering models for text categorization. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,22,86.93,90.63,And we understand how we can use generated models to do 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,23,90.63,95.93,text categorization from the perspective of clustering. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,24,95.93,101.62,_And so, this is a slide that we've talked about before, about text clustering, _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,25,101.62,107.55,where we assume there are multiple topics represented by word distributions. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,26,107.55,109.62,Each topic is one cluster. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,27,109.62,112.08,_So once we estimated such a model, _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,28,112.08,118.38,we faced a problem of deciding which cluster document d should belong to. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,29,118.38,124.26,And this question boils down to decide which theta i has been used to generate d. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,30,126.44,134.47,_Now, suppose d has L words represented as xi here. _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,31,134.47,141.22,_Now, how can you compute the probability that a particular _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,32,141.22,145.96,topic word distribution zeta i has been used to generate this document? 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,33,147.05,152.98,_Well, in general, we use base wall to make this influence and _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,34,152.98,160.167,you can see this prior information here that we need to consider if a topic or 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,35,160.167,164.846,cluster has a higher prior then it's more likely 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,36,164.846,169.92000000000002,that the document has been from this cluster. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,37,169.92000000000002,172.47,_And so, we should favor such a cluster. _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,38,172.47,174.96,_The other is a likelihood part, it's this part. _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,39,176.07999999999998,178.88,And this has to do with whether the topic word of distribution 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,40,178.88,182.37,can explain the content of this document well. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,41,182.37,187.73,And we want to pick a topic that's high by both values. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,42,187.73,190.81,_So more specifically, we just multiply them together and _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,43,190.81,194.65,then choose which topic has the highest product. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,44,194.65,198.74,_So more rigorously, this is what we'd be doing. _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,45,198.74,202.63,So we're going to choose the topic that would maximize. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,46,202.63,207.66,This posterior probability at the top of a given document gets posterior 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,47,207.66,213.02,_because this one, p of the i, is the prior. _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,48,213.02,216.81,_That's our belief about which topic is more likely, _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,49,216.81,219.47,before we observe any document. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,50,219.47,223.32,But this conditional probability here is 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,51,223.32,227.85,the posterior probability of the topic after we have observed the document of d. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,52,229.758,234.13,And base wall allows us to update this probability based on the prior and 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,53,234.13,239.04,_I have shown the details, below here you can see how _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,54,239.04,244.792,_the prior here is related to the posterior, on the left-hand side. _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,55,245.96,250.87,And this is related to how well this word distribution 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,56,250.87,256.2,_explains the document here, and the two are related in this way. _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,57,256.2,261.47,So to find the topic that has the higher 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,58,261.47,266.93,posterior probability here it's equivalent to maximize this product 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,59,266.93,270.45,_as we have seen also, multiple times in this course. _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,60,272.3,277.159,And we can then change the probability of document in your product of 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,61,277.159,282.019,_the probability of each word, and that's just because we've made _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,62,282.019,286.382,an assumption about independence in generating each word. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,63,286.382,289.64,So this is just something that you have seen in document clustering. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,64,290.68,296.76,And we now can see clearly how we can assign a document to a category 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,65,296.76,302.27,based on the information about word distributions for 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,66,302.27,305.74,these categories and the prior on these categories. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,67,305.74,310.69,So this idea can be directly adapted to do categorization. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,68,310.69,316.36,And this is precisely what a Naive Bayes Classifier is doing. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,69,316.36,319.29,So here it's most really the same information except 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,70,319.29,321.91,that we're looking at the categorization problem now. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,71,321.91,326.62,So we assume that if theta i 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,72,326.62,331.77,_represents category i accurately, that means the word distribution _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,73,331.77,337.12,characterizes the content of documents in category i accurately. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,74,337.12,340.802,_Then, what we can do is precisely like what we did for text clustering. _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,75,340.802,345.58,Namely we're going to assign document d to the category 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,76,345.58,350.31,that has the highest probability of generating this document. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,77,350.31,354.99,_In other words, we're going to maximize this posterior probability as well. _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,78,356.62,359.90999999999997,And this is related to the prior and 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,79,359.90999999999997,364.29,the [INAUDIBLE] as you have seen on the previous slide. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,80,364.29,367.4,_And so, naturally we can decompose _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,81,367.4,371.84,this [INAUDIBLE] into a product as you see here. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,82,371.84,376.77,_Now, here, I change the notation so that we will write down the product as _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,83,376.77,380.97,_product of all the words in the vocabulary, and _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,84,380.97,385.73,even though the document doesn't contain all the words. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,85,385.73,391.81,And the product is still accurately representing the product 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,86,391.81,395.58,of all the words in the document because of this count here. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,87,397.15,399.12,_When a word, it doesn't occur in the document. _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,88,399.12,402.84000000000003,_The count would be 0, so this time will just disappear. _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,89,402.84000000000003,408.38,So if actively we'll just have the product over other words in the document. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,90,408.38,410.94,_So basically, with Naive Bayes Classifier, _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,91,410.94,415.68,we're going to score each category for the document by this function. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,92,416.85,422.39,_Now, you may notice that here it involves a product of a lot of small probabilities. _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,93,422.39,426.48,And this can cause and the four problem. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,94,426.48,430.269,_So one way to solve the problem is thru take logarithm of this function, _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,95,430.269,433.53,which it doesn't changes all the often these categories. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,96,433.53,435.73199999999997,But will helps us preserve precision. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,97,435.73199999999997,440.519,_And so, this is often the function that we actually use to _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,98,440.519,444.611,score each category and then we're going to choose 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,99,444.611,450.3,the category that has the highest score by this function. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,100,450.3,454.87,_So this is called an Naive Bayes Classifier, now the keyword base is _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,101,454.87,459.53499999999997,understandable because we are applying a base rule here when we go from 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,102,459.53499999999997,466.38,the posterior probability of the topic to a product of the likelihood and the prior. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,103,467.56,472.337,_Now, it's also called a naive because we've made an assumption that every word _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,104,472.337,476.553,_in the document is generated independently, and this is indeed a naive _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,105,476.553,480.932,assumption because in reality they're not generating independently. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,106,480.932,485.241,_Once you see some word, then other words will more likely occur. _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,107,485.241,488.235,_For example, if you have seen a word like a text. _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,108,488.235,489.598,_Than that mixed category, _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,109,489.598,493.64,they see more clustering more likely to appear than if you have not the same text. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,110,495.49,498.74,But this assumption allows us to simplify the problem. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,111,498.74,502.854,And it's actually quite effective for many text categorization tasks. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,112,502.854,506.37,But you should know that this kind of model doesn't 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,113,506.37,509.0,have to make this assumption. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,114,509.0,513.76,_We could for example, assume that words may be dependent on each other. _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,115,513.76,518.4110000000001,So that would make it a bigram analogy model or a trigram analogy model. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,116,518.4110000000001,523.019,And of course you can even use a mixture model to model what the document looks 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,117,523.019,525.12,like in each category. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,118,525.12,529.53,_So in nature, they will be all using base rule to do classification. _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,119,529.53,534.76,But the actual generating model for documents in each category can vary. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,120,534.76,539.67,_And here, we just talk about very simple case perhaps, the simplest case. _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,121,540.98,545.22,_So now the question is, how can we make sure theta i _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,122,545.22,549.52,actually represents category i accurately? 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,123,549.52,553.7,_Now in clustering, we learned that this category i or _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,124,553.7,557.31,what are the distributions for category i from the data. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,125,557.31,560.82,_But in our case, what can we do to make sure _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,126,560.82,564.94,this theta i represents indeed category i. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,127,565.96,567.51,_Well if you think about the question, and _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,128,567.51,573.15,you likely come up with the idea of using the training data. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,129,574.8,576.05,_Indeed in the textbook, _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,130,576.05,580.14,we typically assume that there is training data available and 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,131,580.14,587.81,those are the documents that unknown to have generator from which category. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,132,587.81,591.68,_In other words, these are the documents with known categories assigned and _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,133,591.68,594.45,of course human experts must do that. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,134,594.45,598.96,_In here, you see that T1 represents the set of documents _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,135,598.96,603.02,that are known to have the generator from category 1. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,136,603.02,607.187,And T2 represents the documents that are known to have been 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,137,607.187,609.699,_generated from category 2, etc. _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,138,609.699,614.475,_Now if you look at this picture, you'll see that the model _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,139,614.475,618.872,here is really a simplified unigram language model. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,140,618.872,620.452,_It's no longer mixed modal, why? _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,141,620.452,625.35,Because we already know which distribution has been used to generate which documents. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,142,625.35,629.82,_There's no uncertainty here, there's no mixing of different categories here. _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,143,630.98,635.11,So the estimation problem of course would be simplified. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,144,635.11,638.72,_But in general, you can imagine what we want to do is _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,145,638.72,642.38,estimate these probabilities that I marked here. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,146,642.38,646.799,And what other probability is that we have to estimate it in order to do relation. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,147,646.799,648.553,Well there are two kinds. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,148,648.553,653.114,_So one is the prior, the probability of theta i and _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,149,653.114,657.349,this indicates how popular each category is or 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,150,657.349,663.224,how likely will it have observed the document in that category. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,151,663.224,665.99,The other kind is the water distributions and 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,152,665.99,670.3,we want to know what words have high probabilities for each category. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,153,671.69,675.57,So the idea then is to just use observe the training data 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,154,675.57,677.81,to estimate these two probabilities. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,155,678.83,683.261,_And in general, we can do this separately for the different categories. _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,156,683.261,687.65,That's just because these documents are known to be generated 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,157,687.65,689.565,from a specific category. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,158,689.565,690.825,_So once we know that, _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,159,690.825,695.66,it's in some sense irrelevant of what other categories we are also dealing with. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,160,697.47,701.737,So now this is a statistical estimation problem. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,161,701.737,704.2090000000001,We have observed some data from some model and 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,162,704.2090000000001,707.22,we want to guess the parameters of this model. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,163,707.22,709.58,We want to take our best guess of the parameters. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,164,711.06,716.073,And this is a problem that we have seen also several times in this course. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,165,716.073,718.728,_Now, if you haven't thought about this problem, _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,166,718.728,720.775,haven't seen life based classifier. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,167,720.775,724.649,It would be very useful for you to pause the video for a moment and 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,168,724.649,727.69,to think about how to solve this problem. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,169,727.69,730.68,So let me state the problem again. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,170,730.68,733.31,_So let's just think about with category 1, _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,171,733.31,738.75,we know there is one word of distribution that has been used to generate documents. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,172,738.75,743.11,_And we generate each word in the document independently, and we know that we have _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,173,743.11,749.35,observed a set of n sub 1 documents in the set of Q1. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,174,749.35,752.98,These documents have been all generated from category 1. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,175,752.98,757.5,Namely have been all generated using this same word distribution. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,176,757.5,760.42,_Now the question is, what would be your guess or _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,177,760.42,764.369,estimate of the probability of each word in this distribution? 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,178,764.369,769.71,And what would be your guess of the entire probability of this category? 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,179,769.71,772.2,_Of course, this singular probability depends on _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,180,772.2,774.84,how likely are you to see documents in other categories? 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,181,775.99,780.97,_So think for a moment, how do you use all this training data including _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,182,780.97,786.43,_all these documents that are known to be in these k categories, _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,183,786.43,788.95,to estimate all these parameters? 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,184,788.95,791.28,_Now, if you spend some time to think about this and _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,185,791.28,795.77,it would help you understand the following few slides. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,186,795.77,800.39,_So do spend some time to make sure that you can try to solve this problem, or _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,187,800.39,803.31,do you best to solve the problem yourself. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,188,803.31,808.27,Now if you have thought about and then you will realize the following to it. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,189,809.4,815.88,_First, what's the bases for estimating the prior or the probability of each category. _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,190,815.88,820.08,Well this has to do with whether you have observed a lot of documents 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,191,820.08,821.625,form that category. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,192,821.625,824.87,_Intuitively, you have seen a lot of documents in sports and _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,193,824.87,826.77,very few in medical science. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,194,826.77,831.87,Then you guess is that the probability of the sports category is larger or 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,195,831.87,835.8,your prior on the category would be larger. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,196,837.13,841.57,And what about the basis for estimating the probability of where each category? 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,197,841.57,845.929,_Well the same, and you'll be just assuming that words that are observed _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,198,845.929,850.645,frequently in the documents that are known to be generated from a category will 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,199,850.645,852.799,likely have a higher probability. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,200,852.799,855.493,And that's just a maximum Naive Bayes made of. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,201,855.493,860.707,_Indeed, that's what we can do, so this made the probability of which category and _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,202,860.707,864.99,_to answer the question, which category is most popular? _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,203,864.99,871.21,_Then we can simply normalize, the count of documents in each category. _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,204,871.21,876.47,So here you see N sub i denotes the number of documents in each category. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,205,877.95,881.313,And we simply just normalize these counts to make this a probability. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,206,881.313,886.929,_In other words, we make this probability proportional to the size _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,207,886.929,892.96,of training intercept in each category that's a size of the set t sub i. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,208,895.26,898.01,Now what about the word distribution? 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,209,898.01,899.46,_Well, we do the same. _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,210,899.46,903.94,Again this time we can do this for each category. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,211,903.94,908.64,_So let's say, we're considering category i or theta i. _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,212,908.64,912.48,So which word has a higher probability? 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,213,912.48,915.85,_Well, we simply count the word occurrences _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,214,915.85,919.14,in the documents that are known to be generated from theta i. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,215,920.29,925.516,And then we put together all the counts of the same word in the set. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,216,925.516,930.565,And then we just normalize these counts to make this distribution 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,217,930.565,935.66,of all the words make all the probabilities off these words to 1. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,218,935.66,939.0,_So in this case, you're going to see this is a proportional through the count of _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,219,939.0,943.87,the word in the collection of training documents T sub i and 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,220,943.87,948.38,that's denoted by c of w and T sub i. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,221,949.71,955.11,_Now, you may notice that we often write down probable _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,222,955.11,961.715,estimate in the form of being proportional for certain numbers. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,223,961.715,963.529,_And this is often sufficient, _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,224,963.529,967.033,because we have some constraints on these distributions. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,225,967.033,971.281,So the normalizer is dictated by the constraint. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,226,971.281,975.191,_So in this case, it will be useful for you to think about _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,227,975.191,979.711,what are the constraints on these two kinds of probabilities? 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,228,979.711,982.753,_So once you figure out the answer to this question, and _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,229,982.753,985.41,you will know how to normalize these accounts. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,230,985.41,992.94,And so this is a good exercise to work on if it's not obvious to you. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,231,992.94,995.94,There is another issue in Naive Bayes which is a smoothing. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,232,995.94,1001.72,In fact the smoothing is a general problem in older estimate of language morals. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,233,1001.72,1003.42,_And this has to do with, _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,234,1003.42,1007.54,what would happen if you have observed a small amount of data? 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,235,1007.54,1011.59,So smoothing is an important technique to address that outsmarts this. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,236,1011.59,1016.62,_In our case, the training data can be small and when the data set is small when _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,237,1016.62,1021.14,we use maximum likely estimator we often face the problem of zero probability. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,238,1021.14,1023.77,That means if an event is not observed 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,239,1023.77,1026.44,then the estimated probability would be zero. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,240,1026.44,1031.07,_In this case, if we have not seen a word in the training documents for _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,241,1031.07,1033.59,_let's say, category i. _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,242,1033.59,1038.77,_Then our estimator would be zero for the probability of this one in this category, _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,243,1038.77,1040.8,and this is generally not accurate. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,244,1040.8,1045.38,So we have to do smoothing to make sure it's not zero probability. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,245,1045.38,1050.99,_The other reason for smoothing is that this is a way to bring prior knowledge, _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,246,1050.99,1055.33,and this is also generally true for a lot of situations of smoothing. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,247,1055.33,1057.346,_When the data set is small, _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,248,1057.346,1061.827,we tend to rely on some prior knowledge to solve the problem. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,249,1061.827,1066.242,So in this case our [INAUDIBLE] says that no word should have zero probability. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,250,1066.242,1071.035,So smoothing allows us to inject these to prior initial that no 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,251,1071.035,1073.81,order has a real zero probability. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,252,1074.97,1079.23,_There is also a third reason which us sometimes not very obvious, but _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,253,1079.23,1080.85,we explain that in a moment. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,254,1080.85,1085.48,And that is to help achieve discriminative weighting of terms. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,255,1085.48,1088.16,_And this is also called IDF weighting, _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,256,1088.16,1093.64,inverse document frequency weighting that you have seen in mining word relations. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,257,1094.74,1095.85,So how do we do smoothing? 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,258,1095.85,1099.22,_Well in general we add pseudo counts to these events, _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,259,1099.22,1101.607,we'll make sure that no event has 0 count. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,260,1102.79,1107.676,So one possible way of smoothing the probability of the category 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,261,1107.676,1112.483,is to simply add a small non active constant delta to the count. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,262,1112.483,1117.413,Let's pretend that every category has actually some extra number of 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,263,1117.413,1119.88,documents represented by delta. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,264,1120.99,1125.66,And in the denominator we also add a k multiplied by delta because 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,265,1125.66,1128.73,we want the probability to some to 1. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,266,1128.73,1134.427,So in total we've added delta k times because we have a k categories. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,267,1134.427,1139.242,_Therefore in this sum, we have to also add k multiply by _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,268,1139.242,1144.49,delta as a total pseudocount that we add up to the estimate. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,269,1146.42,1149.568,_Now, it's interesting to think about the influence of that data, _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,270,1149.568,1151.678,obvious data is a smoothing parameter here. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,271,1151.678,1156.285,Meaning that the larger data is and the more we will do smoothing and 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,272,1156.285,1159.505,that means we'll more rely on pseudocounts. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,273,1159.505,1164.238,And we might indeed ignore the actual counts if they are delta is 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,274,1164.238,1165.587,set to infinity. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,275,1165.587,1170.172,Imagine what would happen if there are approaches positively to infinity? 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,276,1170.172,1179.27,_Well, we are going to say every category has an infinite amount of documents. _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,277,1179.27,1183.3,And then there's no distinction to them so it become just a uniform. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,278,1184.85,1186.2,What if delta is 0? 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,279,1186.2,1191.05,_Well, we just go back to the original estimate based on the observed training _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,280,1191.05,1194.88,data to estimate to estimate the probability of each category. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,281,1194.88,1197.61,Now we can do the same for the word distribution. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,282,1197.61,1201.67,_But in this case, sometimes we find it useful _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,283,1201.67,1205.75,to use a nonuniform seudocount for the word. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,284,1205.75,1209.372,So here you'll see we'll add a pseudocounts to each word and 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,285,1209.372,1212.143,that's mule multiplied by the probability of 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,286,1212.143,1215.781,_the word given by a background language model, theta sub b. _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,287,1215.781,1219.772,Now that background model in general can be estimated by using 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,288,1219.772,1222.07,a logic collection of tests. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,289,1222.07,1226.588,Or in this case we will use the whole set of all the training data to 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,290,1226.588,1229.693,estimate this background language model. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,291,1229.693,1231.494,_But we don't have to use this one, _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,292,1231.494,1235.05,we can use larger test data that are available from somewhere else. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,293,1236.17,1240.11,_Now if we use such a background language model that has pseudocounts, _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,294,1240.11,1243.605,we'll find that some words will receive more pseudocounts. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,295,1243.605,1244.848,So what are those words? 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,296,1244.848,1248.58,Well those are the common words because they get a high probability by 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,297,1248.58,1250.328,the background average model. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,298,1250.328,1253.314,So the pseudocounts added for such words will be higher. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,299,1253.314,1259.126,Real words on the other hand will have smaller pseudocounts. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,300,1259.126,1263.443,Now this addition of background model would cause a nonuniform 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,301,1263.443,1266.382,smoothing of these word distributions. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,302,1266.382,1270.63,_We're going to bring the probability of those common words to a higher level, _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,303,1270.63,1272.88,because of the background model. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,304,1272.88,1277.769,Now this helps make the difference of the probability of 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,305,1277.769,1281.312,such words smaller across categories. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,306,1281.312,1286.005,_Because every category has some help from the background four words, and _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,307,1286.005,1289.05,_I get the, a, which have high probabilities. _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,308,1289.05,1293.89,_Therefore, it's not always so important that each category _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,309,1293.89,1298.32,has documents that contain a lot of occurrences of such words or 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,310,1298.32,1301.6,the estimate is more influenced by the background model. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,311,1301.6,1304.36,_And the consequence is that when we do categorization, _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,312,1304.36,1308.42,such words tend not to influence the decision that much 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,313,1308.42,1313.59,as words that have small probabilities from the background language model. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,314,1313.59,1317.07,Those words don't get some help from the background language model. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,315,1317.07,1322.08,So the difference would be primary because of the differences of the occurrences 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,316,1322.08,1324.089,in the training documents in different categories. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,317,1325.4,1329.97,_We also see another smoothing parameter mu here, which controls the amount of _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,318,1329.97,1333.61,smoothing and just like a delta does for the other probability. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,319,1334.92,1339.353,_And you can easily understand why we add mu to the denominator, because that _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,320,1339.353,1343.587,represents the sum of all the pseudocounts that we add for all the words. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,321,1345.689,1349.051,So view is also a non negative constant and 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,322,1349.051,1352.611,it's [INAUDIBLE] set to control smoothing. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,323,1352.611,1355.409,Now there are some interesting special cases to think about as well. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,324,1355.409,1359.28,_First, let's think about when mu approaches infinity what would happen? _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,325,1359.28,1361.319,Well in this case the estimate would approach 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,326,1363.17,1367.64,to the background language model we'll attempt to the background language model. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,327,1367.64,1372.365,So we will bring every word distribution to the same background language model and 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,328,1372.365,1376.352,that essentially remove the difference between these categories. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,329,1376.352,1377.943,_Obviously, we don't want to do that. _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,330,1377.943,1382.683,The other special case is the thing about the background model and 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,331,1382.683,1386.919,_suppose, we actually set the two uniform distribution. _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,332,1386.919,1390.218,_And let's say, 1 over the size of the vocabulary. _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,333,1390.218,1396.121,_So each one has the same probability, then this smoothing formula is _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,334,1396.121,1402.03,going to be very similar to the one on the top when we add delta. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,335,1402.03,1405.025,It's because we're going to add a constant pseudocounts to every word. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,336,1409.268,1410.441,_So in general, _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,337,1410.441,1415.24,in Naive Bayes categorization we have to do such a small thing. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,338,1415.24,1418.97,_And then once we have these probabilities, _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,339,1418.97,1422.96,then we can compute the score for each category. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,340,1422.96,1424.03,For a document and 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,341,1424.03,1427.24,then choose the category where it was the highest score as we discussed earlier. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,342,1429.25,1433.266,_Now, it's useful to further understand whether _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,343,1433.266,1437.863,the Naive Bayes scoring function actually makes sense. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,344,1437.863,1443.755,_So to understand that, and also to understand why adding a background model _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,345,1443.755,1450.029,will actually achieve the effect of IDF weighting and to penalize common words. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,346,1450.029,1453.669,So suppose we have just two categories and 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,347,1453.669,1459.395,_we're going to score based on their ratio of probability, right? _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,348,1459.395,1461.647,So this is the. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,349,1464.563,1469.723,Lets say this is our scoring function for 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,350,1469.723,1473.0720000000001,_two categories, right? _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,351,1473.0720000000001,1480.1,_So, this is a score of a document for these two categories. _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,352,1480.1,1484.409,And we're going to score based on this probability ratio. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,353,1484.409,1487.196,_So if the ratio is larger, _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,354,1487.196,1492.907,then it means it's more likely to be in category one. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,355,1492.907,1497.779,So the larger the score is the more likely 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,356,1497.779,1501.8,the document is in category one. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,357,1501.8,1503.81,_So by using Bayes' rule, _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,358,1503.81,1508.15,_we can write down this ratio as follows, and you have seen this before. _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,359,1509.19,1515.92,_Now, we generally take logarithm of this ratio, and to avoid small probabilities. _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,360,1515.92,1521.45,And this would then give us this formula in the second line. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,361,1521.45,1523.52,_And here we see something really interesting, _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,362,1523.52,1528.3,because this is our scoring function for deciding between the two categories. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,363,1530.28,1534.718,_And if you look at this function, we'll see it has several parts. _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,364,1534.718,1538.86,The first part here is actually log of probability ratio. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,365,1538.86,1540.409,And so this is a category bias. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,366,1541.87,1543.74,It doesn't really depend on the document. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,367,1543.74,1548.78,It just says which category is more likely and then we would then favor 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,368,1548.78,1553.24,_this category slightly, right? _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,369,1553.24,1558.114,_So, the second part has a sum of all the words, right? _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,370,1558.114,1563.59,_So, these are the words that are observed in the document but _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,371,1563.59,1566.51,in general we can consider all the words in the vocabulary. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,372,1566.51,1568.96,So here we're going to collect the evidence 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,373,1568.96,1572.28,_about which category is more likely, right? _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,374,1572.28,1576.92,So inside of the sum you can see there is product of two things. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,375,1576.92,1579.056,_The first, is a count of the word. _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,376,1579.056,1585.66,And this count of the word serves as a feature to represent the document. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,377,1587.08,1590.39,And this is what we can collect from document. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,378,1590.39,1593.645,_The second part is the weight of this feature, _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,379,1593.645,1597.236,_here it's the weight on which word, right? _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,380,1597.236,1602.5,This weight tells us to what extent observing 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,381,1602.5,1607.487,this word helps contribute in our decision 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,382,1607.487,1611.93,to put this document in category one. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,383,1611.93,1614.495,_Now remember, the higher the scoring function is, _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,384,1614.495,1616.426,the more likely it's in category one. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,385,1616.426,1621.493,_Now if you look at this ratio, basically, sorry this weight it's basically based _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,386,1621.493,1626.025,on the ratio of the probability of the word from each of the two distributions. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,387,1626.025,1629.492,Essentially we're comparing the probability of the word from the two 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,388,1629.492,1631.08,distributions. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,389,1631.08,1634.78,_And if it's a higher according to theta 1, _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,390,1634.78,1640.289,_then according to theta 2, then this weight would be positive. _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,391,1640.289,1643.86,_And therefore it means when we observe such a word, _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,392,1643.86,1647.94,we will say that it's more likely to be from category one. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,393,1647.94,1650.237,_And the more we observe such a word, _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,394,1650.237,1654.155,the more likely the document will be classified as theta 1. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,395,1655.21,1658.94,_If, on the other hand, the probability of the word from _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,396,1658.94,1662.72,_theta 1 is smaller than the probability of the word from theta 2, _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,397,1662.72,1665.22,then you can see that this word is negative. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,398,1665.22,1671.39,_Therefore, this is negative evidence for supporting category one. _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,399,1671.39,1674.01,_That means the more we observe such a word, _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,400,1674.01,1676.587,the more likely the document is actually from theta 2. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,401,1678.27,1681.35,_So this formula now makes a little sense, right? _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,402,1681.35,1685.05,_So we're going to aggregate all the evidence from the document, _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,403,1685.05,1687.01,we take a sum of all the words. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,404,1687.01,1689.82,We can call this the features 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,405,1689.82,1693.53,that we collected from the document that would help us make the decision. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,406,1693.53,1698.55,And then each feature has a weight that tells us how 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,407,1699.66,1704.815,does this feature support category one or just support category two. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,408,1704.815,1710.465,And this is estimated as the log of probability ratio here in naïve Bayes. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,409,1712.315,1715.565,And then finally we have this constant of bias here. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,410,1715.565,1719.555,So that formula actually is a formula that can 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,411,1719.555,1723.862,be generalized to accommodate more features and 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,412,1723.862,1728.704,that's why I have introduce some other symbols here. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,413,1728.704,1734.546,To introduce beta 0 to denote the Bayes and fi to denote the each feature and 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,414,1734.546,1738.269,beta sub i to denote the weight on each feature. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,415,1738.269,1743.154,_Now we do this generalisation, what we see is that in _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,416,1743.154,1748.815,_general we can represent the document by feature vector fi, _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,417,1748.815,1753.96,here of course in this case fi is the count of a word. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,418,1753.96,1757.7,_But in general, we can put any features that we think are relevant for _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,419,1757.7,1758.76,categorization. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,420,1758.76,1760.65,_For example, document length or _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,421,1760.65,1765.72,font size or count of other patterns in the document. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,422,1767.31,1775.12,And then our scoring function can be defined as a sum of a constant beta 0 and 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,423,1775.12,1780.43,the sum of the feature weights of all the features. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,424,1782.156,1786.89,So if each f sub i is a feature value then we multiply the value 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,425,1786.89,1791.14,_by the corresponding weight, beta sub i, and we just take the sum. _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,426,1791.14,1794.86,And this is the aggregate of all evidence that we can collect from all these 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,427,1794.86,1796.36,features. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,428,1796.36,1797.96,And of course there are parameters here. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,429,1797.96,1799.06,So what are the parameters? 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,430,1799.06,1800.51,_Well, these are the betas. _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,431,1800.51,1802.69,These betas are weights. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,432,1802.69,1807.04,_And with a proper setting of the weights, then we can expect such a scoring function _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,433,1807.04,1813.47,_to work well to classify documents, just like in the case of naive Bayes. _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,434,1813.47,1816.77,We can clearly see naive Bayes classifier as a special case of 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,435,1816.77,1818.76,this general classifier. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,436,1818.76,1823.94,_Actually, this general form is very close to a classifier called a logistical _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,437,1823.94,1828.8,_regression, and this is actually one of those conditional approaches or _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,438,1828.8,1831.21,discriminative approaches to classification. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,439,1832.34,1836.98,_And we're going to talk more about such approaches later, but _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,440,1836.98,1840.6,_here I want you to note that there is a strong connection, _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,441,1840.6,1844.35,a close connection between the two kinds of approaches. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,442,1844.35,1848.93,And this slide shows how naive Bayes classifier can be connected to 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,443,1848.93,1850.663,a logistic regression. 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,444,1850.663,1855.692,And you can also see that in discriminative classifiers 
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,445,1855.692,1860.079,_that tend to use more general form on the bottom, _
+4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).srt,446,1860.079,1865.116,we can accommodate more features to solve the problem. 

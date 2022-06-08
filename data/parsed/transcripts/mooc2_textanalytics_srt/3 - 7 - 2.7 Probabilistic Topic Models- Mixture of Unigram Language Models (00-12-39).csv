@@ -1,0 +1,188 @@
+name,id,from,to,text
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,1,0.171,4.19,[MUSIC] 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,2,6.708,10.47,This lecture is about the mixture of unigram language models. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,3,11.9,16.28,In this lecture we will continue discussing probabilistic topic models. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,4,16.28,20.95,_In particular, what we introduce a mixture of unigram language models. _
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,5,20.95,24.23,This is a slide that you have seen earlier. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,6,24.23,29.189,Where we talked about how to get rid of the background 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,7,29.189,34.271,words that we have on top of for one document. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,8,36.54,38.44,_So if you want to solve the problem, _
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,9,38.44,44.09,it would be useful to think about why we end up having this problem. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,10,44.09,49.57,_Well, this obviously because these words are very frequent in our data and _
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,11,49.57,52.73,we are using a maximum likelihood to estimate. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,12,52.73,56.17,Then the estimate obviously would have to assign high probability for 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,13,56.17,59.284,these words in order to maximize the likelihood. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,14,59.284,63.39,_So, in order to get rid of them that would mean we'd have to do something _
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,15,63.39,64.03,differently here. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,16,65.74,69.28999999999999,In particular we'll have to say this distribution 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,17,69.28999999999999,72.3,doesn't have to explain all the words in the tax data. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,18,72.3,73.62,_What were going to say is that, _
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,19,73.62,79.76,these common words should not be explained by this distribution. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,20,79.76,85.75,So one natural way to solve the problem is to think about using another distribution 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,21,85.75,89.35,to account for just these common words. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,22,89.35,93.94,_This way, the two distributions can be mixed together to generate the text data. _
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,23,93.94,98.39,And we'll let the other model which we'll call background topic model 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,24,98.39,100.7,to generate the common words. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,25,100.7,107.03999999999999,This way our target topic theta here will be only generating 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,26,107.03999999999999,111.439,the common handle words that are characterised the content of the document. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,27,112.88,114.31,_So, how does this work? _
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,28,114.31,118.21000000000001,_Well, it is just a small modification of the previous setup _
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,29,118.21000000000001,121.05,where we have just one distribution. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,30,121.05,122.87,_Since we now have two distributions, _
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,31,122.87,127.81,we have to decide which distribution to use when we generate the word. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,32,127.81,132.67,Each word will still be a sample from one of the two distributions. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,33,133.73,136.94,Text data is still generating the same way. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,34,136.94,140.77,_Namely, look at the generating of the one word at each time and _
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,35,140.77,143.3,eventually we generate a lot of words. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,36,143.3,144.84,_When we generate the word, _
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,37,144.84,149.82,_however, we're going to first decide which of the two distributions to use. _
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,38,149.82,154.91,_And this is controlled by another probability, the probability of _
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,39,154.91,159.639,theta sub d and the probability of theta sub B here. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,40,161.85,167.17000000000002,So this is a probability of enacting the topic word of distribution. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,41,167.17000000000002,171.15,This is the probability of enacting the background word 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,42,172.15,174.5,of distribution denoted by theta sub B. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,43,175.5,179.89,On this case I just give example where we can set both to 0.5. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,44,179.89,183.8,_So you're going to basically flip a coin, a fair coin, _
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,45,183.8,185.74,to decide what you want to use. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,46,185.74,189.85,But in general these probabilities don't have to be equal. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,47,189.85,195.59,So you might bias toward using one topic more than the other. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,48,195.59,199.96,So now the process of generating a word would be to first we flip a coin. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,49,199.96,206.5,Based on these probabilities choosing each model and if let's say the coin 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,50,206.5,211.92000000000002,_shows up as head, which means we're going to use the topic two word distribution. _
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,51,211.92000000000002,217.62,Then we're going to use this word distribution to generate a word. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,52,217.62,220.649,Otherwise we might be going slow this path. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,53,221.68,225.53,And we're going to use the background word distribution to generate a word. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,54,226.91,231.32999999999998,_So in such a case, we have a model that has some uncertainty _
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,55,231.32999999999998,234.63,associated with the use of a word distribution. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,56,234.63,239.42000000000002,But we can still think of this as a model for generating text data. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,57,239.42000000000002,241.22,And such a model is called a mixture model. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,58,242.76,243.86,So now let's see. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,59,243.86,247.02,_In this case, what's the probability of observing a word w? _
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,60,247.02,250.46,Now here I showed some words. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,61,250.46,252.28,like "the" and "text". 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,62,252.28,253.82,_So as in all cases, _
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,63,253.82,257.91,once we setup a model we are interested in computing the likelihood function. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,64,257.91,259.55,_The basic question is, so _
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,65,259.55,263.04,what's the probability of observing a specific word here? 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,66,263.04,267.87,_Now we know that the word can be observed from each of the two distributions, so _
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,67,267.87,269.84,we have to consider two cases. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,68,269.84,272.65999999999997,Therefore it's a sum over these two cases. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,69,274.40999999999997,280.04,The first case is to use the topic for the distribution to generate the word. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,70,280.04,286.15,_And in such a case then the probably would be theta sub d, _
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,71,286.15,288.55,which is the probability of choosing the model 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,72,288.55,293.76,multiplied by the probability of actually observing the word from that model. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,73,293.76,296.97,Both events must happen in order to observe. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,74,296.97,302.05,_We first must have choosing the topic theta sub d and then, _
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,75,302.05,307.65,we also have to actually have sampled the word the from the distribution. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,76,307.65,311.1,_And similarly, the second part accounts for _
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,77,311.1,313.88,a different way of generally the word from the background. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,78,315.19,320.97,_Now obviously the probability of text the same is all similar, right? _
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,79,320.97,325.04,So we also can see the two ways of generating the text. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,80,325.04,329.72,_And in each case, it's a product of the probability of choosing a particular word _
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,81,329.72,334.53,is multiplied by the probability of observing the word from that distribution. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,82,335.64,338.89,_Now whether you will see, this is actually a general form. _
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,83,338.89,343.94,So might want to make sure that you have really understood this expression here. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,84,343.94,348.13,And you should convince yourself that this is indeed the probability of 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,85,348.13,349.94,obsolete text. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,86,349.94,352.01,So to summarize what we observed here. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,87,352.01,357.27,The probability of a word from a mixture model is a general sum 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,88,357.27,359.5,of different ways of generating the word. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,89,360.61,361.99,_In each case, _
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,90,361.99,367.898,it's a product of the probability of selecting that component model. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,91,367.898,372.32,Multiplied by the probability of actually observing the data point 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,92,372.32,374.01,from that component of the model. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,93,374.01,380.94,And this is something quite general and you will see this occurring often later. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,94,380.94,383.825,So the basic idea of a mixture model is just to retrieve 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,95,383.825,388.82,thesetwo distributions together as one model. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,96,388.82,392.81,So I used a box to bring all these components together. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,97,392.81,396.2,_So if you view this whole box as one model, _
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,98,396.2,398.61,it's just like any other generative model. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,99,398.61,401.26,It would just give us the probability of a word. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,100,402.85,407.31,But the way that determines this probability is quite the different from 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,101,407.31,408.84000000000003,when we have just one distribution. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,102,410.05,414.71,And this is basically a more complicated mixture model. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,103,414.71,417.71,So the more complicated is more than just one distribution. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,104,417.71,418.74,And it's called a mixture model. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,105,420.46,424.45,So as I just said we can treat this as a generative model. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,106,424.45,428.45,And it's often useful to think of just as a likelihood function. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,107,428.45,430.14,_The illustration that you have seen before, _
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,108,430.14,434.21,_which is dimmer now, is just the illustration of this generated model. _
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,109,434.21,438.39,_So mathematically, this model is nothing but _
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,110,438.39,441.69,to just define the following generative model. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,111,441.69,445.82,Where the probability of a word is assumed to be a sum over two cases 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,112,446.84,448.83,of generating the word. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,113,448.83,452.8,And the form you are seeing now is a more general form that 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,114,452.8,456.68,what you have seen in the calculation earlier. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,115,456.68,461.15,Well I just use the symbol w to denote any water but 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,116,461.15,466.33,you can still see this is basically first a sum. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,117,466.33,467.56,Right? 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,118,467.56,473.08,_And this sum is due to the fact that the water can be generated in much more ways, _
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,119,473.08,475.07,two ways in this case. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,120,475.07,480.33,_And inside a sum, each term is a product of two terms. _
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,121,480.33,485.72,And the two terms are first the probability of selecting a component 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,122,485.72,487.28,_like of D Second, _
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,123,487.28,492.73,the probability of actually observing the word from this component of the model. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,124,492.73,498.77,So this is a very general description of all the mixture models. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,125,498.77,503.02,I just want to make sure that you understand 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,126,503.02,507.154,this because this is really the basis for understanding all kinds of on top models. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,127,508.48,511.35,So now once we setup model. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,128,511.35,514.31,We can write down that like functioning as we see here. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,129,514.31,517.72,_The next question is, how can we estimate the parameter, _
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,130,517.72,520.08,or what to do with the parameters. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,131,520.08,521.54,Given the data. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,132,521.54,522.86,_Well, in general, _
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,133,522.86,527.41,we can use some of the text data to estimate the model parameters. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,134,527.41,530.47,And this estimation would allow us to 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,135,530.47,535.35,discover the interesting knowledge about the text. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,136,535.35,538.45,_So you, in this case, what do we discover? _
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,137,538.45,541.12,_Well, these are presented by our parameters and _
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,138,541.12,543.32,we will have two kinds of parameters. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,139,543.32,547.4,_One is the two worded distributions, that result in topics, and _
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,140,547.4,550.38,the other is the coverage of each topic in each. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,141,552.56,554.34,The coverage of each topic. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,142,554.34,557.63,And this is determined by probability of C less of D and 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,143,557.63,562.31,_probability of theta, so this is to one. _
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,144,562.31,565.04,_Now, what's interesting is also to think about special _
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,145,565.04,569.54,cases like when we send one of them to want what would happen? 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,146,569.54,572.77,_Well with the other, with the zero right? _
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,147,572.77,575.15,_And if you look at the likelihood function, _
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,148,576.32,580.64,it will then degenerate to the special case of just one distribution. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,149,580.64,586.29,Okay so you can easily verify that by assuming one of these two is 1.0 and 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,150,586.29,587.94,the other is Zero. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,151,589.13,593.29,_So in this sense, the mixture model is more general than _
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,152,593.29,596.49,the previous model where we have just one distribution. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,153,596.49,598.74,It can cover that as a special case. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,154,599.96,605.34,_So to summarize, we talked about the mixture of two Unigram Language Models and _
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,155,605.34,609.11,the data we're considering here is just One document. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,156,609.11,613.42,_And the model is a mixture model with two components, _
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,157,613.42,616.83,_two unigram LM models, specifically theta sub d, _
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,158,616.83,622.81,_which is intended to denote the topic of document d, and theta sub B, which is _
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,159,622.81,628.5,representing a background topic that we can set to attract the common 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,160,628.5,632.84,words because common words would be assigned a high probability in this model. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,161,633.95,636.87,So the parameters can be collectively called 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,162,636.87,640.38,Lambda which I show here you can again 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,163,641.56,645.52,think about the question about how many parameters are we talking about exactly. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,164,645.52,650.92,This is usually a good exercise to do because it allows you to see the model in 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,165,650.92,656.47,depth and to have a complete understanding of what's going on this model. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,166,656.47,658.7,_And we have mixing weights, of course, also. _
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,167,659.79,662.34,So what does a likelihood function look like? 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,168,662.34,666.62,_Well, it looks very similar to what we had before. _
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,169,666.62,669.1,_So for the document, _
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,170,669.1,674.26,first it's a product over all the words in the document exactly the same as before. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,171,674.26,680.2,The only difference is that inside here now it's a sum instead of just one. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,172,680.2,684.42,So you might have recalled before we just had this one there. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,173,685.42,690.61,But now we have this sum because of the mixture model. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,174,690.61,694.8,And because of the mixture model we also have to introduce a probability of 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,175,694.8,697.64,choosing that particular component of distribution. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,176,699.53,704.47,_And so this is just another way of writing, and _
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,177,704.47,709.8,by using a product over all the unique words in our vocabulary instead of 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,178,709.8,712.878,having that product over all the positions in the document. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,179,712.878,717.582,And this form where we look at the different and unique words is 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,180,717.582,724.72,a commutative that formed for computing the maximum likelihood estimate later. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,181,724.72,729.965,_And the maximum likelihood estimator is, as usual, _
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,182,729.965,735.29,just to find the parameters that would maximize the likelihood function. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,183,735.29,738.94,And the constraints here are of course two kinds. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,184,738.94,744.125,One is what are probabilities in each 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,185,744.125,749.142,[INAUDIBLE] must sum to 1 the other is 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,186,749.142,755.343,the choice of each [INAUDIBLE] must sum to 1. 
+3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).srt,187,755.343,759.799,[MUSIC] 

@@ -1,0 +1,143 @@
+name,id,from,to,text
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,1,0.266,9.956,_[SOUND] So, _
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,2,9.956,14.85,_looking at the text mining problem more closely, we see that the problem is _
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,3,14.85,20.3,_similar to general data mining, except that we'll be focusing more on text data. _
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,4,21.71,26.4,And we're going to have text mining algorithms to help us to turn text data 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,5,26.4,32.24,_into actionable knowledge that we can use in real world, _
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,6,32.24,34.13,_especially for decision making, or _
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,7,34.13,39.35,for completing whatever tasks that require text data to support. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,8,39.35,45.0,_Because, in general, in many real world problems of data mining _
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,9,45.0,49.72,we also tend to have other kinds of data that are non-textual. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,10,49.72,54.95,So a more general picture would be to include non-text data as well. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,11,56.0,60.875,And for this reason we might be concerned with joint mining of text and 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,12,60.875,62.06,non-text data. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,13,62.06,65.86,_And so in this course we're going to focus more on text mining, _
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,14,65.86,70.628,but we're also going to also touch how do to joint analysis of both text data and 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,15,70.628,72.45,non-text data. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,16,72.45,76.63,With this problem definition we can now look at the landscape of 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,17,76.63,79.419,the topics in text mining and analytics. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,18,81.01,85.77,Now this slide shows the process of generating text data in more detail. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,19,87.018,89.8,_More specifically, a human sensor or _
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,20,89.8,93.42,human observer would look at the word from some perspective. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,21,94.66,98.82,Different people would be looking at the world from different angles and 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,22,98.82,101.21000000000001,they'll pay attention to different things. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,23,101.21000000000001,106.09,The same person at different times might also pay attention to different aspects 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,24,106.09,110.99000000000001,of the observed world. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,25,110.99000000000001,115.45,And so the humans are able to perceive the world from some perspective. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,26,115.45,121.48,_And that human, the sensor, would then form a view of the world. _
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,27,121.48,125.15,And that can be called the Observed World. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,28,125.15,130.04,_Of course, this would be different from the Real World because of the perspective _
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,29,130.04,134.83,that the person has taken can often be biased also. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,30,136.84,142.642,_Now the Observed World can be represented as, for example, _
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,31,142.642,147.535,_entity-relation graphs or in a more general way, _
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,32,147.535,151.89,using knowledge representation language. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,33,151.89,159.19,_But in general, this is basically what a person has in mind about the world. _
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,34,159.19,163.8,_And we don't really know what exactly it looks like, of course. _
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,35,163.8,168.25,But then the human would express what the person has 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,36,168.25,172.92000000000002,_observed using a natural language, such as English. _
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,37,172.92000000000002,174.76,And the result is text data. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,38,175.87,180.61,Of course a person could have used a different language to express what he or 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,39,180.61,182.66,she has observed. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,40,182.66,188.22,In that case we might have text data of mixed languages or different languages. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,41,190.59,195.79,The main goal of text mining Is actually to revert this 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,42,195.79,199.28,process of generating text data. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,43,199.28,204.48,We hope to be able to uncover some aspect in this process. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,44,208.34,214.48,_Specifically, we can think about mining, for example, knowledge about the language. _
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,45,215.56,220.13,_And that means by looking at text data in English, we may be able to discover _
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,46,220.13,226.31,_something about English, some usage of English, some patterns of English. _
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,47,227.78,232.34,_So this is one type of mining problems, where the result is _
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,48,232.34,237.1,some knowledge about language which may be useful in various ways. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,49,238.92000000000002,240.62,_If you look at the picture, _
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,50,240.62,246.38,we can also then mine knowledge about the observed world. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,51,246.38,250.03,And so this has much to do with mining the content of text data. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,52,251.49,255.64,_We're going to look at what the text data are about, and then try to _
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,53,255.64,260.82,get the essence of it or extracting high quality information 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,54,260.82,265.6,about a particular aspect of the world that we're interested in. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,55,266.9,270.89,_For example, everything that has been said about a particular person or _
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,56,270.89,271.63,a particular entity. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,57,271.63,276.55,And this can be regarded as mining content 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,58,276.55,283.33,to describe the observed world in the user's mind or the person's mind. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,59,285.02,290.06,_If you look further, then you can also imagine _
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,60,290.06,294.71,_we can mine knowledge about this observer, himself or herself. _
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,61,294.71,300.63,So this has also to do with using text data to infer 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,62,300.63,302.27,some properties of this person. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,63,303.38,307.41,And these properties could include the mood of the person or 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,64,307.41,309.01,sentiment of the person. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,65,310.2,315.25,And note that we distinguish the observed word from the person 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,66,315.25,321.04,because text data can't describe what the person has observed in an objective way. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,67,321.04,325.96,_But the description can be also subjected with sentiment and so, _
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,68,325.96,330.28,_in general, you can imagine the text data would contain some factual _
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,69,330.28,334.77,descriptions of the world plus some subjective comments. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,70,334.77,337.33,So that's why it's also possible to 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,71,337.33,341.97,do text mining to mine knowledge about the observer. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,72,341.97,345.98,_Finally, if you look at the picture to the left side of this picture, _
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,73,345.98,350.15,then you can see we can certainly also say something about the real world. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,74,350.15,350.88,Right? 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,75,350.88,356.86,So indeed we can do text mining to infer other real world variables. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,76,356.86,359.22,And this is often called a predictive analytics. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,77,360.6,364.0,And we want to predict the value of certain interesting variable. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,78,364.0,368.935,_So, this picture basically covered _
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,79,368.935,373.44,multiple types of knowledge that we can mine from text in general. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,80,374.55,379.26,When we infer other real world variables we 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,81,379.26,384.99,could also use some of the results from 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,82,384.99,390.91,mining text data as intermediate results to help the prediction. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,83,390.91,391.94,_For example, _
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,84,391.94,398.05,after we mine the content of text data we might generate some summary of content. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,85,398.05,401.19,And that summary could be then used 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,86,401.19,405.003,to help us predict the variables of the real world. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,87,405.003,411.94,_Now of course this is still generated from the original text data, _
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,88,411.94,418.40999999999997,but I want to emphasize here that often the processing of text data 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,89,418.40999999999997,423.78,to generate some features that can help with the prediction is very important. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,90,424.96,430.1,And that's why here we show the results of 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,91,430.1,435.01,_some other mining tasks, including mining the content of text data and _
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,92,435.01,439.52,_mining knowledge about the observer, can all be very helpful for prediction. _
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,93,441.38,446.69,_In fact, when we have non-text data, we could also use the non-text _
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,94,446.69,451.496,_data to help prediction, and of course it depends on the problem. _
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,95,451.496,459.26,_In general, non-text data can be very important for such prediction tasks. _
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,96,459.26,464.53,_For example, if you want to predict stock prices or _
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,97,464.53,469.87,changes of stock prices based on discussion in the news articles or 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,98,469.87,473.73,_in social media, then this is an example _
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,99,473.73,478.52,of using text data to predict some other real world variables. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,100,478.52,479.95,_But in this case, obviously, _
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,101,479.95,484.48,the historical stock price data would be very important for this prediction. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,102,484.48,489.633,And so that's an example of non-text data that would be very 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,103,489.633,493.75,useful for the prediction. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,104,493.75,497.161,And we're going to combine both kinds of data to make the prediction. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,105,497.161,504.51,Now non-text data can be also used for analyzing text by supplying context. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,106,505.58,507.05,_When we look at the text data alone, _
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,107,507.05,511.77,we'll be mostly looking at the content and/or opinions expressed in the text. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,108,512.79,516.149,But text data generally also has context associated. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,109,517.47,524.15,_For example, the time and the location that associated are with the text data. _
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,110,524.15,527.5,And these are useful context information. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,111,528.74,534.02,And the context can provide interesting angles for analyzing text data. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,112,534.02,537.98,_For example, we might partition text data into different time periods _
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,113,537.98,540.68,because of the availability of the time. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,114,540.68,546.48,Now we can analyze text data in each time period and then make a comparison. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,115,546.48,549.97,Similarly we can partition text data based on locations or 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,116,549.97,555.92,any meta data that's associated to form interesting comparisons in areas. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,117,555.92,560.98,_So, in this sense, non-text data can actually provide _
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,118,560.98,564.58,interesting angles or perspectives for text data analysis. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,119,564.58,569.34,And it can help us make context-sensitive 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,120,569.34,573.68,analysis of content or the language usage or 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,121,576.39,582.92,the opinions about the observer or the authors of text data. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,122,582.92,586.92,We could analyze the sentiment in different contexts. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,123,586.92,594.5,So this is a fairly general landscape of the topics in text mining and analytics. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,124,594.5,599.85,In this course we're going to selectively cover some of those topics. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,125,599.85,603.796,We actually hope to cover most of these general topics. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,126,606.675,611.321,First we're going to cover natural language processing very 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,127,611.321,616.053,briefly because this has to do with understanding text data and 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,128,616.053,621.58,this determines how we can represent text data for text mining. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,129,621.58,627.87,_Second, we're going to talk about how to mine word associations from text data. _
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,130,627.87,634.34,And word associations is a form of use for lexical knowledge about a language. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,131,634.34,638.34,_Third, we're going to talk about topic mining and analysis. _
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,132,638.34,643.19,_And this is only one way to analyze content of text, but _
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,133,643.19,646.1,it's a very useful ways of analyzing content. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,134,646.1,651.4,It's also one of the most useful techniques in text mining. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,135,653.75,659.51,Then we're going to talk about opinion mining and sentiment analysis. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,136,659.51,665.25,So this can be regarded as one example of mining knowledge about the observer. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,137,667.14,671.51,And finally we're going to cover text-based prediction 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,138,671.51,676.02,problems where we try to predict some real world variable based on text data. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,139,677.4,684.88,So this slide also serves as a road map for this course. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,140,684.88,687.554,And we're going to use this as an outline for 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,141,687.554,690.962,the topics that we'll cover in the rest of this course. 
+2 - 2 - 1.2 Overview Text Mining and Analytics- Part 2 (00-11-44).srt,142,690.962,700.962,[MUSIC] 

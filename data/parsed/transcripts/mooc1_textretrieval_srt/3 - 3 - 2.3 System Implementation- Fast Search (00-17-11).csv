@@ -1,0 +1,226 @@
+name,id,from,to,text
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,1,0.0,2.885,[SOUND]. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,2,6.445,12.482,This lecture is about how to do fast research by using inverted index. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,3,12.482,13.682,_In this lecture, _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,4,13.682,18.49,we are going to continue the discussion of the system implementation. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,5,19.78,21.791,_In particular, we're going to talk about, _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,6,21.791,24.664,to how to support a faster search by using inverted index. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,7,27.2,31.48,_So, let's think about what a general scoring function might look like. _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,8,32.72,37.01,_Now, of curse the vector space model is a special case of this. _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,9,37.01,40.83,But we can imagine many other retrieval functions of the same form. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,10,42.39,45.077,_So, the form of this function is as follows. _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,11,45.077,49.736,_We see this scoring function of document d, and _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,12,49.736,56.92,_query q is defined as first, a function of f a that's adjustment in the function. _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,13,56.92,61.876,That what consider two factors that are shown 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,14,61.876,67.77,_here at the end, f sub d of d, and f sub q of q. _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,15,67.77,74.26,_These are adjustment factors of a document and query, so _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,16,74.26,79.75,_they're at the level of document, and query. _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,17,79.75,80.45,_So, and _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,18,80.45,85.468,then inside of this function we also see there's a another function called edge. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,19,85.468,92.08,_So, this is the main part of _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,20,92.08,97.375,_the scoring function, and these as I just said _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,21,97.375,104.2,_of the scoring factors at the level of the whole document, and the query. _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,22,104.2,107.398,_For example, document and _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,23,107.398,112.41499999999999,this aggregate function would then combine all these. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,24,112.41499999999999,120.131,_Now, inside this h function, there are functions that would compute _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,25,120.131,125.908,the weights of the contribution of a matched query term t i. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,26,128.665,133.705,_So, this this g, the function g gives us _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,27,133.705,139.426,the weight of a matched query term t i in document d. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,28,142.586,147.587,_And this h function with that aggregate all these weights, so _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,29,147.587,154.859,_it were, for example, take a sum, but it of all the matched query in that terms. _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,30,154.859,159.95,_But it can also be a product, or could be another way of aggregate them. _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,31,161.24,166.13400000000001,_And then finally, this adjustment function would then consider _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,32,166.13400000000001,171.26,_the document level, or query level factors through further adjuster score, _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,33,171.26,174.02,_for example, document lens [INAUDIBLE]. _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,34,174.02,178.96,_So, this general form would cover many state of original functions. _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,35,178.96,182.36,Let's look at how we can score such 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,36,182.36,186.582,score documents with such a function using inverted index. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,37,187.61,190.318,So here's the general algorithm that works as follows. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,38,190.318,193.86599999999999,First these these Query level and 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,39,193.86599999999999,199.49,document level factors can be pre-computed in the indexing term. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,40,199.49,202.51,_Of course, for the query, we have to compute it as a query term. _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,41,202.51,208.16,_But for document, for example, document can be pre-computed. _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,42,208.16,212.86,And then we maintain a score accumulator for each document d to compute the h. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,43,214.71,219.42000000000002,And h is aggregation function of all the matching query terms. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,44,219.42000000000002,220.36,So how do we do that? 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,45,220.36,225.77,_Well, for each query term, we going to do fetch inverted list, _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,46,225.77,227.13,from the inverted index. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,47,227.13,231.32999999999998,_This will give us all the documents that match this query term, _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,48,232.66,237.64,_and that includes d1, f1, and so, d and fn. _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,49,237.64,243.78,So each pair is document id and the frequency of the term in the document. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,50,243.78,247.81,_Then for each entry d sub j and f sub j, _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,51,247.81,252.29,_a particular match of the term in this particular document d sub j, _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,52,252.29,255.69,we're going to computer the function g. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,53,255.69,260.86,_That would give us something like a t of i, ef weights of this term. _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,54,260.86,264.53,_So, we're computing the weight contribution of matching this query term _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,55,264.53,266.17,in this document. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,56,266.17,270.06,And then we're going to update the score accumulator for this document. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,57,271.31,276.6,_And this would allow us to add this to our accumulator, _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,58,276.6,280.3,that would incrementally compute function h. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,59,281.33,286.97,So this is basically a general way to allow sort of computer 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,60,286.97,291.64,_all functions of this form, by using inverted index. _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,61,291.64,294.93,Note that we don't have to attach any document that that 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,62,294.93,298.62,_didn't match any query term, but this is why it's fast. _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,63,298.62,303.69,_We only need to process the documents that tap, that match at least one query term. _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,64,304.76,308.32,_In the end, then we're going to adjust the score to compute a, _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,65,308.32,311.6,this function f of a and then we can sort. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,66,311.6,314.26,So let's take a look at the specific example. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,67,314.26,317.88,_In this, case let's assume the scoring function's a very simple one. _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,68,317.88,325.34,_It just takes us sum of tf, the rule of tf, the count of, of term in the document. _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,69,325.34,331.34,Now this simple equation with the help showing the algorithm clearly. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,70,331.34,336.43,_It's very easy to extend the, the computation to include other weights _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,71,336.43,342.36,like the transformation of TF or document or IDF weighting. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,72,342.36,347.89,_So let's take a look at specific example with the query's information security, _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,73,348.98,354.6,and shows some entries of the inverted index on the right side. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,74,354.6,356.8,Information occurring before documents and 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,75,356.8,361.27,_the frequencies is also there, security is coding three documents. _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,76,361.27,364.04,_So, let's see how the algorithm works, all right? _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,77,364.04,369.07,_So, first we iterate all the query terms, and we fetch the first query then. _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,78,369.07,369.58,What is that? 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,79,369.58,371.38,That's information. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,80,371.38,374.31,_Right? So, and imagine we have all these score _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,81,374.31,379.82,_accumulators to score, score the, score the scores for these documents. _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,82,379.82,381.74,_We can imagine there will be allocated, but _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,83,381.74,384.66,then they will only be allocated as needed. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,84,384.66,392.19,So before we do any weighting of terms we don't even need a score accumulators. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,85,393.27,398.26,_But conceptual we have these score accumulators eventually allocated, right? _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,86,398.26,403.12,_So let's fetch the, the entries from the inverted list for _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,87,403.12,405.14,_information first, that's the first one. _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,88,406.26,410.80899999999997,So these score accumulators obviously would be initialized as zeros. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,89,411.83,413.95,_So the first entry is d1 and 3, _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,90,413.95,418.65,3 is occurrences of information in this document. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,91,418.65,423.91,Since our scoring function assume that the score is just a sum of these raw counts. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,92,423.91,428.32,We just need to add a 3 to the score accumulator to account for 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,93,428.32,434.77,_the increase of score, due to matching this term information, a document d1. _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,94,434.77,438.0,And now we go to the next entry. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,95,438.0,442.46,That's d2 and 4 and then we'll add a 4 to the score accumulator of d2. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,96,442.46,446.35,_Of course, at this point we will allocate the score accumulator as needed. _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,97,447.77,453.49,_And so, at this point, we have located d1 and d2, and the next one is d3. _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,98,453.49,459.56,_And we add 1, or we locate another score coming in the spot d3 and add 1 to it. _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,99,459.56,464.503,_And finally, the d4 gets a 5 because the information _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,100,464.503,470.45,the term information occurred ti in five times in this document. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,101,470.45,474.03499999999997,_Okay, so this completes the processing of all the entries in the, _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,102,474.03499999999997,476.5,inverted index for information. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,103,476.5,480.08,It's processed all the contributions of matching information in this 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,104,480.08,481.83,four documents. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,105,481.83,486.9,_So now our arrows will go to the next query term, that's security. _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,106,486.9,490.799,_So, we're going to factor all the inverted index entries for security. _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,107,490.799,493.41,_So in this case, there were three entries. _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,108,493.41,495.5,And we're going to go through each of them. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,109,495.5,498.32,The first is d2 and 3. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,110,498.32,502.66,_And that means security occurred three times in d2, and what do we do? _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,111,502.66,506.29,_Well, we do exactly the same as what we did for information. _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,112,506.29,508.9,_So this time we're going to do change the score, _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,113,508.9,512.23,accumulating d2 sees it's already allocate. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,114,512.23,518.184,_And what we do is we'll add 3 to the existing value which is a 4, _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,115,518.184,521.495,so we now get the 7 for d2. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,116,521.495,526.519,_D2 sc, score is increased because of the match both information and the security. _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,117,527.85,533.574,_Go to the next step entry, that's d4 and 1, so we've updated the score for _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,118,533.574,539.35,_d4,and again we add 1 to d4, so d4 goes from 5 to 6. _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,119,539.35,541.93,Finally we process d5 and 3. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,120,541.93,546.552,_SInce we have not yet equated a score accumulator d4 to d5, _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,121,546.552,552.5,_at this point, we allocate one, 45 and we're going to add 3 to it. _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,122,552.5,560.45,_So, those scores on the last row are the final scores for these documents. _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,123,560.45,567.08,_If our scoring function is just a, a simple sum of tf values. _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,124,567.08,571.6,_Now what if we actually would like to, to do lands normalization. _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,125,571.6,575.12,Well we can do the normalization at this point for each document. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,126,576.48,580.49,_So to summarize this, all right so you can see we first _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,127,580.49,584.67,_processed the information determine query term information, and _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,128,584.67,589.52,we process all the entries in the inverted index for this term. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,129,589.52,594.72,_Then we process the security, all right, let's think about _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,130,594.72,599.739,the what should be the order of processing here when we consider query terms? 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,131,600.92,602.31,_It might make difference, _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,132,602.31,607.67,especially if we don't want to keep to keep all the score accumulators. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,133,607.67,612.52,Let's say we only want to keep the most promising score accumulators. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,134,612.52,614.96,What do you think it would be a good order to go through? 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,135,615.98,620.66,Would you go would you process a common term first or 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,136,620.66,622.69,would you process a rare term first? 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,137,624.46,630.924,The answer is we should go through we should process the rare term first. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,138,630.924,636.46,_A rare term will match fewer documents and then the score confusion will be higher, _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,139,636.46,639.68,_because the IDF value will be higher and, and _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,140,639.68,645.25,then it allows us to attach the most diplomacy documents first. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,141,645.25,648.83,_So it helps pruning some non promising ones, if we don't need so _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,142,648.83,651.13,many documents to be returned to the user. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,143,652.41,655.84,And so those are heuristics for further improving the accuracy. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,144,655.84,658.64,Here can also see how we can incorporate the idea of weighting. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,145,658.64,659.85,All right. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,146,659.85,663.56,So they can [INAUDIBLE] when we incorporated a one way process each 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,147,663.56,664.7,query term. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,148,664.7,667.7,_When we fetch in word index we can fetch the document frequency, _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,149,667.7,669.99,and then we can compute the IDF. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,150,669.99,676.94,Or maybe perhapsIDF value has already been pre-computed when we index the document. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,151,676.94,682.79,At that time we already computed the IDF value that we can just fetch it. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,152,682.79,686.59,So all these can be down at this time. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,153,686.59,690.64,So that will mean one will process all the entries for information these 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,154,690.64,695.14,_these weights would be adjusted by the same IDF, which is IDF for information. _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,155,696.59,700.55,_So this is the basic idea of using inverted index for faster search, and _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,156,700.55,706.41,works well for all kinds of formulas that are of the general form and this generally 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,157,706.41,711.239,_cov, the general form covers actually most state of the art retrieval functions. _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,158,713.75,718.85,_So there are some tricks to further improve the efficiency ,some general mac _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,159,718.85,722.25,_tech, techniques include caching. _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,160,722.25,727.6,_This is just a to store some results of popular query's, so _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,161,727.6,732.55,that next time when you see the same query you simply return the stored results. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,162,732.55,737.9,_Similarly, you can also score the missed of inverted index in the memory for _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,163,737.9,739.33,popular term. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,164,739.33,742.01,And if the query comes popular you will assume 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,165,742.01,745.62,it will fetch the inverted index for the same term again. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,166,745.62,748.62,So keeping that in the memory would help. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,167,748.62,752.5,And these are general techniques for improving efficiency. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,168,752.5,756.97,We can also only keep the most promising accumulators because a user generally 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,169,756.97,759.55,doesn't want to examine so many documents. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,170,759.55,766.27,We only want to return high quality subset of documents that likely ranked 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,171,767.51,771.85,_on the top, in,in for that purpose we can then prune the accumulators. _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,172,771.85,773.81,We don't have to store all the accumulators. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,173,773.81,778.34,At some point we just keep the highest value accumulators. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,174,780.2,786.68,_Another technique is to do parallel processing, and that's needed for _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,175,786.68,792.0,_really processing such a large data set, like the web data set. _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,176,792.0,795.082,And to scale up to the Web-scale we need to special 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,177,795.082,798.499,to have the special techniques to do parallel processing and 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,178,798.499,801.792,to distribute the storage of files on multiple machines. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,179,805.288,809.694,_So here as a, here is a list of some text retrieval toolkits. _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,180,809.694,811.86,_It's, it's not a complete list. _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,181,811.86,816.15,You can find the more information at this URL on the bottom. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,182,817.38,822.33,_Here I listed four here, lucene is one of the most popular toolkit _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,183,822.33,825.44,that can support a lot of applications. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,184,825.44,828.356,And it has very nice support for applications. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,185,828.356,831.713,_You can use it to build a search engine very quickly, _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,186,831.713,835.678,_the downside is that it's not that easy to extend it, and _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,187,835.678,840.442,the algorithms incremented there are not the most advanced algorithms. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,188,840.442,843.745,Lemur or Indri is another toolkit that 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,189,843.745,848.533,that does not have such a nice support application as Lucene. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,190,848.533,852.66,But it has many advanced search algorithms. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,191,852.66,854.46,And it's also easy to extend. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,192,856.41,861.23,Terrier is yet another toolkit that also has good support for 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,193,861.23,865.35,quotation capability and some advanced algorithms. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,194,865.35,872.12,_So that's maybe in between Lemur, or Lucene or _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,195,872.12,878.07,_maybe rather combining the strands of both, so that's also useful toolkit. _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,196,878.07,883.75,_MeTA is the toolkit that we'll use for the programming assignment, _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,197,883.75,888.55,and this is a new toolkit that has a combination 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,198,888.55,894.2,of both text retrieval algorithms and text mining algorithms. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,199,894.2,899.86,_And so, toolkit models are implement, they are, there are a number of text analysis _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,200,899.86,906.72,_algorithms, implemented in the toolkit, as well as basic research algorithms. _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,201,906.72,910.56,_So, to summarize all the discussion about the system implementation, _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,202,911.77,914.875,here are the major take away points. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,203,914.875,920.95,Inverted index is the primary data structure for supporting a search engine. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,204,920.95,925.35,That's the key to enable faster response to a user's query. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,205,926.35,931.9,_And the basic idea is process that, pre-process the data as much as we can, _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,206,931.9,934.89,and we want to do compression when appropriate. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,207,934.89,940.79,So that we can save disk space and can speed up IO and 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,208,940.79,943.24,processing of the inverted index in general. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,209,943.24,947.755,We'll talk about how we will construct the inverted index when the data 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,210,947.755,949.485,can fit into the memory. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,211,949.485,955.355,_And then we talk about faster search using inverted index, basically to exploit _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,212,955.355,959.96,the inverted index to accumulate scores for documents matching a query term. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,213,959.96,963.87,And we exploit Zipf's law avoid touching many documents 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,214,963.87,965.61,that don't match any query term. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,215,967.1,971.82,_And this algorithm can, can support a wide range of ranking algorithms. _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,216,973.39,978.49,_So these basic techniques have mm, have great potential for further scanning _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,217,978.49,983.57,output using distribution to withstand parallel processing and the caching. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,218,983.57,988.34,_Here are two additional readings that you can take a look at if you have time, _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,219,988.34,991.05,and are interested in learning more about this. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,220,991.05,998.928,The first one is a classic textbook on the scare the efficiency of inverted index and 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,221,998.928,1003.877,_the compression techniques, and how to in general, _
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,222,1003.877,1010.14,build a efficient search engine in terms of the space overhead and speed. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,223,1010.14,1014.562,The second one is a newer textbook that has a nice discussion of implementing and 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,224,1014.562,1016.217,evaluating search engines. 
+3 - 3 - 2.3 System Implementation- Fast Search (00-17-11).srt,225,1016.217,1026.217,[MUSIC] 

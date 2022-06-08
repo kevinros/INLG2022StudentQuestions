@@ -1,0 +1,217 @@
+name,id,from,to,text
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,1,0.217,6.963,[SOUND] This 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,2,6.963,11.48,lecture is about generating probabilistic models for text clustering. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,3,13.86,17.73,_In this lecture, we're going to continue discussing text clustering, and _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,4,17.73,21.74,we're going to introduce generating probabilistic models 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,5,21.74,25.77,as a way to do text clustering. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,6,25.77,30.72,So this is the overall plan for covering text clustering. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,7,30.72,34.893,_In the previous lecture, we have talked about what is text clustering and _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,8,34.893,37.062,why text clustering is interesting. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,9,37.062,40.607,_In this lecture, we're going to talk about how to do text clustering. _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,10,40.607,44.707,_In general, as you see on this slide, there are two kinds of approaches. _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,11,44.707,49.66,_One is generating probabilistic models, which is the topic of this lecture. _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,12,49.66,52.259,_And later, we'll also discuss similarity-based approaches. _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,13,53.84,58.53,_So to talk about generating models for text clustering, _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,14,58.53,63.46,it would be useful to revisit the topic mining problem 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,15,63.46,68.9,_using topic models, because the two problems are very similar. _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,16,68.9,75.089,This is a slide that you have seen earlier in the lecture on topic model. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,17,75.089,79.827,Here we show that we have input of a text collection C and 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,18,79.827,83.334,_a number of topics k, and vocabulary V. _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,19,83.334,87.76,And we hope to generate as output two things. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,20,87.76,91.47800000000001,_One is a set of topics denoted by Theta i's, _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,21,91.47800000000001,95.75,each is awarded distribution and the other is pi i j. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,22,95.75,102.12,These are the probabilities that each document covers each topic. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,23,102.12,107.19,So this is a topic coverage and it's also visualized here on this slide. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,24,107.19,111.279,You can see that this is what we can get by using a topic model. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,25,111.279,118.101,_Now, the main difference between this and the text clustering problem is that here, _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,26,118.101,122.758,a document is assumed to possibly cover multiple topics. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,27,122.758,127.946,_And indeed, in general, a document will be covering _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,28,127.946,132.802,more than one topic with nonzero probabilities. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,29,132.802,137.624,_In text clustering, however, we only allow a document _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,30,137.624,142.46,_to cover one topic, if we assume one topic is a cluster. _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,31,144.27,150.61,So that means if we change the problem definition just slightly by 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,32,150.61,155.8,assuming that each document that can only be generated by using precisely one topic. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,33,157.2,161.987,Then we'll have a definition of the clustering problem as you'll hear. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,34,161.987,164.43099999999998,So here the output is changed so 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,35,164.43099999999998,169.703,that we no longer have the detailed coverage distributions pi i j. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,36,169.703,175.084,_But instead, we're going to have a cluster assignment decisions, Ci. _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,37,175.084,182.015,And Ci is a decision for the document i. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,38,182.015,186.943,And C sub i is going to take a value from 1 through k to indicate one of 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,39,186.943,188.18,the k clusters. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,40,189.23,195.766,And basically tells us that d i is in which cluster. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,41,195.766,201.772,_As illustrated here, we no longer have multiple topics covered in each document. _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,42,201.772,203.862,It is precisely one topic. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,43,203.862,207.32999999999998,Although which topic is still uncertain. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,44,207.32999999999998,208.95,There is also a connection with 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,45,209.98,214.8,the problem of mining one topic that we discussed earlier. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,46,214.8,218.98,_So here again, it's a slide that you have seen before and _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,47,218.98,223.13,here we hope to estimate a topic model or 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,48,223.13,227.145,distribution based on precisely one document. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,49,227.145,231.065,_And that's when we assume that this document, it covers precisely one topic. _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,50,232.95499999999998,235.585,But we can also consider some variations of the problem. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,51,235.585,239.0,_For example, we can consider there are N documents, _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,52,239.0,244.41,_each covers a different topic, so that's N documents, and topics. _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,53,244.41,247.232,_Of course, in this case, these documents are independent, _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,54,247.232,249.09,and these topics are also independent. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,55,249.09,253.811,_But, we can further allow these documents with share topics, and _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,56,253.811,258.869,we can also assume that we are going to assume there are fewer topics than 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,57,258.869,263.862,_the number of documents, so these documents must share some topics. _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,58,263.862,267.243,_And if we have N documents that share k topics, _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,59,267.243,272.29,then we'll again have precisely the document clustering problem. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,60,274.35,277.43,_So because of these connections, naturally we can think about how to _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,61,277.43,281.31,use a probabilistically generative model to solve the problem of text clustering. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,62,283.45,287.64,So the question now is what generative model can be used to do clustering? 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,63,289.7,294.96,_As in all cases of designing a generative model, we hope the generative model would _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,64,294.96,300.008,adopt the output that we hope to generate or the structure that we hope to model. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,65,300.008,304.071,_So in this case, this is a clustering structure, _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,66,304.071,308.346,the topics and each document that covers one topic. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,67,308.346,315.407,And we hope to embed such preferences in the generative model. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,68,315.407,318.987,_But, if you think about the main difference between this problem and _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,69,318.987,321.407,the topic model that we talked about earlier. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,70,321.407,326.391,And you will see a main requirement is how can we force every 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,71,326.391,330.867,_document to be generated from precisely one topic, _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,72,330.867,334.65,_instead of k topics, as in the topic model? _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,73,335.93,341.63,So let's revisit the topic model again in more detail. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,74,341.63,346.36,So this is a detailed view of a two component mixture model. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,75,346.36,349.92,_When we have k components, it looks similar. _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,76,349.92,352.759,_So here we see that when we generate a document, _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,77,353.86,356.21,we generate each word independent. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,78,357.48,363.969,_And when we generate each word, but first make a choice between these distributions. _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,79,363.969,370.205,We decide to use one of them with probability. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,80,370.205,377.743,So p of theta 1 is the probability of choosing the distribution on the top. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,81,377.743,382.383,Now we first make this decision regarding which distribution should be used to 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,82,382.383,383.587,generate the word. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,83,383.587,387.664,And then we're going to use this distribution to sample a word. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,84,387.664,391.04200000000003,_Now note that in such a generative model, _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,85,391.04200000000003,397.55,the decision on which distribution to use for each word is independent. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,86,397.55,398.82,_So that means, for example, _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,87,398.82,403.173,_the here could have generated from the second distribution, theta 2 _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,88,403.173,408.58,whereas text is more likely generated from the first one on the top. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,89,409.62,415.06,That means the words in the document that could have been generated in general 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,90,415.06,416.649,from multiple distributions. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,91,418.39,422.88,_Now this is not what we want, as we said, for text clustering, for _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,92,422.88,424.09,_document clustering, _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,93,424.09,428.06,where we hoped this document will be generated from precisely one topic. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,94,429.55,432.88,So now that means we need to modify the model. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,95,432.88,433.97,But how? 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,96,433.97,440.17,_Well, let's first think about why this model cannot be used for clustering. _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,97,440.17,443.76,_And as I just said, the reason is because _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,98,443.76,447.89,it has allowed multiple topics to contribute a word to the document. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,99,448.89,453.0,And that causes confusion because we're not going to know which cluster 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,100,453.0,454.38,this document is from. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,101,454.38,457.28,_And it's, more importantly it's violating our assumption _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,102,457.28,461.258,about the partitioning of documents in the clusters. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,103,461.258,465.95,_If we really have one topic to correspond it to one cluster of documents, _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,104,465.95,470.67,then we would have a document that we generate from precisely one topic. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,105,470.67,474.05,That means all the words in the document 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,106,474.05,477.53,must have been generated from precisely one distribution. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,107,477.53,481.95,And this is not true for such a topic model that we're seeing here. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,108,481.95,487.64,And that's why this cannot be used for clustering because it did not ensure 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,109,487.64,492.89,that only one distribution has been used to generate all the words in one document. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,110,495.11,497.18,_So if you realize this problem, _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,111,497.18,502.11,then we can naturally design alternative mixture model for doing clustering. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,112,502.11,504.32,So this is what you're seeing here. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,113,504.32,509.027,And we again have to make a decision regarding which distribution to use 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,114,509.027,513.421,to generate this document because the document could potentially 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,115,513.421,517.592,be generated from any of the k word distributions that we have. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,116,517.592,522.581,_But this time, once we have made a decision to choose one of the topics, _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,117,522.581,527.999,we're going to stay with this regime to generate all the words in the document. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,118,529.768,534.719,_And that means, once we have made a choice of the distribution in _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,119,534.719,539.397,_generating the first word, we're going to go stay with this _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,120,539.397,544.643,distribution in generating all of the other words in the document. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,121,544.643,549.448,_So, in other words, we only make the choice once for, _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,122,549.448,554.671,_basically, we make the decision once for this document and _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,123,554.671,558.754,this state was just to generate all the words. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,124,558.754,562.794,_Similarly if I had choosing the second distribution, theta sub 2 here, _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,125,562.794,564.824,you can see which state was this one. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,126,564.824,567.669,And then generate the entire document of d. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,127,567.669,572.54,_Now, if you compare this picture with the previous one, _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,128,572.54,577.717,you will see the decision of using a particular distribution 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,129,577.717,584.74,_is made just once for this document, in the case of document clustering. _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,130,584.74,586.31,_But in the case of topic model, _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,131,586.31,591.08,we have to make as many decisions as the number of words in the document. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,132,591.08,594.99,_Because for each word, we can make a potentially different decision. _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,133,594.99,597.14,And that's the key difference between the two models. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,134,598.24,601.363,But this is obviously also a mixed model so 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,135,601.363,605.824,we can just group them together as one box to show that this is 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,136,605.824,610.214,the model that will give us a probability of the document. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,137,610.214,611.766,_Now, inside of this model, _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,138,611.766,615.335,there is also this switch of choosing a different distribution. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,139,615.335,618.908,And we don't observe that so that's a mixture model. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,140,618.908,623.324,And of course a main problem in document clustering is to infer which 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,141,623.324,626.81,distribution has been used to generate a document and 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,142,626.81,631.165,that would allow us to recover the cluster identity of a document. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,143,637.518,641.9110000000001,So it will be useful to think about the difference from the topic model as 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,144,641.9110000000001,644.3389999999999,I have also mentioned multiple times. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,145,646.11,652.37,_And there are mainly two differences, _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,146,652.37,655.1,one is the choice of 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,147,656.62,662.315,using that particular distribution is made just once for document clustering. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,148,662.315,668.23,_Whereas in the topic model, it's made it multiple times for different words. _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,149,668.23,672.6,_The second is that word distribution, here, _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,150,672.6,677.8,is going to be used to regenerate all the words for a document. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,151,679.26,683.612,_But, in the case of one distribution doesn't have to _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,152,683.612,686.467,generate all the words in the document. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,153,686.467,691.022,Multiple distribution could have been used to generate the words in the document. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,154,694.322,697.179,_Let's also think about a special case, _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,155,697.179,702.99,when one of the probability of choosing a particular distribution is equal to 1. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,156,702.99,706.75,Now that just means we have no uncertainty now. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,157,706.75,710.842,We just stick with one particular distribution. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,158,710.842,715.189,_Now in that case, clearly, we will see this is no longer mixture model, _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,159,715.189,717.686,because there's no uncertainty here and 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,160,717.686,722.414,we can just use precisely one of the distributions for generating a document. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,161,722.414,727.202,And we're going back to the case of estimating one 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,162,727.202,731.42,order distribution based on one document. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,163,732.88,735.529,So that's a connection that we discussed earlier. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,164,735.529,739.01,Now you can see it more clearly. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,165,739.01,742.667,_So as in all cases of using a generative model to solve a problem, _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,166,742.667,746.48,we first look at data and then think about how to design the model. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,167,746.48,747.72,_But once we design the model, _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,168,747.72,751.64,the next step is to write down the likelihood function. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,169,751.64,755.07,And after that we're going to look at the how to estimate the parameters. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,170,756.35,759.03,_So in this case, what's the likelihood function? _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,171,759.03,763.06,It's going to be very similar to what you have seen before in topic models but 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,172,763.06,763.96,it will be also different. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,173,765.21,769.563,Now if you still recall what the likelihood function looks like in 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,174,769.563,774.515,_then you will realize that in general, the probability of observing a data point from _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,175,774.515,779.01,mixture model is going to be a sum of all the possibilities of generating the data. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,176,780.52,783.68,_In this case, so it's going to be a sum over these k topics, _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,177,783.68,786.97,because every one can be user generated document. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,178,786.97,792.11,_And then inside is the sum you can still recall what the formula looks like, and _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,179,792.11,798.95,it's going to be the product of two probabilities. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,180,798.95,803.45,_One is the probability of choosing the distribution, the other is the probability _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,181,803.45,806.48,of observing a particular datapoint from that distribution. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,182,807.63,813.457,_So if you map this kind of formula to our problem here, _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,183,813.457,816.195,you will see the probability of observing a document d 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,184,817.225,821.997,is basically a sum in this case of two different 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,185,821.997,827.617,distributions because we have a very simplified situation of just two clusters. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,186,827.617,831.657,_And so in this case, you can see it's a sum of two cases. _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,187,831.657,836.461,_In each case, it's indeed the probability of choosing _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,188,836.461,843.6,the distribution either theta 1 or theta 2. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,189,843.6,848.81,_And then, the probability is multiplied by the probability of _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,190,848.81,853.79,observing this document from this particular distribution. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,191,856.43,861.54,And if you further expanded this probability of observing 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,192,861.54,868.1,_the whole document, we see that it's a product of observing each word X sub i. _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,193,868.1,873.11,_And here we made the assumption that each word is generated independently, so _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,194,873.11,876.27,the probability of the whole document is just a product 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,195,876.27,878.69,of the probability of each word in the document. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,196,880.05,884.12,So this form should be very similar to the topic model. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,197,884.12,888.79,_But it's also useful to think about the difference and for that purpose, _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,198,888.79,896.35,I am also copying the probability of topic model of these two components here. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,199,896.35,901.301,_So here you can see the formula looks very similar or in many ways, they are similar. _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,200,902.48,905.06,But there is also some difference. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,201,906.11,909.74,_And in particular, the difference is on the top. _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,202,909.74,914.85,_You see for the mixture model for document clustering, we first take a product, and _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,203,914.85,915.51,then take a sum. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,204,916.61,919.77,And that's corresponding to our assumption of 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,205,919.77,922.68,first make a choice of choosing one distribution and 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,206,922.68,926.32,_then stay with the distribution, it'll generate all the words. _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,207,926.32,929.17,And that's why we have the product inside the sum. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,208,930.88,934.79,The sum corresponds to the choice. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,209,934.79,939.659,_Now, in topic model, we see that the sum is actually inside the product. _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,210,939.659,942.99,And that's because we generated each word independently. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,211,942.99,946.789,_And that's why we have the product outside, but _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,212,946.789,951.602,when we generate each word we have to make a decision regarding 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,213,951.602,956.437,which distribution we use so we have a sum there for each word. 
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,214,956.437,961.306,_But in general, these are all mixture models and _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,215,961.306,966.887,_we can estimate these models by using the Algorithm, _
+4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).srt,216,966.887,969.99,as we will discuss more later. 

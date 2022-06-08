@@ -1,0 +1,179 @@
+name,id,from,to,text
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,1,0.025,7.457,[SOUND]. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,2,7.457,11.8,This lecture is about the syntagmatic relation discovery and mutual information. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,3,13.4,18.196,In this lecture we are going to continue discussing syntagmatic relation discovery. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,4,18.196,20.85,_In particular, we are going to talk about another _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,5,20.85,24.88,_the concept in the information series, we called it mutual information and _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,6,24.88,28.76,how it can be used to discover syntagmatic relations. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,7,28.76,32.88,Before we talked about the problem of conditional entropy and 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,8,32.88,38.014,that is the conditional entropy computed different pairs of words. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,9,38.014,42.6,_It is not really comparable, so that makes it harder with this cover, _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,10,42.6,48.36,strong synagmatic relations globally from corpus. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,11,48.36,53.05,_So now we are going to introduce mutual information, which is another concept _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,12,53.05,57.37,_in the information series that allows us to, sometimes, _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,13,57.37,63.46,normalize the conditional entropy to make it more comparable across different pairs. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,14,64.93,70.09,_In particular, mutual information in order to find I(X:Y), _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,15,70.09,77.38,matches the entropy reduction of X obtained from knowing Y. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,16,77.38,82.27,More specifically the question we are interested in here is how much 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,17,82.27,85.463,of an entropy of X can we obtain by knowing Y. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,18,87.22,91.94,So mathematically it can be defined as the difference between 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,19,91.94,96.67,_the original entropy of X, and the condition of Y of X given Y. _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,20,97.97,102.72999999999999,_And you might see, as you can see here it can also be defined _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,21,102.72999999999999,107.78999999999999,as reduction of entropy of Y because of knowing X. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,22,108.93,114.07,Now normally the two conditional interface H of X given Y and 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,23,114.07,118.24000000000001,_the entropy of Y given X are not equal, but interestingly, _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,24,118.24000000000001,125.476,_the reduction of entropy by knowing one of them, is actually equal. _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,25,125.476,132.805,_So, this quantity is called a Mutual Information in order to buy I here. _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,26,132.805,137.085,_And this function has some interesting properties, first it is also non-negative. _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,27,137.085,141.415,This is easy to understand because the original entropy is always 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,28,142.782,149.132,not going to be lower than the possibility reduced conditional entropy. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,29,149.132,153.512,_In other words, the conditional entropy will never exceed the original entropy. _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,30,153.512,157.784,_Knowing some information can always help us potentially, but _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,31,157.784,160.28199999999998,will not hurt us in predicting x. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,32,161.51,166.375,The signal property is that it is symmetric like additional 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,33,166.375,171.142,_entropy is not symmetrical, mutual information is, and _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,34,171.142,176.394,_the third property is that It reaches its minimum, zero, if and _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,35,176.394,181.58,only if the two random variables are completely independent. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,36,181.58,187.949,That means knowing one of them does not tell us anything about the other and 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,37,187.949,194.626,this last property can be verified by simply looking at the equation above and 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,38,194.626,199.144,it reaches 0 if and only the conditional entropy of X 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,39,199.144,204.102,[INAUDIBLE] Y is exactly the same as original entropy of X. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,40,204.102,208.344,So that means knowing why it did not help at all and that is when X and 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,41,208.344,210.52,a Y are completely independent. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,42,212.12,217.88,Now when we fix X to rank different Ys using conditional entropy 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,43,217.88,224.18,would give the same order as ranking based on mutual information 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,44,224.18,229.94,_because in the function here, H(X) is fixed because X is fixed. _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,45,229.94,233.82,So ranking based on mutual entropy is exactly the same as ranking based on 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,46,233.82,237.6,_the conditional entropy of X given Y, but _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,47,237.6,243.058,the mutual information allows us to compare different pairs of x and y. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,48,243.058,247.99,_So, that is why mutual information is more general and in general, more useful. _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,49,250.688,254.42,_So, let us examine the intuition of using mutual information for _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,50,254.42,255.88,Syntagmatical Relation Mining. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,51,257.15,260.43,_Now, the question we ask forcing that relation mining is, _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,52,260.43,264.3,_whenever "eats" occurs, what other words also tend to occur? _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,53,265.61,270.71,_So this question can be framed as a mutual information question, that is, _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,54,270.71,273.055,_which words have high mutual information was eats, _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,55,273.055,277.7,so computer the missing information between eats and other words. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,56,279.05,284.52,_And if we do that, and it is basically a base on the same as conditional _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,57,284.52,288.99,_we will see that words that are strongly associated with eats, _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,58,288.99,290.96,will have a high point. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,59,290.96,295.2,Whereas words that are not related will have lower mutual information. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,60,295.2,298.53,_For this, I will give some example here. _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,61,298.53,301.22,_The mutual information between "eats" and "meats", _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,62,301.22,305.65,_which is the same as between "meats" and "eats," because the information is _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,63,305.65,310.96,symmetrical is expected to be higher than the mutual information between eats and 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,64,310.96,314.638,_the, because knowing the does not really help us as a predictor. _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,65,314.638,317.998,_It is similar, and knowing eats does not help us predicting, _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,66,317.998,322.28,the as well. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,67,322.28,326.97,And you also can easily see that the mutual 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,68,326.97,332.03,_information between a word and itself is the largest, _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,69,332.03,337.89,which is equal to the entropy of this word and 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,70,337.89,342.74,_so, because in this case the reduction is _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,71,342.74,348.53,maximum because knowing one allows us to predict the other completely. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,72,348.53,350.57,_So the conditional entropy is zero, _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,73,350.57,354.472,therefore the mutual information reaches its maximum. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,74,354.472,362.52,_It is going to be larger, then are equal to the machine volume eats in other words. _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,75,362.52,365.42,In other words picking any other word and 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,76,365.42,368.588,the computer picking between eats and that word. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,77,368.588,373.511,You will not get any information larger the computation from eats and itself. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,78,376.386,381.39,So now let us look at how to compute the mute information. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,79,381.39,383.49,_Now in order to do that, we often _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,80,385.11,389.1,_use a different form of mutual information, and we can mathematically _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,81,389.1,394.19,rewrite the mutual information into the form shown on this slide. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,82,394.19,398.655,Where we essentially see a formula that computes what is 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,83,398.655,403.075,called a KL-divergence or divergence. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,84,403.075,405.615,This is another term in information theory. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,85,405.615,408.865,It measures the divergence between two distributions. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,86,410.615,414.645,_Now, if you look at the formula, it is also sum over many combinations of _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,87,414.645,418.19,_different values of the two random variables but inside the sum, _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,88,418.19,424.11,mainly we are doing a comparison between two joint distributions. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,89,424.11,426.69,_The numerator has the joint, _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,90,426.69,431.11,actual observed the joint distribution of the two random variables. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,91,432.69,435.72,The bottom part or the denominator can be 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,92,435.72,440.695,_interpreted as the expected joint distribution of the two random variables, _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,93,440.695,446.782,_if they were independent because when two random variables are independent, _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,94,446.782,452.81,they are joined distribution is equal to the product of the two probabilities. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,95,455.3,459.8,So this comparison will tell us whether the two variables are indeed independent. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,96,459.8,463.17,_If they are indeed independent then we would expect that the two are the same, _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,97,464.39,469.47,_but if the numerator is different from the denominator, that would mean _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,98,469.47,474.53,the two variables are not independent and that helps measure the association. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,99,476.12,480.11,The sum is simply to take into consideration of all of the combinations 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,100,480.11,484.18,of the values of these two random variables. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,101,484.18,488.75,_In our case, each random variable can choose one of the two values, _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,102,488.75,493.95,_zero or one, so we have four combinations here. _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,103,493.95,497.33,_If we look at this form of mutual information, it shows that the mutual _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,104,497.33,501.23,information matches the divergence of the actual joint distribution 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,105,501.23,505.8,from the expected distribution under the independence assumption. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,106,505.8,510.144,_The larger this divergence is, the higher the mutual information would be. _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,107,513.507,517.091,_So now let us further look at what are exactly the probabilities, _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,108,517.091,519.84,involved in this formula of mutual information. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,109,521.3,525.08,_And here, this is all the probabilities involve, and it is easy for _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,110,525.08,526.5,you to verify that. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,111,526.5,531.61,_Basically, we have first to [INAUDIBLE] probabilities _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,112,531.61,536.38,corresponding to the presence or absence of each word. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,113,536.38,539.61,_So, for w1, we have two probabilities shown here. _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,114,542.6,547.995,_They should sum to one, because a word can either be present or absent. _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,115,547.995,553.26,_In the segment, and similarly for _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,116,553.26,558.23,_the second word, we also have two probabilities representing presence or _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,117,558.23,560.92,_absences of this word, and there is some to y as well. _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,118,561.92,566.162,_And finally, we have a lot of joined probabilities that represent _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,119,566.162,571.1,_the scenarios of co-occurrences of the two words, and they are shown here. _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,120,574.513,579.107,And they sum to one because the two words can only have these four 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,121,579.107,581.42,possible scenarios. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,122,581.42,583.73,_Either they both occur, so _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,123,583.73,589.5,_in that case both variables will have a value of one, or one of them occurs. _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,124,589.5,590.579,There are two scenarios. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,125,591.66,595.91,In these two cases one of the random variables will be equal to one and 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,126,595.91,603.56,the other will be zero and finally we have the scenario when none of them occurs. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,127,603.56,606.42,This is when the two variables taking a value of zero. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,128,607.62,612.855,_So these are the probabilities involved in the calculation of mutual information, _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,129,612.855,613.6,over here. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,130,616.007,618.416,_Once we know how to calculate these probabilities, _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,131,618.416,620.67,we can easily calculate the new gene formation. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,132,624.063,628.231,It is also interesting to know that there are actually some relations or 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,133,628.231,632.96,_constraint among these probabilities, and we already saw two of them, right? _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,134,632.96,636.4,_So in the previous slide, _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,135,636.4,641.83,that you have seen that the marginal probabilities of these 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,136,641.83,646.114,_words sum to one and we also have seen this constraint, _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,137,646.114,653.19,_that says the two words have these four scenarios of co-occurrency, _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,138,653.19,657.37,but we also have some additional constraints listed in the bottom. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,139,658.6,663.67,_For example, this one means if we add up _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,140,663.67,667.89,the probabilities that we observe the two words occur together and 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,141,667.89,672.5,the probabilities when the first word occurs and the second word does not occur. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,142,672.5,676.86,We get exactly the probability that the first word is observed. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,143,676.86,680.04,_In other words, when the word is observed. _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,144,680.04,682.21,_When the first word is observed, and _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,145,682.21,687.64,_there are only two scenarios, depending on whether the second word is also observed. _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,146,687.64,691.75,_So, this probability captures the first scenario when the second word _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,147,691.75,693.86,_actually is also observed, and _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,148,693.86,698.13,this captures the second scenario when the second word is not observed. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,149,698.13,700.145,_So, we only see the first word, and _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,150,700.145,705.41,it is easy to see the other equations also follow the same reasoning. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,151,706.98,710.98,Now these equations allow us to compute some probabilities based on 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,152,710.98,714.61,_other probabilities, and this can simplify the computation. _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,153,715.75,721.01,_So more specifically, if we know the probability that _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,154,721.01,726.49,_a word is present, like in this case, so if we know this, and _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,155,726.49,732.63,_if we know the probability of the presence of the second word, _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,156,732.63,737.002,_then we can easily compute the absence probability, right? _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,157,737.002,742.77,_It is very easy to use this equation to do that, and so _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,158,742.77,747.82,we take care of the computation of these probabilities of presence and 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,159,747.82,749.95,absence of each word. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,160,749.95,753.146,Now let's look at the [INAUDIBLE] distribution. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,161,753.146,756.46,Let us assume that we also have available 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,162,756.46,759.548,the probability that they occurred together. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,163,759.548,764.22,Now it is easy to see that we can actually compute all the rest of these 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,164,764.22,765.829,probabilities based on these. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,165,766.87,771.17,Specifically for example using this equation we can compute 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,166,771.17,776.26,_the probability that the first word occurred and the second word did not, _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,167,776.26,782.02,_because we know these probabilities in the boxes, and similarly using this _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,168,782.02,785.364,equation we can compute the probability that we observe only the second word. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,169,785.364,786.0,Word. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,170,786.0,790.421,_And then finally, this probability can be calculated _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,171,790.421,794.745,_by using this equation because now this is known, and _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,172,794.745,799.282,_this is also known, and this is already known, right. _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,173,799.282,803.12,So this can be easier to calculate. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,174,803.12,804.43,So now this can be calculated. 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,175,806.08,810.989,So this slide shows that we only need to know how to compute 
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,176,810.989,815.8,_these three probabilities that are shown in the boxes, _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,177,815.8,823.092,_naming the presence of each word and the co-occurence of both words, in a segment. _
+2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).srt,178,823.092,833.092,[MUSIC] 

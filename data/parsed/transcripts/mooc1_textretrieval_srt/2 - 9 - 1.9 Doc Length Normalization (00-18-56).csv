@@ -1,0 +1,251 @@
+name,id,from,to,text
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,1,8.412,14.785,This lecture is about document length normalization in the vector space model. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,2,14.785,19.036,In this lecture we are going to continue the discussion of the vector space model 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,3,19.036,21.85,in particular we are going to discuss. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,4,21.85,23.99,The issue of document length normalization. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,5,25.85,28.73,_So far in the lectures about the vector space model, _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,6,28.73,33.31,we have used the various signals from the document to 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,7,33.31,37.48,assess the matching of the document though with a preorder. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,8,37.48,40.0,_In particular we have considered the term frequency, _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,9,40.0,42.75,the count of a term in a document. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,10,42.75,44.69,_We have also considered a, _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,11,44.69,50.795,it's global statistics such as IDF in words document frequency. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,12,50.795,53.605,But we have not considered a document length. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,13,54.865,58.465,_So, here I show two example documents. _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,14,58.465,61.01,D4 is much shorter with only 100 words. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,15,61.01,65.37,_D6 on the other hand has 5,000 words. _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,16,65.37,70.28,If you look at the matching of these query words we see that in D6 there 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,17,70.28,74.38,are more matchings of the query words but 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,18,74.38,80.689,one might reason that D6 may have matched these query words. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,19,82.06,83.41,In a scattered manner. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,20,84.44,90.06,So maybe the topic of d6 is not really about the topic of the query. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,21,91.34,94.97999999999999,So the discussion of a campaign at the beginning of the document 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,22,94.97999999999999,98.739,may have nothing to do with the mention of presidential at the end. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,23,100.81,104.6,_In general, if you think about the long documents, _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,24,104.6,107.35,they would have a higher chance to match any query. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,25,107.35,112.66,_In fact, if you generate a, a long document that randomly sampling, _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,26,112.66,116.92,_sampling words from the distribution of words, _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,27,116.92,119.69,then eventually you probably will match any query. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,28,120.76,124.93,So in this sense we should penalize no documents because they 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,29,124.93,127.22,just naturally have better chances to match any query. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,30,127.22,132.35,And this is our idea of document answer. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,31,132.35,138.59,We also need to be careful in avoiding to overpenalize small documents. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,32,139.74,142.79,_On the one hand, we want to penalize a long document. _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,33,142.79,147.177,_But on the other hand, we also don't want to over-penalize them. _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,34,147.177,151.309,And the reason is because a document that may be long because of different reason. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,35,152.77,156.94,In one case the document may be more long because it uses more words. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,36,158.26,164.3,So for example think about the article of a research paper. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,37,164.3,167.63,It would use more words than the corresponding abstract. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,38,169.56,173.9,So this is the case where we probably should penalize the matching of 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,39,173.9,177.25,_a long document such as, full paper. _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,40,178.34,181.08,When we compare the matching of words in such 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,41,182.28,186.41,long document with matching of the words in the short abstract. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,42,187.82,193.0,Then long papers generally have a higher chance of matching query words. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,43,193.0,195.37,Therefore we should penalize them. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,44,195.37,198.55,_However, there is another case when the document is long and _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,45,198.55,201.74,that is when the document simply has more content. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,46,201.74,204.01,_Now consider another case of a long document, _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,47,204.01,209.45,where we simply concatenated a lot of abstracts of different papers. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,48,209.45,214.18,_In such a case, obviously, we don't want to penalize such a long document. _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,49,214.18,218.25,_Indeed, we probably don't want to penalize such a document because it's long. _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,50,219.69,222.26,So that's why we need to be careful. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,51,222.26,226.5,About using the right degree of penalization. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,52,228.31,233.02,_A method that has been working well based on recent research is called, _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,53,233.02,234.89,pivot length normalization. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,54,234.89,237.3,And in this case the idea is to use. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,55,237.3,241.55,_The average document length as a P word, as a reference point. _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,56,241.55,245.82,_That means we will assume that for the average length documents, _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,57,245.82,247.48,the score is about right. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,58,247.48,250.335,_So, the normalizer would be 1. _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,59,250.335,254.125,But if a document is longer than the average document length 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,60,254.125,256.275,then there will be some penalization. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,61,256.275,260.785,Where as if it's shorter than there's even some reward. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,62,260.785,263.475,So this is an illustrator that using this slide. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,63,265.125,268.577,_On the axis, s axis you can see the length of document. _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,64,268.577,273.39,_On the y-axis we show the normalizer, _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,65,273.39,279.53,in the case pivoted length normalization formula for the normalizer is 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,66,281.43,285.87,is seem to be interpolation of one and 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,67,285.87,290.87,_the normalize the document lengths, controlled by a parameter b here. _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,68,293.11,295.59000000000003,_So, you can see here, _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,69,295.59000000000003,300.249,when we first divide the lengths of the document by the average document length. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,70,301.28,304.88,_This not only gives us some sense about the, _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,71,304.88,307.89,_how this document is compared with the average document length, but _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,72,307.89,313.509,also gives us a benefit of not worrying about the unit of 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,73,315.19,318.99,_length, we can measure the length by words or by characters. _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,74,320.76,324.26,Anyway this normalizer has an interesting property. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,75,324.26,329.66,_First we see that if we set the parameter b to 0 then the value would be 1, _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,76,329.66,333.58,_so there's no pair, length normalization at all. _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,77,333.58,340.65,_So b in this sense controls the length normalization, where as if we set _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,78,340.65,345.76,_d to a non-zero value, then the normalizer will look like this, right. _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,79,345.76,348.366,So the value would be higher for 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,80,348.366,353.59000000000003,documents that are longer than the average document length. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,81,353.59000000000003,357.666,Where as the value of the normalizer will be short- will be smaller for 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,82,357.666,359.47,shorter documents. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,83,359.47,363.49,So in this sense we see there's a penalization for long documents. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,84,365.05,367.24,And there's a reward for short documents. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,85,369.03,371.47,The degree of penalization is conjured by b. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,86,371.47,375.44,Because if we set b to a larger value then the normalizer. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,87,375.44,376.72,What looked like this. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,88,376.72,380.6,There's even more penalization for long documents and more reward for 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,89,380.6,382.38,the short documents. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,90,382.38,386.2,By adjusting b which varies from zero to one 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,91,386.2,389.44,we can control the degree of length normalization. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,92,389.44,395.224,So if we're plucking this length normalization factor into 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,93,395.224,400.5,the vector space model ranking functions that we have already examined. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,94,401.53,405.756,_Then we will end up heading with formulas, and _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,95,405.756,409.97,these are in fact the state of the are vector space models. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,96,409.97,410.72,Formulas. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,97,412.1,415.3,_So, let's talk an that, let's take a look at the each of them. _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,98,415.3,418.655,The first one's called a pivoted length normalization vector space model. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,99,420.19,425.26,_And, a reference in the end has detail about the derivation of this model. _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,100,425.26,430.79,_And, here, we see that it's basically the TFIDF weighting model that we have _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,101,430.79,432.0,discussed. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,102,432.0,436.86,The IDF component should be very familiar now to you. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,103,438.01,441.7,_There is also a query term frequency component, here. _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,104,444.62,447.99,_And, and then in the middle there is. _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,105,447.99,449.13,And normalize the TF. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,106,450.45,454.78,_And in this case, we see we use the double algorithm, _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,107,455.79,460.47,_as we discussed before, and this is to achieve a sublinear transformation. _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,108,460.47,466.15,_But we also put document length normalizer in the bottom, all right so _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,109,466.15,470.04,_this would cause penalty for a long document, because the larger _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,110,470.04,475.25,_the denominator is, the denominator is then the smaller the shift weight is. _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,111,476.93,479.65999999999997,And this is of course controlled by the parameter b here. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,112,481.43,486.13,_And you can see again, b is set to 0, and there, there is no length normalization. _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,113,488.75,493.93,Okay. So this is one of the two most effective. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,114,493.93,496.35,Not this base model of formulas. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,115,496.35,503.54,_The next one called a BM25, or Okapi, is, also similar. _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,116,503.54,510.6,_In that, it also has a i, df component here, and a query df component here. _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,117,513.2,516.15,_But in the middle, the normalization's a little bit different. _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,118,516.15,521.46,As we expand there is this or copied here for transformation here. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,119,521.46,526.43,_And that does, sublinear transformation with an upper bound. _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,120,528.34,533.58,In this case we have put the length normalization factor here. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,121,533.58,538.16,_We are adjusting k, but it achieves a similar factor _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,122,538.16,542.61,because we put a normalizer in the denominator. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,123,542.61,548.68,_Therefore again, if a document is longer, then the term weight will be smaller. _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,124,550.11,554.94,_So, you can see, after we have gone through all the instances that we talked _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,125,554.94,559.97,_about, and we have, in the end, reached the, _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,126,559.97,565.997,basically the state of the art mutual function. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,127,565.997,570.188,_So, so far we have talked about mainly how to place _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,128,570.188,573.53,the document matter in the matter space. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,129,575.01,580.03,_And this has played an important role in uh,determining the factors of _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,130,580.03,581.41,the function. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,131,581.41,585.98,But there are also other dimensions where we did not really examine detail. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,132,585.98,588.71,For example can we further 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,133,588.71,593.89,improve the instantiation of the dimension of the vector space model. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,134,593.89,596.47,Now we've just assumed that the back of words. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,135,596.47,597.858,So each dimension is a word. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,136,597.858,601.19,But obviously we can see there are many other choices. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,137,601.19,606.842,_For example, stemmed words, those are the words that have been transformed _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,138,606.842,610.9,into the same rule form. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,139,610.9,616.51,So that computation and computing will all become the same and they can be matched. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,140,616.51,618.914,We need to stop water removal. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,141,618.914,622.994,This is removes on very common words that don't carry any content. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,142,622.994,629.15,_Like the or of, we use the phrases to define that [SOUND]. _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,143,629.15,634.338,_We can even use late in the semantica, an answer sort of find in the sum cluster. _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,144,634.338,639.66,So words that represent a legend of concept as one. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,145,639.66,643.12,_We can also use smaller units, like a character in grams. _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,146,643.12,648.82,Those are sequences of n characters for dimensions. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,147,650.506,655.378,_However, in practice people have found that the bag-of-words representation _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,148,655.378,658.929,with the phrases is where the the most effective one. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,149,658.929,663.289,And it's also efficient so this is still so 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,150,663.289,668.521,far the most popular dimension instantiation method and 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,151,668.521,672.56,it's used in all the major search engines. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,152,673.96,678.96,I should also mention that sometimes we did to do language specific and 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,153,678.96,681.3,domain specific organization. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,154,681.3,686.7,And this is actually very important as we might have variations of the terms. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,155,688.04,691.59,That might prevent us from matching them with each other. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,156,691.59,693.53,Even though they mean the same thing. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,157,693.53,698.678,_And some of them, which is like Chinese, the results of the. _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,158,698.678,704.45,Segmenting text to obtain word boundaries. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,159,704.45,707.29,Because it's just a sequence of characters. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,160,707.29,711.65,_A word might, might correspond to one character or two characters or _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,161,711.65,713.51,even three characters. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,162,713.51,718.97,So it's easier in English when we have a space to separate the words. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,163,718.97,722.5,But in some other languages we may need to do some natural language processing 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,164,722.5,725.09,_to figure out the, where are the boundaries for words. _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,165,726.09,730.85,There is also possibility to improve this in narrative function. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,166,730.85,733.52,_And so far we have used the about product, but _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,167,733.52,735.69,one can imagine there are other matches. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,168,735.69,740.77,_For example we can match the cosine of the angle between two vectors, or _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,169,740.77,743.74,we can use Euclidean distance measure. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,170,744.88,746.99,And these are all possible. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,171,746.99,750.28,The dot product seems still the best and 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,172,750.28,752.69,one of the reasons is because it's very general. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,173,753.77,756.59,_In fact, it's sufficiently general. _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,174,757.71,763.28,If you consider the possibilities of doing weighting in different ways. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,175,764.28,765.39,_So, for example, _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,176,765.39,770.44,cosine measure can be regarded as the dot product of two normalized vectors. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,177,770.44,774.72,_That means we first normalize each vector, and then we take the dot product. _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,178,774.72,777.7,That would be equivalent to the cosine measure. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,179,777.7,780.71,I just mentioned that the BM25. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,180,780.71,783.9,Seems to be one of the most effective formulas. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,181,784.93,790.4,_But there has been also further development in, improving BM25, although _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,182,790.4,795.62,none of these works have changed the BM25 fundamentally. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,183,795.62,800.09,_So in one line of work, people have derived BM25 F. _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,184,800.09,804.5,_Here F stands for field, and this is a little use BM25 for _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,185,804.5,806.88,documents with a structures. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,186,806.88,811.09,_For example you might consider title field, the abstract, or _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,187,811.09,817.02,_body of the reasearch article, or even anchor text on the web pages. _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,188,817.02,821.82,Those are the text fields that describe links to other pages. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,189,821.82,825.87,And these can all be combined with a appropriate 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,190,825.87,830.75,weight on different fields to help improve scoring for document. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,191,830.75,834.8,Use BM25 for such a document. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,192,834.8,838.81,_And the obvious choice is to apply BM25 for each field, and _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,193,838.81,840.75,then combine the scores. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,194,840.75,845.9,_Basically, the ideal of BM25F, is to first combine _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,195,845.9,851.67,the frequency counts of tons in all the fields and then apply BM25. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,196,851.67,859.36,Now this has advantage of avoiding over counting the first occurrence of the term. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,197,859.36,862.0,_Remember in the sublinear transformation of TF, _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,198,862.0,867.27,_the first recurrence is very important then, and contributes a large weight. _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,199,867.27,873.67,_And if we do that for all the fields, then the same term might have gained a, a lot _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,200,873.67,878.82,_of advantage in every field, but when we combine these word frequencies together. _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,201,878.82,882.22,_We just do the transformation one time, and _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,202,882.22,887.11,that time then the extra occurrences will not be counted as fresh first occurrences. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,203,888.79,894.059,And this method has been working very well for scoring structured documents. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,204,895.81,902.15,_The other line of extension is called a BM25 plus and this line, arresters _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,205,902.15,906.11,have addressed the problem of over penalization of long documents by BM25. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,206,908.88,914.1,_So to address this problem, the fix is actually quite simple. _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,207,914.1,919.57,We can simply add a small constant to the TF normalization formula. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,208,919.57,924.3,But what's interesting is that we can analytically prove that by doing such 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,209,924.3,929.4,_a small modification, we will fix the problem of a, _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,210,929.4,933.58,over penalization of long documents by the original BM25. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,211,933.58,938.6,So the new formula called BM25-plus is empirically and 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,212,938.6,940.99,analytically shown to be better than BM25. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,213,942.59,947.7,So to summarize all what we have said about the Vector Space Model. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,214,949.91,951.866,Here are the major takeaway points. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,215,951.866,957.59,_First, in such a model, we use the similarity notion of relevance, _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,216,957.59,961.78,assuming that the relevance of a document with respect to a query is 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,217,962.82,968.03,basically proportional to the similarity between the query and the document. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,218,968.03,970.64,_So, naturally, that implies that the query and _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,219,970.64,974.86,_document must be represented in the same way, and in this case, _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,220,974.86,979.03,we represent them as vectors in high dimensional vector space. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,221,979.03,984.16,Where the dimensions are defined by words or concepts or terms in general. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,222,985.47,989.88,And we generally need to use a lot of heuristics to design a ranking function. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,223,989.88,994.55,_We use some examples which show the need for several heuristics, _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,224,994.55,997.2,including TF waiting and transformation. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,225,998.31,1001.94,_And IDF weighting, and document length normalization. _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,226,1001.94,1007.04,These major heuristics are the most important heuristics to ensure such 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,227,1007.04,1011.96,a general ranking function to work well for all kinds of tasks. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,228,1011.96,1015.48,And finally BM25 and Pivoted normalization seem 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,229,1015.48,1019.89,to be the most effective formulas out of that Space Model. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,230,1019.89,1025.583,_Now I have to say that, I've put BM25 in the category of Vector Space Model. _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,231,1025.583,1029.75,But in fact the BM25 has been derived using model. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,232,1031.97,1037.46,So the reason why I've put it in the vector space model is first 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,233,1037.46,1042.52,the ranking function actually has a nice interpretation in the vector space model. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,234,1042.52,1046.06,We can easily see it looks very much like a vector space model 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,235,1046.06,1047.39,with a special weighting function. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,236,1048.89,1054.66,The second reason is because the original BM25 has a somewhat different from of IDF. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,237,1056.05,1059.4,And that form of IDF actually doesn't really work so 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,238,1059.4,1064.61,well as the standard IDF that you have seen here. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,239,1064.61,1070.329,So as a effective original function BM25 should probably use a heuristic 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,240,1070.329,1075.879,modification of the IDF to make that even more like a vector space model. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,241,1079.149,1081.44,There are some additional readings. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,242,1081.44,1086.09,The first is a paper about the pivoted length normalization. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,243,1086.09,1091.83,It's an excellent example of using empirical data enhances to suggest a need 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,244,1091.83,1097.51,_for length normalization, and then further derived a length normalization formula. _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,245,1097.51,1104.24,The second is the original paper when the was proposed. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,246,1104.24,1108.995,The third paper has a thorough discussion of and 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,247,1108.995,1112.86,_its extensions, particularly BM-25F. _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,248,1112.86,1117.893,_And finally, the last paper has a discussion of improving _
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,249,1117.893,1123.761,BM-25 to correct the overpenalization of long documents. 
+2 - 9 - 1.9 Doc Length Normalization (00-18-56).srt,250,1123.761,1133.761,[MUSIC] 

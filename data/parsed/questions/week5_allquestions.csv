@@ -1,0 +1,67 @@
+filename,lecture in question,lecture,raw from,raw to,from,to,text
+week5_allquestions,5.1,4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).csv, 4'46" , 7'16",286,436, How do different types of feedback integrate into different page rank algorithms?
+week5_allquestions,5.8,5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).csv, 0'00",1'00",0,60, How are the results from PageRank and HITS integrated with the results of a vector space model or language model?
+week5_allquestions,5.7,5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).csv, 13'13" , 14'33",793,873, For the equilibrium equation why is the initial term (1-a)?
+week5_allquestions,5.6,5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).csv, 3'40",4'00",220,240, Is relevance like this always guarenteed to be a good thing?
+week5_allquestions,5.2,4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).csv, 9'45",10'37",585,637, Why is the vector truncated when using the Rocchio formula in practice?
+week5_allquestions,5.2,4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).csv, 5'23",5'41",323,341,$ How do you determine the alpha, beta, gamma terms in the Rocchio Feedback formula?$
+week5_allquestions,5.2,4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).csv, 4' 10",5' 20",250,320, How do we determine the alpha beta and gamma parameters when moving the query vector?
+week5_allquestions,5.4,5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).csv, 4'50",6'00",290,360, Is there anything actually enforcing crawling coutresy or do people overload websites with crawlers if they want to?
+week5_allquestions,5.5,5 - 2 - 4.2 Web Indexing (00-17-19).csv, 12'23",12'40",743,760, What are the counts of 1's exactly?
+week5_allquestions,5.8,5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).csv, 2'20'',4'10'',140,250, Are the equations for hub and authority score guaranteed to converge or can they go to infinity?
+week5_allquestions,5.2,4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).csv, 4'25",4'45",265,285, How do you compute the centroid in the Rocchio Feedback formula?
+week5_allquestions,5.3,4 - 10 - 3.8 Feedback in Text Retrieval- Feedback in LM (00-19-11).csv, 1'51",4'50",111,290, What are the drawbacks of using the KL Divergence Retrieval Model?
+week5_allquestions,5.2,4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).csv, 2'30",3'30",150,210,$ If we move the query vector to better fit the area of relevant documents, wouldn't this be different from the original query? What would this new query vector mean in human readable language?$
+week5_allquestions,5.2,4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).csv, 3'50",3'58",230,238,What does it mean for a document to be negative?
+week5_allquestions,5.4,5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).csv, 6'30",9'53",390,593, Major Crawling Strategies?
+week5_allquestions,1.2,MISSING, 1'25",3'17",85,197, What's the meaning of parameter lambda?
+week5_allquestions,5.5,5 - 2 - 4.2 Web Indexing (00-17-19).csv, 09'05",10'35",545,635, May you explain why each word gets count of 1? Why are we not mapping each vocabulary word to its count instead?
+week5_allquestions,5.2,4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).csv, 9'50",10'06",590,606,I do not understand why negative examples tend to destruct queries in all direcitons?
+week5_allquestions,5.3,4 - 10 - 3.8 Feedback in Text Retrieval- Feedback in LM (00-19-11).csv, 14'51",15'50",891,950, why lambda=0.7 can produce more noise than lambda=0.9 according to the generative mixture model?
+week5_allquestions,5.6,5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).csv, 4'19",9'16",259,556, How do we rank links and compare this or interleave this with ranking actual webpages?
+week5_allquestions,5.8,5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).csv, 1'50",2'30",110,150, How to convert the existance of links between pages into the adjacency matrix?
+week5_allquestions,5.3,4 - 10 - 3.8 Feedback in Text Retrieval- Feedback in LM (00-19-11).csv, 4'23'',4'37,263,277,How can we get Query Likelihood by plugging in Query LM to KL-divergence?
+week5_allquestions,5.2,4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).csv, 10'27",11'15",627,675, What is "topic drifting?" Is this the same thing as overfitting?
+week5_allquestions,5.2,4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).csv, 4'50",4'55",290,295, What's the meaning of parameters alpha and beta?
+week5_allquestions,5.3,4 - 10 - 3.8 Feedback in Text Retrieval- Feedback in LM (00-19-11).csv, 2'21'',3'03,141,183,How are Query Likelihood and KL-divergence connected with each other?
+week5_allquestions,5.2,4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).csv, 9'00'',9'30'',540,570, How do we determine the constant terms alpha beta in Rocchio?
+week5_allquestions,5.5,5 - 2 - 4.2 Web Indexing (00-17-19).csv, 14'00",14'30",840,870, What is an inverted index means exactly? What does an inverted index  consist of?
+week5_allquestions,5.4,5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).csv, 6'12",6'25",372,385, What exactly do hidden URL's mean?
+week5_allquestions,5.4,5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).csv, 4’08”,4’20”,248,260, How can a programmer with minimum effort create an application that can run a large cluster in parallel?
+week5_allquestions,5.5,5 - 2 - 4.2 Web Indexing (00-17-19).csv, 5'10",10'31",310,631, Is this implementable with a dictionary?
+week5_allquestions,5.8,5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).csv, 1'45",4'59",105,299, Is the adjacency matrix just a heaviside of the pagerank? Like why even bother with HITS?
+week5_allquestions,5.2,4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).csv, 1'11",5'46",71,346, Is Rocchio feedback only applicable to a 3d vector model or multidimensional vector models too?
+week5_allquestions,5.2,4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).csv, 4'20" , 5'50",260,350,$ What are good values for alpha, beta, and gamma in the Rocchio Feedback Model?$
+week5_allquestions,5.3,4 - 10 - 3.8 Feedback in Text Retrieval- Feedback in LM (00-19-11).csv, 16'30",17'27",990,1047,$ I still do not understand: How does a high lambda value in this case make the model "more deterministic", i.e. have a proper representation of important words? Wouldn't this give a greater importance to the words in the background LM?$
+week5_allquestions,5.2,4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).csv, 2'30",3'30",150,210,$ For the circle drawn for the top-ranked documents, how would moving the query back to some position improve the retrieval accuracy? How does it being close to positive vectors work intuitively?$
+week5_allquestions,5.3,4 - 10 - 3.8 Feedback in Text Retrieval- Feedback in LM (00-19-11).csv, 2'00",2'01",120,121, how did they come up with KL-divergence
+week5_allquestions,5.3,4 - 10 - 3.8 Feedback in Text Retrieval- Feedback in LM (00-19-11).csv, 2'20",4'10",140,250, What is the theta hat here? What is the difference between Q and q?
+week5_allquestions,5.1,4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).csv, 2'34",4'11",154,251, I didn't quite understand pseudo relevance feedback. I did not understand the explanation of assuming the top ranked documents as relevant.
+week5_allquestions,5.2,4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).csv, 7'10",8'22",430,502,$ How do the parameters: alpha, beta and gamma control the movement we have in the concept of Rocchio feedback? What is the significance of each of them?$
+week5_allquestions,5.2,4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).csv, 3'30",4'15",210,255, Wouldn't moving the query vector closer to the rest create an overfitting model?
+week5_allquestions,5.7,5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).csv, 5'10",8'47",310,527, Need more example on HITS algorithm
+week5_allquestions,5.3,4 - 10 - 3.8 Feedback in Text Retrieval- Feedback in LM (00-19-11).csv, 2'15'',4'30'',135,270,$ I am not sure I understand how generalizing query likelihood to KL-divergence helps in incorporating feedback into the model, could you please explain?$
+week5_allquestions,5.4,5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).csv, 6'27",6'42",387,402,$ Is the BFS done in parallel across independent sections of the page network? Also, do we start at a particular page always (like the most accessed page) or is anywhere in the network ok?$
+week5_allquestions,5.7,5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).csv, 12'30",14'30",750,870, I don't quite get why the propagation scores are like this. Why d1 has a very low score while d2 has a very high score. Could you explain more?
+week5_allquestions,2.5,MISSING, 1'30" , 4'00",90,240, Can you go over how Rocchio Feedback works?
+week5_allquestions,5.1,4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).csv, 3'10",3'16",190,196, How can Psedo Feedback be useful if the top 10 documents are assumed instead of actually judged by the user?
+week5_allquestions,5.4,5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).csv, 6'33",6'42",393,402, Is DFS also used for crawling or just BFS?
+week5_allquestions,5.4,5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).csv, 3'23",3'42",203,222, What type of heuristics can be applied to analyze links?
+week5_allquestions,5.5,5 - 2 - 4.2 Web Indexing (00-17-19).csv, 4'06",4'40",246,280, Is it possible to find the documentation of the lower-level code for Google's MapReduce?
+week5_allquestions,5.4,5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).csv, 2'45",2'55",165,175, How does MapReduce help with the scalability of web searching?
+week5_allquestions,5.1,4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).csv, 04’56”,05’26”,296,326, Is there an element of privacy to be considered in implicit feedback? How much does feedback in general play a role in relevance judgement?
+week5_allquestions,5.4,5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).csv, 7'30",7'50",450,470,$ Why does BFS balance server load, why does DFS not?$
+week5_allquestions,5.1,4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).csv, 4'45",5'00",285,300, How are data like clickthroughs reliable when "users" may not be real users and instead bots?
+week5_allquestions,5.2,4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).csv, 04'17",05'15",257,315, Rocchio Feedback would be like a triplet loss? Does this algorithm has any relation with SVM?
+week5_allquestions,5.3,4 - 10 - 3.8 Feedback in Text Retrieval- Feedback in LM (00-19-11).csv, 3'40",4'00",220,240, Can you please review the KL-divergence equation on the slide and explain what alpha represents?
+week5_allquestions,5.1,4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).csv, 0'21",6'36",21,396, Which is the most common feedback retrival method used today?
+week5_allquestions,5.1,4 - 8 - 3.6 Feedback in Text Retrieval (00-06-49).csv, 4'00",4'20",240,260, The evaluation of a IR system is depend on users. Why can we get feedback without user?
+week5_allquestions,5.2,4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).csv, 4'44" , 5'00",284,300, how is Rocchio formula deduced?
+week5_allquestions,5.3,4 - 10 - 3.8 Feedback in Text Retrieval- Feedback in LM (00-19-11).csv, 2'00" , 3'00",120,180, how to KL divergence retrieval model in examples?
+week5_allquestions,5.8,5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).csv, 4'00",4'39",240,279, Can you compare a bit more between the PageRank and HITS algorithms?
+week5_allquestions,5.4,5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).csv, 0'00",11'00",0,660, Does local search engine use different methods to crawl the websites or it is the same?
+week5_allquestions,5.3,4 - 10 - 3.8 Feedback in Text Retrieval- Feedback in LM (00-19-11).csv, 7'44'' , 15'34'',464,934,$ From the formula, it is hard to understand why higher lambda will lead to less common words appear on the final list.$
+week5_allquestions,5.7,5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).csv, 7'32'',8'42'',452,522, What happens when there are zero entries in the matrix?
+week5_allquestions,5.2,4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).csv, 5'00'',5'05'',300,305,$ For the new query updated by the formula, how does it look like exactly? Will it be a query that contains more common words amoung the relevant documents? What is the meaning of parameters regarding to the actual words? Can we transform the new query vector back to the actual words?$
+week5_allquestions,5.3,4 - 10 - 3.8 Feedback in Text Retrieval- Feedback in LM (00-19-11).csv, 16'45",17'15",1005,1035, why the returned results are more descriptive words of a certain topic when we don't rely much on background model often?
+week5_allquestions,5.5,5 - 2 - 4.2 Web Indexing (00-17-19).csv, 10'50",11'20",650,680, Why the counter would treat the two "World" seperately?

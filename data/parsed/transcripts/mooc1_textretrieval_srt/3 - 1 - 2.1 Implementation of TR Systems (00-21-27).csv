@@ -1,0 +1,306 @@
+name,id,from,to,text
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,1,0.008,4.562,[SOUND] This lecture is about 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,2,4.562,12.683,the implementation of text retrieval systems. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,3,12.683,17.652,_In this lecture, we will discuss how we can implement a text retrieval method _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,4,17.652,19.34,to build a search engine. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,5,19.34,23.603,The main challenge is to manage a lot of text data and 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,6,23.603,29.968,to enable a query to be answered very quickly and to respond to many queries. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,7,29.968,35.05,This is a typical text retrieval system architecture. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,8,35.05,39.06,We can see the documents are first processed by a tokenizer 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,9,39.06,43.77,_to get tokenizer units, for example words. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,10,43.77,45.835,And then these words or 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,11,45.835,51.445,_tokens would be processed by an indexer that would create an index, _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,12,51.445,56.555,which is a data structure for the search engine to use to quickly answer a query. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,13,57.722,62.092,And the query will be going through a similar processing step. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,14,62.092,65.062,_So, the tokenizer will be apprised to query as well so _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,15,65.062,69.392,that the text can be processed in the same way. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,16,69.392,71.809,The same units will be matched with each other. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,17,71.809,77.02,And the query's representation will then be given to the scorer. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,18,77.02,81.80799999999999,Which would use a index to quickly answer a user's query by 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,19,81.80799999999999,85.089,scoring the documents and then ranking them. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,20,85.089,87.83,The results will be given to the user. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,21,87.83,92.72999999999999,And then the user can look at the results and and provide some feedback that can be 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,22,92.72999999999999,97.779,_expressed judgements about which documents are good, which documents are bad, _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,23,97.779,103.14,_or implicit feedback such as pixels so the user doesn't have to any, anything extra. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,24,103.14,106.856,The user will just look at the results and skip some and 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,25,106.856,109.013,click on some results to view. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,26,109.013,115.029,So these interaction signals can be used by the system to improve the ranking 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,27,115.029,121.92,accuracy by assuming that viewed documents are better than the skipped ones. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,28,121.92,125.81,_So, a search engine system then can be divided into three parts. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,29,125.81,130.265,_The first part is the indexer, and the second part is the scorer, _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,30,130.265,133.105,that responds to the user's query. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,31,133.105,135.52,And the third part is the feedback mechanism. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,32,136.69,142.63,_Now typically, the indexer is done in the offline manner so you can pre-process _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,33,142.63,148.14,the correct data and to build the inverter index which we will introduce in a moment. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,34,149.47,155.66,And this data structure can then be used by the online module which is a scorer 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,35,155.66,160.84,to process a user's query dynamically and quickly generate search results. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,36,160.84,164.92000000000002,The feedback mechanism can be done online or offline depending on the method. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,37,164.92000000000002,170.82999999999998,_The implementation of the index and the, the scorer is fairly standard, _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,38,170.82999999999998,175.66,and this is the main topic of this lecture and the next few lectures. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,39,175.66,178.949,_The feedback mechanism, on the other hand has variations. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,40,178.949,181.516,It depends on what method is used. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,41,181.516,187.8,So that is usually done in a algorithm-specific way. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,42,189.04,190.67,Let's first talk about the tokenize. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,43,191.75,195.49,Tokenization is a normalize lexical units into the same form so 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,44,195.49,199.95499999999998,that semantically similar words can be matched with each other. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,45,199.95499999999998,204.91,Now in the language of English stemming is often used and 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,46,204.91,209.71,this what map all the inflectional forms of words into the same root form. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,47,209.71,212.29,_So for example, computer computation and _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,48,212.29,217.25,computing can all be matched to the root form compute. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,49,217.25,222.64,_This way, all these different forms of computing can be matched with each other. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,50,223.97,227.96,Normally this is a good idea to increase 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,51,227.96,232.54,the coverage of documents that are matched with this query. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,52,232.54,236.73,But it's also not always beneficial 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,53,236.73,241.02,because sometimes the subtlest difference between computer and 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,54,241.02,247.03,computation might still suggest the difference in the coverage of the content. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,55,247.03,253.67,_But in most cases, stemming seems to be beneficial. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,56,253.67,260.09,_When we tokenize the text in some other languages, for example Chinese, we might _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,57,260.09,265.53,face some special challenges in segmenting the text to find the word boundaries. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,58,265.53,267.68,_Because it's not ob, _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,59,267.68,273.13,obvious where the boundary is as there's no space separating them. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,60,273.13,278.257,_So, here, of course, we have to use some language-specific _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,61,278.257,281.86,natural language processing techniques. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,62,281.86,287.37,_Once we do tokenization, then we would index the text documents, and that it _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,63,287.37,292.94,will convert the documents into some data structure that can enable fast search. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,64,292.94,296.71,_The basic idea is to precompute as much as we can, basically. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,65,298.525,303.035,So the most commonly used index is called a inverted index. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,66,303.035,305.195,_And this has been used, to, _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,67,305.195,309.333,in many search engines to support basic search algorithms. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,68,309.333,313.045,_Sometimes other indices, for example a document index, _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,69,313.045,316.81,_might be needed in order to support a, a feedback. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,70,318.99,324.13,_Like I said, this, this kind of techniques are not really standard _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,71,324.13,327.05,in that they vary a lot according to the feedback methods. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,72,328.96,332.09000000000003,To understand why we are using inverted index. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,73,332.09000000000003,337.18,It will be useful for you to think about how you would respond to 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,74,337.18,339.62,a single term query quickly. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,75,340.93,343.96,_So if you want to use more time to think about that, pause the video. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,76,345.05,350.4,So think about how you can preprocess the text data so 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,77,350.4,354.94,that you can quickly respond to a query with just one word. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,78,354.94,359.95,_Well, if you have thought about question, you might realize that where the best is _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,79,359.95,366.92,to simply create a list of documents that match every term in the vocabulary. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,80,367.92,371.96,_In this way, you can basically pre-construct the answers. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,81,371.96,375.75,_So when you see a term, you can simply just fetch _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,82,375.75,380.61,the ranked list of documents for that term and return the list to the user. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,83,380.61,385.12,So that's the fastest way to respond to single term query. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,84,385.12,390.68,Now the idea of invert index is actually basically like that. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,85,390.68,395.49,_We can do, pre-construct such a index. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,86,395.49,398.79,_That would allow us to quickly find the, _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,87,398.79,401.76,all the documents that match a particular term. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,88,401.76,403.97,So let's take a look at this example. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,89,403.97,405.98,_We have three documents here, and _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,90,405.98,409.34000000000003,these are the documents that you have seen in some previous lectures. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,91,409.34000000000003,412.19,Suppose we want to create invert index for 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,92,412.19,415.33,_these documents, then we will need to maintain a dictionary. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,93,415.33,418.48,In the dictionary we'll have one entry for each term. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,94,418.48,421.86,And we're going to store some basic statistics about the term. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,95,421.86,425.37,_For example, the number of documents that match the term or _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,96,425.37,429.06,_the total number of, fre, total frequency of the term, _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,97,429.06,432.83,which means we would encounter duplicated occurrences of the term. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,98,434.55,436.51,_And so, for example, news. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,99,438.36,441.55,This term occurred in all the three documents. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,100,441.55,444.26,So the count of documents is three. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,101,446.41,451.94,And you might also realize we needed this count of documents or document 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,102,451.94,457.233,frequency for computing some statistics to be used in the vector space model. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,103,457.233,462.332,Can you think of that? 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,104,462.332,470.05,_So, what waiting heuristic would need this count? _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,105,470.05,473.84000000000003,_Well, that's the IDF, right, inverse document frequency. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,106,473.84000000000003,478.369,_So IDF is a property of the term, and we can compute it right here. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,107,478.369,480.745,_So with the document account here, _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,108,480.745,486.32,it's easy to compute the IDF either at this time or when we build an index or. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,109,486.32,490.069,At running time when we see a query. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,110,490.069,494.751,Now in addition to these basic statistics we also 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,111,494.751,498.77,saw all the documents that matched news. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,112,498.77,503.12,And these entries are stored in a file called a Postings. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,113,504.15,507.231,So in this case it matched 3 documents and 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,114,507.231,511.67,we store Information about these 3 documents here. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,115,511.67,516.945,_This is the document id, document 1, and the frequency is 1. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,116,518.17,521.22,The TF is 1 for news. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,117,521.22,525.25,_In the second document it's also 1, etc. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,118,525.25,530.35,So from this list that we can get all the documents that match the term news. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,119,530.35,535.5,And we can also know the frequency of news in these documents. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,120,535.5,539.6,_So, if the query has just one word, news, and _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,121,539.6,543.06,we can easily look up in this table to find the entry and 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,122,543.06,546.78,go quickly to the postings to fetch all the documents that match news. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,123,546.78,549.225,_So, let's take a look at another term. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,124,549.225,552.6,Now this time let's take a look at the word presidential. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,125,553.86,558.21,_All right, this word occurred in only 1 document, document 3. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,126,558.21,563.17,_So, the document frequency is 1, but it occurred twice in this document. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,127,563.17,568.639,_And so the frequency count is 2, and the frequency count is used for, _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,128,568.639,573.555,in some other retrieval method where we might use the frequency 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,129,573.555,578.405,_to assess the popularity of a, a term in the collection. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,130,578.405,582.93,_And similarly, we'll have a pointer to the postings, right here. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,131,582.93,587.49,And in this case there is only one entry here because 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,132,588.9,590.98,the term occurred in just one document. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,133,590.98,591.54,And that's here. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,134,593.5,597.32,_The document id is 3, and it occurred twice. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,135,599.6,602.54,So this is the basic idea of inverted index. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,136,602.54,604.34,_It's actually pretty simple, right? _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,137,606.58,612.37,With this structure we can easily fetch all the documents that match a term. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,138,612.37,615.76,And this will be the basis for storing documents for our query. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,139,615.76,623.84,Now sometimes we also want to store the positions of these terms. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,140,625.22,630.66,_So, in many of these cases the term occurred _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,141,630.66,634.32,_just once in the document so there's only one position, for example in this case. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,142,635.81,640.99,But in this case the term occurred twice so it would store two positions. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,143,640.99,644.69,Now the position information is very useful for checking whether 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,144,644.69,649.48,_the matching of query terms is actually within a small window of, let's say, _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,145,649.48,653.9,_five words, or ten words, or whether the matching of, _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,146,655.58,660.7,_the two query terms, is in fact a phrase of two words. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,147,660.7,664.43,This can all be checked quickly by using the position information. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,148,665.91,670.16,So why is inverted index good for faster search? 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,149,670.16,673.18,Well we just talked about the possibility 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,150,673.18,676.48,of using the two ends of a single-word query. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,151,676.48,677.99,And that's very easy. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,152,677.99,679.91,What about a multiple-term queries? 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,153,679.91,683.8,_Well, let's look at the, some special cases of the Boolean query. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,154,683.8,687.502,_A Boolean query is basically a Boolean expression, like this. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,155,687.502,695.86,So I want the relevant document to match both term A AND term B. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,156,695.86,698.77,_All right, so that's one conjunctive query. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,157,698.77,705.44,_Or, I want the relevant documents to match term A OR term B. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,158,705.44,706.54,That's a disjunctive query. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,159,706.54,711.07,Now how can we answer such a query by using inverted index? 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,160,712.12,715.46,_Well if you think a, a bit about it, it would be obvious. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,161,715.46,720.12,Because we have simply to fetch all the documents that match term A and 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,162,720.12,723.17,also fetch all the documents that match term B. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,163,723.17,728.16,And then just take the intersection to answer a query like A and B. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,164,728.16,732.99,Or to take the union to answer the query A or B. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,165,732.99,736.01,So this is all very easy to answer. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,166,736.01,737.78,It's going to be very quick. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,167,737.78,740.84,Now what about the multi-term keyword query? 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,168,740.84,744.21,We talked about the vector space model for example. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,169,744.21,748.94,And we would match such a query with a document and generate a score. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,170,748.94,752.33,And the score is based on aggregated term weights. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,171,752.33,755.191,_So in this case it's not a Boolean query, but _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,172,755.191,758.77,the scoring can be actually done in a similar way. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,173,758.77,762.636,Basically it's similar to disjunctive Boolean query. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,174,762.636,764.516,Basically It's like A OR B. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,175,764.516,769.917,_We take the union of all the, documents that matched at least one query term, _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,176,769.917,773.32,and then we would aggregate the term weights. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,177,773.32,777.25,_So this is a, a, a basic idea of _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,178,777.25,781.42,using inverted index for scoring documents in general. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,179,781.42,785.21,And we're going to talk about this in more detail later. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,180,785.21,787.28,_But for now, let's just look at the question, _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,181,787.28,792.21,_why is inverted index, a good idea? _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,182,792.21,796.91,_Basically, why is it more efficient than sequentially just scanning documents? _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,183,796.91,797.47,Right? 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,184,797.47,800.78,_This is, the obvious approach. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,185,800.78,803.49,_You can just compute the score for each document, and _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,186,803.49,806.72,_then you can score them, sorry, you can then sort them. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,187,807.78,809.9,_This is a, a straightforward method. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,188,809.9,811.61,But this is going to be very slow. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,189,811.61,812.52,Imagine the web. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,190,812.52,814.79,It has a lot of documents. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,191,814.79,819.62,_If you do this, then it will take a long time to answer your query. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,192,819.62,825.51,_So the question now is, why would the in, the inverted index be much faster? _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,193,825.51,828.78,Well it has to do with the word distribution in text. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,194,828.78,834.01,_So, here's some common phenomenon of word distribution in text. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,195,834.01,838.72,_There are some language-in, independent patterns that seem to be stable. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,196,840.32,847.69,And these patterns are basically characterized by the following pattern. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,197,847.69,852.497,_A few words like the common words like the a, or we, occur very, _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,198,852.497,854.78,very frequently in text. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,199,854.78,858.22,So they account for a large percent of occurrences of words. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,200,859.42,862.93,But most word would occur just rarely. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,201,862.93,865.66,_There are many words that occur just once, _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,202,865.66,869.769,_let's say, in a document, or once in the collection. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,203,869.769,872.29,And there are many such single terms. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,204,874.4,879.03,It's also true that the most frequent words in one corpus 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,205,879.03,880.44,may actually be rare in another. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,206,880.44,885.87,_That means, although the general phenomenon is applicable or _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,207,885.87,887.51,_is observed in many cases, _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,208,888.52,894.77,the exact words that are common may vary from context to context. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,209,894.77,899.45,So this phenomena is characterized by what's called a Zipf's Law. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,210,899.45,903.88,_This law says that the rank of a word multiplied by, _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,211,903.88,906.36,the frequency of the word is roughly constant. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,212,907.45,912.96,_So formally if we use F of w to denote the, frequency, _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,213,912.96,917.39,_r of w to denote the rank of a word, then this is the formula. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,214,917.39,922.98,_It basically says the same thing, just mathematical term, where C is, _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,215,922.98,927.34,_basically a constant, right, so as, so. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,216,927.34,930.0,_And there is also parameter alpha that might, _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,217,930.0,934.18,be adjusted to better fit any empirical observations. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,218,934.18,938.24,_So if I plot the word frequencies in sorted order, _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,219,938.24,941.24,then you can see this more easily. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,220,941.24,943.66,The x-axis is basically the word rank. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,221,943.66,945.038,And this is r of w. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,222,945.038,950.48,_And the y-axis is the word frequency, or F of w. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,223,950.48,955.293,_Now, this curve basically shows that the product of the two _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,224,955.293,957.42,is roughly the constant. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,225,957.42,959.872,_Now, if you look these words, we can see. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,226,959.872,962.525,They can be separated into three group2s. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,227,962.525,966.87,In the middle it's the immediate frequency words. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,228,966.87,971.37,_These words tend to occur in quite a few documents, right? _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,229,971.37,974.89,But they're not like those most frequent words. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,230,974.89,977.14,And they are also not very rare. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,231,978.18,983.94,_So they tend to be often used in in, in queries. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,232,983.94,988.842,And they also tend to have high TFI diff weights in these intermediate 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,233,988.842,991.07,frequency words. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,234,991.07,995.077,But if you look at the left part of the curve. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,235,995.077,997.997,These are the highest frequency words. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,236,997.997,999.634,They occur very frequently. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,237,999.634,1005.54,_They are usually stopper words, the, we, of, et cetera. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,238,1005.54,1007.68,_Those words are very, very frequently. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,239,1007.68,1010.81,_They are, in fact, a too frequently to be discriminated. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,240,1010.81,1015.118,_And they generally are not very useful for, for retrieval. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,241,1015.118,1021.9,_So, they are often removed, and this is called a stop words removal. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,242,1021.9,1026.759,So you can use pretty much just the count of words in the collection to kind 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,243,1026.759,1029.56,of infer what words might be stop words. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,244,1029.56,1032.69,Those are basically the highest frequency words. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,245,1033.78,1037.941,And they also occupy a lot of space in the invert index. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,246,1037.941,1042.365,You can imagine the posting entries for such a word would be very long. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,247,1042.365,1046.466,_And then therefore, if you can remove such words, _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,248,1046.466,1049.89,you can save a lot of space in the invert index. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,249,1049.89,1055.1,_We also show the tail part, which is, has a lot of rare words. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,250,1055.1,1058.47,_Those words don't occur very frequently, and there are many such words. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,251,1059.68,1061.69,_Those words are actually very useful for search, _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,252,1061.69,1065.084,_also, if a user happens to be interested in such a topic. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,253,1065.084,1069.852,_But because they're rare it's often true that users are, _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,254,1069.852,1073.484,aren't the necessary interest in those words. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,255,1073.484,1078.427,_But retain them would allow us to match such a document accurately, _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,256,1078.427,1081.194,and they generally have very high IDFs. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,257,1085.478,1090.84,So what kind of data structures should we use to to store inverted index? 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,258,1090.84,1091.97,_Well, it has two parts, right? _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,259,1091.97,1097.02,_If you recall we have a dictionary, and we also have postings. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,260,1097.02,1099.87,_The dictionary has modest size, although for _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,261,1099.87,1102.12,_the web, it still wouldn't be very large. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,262,1102.12,1104.69,_But compared with postings, it's modest. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,263,1106.08,1109.7,_And we also need to have fast, random access to the entries _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,264,1109.7,1112.94,because we want to look up the query term very quickly. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,265,1112.94,1119.16,_So, therefore, we prefer to keep such a dictionary in memory if it's possible. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,266,1119.16,1123.65,_Or, or, or if the connection is not very large, and this is visible. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,267,1123.65,1127.83,_But if the connection is very large, then it's in general not possible. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,268,1127.83,1132.11,_If the vocabulary size is very large, obviously we can't do that. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,269,1132.11,1135.81,_So, but in general, that's our goal. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,270,1135.81,1138.413,So the data structures that we often use for 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,271,1138.413,1143.619,_storing dictionary would be direct access data structures, like a hash table or _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,272,1143.619,1148.348,B-tree if we can't store everything in memory of the newest disk. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,273,1148.348,1152.049,And but to try to build a structure that would allow it to quickly look up our 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,274,1152.049,1152.597,entries. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,275,1152.597,1153.919,Right. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,276,1153.919,1158.05,_For postings, they're huge, you can see. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,277,1158.05,1164.79,_And in general, we don't have to have direct access to a specific engine. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,278,1164.79,1169.15,_We generally would just look up a, a sequence of document IDs and _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,279,1169.15,1172.82,frequencies for all of the documents that match a query term. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,280,1173.94,1176.57,So we would read those entries sequentially. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,281,1177.67,1181.115,_And therefore, because it's large and we generate, _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,282,1181.115,1185.74,_have store postings on disk, so they have to stay on disk. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,283,1186.88,1191.418,_And they would contain information such as document IDs, term frequencies, or _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,284,1191.418,1193.096,_term positions, et cetera. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,285,1193.096,1198.241,_Now because they're very large, compression is often desirable. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,286,1198.241,1201.649,Now this is not only to save disk space and 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,287,1201.649,1206.46,_this is of course, one benefit of compression. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,288,1206.46,1209.08,It's not going to occupy that much space. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,289,1209.08,1211.75,But it's also to help improving speed. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,290,1213.13,1215.98,Can you see why? 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,291,1215.98,1220.35,_Well, we know that input and _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,292,1220.35,1228.34,output will cost a lot of time in comparison with the time taken by CPU. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,293,1228.34,1229.874,So CPU is much faster. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,294,1229.874,1232.266,But IO takes time. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,295,1232.266,1238.935,_And so by compressing the inverted index, the posting files will become smaller. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,296,1238.935,1242.525,And the entries that we have to read into memory 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,297,1242.525,1247.495,_to process a query done, would would be smaller. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,298,1247.495,1252.601,_And then so we, we can reduce the amount of traffic and IO. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,299,1252.601,1254.459,And that can save a lot of time. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,300,1254.459,1259.44,_Of course, we have to then do more processing of the data _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,301,1259.44,1263.705,_when we uncompress the, the data in the memory. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,302,1263.705,1267.293,_But as I said, CPU is fast, so overall, we can still save time. _
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,303,1267.293,1270.868,So compression here is both to save disk space and 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,304,1270.868,1274.976,to speed up the loading of the inverted index. 
+3 - 1 - 2.1 Implementation of TR Systems (00-21-27).srt,305,1274.976,1284.976,[MUSIC] 

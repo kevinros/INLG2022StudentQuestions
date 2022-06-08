@@ -1,0 +1,207 @@
+name,id,from,to,text
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,1,0.012,8.289,[SOUND] This lecture 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,2,8.289,12.379,is a continuing discussion of generative probabilistic models for tax classroom. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,3,14.21,17.21,_In this lecture, we're going to do a finishing discussion of _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,4,17.21,19.63,generative probabilistic models for text crossing. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,5,21.59,26.635,_So this is a slide that you have seen before and here, we show how we define _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,6,26.635,32.371,the mixture model for text crossing and what the likelihood function looks like. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,7,32.371,36.879,_And we can also compute the maximum likelihood estimate, _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,8,36.879,39.186,to estimate the parameters. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,9,39.186,43.804,_In this lecture, we're going to do talk more about how exactly we're going to _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,10,43.804,46.569,compute the maximum likelihood estimate. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,11,46.569,55.185,As in most cases the Algorithm can be used to solve this problem for mixture models. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,12,55.185,60.86,So here's the detail of this Algorithm for document clustering. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,13,60.86,64.45,_Now, if you have understood how Algorithm works for _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,14,64.45,69.49,_topic models like TRSA, and I think here it would be very similar. _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,15,69.49,75.78999999999999,And we just need to adapt a little bit to this new mixture model. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,16,75.78999999999999,82.78399999999999,So as you may recall Algorithm starts with initialization of all the parameters. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,17,82.78399999999999,87.14,So this is the same as what happened before for topic models. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,18,88.49,93.34,And then we're going to repeat until the likelihood converges and 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,19,93.34,97.31,in each step we'll do E step and M step. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,20,97.31,98.06,_In M step, _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,21,98.06,104.03999999999999,we're going to infer which distribution has been used to generate each document. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,22,104.03999999999999,108.53999999999999,So I have to introduce a hidden variable Zd for 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,23,108.53999999999999,114.61,_each document and this variable could take a value from the range of 1 through k, _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,24,114.61,116.91,representing k different distributions. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,25,119.57,124.14,_More specifically basically, we're going to apply base rules to infer which _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,26,124.14,129.24,_distribution is more likely to have generated this document, or _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,27,129.24,136.29,computing the posterior probability of the distribution given the document. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,28,137.39,141.49,And we know it's proportional to the probability 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,29,141.49,146.88,of selecting this distribution p of Z the i. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,30,146.88,152.07999999999998,And the probability of generating this whole document from the distribution which 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,31,152.07999999999998,160.0,is the product of the probabilities of world for this document as you see here. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,32,160.0,163.98,_Now, as you all clear this use for kind of remember, _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,33,165.05,170.3,the normalizer or the constraint on this probability. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,34,170.3,176.059,_So in this case, we know the constraint on this probability in _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,35,176.059,182.173,E-Step is that all the probabilities of Z equals i must sum to 1. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,36,182.173,186.658,Because the documented must have been generated from precisely one of these k 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,37,186.658,187.87,topics. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,38,187.87,191.86,So the probability of being generated from each of them should sum to 1. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,39,191.86,198.22,_And if you know this constraint, then you can easily compute this distribution _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,40,198.22,204.35,as long as you know what it is proportional to. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,41,204.35,209.379,_So once you compute this product that you see here, then you simply normalize _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,42,211.22,215.07,_these probabilities, to make them sum to 1 over all the topics. _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,43,215.07,220.07,_So that's E-Step, after E-Step we want to know which distribution is _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,44,220.07,224.03,_more likely to have generated this document d, and which is unlikely. _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,45,225.46,229.988,And then in M-Step we're going to re-estimate all the parameters based on 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,46,229.988,234.44299999999998,the in further z values or in further knowledge about which distribution 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,47,234.44299999999998,237.089,has been used to generate which document. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,48,237.089,242.522,So the re-estimation involves two kinds of parameters 1 is p of theta and 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,49,242.522,248.4,this is the probability of selecting a particular distribution. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,50,248.4,249.98,_Before we observe anything, _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,51,249.98,253.23,we don't have any knowledge about which cluster is more likely. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,52,253.23,257.558,_But after we have observed that these documents, _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,53,257.558,263.544,then we can crack the evidence to infer which cluster is more likely. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,54,263.544,268.166,And so this is proportional to the sum of 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,55,268.166,272.94,the probability of Z sub d j is equal to i. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,56,274.68,280.64,_And so this gives us all the evidence about using topic i, _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,57,280.64,283.38,theta i to generate a document. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,58,283.38,288.59000000000003,_Pull them together and again, we normalize them into probabilities. _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,59,290.42,293.3,So this is for key of theta sub i. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,60,294.56,298.969,Now the other kind of parameters are the probabilities of words in each 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,61,298.969,301.144,_distribution, in each cluster. _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,62,301.144,305.384,And this is very similar to the case piz and 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,63,305.384,310.23,here we just report the kinds of words that are in 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,64,310.23,315.442,documents that are inferred to have been generated 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,65,315.442,320.38,from a particular topic of theta i here. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,66,320.38,325.24,This would allows to then estimate how many words have 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,67,325.24,328.807,actually been generated from theta i. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,68,328.807,332.694,And then we'll normalize again these accounts in the probabilities so 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,69,332.694,336.55,that the probabilities on all the words would sum to up. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,70,336.55,340.56,Note that it's very important to understand these constraints as 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,71,340.56,345.89,they are precisely the normalizing in all these formulas. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,72,345.89,353.38,And it's also important to know that the distribution is over what? 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,73,354.49,359.73,_For example, the probability of theta is over all the k topics, _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,74,359.73,362.73,that's why these k probabilities will sum to 1. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,75,362.73,367.304,Whereas the probability of a word given theta is a probability distribution 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,76,367.304,368.527,over all the words. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,77,368.527,373.1,So there are many probabilities and they have to sum to 1. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,78,373.1,377.279,_So now, let's take a look at a simple example of two clusters. _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,79,377.279,381.34,_I've two clusters, I've assumed some initialized values for _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,80,381.34,383.44,the two distributions. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,81,383.44,388.27,And let's assume we randomly initialize two probability of 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,82,388.27,393.14,_selecting each cluster as 0.5, so equally likely. _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,83,393.14,396.4,And then let's consider one document that you have seen here. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,84,396.4,401.35,There are two occurrences of text and two occurrences of mining. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,85,401.35,404.90999999999997,So there are four words together and medical and 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,86,404.90999999999997,407.1,health did not occur in this document. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,87,407.1,409.209,So let's think about the hidden variable. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,88,410.36,414.97,Now for each document then we much use a hidden variable. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,89,414.97,418.907,_And before in piz, we used one hidden variable for _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,90,418.907,423.804,each work because that's the output from one mixture model. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,91,423.804,426.562,So in our case the output from the mixture model or 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,92,426.562,430.81,_the observation from mixture model is a document, not a word. _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,93,430.81,434.92,So now we have one hidden variable attached to the document. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,94,434.92,438.338,Now that hidden variable must tell us which distribution has been used to 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,95,438.338,439.525,generate the document. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,96,439.525,444.01,_So it's going to take two values, one and two to indicate the two topics. _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,97,445.35,449.94,So now how do we infer which distribution has been used generally d? 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,98,449.94,453.38,_Well it's been used base rule, so it looks like this. _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,99,453.38,459.071,_In order for the first topic theta 1 to generate a document, _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,100,459.071,461.53,two things must happen. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,101,461.53,465.21,_First, theta sub 1 must have been selected. _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,102,465.21,468.05,So it's given by p of theta 1. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,103,468.05,474.144,_Second, it must have also be generating the four words in the document. _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,104,474.144,479.004,_Namely, two occurrences of text and two occurrences of sub mining. _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,105,479.004,484.283,And that's why you see the numerator has the product of the probability of 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,106,484.283,490.182,selecting theta 1 and the probability of generating the document from theta 1. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,107,490.182,495.011,So the denominator is just the sum of two possibilities of generality in 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,108,495.011,496.146,this document. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,109,496.146,501.138,_And you can plug in the numerical values to verify indeed in this case, _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,110,501.138,505.283,_the document is more likely to be generated from theta 1, _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,111,505.283,507.915,much more likely than from theta 2. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,112,507.915,510.236,_So once we have this probability, _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,113,510.236,515.95,_we can easily compute the probability of Z equals 2, given this document. _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,114,515.95,516.69,How? 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,115,516.69,518.72,_Well, we can use the constraint. _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,116,518.72,523.3389999999999,That's going to be 1 minus 100 over 101. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,117,523.3389999999999,527.5,So now it's important that you note that in such a computation there 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,118,527.5,530.52,is a potential problem of underflow. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,119,530.52,535.7,_And that is because if you look at the original numerator and the denominator, _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,120,535.7,540.53,it involves the competition of a product of many small probabilities. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,121,540.53,543.05,Imagine if a document has many words and 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,122,543.05,549.36,it's going to be a very small value here that can cause the problem of underflow. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,123,549.36,554.294,_So to solve the problem, we can use a normalize. _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,124,554.294,558.537,So here you see that we take a average of all these two math 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,125,558.537,563.34,solutions to compute average at the screen called a theta bar. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,126,564.53,568.59,And this average distribution would be comparable to 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,127,568.59,573.65,each of these distributions in terms of the quantities or the magnitude. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,128,573.65,578.44,So we can then divide the numerator and 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,129,578.44,582.07,the denominator both by this normalizer. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,130,582.07,587.688,So basically this normalizes the probability of generating 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,131,587.688,592.99,this document by using this average word distribution. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,132,592.99,596.31,So you can see the normalizer is here. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,133,596.31,600.69,And since we have used exactly the same normalizer for the numerator and 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,134,600.69,602.24,the denominator. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,135,602.24,607.94,The whole value of this expression is not changed but by doing this normalization 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,136,607.94,614.48,you can see we can make the numerators and the denominators more manageable 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,137,614.48,619.89,in that the overall value is not going to be very small for each. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,138,619.89,622.66,And thus we can avoid the underflow problem. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,139,624.58,629.53,In some other times we sometimes also use logarithm of the product 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,140,629.53,633.57,to convert this into a sum of log of probabilities. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,141,633.57,636.08,_This can help preserve precision as well, but _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,142,636.08,640.72,in this case we cannot use algorithm to solve the problem. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,143,640.72,644.03,_Because there is a sum in the denominator, but _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,144,644.03,649.23,this kind of normalizes can be effective for solving this problem. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,145,649.23,653.754,So it's a technique that's sometimes useful in other situations in other 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,146,653.754,655.057,situations as well. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,147,655.057,656.63,Now let's look at the M-Step. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,148,656.63,661.557,So from the E-Step we can see our estimate of which distribution is more likely to 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,149,661.557,663.521,have generated a document at d. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,150,663.521,668.157,_And you can see d1's more like got it from the first topic, _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,151,668.157,672.09,_where is d2 is more like from second topic, etc. _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,152,672.09,675.8,_Now, let's think about what we need to compute in M-step well _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,153,675.8,678.46,basically we need to re-estimate all the parameters. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,154,678.46,682.75,_First, look at p of theta 1 and p of theta 2. _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,155,682.75,684.01,How do we estimate that? 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,156,684.01,691.625,_Intuitively you can just pool together these z, the probabilities from E-step. _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,157,691.625,696.335,_So if all of these documents say, well they're more likely from theta 1, _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,158,696.335,702.24,then we intuitively would give a higher probability to theta 1. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,159,702.24,706.24,_In this case, we can just take an average of these _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,160,706.24,710.92,probabilities that you see here and we've obtain a 0.6 for theta 1. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,161,710.92,713.86,So 01 is more likely and then theta 2. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,162,713.86,719.542,So you can see probability of 02 would be natural in 0.4. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,163,719.542,721.68,What about these word of probabilities? 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,164,721.68,724.49,_Well we do the same, and intuition is the same. _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,165,724.49,725.802,_So we're going to see, _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,166,725.802,729.148,_in order to estimate the probabilities of words in theta 1, _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,167,729.148,733.295,we're going to look at which documents have been generated from theta 1. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,168,733.295,737.51,And we're going to pull together the words in those documents and normalize them. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,169,737.51,739.4,So this is basically what I just said. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,170,740.51,745.97,_More specifically, we're going to do for example, use all the kinds of text in _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,171,745.97,751.103,these documents for estimating the probability of text given theta 1. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,172,751.103,754.48,But we're not going to use their raw count or total accounts. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,173,754.48,760.11,_Instead, we can do that discount them by the probabilities that each document _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,174,760.11,763.567,is likely been generated from theta 1. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,175,763.567,767.49,So these gives us some fractional accounts. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,176,767.49,770.48,And then these accounts would be then normalized 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,177,770.48,772.53,in order to get the probability. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,178,772.53,773.72,_Now, how do we normalize them? _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,179,773.72,777.81,Well these probability of these words must assign to 1. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,180,777.81,782.79,So to summarize our discussion of generative models for clustering. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,181,782.79,787.5,Well we show that a slight variation of topic model can be used for 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,182,787.5,788.76,clustering documents. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,183,788.76,792.73,And this also shows the power of generating models in general. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,184,792.73,798.18,By changing the generation assumption and changing the model slightly we can achieve 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,185,798.18,803.01,_different goals, and we can capture different patterns and types of data. _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,186,803.01,807.43,_So in this case, each cluster is represented by unigram language model _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,187,807.43,811.94,word distribution and that is similar to topic model. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,188,811.94,815.68,So here you can see the word distribution actually generates a term cluster 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,189,815.68,817.9,as a by-product. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,190,817.9,821.09,A document that is generated by first choosing a unigram language model. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,191,821.09,824.19,And then generating all the words in the document are using 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,192,824.19,825.96,just a single language model. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,193,825.96,829.83,And this is very different from again copy model where we can generate 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,194,829.83,834.91,the words in the document by using multiple unigram language models. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,195,836.74,841.53,And then the estimated model parameters are given both topic characterization 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,196,841.53,842.95,of each cluster and 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,197,842.95,846.19,the probabilistic assignment of each document into a cluster. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,198,847.29,852.14,And this probabilistic assignment sometimes is useful for some applications. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,199,852.14,855.71,But if we want to achieve harder clusters mainly to 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,200,856.8,860.16,partition documents into disjointed clusters. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,201,860.16,865.073,Then we can just force a document into the cluster corresponding to the words 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,202,865.073,869.467,distribution that's most likely to have generated the document. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,203,869.467,873.669,We've also shown that the Algorithm can be used to compute the maximum likelihood 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,204,873.669,874.99,estimate. 
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,205,874.99,878.798,_And in this case, we need to use a special _
+4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).srt,206,878.798,883.393,number addition technique to avoid underflow. 

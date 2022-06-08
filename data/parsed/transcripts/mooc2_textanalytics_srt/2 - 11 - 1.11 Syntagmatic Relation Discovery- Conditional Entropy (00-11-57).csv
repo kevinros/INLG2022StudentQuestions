@@ -1,0 +1,157 @@
+name,id,from,to,text
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,1,0.025,5.819,[SOUND] This lecture is about the syntagmatic 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,2,5.819,12.09,relation discovery and conditional entropy. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,3,12.09,12.963,_In this lecture, _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,4,12.963,16.939,we're going to continue the discussion of word association mining and analysis. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,5,18.06,22.93,_We're going to talk about the conditional entropy, which is useful for _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,6,22.93,25.7,discovering syntagmatic relations. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,7,25.7,29.4,_Earlier, we talked about using entropy to capture _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,8,29.4,33.03,how easy it is to predict the presence or absence of a word. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,9,34.18,37.7,_Now, we'll address a different scenario where _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,10,37.7,41.32,we assume that we know something about the text segment. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,11,41.32,48.83,_So now the question is, suppose we know that eats occurred in the segment. _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,12,48.83,51.15,How would that help us predict the presence or 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,13,51.15,53.99,_absence of water, like in meat? _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,14,53.99,58.06,_And in particular, we want to know whether the presence of eats _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,15,58.06,60.959,has helped us predict the presence of meat. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,16,62.02,65.04,_And if we frame this using entrophy, _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,17,65.04,70.7,that would mean we are interested in knowing whether knowing 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,18,70.7,75.1,the presence of eats could reduce uncertainty about the meats. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,19,75.1,78.8,_Or, reduce the entrophy of the random variable _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,20,78.8,83.43,corresponding to the presence or absence of meat. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,21,83.43,87.95,_We can also ask as a question, what if we know of the absents of eats? _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,22,88.95,93.00999999999999,Would that also help us predict the presence or absence of meat? 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,23,94.72,99.41499999999999,These questions can be addressed by using another 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,24,99.41499999999999,103.12,concept called a conditioning entropy. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,25,103.12,108.46000000000001,_So to explain this concept, let's first look at the scenario we had before, _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,26,108.46000000000001,111.218,when we know nothing about the segment. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,27,111.218,116.52199999999999,_So we have these probabilities indicating whether a word like meat occurs, _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,28,116.52199999999999,118.83,or it doesn't occur in the segment. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,29,118.83,122.65,And we have an entropy function that looks like what you see on the slide. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,30,123.81,127.41,_Now suppose we know eats is present, so _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,31,127.41,131.33,now we know the value of another random variable that denotes eats. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,32,132.73,135.27,_Now, that would change all these probabilities to _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,33,135.27,137.55,conditional probabilities. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,34,137.55,140.57999999999998,_Where we look at the presence or absence of meat, _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,35,141.8,145.57,given that we know eats occurred in the context. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,36,145.57,147.48,_So as a result, _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,37,147.48,151.82,if we replace these probabilities with their corresponding conditional 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,38,151.82,156.32,_probabilities in the entropy function, we'll get the conditional entropy. _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,39,157.65,162.522,So this equation now here would be 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,40,162.522,166.9,the conditional entropy. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,41,166.9,169.15,Conditional on the presence of eats. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,42,172.18,177.07,_So, you can see this is essentially the same entropy function as you have _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,43,177.07,181.9,_seen before, except that all the probabilities now have a condition. _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,44,184.42,189.55,_And this then tells us the entropy of meat, _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,45,189.55,193.02,after we have known eats occurring in the segment. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,46,194.38,197.77,_And of course, we can also define this conditional entropy for _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,47,197.77,200.54,the scenario where we don't see eats. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,48,200.54,205.15,_So if we know it did not occur in the segment, then this entry condition of _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,49,205.15,210.71,entropy would capture the instances of meat in that condition. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,50,210.71,214.11,_So now, putting different scenarios together, _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,51,214.11,217.609,we have the completed definition of conditional entropy as follows. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,52,219.25,228.52,_Basically, we're going to consider both scenarios of the value of eats zero, one, _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,53,228.52,234.28,and this gives us a probability that eats is equal to zero or one. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,54,234.28,238.04,_Basically, whether eats is present or absent. _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,55,238.04,239.15,_And this of course, _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,56,239.15,244.31,is the conditional entropy of meat in that particular scenario. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,57,245.51,250.11,_So if you expanded this entropy, _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,58,250.11,254.33,then you have the following equation. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,59,255.76,259.429,Where you see the involvement of those conditional probabilities. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,60,261.53,266.33,_Now in general, for any discrete random variables x and y, we have _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,61,267.94,275.24,the conditional entropy is no larger than the entropy of the variable x. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,62,275.24,281.95,_So basically, this is upper bound for the conditional entropy. _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,63,281.95,286.38,_That means by knowing more information about the segment, _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,64,286.38,289.63,we want to be able to increase uncertainty. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,65,289.63,291.57,We can only reduce uncertainty. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,66,291.57,296.18,_And that intuitively makes sense because as we know more information, _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,67,296.18,300.18,it should always help us make the prediction. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,68,300.18,304.0,And cannot hurt the prediction in any case. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,69,305.42,308.88,_Now, what's interesting here is also to think about what's the minimum possible _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,70,308.88,311.77,value of this conditional entropy? 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,71,311.77,316.27,_Now, we know that the maximum value is the entropy of X. _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,72,317.94,320.313,_But what about the minimum, so what do you think? _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,73,322.883,328.552,_I hope you can reach the conclusion that the minimum possible value, would be zero. _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,74,328.552,333.09000000000003,And it will be interesting to think about under what situation will achieve this. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,75,334.12,337.86,_So, let's see how we can use conditional entropy to capture syntagmatic relation. _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,76,339.42,344.25,_Now of course, this conditional entropy gives us directly _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,77,344.25,348.3,one way to measure the association of two words. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,78,348.3,353.75,_Because it tells us to what extent, we can predict the one _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,79,353.75,358.995,word given that we know the presence or absence of another word. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,80,358.995,363.9,Now before we look at the intuition of conditional entropy in capturing 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,81,363.9,369.09,_syntagmatic relations, it's useful to think of a very special case, listed here. _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,82,369.09,377.91,_That is, the conditional entropy of the word given itself. _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,83,379.0,382.98,_So here, _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,84,382.98,388.42,we listed this conditional entropy in the middle. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,85,388.42,391.28,_So, it's here. _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,86,393.55,395.1,_So, what is the value of this? _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,87,396.38,403.37,_Now, this means we know where the meat occurs in the sentence. _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,88,403.37,407.717,And we hope to predict whether the meat occurs in the sentence. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,89,407.717,412.51800000000003,_And of course, this is 0 because there's no incident anymore. _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,90,412.51800000000003,415.862,_Once we know whether the word occurs in the segment, _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,91,415.862,419.132,we'll already know the answer of the prediction. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,92,419.132,420.41,So this is zero. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,93,420.41,423.39,And that's also when this conditional entropy reaches the minimum. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,94,426.28,428.28,_So now, let's look at some other cases. _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,95,429.53,435.84,So this is a case of knowing the and trying to predict the meat. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,96,435.84,440.84,And this is a case of knowing eats and trying to predict the meat. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,97,440.84,442.87,Which one do you think is smaller? 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,98,442.87,447.763,No doubt smaller entropy means easier for prediction. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,99,451.511,453.26,Which one do you think is higher? 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,100,453.26,454.82,Which one is not smaller? 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,101,456.8,461.73199999999997,_Well, if you at the uncertainty, then in the first case, _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,102,461.73199999999997,465.73,the doesn't really tell us much about the meat. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,103,465.73,471.52,So knowing the occurrence of the doesn't really help us reduce entropy that much. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,104,471.52,476.46500000000003,So it stays fairly close to the original entropy of meat. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,105,476.46500000000003,481.12,_Whereas in the case of eats, eats is related to meat. _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,106,481.12,484.42,_So knowing presence of eats or absence of eats, _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,107,484.42,487.78,would help us predict whether meat occurs. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,108,487.78,494.29,So it can help us reduce entropy of meat. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,109,494.29,500.47,_So we should expect the sigma term, namely this one, to have a smaller entropy. _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,110,501.63,505.87,And that means there is a stronger association between meat and eats. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,111,509.07,516.36,So we now also know when this w is the same as this 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,112,516.36,521.4,_meat, then the conditional entropy would reach its minimum, which is 0. _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,113,521.4,525.3,And for what kind of words would either reach its maximum? 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,114,525.3,529.885,_Well, that's when this stuff is not really related to meat. _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,115,529.885,535.3389999999999,_And like the for example, it would be very close to the maximum, _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,116,535.3389999999999,538.48,which is the entropy of meat itself. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,117,539.97,543.05,So this suggests that when you use conditional entropy for 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,118,543.05,547.71,_mining syntagmatic relations, the hours would look as follows. _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,119,550.14,554.78,_For each word W1, we're going to enumerate the overall other words W2. _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,120,554.78,561.02,_And then, we can compute the conditional entropy of W1 given W2. _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,121,562.17,566.63,We thought all the candidate was in ascending order of the conditional entropy 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,122,566.63,570.09,_because we're out of favor, a world that has a small entropy. _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,123,570.09,574.637,Meaning that it helps us predict the time of the word W1. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,124,574.637,578.378,_And then, we're going to take the top ring of the candidate words as words that have _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,125,578.378,580.48,potential syntagmatic relations with W1. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,126,581.91,587.7,Note that we need to use a threshold to find these words. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,127,587.7,591.474,_The stresser can be the number of top candidates take, or _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,128,591.474,594.55,absolute value for the conditional entropy. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,129,595.9,600.11,_Now, this would allow us to mine the most _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,130,600.11,603.7,_strongly correlated words with a particular word, W1 here. _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,131,606.38,610.56,_But, this algorithm does not help us mine the strongest _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,132,610.56,614.8,that K syntagmatical relations from an entire collection. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,133,614.8,619.37,_Because in order to do that, we have to ensure that these conditional entropies _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,134,619.37,624.01,are comparable across different words. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,135,624.01,628.47,In this case of discovering the mathematical relations for 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,136,628.47,633.52,_a targeted word like W1, we only need to compare the conditional entropies _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,137,634.98,638.6,_for W1, given different words. _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,138,638.6,640.78,_And in this case, they are comparable. _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,139,641.86,643.69,All right. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,140,643.69,648.04,_So, the conditional entropy of W1, given W2, and the conditional entropy of W1, _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,141,648.04,649.77,given W3 are comparable. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,142,651.1,655.49,They all measure how hard it is to predict the W1. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,143,655.49,660.07,_But, if we think about the two pairs, _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,144,660.07,666.37,_where we share W2 in the same condition, and we try to predict the W1 and W3. _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,145,666.37,671.296,_Then, the conditional entropies are actually not comparable. _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,146,671.296,675.925,You can think of about this question. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,147,675.925,677.022,Why? 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,148,677.022,679.87,So why are they not comfortable? 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,149,679.87,683.21,_Well, that was because they have a different outer bounds. _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,150,683.21,685.69,Right? So those outer bounds are precisely 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,151,685.69,689.23,the entropy of W1 and the entropy of W3. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,152,689.23,691.15,And they have different upper bounds. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,153,691.15,695.0,So we cannot really compare them in this way. 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,154,695.0,696.42,So how do we address this problem? 
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,155,698.0,705.219,_Well later, we'll discuss, we can use mutual information to solve this problem. _
+2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).srt,156,705.219,715.219,[MUSIC] 

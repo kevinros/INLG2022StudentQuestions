@@ -1,0 +1,66 @@
+name,id,from,to,text
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,1,0.012,4.379,[NOISE]. 
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,2,6.701,10.014,There are many more advanced learning algorithms than the regression based 
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,3,10.014,11.3,reproaches. 
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,4,11.3,13.86,And they generally account to theoretically 
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,5,13.86,14.977,optimize or retrieval method. 
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,6,16.69,18.01,Like map or nDCG. 
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,7,19.02,24.63,Note that the optimization objecting function that we have seen 
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,8,24.63,29.601,on the previous slide is not directly related to retrieval measure. 
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,9,31.22,31.877,Right? 
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,10,31.877,34.93,By maximizing the prediction of one or zero. 
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,11,34.93,39.43,Or we don't necessarily optimize the ranking of those documents. 
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,12,39.43,44.21,_One can imagine that why, our prediction may not be too bad and _
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,13,44.21,45.88,let's say both are around 0.5. 
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,14,45.88,49.4,So it's kind of in the middle of zero and one for 
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,15,49.4,53.0,_the two documents, but the ranking can be wrong. _
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,16,53.0,56.59,_So we might have the, a larger value for. _
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,17,56.59,58.12,D2 and then e1. 
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,18,60.75,63.97,_So that won't be good from retrieval perspective, _
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,19,63.97,67.43,_even though by likelihood function, it's not bad. _
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,20,67.43,70.78999999999999,_In contrast, we might have another case where we predicted values. _
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,21,70.78999999999999,74.0,_Or around 0.9 let's say, _
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,22,74.0,77.98,_and by the objective function, the error will be larger, but if we _
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,23,77.98,82.95,_can get the order of the two documents correct, that's actually a better result. _
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,24,82.95,88.07,So these new more advanced approaches will try to correct that problem. 
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,25,88.07,90.51,Of course then the challenge is that. 
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,26,90.51,93.69,That the optimization problem will be harder to solve. 
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,27,93.69,97.7,And then researchers have proposed many solutions to the problem. 
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,28,97.7,102.1,And you can read more of the references at the end. 
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,29,102.1,106.57,Know more about the these approaches. 
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,30,106.57,109.5,Now these learning to random approaches. 
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,31,109.5,113.53,_Are actually general, so they can also be applied to many other ranking problems, _
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,32,113.53,115.35,not just retrieval problem. 
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,33,115.35,118.999,_So here I list some for example recommender systems, _
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,34,118.999,123.136,_computational adv, advertising, or summarization, and _
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,35,123.136,128.913,there are many others that you can probably encounter in your applications. 
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,36,131.294,136.174,_To summarize this lecture, we have talked about, using machine _
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,37,136.174,141.06,learning to combine much more features to incorporate a ranking without. 
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,38,142.78,144.69,_Actually the use of machine learning, _
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,39,145.81,149.59,in information retrieval has started since many decades ago. 
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,40,149.59,155.546,So for example on the Rocchio feedback approach that we talked about earlier 
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,41,155.546,160.801,_was a machine learning approach applied to to learn this feedback, but _
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,42,160.801,167.5,the most reasonable use of machine learning has been driven by some changes. 
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,43,167.5,171.69,In the environment of applications of retrieval systems. 
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,44,171.69,174.42000000000002,_And first it's, mostly, _
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,45,175.45,180.09,driven by the availability of a lot of training data in the form of clicks rules. 
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,46,181.33,184.25,Such data weren't available before. 
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,47,184.25,190.67,So the data can provide a lot of useful knowledge about 
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,48,190.67,195.79,relevance and machine learning methods can be applied to leverage this. 
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,49,197.92000000000002,200.8,Secondly it's also due by the need of combining them. 
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,50,200.8,201.38,In the features. And 
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,51,201.38,206.53,this is not only just because there are more features available on the web 
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,52,206.53,209.84,that can be naturally re-used with improved scoring. 
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,53,209.84,215.9,_It's also because by combining them, we can improve the robustness of ranking. _
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,54,215.9,219.839,So this is designed for combating spams. 
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,55,221.45600000000002,225.77,Modern search engines all use some kind of machine learning techniques to combine 
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,56,225.77,228.82999999999998,many features to optimize ranking and 
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,57,228.82999999999998,233.57999999999998,_this is a major feature of these current engines such as Google, Bing. _
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,58,236.478,239.4,The topic of learning to rank is still active research. 
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,59,239.4,244.64,_Topic in the community, and so you can expect to see new results being developed, _
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,60,246.32,248.79,_in the next, few years. _
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,61,248.79,249.934,Perhaps. 
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,62,252.779,256.692,Here are some additional readings that can give you more information about. 
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,63,256.692,261.278,_About, how learning to rank books and _
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,64,261.278,265.271,also some advanced methods. 
+5 - 8 - 4.4 Learning to Rank - Part 3 (00-04-58).srt,65,265.271,275.271,[MUSIC] 

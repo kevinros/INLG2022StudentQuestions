@@ -1,0 +1,52 @@
+filename,lecture in question,lecture,raw from,raw to,from,to,text
+week9_allquestions,9.5,3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).csv, 0'00",3'00",0,180, Can we improve by using something other than completely random values for initialization?
+week9_allquestions,9.2,3 - 8 - 2.8 Probabilistic Topic Models- Mixture Model Estimation- Part 1 (00-10-16).csv, 00'00" , 1'00",0,60, I am having trouble comprehending the forumla and understanding each variable? Why does the formula work?
+week9_allquestions,9.1,3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).csv, 11'45",12'23",705,743,$ How do we mix other Language Models, perhaps two Bigram Language Models?$
+week9_allquestions,3.7,MISSING, 2' 42",3' 00",162,180, How does PLSA operate the same way as component mixture model?
+week9_allquestions,9.8,3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).csv, 4'32",4'45",272,285, What is j??
+week9_allquestions,3.8,MISSING, 7'30'',8'00'',450,480, Would the normalizer for the background probability estimate be that the probability of all words from the background must sum to 1 as well?
+week9_allquestions,9.9,3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).csv, 9'20",10'34",560,634, How accurate is ML Parameter Estimation and what can be done to improve it?
+week9_allquestions,9.1,3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).csv, 4'30",6'00",270,360,$ What is the point of having a common background word, like "the", to be part of both the topic and background probability distributions?$
+week9_allquestions,9.3,3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).csv,6'00",6'30",360,390, How does assigning high probabilities to words with high frequencies maximize likelihood?
+week9_allquestions,3.5,MISSING, 5'15",5'20",315,320, What do all the terms in the two equations mean in a general sense?
+week9_allquestions,9.1,3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).csv, 00'25",01'50",25,110, How is using a mixture model more effective than removing stop words if we want to "factor out background (common) words"?
+week9_allquestions,3.3,MISSING, 6'57",7'20",417,440, Why does fix one components help get rid of background words?
+week9_allquestions,9.4,3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).csv, 1'06" , 2'27",66,147, Is it possible that the likelihood is conituously changing so the interation cannot stop?
+week9_allquestions,9.10,3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).csv, 1'42'',1'50'',102,110,How to make PLSA a generative model?
+week9_allquestions,9.7,3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).csv, 2'16",3'26",136,206, How do we distinguish which component model is gonna be chosen if we apply the PLSA mixture model?
+week9_allquestions,9.10,3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).csv, 1'00",2'00",60,120, Why is PLSA not a generative model?
+week9_allquestions,9.10,3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).csv, 4'31'',4'50'',271,290,how do we compute k parameters
+week9_allquestions,3.5,MISSING, 8'55",8'59",535,539, What is the difference between the E step and the M step?
+week9_allquestions,3.3,MISSING, 7’03”,7’29”,423,449, Why do different components tend to assign high probability on different words?
+week9_allquestions,9.9,3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).csv, 1'23",2'33",83,153, Can we not utilize the same method for mining K topics as we do for mining 1 topic?
+week9_allquestions,9.4,3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).csv, 8'50",10'00",530,600, Will these Zs allow us to pull some binary classification technique on these thetas?
+week9_allquestions,9.1,3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).csv, 1'12",2'25",72,145, Do we have bigrams and trigrams models too?
+week9_allquestions,9.1,3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).csv, 11'40",12'03",700,723, Why we multiply all the probabilities rather than sum them?
+week9_allquestions,9.2,3 - 8 - 2.8 Probabilistic Topic Models- Mixture Model Estimation- Part 1 (00-10-16).csv, 5'10", 5'58",310,358,$ Could you provide examples when demonstrating the behaviors of the mixture model, especially for the 2nd and 3rd feature?  What does "avoid competition or waste of probability mean (2nd behavior)? What excatly does "collboration" mean (3rd behavior)?$
+week9_allquestions,8.5,MISSING, 0'00",2'30",0,150,$ In trying to figure out topics from the text, how does the system actual understand the topic itself? As in it getes the pattern but how is this topic extracted and how does the machine contextualize the topic?$
+week9_allquestions,9.3,3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).csv, 4'12",4'13",252,253, How did this response equation come out
+week9_allquestions,3.4,MISSING, 3'54",4'02",234,242, How to guess the probabilities to ensure the it will converge at the global maximum but not a local maximum?
+week9_allquestions,3.6,MISSING, 1'40",2'13",100,133, Are the two curves tangent?
+week9_allquestions,9.1,3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).csv, 3'43",5'37",223,337, How can we use the entropy function to determine common words that don't provide much content or context to our document? Like stop words?
+week9_allquestions,9.1,3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).csv, 5'00",5'10",300,310, Is the probability per omega_B equal to 1/|Number of documents|?
+week9_allquestions,9.10,3 - 16 - 2.16 Latent Dirichlet Allocation (LDA)- Part 2 (00-12-03).csv, 5'10",8'47",310,527, What does LDA do? Is it very efficient? Is there any application of it?
+week9_allquestions,3.3,MISSING, 7'30'',8'00'',450,480, How does imposing the background model prior enforce a 0 probability for models that are not consistent with the prior?
+week9_allquestions,3.5,MISSING, 9'50'',10'27'',590,627, Could you please explain the example use mentioned for the by-products P(z=0|w) of the EM algorithm?
+week9_allquestions,3.7,MISSING, 3'26",4'31",206,271,$ To what extent can we distinguish between different topics and sentiments? For example, through PLSA, can we differentiate between a post appreciating the government and one criticizing it? I think the analysis would definitely pick up a difference but is that always the case?$
+week9_allquestions,9.1,3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).csv, 7'15",10'00",435,600, what factors would help us determine the background probability of each set?
+week9_allquestions,7.4,MISSING, 2'20",2'35",140,155, How can we adapt the vector space retrieval model to discover paradigmatic relations?
+week9_allquestions,3.1,MISSING, 1'30",1'49",90,109,$ What is the advantage of having a model which contains the probability of the background words, shouldn't all the background words be treated with the same low probability?$
+week9_allquestions,9.3,3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).csv, 4'07",4'40",247,280, The probability for choosing a certain component model in the example seems somewhat arbitrary. What factors go into choosing one in a real problem setting?
+week9_allquestions,9.7,3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).csv, 6'54",7'35",414,455, Why we take log function in PLSA formula?
+week9_allquestions,9.1,3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).csv, 02'20",4'47",140,287, How much does the actual distribution matter in terms of the words each distribution contains? Is it possible to have a meaningful output using two very similar word distributions?
+week9_allquestions,3.2,MISSING, 4'40",4'48",280,288, Why can hill climbing only find local minimum?
+week9_allquestions,9.1,3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).csv, 11'25",12'00",685,720, Are there any tradeoffs to using this mixed model compared to only summing one term in the product?
+week9_allquestions,9.6,3 - 12 - 2.12 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 3 (00-06-25).csv, 03'30",06'25",210,385, What are some the strategies to ensure that EM doesn't get stuck on a local max?
+week9_allquestions,9.6,3 - 12 - 2.12 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 3 (00-06-25).csv, 0’40”,1’00”,40,60, Can you please go further in depth with the EM graph? I am a bit confused on how the graph can be applied to various situations.
+week9_allquestions,9.1,3 - 7 - 2.7 Probabilistic Topic Models- Mixture of Unigram Language Models (00-12-39).csv, 0'11",1'52",11,112,$ So to clarify, we use a mixture model, so we can have two different distributions to describe background vs. non-background words?$
+week9_allquestions,3.6,MISSING, 0'10",0'20",10,20, How to prove that EM algorithm will finally lead to a local minimum?
+week9_allquestions,9.8,3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).csv, 8'00" , 8'30",480,510,$ Is the result guaranteed to converge, even if all unknow parameters are initialized randomly$
+week9_allquestions,9.9,3 - 15 - 2.15 Latent Dirichlet Allocation (LDA)- Part 1 (00-10-20).csv, 8'48",9'32",528,572, Can you talk about why inference of these parameters using Bayes rule is intractable?
+week9_allquestions,3.1,MISSING, 2'23",5'15",143,315, Why are we adding the background probability if it is already a common word?
+week9_allquestions,9.5,3 - 11 - 2.11 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 2 (00-10-39).csv, 6'48'',7'16'',408,436, Why can we assume that these probabilities are correct?
+week9_allquestions,3.5,MISSING, 5'30'',5'35'',330,335, What will affect the convergence rate of EM? Or is the convergence rate similar for all topic models?

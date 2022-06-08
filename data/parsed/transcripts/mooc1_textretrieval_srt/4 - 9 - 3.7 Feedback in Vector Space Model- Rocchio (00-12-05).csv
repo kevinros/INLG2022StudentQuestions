@@ -1,0 +1,169 @@
+name,id,from,to,text
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,1,0.025,5.172,[SOUND] This lecture is about 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,2,5.172,12.786,the feedback in the vector space model. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,3,12.786,18.04,_In this lecture, we continue talking about the feedback and text retrieval. _
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,4,18.04,21.21,Particularly we're going to talk about feedback in the vector space model. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,5,23.93,29.73,As we have discussed before in the case of feedback the task of 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,6,29.73,34.91,a text retrieval system is relearned from examples to improve retrieval accuracy. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,7,34.91,37.62,_We will have positive examples, _
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,8,37.62,40.46,those are the documents that are assumed that will be random or 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,9,40.46,45.16,judged with being random and all the documents that are viewed by users. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,10,45.16,48.79,_We also have negative examples, those are documents known to be non-relevant. _
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,11,48.79,52.97,They can also be the documents that are escaped by users. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,12,55.35,58.804,The general method in the vector space model for 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,13,58.804,62.69,feedback is to modify our query vector. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,14,63.93,68.39,Now we want to place the query vector in a better position to make that accurate 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,15,70.12,71.52,and what does that mean exactly? 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,16,71.52,74.93,_Well, if you think about the query vector that would mean you would have to do _
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,17,74.93,77.26,something to vector elements. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,18,77.26,81.224,And in general that would mean we might add new terms. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,19,81.224,87.129,We might adjust weights of old terms or assign weights to new terms. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,20,88.49,92.77000000000001,And as a result in general the query will have more terms so 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,21,92.77000000000001,95.13,we often call this query expansion. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,22,97.96000000000001,101.78,The most effective method in the vector space model of feedback is called Rocchio 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,23,101.78,104.9,feedback which was actually proposed several decades ago. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,24,107.49000000000001,113.06,_So, the idea is quite simple we illustrate this idea by using a two-dimensional _
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,25,113.06,118.36,display of all the documents in the collection and also the query vector. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,26,118.36,123.3,_So, now we can see the query vector is here in _
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,27,123.3,127.85,the center and these are all of the documents. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,28,127.85,129.69,So when we use a query vector and 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,29,129.69,133.1,use a similarity function to find the most similar documents. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,30,133.1,134.805,We are basically drawing a circle here and 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,31,134.805,138.96,then these documents would be basically the top-ranked documents. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,32,138.96,143.0,_And this process of relevant documents, right? _
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,33,143.0,147.09,_And these are random documents for example that's relevant, etc. _
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,34,147.09,152.36,And then these minuses are negative documents like this. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,35,154.31,157.16,So our goal here is trying 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,36,157.16,162.78,to move this query vector to some position to improve the retrieval accuracy. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,37,162.78,168.73,By looking at this diagram what do you think where 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,38,168.73,173.92000000000002,should we move the query vector so that we can improve the retrieval accuracy. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,39,173.92000000000002,177.03,_Intuitively, where do you want to move the query back to? _
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,40,178.18,181.32,If you want to think more you can pause the video. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,41,183.01,184.55,Now if you think about 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,42,185.58,190.94,this picture you can realize that in order to work well in this case 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,43,190.94,195.53,you want the query vector to be as close to the positive vectors as possible. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,44,195.53,200.63,_That means, ideally you want to place the query vector somewhere here or _
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,45,200.63,204.64,we want to move the query vector closer to this point. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,46,206.5,209.559,_Now, so what exactly at this point? _
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,47,209.559,215.72,_Well, if you want these relevant documents to be ranked on the top _
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,48,215.72,221.34,_you want this to be in the center of all of these relevant documents, right? _
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,49,221.34,224.72,Because then if you draw a circle around this one 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,50,224.72,227.23,you get all these relevant documents. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,51,227.23,232.25,So that means we can move the query back toward the centroid of 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,52,232.25,234.64,all the relevant document vectors. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,53,235.67000000000002,237.79,_And this is basically the idea of Rocchio, _
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,54,239.2,242.62,of course you then can see that the centroid of negative documents. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,55,242.62,246.98,And one move away from the negative documents. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,56,246.98,249.55,Now geometrically we're talking about a moving vector 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,57,249.55,252.43,closer to some other vector and away from other vectors. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,58,253.82,257.34,Algebraically it just means we have this formula. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,59,258.34,262.98,Here you can see this is original query vector and 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,60,262.98,269.68,this average basically is the centroid vector of relevant documents. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,61,269.68,272.26,When we take the average over these vectors 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,62,272.26,275.57,then we're computing the centroid of these vectors. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,63,275.57,281.15,And similarly this is the average in that non-relevant document of vectors so 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,64,281.15,286.08,_it's essentially of now random, documents. _
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,65,286.08,291.74,_And we have these three parameters here, alpha, beta and gamma. _
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,66,291.74,295.2,They're controlling the amount of movement. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,67,295.2,300.7,When we add these two vectors together we're moving the query at the closer 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,68,300.7,305.76,_to the centroid, alright, so when we add them, together. _
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,69,305.76,312.06,When we subtracted this part we kind of move the query vector away from that 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,70,313.27,318.42,centroid so this is the main idea of Rocchio Feedback. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,71,318.42,323.1,And after we have done this we will get a new query vector 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,72,323.1,325.64,which can use it to store documents. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,73,325.64,330.47,This new New query vector will then 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,74,330.47,335.388,reflect the move of this Original query vector toward 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,75,335.388,340.21,this Relevant centroid vector and 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,76,340.21,345.65999999999997,_away from the Non-relevant centroid vector, okay? _
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,77,345.65999999999997,348.22,_So let's take a look at example, right? _
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,78,348.22,354.35,_This is the example that we have seen earlier only that I in the, the display _
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,79,354.35,359.22,of the actual documents I only showed the vector representation of these documents. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,80,359.22,363.23,We have five documents here and we have 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,81,364.76,369.448,_true red in the documents here, right? _
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,82,369.448,375.03,They are displayed in red and these are the term vectors. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,83,375.03,378.19,_Now, I just assumed an idea of weights, _
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,84,378.19,380.64,a lot of times we have zero weights of course. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,85,380.64,386.12,_These are negative documents, there are two here, there is another one here. _
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,86,386.12,390.86,Now in this Rocchio method we first compute the centroid of 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,87,390.86,394.36,each category and so let's see. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,88,396.1,399.88,Look at the centroid of the positive document but 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,89,399.88,402.90999999999997,we simply just so it's very easy to see. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,90,402.90999999999997,408.92,We just add this with this one the corresponding element and 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,91,408.92,411.74,that's down here and take the average. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,92,411.74,414.68,And then we're going to add the corresponding elements and 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,93,414.68,416.77,_then just take the average, right? _
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,94,416.77,418.79,So we do this for all these. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,95,418.79,422.51,_In the end, what we have is this one. _
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,96,422.51,428.37,_This is the average vector of these two so it's a centroid of these two, right? _
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,97,430.01,433.498,Let's also look at the centroid of the nested documents. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,98,433.498,438.15,This is basically the same we're going to take the average of three elements. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,99,438.15,442.28,And these are the corresponding elements in these three vectors and 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,100,442.28,442.99,so on and so forth. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,101,442.99,445.12,_So in the end, that we have this one. _
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,102,446.21,449.34,_Now, in the Rocchio feedback method we're going to combine all _
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,103,449.34,452.92,_these with original query vector, which is this. _
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,104,452.92,455.09000000000003,So now let's see how we combine them together. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,105,456.14,458.88,_Well, that's basically this, right? _
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,106,458.88,465.21,So we have a parameter outlier controlling the original query term weight that's 1. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,107,465.21,470.46,And now I've beta to control the inference of the positive 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,108,470.46,475.46,_centroid Vector weight that's 1.5 that comes from here, right? _
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,109,475.46,480.57,So this goes here and 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,110,480.57,484.594,we also have this negative wait here. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,111,484.594,488.1,Conduit by a gamma here and 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,112,488.1,492.55,this weight has come from of course the nective centroid here. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,113,494.52,498.74,And we do exactly the same for other terms each is for one term. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,114,502.257,503.85,And this is our new vector. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,115,505.71,511.53,_And we're going to use this new query vector, this one to run the documents. _
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,116,511.53,513.84,_You can imagine what would happen, right? _
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,117,513.84,515.59,Because of the movement that this one or 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,118,515.59,518.55,the match of these red documents much better. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,119,518.55,522.89,Because we move this vector closer to them and 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,120,522.89,527.29,_it's going to penalize these black documents, these non-relevant documents. _
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,121,527.29,529.79,So this is precisely what we want from feedback. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,122,530.81,537.23,_Now of course, if we apply this method in practice we will see one potential problem _
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,123,538.24,545.794,and that is the original query has only four times that are not zero. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,124,545.794,547.79,_But after we do queries, _
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,125,547.79,553.21,imagine you can imagine we'll have many terms that would have a number of weights. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,126,553.21,556.58,So the calculation would have to involve more terms. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,127,558.08,561.809,_In practice, we often truncate this vector and _
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,128,561.809,565.47,only retain the terms which is the highest weight. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,129,567.0,569.46,So let's talk about how we use this method in practice. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,130,570.64,575.58,I just mentioned that we often truncate the vector consider only a small number 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,131,575.58,578.69,of words that have highest weights in the centroid vector. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,132,578.69,579.89,This is for efficiency concern. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,133,581.46,585.52,I also say that here that a negative examples or non-relevant examples 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,134,585.52,589.54,tend not to be very useful especially compared with positive examples. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,135,590.86,592.43,_Now you can think about the, why. _
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,136,592.43,597.32,One reason is because negative documents 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,137,597.32,602.21,tend to distract the query in all directions so when you take 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,138,602.21,606.86,the average it doesn't really tell you where exactly it should be moving to. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,139,606.86,610.22,_Whereas, positive documents tend to be clustered together and _
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,140,610.22,613.35,they respond to you to consistent the direction. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,141,613.35,619.25,So that also means that sometimesw we don't have those negative examples but 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,142,619.25,619.86,_note that in, _
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,143,619.86,624.57,in some cases in difficult queries where most top random results are negative. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,144,624.57,626.39,Negative feedback afterwards is very useful. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,145,627.54,630.55,Another thing is to avoid over-fitting that means we have to 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,146,630.55,634.0,keep relatively high weight on the original query terms. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,147,635.15,635.78,Why? 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,148,635.78,642.25,Because the sample that we see in feedback is a relatively small sample. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,149,642.25,646.41,We don't want to overly trust the small sample and 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,150,646.41,649.39,the original query terms are still very important. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,151,649.39,651.91,Those terms are typed in by the user and 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,152,651.91,655.85,the user has decided that those terms are most important. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,153,655.85,661.7,So in order to prevent the us from over-fitting or drifting. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,154,661.7,667.04,_A type of drift prevent type of drifting due to the bias toward the, _
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,155,667.04,668.91,the feedback examples. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,156,668.91,672.86,We generally would have to keep a pretty high weight on the original terms so 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,157,672.86,673.98,it is safe to do that. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,158,675.04,679.66,_And this is especially, true for pseudo awareness feedback. _
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,159,679.66,682.18,Now this method can be used for both relevance feedback and 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,160,682.18,683.24,pseudo relevance feedback. 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,161,683.24,687.37,_In the case of pseudo feedback, the parameter beta should be set to a, _
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,162,687.37,692.34,a smaller value because the random examples are assumed 
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,163,692.34,696.94,_to be random there not as reliable as your relevance feedback, right? _
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,164,696.94,700.83,_In the case of relevance feedback, we obviously could use a larger value. _
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,165,700.83,705.01,_So, those parameters still have to be set and. _
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,166,705.01,708.5,_And the ro, Rocchio method is usually robust and effective. _
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,167,708.5,712.993,_It's, it's still a very popular method for feedback. _
+4 - 9 - 3.7 Feedback in Vector Space Model- Rocchio (00-12-05).srt,168,712.993,722.993,[MUSIC] 

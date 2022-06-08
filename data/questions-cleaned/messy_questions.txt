@@ -1,0 +1,57 @@
+week1_allquestions.txt
+
+?L1.5: 5'20"-3'50": #C# How many dimensions does one term in a VSM define? (A) 3 (B) 2 (C) 1 (D) 4
+?#A# Which of the following best describes a Bag of Words? (A) An N-Dimensional Vector space (B) Scrabble Bag (C) Collection of terms relevant to bags
+?how to define syntactic structures?
+
+
+week2_allquestions.txt
+?I still dont understand how to compute Gamma code, and why it is better than binary.
+?L2.2: 6'03"-6'39":
+?L.4: 4'59" - 5'06": Why is inverted index the most common type of indexing used?
+? 11’07’’ - 16’16” : Professor talks about gamma-code. Is there way to directly compute log of x rather than recognizing unary code and getting the value of log of x by plugging the unary code formula ? 
+
+week3_allquestions.txt
+?When would we use binary judgements? Why wouldnt we just use multi level judgements as it allows for more flexibility?
+?L3.2 Is this F-measure similar to F-statistic in statistics?
+
+
+week4_allquestions.txt
+?L4.6-4.7 Is there one smoothing function better or more common than the rest?
+?Why not have a standard smoothing language model? Whats the point of having multiple, if at the end of the day, they still assign probabilities while including unseen words?
+
+week5_allquestions.txt
+?Do all search engines only use implicit feedback system as its the most convienient for users while giving semi-reliable results.
+?Generic Mixture Model>Kullback-Leibler Divergence Retrieval Model>Link Analysis=HIPS=PageRank>Rocchie Feedback>Web Indexing
+
+week6_allquestions.txt
+?How do you effectively set up a filtering system with no bias.
+?6’59”-8’30”: how should we decide the value of beta? Should the beta we choose has a greater influence on alpha than gamma and N do? Or in other words, overall, should beta control alpha or N and gamma control alpha?
+
+week7_allquestions.txt
+?Are there any other applications for Logic predicates being used in text representation?
+?13'14" - 13'45": How IDF(w) is defined?
+?Are all words that are not in a paradigmatic relation in a syntagmatic relation? 
+
+week8_allquestions.txt
+?Probabilistic Topic Models>Overview of Statistical Language Models=Topic Mining and Analysis>Mutual Information>Syntagmatic Relation Discovery: Entropy & Conditional Entropy
+?I don't understand what ML estimation does.
+
+week9_allquestions.txt
+?#A# In the expectation algorithm, do we seek to minimize or maximize theta? (A) Maximize (B) Minimize     
+?What is the point of z in PLSA
+
+week10_allquestions.txt
+?#A# True or False: in Top-Down Clustering, we gradually partition the data into smaller clusters. (A) True (B) False    
+?Should you first determine the class a text belongs to and then cluster?
+?difference between generative probabilistic model for cluster and categorization?
+
+week11_allquestions.txt
+?#B# True or False: In SVM classifiers, we assume beta1 > 0 and beta 2 < 0 (A) True (B) False
+?If most of this class is based around ML, can't we use elements of AI to boost our applicability of algorithms?
+?L11.2: 17'30"-'": Is C the covariance matrix? Or just a regularization parameter, and is it tuned by trial and error?
+?What is an example of “perform error analysis to obtain insights” to “design effective features”?
+? #B# In the sentence "In response to the damage of Hurricane Katrina, the governor issued a speech.", the "the governor" is the target, and  "Hurricane Katrina" is the holder. (A) True, (B) False
+
+week12_allquestions.txt
+?#A# True or False: Text can be associated with nodes of a network and subnetworks. (A) True (B) False

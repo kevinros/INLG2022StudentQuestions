@@ -1,0 +1,140 @@
+name,id,from,to,text
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,1,0.012,6.665,[SOUND] In 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,2,6.665,11.7,this lecture we give an overview of Text Mining and Analytics. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,3,13.743,19.83,_First, let's define the term text mining, and the term text analytics. _
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,4,19.83,24.2,The title of this course is called Text Mining and Analytics. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,5,25.59,31.25,_But the two terms text mining, and text analytics are actually roughly the same. _
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,6,32.67,36.37,_So we are not really going to really distinguish them, and _
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,7,36.37,38.23,we're going to use them interchangeably. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,8,38.23,42.88,But the reason that we have chosen to use 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,9,42.88,47.72,_both terms in the title is because there is also some subtle difference, _
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,10,47.72,51.07,if you look at the two phrases literally. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,11,52.11,55.64,Mining emphasizes more on the process. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,12,55.64,61.683,So it gives us a error rate medical view of the problem. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,13,61.683,66.359,_Analytics, on the other hand emphasizes more on the result, _
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,14,67.6,69.9,or having a problem in mind. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,15,69.9,74.72,We are going to look at text data to help us solve a problem. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,16,76.01,79.94,_But again as I said, we can treat these two terms roughly the same. _
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,17,81.15,84.82,And I think in the literature you probably will find the same. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,18,84.82,87.82,So we're not going to really distinguish that in the course. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,19,89.85,95.45,Both text mining and text analytics mean that we 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,20,95.45,100.25,_want to turn text data into high quality information, or actionable knowledge. _
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,21,102.57,104.02000000000001,_So in both cases, we _
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,22,105.83,110.67,have the problem of dealing with a lot of text data and we hope to. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,23,110.67,116.09,Turn these text data into something more useful to us than the raw text data. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,24,117.72999999999999,120.38,And here we distinguish two different results. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,25,120.38,124.53,_One is high-quality information, the other is actionable knowledge. _
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,26,125.74,128.68,Sometimes the boundary between the two is not so clear. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,27,129.85,131.69,But I also want to say a little bit about 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,28,132.78,137.59,these two different angles of the result of text field mining. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,29,139.25,142.982,_In the case of high quality information, we refer to more _
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,30,142.982,147.715,concise information about the topic. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,31,148.895,154.20499999999998,Which might be much easier for humans to digest than the raw text data. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,32,154.20499999999998,157.04500000000002,_For example, you might face a lot of reviews of a product. _
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,33,158.26,162.7,A more concise form of information would be a very concise summary 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,34,162.7,166.57,of the major opinions about the features of the product. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,35,166.57,170.874,_Positive about, let's say battery life of a laptop. _
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,36,173.436,178.26,Now this kind of results are very useful to help people digest the text data. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,37,179.93,185.03,And so this is to minimize a human effort in consuming text data in some sense. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,38,186.25,189.88,The other kind of output is actually more knowledge. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,39,189.88,195.3,Here we emphasize the utility of the information or 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,40,195.3,197.19,knowledge we discover from text data. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,41,198.27,203.82999999999998,_It's actionable knowledge for some decision problem, or some actions to take. _
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,42,204.99,211.51,_For example, we might be able to determine which product is more appealing to us, _
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,43,211.51,216.27,or a better choice for a shocking decision. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,44,218.115,223.19,_Now, such an outcome could be called actionable knowledge, _
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,45,223.19,229.55,_because a consumer can take the knowledge and make a decision, and act on it. _
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,46,229.55,235.131,_So, in this case text mining supplies knowledge for optimal decision making. _
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,47,235.131,239.424,_But again, the two are not so clearly distinguished, so _
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,48,239.424,243.281,we don't necessarily have to make a distinction. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,49,246.253,249.821,_Text mining is also related to text retrieval, _
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,50,249.821,254.38,which is a essential component in many text mining systems. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,51,255.91,260.434,_Now, text retrieval refers to finding relevant information from _
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,52,260.434,262.38,a large amount of text data. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,53,264.14,270.21,So I've taught another separate book on text retrieval and search engines. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,54,271.71,274.68,Where we discussed various techniques for text retrieval. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,55,276.36,281.08,_If you have taken that book, and you will find some overlap. _
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,56,282.12,286.7,And it will be useful To know the background of text retrieval 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,57,286.7,290.01,of understanding some of the topics in text mining. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,58,291.75,294.35,_But, if you have not taken that book, _
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,59,294.35,299.44,_it's also fine because in this book on text mining and analytics, we're _
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,60,299.44,303.26,going to repeat some of the key concepts that are relevant for text mining. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,61,303.26,306.54,But they're at the high level and 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,62,306.54,310.71,they also explain the relation between text retrieval and text mining. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,63,312.32,318.278,Text retrieval is very useful for text mining in two ways. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,64,318.278,323.2,_First, text retrieval can be a preprocessor for text mining. _
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,65,323.2,327.6,Meaning that it can help us turn big text data into 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,66,327.6,332.03,a relatively small amount of most relevant text data. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,67,332.03,335.18,Which is often what's needed for solving a particular problem. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,68,336.58,341.186,_And in this sense, text retrieval also helps minimize human effort. _
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,69,343.323,346.365,Text retrieval is also needed for knowledge provenance. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,70,346.365,350.976,And this roughly corresponds to the interpretation of text 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,71,350.976,356.35,mining as turning text data into actionable knowledge. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,72,356.35,358.97,_Once we find the patterns in text data, or _
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,73,358.97,364.04,_actionable knowledge, we generally would have to verify the knowledge. _
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,74,364.04,366.58,By looking at the original text data. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,75,366.58,371.11,_So the users would have to have some text retrieval support, go back to the original _
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,76,371.11,376.01,text data to interpret the pattern or to better understand an analogy or 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,77,376.01,379.91,to verify whether a pattern is really reliable. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,78,379.91,383.83,_So this is a high level introduction to the concept of text mining, _
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,79,383.83,389.53,and the relationship between text mining and retrieval. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,80,392.11,396.554,_Next, let's talk about text data as a special kind of data. _
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,81,399.689,405.60699999999997,Now it's interesting to view text data as data 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,82,405.60699999999997,411.38,generated by humans as subjective sensors. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,83,413.2,423.42,_So, this slide shows an analogy between text data and non-text data. _
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,84,423.42,427.832,And between humans as subjective sensors and 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,85,427.832,433.993,_physical sensors, such as a network sensor or a thermometer. _
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,86,436.29200000000003,441.377,So in general a sensor would monitor the real world in some way. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,87,441.377,446.483,_It would sense some signal from the real world, and _
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,88,446.483,452.205,_then would report the signal as data, in various forms. _
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,89,452.205,458.346,_For example, a thermometer would watch the temperature of real world and _
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,90,458.346,463.31,then we report the temperature being a particular format. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,91,464.962,469.098,_Similarly, a geo sensor would sense the location and then report. _
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,92,469.098,473.74,_The location specification, for _
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,93,473.74,477.14,_example, in the form of longitude value and latitude value. _
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,94,477.14,482.58,_A network sends over the monitor network traffic, _
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,95,482.58,484.873,or activities in the network and are reported. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,96,484.873,489.477,Some digital format of data. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,97,489.477,496.46,Similarly we can think of humans as subjective sensors. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,98,496.46,502.05,That will observe the real world and from some perspective. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,99,502.05,508.44,And then humans will express what they have observed in the form of text data. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,100,508.44,513.33,_So, in this sense, human is actually a subjective sensor that would also _
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,101,513.33,516.2,sense what's happening in the world and 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,102,516.2,523.06,_then express what's observed in the form of data, in this case, text data. _
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,103,523.06,527.35,_Now, looking at the text data in this way has an advantage of being _
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,104,527.35,530.24,able to integrate all types of data together. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,105,530.24,534.381,And that's indeed needed in most data mining problems. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,106,536.123,541.672,So here we are looking at the general problem of data mining. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,107,542.725,547.518,And in general we would Be dealing with a lot of data 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,108,547.518,551.982,about our world that are related to a problem. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,109,551.982,557.18,And in general it will be dealing with both non-text data and text data. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,110,557.18,561.348,And of course the non-text data are usually produced by physical senses. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,111,561.348,566.33,And those non-text data can be also of different formats. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,112,567.84,570.83,_Numerical data, categorical, or relational data, _
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,113,570.83,573.8,or multi-media data like video or speech. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,114,576.36,581.9,_So, these non text data are often very important in some problems. _
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,115,581.9,585.59,_But text data is also very important, _
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,116,585.59,590.96,mostly because they contain a lot of symmetrical content. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,117,590.96,595.93,_And they often contain knowledge about the users, _
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,118,595.93,598.86,especially preferences and opinions of users. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,119,601.36,607.99,_So, but by treating text data as the data observed from human sensors, _
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,120,607.99,614.51,we can treat all this data together in the same framework. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,121,614.51,618.11,_So the data mining problem is basically to turn such data, _
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,122,618.11,622.96,turn all the data in your actionable knowledge to that we can take advantage 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,123,622.96,626.26,of it to change the real world of course for better. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,124,626.26,631.49,So this means the data mining problem is 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,125,631.49,637.45,basically taking a lot of data as input and giving actionable knowledge as output. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,126,637.45,642.26,_Inside of the data mining module, you can also see _
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,127,642.26,646.51,we have a number of different kind of mining algorithms. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,128,646.51,649.94,_And this is because, for different kinds of data, _
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,129,649.94,655.18,we generally need different algorithms for mining the data. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,130,656.39,657.1,_For example, _
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,131,657.1,661.87,video data might require computer vision to understand video content. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,132,661.87,666.05,And that would facilitate the more effective mining. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,133,666.05,671.11,And we also have a lot of general algorithms that are applicable 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,134,671.11,676.948,_to all kinds of data and those algorithms, of course, are very useful. _
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,135,676.948,679.692,_Although, for a particular kind of data, _
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,136,679.692,683.287,we generally want to also develop a special algorithm. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,137,683.287,687.939,So this course will cover specialized algorithms that 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,138,687.939,691.994,are particularly useful for mining text data. 
+2 - 1 - 1.1 Overview Text Mining and Analytics- Part 1 (00-11-43).srt,139,691.994,701.994,[MUSIC] 

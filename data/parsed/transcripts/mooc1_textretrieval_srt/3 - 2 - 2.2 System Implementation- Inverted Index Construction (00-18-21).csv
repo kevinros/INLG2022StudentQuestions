@@ -1,0 +1,246 @@
+name,id,from,to,text
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,1,0.012,3.2560000000000002,[SOUND]. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,2,7.388,11.16,This lecture is about the Inverted Index Construction. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,3,13.84,18.52,_In this lecture, we will continue the discussion of system implementation. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,4,18.52,21.892,_In particular, we're going to discuss how to construct the inverted index. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,5,25.096,29.29,The construction of the inverted index is actually very easy if the data set is 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,6,29.29,30.45,very small. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,7,30.45,35.43,It's very easy to construct a dictionary and then store the postings in a file. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,8,36.61,41.959,_The problem's that when our data is not able to fit to the memory, _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,9,41.959,46.444,then we have to use some special method to deal with it. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,10,46.444,52.125,_And unfortunately, in most retrieval a petitions, the data set would be large and _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,11,52.125,56.52,_they generally cannot be, loaded into the memory at once. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,12,56.52,60.725,_And there are many approaches to solving that problem, and _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,13,60.725,66.71,_sorting-based method, is quite common and works in four steps as shown here. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,14,66.71,71.48,_First, we collect the the local termID, document ID, and frequency tuples. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,15,71.48,77.78999999999999,_Basically, you overlook kinds of terms in a small set of documents, and, and _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,16,77.78999999999999,84.57,_then, once you collect those counts, you can sort those counts based on terms so _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,17,84.57,88.68,_that you build a local, a partial inverted index. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,18,88.68,91.31,_And these are called, runs. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,19,91.31,96.84,_And then, you write them into a temporary file on the disk. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,20,96.84,101.731,_And then, you merge in step three with do pair-wise merging of these runs, and here, _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,21,101.731,105.89,_you eventually merge all the runs, we generate a single inverted index. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,22,107.52000000000001,111.00999999999999,So this is an illustration of this method. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,23,111.00999999999999,112.299,_On the left, you see some documents. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,24,113.64,119.93,_And on the right, we have, show a term lexicon and a document ID lexicon. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,25,119.93,125.957,And these lexicon's are to map a stream based representations of document IDs or 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,26,125.957,129.63,terms into integer representations. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,27,129.63,136.549,_Or, and, map back from, integers to the screen representation. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,28,137.75,143.03,_And the reason why we want, are interested in using integers represent these IDs, _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,29,143.03,146.93,_is because, integers are often easier to handle. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,30,146.93,149.77,_For example, integers can be used as index for _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,31,149.77,153.24,array and they are also easy to compress. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,32,154.43,159.94,_So this is a, one reason why we, tend to map these streams _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,33,159.94,166.73,_into integers so that so that we don't have to, carry these streams around. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,34,166.73,168.07,So how does this approach work? 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,35,168.07,169.81,_Well, it's very simple. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,36,169.81,173.14,_We're going to scan these documents sequentially, and _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,37,173.14,178.26,then pause the documents and a count the frequencies of terms. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,38,178.26,182.28,_And in this, stage we generally sort _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,39,182.28,187.1,the frequencies by document IDs because we process each document that sequentially. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,40,187.1,191.36,_So, we first encounter all the terms in, the first document. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,41,191.36,196.13,_Therefore, the document IDs, are all once in this stage. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,42,196.13,201.115,_And so, and, this would be _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,43,201.115,205.74,followed by document IDs 2. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,44,205.74,209.951,_And, and they're naturally sort in this order just because we process the data in _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,45,209.951,211.28,this order. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,46,211.28,214.35,_At some point, the, we will run out of memory and _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,47,214.35,218.575,_that would have to, to write them into the disk. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,48,218.575,224.03,_But before we do that, we're going to a sort them, just, _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,49,224.03,228.03,_use whatever memory we have, we can sort them, and _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,50,228.03,231.518,_then, this time, we're going to sort based on term IDs. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,51,231.518,239.65,_Note that here, we're using, this, the term IDs as a key to sort. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,52,239.65,243.92,_So, all the entries that share the same term would be grouped together. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,53,243.92,249.36,_In this case, we can see all the, all the IDs _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,54,249.36,254.09,of documents that match term one would be grouped together. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,55,254.09,258.86,And we're going to write this into the disk as a temporary file. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,56,258.86,264.03,_And that would, allow us to use the memory to process the next batch of documents, _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,57,264.03,266.67,and we're going to do that for all the documents. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,58,266.67,271.2,So we're going to write a lot of temporary files into the disk. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,59,272.71,275.01,_And then, the next stage is to do merge sort. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,60,275.01,278.36,_Basically, we're going to, merge them and the sort them. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,61,278.36,282.32,_Eventually, we will get a single inverted index where the, _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,62,282.32,285.3,their entries are sorted based on term IDs. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,63,286.95,290.87,_And on the top, we can see these are the order entries for _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,64,290.87,293.62,the documents that match term ID 1. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,65,293.62,299.6,_So this is basically how we can do, the construction of inverted index, _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,66,299.6,305.981,_even though that they're or cannot be, or loaded into the memory. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,67,305.981,310.195,_Now, we mentioned earlier that _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,68,311.245,316.245,_because the po, postings are very large, it's desirable to compress them. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,69,316.245,320.07,So let's now talk a little bit about how we compress inverted index. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,70,321.11,324.152,_Well, the idea of compression, in general, _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,71,324.152,328.31,is you leverage skewed distributions of values. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,72,328.31,332.1,And we generally have to use variable lengths in coding instead of the fixed 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,73,332.1,338.745,_lengths in coding as we', using, by defaulting a program language like C++. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,74,341.08,346.05,_And so, how can we leverage the skewed distributions of values to, _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,75,346.05,348.17,compress these values? 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,76,348.17,354.42,_Well, in general, we would use fewer bits to encode those frequent words _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,77,354.42,360.65,_at a cost of using, longer bits from the code than those, rare values. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,78,360.65,364.56,_So in our case, let's think about how we can compress the tf, term frequency. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,79,365.83,369.67,If you can picture what the inverted index would look like and 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,80,369.67,373.89,_you'll see in postings there are a lot of, term frequencies. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,81,373.89,378.508,_Those are the frequencies of terms, in all those documents. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,82,378.508,385.65,_Now, we, if you think about it, what kind of values are most frequent there? _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,83,385.65,389.98,_You probably will, be able to guess that the small numbers tend to occur _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,84,389.98,392.54,far more frequently than large numbers. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,85,392.54,393.99,Why? 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,86,393.99,398.23,_Well, think of about the distribution of words, and _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,87,398.23,402.76,_this is due to Zipf's law and many words occur just, rarely. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,88,402.76,407.095,_So we see a lot of small numbers, therefore, we can use fewer bits for _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,89,407.095,411.845,_the small, but highly frequent integers, _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,90,413.585,417.095,and at the cost of using more bits for large integers. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,91,418.445,419.865,_This is a trade-off, of course. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,92,419.865,425.58,_If the values are distributed uniformly and this won't save us any, spacing. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,93,425.58,430.95,_But because we tend to see many small values, they're very frequent. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,94,430.95,435.19,_We can save on average even though sometimes, _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,95,435.19,437.73,when we see a large number we have to use a lot of bits. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,96,439.74,443.7,What about the document IDs that we also saw in postings. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,97,443.7,447.165,_Well, they are not, distributed in a skewed way, right? _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,98,447.165,451.86,_So, how can we deal with that? _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,99,451.86,454.616,_Well, it turns out you can use a trick called the d-gap, _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,100,454.616,458.85,_and that, that is to store the difference of these term IDs. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,101,458.85,464.5,_And we can, imagine if a term has matched many documents, _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,102,464.5,466.64,then there will be a long list of document IDs. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,103,466.64,472.03,_So when we take the gap, and when we take difference between adjacent document IDs, _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,104,472.03,474.34000000000003,those gaps will be small. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,105,474.34000000000003,478.09000000000003,_So we'll again see a lot of small numbers, whereas, _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,106,478.09000000000003,482.04,_if a term occurred in only a few documents, then the gap would be large. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,107,482.04,486.61,_The larger numbers will not be frequent, so this creates some skewed distribution _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,108,486.61,490.669,_that would allow us to, to compress these values. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,109,491.85,498.54,_This is also possible because in order to uncover or uncompress these document IDs, _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,110,498.54,503.32,we have to sequentially process the data because we stored the difference. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,111,503.32,506.41,_And in order to recover the, the exact document ID, _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,112,506.41,510.56,_we have to first recover the previous document ID, and then, we can add _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,113,510.56,515.83,_the difference to the previous document ID to restore the, the current document ID. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,114,515.83,520.603,_Now, this was possible because we only needed to have sequential _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,115,520.603,522.9,access to those document IDs. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,116,522.9,526.93,_Once we look up a term we fetch all the document IDs that match the term, _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,117,526.93,528.67,then we sequentially process them. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,118,528.67,532.09,_So it's very natural that's why this, trick actually works. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,119,533.6,535.76,And there are many different methods for encoding. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,120,535.76,542.18,_So binary code is a common used code in, in just any program. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,121,542.18,545.904,Language that we use basically a fixed length in coding. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,122,545.904,548.979,_Unary code and gamma code, and delta code are all possible in this and _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,123,548.979,551.24,there are many other possible in this. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,124,551.24,554.13,So let's look at some of them in more detail. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,125,554.13,556.83,Binary code is really equal-length in coding. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,126,556.83,560.97,And that's a property for the randomly distributed values. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,127,560.97,564.831,The unary coding is is a variable and it's important [INAUDIBLE]. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,128,564.831,569.346,_In this case, integer that is, I've missed one or _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,129,569.346,573.83,_we encode that as x minus 1, 1 bit followed by 0. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,130,573.83,579.029,_So for example, 3 would be encoded as two 1s followed by a 0, _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,131,579.029,585.31,_whereas 5 would be encoded as four 1s followed by 0, et cetera. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,132,585.31,589.844,_So now, now you can imagine how many bits do we have to use for _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,133,589.844,592.04,a large number like 100. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,134,592.04,597.47,_So, how many bits do I have to use for exactly for a number like 100? _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,135,597.47,602.2,_Well, exactly, we have to use 100 bits, _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,136,602.2,607.16,_but so, it's the same number of bits as the value of this number. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,137,607.16,608.98,_So, this is very inefficient. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,138,608.98,612.36,_If you were likely to see some large numbers, _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,139,612.36,617.62,_imagine if you occasionally see a number like 1000, you have to use 1000 bits. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,140,617.62,621.65,_So, this only works where if you are absolutely sure that there would be no _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,141,621.65,623.12,large numbers. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,142,623.12,628.6,_Mostly very frequent, they're often using very small numbers. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,143,628.6,630.43,_Now, how do you decode this code? _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,144,630.43,634.21,_Since these are variables lengths in coding methods, and _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,145,634.21,637.84,you can't just count how many bits and then just stop. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,146,637.84,638.5,Right? 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,147,638.5,643.94,_You can say eight bits or 32 bits, then you, you will start another code. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,148,643.94,650.86,_There are variable lengths, so, you have to rely on some mechanism. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,149,650.86,655.25,_In this case for unary, you can see it's very easy to see the boundary. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,150,655.25,659.33,Now you can easily see 0 would signal the end of encoding. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,151,659.33,663.259,_So you just count how many 1s you have seen, and then you hit the 0. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,152,663.259,667.81,_You know you have finished one number, you start another number. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,153,667.81,675.287,Now which is to start at unary code is to aggressive in rewarding small numbers. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,154,675.287,680.43,_And if you occasionally can see a very big number, it will be a disaster. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,155,680.43,684.9,So what about some other less aggressive method? 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,156,684.9,687.5,_Well, gamma coding is one of them. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,157,687.5,692.821,_And in this method, we can do, use unary coding for _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,158,692.821,696.958,a transformed form of the value. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,159,696.958,701.19,So it's 1 plus the flow of log of x. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,160,701.19,707.91,_So the magnitude of this value is much lower than the original, x. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,161,707.91,713.14,_So that's why we have four using urinary code for that so, _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,162,714.22,718.92,_and so we, first we have the urinary code for coding this log of s. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,163,718.92,722.53,_And this will be followed by a uniform code or binary code, and _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,164,722.53,728.768,this is basically the same uniform code and binary code are the same. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,165,728.768,736.12,And we're going to use this code to code the remaining part of the value of x. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,166,736.12,741.815,_And this is basically, precisely, x minus 1, 2 to the flow of log of x. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,167,745.042,750.034,_So the unary code or basically code with a flow of log of x, well, _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,168,750.034,752.35,_I added one there, and here. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,169,754.0840000000001,759.072,_But the remaining part will, we using uniform _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,170,759.072,764.756,code to actually code the difference between the x and 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,171,764.756,768.01,_and this, 2 to the log of x. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,172,769.53,776.41,_And, and it's easy to to show that for this this value, there's difference. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,173,776.41,779.68,_We only need to use up to, _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,174,781.12,785.39,this many bits and in flow of log of x bits. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,175,786.53,788.41,_And this is easy to understand, _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,176,788.41,792.91,if the difference is too large then we would have a higher flow of log of x. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,177,794.33,795.44,_So, here are some examples. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,178,795.44,799.0,_For example, 3 is encoded as 101. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,179,799.0,801.56,The first two digits are the unary code. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,180,801.56,802.353,Right. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,181,802.353,806.32,_So, this is for the value 2. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,182,806.32,806.969,Right. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,183,806.969,811.08,10 encodes 2 in unary coding. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,184,812.49,817.689,_And so, that means log of x, the flow of log of x is 1, _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,185,817.689,825.62,because we will actually use unary code to encode 1 plus the flow of log of x. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,186,825.62,830.05,_Since this is 2, then we know that the floor of log of x is actually 1. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,187,832.1,835.732,_So but, 3 is still larger than 2 to the 1, so _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,188,835.732,840.05,_the difference is 1, and that 1 is encoded here at the end. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,189,841.46,843.439,So that's why we have 101 for 3. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,190,845.901,851.504,_Now, similarly 5 is encoded as 110 followed by 01. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,191,852.97,858.98,_And in this case, the unary code encodes 3. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,192,858.98,866.59,_So, this is the unary code for 110 and so the floor of log of x is 2. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,193,866.59,870.875,_And that means, we will compute the difference between 5 and _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,194,870.875,875.4,_the 2 to the 2, and that's 1, and so we now have again 1 at the end. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,195,875.4,880.94,_But this time, we're going to use two bits because with this _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,196,880.94,887.23,_level of flow of log of x, we could have more numbers, 5, 6, 7. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,197,887.23,891.2,_They would all share the same prefix here, 110. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,198,891.2,893.21,_So, in order to differentiate them, _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,199,893.21,897.69,_we have to use two bits, in the end to differentiate them. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,200,897.69,903.33,_So you can imagine 6 would be, 10 here in the end instead of 01, after 110. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,201,903.33,908.48,_It's also true that the form of a gamma code is always, _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,202,910.095,915.165,_the first odd number of bits, and in the center, there was a 0. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,203,915.165,917.305,That's the end of the unary code. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,204,918.335,924.375,_And before that, or to, on the left side of this 0, there will be all 1s. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,205,924.375,930.225,_And on the right side of this 0, it's binary coding or uniform coding. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,206,932.6,936.51,So how can you decode such a code? 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,207,936.51,940.0,_Well, you again first do unary coding, right? _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,208,940.0,943.87,_Once you hit 0, you know you have got the unary code. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,209,943.87,948.546,And this also will tell you how many bits you have to read further to 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,210,948.546,950.431,decode the uniform code. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,211,950.431,953.89,So this is how you can decode a gamma code. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,212,953.89,957.2,_There is also delta code, but that's basically same as gamma code, _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,213,957.2,961.39,except that you replace the unary prefix with the gamma code. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,214,961.39,964.98,_So that's even less conservative than gamma code, _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,215,964.98,968.91,in terms of avoiding the small integers. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,216,968.91,972.399,So that means it's okay if you occasionally see a large number. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,217,972.399,976.695,_It's, it's, you know, it's okay with delta code. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,218,976.695,978.274,It's also fine with gamma code. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,219,978.274,984.4639999999999,_It's really a big loss for unary code, and they are all operating, _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,220,984.4639999999999,992.078,_of course, at different degrees of favoring short favoring small integers. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,221,992.078,998.56,And that also means they would appropriate for sorting distribution. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,222,998.56,1001.72,But none of them is perfect for all distributions. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,223,1001.72,1003.37,_And which method works, _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,224,1003.37,1007.622,the best would have to depend on the actual distribution in your data set. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,225,1007.622,1009.95,_For inverted index, compression, _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,226,1009.95,1012.84,people have found that gamma coding seems to work well. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,227,1015.28,1018.43,So how to uncompress inverted index? 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,228,1018.43,1019.9,_We just, talked about this. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,229,1019.9,1022.92,_Firstly, you decode those encode integers. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,230,1022.92,1027.91,_And we just, I think discussed how we decode unary coding and gamma coding. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,231,1029.16,1031.07,So I won't repeat. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,232,1031.07,1035.72,What about the document IDs that might be compressed using d-gap? 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,233,1035.72,1038.33,_Well, we're going to do sequential decoding. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,234,1038.33,1043.8,_So suppose the encoded idealist is x1, x2, x3 et cetera. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,235,1043.8,1047.72,_We first decode x1 to obtain the first document ID, ID1. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,236,1047.72,1050.54,_Then, we will decode x2, _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,237,1050.54,1054.61,which is actually the difference between the second ID and the first one. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,238,1054.61,1061.33,So we have to add the decoded value of x2 to ID1 to recover the value 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,239,1061.33,1066.69,_of the, the ID at this secondary position, right. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,240,1066.69,1072.86,_So this is where you can see the advantage of, converting document IDs into integers. _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,241,1072.86,1075.82,_And that allows us to do this kind of compression, and _
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,242,1075.82,1079.59,we just repeat until we decode all the documents. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,243,1079.59,1084.438,Every time we use the document ID in the previous position 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,244,1084.438,1088.983,to help recover the document ID in the next position. 
+3 - 2 - 2.2 System Implementation- Inverted Index Construction (00-18-21).srt,245,1088.983,1098.983,[MUSIC] 

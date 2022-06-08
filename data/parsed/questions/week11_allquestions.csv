@@ -1,0 +1,46 @@
+filename,lecture in question,lecture,raw from,raw to,from,to,text
+week11_allquestions,11.2,4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).csv, 19'40",21'50",1180,1310, What is an example of how we can combine multiple methods for these kinds of problems?
+week11_allquestions,11.2,4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).csv, 12'04",13'47",724,827, What happens if we have more than two categories?
+week11_allquestions,5.6,MISSING, 4' 56",5' 31",296,331,$ What's the optimal way to combine and use character n-grams, word n-grams, and POS tag n-grams?$
+week11_allquestions,11.3,4 - 12 - 3.12 Text Categorization- Evaluation Part 1 (00-14-12).csv, 10'19",10'25",619,625, When should we use precision over recall and vice versa?
+week11_allquestions,5.7,MISSING, 3'09'',5'07'',189,307,$ How come we do not use classifiers that split the rating search space in half, requiring only log(k) classifiers instead?$
+week11_allquestions,11.7,5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).csv, 7'30",8'15",450,495, Why do we use M+1 and k-1 in the formula for the total number parameters for independent classifiers?
+week11_allquestions,11.1,4 - 10 - 3.10 Text Categorization- Discriminative Classifier Part 1 (00-20-34).csv, 11'00",14'20",660,860, In which situations will a KNN classifier be accurate and perform better than a logistic regression classifier?
+week11_allquestions,11.5,5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).csv, 10'00",11'00",600,660,$ What if an opinion's context, like date or time, was considered in the natural language processing, but the opinion maker did not actually make use of that context?$
+week11_allquestions,11.6,5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).csv,2'40",2'50",160,170, Why does the order of the polarity categories matter?
+week11_allquestions,1.2,MISSING, 1'25",3'17",85,197, What's the meaning of parameter lambda?
+week11_allquestions,11.7,5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).csv, 08'35",11'20",515,680, What is meant by "share training data"? Does this refer to the fact that beta_ji is the same for all values of j?
+week11_allquestions,5.4,MISSING, 1'27",3'58",87,238, What is the difference between macro and mirco avergeing of precision and the recall?
+week11_allquestions,11.4,4 - 13 - 3.13 Text Categorization- Evaluation Part 2 (00-10-51).csv, 3'30" , 4'30",210,270, Does human effort needed for all items in micro-averaging?
+week11_allquestions,11.2,4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).csv, 28'49'',28'57'',1729,1737,What else semi-supervised learning technique we can use here?
+week11_allquestions,11.6,5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).csv, 1'52",3'34",112,214, How do we deal with the ambiguity when conducting sentiment classfication?
+week11_allquestions,11.2,4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).csv, 28'49'',28'57'',1729,1737,Will different type of supervised learning techniques change the final result?
+week11_allquestions,5.2,MISSING, 14'30",14'45",870,885, how is large margin connected to (W^t)W?
+week11_allquestions,5.2,MISSING, 7'00”,7’14”,420,434, Can sentiment classifications be treated as a categorization problem?
+week11_allquestions,10.9,MISSING, 1'23",2'33",83,153, What is the functionality for all of text categorization in real life?
+week11_allquestions,11.1,4 - 10 - 3.10 Text Categorization- Discriminative Classifier Part 1 (00-20-34).csv, 16'30",17'00",990,1020, Is it possible to overfit K? How to find the sweet spot?
+week11_allquestions,11.1,4 - 10 - 3.10 Text Categorization- Discriminative Classifier Part 1 (00-20-34).csv,1'12",2'22",72,142,What are examples of text data that do not adhere to the discriminative classifier?
+week11_allquestions,11.6,5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).csv, 1'00",3'34",60,214,$ For opinion mining, how does the machine understand that opinion itself when its pattern recognition model is based without understanding context without a schema because I'm assuming it just uses ML to understand the context which is curve fitting?$
+week11_allquestions,5.2,MISSING, 04’00’’,04’08’’,240,248, Why do we assume B2 to be positive and B1 to be negative?
+week11_allquestions,11.2,4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).csv, 6'48",6'48",408,408, Why was there notation changes?
+week11_allquestions,5.1,MISSING, 5'47",6'26",347,386, I didn't quite understand how the probability of Y given X was re-written to get the functional form?
+week11_allquestions,11.6,5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).csv, 6'05",9'47",365,587, How can sarcasm and cross/cultural context be detected using Unigrams?
+week11_allquestions,5.2,MISSING, 10'13",16'35",613,995, Are there non-linear SVM that move along different points?
+week11_allquestions,11.2,4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).csv, 5'10",8'47",310,527, What is Text Categorization? What is a good Text Categorization? How it is used?
+week11_allquestions,5.3,MISSING, 2'56'',3'50'',176,230,$ Why do we not consider cost of decisions while comparing different classification methods, because there can be subtle differences between the 2 methods where introducing cost of mistakes in the evaluation metric might help in actually understanding which method performs better?$
+week11_allquestions,5.5,MISSING, 00'00",00'32",0,32, Is it possible to consider opinion and sentiment mining a subset of text classification? We could do it by providing the training set as classified examples of the various sentiments and opinions we see and then use the resulting model to extract information sentiments and opinions based on how our document is classified.
+week11_allquestions,11.2,4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).csv, 11'30",12'40",690,760,$ how exactly do we derive the general formula of i,wtx+b >= 1 based on the two formulas (>1 and <-1) on the left. What does i mean, and what does w mean (is it the surface?)?$
+week11_allquestions,7.4,MISSING, 2'20",2'35",140,155, How can we adapt the vector space retrieval model to discover paradigmatic relations?
+week11_allquestions,11.,MISSING, 19'20",22'10",1160,1330,$ Use the same logic, can we apply unsupervised learning techniques on text clustering?$
+week11_allquestions,11.1,4 - 10 - 3.10 Text Categorization- Discriminative Classifier Part 1 (00-20-34).csv, 05'02",15'55",302,955,$ How does one choose which Discriminative Classifier to use? Is it a matter of the type of data, the features, or something else?$
+week11_allquestions,11.3,4 - 12 - 3.12 Text Categorization- Evaluation Part 1 (00-14-12).csv, 2'12",6'08",132,368, Is there any way to evaluate classification accuracy without the need for human involvement?
+week11_allquestions,11.6,5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).csv, 11'00",12'00",660,720, How do you optimize the tradeoff between exhaustivity and specificity?
+week11_allquestions,5.4,MISSING, 1'30",1'48",90,108, Does the likelihood function always converge?
+week11_allquestions,11.1,4 - 10 - 3.10 Text Categorization- Discriminative Classifier Part 1 (00-20-34).csv, 9'00",9'30",540,570, What do the parameters represent in conditional likelihood?
+week11_allquestions,11.3,4 - 12 - 3.12 Text Categorization- Evaluation Part 1 (00-14-12).csv, 05'50",08'10",350,490,$ Skewed test set could be a serious problem, how to approach this issue? From the classification algorithm or from the preprocessing of the data?$
+week11_allquestions,11.1,4 - 10 - 3.10 Text Categorization- Discriminative Classifier Part 1 (00-20-34).csv, 3'15",4'20",195,260,$ So to clarify, KNN can be used as a proxy for conditional probability of a label knowing we have the probability?$
+week11_allquestions,5.2,MISSING, 6'45",7'00",405,420, What if the data cannot be separated by a line?
+week11_allquestions,11.6,5 - 2 - 4.2 Opinion Mining and Sentiment Analysis- Sentiment Classification (00-11-47).csv, 07'50",08'05",470,485, Can you give some examples of feature construction process and how to choose the algorithms to use under some specific conditions?
+week11_allquestions,11.7,5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).csv, 2'23",5'15",143,315, I am just glad that this course is finally about to finished?
+week11_allquestions,11.5,5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).csv, 2'48'',3'16'',168,196, Why can we assume these are correct?
+week11_allquestions,5.3,MISSING, 5'55,6'00',355,360, What if we have no prior knowledge about the data and we still want to make appropriate evaluation? Is there a more general measure?

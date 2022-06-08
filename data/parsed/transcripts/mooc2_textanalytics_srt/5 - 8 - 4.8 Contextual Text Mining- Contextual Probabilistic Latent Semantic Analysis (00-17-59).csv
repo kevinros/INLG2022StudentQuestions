@@ -1,0 +1,244 @@
+name,id,from,to,text
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,1,0.401,7.552,[MUSIC] 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,2,7.552,10.524000000000001,This lecture is about a specific technique for 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,3,10.524000000000001,16.097,Contextual Text Mining called Contextual Probabilistic Latent Semantic Analysis. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,4,19.162,23.93,_In this lecture, we're going to continue discussing Contextual Text Mining. _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,5,23.93,28.99,And we're going to introduce Contextual Probablitistic Latent Semantic Analysis 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,6,28.99,32.63,as exchanging of POS for doing contextual text mining. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,7,34.39,40.31,_Recall that in contextual text mining we hope to analyze topics in text, _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,8,40.31,42.285,in consideration of the context so 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,9,42.285,46.95,that we can associate the topics with a property of the context were interesting. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,10,48.24,54.033,_So in this approach, contextual probabilistic latent semantic analysis, _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,11,54.033,58.487,_or CPLSA, the main idea is to express to the add interesting _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,12,58.487,61.89,context variables into a generating model. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,13,63.15,66.86,Recall that before when we generate the text we generally assume we'll start 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,14,66.86,70.73,_wIth some topics, and then assemble words from some topics. _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,15,70.73,78.13,_But here, we're going to add context variables, so that the coverage of topics, _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,16,78.13,83.5,and also the content of topics would be tied in context. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,17,83.5,87.607,_Or in other words, we're going to let the context Influence both coverage and _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,18,87.607,88.9,the content of a topic. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,19,91.172,97.37,The consequences that this will enable us to discover contextualized topics. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,20,97.37,101.32,_Make the topics more interesting, more meaningful. _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,21,101.32,106.12,Because we can then have topics that can be interpreted as 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,22,106.12,109.07,specifically to a particular context that we are interested in. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,23,109.07,110.59,_For example, a particular time period. _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,24,112.02000000000001,115.63900000000001,_As an extension of PLSA model, _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,25,115.63900000000001,121.33,CPLSA does the following changes. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,26,121.33,125.77,Firstly it would model the conditional likelihood of text given context. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,27,127.11,132.99,_That clearly suggests that the generation of text would then depend on context, _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,28,132.99,136.52,and that allows us to bring context into the generative model. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,29,138.23,142.3,_Secondly, it makes two specific assumptions about the dependency _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,30,142.3,144.65,of topics on context. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,31,144.65,148.42000000000002,_One is to assume that depending on the context, depending on different time _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,32,148.42000000000002,153.63,_periods or different locations, we assume that there are different views of a topic _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,33,153.63,157.37,or different versions of word descriptions that characterize a topic. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,34,158.54,162.26,And this assumption allows us to discover different 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,35,162.26,165.43,variations of the same topic in different contexts. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,36,166.5,173.059,The other is that we assume the topic coverage also depends on the context. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,37,175.15,176.81,That means depending on the time or 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,38,176.81,179.63,_location, we might cover topics differently. _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,39,180.67,183.89,_Again, this dependency would then allow us to _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,40,183.89,188.68,capture the association of topics with specific contexts. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,41,188.68,194.54,We can still use the EM algorithm to solve the problem of parameter estimation. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,42,196.28,202.52,_And in this case, the estimated parameters would naturally contain context variables. _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,43,202.52,203.59,_And in particular, _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,44,203.59,209.94,a lot of conditional probabilities of topics given certain context. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,45,209.94,213.09,And this is what allows you to do contextual text mining. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,46,213.09,214.61,So this is the basic idea. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,47,215.75,221.47,_Now, we don't have time to introduce this model in detail, _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,48,221.47,225.7,but there are references here that you can look into to know more detail. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,49,225.7,232.12,Here I just want to explain the high level ideas in more detail. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,50,232.12,235.61,Particularly I want to explain the generation process. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,51,235.61,240.33,Of text data that has context associated in such a model. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,52,241.55,245.66,_So as you see here, we can assume there are still multiple topics. _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,53,245.66,251.41,_For example, some topics might represent a themes like a government response, _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,54,251.41,254.27,donation Or the city of New Orleans. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,55,254.27,258.803,Now this example is in the context of Hurricane Katrina and 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,56,258.803,260.57,that hit New Orleans. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,57,262.915,267.4,Now as you can see we assume there are different 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,58,267.4,271.548,views associated with each of the topics. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,59,271.548,276.53,_And these are shown as View 1, View 2, View 3. _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,60,276.53,281.475,Each view is a different version of word distributions. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,61,281.475,284.71500000000003,And these views are tied to some context variables. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,62,284.71500000000003,290.125,_For example, tied to the location Texas, or the time July 2005, _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,63,290.125,294.475,or the occupation of the author being a sociologist. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,64,296.205,301.56,_Now, on the right side, now we assume the document has context information. _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,65,301.56,304.37,So the time is known to be July 2005. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,66,304.37,306.71,_The location is Texas, etc. _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,67,306.71,311.41,And such context information is what we hope to model as well. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,68,311.41,313.3,So we're not going to just model the text. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,69,315.1,320.98,And so one idea here is to model the variations of top content and 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,70,320.98,321.92,various content. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,71,321.92,325.97,And this gives us different views of the water distributions. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,72,327.72,332.36,Now on the bottom you will see the theme coverage of top Coverage might also vary 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,73,332.36,339.31,according to these context because in the case 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,74,339.31,344.32,_of a location like Texas, people might want to cover the red topics more. _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,75,344.32,346.13,That's New Orleans. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,76,346.13,347.69,That's visualized here. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,77,347.69,350.93,_But in a certain time period, _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,78,350.93,356.28,maybe Particular topic and will be covered more. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,79,356.28,360.98,So this variation is also considered in CPLSA. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,80,360.98,367.685,_So to generate the searcher document With context, with first also choose a view. _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,81,368.695,374.055,And this view of course now could be from any of these contexts. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,82,374.055,377.08,_Let's say, we have taken this view that depends on the time. _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,83,377.08,378.31,In the middle. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,84,378.31,381.85,_So now, we will have a specific version of word distributions. _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,85,381.85,385.03,_Now, you can see some probabilities of words for each topic. _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,86,386.71,388.83,_Now, once we have chosen a view, _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,87,388.83,394.4,now the situation will be very similar to what happened in standard ((PRSA)) 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,88,394.4,398.86,_We assume we have got word distribution associated with each topic, right? _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,89,399.87,403.07,_And then next, we will also choose a coverage from the bottom, so _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,90,403.07,407.988,_we're going to choose a particular coverage, and that coverage, _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,91,407.988,415.305,_before is fixed in PLSA, and assigned to a particular document. _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,92,415.305,417.825,Each document has just one coverage distribution. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,93,418.885,423.925,_Now here, because we consider context, so the distribution of topics or the coverage _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,94,423.925,428.77,of Topics can vary depending on the context that has influenced the coverage. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,95,430.02,433.47,_So, for example, we might pick a particular coverage. _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,96,433.47,439.09,Let's say in this case we picked a document specific coverage. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,97,440.59,443.44,Now with the coverage and these word distributions 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,98,443.44,446.59,we can generate a document in exactly the same way as in PLSA. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,99,446.59,452.45,_So what it means, we're going to use the coverage to choose a topic, _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,100,452.45,454.88,to choose one of these three topics. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,101,454.88,458.23,Let's say we have picked the yellow topic. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,102,458.23,463.45,Then we'll draw a word from this particular topic on the top. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,103,464.76,466.88,_Okay, so we might get a word like government. _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,104,466.88,470.84000000000003,_And then next time we might choose a different topic, and _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,105,470.84000000000003,473.64,_we'll get donate, etc. _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,106,473.64,475.55,Until we generate all the words. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,107,475.55,478.55,And this is basically the same process as in PLSA. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,108,480.2,485.22,So the main difference is when we obtain the coverage. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,109,485.22,491.25,_And the word distribution, we let the context influence our choice So _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,110,491.25,496.05,in other words we have extra switches that are tied to these contacts that will 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,111,496.05,500.95,control the choices of different views of topics and the choices of coverage. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,112,502.01,505.43,And naturally the model we have more parameters to estimate. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,113,505.43,509.01,_But once we can estimate those parameters that involve the context, _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,114,509.01,513.08,_then we will be able to understand the context specific views of topics, _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,115,513.08,516.02,or context specific coverages of topics. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,116,516.02,518.85,And this is precisely what we want in contextual text mining. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,117,520.45,522.95,So here are some simple results. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,118,522.95,524.34,From using such a model. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,119,524.34,528.24,_Not necessary exactly the same model, but similar models. _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,120,528.24,530.86,So on this slide you see some sample results of 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,121,530.86,534.95,comparing news articles about Iraq War and Afghanistan War. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,122,536.315,542.855,_Now we have about 30 articles on Iraq wa,r and 26 articles on Afghanistan war. _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,123,542.855,548.852,_And in this case, the goal is to review the common topic. _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,124,548.852,551.332,It's covered in both sets of articles and 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,125,551.332,557.352,the differences of variations of the topic in each of the two collections. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,126,558.622,563.4,So in this case the context is explicitly specified by the topic or collection. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,127,565.04,570.42,And we see the results here show that there is a common 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,128,570.42,576.04,theme that's corresponding to Cluster 1 here in this column. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,129,576.04,582.26,And there is a common theme indicting that United Nations is involved in both Wars. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,130,582.26,585.63,It's a common topic covered in both sets of articles. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,131,585.63,588.97,_And that's indicated by the high probability words shown here, united and _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,132,588.97,589.86,nations. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,133,591.16,594.68,_Now if you know the background, of course this is not surprising and _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,134,594.68,600.34,this topic is indeed very relevant to both wars. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,135,600.34,604.9,If you look at the column further and then what's interesting's that the next 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,136,604.9,609.336,two cells of word distributions actually tell us 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,137,609.336,614.79,collection specific variations of the topic of United Nations. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,138,614.79,616.66,_So it indicates that the Iraq War, _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,139,616.66,621.06,_United Nations was more involved in weapons factions, whereas in _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,140,621.06,625.71,the Afghanistan War it was more involved in maybe aid to Northern Alliance. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,141,625.71,629.06,It's a different variation of the topic of United Nations. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,142,630.1,633.14,So this shows that by bringing the context. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,143,633.14,636.215,In this case different the walls or different the collection of texts. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,144,636.215,640.034,_We can have topical variations tied to these contexts, _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,145,640.034,645.25,to review the differences of coverage of the United Nations in the two wars. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,146,646.29,650.2,_Now similarly if you look at the second cluster Class two, _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,147,650.2,652.71,_it has to do with the killing of people, and, again, _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,148,652.71,656.32,it's not surprising if you know the background about wars. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,149,656.32,659.66,_All the wars involve killing of people, but _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,150,659.66,663.64,imagine if you are not familiar with the text collections. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,151,663.64,665.12,_We have a lot of text articles, and _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,152,665.12,670.23,such a technique can reveal the common topics covered in both sets of articles. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,153,670.23,674.715,It can be used to review common topics in multiple sets of articles as well. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,154,674.715,679.581,_If you look at of course in that column of cluster two, _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,155,679.581,686.143,you see variations of killing of people and that corresponds to different contexts 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,156,688.279,691.582,And here is another example of results 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,157,691.582,696.44,obtained from blog articles about Hurricane Katrina. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,158,697.47,702.32,_In this case, what you see here is visualization of _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,159,702.32,706.09,the trends of topics over time. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,160,707.24,712.98,And the top one shows just the temporal trends of two topics. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,161,712.98,718.98,_One is oil price, and one is about the flooding of the city of New Orleans. _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,162,720.06,726.28,Now these topics are obtained from blog articles about Hurricane Katrina. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,163,727.3,729.395,And people talk about these topics. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,164,729.395,732.37,And end up teaching to some other topics. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,165,732.37,735.0,_But the visualisation shows that with this technique, _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,166,735.0,738.02,we can have conditional distribution of time. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,167,738.02,739.66,Given a topic. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,168,739.66,743.42,So this allows us to plot this conditional probability 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,169,743.42,746.0,the curve is like what you're seeing here. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,170,746.0,751.56,_We see that, initially, the two curves tracked each other very well. _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,171,751.56,760.01,But later we see the topic of New Orleans was mentioned again but oil price was not. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,172,760.01,764.06,And this turns out to be 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,173,764.06,769.01,_the time period when another hurricane, hurricane Rita hit the region. _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,174,769.01,772.47,And that apparently triggered more discussion about the flooding of the city. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,175,774.9,780.01,The bottom curve shows the coverage of this topic 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,176,780.01,785.32,about flooding of the city by block articles in different locations. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,177,785.32,791.62,And it also shows some shift of coverage that might be related to 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,178,791.62,799.15,people's migrating from the state of Louisiana to Texas for example. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,179,800.57,805.65,So in this case we can see the time can be used as context to review trends of 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,180,805.65,806.15,topics. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,181,807.78,813.07,These are some additional results on spacial patterns. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,182,813.07,817.85,In this case it was about the topic of government response. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,183,817.85,821.69,And there was some criticism about the slow response of government 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,184,821.69,822.649,in the case of Hurricane Katrina. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,185,824.02,828.28,And the discussion now is covered in different locations. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,186,828.28,834.26,And these visualizations show the coverage in different weeks of the event. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,187,834.26,839.61,_And initially it's covered mostly in the victim states, _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,188,839.61,845.53,_in the South, but then gradually spread into other locations. _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,189,845.53,849.76,_But in week four, which is shown on the bottom left, _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,190,849.76,854.37,we see a pattern that's very similar to the first week on the top left. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,191,854.37,858.7,And that's when again Hurricane Rita hit in the region. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,192,858.7,862.54,So such a technique would allow us to use location as context 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,193,862.54,864.96,to examine their issues of topics. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,194,864.96,867.28,And of course the moral is completely general so 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,195,867.28,870.98,you can apply this to any other connections of text. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,196,870.98,872.85,To review spatial temporal patterns. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,197,874.46,877.39,_His view found another application of this kind of model, _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,198,877.39,881.96,where we look at the use of the model for event impact analysis. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,199,883.29,886.37,So here we're looking at the research articles information retrieval. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,200,886.37,889.48,_IR, particularly SIGIR papers. _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,201,889.48,893.18,And the topic we are focusing on is about the retrieval models. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,202,893.18,898.44,And you can see the top words with high probability about this model on the left. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,203,899.58,904.29,And then we hope to examine the impact of two events. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,204,904.29,908.29,_One is a start of TREC, for Text and Retrieval Conference. _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,205,908.29,911.459,This is a major evaluation sponsored by U.S. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,206,911.459,916.722,_government, and was launched in 1992 or around that time. _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,207,916.722,920.69,And that is known to have made a impact on 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,208,920.69,922.79,the topics of research information retrieval. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,209,923.87,928.68,_The other is the publication of a seminal paper, by Croft and Porte. _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,210,928.68,931.85,This is about a language model approach to information retrieval. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,211,931.85,936.44,It's also known to have made a high impact on information retrieval research. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,212,936.44,939.78,So we hope to use this kind of model to understand impact. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,213,939.78,944.09,The idea here is simply to use the time as context. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,214,944.09,948.585,And use these events to divide the time periods into a period before. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,215,948.585,951.397,For the event and another after this event. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,216,951.397,954.417,And then we can compare the differences of the topics. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,217,954.417,957.875,_The and the variations, etc. _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,218,957.875,962.75,_So in this case, the results show before track the study of _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,219,962.75,967.12,_retrieval models was mostly a vector space model, Boolean model etc. _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,220,967.12,968.8,_But the after Trec, _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,221,968.8,973.975,apparently the study of retrieval models have involved a lot of other words. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,222,973.975,978.44,_That seems to suggest some different retrieval tasks, so for _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,223,978.44,982.98,_example, email was used in the enterprise search tasks and _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,224,982.98,986.55,subtopical retrieval was another task later introduced by Trec. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,225,988.2,992.461,_On the bottom, we see the variations that are correlated _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,226,992.461,996.3,with the propagation of the language model paper. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,227,996.3,1000.631,_Before, we have those classic probability risk model, _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,228,1000.631,1004.6,_logic model, Boolean etc., but after 1998, _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,229,1004.6,1010.43,we see clear dominance of language model as probabilistic models. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,230,1010.43,1014.58,_And we see words like language model, estimation of parameters, etc. _
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,231,1014.58,1020.764,So this technique here can use events as context to understand the impact of event. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,232,1020.764,1023.403,Again the technique is generals so 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,233,1023.403,1027.37,you can use this to analyze the impact of any event. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,234,1027.37,1030.24,Here are some suggested readings. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,235,1031.94,1040.09,The first is paper about simple staging of psi to label cross-collection comparison. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,236,1041.27,1044.61,It's to perform comparative text mining to allow us to 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,237,1044.61,1047.41,extract common topics shared by multiple collections. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,238,1047.41,1049.93,And there are variations in each collection. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,239,1051.01,1055.54,The second one is the main paper about the CPLSA model. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,240,1055.54,1058.83,Was a discussion of a lot of applications. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,241,1058.83,1064.889,The third one has a lot of details about the special temporal patterns for 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,242,1064.889,1067.679,the Hurricane Katrina example. 
+5 - 8 - 4.8 Contextual Text Mining- Contextual Probabilistic Latent Semantic Analysis (00-17-59).srt,243,1067.679,1077.679,[MUSIC] 

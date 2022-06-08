@@ -1,0 +1,99 @@
+name,id,from,to,text
+1 - 1 - Text Mining and Analytics (00-08-15).srt,1,0.025,3.183,[SOUND] 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,2,3.183,7.606,Hello. 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,3,7.606,11.84,Welcome to the course Text Mining and Analytics. 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,4,11.84,13.94,My name is ChengXiang Zhai. 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,5,13.94,15.11,_I have a nickname, Cheng. _
+1 - 1 - Text Mining and Analytics (00-08-15).srt,6,15.11,19.83,I am a professor of the Department of Computer Science at the University of 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,7,19.83,24.24,Illinois at Urbana-Champaign. 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,8,24.24,27.74,This course is a part of a data mining specialization 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,9,27.74,32.32,offered by the University of Illinois at Urbana-Champaign. 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,10,32.32,37.77,_In addition to this course, there are four other courses offered by _
+1 - 1 - Text Mining and Analytics (00-08-15).srt,11,39.38,44.77,_Professor Jiawei Han, Professor John Hart and me, followed by _
+1 - 1 - Text Mining and Analytics (00-08-15).srt,12,44.77,49.37,a capstone project course that all of us will teach together. 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,13,51.81,58.207,_This course is particularly related to another course in the specialization, _
+1 - 1 - Text Mining and Analytics (00-08-15).srt,14,58.207,64.9,mainly text retrieval and search engines in that both courses are about text data. 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,15,67.117,72.463,_In contrast, pattern discovery and cluster analysis are about _
+1 - 1 - Text Mining and Analytics (00-08-15).srt,16,72.463,78.352,algorithms more applicable to all kinds of data in general. 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,17,78.352,83.11,The visualization course is also relatively general in that the techniques 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,18,83.11,85.351,can be applied to all kinds of data. 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,19,88.312,93.49000000000001,This course addresses a pressing need for harnessing big text data. 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,20,95.708,99.65100000000001,_Text data has been growing dramatically recently, _
+1 - 1 - Text Mining and Analytics (00-08-15).srt,21,99.65100000000001,104.582,mostly because of the advance of technologies deployed on the web 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,22,104.582,108.9,that would enable people to quickly generate text data. 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,23,110.92,115.07,_So, I listed some of the examples on this slide _
+1 - 1 - Text Mining and Analytics (00-08-15).srt,24,117.03,121.71,that can show a variety of text data that are available today. 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,25,121.71,125.67,_For example, if you think about the data on the internet, on the web, _
+1 - 1 - Text Mining and Analytics (00-08-15).srt,26,127.35,131.45,everyday we are seeing many web pages being created. 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,27,133.16,137.04,Blogs are another kind of new text data that 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,28,137.04,139.68,are being generated quickly by people. 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,29,139.68,143.04,Anyone can write a blog article on the web. 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,30,143.04,145.88,New articles of course have always been 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,31,145.88,150.09,a main kind of text data that being generated everyday. 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,32,151.16,154.168,Emails are yet another kind of text data. 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,33,154.168,161.29,And literature is also representing a large portion of text data. 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,34,161.29,166.048,It's also especially very important because of the high quality 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,35,166.048,170.57,in the data. 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,36,170.57,175.76,_That is, we encode our knowledge about the word _
+1 - 1 - Text Mining and Analytics (00-08-15).srt,37,175.76,183.35,using text data represented by all the literature articles. 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,38,183.35,186.63,It's a vast amount of knowledge of 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,39,188.508,192.999,all the text and data in these literature articles. 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,40,194.3,201.4,Twitter is another representative text data representing social media. 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,41,201.4,203.02,Of course there are forums as well. 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,42,204.52,207.69,People are generating tweets very quickly 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,43,207.69,212.92000000000002,indeed as we are speaking perhaps many people have already written many tweets. 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,44,212.92000000000002,215.99,_So, as you can see there are all kinds of text data _
+1 - 1 - Text Mining and Analytics (00-08-15).srt,45,215.99,217.739,that are being generated very quickly. 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,46,218.74,222.35,Now these text data present some challenges for people. 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,47,223.38,229.699,It's very hard for anyone to digest all the text data quickly. 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,48,229.699,235.577,_In particular, it's impossible for scientists to read all of the for _
+1 - 1 - Text Mining and Analytics (00-08-15).srt,49,235.577,238.97,example or for anyone to read all the tweets. 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,50,241.17,246.73,So there's a need for tools to help people digest text data more efficiently. 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,51,249.11,252.4,There is also another interesting opportunity 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,52,252.4,256.68,_provided by such big text data, and that is it's possible to leverage _
+1 - 1 - Text Mining and Analytics (00-08-15).srt,53,256.68,260.88,the amount of text data to discover interesting patterns to 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,54,260.88,265.8,turn text data into actionable knowledge that can be useful for decision making. 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,55,267.14,272.624,_So for example, product managers may be interested _
+1 - 1 - Text Mining and Analytics (00-08-15).srt,56,272.624,277.71,_in knowing the feedback of customers about their products, _
+1 - 1 - Text Mining and Analytics (00-08-15).srt,57,277.71,282.198,knowing how well their products are being received as 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,58,282.198,286.52,compared with the products of competitors. 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,59,286.52,288.24,This can be a good opportunity for 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,60,288.24,294.15999999999997,leveraging text data as we have seen a lot of reviews of product on the web. 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,61,294.15999999999997,299.83,So if we can develop a master text mining techniques to tap into such 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,62,299.83,307.21,_a [INAUDIBLE] to extract the knowledge and opinions of people about these products, _
+1 - 1 - Text Mining and Analytics (00-08-15).srt,63,307.21,312.298,then we can help these product managers to gain business intelligence or 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,64,312.298,316.419,to essentially feedback from their customers. 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,65,318.41,320.4,_In scientific research, for example, _
+1 - 1 - Text Mining and Analytics (00-08-15).srt,66,320.4,326.25,_scientists are interested in knowing the trends of research topics, knowing _
+1 - 1 - Text Mining and Analytics (00-08-15).srt,67,329.27,333.71,about what related fields have discovered. 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,68,333.71,337.92,This problem is especially important in biology research as well. 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,69,337.92,341.28,_Different communities tend to use different terminologies, yet _
+1 - 1 - Text Mining and Analytics (00-08-15).srt,70,341.28,344.96,they're starting very similar problems. 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,71,344.96,349.9,So how can we integrate the knowledge that is covered in different communities 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,72,349.9,352.36,to help study a particular problem? 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,73,352.36,356.459,_It's very important, and it can speed up scientific discovery. _
+1 - 1 - Text Mining and Analytics (00-08-15).srt,74,357.9,362.1,So there are many such examples where we can leverage the text data 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,75,362.1,365.68,to discover useable knowledge to optimize our decision. 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,76,366.74,368.09,The main techniques for 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,77,368.09,373.3,harnessing big text data are text retrieval and text mining. 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,78,373.3,377.48,_So these are two very much related technologies.Yet, _
+1 - 1 - Text Mining and Analytics (00-08-15).srt,79,377.48,380.8,they have somewhat different purposes. 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,80,380.8,389.16700000000003,These two kinds of techniques are covered in the tool in this specialization. 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,81,389.16700000000003,394.4,_So, text retrieval on search engines covers text retrieval, _
+1 - 1 - Text Mining and Analytics (00-08-15).srt,82,394.4,399.92,and this is necessary to turn big text data into 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,83,399.92,405.75,_a much smaller but more relevant text data, which are often the data that _
+1 - 1 - Text Mining and Analytics (00-08-15).srt,84,405.75,411.47,we need to handle a particular problem or to optimize a particular decision. 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,85,411.47,417.36,This course covers text mining which is a second step in this pipeline 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,86,417.36,424.34,that can be used to further process the small amount of relevant data 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,87,424.34,430.17,to extract the knowledge or to help people digest the text data easily. 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,88,430.17,433.94,_So the two courses are clearly related, in fact, _
+1 - 1 - Text Mining and Analytics (00-08-15).srt,89,433.94,439.81,some of the techniques are shared by both text retrieval and text mining. 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,90,439.81,444.79,_If you have already taken the text retrieval course, then you might see _
+1 - 1 - Text Mining and Analytics (00-08-15).srt,91,444.79,451.365,_some of the content being repeated in this text mining course, although _
+1 - 1 - Text Mining and Analytics (00-08-15).srt,92,451.365,455.2,we'll be talking about the techniques from a very different perspective. 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,93,455.2,459.82,_If you have not taken the text retrieval course, _
+1 - 1 - Text Mining and Analytics (00-08-15).srt,94,459.82,465.01,it's also fine because this course is self-contained and 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,95,465.01,470.27,you can certainly understand all of the materials without a problem. 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,96,470.27,475.116,_Of course, you might find it beneficial to take both courses and _
+1 - 1 - Text Mining and Analytics (00-08-15).srt,97,475.116,480.517,that will give you a very complete set of skills to handle big text data. 
+1 - 1 - Text Mining and Analytics (00-08-15).srt,98,482.758,492.758,[MUSIC] 

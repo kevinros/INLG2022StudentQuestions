@@ -1,0 +1,338 @@
+name,id,from,to,text
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,1,0.025,5.716,[SOUND] This lecture is about 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,2,5.716,11.908,the text retrieval problem. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,3,11.908,15.542,This picture shows our overall plan for lectures. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,4,15.542,21.522,_In the last lecture, we talked about the high level strategies for text access. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,5,21.522,24.16,We talked about push versus pull. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,6,25.36,30.72,Search engines are the main tools for supporting the pull mode. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,7,30.72,32.452,_Starting from this lecture, _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,8,32.452,36.27,we're going to talk about the how search engines work in detail. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,9,38.11,42.67,_So first, it's about the text retrieval problem. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,10,42.67,46.12,We're going to talk about the three things in this lecture. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,11,46.12,49.65,_First, we'll define text retrieval. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,12,49.65,54.2,_Second, we're going to make a comparison between text retrieval and _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,13,54.2,56.23,_the related task, database retrieval. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,14,58.24,62.95,_Finally, we're going to talk about the document selection versus document ranking _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,15,62.95,66.35,as two strategies for responding to a user's query. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,16,69.91,71.17,So what is text retrieval? 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,17,72.85,77.831,It should be a task that's familiar to most of us because we're using web 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,18,77.831,79.886,search engines all the time. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,19,79.886,85.425,So text retrieval is basically a task where the system would respond 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,20,85.425,90.673,_to a user's query with relevant lock-ins, basically through _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,21,90.673,97.3,supported querying as one way to implement the poor mold of information access. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,22,99.24000000000001,100.93,So the scenario's the following. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,23,100.93,103.59,You have a collection of text documents. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,24,103.59,106.35900000000001,These documents could be all the web pages on the web. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,25,107.4,111.52000000000001,Or all the literature articles in the digital library or 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,26,111.52000000000001,116.22,maybe all the text files in your computer. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,27,118.71000000000001,124.34,A user will typically give a query to the system to express the information need. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,28,124.34,129.43,And then the system would return relevant documents to users. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,29,129.43,134.251,Relevant documents refer to those documents that are useful to the user who 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,30,134.251,135.56,typed in the query. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,31,136.93,139.51,Now this task is a often called information retrieval. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,32,141.17000000000002,145.28,_But literally, information retrieval would broadly include the retrieval of _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,33,145.28,147.61,other non-textual information as well. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,34,147.61,151.02,_For example, audio, video, et cetera. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,35,153.02,157.115,It's worth noting that text retrieval is at the core of 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,36,157.115,161.656,information retrieval in the sense that other medias such as 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,37,161.656,167.04,video can be retrieved by exploiting the companion text data. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,38,167.04,172.31,_So for example, can the image search engines actually _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,39,172.31,177.39,match a user's query with the companion text data of the image? 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,40,179.85,183.88,_This problem is also called the, the search problem, _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,41,185.55,188.68,and the technology is often called search technology in industry. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,42,191.19,194.25,_If you ever take on course in databases, _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,43,194.25,198.3,it'll be useful to pause the lecture at this point and 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,44,198.3,205.22,think about the differences between text retrieval and database retrieval. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,45,205.22,208.45,Now these two tasks are similar in many ways. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,46,209.53,211.82,But there are some important differences. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,47,213.89,218.16,_So, spend a moment to think about the differences between the two. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,48,218.16,222.73,Think about the data and information managed by a search engine versus 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,49,222.73,226.07,_those that are man, managed by a database system. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,50,227.41,231.57999999999998,Think about the difference between the queries that you typically specify for 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,51,231.57999999999998,237.389,a database system versus the queries that typed in by users on the search engine. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,52,239.18,240.97,And then finally think about the answers. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,53,242.87,244.25,What's the difference between the two? 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,54,246.86,247.92,_Okay, so _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,55,247.92,251.186,if we think probably the information out there are managed by the two systems. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,56,251.186,258.09,_We will see that in text retrieval, the data is unstructured, it's free text. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,57,258.09,263.11,_But in databases, they are structured data, where there is a clear defined _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,58,263.11,268.11,schema to tell you this column is the names of people and 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,59,268.11,271.66,_that column is ages, et cetera. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,60,271.66,273.34000000000003,_In unstructured text, _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,61,273.34000000000003,278.40999999999997,it's not obvious what are the names of people mentioned in the text. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,62,280.44,282.39,_Because of this difference, _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,63,282.39,286.7,we can also see that text information tends to be more ambiguous. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,64,286.7,291.18,And we'll talk about that in the natural language processing lecture. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,65,291.18,295.5,_Whereas in databases, the data tend to have well-defined semantics. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,66,298.23,301.673,_There is also important difference in the queries, and _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,67,301.673,305.79,_this is partly due to the difference in the information, or data. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,68,307.632,312.99,_So text queries tend to be ambiguous, whereas in their research, _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,69,312.99,316.29,the queries are particularly well-defined. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,70,316.29,317.9,_Think about the SQL query, _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,71,317.9,322.32,that would clear the specify what records to be returned. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,72,322.32,326.055,So it has very well defined semantics. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,73,326.055,331.44,Queue all queries or naturally ending queries tend to be incomplete. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,74,331.44,334.81,_Also in that it doesn't really, _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,75,334.81,337.19,fully specify what documents should be retrieved. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,76,338.45,342.15,_Whereas, in the database search, the SQL query _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,77,342.15,347.38,can be regarded as a computer specification for what should be returned. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,78,347.38,351.05899999999997,_And because of these differences, the answers would be also different. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,79,352.07,356.67,_In the case of text retrieval, we're looking for relevant documents. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,80,358.11,362.389,_In the database search, we are retrieving records or _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,81,362.389,367.3,_matched records with the SQL query, more precisely. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,82,369.11,375.11,_Now in the case of text retrieval, what should be the right answers to _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,83,375.11,379.95,_a query is not very well specified, as we just discussed. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,84,381.14,385.83,So it's unclear what should be the right answers to a query. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,85,385.83,389.24,_And this has very important consequences, and _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,86,389.24,394.65999999999997,that is text retrieval is an empirically defined problem. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,87,398.74,406.51,_And so this a problem because if it's empirically defined, _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,88,406.51,411.51,then we cannot mathematically prove one method is better than another method. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,89,412.63,416.71,That also means we must rely on emperical evaluation 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,90,416.71,421.12,more than users to know which method works better. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,91,422.46,425.08,_And that's why we have one lecture, _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,92,425.08,429.42,actually more than one lectures to cover the issue of evaluation. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,93,429.42,432.84,Because this is a very important topic for search engines. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,94,433.93,437.605,_Without knowing how to evaluate an algorithm appropriately, _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,95,437.605,441.416,there's no way to tell whether we have got the better algorithm or 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,96,441.416,443.998,whether one system is better than another. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,97,448.309,451.676,So now let's look at the problem in a formal way. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,98,451.676,456.19,So this slide shows a formal formulation of the text retrieval problem. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,99,457.46,463.46,_First, we have our vocabulary set which is just a set of words in a language. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,100,464.92,469.13,_Now here, we're considering just one language, but _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,101,469.13,473.4,in reality on the web there might be multiple natural languages. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,102,473.4,476.19,We have text that are in all kinds of languages. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,103,477.54,481.573,_But here for simplicity, we just assume there is one kind of language. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,104,481.573,486.961,_As the techniques used for retrieving data from multiple languages,. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,105,486.961,490.445,Are more or less similar to the techniques used for 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,106,490.445,493.17,retrieving documents in one language. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,107,493.17,495.76,_Although there is important difference, the principles and _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,108,495.76,498.5,methods are very similar. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,109,501.995,504.715,_Next we have the query, which is a sequence of words. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,110,506.005,511.755,And so here you can see the query 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,111,513.732,516.482,is defined as a sequence of words. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,112,516.482,521.242,Each q sub i is a word in the vocabulary. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,113,522.302,524.662,A document is defined in the same way. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,114,524.662,527.0,So it's also a sequence of words. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,115,527.0,531.55,_And here, d sub ij is also a word in the vocabulary. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,116,532.87,535.92,_Now typically, the documents are much longer than queries. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,117,537.09,541.49,But there are also cases where the documents may be very short. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,118,544.37,548.53,_So you can think about the, what might be a example of that case. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,119,549.68,553.56,_I hope you can think of, of twitter search, all right? _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,120,553.56,554.65,Tweets are very short. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,121,556.73,560.46,_But in general, documents are longer then the queries. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,122,563.14,567.0,_Now, then we have a collection of documents. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,123,569.43,571.24,And this collection can be very large. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,124,571.24,572.37,So think about the web. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,125,572.37,575.858,_It could, could be very large. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,126,575.858,581.569,_And then the goal of text retrieval is you'll find the set of relevant documents, _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,127,581.569,586.35,_which we denote by R of q, because it depends on the query. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,128,586.35,590.29,_And this is, in general, a subset of all the documents in the collection. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,129,592.41,597.842,_Unfortunately, this set of random documents is generally unknown, _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,130,597.842,603.07,and usually depend in the sense that for the same query typed 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,131,603.07,608.12,_in by different users, the expected relevant documents may be different. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,132,609.33,613.6,The query given to us by the user is only a hint 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,133,613.6,615.665,on which document should be in this set. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,134,617.835,625.175,_And indeed, the user is generally unable to specify what exactly should be in _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,135,625.175,629.69,_the set, especially in the case of a web search where the collection is so large. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,136,629.69,632.505,The user doesn't have complete knowledge about the whole collection. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,137,633.96,639.91,_So, the best a search system can do is _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,138,639.91,645.99,to compute an approximation of this relevent document set. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,139,645.99,650.41,So we denote it by R prime of q. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,140,650.41,655.923,_So, formally, we can see the task is to compute this R prime of q, _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,141,655.923,660.115,an approximation of the relevant documents. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,142,660.115,661.105,So how can we do that? 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,143,662.155,667.295,_Now, imagine if you are now asked to write a program to do this. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,144,668.975,669.575,What would you do? 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,145,669.575,671.265,Now think for a moment. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,146,671.265,674.225,_Right, so these are your input. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,147,675.73,680.754,_With the query, the documents and _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,148,680.754,685.37,_then you will have computed the answers to this query, _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,149,685.37,688.06,which is set of documents that would be useful to the user. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,150,689.77,693.537,So how would you solve the problem? 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,151,693.537,697.63,In general there are two strategies that we can use. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,152,699.29,702.24,_All right, the first strategy is to do document selection. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,153,702.24,706.57,_And that is, we're going to have a binary classification function, or _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,154,706.57,707.75,binary classified. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,155,709.36,712.12,That's a function that will take a document and 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,156,712.12,717.37,_query as input, and then give a zero or one as output, _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,157,717.37,721.2,_to indicate whether this document is relevant to the query, or not. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,158,722.33,725.307,_So in this case, you can see the document. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,159,728.651,735.036,_The, the relevant document set is defined as follows. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,160,735.036,739.891,_It basically, all the documents that _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,161,739.891,744.604,have a value of one by this function. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,162,744.604,745.686,_And so in this case, _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,163,745.686,749.94,you can see the system must have decided if a document is relevant or not. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,164,749.94,753.25,_Basically, that has to say whether it's one or zero. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,165,753.25,756.37,And this is called absolute relevance. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,166,756.37,759.31,_Basically, it needs to know exactly whether it's going to be useful _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,167,759.31,759.85,to the user. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,168,761.93,764.91,_Alternatively, there's another strategy called document ranking. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,169,766.15,767.14,_Now in this case, _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,170,767.14,772.4,the system is not going to make a call whether a document is relevant or not. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,171,772.4,776.94,_Rather, the system's going to use a real value function, f, _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,172,776.94,781.51,here that would simply give us a value. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,173,781.51,784.17,That would indicate which document is more likely relevant. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,174,785.74,788.59,_So it's not going to make a call whether this document is relevant or not, _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,175,788.59,792.78,but rather it would say which document is more likely relevant. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,176,792.78,798.322,So this function then can be used to rank the documents. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,177,798.322,803.024,And then we're going to let the user decide where to stop when the user looks 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,178,803.024,804.27,at the documents. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,179,805.4,811.17,_So we have a threshold, theta, here to determine _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,180,811.17,815.85,what documents should be in this approximation set. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,181,817.39,821.278,And we're going to assume that all the documents that are ranked above this 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,182,821.278,823.64,threshold are in the set. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,183,825.0,829.78,_Because in effect, these are the documents that we delivered to the user. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,184,829.78,834.498,And theta is a cutoff determined by the user. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,185,834.498,839.26,So here we've got some collaboration from 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,186,839.26,843.44,_the user in some sense because we don't really make a cutoff, and _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,187,843.44,848.12,the user kind of helped the system make a cutoff. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,188,848.12,852.805,_So in this case, the system only needs to decide if one document is more likely _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,189,852.805,854.332,relevant than another. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,190,854.332,856.357,_And that is, it only needs for _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,191,856.357,860.98,determined relative relevance as opposed to absolute relevance. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,192,862.23,866.27,_Now you can probably already sense that relevant, _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,193,866.27,871.55,relative relevance would be easier to determine the absolute relevance. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,194,871.55,872.8,_Because in the first case, _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,195,872.8,876.49,_we have to say exactly whether a document is relevant or not, right? _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,196,877.99,885.5,And it turns out that ranking is indeed generally preferred to document selection. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,197,886.71,890.24,So let's look this these two strategies in more detail. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,198,890.24,893.96,So this pictures shows how it works. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,199,893.96,898.63,_So on the left side, we see these documents. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,200,898.63,902.7,And we use the pluses to indicate the relevant documents. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,201,902.7,908.335,So we can see the true relevant documents here consists 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,202,908.335,916.125,_this set of true relevant documents consists of these pluses, these documents. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,203,916.125,920.524,_And with the document selection function, _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,204,920.524,925.351,_we can do, basically classify them into two groups, _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,205,925.351,930.05,relevant documents and non-relevant ones. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,206,930.05,934.7,_Of course, the classifier will not be perfect, so it will make mistakes. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,207,934.7,938.21,So here we can see in the approximation of 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,208,938.21,943.09,the relevant documents we have got some non-relevant documents. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,209,943.09,948.825,_And similarly, there's a relevant document that that's misclassified as non-relevant. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,210,948.825,954.013,_In the case of document ranking, we can see the system seems like _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,211,954.013,959.302,simply ranks all the documents in the descending order of the scores. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,212,959.302,964.36,And we're going to let the user stop wherever the user wants to stop. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,213,964.36,968.29,_So if a user wants to examine more documents, then the user will _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,214,968.29,973.52,go down the list to examine more and stop at the lower position. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,215,973.52,977.22,_But if the user only wants to read a few random documents, _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,216,977.22,980.74,the user might stop at the top position. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,217,980.74,986.018,_So in this case, the user stops at d4, so the effect, _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,218,986.018,990.676,we have delivered these four documents to our user. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,219,993.555,997.37,_So as I said, ranking is generally preferred. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,220,997.37,1002.68,_And one of the reasons is because the classifier, _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,221,1002.68,1006.41,_in the case of document selection, is unlikely accurate. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,222,1006.41,1009.471,Why? Because the only clue is usually 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,223,1009.471,1011.098,the query. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,224,1011.098,1016.57,_But the query may not be accurate, in the sense that it could be overly constrained. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,225,1017.64,1024.306,_For example, you might expect the relevant documents to talk about all these _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,226,1024.306,1029.329,_topics you, by using specific vocabulary, and as a result, _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,227,1029.329,1034.739,_you might match no random documents, because in the collection, _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,228,1034.739,1039.879,no others have discussed the topic using these vocabularies. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,229,1039.879,1040.779,All right. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,230,1040.779,1045.828,_So in this case, we'll see there is this problem of _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,231,1045.828,1051.98,no relevant documents to return in the case of overly constrained query. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,232,1053.22,1057.98,_On the other hand, if the query is under constrained, for example, _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,233,1059.28,1064.27,if the query does not have sufficient discriminating words you'll 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,234,1064.27,1066.68,_find in relevant documents, you may actually end up having. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,235,1066.68,1067.74,over delivery. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,236,1069.15,1073.96,And this is when you thought these words might be sufficient to 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,237,1073.96,1078.49,_help you find the relevant documents, but it turns out that they're not sufficient. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,238,1078.49,1084.28,And there are many distraction documents using similar words. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,239,1084.28,1087.45,And so this is the case of over delivery. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,240,1088.582,1093.92,_Unfortunately, it's very hard to find the right position between these two extremes. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,241,1095.39,1095.91,Why? 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,242,1095.91,1099.29,_Because, when the users looking for the information in general, _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,243,1099.29,1104.52,the user does not have a good knowledge about the the information to be found. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,244,1104.52,1108.59,_And in that case, the user does not have a good knowledge about _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,245,1108.59,1113.78,what vocabularies will be used in those random documents. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,246,1113.78,1118.837,So it's very hard for a user to pre-specify 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,247,1118.837,1124.042,the right level of of constraints. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,248,1124.042,1129.225,_Even if the class file is accurate, we also still want to rank these _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,249,1129.225,1134.8,relevant documents because they are generally not equally relevant. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,250,1136.13,1138.33,Relevance is often a matter of degree. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,251,1139.56,1145.19,So we must prioritize these documents for user to exam. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,252,1146.32,1150.69,_And this, note that this prioritization is very important, _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,253,1152.3,1156.69,because a user cannot digest all the contents at once. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,254,1156.69,1160.72,The user generally would have to look at each document sequentially. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,255,1161.79,1166.058,_And therefore, it would make sense to feed users with the most _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,256,1166.058,1172.13,_relevant documents, and that's what ranking is doing. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,257,1172.13,1175.18,So for these reasons ranking is generally preferred. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,258,1176.33,1179.66,_Now, this preference also has a theoretical justification, and _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,259,1179.66,1182.32,this is given by the probability ranking principle. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,260,1184.2,1187.94,In the end of this lecture there is a reference for this. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,261,1189.594,1194.323,_This principal says, returning a ranked list of documents in descending order of _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,262,1194.323,1197.611,_probability, that a document is relevant to the query, _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,263,1197.611,1201.26,is the optimal strategy under the following two assumptions. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,264,1202.61,1205.69,_First, the utility of a document to a user _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,265,1205.69,1209.38,Is independent of the utility of any other document. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,266,1210.97,1215.42,_Second, a user would be assumed to browse the results sequentially. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,267,1217.21,1220.92,_Now it's easy to understand why these two assumptions are needed, _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,268,1220.92,1225.41,_in order to justify for the ranking, strategy. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,269,1227.12,1230.92,_Because, if the documents are independent, _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,270,1230.92,1234.25,then we can evaluate the utility of each document that's separate. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,271,1236.34,1240.79,And this would allow us to compute a score for each document independently. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,272,1240.79,1243.92,And then we're going to rank these documents based on those scores. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,273,1245.71,1251.3,The second assumption is to say that the user would indeed follow the rank list. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,274,1251.3,1255.04,_If the user is not going to follow the ranked list, is not going to examine _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,275,1255.04,1259.4,_the documents sequentially, then obviously the ordering would not be optimal. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,276,1260.57,1268.26,_So under these two assumptions, we can theoretically justify the ranking strategy _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,277,1268.26,1272.89,is in fact the best that you could do. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,278,1272.89,1274.7,Now I've put one question here. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,279,1274.7,1276.39,Do these 2 assumptions hold? 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,280,1278.21,1282.771,Now I suggest you to pause the lecture for a moment to think about these. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,281,1287.589,1293.43,Now can you think of some examples that would suggest 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,282,1293.43,1298.75,these assumptions aren't necessarily true? 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,283,1304.496,1306.043,Now if you think for 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,284,1306.043,1311.47,a moment you may realize none of the assumptions is actually true. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,285,1313.23,1317.51,_For example in the case of independence assumption, we might have _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,286,1317.51,1322.59,identical documents that have similar content or exactly the same content. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,287,1322.59,1327.79,_If you look at each of them alone, each is relevant. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,288,1327.79,1332.52,_But if the user has already seen one of them, we assume it's _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,289,1332.52,1337.24,generally not very useful for the user to see another similar or duplicate one. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,290,1339.03,1343.55,So clearly the utility of a document is dependent 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,291,1343.55,1345.68,on other documents that the user has seen. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,292,1347.35,1352.51,_In some other cases, you might see a scenario where one document that may not _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,293,1352.51,1358.48,_be useful to the user, but when three particular documents are put together, _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,294,1358.48,1360.94,they provide answer to the user's question. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,295,1362.13,1364.17,So this is collective relevance. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,296,1364.17,1368.9,And that also suggests that the value of the document 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,297,1368.9,1371.375,might depend on other documents. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,298,1371.375,1378.09,Sequential browsing generally would make sense if you have a ranked list there. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,299,1379.22,1384.65,_But even if you have a run list, there is evidence showing that _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,300,1384.65,1390.15,users don't always just go strictly sequentially through the entire list. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,301,1390.15,1394.9,_They sometimes would look at the bottom for example, or skip some. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,302,1394.9,1399.439,And if you think about the more complicated interfaces that would possibly 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,303,1399.439,1404.555,_use like, two dimensional interface where you can put additional information _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,304,1404.555,1409.261,_on the screen, then sequential browsing is a very restrictive assumption. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,305,1411.757,1414.078,_So the point here is that, _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,306,1414.078,1419.672,_none of these assumptions is really true, but nevertheless, _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,307,1419.672,1426.745,the probability ranking principle establishes some solid foundation for 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,308,1426.745,1431.02,ranking as a primary task for search engines. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,309,1431.02,1433.22,And this has actually been the basis for 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,310,1433.22,1436.507,a lot of research work in information retrieval. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,311,1436.507,1440.54,And many algorithms have been designed based on this assumption. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,312,1441.58,1446.19,Despite that the assumptions aren't necessarily true. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,313,1446.19,1452.98,_And we can, address this problem by doing post processing of a ranked list. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,314,1452.98,1455.43,_For example, to remove redundancy. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,315,1460.28,1462.43,_So to summarize this lecture, _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,316,1462.43,1468.01,the main points that you can take away are the following. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,317,1468.01,1470.499,_First, text retrieval is an empirically defined problem. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,318,1471.76,1477.07,And that means which algorithm is better must be judged by the users. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,319,1478.42,1481.68,_Second, document ranking is generally prefer and _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,320,1481.68,1486.17,_this is, will help users prioritize examination of search results. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,321,1487.41,1491.429,_And this is also to bypass the difficulty in determining absolute relevance, _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,322,1492.64,1498.86,because we can get some help from users in determining where to make the cut off. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,323,1498.86,1499.64,It's more flexible. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,324,1502.26,1505.9,So this further suggests that the main technical challenge 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,325,1505.9,1510.94,in designing the search engine is with designing effective ranking function. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,326,1510.94,1516.15,_In other words, we need to define what is the value of this function f _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,327,1516.15,1519.47,on the query and document pair. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,328,1521.25,1525.908,Now how to design such a function is a main topic in the following lectures. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,329,1529.03,1531.748,There are two suggested additional readings. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,330,1531.748,1536.192,The first is the classic paper on probability ranking principle. 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,331,1536.192,1542.38,_The second, is a must read for anyone doing research information retrieval. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,332,1542.38,1548.48,_It's classical IR book, which has excellent coverage of _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,333,1548.48,1555.54,_the main research results in early days, up to the time when the book was written. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,334,1555.54,1559.137,Chapter six of this book has an in depth discussion of 
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,335,1559.137,1562.409,_the probability of the ranking principal, and _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,336,1562.409,1566.198,_the probabilistic retrieval models, in general. _
+2 - 3 - 1.3 Text Retrieval Problem (00-26-18).srt,337,1566.198,1570.163,[MUSIC] 

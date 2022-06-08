@@ -1,0 +1,45 @@
+filename,lecture in question,lecture,raw from,raw to,from,to,text
+week10_allquestions,10.5,4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).csv, 10'00",15'00",600,900, What's the best way to choose the appropriate k for running k-means clustering?
+week10_allquestions,10.3,4 - 3 - 3.3 Text Clustering- Generative Probabilistic Models Part 2 (00-08-37).csv, 3'45",4'26",225,266, When using the maximum likelihood estimator for parameter estimation what does arg max mean and what is the meaning of the result that it gives you?
+week10_allquestions,10.9,4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).csv, 19'42",20'25",1182,1225, How do we determine how much we should smooth?
+week10_allquestions,.9,MISSING, 17' 37",18' 52",1057,1132, Why does smoothing achieve discriminative weighting?
+week10_allquestions,10.3,4 - 3 - 3.3 Text Clustering- Generative Probabilistic Models Part 2 (00-08-37).csv, 1'25",1'35",85,95, what does theta represent?
+week10_allquestions,4.7,MISSING, 9'00'',10'10'',540,610, What is hierarchical categorization and how is it useful?
+week10_allquestions,10.5,4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).csv, 5'12",6'00",312,360, In what scenarios do the three popular group similarity algorithms result in the best accuracy?
+week10_allquestions,10.1,4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).csv, 7'00",7'50",420,470,$ Can a cluster for words be compared to clusters containing larger objects, like groups of documents?$
+week10_allquestions,10.9,4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).csv, 2'00",2'15",120,135, How do we use generated models to do text categorization?
+week10_allquestions,10.3,4 - 3 - 3.3 Text Clustering- Generative Probabilistic Models Part 2 (00-08-37).csv, 04'15",04'25",255,265, What is the most efficient way to find lambda star? Iterating through all combinations of parameters seems tedious.
+week10_allquestions,4.2,MISSING, 0'27",0'58",27,58, What is the advantages and disadvanatges for probability and similarity approch repesctively?
+week10_allquestions,10.2,4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).csv, 3'54",4'30",234,270, Is it possible to have the amount of topics shared among the docs more than the amount of docs?
+week10_allquestions,10.5,4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).csv, 3'01'',3'10'',181,190,What exactly is Hierarchical Agglomerative Clustering?
+week10_allquestions,10.5,4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).csv, 3'52",6'29",232,389, How do we choose the way to compute a group similarity based on different variations?
+week10_allquestions,10.5,4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).csv, 3'01'',3'04'',181,184,What exactly is Hierarchical Agglomerative Clustering?
+week10_allquestions,4.5,MISSING, 14'45",15'00",885,900, What exactly are differences between K means and EM algo?
+week10_allquestions,4.2,MISSING, 4’08”,4’20”,248,260, What is the motivation for test clustering?
+week10_allquestions,10.9,4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).csv, 1'23",2'33",83,153, What is the functionality for all of text categorization in real life?
+week10_allquestions,10.3,4 - 3 - 3.3 Text Clustering- Generative Probabilistic Models Part 2 (00-08-37).csv, 2'30",4'00",150,240, Can you use a different model than k unigram LMs?
+week10_allquestions,10.8,4 - 8 - 3.8 Text Categorization- Methods (00-11-50).csv, 4'20",5'20",260,320, So we are throwing all the data onto a neural network to figure out more categorizations?
+week10_allquestions,4.5,MISSING, 9'09",10'00",549,600, What are examples of criteria of choosing single links over complete links and vice versa?
+week10_allquestions,4.1,MISSING, 5'30",8'00",330,480,$ Is the general idea of clustering, then, to simply put together similar text objects so we can generalize/aggregate multiple things into one and treat them as one item to simplify a collection? I don't fully understand the benefits of this in things like search results; wouldn't you still want to treat these results as separate entities for the user?$
+week10_allquestions,10.8,4 - 8 - 3.8 Text Categorization- Methods (00-11-50).csv, 0'00",2'30",0,150,$ For text categorization being used, it looks even with unsupervised techniques we hit a road block in terms of actual understanding of the topics, what is going to be the future of text categorization where the model understands or has some schema to see how the topics relate the way humans do?$
+week10_allquestions,10.2,4 - 2 - 3.2 Text Clustering- Generative Probabilistic Models Part 1 (00-16-18).csv, 3'20",3'20",200,200, Are there equations with more inputs?
+week10_allquestions,4.9,MISSING, 24'10",25'22",1450,1522, What is the intuition in scoring based on ratio rather than compare two scores? Why the log of ratio is the weight?
+week10_allquestions,10.6,4 - 6 - 3.6 Text Clustering- Evaluation (00-10-11).csv, 0'43",5'07",43,307,$ How does clustering deal with outliers in a cluster of data? For eg: in young culture, if tide pods are a data point to online social media content in that age group, which in reality belongs to that cluster but will be seen as an outlier, because this has no similarity to other kinds of social media content?$
+week10_allquestions,4.3,MISSING, 4'10",4'25",250,265,$ How does exponiating the probability by c(w,d) change from x_j to w?$
+week10_allquestions,10.4,4 - 4 - 3.4 Text Clustering- Generative Probabilistic Models Part 3 (00-14-55).csv, 5'16",8'29",316,509, What Is Good Clustering? What Is Cluster Analysis?
+week10_allquestions,4.9,MISSING, 21'00'',22'05'',1260,1325, I did not understand how performing smoothing of word distribution using the background model helps in the discriminative or IDF weighting of words as well.
+week10_allquestions,4.5,MISSING, 11'28",14'56",688,896,$ In k-means clustering, do we get better results by choosing k to be the number of clusters we want or can we do better by choosing k > n where n is the number of clusters and then manually assigning categories based on what we've learned about the clusters i.e. considering clusters as features of documents?$
+week10_allquestions,10.9,4 - 9 - 3.9 Text Categorization- Generative Probabilistic Models (00-31-18).csv, 0'00" , 5'00",0,300, Can you explain more about how these models help in text categorization?
+week10_allquestions,7.4,MISSING, 2'20",2'35",140,155, How can we adapt the vector space retrieval model to discover paradigmatic relations?
+week10_allquestions,10.1,4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).csv, 5'06",5'31",306,331,$ In the example provide there are two given ways to differentiate clusters; however, in real situations how can clusters be identified in data that is more continuous than discrete?$
+week10_allquestions,4.2,MISSING, 0'53",1'30",53,90, What other type of text clustering models support a document that can cover multiple topics?
+week10_allquestions,10.3,4 - 3 - 3.3 Text Clustering- Generative Probabilistic Models Part 2 (00-08-37).csv, 6'15",8'20",375,500, What's the advantage of adding prior (Bayesian)?
+week10_allquestions,10.1,4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).csv, 02’21”,03’15”,141,195, How does text clustering allow for variety of objects while still performing within the “natural structure” and what allows it to become so general?
+week10_allquestions,10.3,4 - 3 - 3.3 Text Clustering- Generative Probabilistic Models Part 2 (00-08-37).csv, 4'38",7'30",278,450, What are the benefits of probabilistic models vs other models
+week10_allquestions,10.1,4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).csv, 7'29",7'50",449,470, When clustering things with larger granularity (e.g. an entire website) is some of the power of text clustering lost?
+week10_allquestions,10.6,4 - 6 - 3.6 Text Clustering- Evaluation (00-10-11).csv, 00'00",01'00",0,60,$ Beyond general knowledge and given the high interest in deep learning, is it advisable to revisit generative models for future solution formulations? The need of data that deep learning methods is one answer but it there any other reason?$
+week10_allquestions,10.1,4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).csv, 3'15",4'20",195,260,$ So to clarify, we cannot simply assess similarity because it is important to define perspective as any two objects can be similar?$
+week10_allquestions,4.8,MISSING, 10'02",10'10",602,610, How we get the P(Y) here?
+week10_allquestions,4.1,MISSING, 2'23",5'15",143,315, Why are we adding the background probability if it is already a common word?
+week10_allquestions,10.5,4 - 5 - 3.5 Text Clustering- Similarity-based Approaches (00-17-48).csv, 6'48'',7'16'',408,436, Why can we assume these are correct?
+week10_allquestions,4.5,MISSING, 1'20'',1'30'',80,90,$ For similarity-based partitioning of data, can it cluster the text into more than one clusters (one text in multiple clusters)?$

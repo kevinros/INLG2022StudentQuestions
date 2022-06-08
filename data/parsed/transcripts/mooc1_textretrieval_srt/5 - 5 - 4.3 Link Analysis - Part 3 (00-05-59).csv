@@ -1,0 +1,94 @@
+name,id,from,to,text
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,1,0.025,9.03,[SOUND] So we talked about a page rank as a way to 
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,2,9.03,14.045,to capture the Authorities. 
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,3,14.045,21.245,_Now we also looked at the, some other examples where a hub might be interesting. _
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,4,21.245,23.982,_So, there is another algorithm called the HITS and _
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,5,23.982,26.417,that's going to do compute the scores for us. 
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,6,26.417,28.142,Authorities & Hubs. 
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,7,28.142,32.467,_Intuitions of, pages that are widely cited, good, sorry, _
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,8,32.467,34.567,_there is, then, there is pages that are cited. _
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,9,34.567,36.947,_Many other pages are good Hubs, right? _
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,10,36.947,40.43,_But there, I think that the. _
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,11,40.43,44.71,_Most interesting idea of this algorithm HITS is, it's going to use, _
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,12,44.71,49.52,a reinforcement mechanism to kind of help improve the scoring for 
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,13,49.52,51.466,Hubs and the Authorities. 
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,14,51.466,54.17,_And here, so here's the idea, _
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,15,54.17,57.809,it will assume that good authorities are cited by good hubs. 
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,16,58.87,64.21,_That means if you're cited by many pages with good hub scores, _
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,17,64.21,67.55,then that increases your authority score. 
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,18,67.55,71.74,_And similarly, good hubs are those that pointed to good authorities. _
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,19,71.74,75.59,_So if you get you point it to a lot of good authority pages, _
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,20,75.59,77.88,then your hub score would be increased. 
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,21,77.88,80.57,_So you then, you would have iterative reinforce each other, _
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,22,80.57,83.12,because you can point it to some good hubs. 
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,23,83.12,85.48,_Sorry, you can point it to some good authorities. _
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,24,85.48,86.86,To get a good hub score. 
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,25,86.86,91.3,_Whereas those authority scores, would be also improved, _
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,26,91.3,93.958,because they are pointed to by a good hub. 
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,27,93.958,98.922,_And this hub is also general, it can have many applications in graph and _
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,28,98.922,100.74000000000001,network analysis. 
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,29,100.74000000000001,103.19,_So just briefly, here's how it works. _
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,30,103.19,105.02000000000001,_We first also construct the matrix, but _
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,31,105.02000000000001,108.00999999999999,this time we're going to construct the Adjacency matrix. 
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,32,108.00999999999999,111.67,_We're not going to normalize the values, so if there's a link there's a y. _
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,33,111.67,114.055,If there's no link that's zero. 
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,34,114.055,121.039,_Right again, it's the same graph and then, we're going to define the top score of _
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,35,121.039,126.965,page as a sum of the authority scores of all the pages that it appoints to. 
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,36,128.27,132.67,_So whether you are hub that really depends on whether you are pointing to a lot of, _
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,37,132.67,134.44,good authority pages. 
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,38,134.44,137.07,That's what it says in the first equation. 
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,39,137.07,142.13,_Your second equation, will define the authority score of a page _
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,40,142.13,145.73,as a sum of the hub scores of all those pages. 
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,41,145.73,149.69,_That they point to, so whether you are a good authority would depend on _
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,42,149.69,153.42000000000002,whether those pages that are pointing to you are good Hubs. 
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,43,153.42000000000002,157.39,So you can see this a forms a iterative reinforcement mechanism. 
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,44,158.77,161.69,Now these two equations can be also written. 
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,45,161.69,164.6,_In the matrix fo-, format. _
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,46,164.6,169.365,_Right, so what we get here is then the hub vector is _
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,47,169.365,174.07,equal to the product of the Adjacency matrix. 
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,48,174.07,177.02,And the authority vector. 
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,49,177.02,179.48,And this is basically the first equation. 
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,50,179.48,180.428,Right. 
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,51,180.428,185.43,_And similarly, the second equation can be returned as the authority vector _
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,52,185.43,191.19,is equal to the product of A transpose multiplied by the hub vector. 
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,53,191.19,195.83,And these are just different ways of expressing these equations. 
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,54,195.83,199.41,But what's interesting is that if you look at to the matrix form. 
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,55,199.41,206.67000000000002,You can also plug-in the authority equation into the first one. 
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,56,206.67000000000002,210.57999999999998,_So if you do that, you can actually make it limited to the authority vector _
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,57,210.57999999999998,214.92000000000002,_completely, and you get the equation of only hub scores. _
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,58,214.92000000000002,218.92000000000002,_Right, the hub score vector is equal to A multiplied by A transpose. _
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,59,218.92000000000002,222.21,Multiplied by the hub score vector again. 
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,60,223.74,227.53,And similarly we can do a transformation to have equation for 
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,61,227.53,229.43,just the authorities scores. 
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,62,229.43,234.37,_So although we framed the problem as computing Hubs & Authorities, _
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,63,234.37,238.5,we can actually eliminate the one of them to obtain equation just for one of them. 
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,64,239.52,243.41,_Now the difference between this and page is that, now the matrix _
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,65,243.41,247.842,_is actually a multiplication of the mer-, Adjacency matrix and its transpose. _
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,66,247.842,250.73,So this is different from page rank. 
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,67,250.73,251.26,Right? 
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,68,251.26,255.66,But mathematically then we would be computing the same problem. 
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,69,255.66,257.32,_So in ha, in hits, _
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,70,257.32,262.21,we're keeping would initialize the values that state one for all these values. 
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,71,262.21,266.852,_And then with the algorithm will apply these, these equations essentially and _
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,72,266.852,269.39,this is equivalent if you multiply that. 
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,73,269.39,271.67,_By, by the matrix. _
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,74,271.67,273.98,A and A transpose. 
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,75,273.98,274.57,Right. 
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,76,274.57,277.74,And so the arrows of these are exactly the same in the debate rank. 
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,77,277.74,282.7,_But here, because the Adjacency matrix is not normalized, so what we have to do _
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,78,282.7,287.88,_is to, what we have to do is after each iteration we have to do normalize. _
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,79,287.88,290.98,And this would allow us to control the grooves of value. 
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,80,290.98,293.98,_Otherwise they would, grew larger and larger. _
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,81,293.98,298.45,_And if we do that, and then we will basically get a, HITS. _
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,82,298.45,302.21,_I was in the computer, the hub scores and also the scores for all of the pages. _
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,83,303.92,308.637,_And these scores can then be used, in ranging to start the PageRank scores. _
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,84,309.85,314.77,_So to summarize, in this lecture we have seen that link information is very useful. _
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,85,314.77,318.0,_In particular, the Anchor text base is very useful. _
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,86,318.0,323.9,To increase the the text representation of a page. 
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,87,323.9,325.75,And we also talk about the PageRank and 
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,88,325.75,329.37,HITS algorithm as two major link analysis algorithms. 
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,89,329.37,332.44,Both can generate scores for. 
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,90,332.44,335.96,_What pages that can be used for the, the ranking function. _
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,91,335.96,341.238,_Those that PageRank and the HITS also very general algorithms, so _
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,92,341.238,346.716,they have many applications in analyzing other graphs or networks. 
+5 - 5 - 4.3 Link Analysis - Part 3 (00-05-59).srt,93,346.716,356.716,[MUSIC] 

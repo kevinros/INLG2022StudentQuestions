@@ -1,0 +1,172 @@
+name,id,from,to,text
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,1,0.025,5.203,[SOUND] This lecture is about 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,2,5.203,11.06,the Text-Based Prediction. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,3,11.06,15.85,_In this lecture, we're going to start talking about the mining _
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,4,15.85,21.42,_a different kind of knowledge, as you can see here on this slide. _
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,5,21.42,27.98,Namely we're going to use text data to infer values of some other 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,6,27.98,33.83,variables in the real world that may not be directly related to the text. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,7,33.83,36.66,Or only remotely related to text data. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,8,36.66,39.81,So this is very different from content analysis or 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,9,39.81,44.68,topic mining where we directly characterize the content of text. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,10,44.68,48.83,_It's also different from opinion mining or sentiment analysis, _
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,11,48.83,54.09,which still have to do is characterizing mostly the content. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,12,54.09,59.33,Only that we focus more on the subject of content 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,13,59.33,63.02,which reflects what we know about the opinion holder. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,14,65.0,68.63,But this only provides limited review of what we can predict. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,15,70.32,75.0,_In this lecture and the following lectures, we're going to talk more about _
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,16,75.0,80.83,how we can predict more Information about the world. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,17,80.83,86.93,How can we get the sophisticated patterns of text together with other kind of data? 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,18,88.36,92.59,_It would be useful first to take a look at the big picture of prediction, and _
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,19,92.59,96.45,_data mining in general, and I call this data mining loop. _
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,20,96.45,101.375,_So the picture that you are seeing right now is that there are multiple sensors, _
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,21,101.375,103.06700000000001,_including human sensors, _
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,22,103.06700000000001,106.982,to report what we have seen in the real world in the form of data. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,23,106.982,110.84,_Of course the data in the form of non-text data, and text data. _
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,24,111.96000000000001,116.00999999999999,And our goal is to see if we can predict some values of 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,25,116.00999999999999,119.47999999999999,important real world variables that matter to us. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,26,119.47999999999999,125.85,_For example, someone's house condition, or the weather, or etc. _
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,27,125.85,131.02,And so these variables would be important because we might want to act on that. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,28,131.02,134.87,We might want to make decisions based on that. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,29,134.87,138.07,So how can we get from the data to these predicted values? 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,30,138.07,142.65,Well in general we'll first have to do data mining and analysis of the data. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,31,143.76,148.54,_Because we, in general, should treat all the data that we collected _
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,32,150.19,152.82,in such a prediction problem set up. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,33,152.82,157.15,We are very much interested in joint mining of non-text and 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,34,157.15,159.73,_text data, which should combine all the data together. _
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,35,161.82999999999998,165.85,_And then, through analysis, generally there _
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,36,165.85,170.85,are multiple predictors of this interesting variable to us. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,37,170.85,172.91,And we call these features. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,38,172.91,176.49,_And these features can then be put into a predictive model, _
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,39,176.49,181.24,to actually predict the value of any interesting variable. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,40,182.61,186.85,So this then allows us to change the world. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,41,186.85,192.49,And so this basically is the general process for 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,42,192.49,195.81,_making a prediction based on data, including the test data. _
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,43,197.01,200.29,Now it's important to emphasize that a human actually 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,44,200.29,203.07999999999998,plays a very important role in this process. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,45,204.46,207.76,Especially because of the involvement of text data. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,46,207.76,212.01,So human first would be involved in the mining of the data. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,47,212.01,216.03,It would control the generation of these features. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,48,216.03,219.2,_And it would also help us understand the text data, _
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,49,219.2,223.35,because text data are created to be consumed by humans. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,50,223.35,226.89,Humans are the best in consuming or interpreting text data. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,51,228.28,232.75,_But when there are, of course, a lot of text data then machines have to help and _
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,52,232.75,234.49,that's why we need to do text data mining. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,53,235.67000000000002,240.9,Sometimes machines can see patterns in a lot of data that humans may not see. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,54,240.9,243.57,But in general human would play an important role in 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,55,243.57,247.01,_analyzing some text data, or applications. _
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,56,247.01,251.0,_Next, human also must be involved in predictive model building and _
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,57,251.0,253.25,adjusting or testing. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,58,253.25,257.53,_So in particular, we will have a lot of domain knowledge about the problem _
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,59,257.53,262.17,of prediction that we can build into this predictive model. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,60,262.17,268.02,_And then next, of course, when we have predictive values for the variables, _
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,61,268.02,272.67,then humans would be involved in taking actions to change a word or 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,62,272.67,275.1,make decisions based on these particular values. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,63,276.73,281.32,And finally it's interesting that a human could be involved 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,64,281.32,282.72,in controlling the sensors. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,65,283.90999999999997,288.45,And this is so that we can adjust to the sensors to collect 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,66,288.45,290.85,the most useful data for prediction. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,67,292.49,294.61,So that's why I call this data mining loop. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,68,294.61,298.75,_Because as we perturb the sensors, it'll collect the new data and _
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,69,298.75,303.063,more useful data then we will obtain more data for prediction. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,70,303.063,307.02,And this data generally will help us improve the predicting accuracy. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,71,307.02,308.12,_And in this loop, _
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,72,308.12,312.78,humans will recognize what additional data will need to be collected. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,73,312.78,314.03,_And machines, of course, _
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,74,314.03,319.04,help humans identify what data should be collected next. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,75,319.04,323.64,_In general, we want to collect data that is most useful for learning. _
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,76,323.64,328.08,And there was actually a subarea in machine learning called active learning 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,77,328.08,329.65,that has to do with this. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,78,329.65,331.11,How do you identify data 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,79,332.59000000000003,336.46,points that would be most helpful in machine learning programs? 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,80,336.46,337.47,_If you can label them, right? _
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,81,338.65,339.31,_So, in general, _
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,82,339.31,343.69,you can see there is a loop here from data acquisition to data analysis. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,83,343.69,346.15999999999997,Or data mining to prediction of values. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,84,346.15999999999997,350.52,_And to take actions to change the word, and then observe what happens. _
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,85,350.52,354.78,And then you can then decide what additional data 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,86,354.78,358.28,have to be collected by adjusting the sensors. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,87,358.28,362.63,_Or from the prediction arrows, you can also note what additional data _
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,88,362.63,366.16,we need to acquire in order to improve the accuracy of prediction. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,89,366.16,369.41,And this big picture is actually very general and 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,90,369.41,374.66,it's reflecting a lot of important applications of big data. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,91,376.13,379.93,_So, it's useful to keep that in mind while we are looking at some text _
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,92,379.93,380.69,mining techniques. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,93,382.0,386.28,So from text mining perspective and we're interested in text based prediction. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,94,386.28,389.71,_Of course, sometimes texts alone can make predictions. _
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,95,389.71,391.625,And this is most useful for 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,96,391.625,396.82,prediction about human behavior or human preferences or opinions. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,97,396.82,400.48,But in general text data will be put together as non-text data. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,98,400.48,403.1,_So the interesting questions here would be, first, _
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,99,403.1,407.03,how can we design effective predictors? 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,100,407.03,412.19,And how do we generate such effective predictors from text? 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,101,413.73,417.73,And this question has been addressed to some extent in some previous lectures 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,102,417.73,423.39,where we talked about what kind of features we can design for text data. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,103,423.39,426.86,And it has also been addressed to some extent by 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,104,426.86,430.43,talking about the other knowledge that we can mine from text. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,105,430.43,435.95,_So, for example, topic mining can be very useful to generate the patterns or topic _
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,106,435.95,442.34,based indicators or predictors that can be further fed into a predictive model. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,107,442.34,446.37,So topics can be intermediate recognition of text. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,108,446.37,449.99,That would allow us to do design high level features or 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,109,449.99,455.78,predictors that are useful for prediction of some other variable. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,110,455.78,460.34000000000003,_It may be also generated from original text data, it provides a much better _
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,111,460.34000000000003,465.47,implementation of the problem and it serves as more effective predictors. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,112,466.65,470.65,_And similarly similar analysis can lead to such predictors, as well. _
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,113,470.65,472.65,_So, those other data mining or _
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,114,472.65,476.3,text mining algorithms can be used to generate predictors. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,115,478.47,483.02,_The other question is, how can we join the mine text and non-text data together? _
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,116,483.02,486.68,_Now, this is a question that we have not addressed yet. _
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,117,486.68,487.56,_So, in this lecture, _
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,118,487.56,491.02,_and in the following lectures, we're going to address this problem. _
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,119,491.02,496.57,Because this is where we can generate much more enriched features for prediction. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,120,496.57,501.58,And allows us to review a lot of interesting knowledge about the world. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,121,501.58,503.738,These patterns that are generated from text and 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,122,503.738,510.52,_non-text data themselves can sometimes, already be useful for prediction. _
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,123,510.52,514.9,_But, when they are put together with many other predictors _
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,124,514.9,517.82,they can really help improving the prediction. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,125,519.15,522.87,_Basically, you can see text-based prediction can actually serve as a unified _
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,126,522.87,527.79,framework to combine many text mining and analysis techniques. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,127,527.79,534.08,Including topic mining and any content mining techniques or segment analysis. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,128,535.53,541.12,The goal here is mainly to evoke values of real-world variables. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,129,541.12,547.03,But in order to achieve the goal we can do some other preparations. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,130,547.03,548.2,And these are subtasks. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,131,548.2,554.06,_So one subtask could mine the content of text data, like topic mining. _
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,132,554.06,558.36,And the other could be to mine knowledge about the observer. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,133,558.36,560.04,_So sentiment analysis, opinion. _
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,134,561.32,566.11,And both can help provide predictors for the prediction problem. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,135,567.83,571.883,_And of course we can also add non-text data directly to the predicted model, but _
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,136,571.883,576.96,then non-text data also helps provide a context for text analyst. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,137,576.96,582.52,And that further improves the topic mining and the opinion analysis. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,138,582.52,588.04,And such improvement often leads to more effective predictors for our problems. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,139,588.04,593.21,It would enlarge the space of patterns of opinions of topics that we can 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,140,593.21,598.4,mine from text and that we'll discuss more later. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,141,598.4,600.395,So the joint analysis of text and 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,142,600.395,604.48,non-text data can be actually understood from two perspectives. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,143,605.9,610.3,_One perspective, we have non-text can help with testimony. _
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,144,611.68,615.31,Because non-text data can provide a context for 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,145,615.31,619.91,mining text data provide a way to partition data in different ways. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,146,619.91,624.95,And this leads to a number of type of techniques for contextual types of mining. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,147,624.95,629.73,And that's the mine text in the context defined by non-text data. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,148,629.73,634.84,_And you see this reference here, for a large body of work, in this direction. _
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,149,634.84,637.73,_And I will need to highlight some of them, in the next lectures. _
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,150,639.37,642.207,_Now, the other perspective is text data _
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,151,642.207,646.315,can help with non-text data mining as well. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,152,646.315,649.875,And this is because text data can help interpret 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,153,649.875,652.635,patterns discovered from non-text data. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,154,652.635,656.525,Let's say you discover some frequent patterns from non-text data. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,155,656.525,661.465,Now we can use the text data associated with instances 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,156,661.465,666.015,where the pattern occurs as well as text data that is associated with 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,157,666.015,669.2,instances where the pattern doesn't look up. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,158,669.2,671.61,And this gives us two sets of text data. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,159,671.61,673.7,And then we can see what's the difference. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,160,673.7,678.18,And this difference in text data is interpretable because text content is 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,161,678.18,679.78,easy to digest. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,162,679.78,683.46,And that difference might suggest some meaning for 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,163,683.46,686.61,this pattern that we found from non-text data. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,164,686.61,689.39,_So, it helps interpret such patterns. _
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,165,689.39,691.89,And this technique is called pattern annotation. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,166,692.92,697.16,And you can see this reference listed here for more detail. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,167,698.4,700.59,So here are the references that I just mentioned. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,168,700.59,703.63,The first is reference for pattern annotation. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,169,703.63,709.14,_The second is, Qiaozhu Mei's dissertation on contextual text mining. _
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,170,709.14,713.88,It contains a large body of work on contextual text mining techniques. 
+5 - 6 - 4.6 Text-Based Prediction (00-12-08).srt,171,716.271,726.271,[MUSIC] 

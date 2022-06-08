@@ -1,0 +1,5 @@
+question,name,time,text
+messy_questions.txt,?L1.5," 5'20""-3'50""", #C# How many dimensions does one term in a VSM define? (A) 3 (B) 2 (C) 1 (D) 4
+messy_questions.txt,?L2.2," 6'03""-6'39""",
+messy_questions.txt,?L.4," 4'59"" - 5'06""", Why is inverted index the most common type of indexing used?
+messy_questions.txt,?L11.2," 17'30""-'"""," Is C the covariance matrix? Or just a regularization parameter, and is it tuned by trial and error?"

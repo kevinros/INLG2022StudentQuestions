@@ -1,0 +1,221 @@
+name,id,from,to,text
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,1,0.104,6.513,[NOISE]. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,2,6.513,10.705,>> This lecture is about some practical issues that you would have to address in 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,3,10.705,12.939,evaluation of text retrieval systems. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,4,14.44,17.5,In this lecture we will continue the discussion of evaluation. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,5,17.5,21.18,We will cover some practical issues that you will have to solve 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,6,21.18,24.24,in actual evaluation of text retrieval systems. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,7,25.44,31.54,_So, in order to create a test collection, we have to create a set of queries, _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,8,31.54,34.27,a set of documents and a set of relevance judgments. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,9,35.75,39.62,It turns out that each is actually challenging to create. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,10,39.62,43.24,_So first, the documents and queries must be representative. _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,11,43.24,47.26,_They must rep, represent the real queries and real documents that the users handle. _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,12,48.29,50.904,And we also have to use many queries and 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,13,50.904,55.0,many documents in order to avoid biased conclusions. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,14,56.47,62.56,_For the matching of relevant documents with the queries, _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,15,62.56,70.05,we also need to ensure that there exists a lot of relevant documents for each query. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,16,70.05,74.19,_If a query has only one that is a relevant document in the collection then, you know, _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,17,74.19,78.3,it's not very informative to compare different methods 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,18,78.3,83.12,using such a query because there is not much room for us to see difference. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,19,83.12,86.96000000000001,_So, ideally there should be more relevant documents in the collection. _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,20,86.96000000000001,90.469,But yet the queries also should represent real queries that we care about. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,21,91.47,96.37,_In terms of relevance judgements, the challenge is to ensure complete judgements _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,22,96.37,101.31,_of all the documents for all the queries, yet, minimizing human and fault. _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,23,101.31,104.97999999999999,Because we have to use the human labor to label these documents. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,24,104.97999999999999,107.69,It's very labor intensive. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,25,107.69,112.314,_And as a result, it's impossible to actually label all of the documents for _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,26,112.314,117.17,_all the queries, especially considering a joint, data set like the web. _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,27,118.75,121.81,_So, this is actually a major challenge. _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,28,121.81,123.59,It's a very difficult challenge. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,29,123.59,126.76,_For measures, it's also challenging because what we want with measures is that _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,30,126.76,131.67,with accuracy reflected the perceived utility of users. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,31,131.67,135.53,We have to consider carefully what the users care about and 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,32,135.53,137.34,then design measures to measure that. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,33,138.35,141.37,_If we, your measure is not measuring the right thing, _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,34,141.37,143.81,_then your conclusion would, would be misled. _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,35,143.81,145.04,So it's very important. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,36,146.88,149.29,So we're going to talk about a couple issues here. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,37,149.29,151.5,_One is the statistical significance test, and _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,38,151.5,156.36,_this also is the reason why we have to use a lot of queries, and _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,39,156.36,161.06,the question here is how sure can you be that I observed the difference? 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,40,161.06,164.81,It doesn't simply result from the particular queries you choose. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,41,164.81,169.79,So here are some sample results of average precision for System A and 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,42,169.79,173.32,System B in two different experiments. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,43,173.32,177.55,_And you can see in the bottom, we have mean average position, all right? _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,44,177.55,180.82,_So the mean, if you look at the mean average position _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,45,182.08,187.04,the mean average positions are exactly the same in both experiments. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,46,188.06,192.522,_All right, so you can see this is 0.2, this is 0.4 for _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,47,192.522,196.8,system B and again here its also 0.2 and 0.4. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,48,196.8,198.45,So they are identical. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,49,198.45,203.43,_Yet if you look at the, these exact average positions for different queries, _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,50,203.43,210.03,_if you look at these numbers in detail, you will realize that in one case _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,51,210.03,215.09,you would feel that you can trust the conclusion here given by the average. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,52,216.1,221.61,_In another case, in the other case, you will feel that, well, I'm not sure. _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,53,221.61,225.91,_So, why don't you take a look at all these numbers for a moment. _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,54,225.91,226.73,Pause the video. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,55,228.21,232.37,_So, if you at the average, the main average position, _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,56,232.37,236.66,_we can easily say that, well, System B is better, right? _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,57,236.66,243.12,_So it's, after all, it's 0.4 and then this is twice as much as 0.2. _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,58,243.12,245.95,So that's a better performance. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,59,245.95,251.14,_But if you look at these two experiments and look at the detailed results, _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,60,251.14,256.17,you will see that we'll be more confident to say that in the case one. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,61,256.17,257.04,In experiment one. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,62,257.04,263.36,In this case because these numbers seem to be consistently better than for system B. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,63,265.11,269.71,_Where as in, experiment two, we're not sure. _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,64,269.71,275.65,_because, looking at some results, like this, after system A is better. _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,65,275.65,277.98,And this is another case where system A is better. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,66,279.26,283.76,_But yet, if we look at on the average, System B is better. _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,67,285.75,287.58,So what do you think? 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,68,287.58,294.15,_You know, how reliable is our conclusion if we only look at the average? _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,69,295.94,299.48,_Now in this case, intuitively, we feel it's better than one, it's more reliable. _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,70,301.02,304.63,But how can we quantitatively answer this question? 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,71,304.63,309.38,And this is why we need to do statistical significance test. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,72,309.38,315.03,_So the idea of a statistical significance test is basically to assess the vary, _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,73,315.03,318.33,variance across these different queries. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,74,318.33,321.77,_If there's a, a big variance that means _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,75,321.77,325.88,that the results could fluctuate a lot according to different queries. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,76,325.88,330.153,Then we should believe that unless you have used a lot of 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,77,330.153,334.946,queries the results might change if we use another set of queries. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,78,334.946,337.718,_Right? So, this is then not so _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,79,337.718,343.67,if you have seen high variance then it's not very reliable. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,80,343.67,349.59000000000003,So let's look at these results again in the second case. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,81,349.59000000000003,354.23,_So here we show two, different ways to compare them. _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,82,354.23,355.18,One is a Sign Test. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,83,355.18,356.68,_And we'll, we'll just look at the sign. _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,84,357.71,361.26,_If System B is better than System A, then we have a plus sign. _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,85,361.26,364.235,When System A is better we have a minus sign etc. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,86,365.38,369.61,_Using this case if you see this, well, there are seven cases. _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,87,369.61,373.02,We actually have four cases where System B is better. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,88,373.02,374.988,But three cases System A is better. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,89,374.988,379.83,_You know intuitively, this is almost like random results. _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,90,379.83,384.735,_Right, so if you just take a random sample of to, to flip seven coins, _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,91,384.735,389.278,_and if you use plus to denote the head and then minus to denote the tail, and _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,92,389.278,394.89,_that could easily be the results of just randomly flipping, these seven coins. _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,93,394.89,399.51,_So, the fact that the, the average is larger doesn't tell us anything. _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,94,399.51,401.33,_You know, we can't reliably concur that. _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,95,401.33,406.38,_And this can be quantitative in the measure by, a p value. _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,96,406.38,409.03499999999997,_And that basically, means, _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,97,409.03499999999997,414.47,the probability that this result is in fact from random fluctuation. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,98,414.47,416.57,_In this case, probability is one. _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,99,416.57,420.05,It means it surely is a random fluctuation. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,100,421.31,426.47,_Now in Wilcoxon, test, it's a non parametrical test, _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,101,426.47,429.43,and we would be not only looking at the signs 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,102,429.43,432.52,we'll be also looking at the magnitude of the difference. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,103,432.52,435.94,_But, we, we, we can draw a similar conclusion where you say well it's _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,104,435.94,438.33,very likely to be from random. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,105,438.33,442.395,So to illustrate this let's think about such a distribution. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,106,442.395,443.696,And this is called a normal distribution. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,107,443.696,446.413,We assume that the mean is zero here. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,108,446.413,449.564,_Let's say, well, we started with the assumption that there's no difference _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,109,449.564,451.405,between the two systems. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,110,451.405,455.24,But we assume that because of random fluctuations depending on the queries 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,111,455.24,459.63,_we might observe a difference, so the actual difference might be _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,112,459.63,462.945,_on the left side here or on the right side here, right? _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,113,462.945,467.33,_And, and this curve kind of shows the probability _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,114,467.33,472.31,that we would actually observe values that are deviating from zero here. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,115,473.77,478.39,_Now, so if we, look at this picture then _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,116,478.39,483.01,_we see that if a difference is observed here, _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,117,483.01,487.52,_then the chance is very high that this is in fact, _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,118,487.52,490.935,_a random observation, right. _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,119,490.935,497.32,_We can define region of you know, likely observation because of random fluctuation. _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,120,497.32,501.89,And this is 95% of all outcomes. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,121,501.89,505.99,And in this interval then the observed values 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,122,505.99,507.919,may still be from random fluctuation. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,123,508.92,514.83,_But if you observe a value in this region or a difference on this side, _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,124,514.83,520.55,then the difference is unlikely from random fluctuation. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,125,520.55,524.46,_Right, so there is a very small probability that you will observe _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,126,524.46,528.35,such a difference just because of random fluctuation. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,127,528.35,532.8,_So in that case, we can then conclude the difference must be real. _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,128,532.8,534.67,So System B is indeed better. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,129,536.12,538.619,_So, this is the idea of the statistical significance test. _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,130,539.63,543.87,The takeaway message here is that you have used many queries to avoid 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,131,543.87,548.38,jumping into a conclusion as in this case to say System B is better. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,132,549.75,553.259,There are many different ways of doing this statistical significance test. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,133,555.25,560.15,_So now, let's talk about the other problem of making judgements and _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,134,560.15,561.76,_as we said earlier, _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,135,561.76,567.69,it's very hard to judge all the documents completely unless it is a small data set. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,136,567.69,571.54,_So the question is, if we can't afford judging all the documents _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,137,571.54,573.89,_in the collection, which subset should we judge? _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,138,575.0,578.23,And the solution here is pooling. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,139,578.23,586.71,And this is a strategy that has been used in many cases to solve this problem. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,140,586.71,589.8,So the idea of pulling is the following. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,141,589.8,594.36,_We would first choose a diverse set of ranking methods, _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,142,594.36,596.01,these are types of retrieval systems. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,143,597.12,600.702,And we hope these methods can help us nominate 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,144,600.702,602.83,likely relevance in the documents. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,145,602.83,605.35,So the goal is to pick out the relevant documents.. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,146,605.35,608.24,It means we are to make judgements on relevant documents because those 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,147,608.24,612.72,are the most useful documents from the users perspective. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,148,612.72,617.23,_So, that way we would have each to return top-K documents. _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,149,617.23,619.71,_And the K can vary from systems, right. _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,150,619.71,624.367,But the point is to ask them to suggest the most likely relevant documents. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,151,625.53,630.4,And then we simply combine all these top-K sets to form 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,152,630.4,635.87,a pool of documents for human assessors to judge. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,153,635.87,638.41,_So, imagine you have many systems. _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,154,638.41,643.17,_Each will return K documents, you know, take the top-K documents, and _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,155,643.17,645.02,we form the unit. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,156,645.02,647.42,_Now, of course there are many documents that are duplicated, _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,157,647.42,651.85,because many systems might have retrieved the same random documents. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,158,651.85,656.12,So there will be some duplicate documents. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,159,656.12,656.9,_And there are, _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,160,656.9,661.43,_there are also unique documents that are only returned by one system, so the idea _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,161,661.43,667.47,of having diverse set of result ranking methods is to ensure the pool is broad. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,162,667.47,671.19,And can include as many possible random documents as possible. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,163,672.36,676.87,And then the users with the human assessors would make 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,164,676.87,681.2,_complete the judgements on this data set, this pool. _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,165,682.41,686.71,And the other unjudged documents are usually just a assumed to be non-relevant. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,166,686.71,690.91,_Now if the pool is large enough, this assumption is okay. _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,167,692.234,697.904,_But the, if the pool is not very large, this actually has to be reconsidered, _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,168,697.904,701.549,and we might use other strategies to deal with them and 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,169,701.549,705.852,there are indeed other methods to handle such cases. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,170,705.852,710.003,And such a strategy is generally okay for 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,171,710.003,714.49,comparing systems that contribute to the pool. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,172,714.49,717.892,That means if you participate in contributing to the pool then it's 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,173,717.892,721.056,unlikely that it will penalize your system because the top 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,174,721.056,723.1,ranked documents have all been judged. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,175,724.3,726.53,_However, this is problematic for _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,176,726.53,731.87,even evaluating a new system that may not have contributed to the pool. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,177,731.87,736.01,_In this case, you know, a new system might be penalized because it might have _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,178,736.01,740.8,nominated some relevant documents that have not been judged. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,179,740.8,744.37,So those documents might be assumed to be non-relevant. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,180,744.37,746.15,_And that, that's unfair. _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,181,746.15,750.792,_So to summarize the whole part of text retrieval evaluation, _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,182,750.792,756.61,it's extremely important because the problem is an empirically defined problem. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,183,756.61,762.47,_If we don't rely on users, there's no way to tell whether one method works better. _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,184,763.58,766.63,_If we have inappropriate experiment design, _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,185,766.63,769.71,we might misguide our research or applications. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,186,769.71,772.46,And we might just draw wrong conclusions. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,187,772.46,775.25,And we have seen this in some of our discussion. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,188,775.25,779.914,_So, make sure to get it right for your research or application. _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,189,779.914,783.465,The main methodology is Cranfield evaluation methodology and 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,190,783.465,787.954,_this is near the main paradigm used in all kinds of empirical evaluation tasks, _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,191,787.954,790.037,not just a search engine variation. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,192,790.037,795.642,Map and nDCG are the two main measures that should definitely know about and 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,193,795.642,799.52,they are appropriate for comparing ranking algorithms. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,194,799.52,802.965,You will see them often in research papers. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,195,802.965,807.06,Perceiving up to ten documents is easier to interpret from users perspective. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,196,807.06,808.51,_So, that's also often useful. _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,197,810.58,817.67,What's not covered is some other evaluation strategy like A-B test 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,198,817.67,823.72,where the system would mix two of the results of two methods randomly. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,199,823.72,826.57,And then will show the mix of results to users. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,200,826.57,829.92,_Of course, the users don't see which result is from which method. _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,201,829.92,832.41,The users would judge those results or 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,202,832.41,838.09,click on those those documents in in a search engine application. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,203,838.09,842.08,_In this case, then, the search engine can keep track of the clicked documents, and _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,204,842.08,847.25,see if one method has contributed more to the clicked documents. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,205,847.25,851.59,_If the user tends to click on one the results from one method, _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,206,853.06,857.73,_then it's just that method may, may be better. _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,207,857.73,861.268,So this is what leverages a real users of a search engine to do evaluation. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,208,861.268,864.9,_It's called A-B Test, and it's a strategy that's often used by _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,209,865.95,868.38,_the modern search engines, the commercial search engines. _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,210,869.5,872.52,Another way to evaluate IR or 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,211,872.52,875.945,_text retrieval is user studies, and we haven't covered that. _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,212,875.945,878.49,I've put some references here that you can 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,213,878.49,880.26,look at if you want to know more about that. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,214,881.81,884.17,_So there are three additional readings here, _
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,215,884.17,887.98,these are three mini books about evaluation. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,216,887.98,893.07,And they are all excellent in covering a broad review of information retrieval and 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,217,893.07,894.28,evaluation. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,218,894.28,898.07,And this covered some of the things that we discussed. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,219,898.07,902.38,But they also have a lot of others to offer. 
+3 - 9 - 2.8 Evaluation of TR Systems- Practical Issues (00-15-14).srt,220,902.38,912.38,[MUSIC] 

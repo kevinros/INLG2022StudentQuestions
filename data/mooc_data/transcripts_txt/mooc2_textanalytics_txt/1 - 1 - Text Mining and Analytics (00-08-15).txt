@@ -1,0 +1,174 @@
+[SOUND]
+Hello.
+Welcome to the course Text Mining and
+Analytics.
+My name is ChengXiang Zhai.
+I have a nickname, Cheng.
+I am a professor of the Department of
+Computer Science at the University of
+Illinois at Urbana-Champaign.
+This course is a part of
+a data mining specialization
+offered by the University of
+Illinois at Urbana-Champaign.
+In addition to this course,
+there are four other courses offered by
+Professor Jiawei Han,
+Professor John Hart and me, followed by
+a capstone project course that
+all of us will teach together.
+This course is particularly related to
+another course in the specialization,
+mainly text retrieval and search engines
+in that both courses are about text data.
+In contrast, pattern discovery and
+cluster analysis are about
+algorithms more applicable to
+all kinds of data in general.
+The visualization course is also
+relatively general in that the techniques
+can be applied to all kinds of data.
+This course addresses a pressing need for
+harnessing big text data.
+Text data has been growing
+dramatically recently,
+mostly because of the advance of
+technologies deployed on the web
+that would enable people to
+quickly generate text data.
+So, I listed some of
+the examples on this slide
+that can show a variety of text
+data that are available today.
+For example, if you think about
+the data on the internet, on the web,
+everyday we are seeing many
+web pages being created.
+Blogs are another kind
+of new text data that
+are being generated quickly by people.
+Anyone can write a blog
+article on the web.
+New articles of course have always been
+a main kind of text data that
+being generated everyday.
+Emails are yet another kind of text data.
+And literature is also representing
+a large portion of text data.
+It's also especially very important
+because of the high quality
+in the data.
+That is,
+we encode our knowledge about the word
+using text data represented by
+all the literature articles.
+It's a vast amount of knowledge of
+all the text and
+data in these literature articles.
+Twitter is another representative
+text data representing social media.
+Of course there are forums as well.
+People are generating tweets very quickly
+indeed as we are speaking perhaps many
+people have already written many tweets.
+So, as you can see there
+are all kinds of text data
+that are being generated very quickly.
+Now these text data present
+some challenges for people.
+It's very hard for anyone to
+digest all the text data quickly.
+In particular, it's impossible for
+scientists to read all of the for
+example or for
+anyone to read all the tweets.
+So there's a need for tools to help
+people digest text data more efficiently.
+There is also another
+interesting opportunity
+provided by such big text data, and
+that is it's possible to leverage
+the amount of text data to
+discover interesting patterns to
+turn text data into actionable knowledge
+that can be useful for decision making.
+So for example,
+product managers may be interested
+in knowing the feedback of
+customers about their products,
+knowing how well their
+products are being received as
+compared with the products of competitors.
+This can be a good opportunity for
+leveraging text data as we have seen
+a lot of reviews of product on the web.
+So if we can develop a master text
+mining techniques to tap into such
+a [INAUDIBLE] to extract the knowledge and
+opinions of people about these products,
+then we can help these product managers
+to gain business intelligence or
+to essentially feedback
+from their customers.
+In scientific research, for example,
+scientists are interested in knowing
+the trends of research topics, knowing
+about what related fields have discovered.
+This problem is especially important
+in biology research as well.
+Different communities tend to
+use different terminologies, yet
+they're starting very similar problems.
+So how can we integrate the knowledge
+that is covered in different communities
+to help study a particular problem?
+It's very important, and
+it can speed up scientific discovery.
+So there are many such examples
+where we can leverage the text data
+to discover useable knowledge
+to optimize our decision.
+The main techniques for
+harnessing big text data are text
+retrieval and text mining.
+So these are two very much
+related technologies.Yet,
+they have somewhat different purposes.
+These two kinds of techniques are covered
+in the tool in this specialization.
+So, text retrieval on search
+engines covers text retrieval,
+and this is necessary to
+turn big text data into
+a much smaller but more relevant text
+data, which are often the data that
+we need to handle a particular problem or
+to optimize a particular decision.
+This course covers text mining which
+is a second step in this pipeline
+that can be used to further process
+the small amount of relevant data
+to extract the knowledge or to help
+people digest the text data easily.
+So the two courses are clearly related,
+in fact,
+some of the techniques are shared by
+both text retrieval and text mining.
+If you have already taken the text
+retrieval course, then you might see
+some of the content being repeated
+in this text mining course, although
+we'll be talking about the techniques
+from a very different perspective.
+If you have not taken
+the text retrieval course,
+it's also fine because this
+course is self-contained and
+you can certainly understand all of
+the materials without a problem.
+Of course, you might find it
+beneficial to take both courses and
+that will give you a very complete set
+of skills to handle big text data.
+[MUSIC]
+

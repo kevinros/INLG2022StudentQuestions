@@ -1,0 +1,127 @@
+name,id,from,to,text
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,1,0.025,7.462,[SOUND]. 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,2,7.462,11.02,This lecture is about link analysis for web search. 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,3,13.09,18.12,_In this lecture we're going to talk about web search, and particularly _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,4,18.12,23.42,focusing on how to do link analysis and use the results to improve search. 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,5,25.66,31.23,The main topic of this lecture is to look at the ranking algorithms for web search. 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,6,32.42,35.65,_In the previous lecture, we talked about how to create index. _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,7,35.65,40.55,_Now that we have got index, we want to see how we can improve _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,8,40.55,45.1,ranking of pages on the web. 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,9,45.1,48.38,_Standard IR models can also be applied here, _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,10,48.38,53.64,_in fact they are important building blocks for supporting web search, _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,11,53.64,58.55,_but they aren't sufficient, mainly for the following reasons. _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,12,58.55,62.54,_First, on the web we tend to have very different information needs. _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,13,62.54,67.24,_For example, people might search for a web page or entry page, and _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,14,67.24,71.23,this is different from the traditional library search 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,15,71.23,75.84,where people are primarily interested in collecting literature information. 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,16,75.84,79.342,_So these kind of queries are often called navigational queries, _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,17,79.342,83.25,the purpose is to navigate into a particular targeted page. 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,18,83.25,88.23,_So for such queries, we might benefit from using link information. _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,19,88.23,91.37,_Secondly, documents have additional information. _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,20,91.37,94.32,_And on the web, web pages are web format. _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,21,94.32,97.1,_There are a lot of other groups, _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,22,97.1,100.536,_such as the layout, the title, or link information again. _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,23,100.536,105.03,So this has provided an opportunity to 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,24,105.03,109.8,use extra context information of the document to improve scoring. 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,25,109.8,112.24000000000001,_And finally, information quality varies a lot. _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,26,112.24000000000001,118.41,So that means we have to consider many factors to improve the ranking algorithm. 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,27,118.41,123.57,This would give us a more robust way to rank the pages making it the harder for 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,28,123.57,129.35,any spammer to just manipulate the one signal to improve the ranking of a page. 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,29,130.5,134.2,So as a result people have made a number of major extensions 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,30,134.2,135.502,to the ranking algorithms. 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,31,135.502,140.38,One line is to exploit links to 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,32,140.38,144.79,improve scoring and that's the main topic of this lecture. 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,33,146.37,150.73,People have also proposed algorithms to exploit large scale 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,34,150.73,154.44,implicit feedback information in the form of clickthroughs. 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,35,154.44,157.85,_That's of course in the category of feedback techniques, and _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,36,157.85,160.73,machinery is often used there. 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,37,160.73,165.406,_In general, in web search the ranking algorithms are based on machinery _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,38,165.406,169.64,algorithms to combine all kinds of features. 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,39,169.64,174.27,And many of them are based on the standard original models such as BM25 that 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,40,174.27,177.152,_we talked about, or _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,41,177.152,182.845,queried iCode to score different parts of documents or 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,42,182.845,187.38,_to, provide additional features based on content matching. _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,43,187.38,191.25,But link information is also very useful so 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,44,191.25,197.66,they provide additional scoring signals. 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,45,197.66,201.07999999999998,So let's look at links in more detail on the web. 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,46,201.07999999999998,206.44,_So this is a snapshot of some part of the web, let's say. _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,47,206.44,210.79,So we can see there are many links that link different pages together. 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,48,210.79,215.32,_And in this case you can also look at the, the center here. _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,49,215.32,219.05,There is a description of a link that's pointing to the document on 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,50,219.05,220.4,the right side. 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,51,220.4,222.85,Now this description text is called anchor text. 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,52,224.32999999999998,228.9,_If you think about this text, it's actually quite useful _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,53,228.9,233.855,because it provides some extra description of that page being pointed to. 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,54,233.855,239.695,_So, for example, if someone wants to bookmark Amazon.com front page, _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,55,239.695,244.545,_the person might say, the big online bookstore, and _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,56,244.545,247.705,_then with a link to Amazon, right? _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,57,247.705,251.885,So the description here is actually very similar to what the user would type in 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,58,251.885,255.19,in the query box when they are looking for such a page. 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,59,255.19,259.95,_That's why it's very useful for, for, ranking pages. _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,60,259.95,265.866,Suppose someone types in a query like online bookstore or 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,61,265.866,268.73,_big online bookstore, right. _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,62,268.73,275.96,The query would match this anchor text in the page here. 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,63,275.96,279.65,And then this actually provides evidence for 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,64,279.65,285.65,_matching the page that's been pointed to, that is the Amazon entry page. _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,65,285.65,290.12,_So if you match the anchor text that describes the link to a page, _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,66,290.12,294.29,actually that provides good evidence for 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,67,294.29,298.08,the relevance of the page being pointing to. 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,68,298.08,299.6,So anchor text is very useful. 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,69,300.62,304.14,_If you look at the bottom part of this picture, you can also see there are some _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,70,304.14,308.38,_patterns of links, and these links might indicate the utility of a document. _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,71,308.38,309.22,_So for example, _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,72,309.22,314.28,_on the right side you can see this page has received many in, in links. _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,73,314.28,316.53,That means many other pages are pointing to this page. 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,74,316.53,320.27,And this shows that this page is quite useful. 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,75,321.37,325.92,_On the left side you can see, this is a page that points to many other pages. _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,76,325.92,329.05,_So, this is a theater page that would allow you to _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,77,329.05,331.26,actually see a lot of other pages. 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,78,332.67,338.26,So we can call the first case authority page and the second case a hub page. 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,79,338.26,341.24,This means the link information can help in two ways. 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,80,341.24,344.05,One is to provide extra text for matching. 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,81,344.05,349.05,The other is to provide some additional scores for the web 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,82,349.05,354.09000000000003,_pages to characterize how likely a page is a hub, how likely a page is a authority. _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,83,355.82,362.61,_So people then, of course, propose ideas to leverage this, this link information. _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,84,362.61,364.29,_Google's PageRank, _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,85,364.29,369.2,_which was a main technique that they used in early days, is a good example. _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,86,369.2,374.17,_And that, that is the algorithm to capture page popularity, _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,87,374.17,377.07,basically to score authority. 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,88,377.07,381.68,_So the intuitions here are, links are just like citations in the literature. _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,89,381.68,384.01,Think about one page pointing to another page. 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,90,384.01,387.44,This is very similar to one paper citing another paper. 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,91,387.44,390.36,_So, of course, then if a page is cited often, _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,92,390.36,395.11,_then we can assume this page to be more useful in general, right? _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,93,395.11,396.57,So that's a very good intuition. 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,94,398.06,402.11,_Now, page rank is essentially to take advantage of this _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,95,402.11,406.65,_intuition to implement the, with the principle approach. _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,96,406.65,411.98,Intuitively it's essentially doing citation counting or in link counting. 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,97,411.98,416.39,_It just improves this simple idea in, in two ways. _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,98,416.39,419.42,One is would consider indirect citations. 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,99,419.42,423.96,_So that means you don't just look at the how many in links you have, _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,100,423.96,428.55,you also look at the what are those pages that are pointing to you. 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,101,428.55,433.53,_If those pages, themselves, have a lot of in links, well that means a lot. _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,102,433.53,435.45,In some sense you will get some credit from that. 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,103,436.69,440.92,But if those pages that are pointing to you are not are being pointed to 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,104,440.92,445.823,_by other pages, they themselves don't have many in links, then, well, _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,105,445.823,447.36,you don't get that much credit. 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,106,447.36,449.76,So that's the idea of getting indirect citation. 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,107,451.34,455.54,_Right, so you can also understand this idea by looking at, again, _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,108,455.54,456.55,the research papers. 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,109,456.55,462.86,_If you are cited by, let's say ten papers, and those ten papers are, just _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,110,462.86,468.45,_workshop papers and that, or some papers that are not very influential, right, _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,111,469.58,474.59000000000003,_so although you got ten in links, that's not as good as if you have, _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,112,474.59000000000003,479.914,you're cited by ten papers that themselves have attracted a lot of other citations. 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,113,479.914,484.88,So this is a case where 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,114,484.88,489.57,we would like to consider indirect links and PageRank does that. 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,115,489.57,493.12,_The other idea is, it's good to smooth the citations. _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,116,493.12,497.01800000000003,_Or, or, or assume that basically every page is _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,117,497.01800000000003,501.12,having a non-zero pseudo citation count. 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,118,501.12,504.34,_Essentially, you are trying to imagine there are many virtual links that _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,119,504.34,508.39,_will link all the pages together so that you, _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,120,508.39,512.66,you actually get pseudo citations from everyone. 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,121,514.36,519.47,_The, the reason why they want to do that is this would allow them _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,122,519.47,525.33,to solve the problem elegantly with linear algebra technique. 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,123,527.54,532.253,So I think maybe the best way to understand the page 
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,124,532.253,537.06,_rank is through think of this as through computer, _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,125,537.06,543.129,_the probability of a random surfer, visiting every web page, right. _
+5 - 3 - 4.3 Link Analysis - Part 1 (00-09-16).srt,126,543.129,553.129,[MUSIC] 

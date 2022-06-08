@@ -1,0 +1,62 @@
+name,id,from,to,text
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,1,0.083,7.026,[SOUND] So to summarize our discussion of recommender systems 
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,2,7.026,14.6,in some sense the filtering task of recommended is easy and 
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,3,14.6,20.553,in some other sense and the task is actually difficult. 
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,4,20.553,24.825,_So its easy because the user dexpectations, though in this case, _
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,5,24.825,29.66,the system takes initiative to push the information to the user. 
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,6,29.66,33.11,So the user doesn't really make an effort. 
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,7,33.11,36.49,_So any recommendation is better than nothing, right? _
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,8,36.49,40.64,_So unless you recommend that all the you know, _
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,9,40.64,45.67,_noisy items or useless documents, if you can recommend that _
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,10,45.67,49.85,_some useful information uses general, would appreciate it, all right. _
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,11,49.85,52.38,_So that's in that sense, that's easy. _
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,12,52.38,55.62,_However, filtering is actually a much harder task. _
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,13,55.62,60.72,_Because you have to make a binary decision, and you can't afford waiting for _
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,14,60.72,66.52,a lot of items and then you will whether one item is better than others. 
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,15,66.52,69.31,You have to make a decision when you see this item. 
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,16,69.31,73.13,Let's think about news filtering as well as you see the news. 
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,17,73.13,76.78,And you have to decide whether the news would be interesting to a user. 
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,18,76.78,81.19,_If you wait for a few days, well, even if you can make accurate recommendation of _
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,19,81.19,86.69,_the most relevant news, only two days wouldn't be significantly decreased. _
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,20,88.14,92.15,_Another reason why it's hard, it's because of data sparseness. _
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,21,92.15,95.97,_If you think of this as a learning problem in collaborative filtering, for _
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,22,95.97,101.03,_example, it's purely based on learning from the past ratings. _
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,23,101.03,105.34,_So if you don't have many ratings, there's really not much you can do, right? _
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,24,107.31,111.45,And may I just mention this problem. 
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,25,111.45,114.45,This is actually a very serious problem. 
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,26,114.45,119.22999999999999,But of course there are strategies that have been proposed to solve the problem. 
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,27,119.22999999999999,120.94,_And there are, _
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,28,120.94,124.85,there are different strategies that we will use to alleviate the problem. 
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,29,124.85,129.62,_We can use, for example, more user information to assess their similarity _
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,30,129.62,131.589,instead of using the preferences. 
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,31,133.08,136.69,Of these users on these items the immediate additional information or 
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,32,136.69,141.91,_better for about the user etcetera and, and _
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,33,141.91,146.82999999999998,we also talked about the two strategies for filtering task. 
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,34,146.82999999999998,150.1,One is content based where we look at items in clarity you 
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,35,150.1,154.67000000000002,know there's a clarity of filtering where we look at the user similarity. 
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,36,154.67000000000002,156.92000000000002,And they obviously can be combined. 
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,37,156.92000000000002,160.72,_In a practical system, you can imagine, they generally would have to be combined. _
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,38,160.72,164.989,So that will give us a hybrid strategy for filtering. 
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,39,164.989,169.895,_A, and, we also could recall that we _
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,40,169.895,174.805,talked about push versus pull as two strategies for 
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,41,174.805,178.47,getting access to the text data. 
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,42,178.47,182.4,_And recommend the system is it will help, users in the push mode. _
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,43,182.4,186.65,_And search engines are, certain users in the pull mode. _
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,44,186.65,191.53,_Of using the tool should be combined, and they can be combined into have a system _
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,45,191.53,196.6,that can support user with multiple mode and formation access. 
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,46,196.6,202.87,_So in the future, we could anticipate for such a system to be more usable to a user. _
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,47,202.87,207.57999999999998,And also this is a active research area so 
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,48,207.57999999999998,213.73,_there are a lot of new algorithms being, being proposed over time. _
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,49,213.73,219.07,_In particular, those new algorithms tend to use a lot of context information. _
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,50,219.07,222.81,_Now the context here could be the context of the user, you know, _
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,51,222.81,225.76,it could also be context of documents or items. 
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,52,225.76,227.3,The items are not isolated. 
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,53,227.3,229.41,They are connected in many ways. 
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,54,231.71,237.15,_The users might form social network as well, so there's a rich context there _
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,55,237.15,242.99,_that we can leverage in order to really solve the problem well, and then that's _
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,56,242.99,249.65,a active research area where also machine learning algorithms have been applied. 
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,57,249.65,257.47,Here are some additional readings in the handbook called Recommender Systems. 
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,58,257.47,264.013,And has a collection of a lot of good articles that 
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,59,264.013,268.828,can give you an overview of a number of specific 
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,60,268.828,273.278,approaches to recommender systems. 
+5 - 14 - 4.7 Recommender Systems- Collaborative Filtering - Part 3 (00-04-45).srt,61,273.278,283.278,[MUSIC] 

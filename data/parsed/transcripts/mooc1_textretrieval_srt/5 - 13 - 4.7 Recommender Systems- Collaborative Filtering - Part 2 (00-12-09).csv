@@ -1,0 +1,153 @@
+name,id,from,to,text
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,1,0.0,8.711,[NOISE]. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,2,8.711,14.075,_And here what will do is talk about basic strategy, _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,3,14.075,19.688,and that would be based on similarity of users and 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,4,19.688,24.801,_then predicting the rating of an object by a, a, _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,5,24.801,32.54,active user using the ratings of similar users to this active user. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,6,32.54,38.62,This is called a memory-based approach because it's a little bit similar to 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,7,40.11,44.33,storing all the user information. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,8,44.33,49.82,_And when we are considering a particular user, we're going to try to _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,9,49.82,56.3,_kind of retrieve the relevant users, or the similar users through this user case. _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,10,56.3,57.63,And then try to use that 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,11,58.88,63.01,user's information about those users to predict the preference of this user. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,12,65.11,71.7,_So here's the general idea, and we use some notations here, so. _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,13,71.7,76.57,X sub i j denotes the rating of object o j by user u i. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,14,77.82,83.49,And n sub i is average rating of all objects by this user. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,15,86.15,90.31,So this n i is needed. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,16,90.31,95.5,Because we would like to normalize the ratings of objects by this user. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,17,95.5,99.18,So how do you do normalization? 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,18,99.18,100.78,_Well, where do you adjust that? _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,19,103.33,106.77000000000001,_Subtract the, the average rating from all the ratings. _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,20,107.85,109.89,Now this is the normalized ratings so 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,21,109.89,113.58,that the ratings from different users will be comparable. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,22,115.59,121.92,Because some users might be more generous and they generally give more high ratings. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,23,121.92,124.16,_But, some others might be more critical. _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,24,124.16,128.28,_So, their ratings can not be directly compared with each other or _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,25,128.28,130.82,aggregated them together. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,26,130.82,133.49,_So, we need to do this normalization. _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,27,133.49,137.46,_Now, the prediction of the rating. _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,28,137.46,142.77,_On the item by another user or active user, u sub a here _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,29,144.47,149.419,can be based on the average ratings of similar users. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,30,150.63,156.95,So the user u sub a is the user that we are interested in recommending items to. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,31,156.95,162.41,And we now are interested in recommending this o sub j. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,32,162.41,167.92000000000002,So we're interested in knowing how likely this user will like this object. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,33,167.92000000000002,170.38,How do we know that? 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,34,170.38,175.56,Well the idea here is to look at the how whether similar users to this user 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,35,175.56,177.26,have liked this object. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,36,179.5,181.83,_So mathematically, this is, as you say, _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,37,181.83,187.56,_the predict the rating of this user on this app, object. _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,38,187.56,193.52,User A on object Oj is basically combination of 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,39,193.52,198.65,the normalized ratings of different users. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,40,198.65,203.95,_And in fact, here, we're picking a sum of all the users. _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,41,203.95,209.18,But not all users contribute equally to the average. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,42,209.18,212.378,And this is controlled by the weights. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,43,212.378,213.336,So this. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,44,214.587,220.35,Weight controls the inference of a user on the prediction. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,45,221.86,227.11,_And of course, naturally this weight should be related to the similarity _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,46,227.11,231.63,_between ua and this particular user, ui. _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,47,231.63,237.65,The more similar they are then the more contribution we would like 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,48,237.65,242.42,user u i to make in predicting the preference of u a. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,49,243.95,245.53,So the formula is extremely simple. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,50,245.53,250.17,You're going to see it's a sum of all the possible users. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,51,250.17,253.88,_And inside the sum, we have their ratings, _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,52,253.88,257.38,well their normalized ratings as I just explained. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,53,257.38,261.4,The ratings need to be normalized in order to be comfortable with each other. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,54,262.69,266.73,And then these ratings are rated by their similarity. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,55,266.73,273.28,So we can imagine a W of A and I is just a similarity of user A user I. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,56,274.47,275.35,_Now, what's k here? _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,57,275.35,279.11,_Well, k is a simpler normalizer. _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,58,279.11,285.67,_It's just it's just one over the sum of all the weights, over all the users. _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,59,287.78,293.36,_And so this means, basically, if you consider the weight here together with k. _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,60,293.36,299.32,And we have coefficients or weights that would sum to one for all the users. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,61,299.32,305.69,_And it's just a normalization strategy, so that you get this predicted rating _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,62,305.69,312.319,in the same range as the these ratings that we use to make the prediction. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,63,313.64,314.56,Right? 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,64,314.56,320.32,_So, this is basically the main idea of memory-based approaches for _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,65,320.32,321.36,_collaborative filtering, okay? _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,66,322.74,329.365,_Once we make this prediction, we also would like to map back _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,67,329.365,334.63,to the rating that the user. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,68,334.63,338.52,The user would actually make. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,69,338.52,344.11,_And this is to further add the, mean rating or _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,70,344.11,349.95,average rating of this user u sub a to the predicted value. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,71,349.95,351.71,This would recover. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,72,351.71,354.28,A meaningful rating for this user. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,73,354.28,359.40999999999997,_So if this user is generous, then the average would be somewhat high, _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,74,359.40999999999997,364.58,_and when we added that, the rating will be adjusted to a relatively high rating. _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,75,364.58,367.11,_Now, when you recommend an item to a user, _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,76,367.11,372.2,this actually doesn't really matter because you are interested in basically 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,77,372.2,376.21,the normalized rating that's more meaningful. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,78,377.28,382.41,But when they evaluate these collaborative filtering approach is typically 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,79,382.41,391.39,assumed that actual ratings of user on these objects to be unknown. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,80,391.39,393.15999999999997,And then you do the prediction and 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,81,393.15999999999997,399.06,then you compare the predicted ratings with their actual ratings. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,82,399.06,402.03,_So they, you do have access to the actual ratings. _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,83,402.03,404.0,But then you pretend you don't know. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,84,404.0,408.42,And then you compare real systems predictions with the actual ratings. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,85,408.42,413.58,_In that case, obviously the system's prediction would have to be adjusted to _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,86,413.58,419.54,_match the actual result the user, and this is not what's happening here, basically. _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,87,421.03,421.75,Okay? 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,88,421.75,425.16,So this is the memory-based approach. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,89,425.16,426.97,_Now of course if you look at the formula, _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,90,426.97,429.43,if you want to write the program to implement it. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,91,429.43,435.51,_You still face the problem of determining what is this w function, right? _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,92,435.51,441.02,_Once you know the w function, then the formula is very easy to implement. _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,93,442.73,448.95,_So indeed there are many different ways to compute this function or this weight, w. _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,94,448.95,453.68,_And, specific approaches generally differ in how this is computed. _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,95,455.5,457.88,_So, here are some possibilities. _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,96,457.88,462.01,_And, you can imagine, there are many pro, other possibilities. _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,97,462.01,466.46,One popular approach is we use the Pearson Correlation Coefficient. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,98,468.14,473.45,_This would be a sum of a common range of items, and the formula _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,99,473.45,478.69,_is a standard Pearson correlation coefficient formula, as shown here. _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,100,479.84000000000003,485.367,_So, this basically measures weather the two users tended _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,101,485.367,491.545,_to all give higher ratings to similar items, or lower ratings to similar items. _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,102,491.545,497.806,Another measure is the cosine measure and this is the retreat the rating vectors as 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,103,497.806,503.808,_vectors in the vector space, and then we're going to measure the the angel and _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,104,503.808,507.87,compute the cosign of the angle of the two vectors. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,105,507.87,512.58,And this measure has been used in the vector space more for retrieval as well. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,106,512.58,516.4,_So as you can imagine, there are so many different ways of doing that. _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,107,516.4,521.3,_In all these cases, note that the user similarity is based on their preferences _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,108,521.3,527.135,_on items, and we did not actually use any content information of these items. _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,109,527.135,529.671,It didn't matter what these items are. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,110,529.671,532.235,_They can be movies, they can be books, _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,111,532.235,535.395,_they can be products, they can be tax documents. _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,112,535.395,537.93,We just didn't care about the content. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,113,537.93,547.12,And so this allows such approach to be applied to a wide range of problems. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,114,547.12,548.92,_Now in some newer approaches of course, _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,115,548.92,551.83,we would like to use more information about the user. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,116,551.83,558.72,_Clearly, we know more about the user, not just a, these preferences on these items. _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,117,558.72,564.96,_And so in a actual filtering system, using collaborative filtering, we could also _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,118,564.96,570.1,_combine that with content-based filtering, we could use context information. _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,119,570.1,576.55,And those are all interesting approaches that people are still studying. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,120,576.55,579.13,There are newer approaches proposed. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,121,579.13,583.68,But this approach has been shown to work reasonably well and 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,122,583.68,585.59,it's easy to implement. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,123,585.59,589.918,And practical applications could be a starting point to 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,124,589.918,593.628,see if the strand here works well for your application. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,125,596.128,601.47,So there are some obvious ways to also improve this approach. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,126,601.47,607.07,And mainly would like to improve the user similarity measure. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,127,607.07,609.69,And there are some practical issues to deal with here as well. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,128,609.69,611.96,_So for example, there will be a lot of missing values. _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,129,611.96,612.97,What do you do with them? 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,130,612.97,618.05,_Well, you can set them to default values or the average ratings of the user. _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,131,618.05,620.31,And that will be a simple solution. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,132,620.31,626.4,But there are advantages to approaches that can actually try to predict those 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,133,626.4,633.01,missing values and then use the predicted values to improve the similarity. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,134,633.01,635.59,_So in fact, the memory database approach, _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,135,635.59,639.105,_you can predict those with missing values, right? _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,136,639.105,639.785,_So you can imagine, _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,137,639.785,644.075,you have iterative approach where you first do some preliminary prediction and 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,138,644.075,648.835,then you can use the predictor values to further improve the similarity function. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,139,648.835,654.84,Right so this is here is a way to solve the problem. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,140,654.84,658.67,_And the strategy of this in the effect of the performance of clarity filtering, _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,141,660.32,665.039,_just like in the other heuristics, we improve the similarity function. _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,142,666.3,670.46,Another idea which is actually very similar to the idea of IDF that we 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,143,670.46,675.18,_have seen in text research, is called the inverse user frequency or IUF. _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,144,675.18,683.169,Now here the idea is to look at the where the two users share similar ratings. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,145,684.55,690.02,_If the item is a popular item that has been aah, viewed by many people and _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,146,690.02,695.77,seemingly leads to people interested in this item may not be so interesting. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,147,696.78,700.61,But if it's a rare item and has not been viewed by many users. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,148,700.61,702.878,_But, these two users [INAUDIBLE] to this item. _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,149,702.878,707.336,_And they give similar ratings, and it says more about their similarity, right? _
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,150,707.336,712.136,So it's kind of to emphasize more on similarity 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,151,712.136,716.461,on items that are not viewed by many users. 
+5 - 13 - 4.7 Recommender Systems- Collaborative Filtering - Part 2 (00-12-09).srt,152,716.461,726.461,[MUSIC] 

@@ -1,0 +1,239 @@
+name,id,from,to,text
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,1,0.0,5.086,[SOUND]. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,2,9.253,12.16,So let's take a look at this in detail. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,3,12.16,13.935,So in this random surfing model. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,4,13.935,22.565,And any page would assume random surfer would choose the next page to visit. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,5,22.565,25.215,So this is a small graph here. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,6,25.215,29.64,_That's, of course an oversimplification of the complicate it well. _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,7,29.64,31.86,But let's say there are four documents here. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,8,33.09,34.28,_Right, D1, D2, D3 and D4. _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,9,34.28,40.31,And let's assume that a random surfer or random walker can be any of these pages. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,10,41.77,49.72,And then the random surfer could decide to just randomly jump into any page. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,11,50.98,55.33,Or follow a link and then visit the next page. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,12,56.44,59.52,So if the random server is at d1. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,13,61.1,66.28,_Then, you know, with some probability that random surfer will follow the links. _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,14,66.28,68.09,Now there two outlinks here. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,15,68.09,69.7,One is pointing to this D3. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,16,69.7,72.75,The other is pointing to D4. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,17,72.75,77.56,So the random surfer could pick any of these two to reach e3 and d4. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,18,77.56,85.8,_But it also assumes that the random surfer might, get bored sometimes. _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,19,85.8,89.7,_So the random surfer would decide to ignore the actual links, and _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,20,89.7,93.356,simply randomly jump to any page on the web. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,21,93.356,98.95,_So, if it does that, eh, it would be able to reach _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,22,98.95,105.09,any of the other pages even though there is no link directly from to that page. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,23,106.17,109.43,So this is the assume the randoms of. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,24,109.43,114.42,_Imagine a random server is really doing surfing like this, _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,25,114.42,116.34,then we can ask the question. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,26,116.34,120.21,How likely on average the server would actually reach 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,27,121.91,126.04,_a particular page d1, or d2, or d3. _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,28,126.04,129.209,That's the average probability of visiting a particular page. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,29,130.34,133.84,And this probability is precisely what page rank computes. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,30,133.84,137.99,So the page rank score of the document is the average probability 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,31,137.99,140.85,that the surfer visits a particular page. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,32,141.9,146.57,_Now, intuitively this will basically kept you the [INAUDIBLE] link account. _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,33,146.57,147.22,Why? 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,34,147.22,151.49,Because if a page has a lot of in-links then 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,35,151.49,155.47,_it would have a higher chance of being visited, because there will be more _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,36,155.47,159.94,opportunities of having the surfer to follow a link to come to this page. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,37,161.29,162.21,And this is why 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,38,163.97,168.51,the random surfing model actually captures the idea of counting the in links. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,39,168.51,172.03,Note that is also considers the indirect in links. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,40,172.03,172.7,Why? 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,41,172.7,179.67000000000002,_Because if the pages that point to you have themselves a lot of in links, _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,42,179.67000000000002,184.21,that would mean the random server would very likely reach one of them. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,43,184.21,187.68,And therefore it increases the chance of visiting you. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,44,187.68,193.212,So this is a nice way to capture both indirect and direct links. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,45,193.212,198.117,_So mathematically, how can we compute this problem enough to see that we need _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,46,198.117,202.128,to take a look at how this problem [INAUDIBLE] in computing. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,47,202.128,205.171,So first let's take a look at the transition matching sphere. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,48,205.171,209.543,_And this is just a matrix with values indicating how likely a rand, _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,49,209.543,213.47,the random surfer will go from one page to another. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,50,213.47,217.23,So each rule stands for a starting page. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,51,217.23,217.73,_For example, _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,52,217.73,223.76,rule one would indicate the probability of going to any other four pages from e1. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,53,223.76,228.049,And here we see there are only non two non zero entries. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,54,229.26,233.29,_Each is 1 over 2, a half. _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,55,233.29,240.55,_So this is because if you look at the graph, d1 is pointing to d3 and d4. _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,56,240.55,245.79,_There's no link from d1 to d1 server or d2, _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,57,245.79,251.285,so we've got 0s for the first two columns and 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,58,251.285,254.88,0.5 for d3 and d4. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,59,254.88,259.42,_In general, the M in this matrix _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,60,259.42,264.68,_M sub i j is the probability of going from d, i, to d, j. _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,61,264.68,269.95,_And obviously for each rule, the values should sum to one, _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,62,269.95,276.03,because the surfer will have to go to precisely one of these other pages. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,63,276.03,277.72,Right? So this is a transition matrix. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,64,279.31,283.69,Now how can we compute the probability of a server visiting a page? 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,65,284.9,289.9,_Well if you look at the, the server model, then basically _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,66,290.93,296.27,we can compute the probability of reaching a page as follows. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,67,296.27,302.17,_So, here on the left-hand side, you see it's the probability of _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,68,302.17,307.57,visiting page DJ at time t plus 1 because it's the next time cont. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,69,308.67,314.74,_On the right hand side, you can see the question involves the probability _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,70,314.74,320.0,_of, at page ei at time t. _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,71,321.33,324.2,_So you can see the subsequent index t, here. _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,72,324.2,327.96,And that indicates that's the probability 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,73,327.96,332.48,that the server was at a document at time t. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,74,334.52,338.98,So the equation basically captures 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,75,338.98,343.62,the two possibilities of reaching at d j at time t plus 1. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,76,343.62,345.51,What are these two possibilities? 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,77,345.51,348.2,_Well one is through random surfing, and _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,78,348.2,351.93,one is through following a link as we just explained. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,79,353.5,357.13,So the first part captures the probability 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,80,357.13,361.67,that the random server would reach this page by following a link. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,81,361.67,365.72,_And you can see, and the random surfer chooses this _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,82,365.72,370.6,strategy was probably the [INAUDIBLE] as we assumed. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,83,370.6,373.92,And so there is a factor of one minus alpha here. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,84,373.92,378.51,But the main part is really sum over all the possible 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,85,378.51,383.545,_pages that the server could have been at time t, right? _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,86,383.545,387.462,_There were N pages, so it's a sum over all the possible N pages. _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,87,387.462,391.73,Inside the sum is the product of two probabilities. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,88,391.73,398.2,One is the probability that the server was at d i at time t. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,89,398.2,401.05,That's p sub t of d i. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,90,402.32,406.54,The other is the transition probability from di to dj. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,91,406.54,412.355,_And so in order to reach this dj page, _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,92,412.355,417.88,the surfer must first be at di at time t. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,93,417.88,423.09,_And then also would have to follow the link to go from di to dj, _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,94,423.09,429.19,_so the probability is the probability of being at di at time t, not divide by _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,95,429.19,434.329,_the probability of, going from that page to the top of the page dj here. _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,96,435.89,437.89,The second part is a similar sum. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,97,437.89,443.17,_The only difference is that now the transition probability is uniform, _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,98,443.17,444.83,transition probability. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,99,444.83,447.69,1 over n. And this part captures the probability of 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,100,447.69,451.11,_reaching this page, through random jumping. _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,101,452.17,455.51,_Right. So, the form is exactly the same. _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,102,455.51,458.39,_And in, in, this also allows us to see _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,103,458.39,463.31,why PageRank essentially assumes smoothing of the transition matrix. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,104,463.31,469.07,If you think about this 1 over N as coming from another transition matrix 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,105,469.07,475.32,_that has all the elements being 1 over N, the uniform matrix. _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,106,475.32,479.65,Then you can see very clearly essentially we can merge the two parts. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,107,479.65,481.79,_Because they are of the same form, _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,108,481.79,487.18,we can imagine there's a difference of metrics that's a combination of this m and 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,109,487.18,491.5,that uniform matrix where every element is 1 over n. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,110,491.5,496.63,_In this sense, page one uses this idea of smoothing and _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,111,496.63,501.24,_ensuring that there's no 0, entry in such a transition matrix. _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,112,502.66,508.53,_Of course this is, time depend, calculation of probabilities. _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,113,508.53,512.49,_Now, we can imagine if we want to compute average probabilities, _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,114,512.49,516.45,the average probabilities probably would satisfy this equation 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,115,516.45,518.32,without considering the time index. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,116,518.32,521.77,So let's drop the time index and just assume that they would be equal. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,117,522.91,526.28,Now this would give us N equations. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,118,526.28,529.52,Because for each page we have such a equation. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,119,529.52,532.8,_And if you look at the what variables we have in these equations, _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,120,532.8,536.65,_there are also precisely N variables, right? _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,121,538.28,543.22,So this basically means we now have a system of 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,122,544.59,550.26,_n equations with n variables, and these are linear equations. _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,123,550.26,556.54,_So basically, now the problem boils down to solve this system of equations and _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,124,556.54,560.95,here I also show that the equations in the metric form. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,125,560.95,569.74,It's the vector P here equals a metrics or the transports of the metrics here. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,126,569.74,571.39,And multiply it by the vector again. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,127,572.57,577.06,Now if you still remember some knowledge that you learned from linear algebra and 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,128,577.06,581.468,then you will realize this is precisely the equation for item vector. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,129,581.468,584.94,Right? When [INAUDIBLE] metrics by this method 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,130,584.94,587.54,you get the same value as this method. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,131,587.54,592.29,And this can solved by using an iterative algorithm. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,132,594.7,601.94,_So is it, because she's here, on the ball, easily taken from the previous, slide. _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,133,601.94,609.17,_So you see the, relationship between the, the page source of different pages. _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,134,609.17,613.737,And in this iterative approach or power approach 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,135,613.737,618.21,_we simply start with, randomly the p. _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,136,618.21,625.45,And then we repeatedly just updated this p by multiplying. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,137,626.86,630.85,The metrics here by this P-Vector. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,138,630.85,634.56,So I also show a concrete example here. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,139,637.34,641.81,_So you can see this now, if we assume. _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,140,641.81,643.85,How far is point two. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,141,643.85,648.86,Then with the example that we show here on this slide 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,142,648.86,651.65,we have the original transition metrics here. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,143,653.28,655.98,_Right? That encodes, that encodes the graph. _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,144,655.98,657.42,The actual links. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,145,657.42,660.82,_And we have this smoothing transition metrics, _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,146,660.82,665.04,_uniform transition metrics, representing random jumping. _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,147,665.04,667.95,And we can combine them together with 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,148,667.95,672.32,interpolation to form another metrics that would be like this. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,149,672.32,675.78,So essentially we can imagine now the looks. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,150,675.78,678.3,Like this can be captured by that. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,151,678.3,681.97,There are virtual links between all the pages now. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,152,681.97,687.07,_So the page rank algorithm will just initialize the p vector first, _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,153,687.07,690.97,and then just computed the updating of this p vector 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,154,692.22,694.899,_by using this, metrics multiplication. _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,155,696.6,699.7,_Now if you rewrite this metrics multi, multiplication _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,156,701.04,705.08,_in terms of just a, an individual equations, you'll see this. _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,157,706.52,711.435,_And this is a, basically, the updating formula for _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,158,711.435,714.405,_this particular page is a, page ranking score. _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,159,714.405,717.655,_So you can also see, even if you want to compute the value of this _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,160,717.655,721.875,_updated score for d1, you basically multiple this rule. _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,161,723.13,723.67,Right? 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,162,723.67,729.29,_By this column, I will take the total product of the two, right? _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,163,729.29,733.94,And that will give us the value for this value. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,164,735.99,738.42,So this is how we updated the vector. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,165,738.42,740.939,We started with some initial values for these guys. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,166,742.01,744.0,_For, for this, and then, _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,167,744.0,749.25,we just revise the scores which generate a new set of scores. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,168,749.25,751.55,And the updated formula is this one. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,169,753.15,757.59,_So we just repeatedly apply this, and here it converges. _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,170,757.59,760.12,And when the metrics is like this. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,171,760.12,763.51,Where there is no zero values and it can be guaranteed to converge. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,172,764.79,769.95,_And at that point we will just, have the PageRank scores for all the pages. _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,173,769.95,773.12,Now we typically set the initial values just to 1 over n. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,174,775.3,779.39,_So interestingly, this update formula can be also interpreted as _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,175,779.39,781.9,propagating scores on the graph. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,176,781.9,783.5,All right. Can you see why? 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,177,783.5,788.028,_Well if you look at this formula and then compare that with this graph, _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,178,788.028,791.635,and can you imagine how we might be able to interpret this 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,179,791.635,795.045,as essentially propagating scores over the graph. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,180,797.549,801.701,I hope you will see that indeed we can imagine we have values 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,181,801.701,804.26,initialized on each of these page. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,182,804.26,810.22,_All right, so we can have values here that say, that's one over four for each. _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,183,810.22,815.17,_And then welcome to use these matrix to update this, the scores. _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,184,815.17,818.28,_And if you look at the equation here, _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,185,818.28,823.64,_this one, basically we're going to combine the scores _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,186,823.64,828.89,_of the pages that possible would lead to, reaching this page. _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,187,828.89,832.23,So we'll look at all the pages that are pointing to this page. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,188,832.23,834.56,And then combine their scores and 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,189,834.56,840.4,_the propagated score, the sum of the scores to this document D1. _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,190,840.4,846.32,_We look after the, the scores that represented the probability _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,191,846.32,851.41,that the random server would be visiting the other pages before it reaches the D1. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,192,851.41,854.77,And then just do the propagation to simulate the probability 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,193,856.01,860.82,_of reaching this, this page D 1. _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,194,860.82,863.91,So there are two interpretations here. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,195,863.91,866.47,One is just the matrix multiplication. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,196,866.47,867.9,And we repeated that. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,197,867.9,871.47,Multiply the vector by this metrics. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,198,871.47,876.49,The other is to just think of it as propagating the scores repeatedly 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,199,876.49,878.18,on the web. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,200,878.18,884.07,So in practice the composition of PageRank score is actually efficient because 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,201,884.07,889.28,the metrices are sparse and there are some ways to transform the equation so 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,202,889.28,895.26,you avoid actually literally computing the values of all of those elements. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,203,896.66,899.12,_Sometimes you may also normalize the equation, and _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,204,899.12,902.17,_that will give you a somewhat different form of the equation, _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,205,902.17,905.249,but then the ranking of pages will not change. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,206,906.29,909.65,The results of this potential problem of zero out link problem. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,207,910.73,917.54,_In that case if the page does not have any outlook, then the probability of _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,208,917.54,922.46,_these pages will, will not sum to 1. _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,209,922.46,925.18,_Basically, the probability of reaching the next page from this _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,210,925.18,926.74,page will not sum to 1. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,211,926.74,929.95,Mainly because we have lost some probability mass when we assume that 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,212,929.95,934.7,there's some probability that the server will try to follow links but 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,213,934.7,937.16,_then there's no link to follow, right? _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,214,937.16,943.25,And one possible solution is simply to use page specific damping factor and 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,215,943.25,945.27,_that, that could easily fix this. _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,216,946.74,950.74,_Basically that's to say, how far do we want from zero for a page with no outlink. _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,217,950.74,954.14,In that case the server would just have to 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,218,954.14,957.37,render them [INAUDIBLE] to another page instead of trying to follow the link. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,219,959.16,961.54,So there are many extensions of page rank. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,220,961.54,965.06,One extension is to do top-specific page rank. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,221,965.06,969.25,_Note that page rank doesn't really use the query format machine, right? _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,222,969.25,975.37,_So, [INAUDIBLE] so we can make page rank, appear specific, however. _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,223,975.37,978.87,_So, for example, in the topic specific page rank, _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,224,978.87,982.56,_we can simply assume when the surfer, is bored. _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,225,982.56,985.67,The surfer is not going to randomly jump into any page on the web. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,226,985.67,992.32,_Instead, it's going to jump, to only those pages that are to a query. _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,227,992.32,996.79,_For example, if the query is about sports then we could assume that when it's _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,228,996.79,1000.63,_doing random jumping, it's going to randomly jump to a sports page. _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,229,1000.63,1005.35,By doing this then we canbuy a PageRank to topic align with sports. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,230,1005.35,1009.49,And then if you know the current query is about sports then you can use this 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,231,1009.49,1013.43,specialized PageRank score to rank the options. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,232,1013.43,1016.37,That would be better than if you use a generic PageRank score. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,233,1017.97,1021.37,PageRank is also general algorithm that can be used in many other. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,234,1021.37,1025.839,_Locations for network analysis, particular for example for social networks. _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,235,1025.839,1030.493,_We can imagine if you compute their PageRank scores for social network, _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,236,1030.493,1033.776,_where a link might indicate friendship relation, _
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,237,1033.776,1036.92,you'll get some meaningful scores for people. 
+5 - 4 - 4.3 Link Analysis - Part 2 (00-17-30).srt,238,1036.92,1046.92,[MUSIC] 

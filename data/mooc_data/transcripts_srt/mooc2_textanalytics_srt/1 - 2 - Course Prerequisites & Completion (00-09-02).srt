@@ -1,0 +1,527 @@
+1
+00:00:00,124 --> 00:00:07,641
+[SOUND]
+This
+
+2
+00:00:07,641 --> 00:00:10,030
+lecture is a brief
+introduction to the course.
+
+3
+00:00:12,580 --> 00:00:17,607
+We're going to cover the objectives
+of the course, the prerequisites and
+
+4
+00:00:17,607 --> 00:00:22,093
+course formats, reference books and
+how to complete the course.
+
+5
+00:00:22,093 --> 00:00:25,598
+The objectives of the course
+are the following.
+
+6
+00:00:25,598 --> 00:00:29,555
+First, we would like to
+cover the basic context and
+
+7
+00:00:29,555 --> 00:00:32,970
+practical techniques of text data mining.
+
+8
+00:00:32,970 --> 00:00:40,234
+So this means we will not be able to
+cover some advanced techniques in detail,
+
+9
+00:00:40,234 --> 00:00:44,258
+but whether we choose
+the practical use for
+
+10
+00:00:44,258 --> 00:00:48,196
+techniques and then treat them in order.
+
+11
+00:00:48,196 --> 00:00:53,055
+We're going to also cover the basic
+concepts that are very useful for
+
+12
+00:00:53,055 --> 00:00:54,579
+many applications.
+
+13
+00:00:54,579 --> 00:00:59,814
+The second objective is to cover
+more general techniques for
+
+14
+00:00:59,814 --> 00:01:05,047
+text or data mining, so
+we emphasize the coverage of general
+
+15
+00:01:05,047 --> 00:01:12,050
+techniques that can be applicable to
+any text in any natural language.
+
+16
+00:01:12,050 --> 00:01:16,424
+We also hope that these
+techniques to either
+
+17
+00:01:16,424 --> 00:01:22,334
+automatically work on problems
+without any human effort or
+
+18
+00:01:22,334 --> 00:01:26,246
+only requiring minimum human effort.
+
+19
+00:01:26,246 --> 00:01:30,800
+So these criteria have
+helped others to choose
+
+20
+00:01:30,800 --> 00:01:36,787
+techniques that can be
+applied to many applications.
+
+21
+00:01:36,787 --> 00:01:42,497
+This is in contrast to some more
+detailed analysis of text data,
+
+22
+00:01:42,497 --> 00:01:46,317
+particularly using natural
+language processing techniques.
+
+23
+00:01:46,317 --> 00:01:49,768
+Now such techniques
+are also very important.
+
+24
+00:01:49,768 --> 00:01:54,940
+And they are indeed, necessary for
+some of the applications,
+
+25
+00:01:54,940 --> 00:02:01,610
+where we would like to go in-depth to
+understand text, they are in more detail.
+
+26
+00:02:01,610 --> 00:02:05,220
+Such detail in understanding techniques,
+however,
+
+27
+00:02:05,220 --> 00:02:11,360
+are generally not scalable and they
+tend to require a lot of human effort.
+
+28
+00:02:11,360 --> 00:02:14,160
+So they cannot be easy
+to apply to any domain.
+
+29
+00:02:15,470 --> 00:02:18,188
+So as you can imagine in practice,
+
+30
+00:02:18,188 --> 00:02:23,253
+it would be beneficial to combine
+both kinds of techniques using
+
+31
+00:02:23,253 --> 00:02:29,161
+the general techniques that we'll be
+covering in this course as a basis and
+
+32
+00:02:29,161 --> 00:02:35,757
+improve these techniques by using more
+human effort whenever it's appropriate.
+
+33
+00:02:35,757 --> 00:02:42,397
+We also would like to provide a hands-on
+experience to you in multiple aspects.
+
+34
+00:02:42,397 --> 00:02:48,049
+First, you'll do some experiments
+using a text mining toolkit and
+
+35
+00:02:48,049 --> 00:02:51,430
+implementing text mining algorithms.
+
+36
+00:02:51,430 --> 00:02:57,037
+Second, you will have opportunity to
+experiment with some algorithms for
+
+37
+00:02:57,037 --> 00:03:01,309
+text mining and
+analytics to try them on some datasets and
+
+38
+00:03:01,309 --> 00:03:04,159
+to understand how to do experiments.
+
+39
+00:03:05,390 --> 00:03:10,300
+And finally, you have opportunity
+to participate in a competition
+
+40
+00:03:10,300 --> 00:03:12,808
+of text-based prediction task.
+
+41
+00:03:12,808 --> 00:03:15,826
+You're expected to know the basic
+concepts of computer science.
+
+42
+00:03:15,826 --> 00:03:19,701
+For example, the data structures and
+
+43
+00:03:19,701 --> 00:03:25,403
+some other really basic
+concepts in computer science.
+
+44
+00:03:25,403 --> 00:03:29,277
+You are also expected to be
+familiar with programming and
+
+45
+00:03:29,277 --> 00:03:33,450
+comfortable with programming,
+particularly with C++.
+
+46
+00:03:33,450 --> 00:03:36,093
+This course,
+however is not about programming.
+
+47
+00:03:36,093 --> 00:03:39,533
+So you are not expected to
+do a lot of coding, but
+
+48
+00:03:39,533 --> 00:03:44,532
+we're going to give you C++ toolkit
+that's fairly sophisticated.
+
+49
+00:03:44,532 --> 00:03:49,392
+So you have to be comfortable
+with handling such a toolkit and
+
+50
+00:03:49,392 --> 00:03:53,217
+you may be asked to write
+a small amount of code.
+
+51
+00:03:56,617 --> 00:04:00,753
+It's also useful if you
+know some concepts and
+
+52
+00:04:00,753 --> 00:04:07,130
+techniques in probability and
+statistics, but it's not necessary.
+
+53
+00:04:08,540 --> 00:04:13,550
+Knowing such knowledge would help you
+understand some of the algorithm in
+
+54
+00:04:13,550 --> 00:04:14,220
+more depth.
+
+55
+00:04:16,240 --> 00:04:23,870
+The format of the course is lectures
+plus quizzes that will be given to you
+
+56
+00:04:25,690 --> 00:04:31,879
+in the regular basis and there is
+also optional programming assignment.
+
+57
+00:04:33,230 --> 00:04:36,380
+Now, we've made programming
+assignments optional.
+
+58
+00:04:36,380 --> 00:04:40,053
+Not because it's not important, but
+
+59
+00:04:40,053 --> 00:04:46,019
+because we suspect that the not
+all of you will have the need for
+
+60
+00:04:46,019 --> 00:04:51,087
+computing resources to do
+the program assignment.
+
+61
+00:04:51,087 --> 00:04:55,948
+So naturally,
+we would encourage all of you to try to do
+
+62
+00:04:55,948 --> 00:05:01,657
+the program assignments,
+if possible as that will be a great way
+
+63
+00:05:01,657 --> 00:05:06,860
+to learn about the knowledge
+that we teach in this course.
+
+64
+00:05:06,860 --> 00:05:10,948
+There's no required reading for
+this course,
+
+65
+00:05:10,948 --> 00:05:15,660
+but I was list some of
+the useful reference books here.
+
+66
+00:05:18,270 --> 00:05:22,680
+So we expect you to be able to understand
+all the essential materials by just
+
+67
+00:05:22,680 --> 00:05:27,810
+watching the actual videos and
+you should be able to answer all the quiz
+
+68
+00:05:27,810 --> 00:05:32,540
+questions by just watching the videos.
+
+69
+00:05:33,820 --> 00:05:38,400
+But it's always good to read additional
+books in the larger scope of knowledge,
+
+70
+00:05:39,480 --> 00:05:43,260
+so here is this the four books.
+
+71
+00:05:43,260 --> 00:05:47,795
+The first is a textbook about
+statistical language processing.
+
+72
+00:05:47,795 --> 00:05:52,599
+Some of the chapters [INAUDIBLE]
+are especially relevant to this course.
+
+73
+00:05:52,599 --> 00:05:57,258
+The second one is a textbook
+about information retrieval,
+
+74
+00:05:57,258 --> 00:06:01,449
+but it has broadly covered
+a number of techniques that
+
+75
+00:06:01,449 --> 00:06:05,752
+are really in the category
+of text mining techniques.
+
+76
+00:06:05,752 --> 00:06:10,460
+So it's also useful, because of that.
+
+77
+00:06:10,460 --> 00:06:16,020
+The third book is actually
+a collection of silly articles and
+
+78
+00:06:16,020 --> 00:06:20,290
+it has broadly covered all
+the aspects of mining text data.
+
+79
+00:06:21,950 --> 00:06:26,048
+The mostly relevant chapters
+are also listed here.
+
+80
+00:06:26,048 --> 00:06:31,474
+In these chapters, you can find
+some in depth discussion of cutting
+
+81
+00:06:31,474 --> 00:06:36,439
+edge research on the topics that
+we discussed in this course.
+
+82
+00:06:36,439 --> 00:06:40,993
+And the last one is actually
+a book that Sean Massung and
+
+83
+00:06:40,993 --> 00:06:45,745
+I are currently writing and
+we're going to make the rough
+
+84
+00:06:45,745 --> 00:06:51,370
+draft chapters available at
+this URL listed right here.
+
+85
+00:06:51,370 --> 00:06:54,220
+You can also find additional
+reference books and
+
+86
+00:06:54,220 --> 00:06:58,170
+other readings at the URL
+listed at the bottom.
+
+87
+00:06:59,280 --> 00:07:02,491
+So finally, some information about how
+
+88
+00:07:02,491 --> 00:07:07,218
+to complete the course this
+information is also on the web.
+
+89
+00:07:07,218 --> 00:07:09,755
+So I just briefly go over it and
+
+90
+00:07:09,755 --> 00:07:15,552
+you can complete the course by
+earning one of the following badges.
+
+91
+00:07:15,552 --> 00:07:18,014
+One is Course Achievement Badge.
+
+92
+00:07:18,014 --> 00:07:23,318
+To earn that,
+you have to have at least a 70%
+
+93
+00:07:23,318 --> 00:07:28,357
+average score on all the quizzes combined.
+
+94
+00:07:28,357 --> 00:07:35,034
+It does mean every quiz has to be 70% or
+better.
+
+95
+00:07:35,034 --> 00:07:39,294
+The second batch here,
+this is a Course Mastery Badge and
+
+96
+00:07:39,294 --> 00:07:44,912
+this just requires a higher score,
+90% average score for the quizzes.
+
+97
+00:07:48,731 --> 00:07:52,190
+There are also three
+optional programming badges.
+
+98
+00:07:52,190 --> 00:07:56,721
+I said earlier that we encourage you
+to do programming assignments, but
+
+99
+00:07:56,721 --> 00:07:59,925
+they're not necessary,
+they're not required.
+
+100
+00:07:59,925 --> 00:08:02,188
+The first is
+Programming Achievement Badge.
+
+101
+00:08:02,188 --> 00:08:05,648
+This is similar to the call
+switching from the badge.
+
+102
+00:08:05,648 --> 00:08:12,649
+Here would require you to get at least 70%
+average score on programming assignments.
+
+103
+00:08:12,649 --> 00:08:17,696
+And similarly, the mastery badge
+
+104
+00:08:17,696 --> 00:08:22,046
+is given to those who can score
+
+105
+00:08:22,046 --> 00:08:26,928
+90% average score or better.
+
+106
+00:08:26,928 --> 00:08:33,095
+The last badge is
+a Text Mining Competition Leader Badge and
+
+107
+00:08:33,095 --> 00:08:39,768
+this is given to those of you who
+do well in the competition task.
+
+108
+00:08:39,768 --> 00:08:44,530
+And specifically, we're planning to give
+
+109
+00:08:44,530 --> 00:08:49,684
+the badge to the top
+30% in the leaderboard.
+
+110
+00:08:49,684 --> 00:08:59,684
+[MUSIC]
+

@@ -1,0 +1,979 @@
+1
+00:00:01,226 --> 00:00:06,741
+[MUSIC]
+
+2
+00:00:06,741 --> 00:00:11,562
+This lecture is about the Latent Aspect
+Rating Analysis for Opinion Mining and
+
+3
+00:00:11,562 --> 00:00:12,960
+Sentiment Analysis.
+
+4
+00:00:14,810 --> 00:00:15,645
+In this lecture,
+
+5
+00:00:15,645 --> 00:00:18,569
+we're going to continue discussing
+Opinion Mining and Sentiment Analysis.
+
+6
+00:00:19,930 --> 00:00:25,750
+In particular, we're going to introduce
+Latent Aspect Rating Analysis
+
+7
+00:00:25,750 --> 00:00:31,290
+which allows us to perform detailed
+analysis of reviews with overall ratings.
+
+8
+00:00:34,720 --> 00:00:35,870
+So, first is motivation.
+
+9
+00:00:37,260 --> 00:00:42,230
+Here are two reviews that you often
+see in the net about the hotel.
+
+10
+00:00:42,230 --> 00:00:44,734
+And you see some overall ratings.
+
+11
+00:00:44,734 --> 00:00:49,330
+In this case,
+both reviewers have given five stars.
+
+12
+00:00:49,330 --> 00:00:52,520
+And, of course,
+there are also reviews that are in text.
+
+13
+00:00:53,760 --> 00:00:56,189
+Now, if you just look at these reviews,
+
+14
+00:00:56,189 --> 00:01:01,130
+it's not very clear whether the hotel is
+good for its location or for its service.
+
+15
+00:01:01,130 --> 00:01:04,720
+It's also unclear why
+a reviewer liked this hotel.
+
+16
+00:01:06,510 --> 00:01:11,630
+What we want to do is to
+decompose this overall rating into
+
+17
+00:01:11,630 --> 00:01:17,412
+ratings on different aspects such as
+value, rooms, location, and service.
+
+18
+00:01:18,450 --> 00:01:20,890
+So, if we can decompose
+the overall ratings,
+
+19
+00:01:20,890 --> 00:01:24,820
+the ratings on these different aspects,
+then, we
+
+20
+00:01:24,820 --> 00:01:29,442
+can obtain a more detailed understanding
+of the reviewer's opinionsabout the hotel.
+
+21
+00:01:30,640 --> 00:01:34,731
+And this would also allow us to rank
+hotels along different dimensions
+
+22
+00:01:34,731 --> 00:01:36,130
+such as value or rooms.
+
+23
+00:01:36,130 --> 00:01:41,060
+But, in general, such detailed
+understanding will reveal more information
+
+24
+00:01:41,060 --> 00:01:44,951
+about the user's preferences,
+reviewer's preferences.
+
+25
+00:01:44,951 --> 00:01:49,671
+And also, we can understand better
+how the reviewers view this
+
+26
+00:01:49,671 --> 00:01:52,531
+hotel from different perspectives.
+
+27
+00:01:52,531 --> 00:01:59,534
+Now, not only do we want to
+infer these aspect ratings,
+
+28
+00:01:59,534 --> 00:02:05,230
+we also want to infer the aspect weights.
+
+29
+00:02:05,230 --> 00:02:09,760
+So, some reviewers may care more about
+values as opposed to the service.
+
+30
+00:02:09,760 --> 00:02:10,708
+And that would be a case.
+
+31
+00:02:10,708 --> 00:02:14,313
+like what's shown on the left for
+the weight distribution,
+
+32
+00:02:14,313 --> 00:02:17,360
+where you can see a lot of
+weight is places on value.
+
+33
+00:02:18,570 --> 00:02:21,461
+But others care more for service.
+
+34
+00:02:21,461 --> 00:02:24,610
+And therefore, they might place
+more weight on service than value.
+
+35
+00:02:25,780 --> 00:02:29,340
+The reason why this is
+also important is because,
+
+36
+00:02:29,340 --> 00:02:32,135
+do you think about a five star on value,
+
+37
+00:02:32,135 --> 00:02:38,093
+it might still be very expensive if the
+reviewer cares a lot about service, right?
+
+38
+00:02:38,093 --> 00:02:41,689
+For this kind of service,
+this price is good, so
+
+39
+00:02:41,689 --> 00:02:45,120
+the reviewer might give it a five star.
+
+40
+00:02:45,120 --> 00:02:49,472
+But if a reviewer really cares
+about the value of the hotel,
+
+41
+00:02:49,472 --> 00:02:54,450
+then the five star, most likely,
+would mean really cheap prices.
+
+42
+00:02:54,450 --> 00:02:59,206
+So, in order to interpret the ratings
+on different aspects accurately,
+
+43
+00:02:59,206 --> 00:03:02,760
+we also need to know these aspect weights.
+
+44
+00:03:02,760 --> 00:03:04,920
+When they're combined together,
+
+45
+00:03:04,920 --> 00:03:08,448
+we can have a more detailed
+understanding of the opinion.
+
+46
+00:03:08,448 --> 00:03:14,126
+So the task here is to get these reviews
+and their overall ratings as input,
+
+47
+00:03:14,126 --> 00:03:17,642
+and then,
+generate both the aspect ratings,
+
+48
+00:03:17,642 --> 00:03:22,349
+the compose aspect ratings, and
+the aspect rates as output.
+
+49
+00:03:22,349 --> 00:03:28,600
+And this is a problem called
+Latent Aspect Rating Analysis.
+
+50
+00:03:31,090 --> 00:03:35,957
+So the task, in general,
+is given a set of review articles about
+
+51
+00:03:35,957 --> 00:03:41,380
+the topic with overall ratings, and
+we hope to generate three things.
+
+52
+00:03:41,380 --> 00:03:46,390
+One is the major aspects
+commented on in the reviews.
+
+53
+00:03:46,390 --> 00:03:52,220
+Second is ratings on each aspect,
+such as value and room service.
+
+54
+00:03:53,650 --> 00:03:59,280
+And third is the relative weights placed
+on different aspects by the reviewers.
+
+55
+00:03:59,280 --> 00:04:02,921
+And this task has a lot of applications,
+and if you can do this,
+
+56
+00:04:02,921 --> 00:04:05,350
+and it will enable a lot of applications.
+
+57
+00:04:05,350 --> 00:04:07,169
+I just listed some here.
+
+58
+00:04:07,169 --> 00:04:08,551
+And later, I will show you some results.
+
+59
+00:04:08,551 --> 00:04:13,260
+And, for example,
+we can do opinion based entity ranking.
+
+60
+00:04:13,260 --> 00:04:17,590
+We can generate an aspect-level
+opinion summary.
+
+61
+00:04:17,590 --> 00:04:21,760
+We can also analyze reviewers preferences,
+compare them or
+
+62
+00:04:21,760 --> 00:04:25,470
+compare their preferences
+on different hotels.
+
+63
+00:04:25,470 --> 00:04:27,800
+And we can do personalized
+recommendations of products.
+
+64
+00:04:29,530 --> 00:04:32,326
+So, of course, the question is
+how can we solve this problem?
+
+65
+00:04:32,326 --> 00:04:36,261
+Now, as in other cases of
+these advanced topics,
+
+66
+00:04:36,261 --> 00:04:41,050
+we won’t have time to really
+cover the technique in detail.
+
+67
+00:04:41,050 --> 00:04:42,926
+But I’m going to give you a brisk,
+
+68
+00:04:42,926 --> 00:04:47,900
+basic introduction to the technique
+development for this problem.
+
+69
+00:04:47,900 --> 00:04:51,950
+So, first step, we’re going to talk about
+how to solve the problem in two stages.
+
+70
+00:04:51,950 --> 00:04:56,393
+Later, we’re going to also mention that
+we can do this in the unified model.
+
+71
+00:04:56,393 --> 00:05:00,118
+Now, take this review with
+the overall rating as input.
+
+72
+00:05:00,118 --> 00:05:05,076
+What we want to do is, first,
+we're going to segment the aspects.
+
+73
+00:05:05,076 --> 00:05:09,389
+So we're going to pick out what words
+are talking about location, and
+
+74
+00:05:09,389 --> 00:05:12,620
+what words are talking
+about room condition, etc.
+
+75
+00:05:13,640 --> 00:05:18,304
+So with this, we would be able
+to obtain aspect segments.
+
+76
+00:05:18,304 --> 00:05:23,402
+In particular, we're going to
+obtain the counts of all the words
+
+77
+00:05:23,402 --> 00:05:28,750
+in each segment, and
+this is denoted by C sub I of W and D.
+
+78
+00:05:28,750 --> 00:05:33,020
+Now this can be done by using seed
+words like location and room or
+
+79
+00:05:33,020 --> 00:05:36,420
+price to retrieve
+the [INAUDIBLE] in the segments.
+
+80
+00:05:36,420 --> 00:05:41,467
+And then, from those segments,
+we can further mine correlated
+
+81
+00:05:41,467 --> 00:05:46,419
+words with these seed words and
+that would allow us to segmented
+
+82
+00:05:46,419 --> 00:05:51,009
+the text into segments,
+discussing different aspects.
+
+83
+00:05:51,009 --> 00:05:52,045
+But, of course,
+
+84
+00:05:52,045 --> 00:05:57,200
+later, as we will see, we can also use
+[INAUDIBLE] models to do the segmentation.
+
+85
+00:05:57,200 --> 00:05:59,970
+But anyway, that's the first stage,
+
+86
+00:05:59,970 --> 00:06:05,470
+where the obtain the council
+of words in each segment.
+
+87
+00:06:05,470 --> 00:06:06,450
+In the second stage,
+
+88
+00:06:06,450 --> 00:06:11,345
+which is called Latent Rating Regression,
+we're going to use these words and
+
+89
+00:06:11,345 --> 00:06:15,085
+their frequencies in different
+aspects to predict the overall rate.
+
+90
+00:06:15,085 --> 00:06:16,815
+And this predicting happens in two stages.
+
+91
+00:06:17,875 --> 00:06:21,463
+In the first stage,
+we're going to use the [INAUDIBLE] and
+
+92
+00:06:21,463 --> 00:06:26,145
+the weights of these words in each
+aspect to predict the aspect rating.
+
+93
+00:06:26,145 --> 00:06:31,446
+So, for example, if in your discussion
+of location, you see a word like,
+
+94
+00:06:31,446 --> 00:06:36,230
+amazing, mentioned many times,
+and it has a high weight.
+
+95
+00:06:36,230 --> 00:06:37,580
+For example, here, 3.9.
+
+96
+00:06:37,580 --> 00:06:40,827
+Then, it will increase
+the Aspect Rating for location.
+
+97
+00:06:40,827 --> 00:06:44,727
+But, another word like, far,
+which is an acted weight,
+
+98
+00:06:44,727 --> 00:06:49,118
+if it's mentioned many times,
+and it will decrease the rating.
+
+99
+00:06:49,118 --> 00:06:53,938
+So the aspect ratings, assume that it
+will be a weighted combination of these
+
+100
+00:06:53,938 --> 00:06:58,697
+word frequencies where the weights
+are the sentiment weights of the words.
+
+101
+00:06:58,697 --> 00:07:05,640
+Of course, these sentimental weights
+might be different for different aspects.
+
+102
+00:07:05,640 --> 00:07:11,280
+So we have, for each aspect, a set of
+term sentiment weights as shown here.
+
+103
+00:07:11,280 --> 00:07:15,950
+And that's in order by beta sub I and W.
+
+104
+00:07:18,425 --> 00:07:23,220
+In the second stage or second step,
+we're going to assume that the overall
+
+105
+00:07:23,220 --> 00:07:27,495
+rating is simply a weighted
+combination of these aspect ratings.
+
+106
+00:07:27,495 --> 00:07:33,274
+So we're going to assume we have aspect
+weights to the [INAUDIBLE] sub i of d,
+
+107
+00:07:33,274 --> 00:07:38,864
+and this will be used to take a weighted
+average of the aspect ratings,
+
+108
+00:07:38,864 --> 00:07:41,455
+which are denoted by r sub i of d.
+
+109
+00:07:42,840 --> 00:07:45,970
+And we're going to assume the overall
+rating is simply a weighted
+
+110
+00:07:45,970 --> 00:07:48,570
+average of these aspect ratings.
+
+111
+00:07:48,570 --> 00:07:53,230
+So this set up allows us to predict
+the overall rating based on
+
+112
+00:07:53,230 --> 00:07:56,110
+the observable frequencies.
+
+113
+00:07:56,110 --> 00:07:57,610
+So on the left side,
+
+114
+00:07:57,610 --> 00:08:01,890
+you will see all these observed
+information, the r sub d and the count.
+
+115
+00:08:03,010 --> 00:08:04,690
+But on the right side,
+
+116
+00:08:04,690 --> 00:08:08,070
+you see all the information in
+that range is actually latent.
+
+117
+00:08:09,130 --> 00:08:12,326
+So, we hope to discover that.
+
+118
+00:08:12,326 --> 00:08:17,110
+Now, this is a typical case of
+a generating model where would embed
+
+119
+00:08:17,110 --> 00:08:21,850
+the interesting variables
+in the generated model.
+
+120
+00:08:21,850 --> 00:08:26,920
+And then, we're going to set up
+a generation probability for
+
+121
+00:08:26,920 --> 00:08:31,440
+the overall rating given
+the observed words.
+
+122
+00:08:31,440 --> 00:08:38,894
+And then, of course, we can adjust these
+parameter values including betas Rs and
+
+123
+00:08:38,894 --> 00:08:44,200
+alpha Is in order to maximize
+the probability of the data.
+
+124
+00:08:44,200 --> 00:08:49,911
+In this case, the conditional probability
+of the observed rating given the document.
+
+125
+00:08:49,911 --> 00:08:54,248
+So we have seen such cases before in, for
+
+126
+00:08:54,248 --> 00:08:59,361
+example, PISA,
+where we predict a text data.
+
+127
+00:08:59,361 --> 00:09:02,942
+But here, we're predicting the rating,
+and the parameters,
+
+128
+00:09:02,942 --> 00:09:05,010
+of course, are very different.
+
+129
+00:09:05,010 --> 00:09:09,461
+But we can see, if we can uncover
+these parameters, it would be nice,
+
+130
+00:09:09,461 --> 00:09:13,470
+because r sub i of d is precise as
+the ratings that we want to get.
+
+131
+00:09:13,470 --> 00:09:16,175
+And these are the composer
+ratings on different aspects.
+
+132
+00:09:16,175 --> 00:09:20,267
+[INAUDIBLE] sub I D is precisely
+the aspect weights that we
+
+133
+00:09:20,267 --> 00:09:24,966
+hope to get as a byproduct,
+that we also get the beta factor, and
+
+134
+00:09:24,966 --> 00:09:29,860
+these are the [INAUDIBLE] factor,
+the sentiment weights of words.
+
+135
+00:09:31,040 --> 00:09:32,060
+So more formally,
+
+136
+00:09:33,440 --> 00:09:38,740
+the data we are modeling here is a set of
+review documents with overall ratings.
+
+137
+00:09:38,740 --> 00:09:45,130
+And each review document denote by a d,
+and the overall ratings denote by r sub d.
+
+138
+00:09:45,130 --> 00:09:48,578
+And d pre-segments turn
+into k aspect segments.
+
+139
+00:09:48,578 --> 00:09:55,915
+And we're going to use ci(w,d) to denote
+the count of word w in aspect segment i.
+
+140
+00:09:55,915 --> 00:09:59,560
+Of course, it's zero if the word
+doesn't occur in the segment.
+
+141
+00:10:01,640 --> 00:10:04,070
+Now, the model is going to
+predict the rating based on d.
+
+142
+00:10:04,070 --> 00:10:10,757
+So, we're interested in the provisional
+problem of r sub-d given d.
+
+143
+00:10:10,757 --> 00:10:13,276
+And this model is set up as follows.
+
+144
+00:10:13,276 --> 00:10:18,457
+So r sub-d is assumed the two
+follow a normal distribution
+
+145
+00:10:18,457 --> 00:10:23,321
+doesn't mean that denotes
+actually await the average
+
+146
+00:10:23,321 --> 00:10:28,150
+of the aspect of ratings r
+Sub I of d as shown here.
+
+147
+00:10:28,150 --> 00:10:30,350
+This normal distribution is
+a variance of data squared.
+
+148
+00:10:30,350 --> 00:10:34,261
+Now, of course,
+this is just our assumption.
+
+149
+00:10:34,261 --> 00:10:37,083
+The actual rating is not necessarily
+anything thing this way.
+
+150
+00:10:37,083 --> 00:10:41,082
+But as always, when we make this
+assumption, we have a formal way to
+
+151
+00:10:41,082 --> 00:10:45,593
+model the problem and that allows us
+to compute the interest in quantities.
+
+152
+00:10:45,593 --> 00:10:50,370
+In this case, the aspect ratings and
+the aspect weights.
+
+153
+00:10:52,010 --> 00:10:56,222
+Now, the aspect rating as
+you see on the [INAUDIBLE]
+
+154
+00:10:56,222 --> 00:11:01,040
+is assuming that will be
+a weight of sum of these weights.
+
+155
+00:11:01,040 --> 00:11:03,480
+Where the weight is just
+the [INAUDIBLE] of the weight.
+
+156
+00:11:04,940 --> 00:11:08,500
+So as I said,
+
+157
+00:11:08,500 --> 00:11:12,950
+the overall rating is assumed to be
+a weighted average of aspect ratings.
+
+158
+00:11:15,270 --> 00:11:20,735
+Now, these other values, r for
+sub I of D, or denoted together
+
+159
+00:11:20,735 --> 00:11:26,940
+by other vector that depends on D is
+that the token of specific weights.
+
+160
+00:11:26,940 --> 00:11:31,608
+And we’re going to assume that
+this vector itself is drawn
+
+161
+00:11:31,608 --> 00:11:36,080
+from another Multivariate Gaussian
+distribution,
+
+162
+00:11:36,080 --> 00:11:41,960
+with mean denoted by a Mu factor,
+and covariance metrics sigma here.
+
+163
+00:11:43,110 --> 00:11:48,210
+Now, so this means, when we generate our
+overall rating, we're going to first draw
+
+164
+00:11:49,530 --> 00:11:54,400
+a set of other values from this
+Multivariate Gaussian Prior distribution.
+
+165
+00:11:54,400 --> 00:12:00,040
+And once we get these other values,
+we're going to use then the weighted
+
+166
+00:12:00,040 --> 00:12:05,928
+average of aspect ratings as
+the mean here to use the normal
+
+167
+00:12:05,928 --> 00:12:11,540
+distribution to generate
+the overall rating.
+
+168
+00:12:13,940 --> 00:12:18,921
+Now, the aspect rating, as I just said,
+is the sum of the sentiment weights of
+
+169
+00:12:18,921 --> 00:12:24,000
+words in aspect, note that here the
+sentiment weights are specific to aspect.
+
+170
+00:12:24,000 --> 00:12:28,585
+So, beta is indexed by i,
+and that's for aspect.
+
+171
+00:12:28,585 --> 00:12:33,835
+And that gives us a way to model
+different segment of a word.
+
+172
+00:12:36,545 --> 00:12:41,323
+This is neither because
+the same word might have
+
+173
+00:12:41,323 --> 00:12:46,346
+positive sentiment for another aspect.
+
+174
+00:12:46,346 --> 00:12:54,536
+It's also used for see what parameters
+we have here beta sub i and
+
+175
+00:12:54,536 --> 00:12:59,488
+w gives us the aspect-specific
+sentiment of w.
+
+176
+00:12:59,488 --> 00:13:04,000
+So, obviously,
+that's one of the important parameters.
+
+177
+00:13:04,000 --> 00:13:08,994
+But, in general, we can see we have these
+parameters, beta values, the delta,
+
+178
+00:13:08,994 --> 00:13:11,215
+and the Mu, and sigma.
+
+179
+00:13:12,515 --> 00:13:16,487
+So, next, the question is, how can
+we estimate these parameters and, so
+
+180
+00:13:16,487 --> 00:13:19,650
+we collectively denote all
+the parameters by lambda here.
+
+181
+00:13:19,650 --> 00:13:24,586
+Now, we can, as usual,
+use the maximum likelihood estimate, and
+
+182
+00:13:24,586 --> 00:13:28,395
+this will give us the settings
+of these parameters,
+
+183
+00:13:28,395 --> 00:13:34,300
+that with a maximized observed ratings
+condition of their respective reviews.
+
+184
+00:13:34,300 --> 00:13:39,225
+And of, course,
+this would then give us all the useful
+
+185
+00:13:39,225 --> 00:13:43,630
+variables that we
+are interested in computing.
+
+186
+00:13:45,460 --> 00:13:50,381
+So, more specifically, we can now,
+once we estimate the parameters,
+
+187
+00:13:50,381 --> 00:13:55,153
+we can easily compute the aspect rating,
+for aspect the i or sub i of d.
+
+188
+00:13:55,153 --> 00:14:00,145
+And that's simply to take all of the words
+that occurred in the segment, i,
+
+189
+00:14:00,145 --> 00:14:02,095
+and then take their counts and
+
+190
+00:14:02,095 --> 00:14:07,800
+then multiply that by the center of
+the weight of each word and take a sum.
+
+191
+00:14:07,800 --> 00:14:12,422
+So, of course, this time would be zero for
+words that are not occurring in and
+
+192
+00:14:12,422 --> 00:14:15,700
+that's why were going to take the sum
+of all the words in the vocabulary.
+
+193
+00:14:17,030 --> 00:14:19,132
+Now what about the s factor weights?
+
+194
+00:14:19,132 --> 00:14:23,124
+Alpha sub i of d, well,
+it's not part of our parameter.
+
+195
+00:14:23,124 --> 00:14:23,717
+Right?
+
+196
+00:14:23,717 --> 00:14:26,678
+So we have to use that to compute it.
+
+197
+00:14:26,678 --> 00:14:31,486
+And in this case, we can use the Maximum
+
+198
+00:14:31,486 --> 00:14:36,743
+a Posteriori to compute this alpha value.
+
+199
+00:14:36,743 --> 00:14:41,897
+Basically, we're going to maximize the
+product of the prior of alpha according
+
+200
+00:14:41,897 --> 00:14:46,622
+to our assumed Multivariate Gaussian
+Distribution and the likelihood.
+
+201
+00:14:46,622 --> 00:14:50,066
+In this case,
+the likelihood rate is the probability of
+
+202
+00:14:50,066 --> 00:14:54,981
+generating this observed overall rating
+given this particular alpha value and
+
+203
+00:14:54,981 --> 00:14:57,559
+some other parameters, as you see here.
+
+204
+00:14:57,559 --> 00:15:01,739
+So for more details about this model,
+you can read this paper cited here.
+
+205
+00:15:05,139 --> 00:15:15,139
+[MUSIC]
+

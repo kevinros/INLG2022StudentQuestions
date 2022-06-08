@@ -1,0 +1,435 @@
+name,id,from,to,text
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,1,7.29,11.068,[SOUND] This lecture is a continued discussion of 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,2,11.068,15.61,Discriminative Classifiers for Text Categorization. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,3,15.61,18.096,_So, in this lecture, we're going to introduce, yet _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,4,18.096,22.45,another Discriminative Classifier called the Support Vector Machine or SVM. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,5,22.45,25.05,Which is a very popular classification method and 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,6,25.05,28.79,it has been also shown to be effective for text categorization. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,7,31.35,34.38,_So to introduce this classifier, _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,8,34.38,38.06,let's also think about the simple case of two categories. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,9,38.06,43.3,_We have two topic categories, 01 and 02 here. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,10,43.3,47.76,And we want to classify documents into these two categories and 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,11,47.76,51.82,we're going to represent again a document by a feature factor x here. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,12,53.2,58.02,_Now, the idea of this classifier is to design also a linear separator _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,13,59.15,61.36,here that you'll see and 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,14,61.36,65.82,_it's very similar to what you have seen not just for regression, right? _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,15,65.82,71.24,And we're going to do also say that if the sign of this function 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,16,71.24,76.69,value is positive then we're going to say the objective is in category one. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,17,76.69,80.47,_Otherwise, we're going to say it's in category 2. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,18,80.47,87.7,So that makes 0 that is the decision boundary between the few categories. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,19,88.83,93.99000000000001,_So, in generally hiding marginal space such as, 0. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,20,93.99000000000001,97.07,corresponds to a hyper plain. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,21,98.21000000000001,103.18,Now I've shown you a simple case of two dimensional space it was just X1 and 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,22,103.18,109.91,X2 and this case this corresponds to a line that you can see here. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,23,111.22,115.97999999999999,_So, this is a line defined by _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,24,115.97999999999999,120.97,_just three parameters here, beta zero, beta one, and beta two. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,25,122.39,127.32,_Now, this line is heading in this direction so _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,26,127.32,133.45,_it shows that as we increase X1, X2 will also increase. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,27,133.45,137.78,_So we know that beta one and beta two have different assigns, one is negative and _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,28,137.78,138.92000000000002,the other is positive. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,29,140.8,146.79,So let's just assume that beta one is negative and beta two Is positive. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,30,148.81,151.25,_Now, it's interesting to examine, then, _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,31,151.25,154.8,the data instances on the two sides of the slide. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,32,154.8,159.69,_So, here, the data instance are visualized as circles for one class and _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,33,159.69,161.8,diamonds for the other class. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,34,163.14,169.09,_Now, one question is to take a point like this one and to ask the question _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,35,169.09,174.11,_what's the value of this expression, or this classifier, for this data point? _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,36,175.35,177.0,So what do you think? 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,37,177.0,180.65,_Basically, we're going to evaluate its value by using this function. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,38,181.74,186.19,_And as we said, if this value's positive we're going to say this is in category _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,39,186.19,189.61,_one, and if it's negative, it's going to be in category two. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,40,189.61,195.343,_Intuitively, this line separates these two categories, so we expect the points on _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,41,195.343,199.87,one side would be positive and the points on the other side would be negative. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,42,199.87,203.2,_Our question is under the assumption that I just mentioned, _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,43,203.2,205.32,let's examine a particular point like this one. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,44,207.59,210.48,So what do you think is the sine of this expression? 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,45,211.61,217.82999999999998,_Well, to examine the sine we can simply look at this expression here. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,46,217.82999999999998,220.95,_And we can compare this with let's say, _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,47,222.05,226.95,_value on the line, let's see, compare this with this point. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,48,228.44,233.52,_While they have identical X1, but then one has a higher value for X2. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,49,234.74,239.79,_Now, let's look at the sin of the coefficient for X2. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,50,239.79,241.61,_Well, we know this is a positive. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,51,242.85,246.26,_So, what that means is that the f value for _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,52,246.26,250.4,this point should be higher than the f value for 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,53,250.4,254.8,_this point on the line that means this will be positive, right? _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,54,256.19,259.9,_So we know in general of all points on this side, _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,55,260.96,265.38,the function's value will be positive and 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,56,265.38,269.38,you can also verify all the points on this side will be negative. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,57,269.38,271.75,And so this is how this kind of linear classifier or 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,58,271.75,275.94,linear separator can then separate the points in the two categories. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,59,277.81,282.83,_So, now the natural question is, which linear separator is the best? _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,60,282.83,287.687,_Now, I've get you one line here that can separate the two classes. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,61,287.687,293.19,_And this line, of course, is determined by the vector beta, the coefficients. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,62,293.19,295.21,Different coefficients will give us different lines. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,63,295.21,298.77,_So, we could imagine there are other lines that can do the same job. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,64,298.77,300.63,_Gamma, for example, _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,65,300.63,304.86,could give us another line that counts a separator to these instances. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,66,306.01,309.71,_Of course, there are also lines that won't separate to them and those are bad lines. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,67,309.71,312.31,_But, the question is, when we have multiple lines that can _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,68,312.31,315.95,_separate both clauses, which align the best? _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,69,315.95,321.74,_In fact, you can imagine, there are many different ways of choosing the line. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,70,321.74,327.31,_So, the logistical regression classifier that you have seen earlier actually uses _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,71,327.31,333.06,some criteria to determine where this line should be and so linear separate as well. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,72,333.06,336.61,And uses a conditional likelihood on the training that it determines 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,73,336.61,338.31,which line is the best. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,74,338.31,341.13,But in SVM we're going to look at another criteria for 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,75,341.13,343.5,determining which line is the best. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,76,343.5,344.23,_And this time, _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,77,344.23,348.3,the criteria is more tied to the classification arrow as you will see. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,78,349.46,356.12,_So, the basic idea is to choose the separator to maximize the margin. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,79,356.12,357.18,So what is a margin? 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,80,357.18,363.54,_So, I choose some dotted lines here to indicate _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,81,363.54,369.02,the boundaries of those data points in each class. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,82,369.02,373.89,_And the margin is simply the distance between the line, _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,83,373.89,377.42,_the separator, and the closest point from each class. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,84,378.49,383.83,So you can see the margin of this side is as I've shown here and 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,85,383.83,385.81,you can also define the margin on the other side. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,86,387.02,391.19,_In order for the separator to maximize the margin, _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,87,391.19,395.7,it has to be kind of in the middle of the two boundaries and 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,88,395.7,400.05,_you don't want this separator to be very close to one side, and _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,89,400.05,402.8,that in intuition makes a lot of sense. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,90,404.46,407.05,So this is basic idea of SVM. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,91,407.05,410.02,We're going to choose a linear separator to maximize the margin. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,92,412.13,415.45,_Now on this slide, I've also changed the notation so _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,93,415.45,418.46,that I'm not going to use beta to denote the parameters. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,94,418.46,423.74,_But instead, I'm going to use w although w was used to denote the words before so _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,95,423.74,425.37,don't be confused here. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,96,425.37,429.618,_W here is actually a width, a certain width. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,97,432.734,439.03,_So I'm also using lowercase b to denote the beta 0, a biased constant. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,98,440.03,444.1,And there are instances do represent that as x and 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,99,444.1,448.79,I also use the vector form of multiplication here. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,100,448.79,454.11,So we see a transpose of w vector multiply by the future vector. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,101,455.29,462.08,So b is a bias constant and w is a set of weights with one way for each feature. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,102,462.08,465.26,We have m features and so we have m weights and 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,103,465.26,466.42,that will represent as a vector. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,104,467.64,471.26,_And similarly, the data instance here, the text object, _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,105,471.26,475.94,is represented by also a feature vector of the same number of elements. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,106,475.94,479.1,Xi is a feature value. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,107,479.1,484.418,_For example, word count and you can verify, when we. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,108,484.418,488.96,_Multiply these two vectors together, take the dot product, _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,109,488.96,494.335,we get the same form of the linear separator as you have seen before. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,110,494.335,496.713,It's just a different way of representing this. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,111,496.713,501.267,Now I use this way so that it's more consistent with what notations 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,112,501.267,504.75,people usually use when they talk about SVM. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,113,504.75,509.47,This way you can better connect the slides with some other readings you might do. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,114,511.19,519.78,_Okay, so when we maximize the margins of a separator, _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,115,519.78,524.73,it just means the boundary of the separator is only determined by 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,116,524.73,529.8,_a few data points, and these are the data points that we call support vectors. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,117,529.8,534.6,So here illustrated are two support vectors for one class and two for 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,118,534.6,536.22,the other class. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,119,536.22,540.9,_And these quotas define the margin basically, and _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,120,540.9,545.35,you can imagine once we know which are supportive vectors then this 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,121,546.43,549.75,center separator line will be determined by them. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,122,549.75,556.32,So the other data points actually don't really matter that much. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,123,556.32,560.42,And you can see if you change the other data points it won't really affect 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,124,560.42,562.905,_the margin, so the separator will stay the same. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,125,562.905,566.514,Mainly affected by the the support vector machines. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,126,566.514,569.705,_Sorry, it's mainly affected by the support vectors and _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,127,569.705,572.639,that's why it's called a support vector machine. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,128,572.639,577.968,_Okay, so now the next question is, of course, _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,129,577.968,582.73,how can we set it up to optimize the line? 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,130,582.73,587.43,How can we actually find the line or the separator? 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,131,587.43,591.39,Now this is equivalent to finding values for w and 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,132,591.39,595.779,_b, because they will determine where exactly the separator is. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,133,598.01,604.7,_So in the simplest case, the linear SVM is just a simple optimization problem. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,134,604.7,610.23,_So again, let's recall that our classifier is such a linear separator, where we _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,135,610.23,615.98,_have weights for all the features, and the main goal is remove these weights w and b. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,136,615.98,621.04,And the classifier will say X is in category theta 1 if it's positive. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,137,621.04,623.95,_Otherwise, it's going to say it's in the other category. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,138,623.95,627.22,_So this is our assumption, our setup. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,139,627.22,632.406,_So in the linear SVM, we are going to then seek these parameter _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,140,632.406,637.51,values to optimize the margins and then the training error. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,141,638.8,641.92,The training data would be basically like in other classifiers. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,142,641.92,645.94,_We have a set of training points where we know the x vector, and _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,143,645.94,650.29,_then we also know the corresponding label, y i. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,144,650.29,654.31,_And here we define y i as two values, but _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,145,654.31,658.358,_these values are not 0, 1 as you have seen before, but rather -1 and _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,146,658.358,663.99,_positive 1, and they're corresponding to these two categories, as I've shown here. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,147,663.99,668.33,Now you might wonder why we don't define them as 0 and 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,148,668.33,671.77,_1 instead of having -1, 1. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,149,671.77,675.52,_And this is purely for mathematical convenience, as you will see in a moment. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,150,676.7,679.45,So the goal of optimization first is 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,151,679.45,683.7,to make sure the labeling of training data is all correct. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,152,683.7,688.24,_So that just means if y i, the norm label for instance x i, _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,153,688.24,693.61,_is 1, we would like this classified value to be large. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,154,693.61,696.74,And here we just choose a threshold of 1 here. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,155,696.74,701.875,_But if you use another threshold, you can easily fit that constant _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,156,701.875,707.3,into the parameter values b and w to make the right-hand side just 1. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,157,708.95,714.78,_Now if, on the other hand, y i is -1, that means it's in a different class, _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,158,714.78,718.46,_then we want this classifier to give us a very small value, _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,159,718.46,724.86,_in fact a negative value, and we want this value to be less than or equal to -1. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,160,724.86,731.11,_Now these are the two different instances, different kinds of cases. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,161,731.11,733.714,How can we combine them together? 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,162,733.714,738.622,Now this is where it's convenient when we have chosen y i as -1 for 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,163,738.622,740.2,_the other category, _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,164,740.2,745.83,because it turns out that we can either combine the two into one constraint. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,165,746.832,752.085,y i multiplied by the classifier value must be larger than or equal to 1. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,166,753.21,755.484,_And obviously when y i is just 1, _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,167,755.484,759.968,you see this is the same as the constraint on the left-hand side. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,168,759.968,768.02,_But when y i is -1, you also see that this is equivalent to the other inequality. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,169,768.02,773.06,_So this one actually captures both constraints in a unified way, _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,170,773.06,776.96,and that's a convenient way of capturing these constraints. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,171,776.96,778.137,What's our second goal? 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,172,778.137,780.414,_Well, that's to maximize margin, so _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,173,780.414,784.6,we want to ensure that separator can do well on the training data. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,174,784.6,788.109,_But then, among all the cases where we can separate the data, _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,175,788.109,792.172,we also would like to choose the separator that has the largest margin. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,176,792.172,798.758,Now the margin can be assumed to be related to the magnitude of the weight. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,177,798.758,803.777,And so w transform multiplied by w would give 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,178,803.777,809.893,us basically the sum of squares of all those weights. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,179,809.893,815.691,_So to have a small value for this expression, _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,180,815.691,820.43,it means all the w i's must be small. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,181,822.44,825.71,So we've just assumed that we have a constraint for 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,182,826.93,830.89,getting the data on the training set to be classified correctly. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,183,830.89,837.649,_Now we also have the objective that's tied into a maximization of margin, _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,184,837.649,843.013,_and this is simply to minimize w transpose multiplied by w, _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,185,843.013,846.251,and we often denote this by phi of w. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,186,846.251,850.616,So now you can see this is basically a optimization problem. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,187,850.616,855.044,_We have some variables to optimize, and these are the weights and _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,188,855.044,857.54,b and we have some constraints. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,189,857.54,858.949,These are linear constraints and 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,190,858.949,862.38,the objective function is a quadratic function of the weights. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,191,862.38,865.37,_So this a quadratic program with linear constraints, _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,192,865.37,870.05,and there are standard algorithm that are variable for solving this problem. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,193,870.05,874.19,And once we solve the problem we obtain the weights w and b. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,194,874.19,877.08,And then this would give us a well-defined classifier. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,195,877.08,882.16,So we can then use this classifier to classify any new text objects. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,196,882.16,887.19,_Now the previous formulation did not allow any error in the classification, _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,197,887.19,890.448,but sometimes the data may not be linear to the separator. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,198,890.448,894.69,That means that they may not look as nice as you have seen on 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,199,894.69,899.3,the previous slide where a line can separate all of them. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,200,899.3,902.85,And what would happen if we allowed some errors? 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,201,902.85,904.98,_Well, the principle can stay. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,202,904.98,909.305,We want to minimize the training error but try to also maximize the margin. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,203,909.305,912.27,_But in this case we have a soft margin, _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,204,912.27,916.0,because the data points may not be completely separable. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,205,917.03,924.65,So it turns out that we can easily modify SVM to accommodate this. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,206,924.65,928.09,_So what you see here is very similar to what you have seen before, _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,207,928.09,931.76,but we have introduced the extra variable xi i. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,208,931.76,935.61,_And we in fact will have one for each data instance, and _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,209,935.61,940.78,this is going to model the error that we allow for each instance. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,210,940.78,943.245,But the optimization problem would be very similar. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,211,943.245,944.783,_So specifically, _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,212,944.783,950.17,you will see we have added something to the optimization problem. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,213,950.17,956.861,First we have added some error to the constraint so 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,214,956.861,962.119,that now we allow a Allow the classifier 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,215,962.119,966.76,to make some mistakes here. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,216,966.76,972.86,_So, this Xi i is allowed an error. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,217,972.86,976.56,_If we set Xi i to 0, then we go back to the original constraint. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,218,976.56,980.26,We want every instance to be classified accurately. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,219,980.26,986.42,_But, if we allow this to be non-zero, then we allow some errors here. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,220,986.42,990.73,_In fact, if the length of the Xi i is very large, the error can be very, very large. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,221,990.73,993.27,_So naturally, we don't want this to happen. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,222,993.27,997.57,So we want to then also minimize this Xi i. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,223,997.57,1001.94,_So, because Xi i needs to be minimized in order to control the error. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,224,1002.94,1006.02,_And so, as a result, in the objective function, _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,225,1006.02,1010.91,_we also add more to the original one, which is only W, _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,226,1010.91,1015.19,_by basically ensuring that we not only minimize the weights, but _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,227,1015.19,1019.13,_also minimize the errors, as you see here. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,228,1019.13,1022.705,Here we simply take a sum over all the instances. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,229,1022.705,1027.695,Each one has a Xi i to model the error allowed for that instance. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,230,1027.695,1030.413,_And when we combine them together, _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,231,1030.413,1034.68,we basically want to minimize the errors on all of them. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,232,1036.35,1041.001,_Now you see there's a parameter C here, and that's a constant to control _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,233,1041.001,1045.74,the trade-off between minimizing the errors and maximizing the margin. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,234,1045.74,1047.888,_If C is set to zero, you can see, _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,235,1047.888,1053.07,we go back to the original object function where we only maximize the margin. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,236,1054.34,1058.368,We don't really optimize the training errors and 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,237,1058.368,1063.73,then Xi i can be set to a very large value to make the constraints easy to satisfy. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,238,1063.73,1066.512,_That's not very good of course, so _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,239,1066.512,1070.884,_C should be set to a non-zero value, a positive value. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,240,1070.884,1073.412,_But when C is set to a very, very large value, _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,241,1073.412,1078.143,we'll see the object of the function will be dominated mostly by the training errors 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,242,1078.143,1082.42,and so the optimization of margin will then play a secondary role. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,243,1082.42,1086.35,_So if that happens, what would happen is _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,244,1087.42,1091.42,_then we will try to do our best to minimize the training errors, but _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,245,1091.42,1094.73,then we're not going to take care of the margin and 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,246,1094.73,1099.27,that affects the generalization factors of the classify for future data. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,247,1099.27,1100.548,So it's also not good. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,248,1100.548,1108.175,_So in particular, this parameter C has to be actually set carefully. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,249,1108.175,1112.045,And this is just like in the case of k-nearest neighbor where you need 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,250,1112.045,1114.08,to optimize a number of neighbors. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,251,1114.08,1115.51,Here you need to optimize the C. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,252,1115.51,1120.51,_And this is, in general, also achievable by doing cross-validation. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,253,1120.51,1123.331,_Basically, you look at the empirical data and _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,254,1123.331,1127.61,see what value C should be set to in order to optimize the performance. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,255,1129.05,1130.39,_Now with this modification, _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,256,1130.39,1134.25,the problem is still quadratic programming with linear constraints so the optimizing 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,257,1134.25,1140.003,algorithm can be actually applied to solve this different version of the program. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,258,1142.08,1145.78,_Again, once we have obtained the weights and the bias, _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,259,1145.78,1151.36,then we can have classifier that's ready for classifying new objects. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,260,1151.36,1153.566,So that's the basic idea of SVM. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,261,1156.993,1160.402,_So to summarize the text categorization methods, _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,262,1160.402,1165.17,_where we introduce the many methods, and some are generative models. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,263,1165.17,1167.14,Some are discriminative methods. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,264,1167.14,1172.23,And these tend to perform similarly when optimized. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,265,1172.23,1177.92,_So there's still no clear winner, although each one has its pros and cons. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,266,1177.92,1182.46,And the performance might also vary on different data sets for 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,267,1182.46,1184.32,different problems. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,268,1184.32,1190.61,And one reason is also because the feature representation is very critical 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,269,1192.28,1196.47,and these methods all require effective feature representation. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,270,1196.47,1199.4,_And to design an effective feature set, _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,271,1199.4,1203.53,_we need domain knowledge and humans definitely play an important role here, _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,272,1203.53,1205.608,although there are new machine learning methods and 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,273,1205.608,1210.02,algorithm representation learning that can help with learning features. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,274,1212.64,1218.169,And another common thing is that they might 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,275,1218.169,1223.546,_be performing similarly on the data set, _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,276,1223.546,1228.22,but with different mistakes. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,277,1228.22,1230.913,_And so, their performance might be similar, but _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,278,1230.913,1234.07,then the mistakes they make might be different. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,279,1234.07,1237.63,So that means it's useful to compare different methods for 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,280,1237.63,1242.69,a particular problem and then maybe combine multiple methods 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,281,1242.69,1249.092,because this can improve the robustness and they won't make the same mistakes. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,282,1249.092,1254.192,So assemble approaches that would combine different 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,283,1254.192,1259.99,methods tend to be more robust and can be useful in practice. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,284,1259.99,1264.53,_Most techniques that we introduce use the supervised machine learning, _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,285,1264.53,1266.99,which is a very general method. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,286,1266.99,1270.975,So that means that these methods can be actually applied to any text or 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,287,1270.975,1272.58,categorization problem. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,288,1272.58,1277.554,As long as we have humans to help annotate some training data sets and 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,289,1277.554,1283.493,_design features, then supervising machine learning and all these classifiers _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,290,1283.493,1289.255,can be easily applied to those problems to solve the categorization problem to 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,291,1289.255,1294.431,allow us to characterize content of text concisely with categories. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,292,1294.431,1298.716,Or to predict the sum properties of real world 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,293,1298.716,1303.25,variables that are associated with text data. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,294,1303.25,1307.875,_The computers, of course, here are trying to optimize the combinations of _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,295,1307.875,1309.908,the features provided by human. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,296,1309.908,1313.357,_And as I said, there are many different ways of combining them and _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,297,1313.357,1316.13,they also optimize different object or functions. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,298,1318.18,1322.24,_But in order to achieve good performance, they all require effective features and _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,299,1322.24,1323.75,also plenty of training data. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,300,1324.77,1328.87,_So as a general rule, and if you can improve the feature representation, _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,301,1328.87,1333.86,_and then provide more training data, then you can generally do better. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,302,1333.86,1338.39,Performance is often much more affected by the effectiveness of 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,303,1338.39,1343.03,features than by the choice of specific classifiers. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,304,1343.03,1346.972,So feature design tends to be more important than the choice of specific 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,305,1346.972,1347.768,classifier. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,306,1350.844,1354.17,_So, how do we design effective features? _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,307,1354.17,1357.36,_Well, unfortunately, this is very application-specific. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,308,1357.36,1363.108,So there's no really much general thing to say here. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,309,1363.108,1367.672,But we can do some analysis of the categorization problem and 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,310,1367.672,1374.4,try to understand what kind of features might help us distinguish categories. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,311,1374.4,1379.72,_And in general, we can use a lot of domain knowledge to help us design features. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,312,1381.64,1386.18,And another way to figure out the effective features is 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,313,1386.18,1390.23,to do error analysis on the categorization results. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,314,1390.23,1391.08,_You could, for example, _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,315,1391.08,1396.11,look at which category tends to be confused with which other categories. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,316,1396.11,1400.89,And you can use a confusion matrix to examine the errors systematically 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,317,1400.89,1402.34,across categories. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,318,1402.34,1405.32,_And then, you can look into specific instances to _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,319,1405.32,1409.78,see why the mistake has been made and what features can prevent the mistake. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,320,1409.78,1415.26,And this can allow you to obtain insights for design new features. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,321,1415.26,1417.84,_So error analysis is very important in general, and _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,322,1417.84,1420.86,that's where you can get the insights about your specific problem. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,323,1422.15,1425.22,_And finally, we can leverage this on machine learning techniques. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,324,1425.22,1428.71,_So, for example, feature selection is a technique that we haven't really talked _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,325,1428.71,1430.39,_about, but is very important. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,326,1430.39,1434.83,And it has to do with trying to select the most useful features before you actually 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,327,1434.83,1436.276,train a full classifier. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,328,1436.276,1440.9,Sometimes training a classifier will also help you identify which features have high 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,329,1440.9,1441.419,values. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,330,1441.419,1444.658,There are also other ways to ensure this sparsity. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,331,1444.658,1447.538,_Of the model, meaning to recognize the widths. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,332,1447.538,1452.87,_For example, the SVM actually tries to minimize the weights on features. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,333,1452.87,1456.63,_But you can further force some features, _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,334,1456.63,1459.019,force to use only a small number of features. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,335,1461.08,1465.03,There are also techniques for dimension reduction. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,336,1465.03,1469.45,And that's to reduce a high dimensional feature space into a low dimensional 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,337,1469.45,1473.15,space typically by clustering of features in various ways. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,338,1473.15,1478.15,So metrics factorization has been used to do 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,339,1478.15,1482.86,_such a job, and this is some of the techniques are actually very similar to _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,340,1482.86,1484.82,the talking models that we'll discuss. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,341,1484.82,1488.22,So talking morals like psa or 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,342,1488.22,1492.57,lda can actually help us reduce the dimension of features. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,343,1492.57,1496.331,Like imagine the words our original feature. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,344,1496.331,1501.97,But the can be matched to the topic space .Let's say we have k topics. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,345,1501.97,1504.38,So a document can now be represented 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,346,1504.38,1508.75,as a vector of just k values corresponding to the topics. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,347,1508.75,1512.38,_So we can let each topic define one dimension, so we have a k dimensional _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,348,1512.38,1517.92,space instead of the original high dimensional space corresponding to words. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,349,1517.92,1521.72,And this is often another way to learn effective features. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,350,1521.72,1526.2,_Especially, we could also use the categories to supervise the learning of _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,351,1526.2,1528.37,such low dimensional structures. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,352,1529.85,1536.07,_And so, the original worth features can be also combined with such _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,353,1536.07,1540.48,amazing dimension features or lower dimensional space features 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,354,1540.48,1544.81,to provide a multi resolution which is often very useful. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,355,1544.81,1549.94,Deep learning is a new technique that has been developed the machine learning. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,356,1551.19,1554.89,It's particularly useful for learning representations. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,357,1554.89,1559.84,_So deep learning refers to deep neural network, it's another kind of classifier, _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,358,1559.84,1567.11,where you can have intermediate features embedded in the models. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,359,1567.11,1571.57,_That it's highly non-linear transpire, and _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,360,1571.57,1577.22,some recent events that's allowed us to train such a complex network effectively. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,361,1577.22,1583.3,_And the technique has been shown to be quite effective for speech recognition, _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,362,1583.3,1587.62,_computer reasoning, and recently has been applied to text as well. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,363,1587.62,1589.53,It has shown some promise. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,364,1589.53,1593.01,And one important advantage of this approach in 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,365,1594.27,1599.01,_relationship with the featured design, is that they can _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,366,1599.01,1603.92,learn intermediate replantations or compound the features automatically. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,367,1603.92,1609.193,_And this is very valuable for learning effective replantation, _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,368,1609.193,1611.66,for text recalibration. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,369,1611.66,1617.39,_Although in text domain, because words are exemplary representation of text content, _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,370,1617.39,1621.62,because these are human's imaging for communication. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,371,1621.62,1628.16,And they are generally sufficient for For representing content for many tasks. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,372,1628.16,1631.43,_If there's a need for some new representation, _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,373,1631.43,1635.25,people would have invented a new word. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,374,1635.25,1638.32,So because of this we think of value of deep learning for 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,375,1638.32,1642.61,text processing tends to be lower than for [INAUDIBLE]. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,376,1642.61,1646.49,And the speech revenue where they are anchored corresponding 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,377,1646.49,1649.92,where the design that worked as features. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,378,1651.16,1655.02,But people only still very promising for learning effective features especially for 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,379,1655.02,1655.857,complicated tasks. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,380,1655.857,1659.85,Like a analysis it has been shown to be effective 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,381,1661.23,1664.76,because it can provide that goes beyond that of words. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,382,1667.03,1670.24,Now regarding the training examples. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,383,1670.24,1673.94,It's generally hard to get a lot of training examples because it involves 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,384,1673.94,1674.56,human labor. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,385,1676.31,1678.57,But there are also some ways to help with this. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,386,1678.57,1684.83,So one is to assume in some low quality training examples can also be used. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,387,1684.83,1687.8,_So, those can be called pseudo training examples. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,388,1687.8,1693.22,_For example, if you take reviews from the internet, they might have overall ratings. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,389,1693.22,1701.25,_So, to train a of categorizer, meaning we want to positive or negative. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,390,1701.25,1704.86,And categorize these reviews into these two categories. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,391,1704.86,1711.57,Then we could assume five star reviews are all positive training samples. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,392,1711.57,1713.27,One star are negative. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,393,1713.27,1714.19,_But of course, _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,394,1714.19,1718.52,sometimes even five star reviews will also mention negative opinions so the training 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,395,1718.52,1723.18,_sample is not all of that high quality, but they can still be useful. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,396,1725.2,1727.97,Another idea is to exploit the unlabeled data and 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,397,1727.97,1730.83,there are techniques called the semi-supervised machine 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,398,1730.83,1735.685,learning techniques that can allow you to combine labeled data with unlabeled data. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,399,1735.685,1741.07,_So, in other case it's easy to see the next model can be used For _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,400,1741.07,1743.76,both text plus read and the categorization. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,401,1743.76,1749.22,_So you can imagine, if you have a lot of unlabeled text data for categorization, _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,402,1749.22,1755.62,_then you can actually do clustering on these text data, learn categories. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,403,1755.62,1758.088,And then try to somehow align these categories. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,404,1758.088,1763.23,_With the categories defined by the training data, _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,405,1763.23,1766.39,where we already know which documents are in which category. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,406,1766.39,1771.62,So you can in fact use the Algorithm to actually combine both. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,407,1771.62,1777.39,That would allow you essentially also pick up useful words and label the data. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,408,1777.39,1779.32,You can think of this in another way. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,409,1779.32,1783.804,_Basically, we can use let's say a to _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,410,1783.804,1788.48,_classify all of the unlabeled text documents, and then we're going to _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,411,1788.48,1794.04,assume the high confidence Classification results are actually liable. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,412,1794.04,1798.6,Then you suddenly have more training data because from the enabler that we 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,413,1798.6,1803.45,_now know some are labeled as category one, some are labeled as category two. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,414,1803.45,1806.38,All though the label is not completely reliable But 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,415,1806.38,1807.83,then they can still be useful. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,416,1807.83,1814.72,_So let's assume they are actually training label examples, and then we combine them _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,417,1814.72,1819.94,with true training examples through improved categorization method. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,418,1819.94,1822.11,And so this idea is very powerful. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,419,1823.98,1828.28,_When the enabled data and the training data are very different, and _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,420,1828.28,1832.41,we might need to use other advanced machine learning techniques 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,421,1832.41,1835.15,called domain adaptation or transfer learning. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,422,1835.15,1837.58,This is when we can 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,423,1837.58,1842.45,Borrow some training examples from a related problem that may be different. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,424,1842.45,1844.47,_Or, from a categorization password _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,425,1846.78,1852.13,that follow very different distribution from what we are working on. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,426,1852.13,1854.19,_But basically, when the two domains are very different, _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,427,1854.19,1857.64,then we need to be careful and not overfit the training domain. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,428,1857.64,1862.3,_But yet, we can still want to use some signals from the related training data. _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,429,1862.3,1867.27,_So for example, training categorization on news might not _
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,430,1867.27,1872.41,give you Effective plus y for class vine topics and tweets. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,431,1872.41,1879.49,But you can still learn something from news to help look at writing tweets. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,432,1879.49,1885.47,So there are mission learning techniques that can help you do that effectively. 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,433,1885.47,1890.259,Here's a suggested reading where you can find more details about some 
+4 - 11 - 3.11 Text Categorization- Discriminative Classifier Part 2 (00-31-46).srt,434,1890.259,1893.271,more of the methods is that we have covered. 

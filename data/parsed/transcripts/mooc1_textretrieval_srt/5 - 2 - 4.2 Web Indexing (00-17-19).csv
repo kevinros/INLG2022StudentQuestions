@@ -1,0 +1,222 @@
+name,id,from,to,text
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,1,0.172,7.487,[SOUND]. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,2,7.487,11.98,This lecture is about web indexing. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,3,11.98,18.707,_In this lecture, we will continue talking about web search, and _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,4,18.707,24.469,we're going to talk about how to create a web scale index. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,5,24.469,29.484,So once we crawl the web we've got a lot of web pages. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,6,29.484,33.489,The next step is we use the indexer to create the inverted index. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,7,36.54,41.15,_In general, we can use the standard information retrieval techniques for _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,8,41.15,45.9,_creating the index, and that is what we talked about in the previous lecture. _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,9,45.9,50.763,_But there are new challenges that we have to solve for web scale indexing, _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,10,50.763,54.772,and the two main challenges of scalability and efficiency. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,11,54.772,60.874,The index will be so large that it cannot actually fit into any single machine or 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,12,60.874,65.879,_single disk, so we have to store the data on multiple machines. _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,13,66.91,71.80799999999999,_Also, because the data is so large, it's beneficial to process the data in _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,14,71.80799999999999,75.111,parallel so that we can produce the index quickly. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,15,75.111,80.41,_To address these challenges, Google has made a number of innovations. _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,16,80.41,85.52199999999999,_One is the Google File System, that's a general distributed file system _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,17,85.52199999999999,90.89,that can help programmers manage files stored on a cluster of machines. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,18,92.0,93.148,The second is MapReduce. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,19,93.148,97.14,This is a general software framework for supporting parallel computation. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,20,98.96000000000001,104.83,_Hadoop is the most well known open source implementation of MapReduce, _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,21,104.83,107.8,now used in many applications. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,22,110.0,112.47999999999999,So this is the architecture of the Google File System. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,23,113.78999999999999,118.768,It uses a very simple centralized management mechanism to manage 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,24,118.768,121.67,all the specific locations of files. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,25,121.67,124.778,So it maintains the file namespace and 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,26,124.778,129.74,look up table to know where exactly each file is stored. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,27,131.374,135.801,The application client would then talk to this GFS master. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,28,135.801,141.42000000000002,And that obtains specific locations of the files that they want to process. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,29,142.89,151.45,_And once the GFS client obtained the specific information about the files, _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,30,151.45,155.848,then the application client can talk to the specific 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,31,155.848,160.25,servers where the data actually sits directly. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,32,160.25,166.02,So that you can avoid avoid involving other nodes in the network. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,33,166.02,169.73,So when this file system stores the files on machines 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,34,171.59,177.53,the system also would create a fixed sizes of chunks. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,35,177.53,181.46,_So the data files are separate into many chunks, _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,36,181.46,185.1,_each chunk is 64 megabytes, so it's pretty big. _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,37,185.1,189.09,And that's appropriate for large data processing. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,38,189.09,192.52,These chunks are replicated to ensure reliability. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,39,192.52,197.21,_So this is something that the, the programmer doesn't have to worry about, _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,40,197.21,202.21,and it's all taken care of by this file system. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,41,202.21,204.11,_So from the application perspective, _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,42,204.11,209.02,the programmer would see this as if it's a normal file. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,43,209.02,213.712,_The program doesn't have to know where exactly it's stored, and _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,44,213.712,218.841,can just invoke high level operators to process the file. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,45,218.841,223.436,And another feature is that the data transfer is directly between 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,46,223.436,228.797,_application and chunk servers, so it's, it's efficient in this sense. _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,47,231.003,235.45,_On top of the Google file system, and Google also proposed MapReduce as _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,48,235.45,239.21,a general framework for parallel programming. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,49,239.21,245.668,_Now, this is very useful to support a task like building inverted index. _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,50,245.668,250.852,And so this framework is hiding a lot of 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,51,250.852,255.89600000000002,low level features from the programmer. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,52,255.89600000000002,261.285,_As a result, the programmer can make minimum effort to create _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,53,261.285,266.58,a application that can be run on a large cluster in parallel. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,54,268.99,273.12,_So, some of the low level details hidden in the framework, _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,55,273.12,279.52,_including the specific natural communications, or load balancing, _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,56,279.52,286.63,_or where the tasks are executed, all these details are hidden from the programmer. _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,57,287.88,292.25,There is also a nice feature which is the built-in fault tolerance. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,58,292.25,296.902,_If one server is broken, let's say, so it's down, and _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,59,296.902,299.675,_then some tasks may not be finished, _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,60,299.675,305.3,then the MapReduce mechanism would know that the task has not been done. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,61,305.3,311.6,So it would automatically dispatch the task on other servers that can do the job. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,62,311.6,315.13,_And therefore, again, the programmer doesn't have to worry about that. _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,63,315.13,317.57,So here's how MapReduce works. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,64,317.57,323.203,_The input data will be separated into a number of key, value pairs. _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,65,323.203,326.3,_Now, what exactly is in the value will depend on the data. _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,66,326.3,329.96,And it's actually a fairly general framework to allow you to 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,67,329.96,333.0,just partition the data into different parts. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,68,333.0,335.46,And each part can be then processed in parallel. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,69,337.1,341.161,_Each key, value pair will be then sent to a map function. _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,70,341.161,345.68,_The programmer will write the map function, of course. _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,71,345.68,350.63,And then the map function will then process this key value pair and 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,72,350.63,353.87,_generate the, a number of other key value pairs. _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,73,353.87,358.37,_Of course, the new key is usually different from the old key _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,74,358.37,362.08,that's given to the map as input. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,75,362.08,365.77,And these key value pairs are the output of the map function. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,76,365.77,370.863,And all the outputs of all the map functions will be then collected. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,77,370.863,376.029,And then they will be further sorted based on the key. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,78,376.029,381.025,And the result is that all the values that are associated with the same 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,79,381.025,384.26,key will be then grouped together. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,80,384.26,390.52,So now we've got a pair of a key and a set of values that are attached to this key. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,81,391.63,394.96,So this will then be sent to a reduce function. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,82,396.33,401.338,_Now, of course, each reduce function will handle a different each a different key. _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,83,401.338,405.95,_So we will send this, these output values to _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,84,405.95,410.58,_multiple reduce functions, each handling a unique key. _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,85,412.22,418.51,_A reduce function would then process the input, which is a key and _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,86,418.51,424.92,_a set of values, to produce another set of key values as the output. _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,87,424.92,430.08,_So these output values would be then collected together to form the, _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,88,430.08,431.23,the final output. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,89,432.39,437.21,_Right, so this is the, the general framework of MapReduce. _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,90,437.21,441.58,_Now, the programmer only needs to write the the map function and _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,91,441.58,443.29,the reduce function. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,92,443.29,448.09,Everything else is actually taken care of by the MapReduce framework. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,93,448.09,452.92,_So, you can see the programmer really only needs to do minimum work. _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,94,452.92,458.409,_And with such a framework, the input data can be partitioned into multiple parts. _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,95,458.409,463.207,_Each is processed in parallel first by map, and _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,96,463.207,468.44100000000003,_then in the process after we reach the reduce stage, _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,97,468.44100000000003,473.677,then much more reduce functions can also further process 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,98,473.677,480.39,the different keys and their associated values in parallel. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,99,480.39,485.73,So it achieves some it 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,100,485.73,490.56,achieves the purpose of parallel processing of a large dataset. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,101,490.56,495.04,_So let's take a look at a simple example, and that's word counting. _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,102,496.69,501.57,The input is is files containing words. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,103,501.57,505.928,_And the output that we want to generate is the number of occurrences of each word, so _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,104,505.928,507.124,it's the word count. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,105,507.124,511.582,_Right, we know this, this kind of counting would be useful to, _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,106,511.582,516.388,_for example, assess the popularity of a word in a large collection. _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,107,516.388,522.87,And this is useful for achieving a factor of IDF weighting for search. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,108,522.87,524.077,So how can we solve this problem? 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,109,524.077,528.457,_Well, one natural thought is that, well, this task can be done in _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,110,528.457,533.156,parallel by simply counting different parts of the file in parallel and 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,111,533.156,537.0,_then in the end, we just combine all the counts. _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,112,537.0,541.775,And that's precisely the idea of what we can do with MapReduce. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,113,542.91,546.42,We can parallelize lines in this input file. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,114,547.67,552.83,_So more specifically, we can assume the input to each map function _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,115,552.83,560.45,is a key value pair that represents the line number and the stream on that line. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,116,560.45,565.49,_So the first line, for example, has a key of one. _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,117,565.49,572.24,_And the value is Hello World Bye World, and just four words on that line. _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,118,572.24,576.24,So this key-value pair will be sent to a map function. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,119,576.24,580.67,The map function would then just count the words in this line. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,120,581.7,583.88,_And in this case, of course, there are only four words. _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,121,583.88,585.7090000000001,Each word gets a count of one. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,122,585.7090000000001,592.77,_And these are the output that you see here on this slide, from this map function. _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,123,592.77,595.46,_So, the map function is really very simple. _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,124,595.46,600.85,_If you look at the, what the pseudocode looks like on the right side, you see, _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,125,600.85,604.89,_it simply needs to iterate over all the words in this line, _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,126,604.89,608.33,_and then just call a Collect function, _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,127,609.34,614.08,which means it would then send the word and the counter to the collector. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,128,614.08,619.28,The collector would then try to sort all these key value pairs 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,129,619.28,620.77,from different map functions. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,130,620.77,621.36,Right? 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,131,621.36,622.94,So the functions are very simple. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,132,622.94,630.3,And the programmer specifies this function as a way to process each part of the data. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,133,631.62,634.822,_Of course, the second line will be handled by a different map function, _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,134,634.822,636.99,which will produce a similar output. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,135,636.99,640.89,_Okay, now the output from the map functions will be then sent to _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,136,640.89,641.78,a collector. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,137,641.78,645.55,And the collector will do the internal grouping or sorting. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,138,645.55,650.15,_So at this stage, you can see we have collected multiple pairs. _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,139,650.15,653.85,Each pair is a word and its count in the line. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,140,653.85,658.96,_So once we see all these these pairs, _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,141,658.96,663.57,_then we can sort them based on the key, which is the word. _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,142,663.57,668.59,_So we will collect all the counts of a word, like bye, here, together. _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,143,669.61,672.12,_And similarly, we do that for other words. _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,144,672.12,673.615,_Like Hadoop, hello, etc. _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,145,673.615,679.09,_So each word now is attached to a number of values, a number of counts. _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,146,680.71,687.86,And these counts represent the occurrences of this word in different lines. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,147,687.86,693.08,_So now we have got a new pair of a key and a set of values, _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,148,693.08,697.36,and this pair will then be fed into a reduce function. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,149,697.36,702.02,So the reduce function now will have to finish the job of counting 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,150,702.02,704.45,the total occurrences of this word. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,151,704.45,707.02,_Now it has already got all these partial counts, so _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,152,707.02,710.37,all it needs to do is simply to add them up. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,153,710.37,713.72,So the reduce function shown here is very simple as well. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,154,713.72,718.565,_You have a counter and then iterate over all the words that you see in this array, _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,155,718.565,721.761,_and then you just accumulate these counts, right. _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,156,723.07,726.985,_And then finally, you output the key and and the total count, _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,157,726.985,731.14,and that's precisely what we want as the output of this whole program. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,158,732.23,737.313,_So, you can see, this is already very similar to building a inverted index, _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,159,737.313,741.438,_and if you think about it, the output here is indexed by a word, and _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,160,741.438,744.41,_we have already got a dictionary, basically. _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,161,744.41,746.44,We have got the count. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,162,746.44,752.27,But what's missing is the document IDs and the specific 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,163,754.0,758.24,frequency counts of words in those documents. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,164,758.24,763.26,So we can modify this slightly to actually build a inverted index in parallel. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,165,763.26,765.8,So here's one way to do that. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,166,765.8,771.28,_So in this case, we can assume the input to a map function is a pair _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,167,771.28,774.45,of a key which denotes the document ID and 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,168,774.45,779.55,the value denoting the string for that document. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,169,779.55,782.42,So it's all the words in that document. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,170,782.42,785.3,And so the map function will do something very similar to 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,171,785.3,787.91,what we have seen in the water company example. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,172,787.91,794.192,It simply groups all the counts of this word in this document together. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,173,794.192,797.99,And it will then generate a set of key value pairs. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,174,797.99,799.36,Each key is a word. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,175,800.36,807.62,And the value is the count of this word in this document plus the document ID. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,176,807.62,811.79,_Now, you can easily see why we need to add document ID here. _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,177,811.79,816.222,_Of course, later, in the inverted index, we would like to keep this information, so _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,178,816.222,818.604,the map function should keep track of it. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,179,818.604,821.738,And this can then be sent to the reduce function later. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,180,821.738,826.71,_Now, similarly another document D2 can be processed in the same way. _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,181,826.71,830.89,_So in the end, again, there is a sorting mechanism that would group them together. _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,182,830.89,835.861,And then we will have just a key like java associated 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,183,835.861,840.052,_with all the documents that match this key, or _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,184,840.052,844.925,_all the documents where java occurred, and their counts, _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,185,844.925,849.52,_right, so the counts of java in those documents. _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,186,849.52,851.679,And this will be collected together. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,187,851.679,855.85,_And this will be, so fed into the reduced function. _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,188,855.85,859.23,_So, now you can see, the reduce function has already got input _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,189,859.23,861.85,_that looks like a inverted index entry, right? _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,190,861.85,867.28,_So, it's just the word and all the documents that contain the word and _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,191,867.28,870.9,the frequency of the word in those documents. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,192,870.9,877.68,_So, all you need to do is simply to concatenate them into a continuous chunk _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,193,877.68,883.65,_of data, and this can be then retained into a file system. _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,194,883.65,887.96,_So basically, the reduce function is going to do very minimal work. _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,195,889.45,898.01,_And so, this is pseudo-code for inverted index construction. _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,196,898.01,905.29,_Here we see two functions, procedure Map and procedure Reduce. _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,197,905.29,913.44,And a programmer would specify these two functions to program on top of MapReduce. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,198,913.44,918.95,_And you can see, basically, they are doing what I just described. _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,199,918.95,920.413,_In the case of Map, _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,200,920.413,926.18,_it's going to count the occurrences of a word using an associative array, _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,201,926.18,932.05,and will output all the counts together with the document ID here. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,202,932.05,936.206,_Right? So this, _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,203,937.25,942.4,_the reduce function, on the other hand simply concatenates _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,204,942.4,947.57,all the input that it has been given and 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,205,947.57,953.408,then put them together as one single entry for this key. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,206,953.408,958.25,_So this is a very simple MapReduce function, yet _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,207,958.25,963.43,_it would allow us to construct an inverted index at a very large scale, and _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,208,963.43,967.07,data can be processed by different machines. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,209,967.07,971.0,The program doesn't have to take care of the details. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,210,972.04,978.93,So this is how we can do parallel index construction for web search. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,211,980.04,984.72,_So to summarize, web scale indexing requires some new techniques that _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,212,984.72,988.949,go beyond the standard traditional indexing techniques. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,213,988.949,994.59,_Mainly, we have to store index on multiple machines, and this is usually _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,214,994.59,1000.24,_done by using a file system like Google File System, a distributed file system. _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,215,1000.24,1005.222,_And secondly, it requires creating the index in parallel, because it's so _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,216,1005.222,1009.427,_large, it takes a long time to create an index for all the documents. _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,217,1009.427,1013.561,_So if we can do it in parallel, it would be much faster, and _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,218,1013.561,1016.69,this is done by using the MapReduce framework. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,219,1017.85,1022.059,_Note that the both the GFS and MapReduce frameworks are very general, so _
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,220,1022.059,1024.898,they can also support many other applications. 
+5 - 2 - 4.2 Web Indexing (00-17-19).srt,221,1027.697,1037.697,[MUSIC] 

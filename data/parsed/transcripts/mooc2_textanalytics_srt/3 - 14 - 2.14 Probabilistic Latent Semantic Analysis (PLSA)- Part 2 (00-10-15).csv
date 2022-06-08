@@ -1,0 +1,147 @@
+name,id,from,to,text
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,1,0.366,3.025,[SOUND] 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,2,8.261,11.1,We can compute this maximum estimate 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,3,11.1,12.823,by using the EM algorithm. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,4,12.823,16.544,_So in the e step, we now have to introduce more hidden _
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,5,16.544,21.536,_variables because we have more topics, so our hidden variable z now, _
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,6,21.536,25.69,which is a topic indicator can take more than two values. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,7,25.69,28.888,_So specifically will take a k plus one values, _
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,8,28.888,32.2,with b in the noting the background. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,9,32.2,35.527,_And once locate, to denote other k topics, right. _
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,10,36.75,40.74,_So, now the e step, as you can recall is your augmented data, and _
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,11,40.74,44.64,by predicting the values of the hidden variable. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,12,44.64,47.7,So we're going to predict for 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,13,47.7,52.99,_a word, whether the word has come from one of these k plus one distributions. _
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,14,52.99,57.02,This equation allows us to predict the probability 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,15,57.02,61.54,that the word w in document d is generated from topic zero sub j. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,16,63.01,66.05,And the bottom one is the predicted probability that this 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,17,66.05,68.74,word has been generated from the background. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,18,68.74,74.19,Note that we use document d here to index the word. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,19,74.19,74.99,Why? 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,20,74.99,78.86,Because whether a word is from a particular topic 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,21,78.86,80.78999999999999,actually depends on the document. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,22,80.78999999999999,82.21000000000001,Can you see why? 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,23,82.21000000000001,84.36,_Well, it's through the pi's. _
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,24,84.36,86.87,The pi's are tied to each document. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,25,86.87,91.02,_Each document can have potentially different pi's, right. _
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,26,91.02,93.67,The pi's will then affect our prediction. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,27,93.67,95.22,_So, the pi's are here. _
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,28,95.22,96.74000000000001,And this depends on the document. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,29,98.50999999999999,101.1,And that might give a different guess for 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,30,101.1,104.88,_a word in different documents, and that's desirable. _
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,31,106.32,110.49000000000001,_In both cases we are using the Baye's Rule, as I explained, basically _
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,32,110.49000000000001,115.3,assessing the likelihood of generating word from each of this division and 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,33,115.3,116.1,there's normalize. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,34,117.8,119.13,What about the m step? 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,35,119.13,124.42,_Well, we may recall the m step is we take advantage of the inferred z values. _
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,36,124.42,125.63,To split the counts. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,37,125.63,129.92,And then collected the right counts to re-estimate the parameters. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,38,129.92,134.49,_So in this case, we can re-estimate our coverage of probability. _
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,39,134.49,141.54,And this is re-estimated based on collecting all the words in the document. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,40,142.65,146.8,And that's why we have the count of the word in document. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,41,146.8,149.13,And sum over all the words. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,42,149.13,153.32999999999998,And then we're going to look at to what extent this word belongs to 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,43,154.34,156.71,the topic theta sub j. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,44,156.71,159.21,And this part is our guess from each step. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,45,160.5,164.93,This tells us how likely this word is actually from theta sub j. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,46,164.93,167.372,_And when we multiply them together, _
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,47,167.372,171.801,we get the discounted count that's located for topic theta sub j. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,48,171.801,174.567,_And when we normalize this over all the topics, _
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,49,174.567,178.524,we get the distribution of all the topics to indicate the coverage. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,50,178.524,184.619,_And similarly, the bottom one is the estimated probability of word for a topic. _
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,51,184.619,189.635,_And in this case we are using exact the same count, you can see this is _
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,52,189.635,194.651,_the same discounted account, ] it tells us to what extend we should _
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,53,194.651,199.765,allocate this word [INAUDIBLE] but then normalization is different. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,54,199.765,204.325,_Because in this case we are interested in the word distribution, so _
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,55,204.325,207.365,we simply normalize this over all the words. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,56,207.365,213.202,_This is different, in contrast here we normalize the amount all the topics. _
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,57,213.202,215.67000000000002,It would be useful to take a comparison between the two. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,58,217.42000000000002,219.56799999999998,This give us different distributions. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,59,219.56799999999998,226.142,And these tells us how to improve the parameters. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,60,228.279,235.275,_And as I just explained, in both the formula is we have a maximum _
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,61,235.275,240.534,estimate based on allocated word counts [INAUDIBLE]. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,62,240.534,244.882,Now this phenomena is actually general phenomena in all the EM algorithms. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,63,244.882,249.909,_In the m-step, you general with the computer expect an account of _
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,64,249.909,255.025,_the event based on the e-step result, and then you just and _
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,65,255.025,260.27,_then count to four, particular normalize it, typically. _
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,66,260.27,264.965,_So, in terms of computation of this EM algorithm, we can _
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,67,264.965,272.29,actually just keep accounting various events and then normalize them. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,68,272.29,274.163,_And when we thinking this way, _
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,69,274.163,277.993,we also have a more concise way of presenting the EM Algorithm. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,70,277.993,282.44,It actually helps us better understand the formulas. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,71,282.44,284.89,So I'm going to go over this in some detail. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,72,284.89,288.692,_So as a algorithm we first initialize all the unknown perimeters randomly, _
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,73,288.692,290.2,all right. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,74,290.2,295.0,_So, in our case, we are interested in all of those coverage perimeters, pi's and _
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,75,295.0,299.83,_awarded distributions [INAUDIBLE], and we just randomly normalize them. _
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,76,299.83,305.83,This is the initialization step and then we will repeat until likelihood converges. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,77,305.83,308.39,Now how do we know whether likelihood converges? 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,78,308.39,311.74,We can do compute likelihood at each step and 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,79,311.74,314.96,compare the current likelihood with the previous likelihood. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,80,314.96,317.227,_If it doesn't change much and we're going to say it stopped, right. _
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,81,319.52,323.392,_So, in each step we're going to do e-step and m-step. _
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,82,323.392,327.715,In the e-step we're going to do augment the data by predicting 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,83,327.715,330.31,the hidden variables. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,84,330.31,334.4,_In this case, the hidden variable, z sub d, w, _
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,85,334.4,341.03,indicates whether the word w in d is from a topic or background. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,86,341.03,343.509,_And if it's from a topic, which topic. _
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,87,343.509,346.767,_So if you look at the e-step formulas, _
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,88,346.767,352.302,_essentially we're actually normalizing these counts, sorry, _
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,89,352.302,358.82,these probabilities of observing the word from each distribution. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,90,358.82,363.25,_So you can see, basically the prediction of word _
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,91,363.25,367.65,from topic zero sub j is based on the probability of 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,92,367.65,372.03,selecting that theta sub j as a word distribution to generate the word. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,93,372.03,375.99,Multiply by the probability of observing the word from that distribution. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,94,377.03,382.03,And I said it's proportional to this because in the implementation of 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,95,382.03,385.82,EM algorithm you can keep counter for 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,96,385.82,388.83,_this quantity, and in the end it just normalizes it. _
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,97,388.83,392.08,So the normalization here is over all the topics and 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,98,392.08,394.31,then you would get a probability. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,99,396.40999999999997,401.682,_Now, in the m-step, we do the same, and we are going to collect these. _
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,100,403.98,406.3,Allocated account for each topic. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,101,407.77,409.69,And we split words among the topics. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,102,410.97,413.74,And then we're going to normalize them in different ways to obtain 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,103,413.74,414.89,the real estimate. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,104,414.89,420.68,_So for example, we can normalize among all the topics to get the re-estimate of pi, _
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,105,420.68,422.04,the coverage. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,106,422.04,428.23,Or we can re-normalize based on all the words. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,107,428.23,429.739,And that would give us a word distribution. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,108,430.96,435.86,_So it's useful to think algorithm in this way because when implemented, you can just _
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,109,435.86,442.42,_use variables, but keep track of these quantities in each case. _
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,110,443.8,451.21,And then you just normalize these variables to make them distribution. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,111,452.21,455.34000000000003,Now I did not put the constraint for this one. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,112,455.34000000000003,458.55,And I intentionally leave this as an exercise for you. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,113,458.55,462.218,_And you can see, what's the normalizer for this one? _
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,114,462.218,467.43,It's of a slightly different form but it's essentially the same as 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,115,467.43,470.94,the one that you have seen here in this one. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,116,470.94,474.71,So in general in the envisioning of EM algorithms you will see you accumulate 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,117,474.71,479.42,_the counts, various counts and then you normalize them. _
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,118,481.66,486.752,_So to summarize, we introduced the PLSA model. _
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,119,486.752,490.65,Which is a mixture model with k unigram language models representing k topics. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,120,491.83,496.85,And we also added a pre-determined background language model to 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,121,496.85,499.36,_help discover discriminative topics, _
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,122,499.36,502.37,because this background language model can help attract the common terms. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,123,503.8,508.589,And we select the maximum estimate that we cant discover topical 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,124,508.589,510.403,knowledge from text data. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,125,510.403,515.304,_In this case PLSA allows us to discover two things, one is k worded distributions, _
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,126,515.304,517.265,each one representing a topic and 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,127,517.265,520.779,the other is the proportion of each topic in each document. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,128,521.99,526.51,And such detailed characterization of coverage of topics in documents 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,129,526.51,528.89,can enable a lot of photo analysis. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,130,528.89,533.97,_For example, we can aggregate the documents in the particular _
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,131,533.97,538.8,pan period to assess the coverage of a particular topic in a time period. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,132,538.8,542.54,That would allow us to generate the temporal chains of topics. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,133,542.54,548.543,We can also aggregate topics covered in documents associated with a particular 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,134,548.543,554.198,_author and then we can categorize the topics written by this author, etc. _
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,135,554.198,560.19,_And in addition to this, we can also cluster terms and cluster documents. _
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,136,560.19,563.23,_In fact, each topic can be regarded as a cluster. _
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,137,563.23,565.84,So we already have the term clusters. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,138,565.84,568.24,_In the higher probability, the words can be regarded as _
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,139,569.63,574.56,belonging to one cluster represented by the topic. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,140,574.56,577.06,_Similarly, documents can be clustered in the same way. _
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,141,577.06,581.948,We can assign a document to the topic cluster 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,142,581.948,585.944,that's covered most in the document. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,143,585.944,590.61,_So remember, pi's indicate to what extent each topic is covered in the document, _
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,144,590.61,595.51,we can assign the document to the topical cluster that has the highest pi. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,145,597.34,600.975,And in general there are many useful applications of this technique. 
+3 - 14 - 2.14 Probabilistic Latent Semantic Analysis (PLSA)- Part 2 (00-10-15).srt,146,603.146,613.146,[MUSIC] 

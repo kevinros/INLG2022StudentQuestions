@@ -1,0 +1,127 @@
+name,id,from,to,text
+5 - 15 - 4.8 Course Summary (00-09-48).srt,1,0.346,4.854,[SOUND] This lecture is 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,2,4.854,10.366,a summary of this course. 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,3,10.366,17.529,This map shows the major topics we have covered in this course. 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,4,17.529,22.672,And here are some key high-level take-away messages. 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,5,22.672,28.326,First we talk about natural language content analysis. 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,6,28.326,34.524,Here the main take-away message is natural language processing is the foundation for 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,7,34.524,38.642,_textual retrieval, but current NLP isn't robust enough. _
+5 - 15 - 4.8 Course Summary (00-09-48).srt,8,38.642,43.488,So the back of words replenishing is generally 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,9,43.488,47.715,the main method used in modern search engines and 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,10,47.715,52.373,it's often sufficient for most of the search tasks. 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,11,52.373,56.406,_But obviously, for more compass search tasks, _
+5 - 15 - 4.8 Course Summary (00-09-48).srt,12,56.406,61.258,then we need a deeper measurement processing techniques. 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,13,61.258,65.31700000000001,And we then talked about a high-level strategies for 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,14,65.31700000000001,69.837,text access and we talked about push versus pull in plural. 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,15,69.837,72.414,_We talked about a query, which is browsing. _
+5 - 15 - 4.8 Course Summary (00-09-48).srt,16,72.414,77.59,_Now, in general in future search engines, we should integrate _
+5 - 15 - 4.8 Course Summary (00-09-48).srt,17,77.59,82.59,all these techniques to provide a multiple information access and 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,18,82.59,87.606,then we talked about a number of issues related to search engines. 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,19,87.606,93.825,We talked about the search problem and we framed that as a ranking problem and 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,20,93.825,98.40899999999999,we talked about the a number of retrieval methods. 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,21,98.40899999999999,102.164,We start with an overview of the vector space model and 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,22,102.164,107.52799999999999,probabilistic model and then we talked about the vector space model in that. 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,23,107.52799999999999,112.75,We also later talked about leverageable learning approach and 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,24,112.75,115.602,that's probabilistic model. 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,25,115.602,122.408,_And here, the main take-away message is that model retrieval functions tend to _
+5 - 15 - 4.8 Course Summary (00-09-48).srt,26,122.408,127.049,look similar and they generally use various heuristics. 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,27,127.049,133.905,Most important ones are TF-IDF waiting document length normalization and 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,28,133.905,141.164,that TF is often transformed through a sub-linear transformation function and 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,29,141.164,146.133,then we talked about how to implement a retrieval system. 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,30,146.133,153.274,And here the main technique that we talked about how to construct an inverted index. 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,31,153.274,158.535,So that we can prepare the system to answer a query quickly and 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,32,158.535,164.277,_we talked about how to, to fast research by using the inverted index and _
+5 - 15 - 4.8 Course Summary (00-09-48).srt,33,164.277,169.636,we then talked about how to evaluate the text retrieval system 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,34,169.636,174.815,mainly introduced the Cranfield evaluation methodology. 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,35,174.815,179.587,This was a very important the various methodology of that can be applied to 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,36,179.587,180.348,many tasks. 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,37,180.348,185.189,We talked about the major evaluation measures. 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,38,185.189,189.193,So the most important measures for 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,39,189.193,194.832,a search engine are MAP mean average precision and nDCG. 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,40,194.832,198.994,Normalized discounted accumulative gain and also precision and 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,41,198.994,200.904,record the two basic measures. 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,42,200.904,204.96699999999998,And we then talked about feedback techniques. 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,43,204.96699999999998,208.573,And we talked about the rock you in the vector space model and 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,44,208.573,211.905,the mixture model in the language modeling approach. 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,45,211.905,216.837,Feedback is very important technique especially considering 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,46,216.837,221.861,the opportunity of learning from a lot of pixels on the web. 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,47,221.861,225.159,We then talked about the web search. 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,48,225.159,229.5,_And here, we talk about the how to use parallel indexing to resolve _
+5 - 15 - 4.8 Course Summary (00-09-48).srt,49,229.5,233.764,_the scalability issue in indexing, we introduce a MapReduce and _
+5 - 15 - 4.8 Course Summary (00-09-48).srt,50,233.764,239.055,then we talked about the how to using information interacting pull search. 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,51,239.055,241.623,We talked about page random 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,52,241.623,246.196,hits as the major algorithms to analyze links on the web. 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,53,246.196,249.895,We then talked about learning to rank. 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,54,249.895,254.498,This is a use of machine learning to combine multiple features for 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,55,254.498,256.017,improving scoring. 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,56,256.017,261.881,Not only the effectiveness can be improved using this approach but 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,57,261.881,266.866,_we can also improve the robustness of the ranking function, _
+5 - 15 - 4.8 Course Summary (00-09-48).srt,58,266.866,271.946,_so that it's not easy to spam a search engine with just a, _
+5 - 15 - 4.8 Course Summary (00-09-48).srt,59,271.946,275.198,a some features to promote a page. 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,60,275.198,279.59000000000003,_And finally, we talked about the future of web search. _
+5 - 15 - 4.8 Course Summary (00-09-48).srt,61,279.59000000000003,284.473,We talked about some major interactions that we might assume 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,62,284.473,289.376,in the future in improving the current generation of search engines. 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,63,289.376,295.138,_And then finally, we talked about the Recommender System and these are systems _
+5 - 15 - 4.8 Course Summary (00-09-48).srt,64,295.138,300.133,to implement the push mode and we'll talk about the two approaches. 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,65,300.133,304.169,_One is content based, one is collaborative filtering and _
+5 - 15 - 4.8 Course Summary (00-09-48).srt,66,304.169,306.402,they can be combined together. 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,67,306.402,311.449,Now an obvious missing piece in this 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,68,311.449,316.352,_picture is the user, you can see. _
+5 - 15 - 4.8 Course Summary (00-09-48).srt,69,316.352,320.762,_So user interface is also a important component in any search engine, _
+5 - 15 - 4.8 Course Summary (00-09-48).srt,70,320.762,324.618,even though the current search interface is relatively simple. 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,71,324.618,329.641,There actually have been a lot of studies of user interfaces 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,72,329.641,335.468,_related to visualization for example and this is topic to that, _
+5 - 15 - 4.8 Course Summary (00-09-48).srt,73,335.468,339.695,you can learn more by reading this book. 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,74,339.695,347.497,It's a excellent book about all kind of studies of search user interface. 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,75,347.497,352.3,_If you want to know more about the, the topics that we talked about, _
+5 - 15 - 4.8 Course Summary (00-09-48).srt,76,352.3,356.959,you can also read some additional readings that are listed here. 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,77,356.959,361.725,_In this short course, we are only managing to cover some basic topics in text _
+5 - 15 - 4.8 Course Summary (00-09-48).srt,78,361.725,363.561,retrieval in search engines. 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,79,363.561,369.616,And these resources provide additional information about more advanced topics and 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,80,369.616,375.508,they give more thorough treatment of some of the topics that we talked about. 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,81,375.508,381.045,And a main source is synthesis digital library 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,82,381.045,386.064,where you can see a lot of short textbook or 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,83,386.064,389.949,textbooks or long tutorials. 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,84,389.949,395.23,They tend to provide us with a lot of information to explain a topic and 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,85,395.23,400.158,there are multiple series that are related to this course. 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,86,400.158,403.478,_One is information concepts, retrieval and services. _
+5 - 15 - 4.8 Course Summary (00-09-48).srt,87,403.478,405.866,Another is human Language technology and 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,88,405.866,409.695,_yet, another is artificial intelligence and machine learning. _
+5 - 15 - 4.8 Course Summary (00-09-48).srt,89,409.695,414.98,There are also some major journals and conferences listed over here that 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,90,414.98,419.957,tend to have a lot of research papers related to the topic of this course. 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,91,419.957,421.39,And finally for 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,92,421.39,427.182,_more information about resources including readings and tool kits, etc. _
+5 - 15 - 4.8 Course Summary (00-09-48).srt,93,427.182,429.408,You can check out this URL. 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,94,429.408,434.52,_So, if you have not taken the text mining course in this _
+5 - 15 - 4.8 Course Summary (00-09-48).srt,95,434.52,438.408,_in this data mining specialization series, _
+5 - 15 - 4.8 Course Summary (00-09-48).srt,96,438.408,443.452,_then naturally, the next step is to take that calls. _
+5 - 15 - 4.8 Course Summary (00-09-48).srt,97,443.452,447.263,_As this picture shows to mine the text data, _
+5 - 15 - 4.8 Course Summary (00-09-48).srt,98,447.263,451.492,we generally need two kinds of techniques. 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,99,451.492,454.313,_One is text retrieval, which is covered in this course. _
+5 - 15 - 4.8 Course Summary (00-09-48).srt,100,454.313,459.204,_And these techniques will help us convert raw big text data into small, _
+5 - 15 - 4.8 Course Summary (00-09-48).srt,101,459.204,464.923,_relevant text data, which are actually needed in the specific application. _
+5 - 15 - 4.8 Course Summary (00-09-48).srt,102,464.923,469.355,_And human plays important role in mining any text data, _
+5 - 15 - 4.8 Course Summary (00-09-48).srt,103,469.355,473.89300000000003,because text data is written for humans to consume. 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,104,473.89300000000003,479.53499999999997,_So, involving humans in the process of data mining is very important. _
+5 - 15 - 4.8 Course Summary (00-09-48).srt,105,479.53499999999997,484.071,_And in this course, we have covered various strategies to _
+5 - 15 - 4.8 Course Summary (00-09-48).srt,106,484.071,487.875,help users get access to the most relevant data. 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,107,487.875,493.727,These techniques are also essential in any text mining system to help 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,108,493.727,498.338,provide providence and to help users interpret the inner 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,109,498.338,503.592,patterns that the user would find through text data mining. 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,110,503.592,507.944,_So, in general, the user would have to go back to the original data to better _
+5 - 15 - 4.8 Course Summary (00-09-48).srt,111,507.944,509.51800000000003,understand the patterns. 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,112,509.51800000000003,513.795,_So the text mining course or rather text mining and ana, _
+5 - 15 - 4.8 Course Summary (00-09-48).srt,113,513.795,516.616,_analytics course will be deal, _
+5 - 15 - 4.8 Course Summary (00-09-48).srt,114,516.616,521.5409999999999,dealing with what to do once the user has found the information. 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,115,521.5409999999999,526.127,So this is a in this picture where we would convert 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,116,526.127,529.134,the text data into action or knowledge. 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,117,529.134,533.962,And this has to do with helping users to go further digest with 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,118,533.962,538.032,a found information or to find the patterns and 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,119,538.032,543.335,to reveal knowledge buried in text and such knowledge can be used in 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,120,543.335,549.798,application system to help decision-making or to help user finish a task. 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,121,549.798,556.328,_So, if you have not taken that course the natural step and _
+5 - 15 - 4.8 Course Summary (00-09-48).srt,122,556.328,562.242,the natural next step would be to take that course. 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,123,562.242,565.435,Thank you for taking this course. 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,124,565.435,570.678,I hope you have found this course to be useful to you and 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,125,570.678,576.564,I look forward to interacting with you at a future activity. 
+5 - 15 - 4.8 Course Summary (00-09-48).srt,126,576.564,586.564,[MUSIC] 

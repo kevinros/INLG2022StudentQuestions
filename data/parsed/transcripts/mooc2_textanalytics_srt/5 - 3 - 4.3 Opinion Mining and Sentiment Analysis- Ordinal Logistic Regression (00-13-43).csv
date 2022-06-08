@@ -1,0 +1,190 @@
+name,id,from,to,text
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,1,0.025,5.824,[NOISE] This lecture is about the ordinal 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,2,5.824,12.859,logistic regression for sentiment analysis. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,3,12.859,18.73,_So, this is our problem set up for a typical sentiment classification problem. _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,4,18.73,21.46,Or more specifically a rating prediction. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,5,21.46,27.43,_We have an opinionated text document d as input, and we want to generate as output, _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,6,27.43,30.77,a rating in the range of 1 through k so 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,7,30.77,37.11,_it's a discrete rating, and this is a categorization problem. _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,8,37.11,38.96,We have k categories here. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,9,38.96,40.33,Now we could use a regular text for 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,10,40.33,42.95,categorization technique to solve this problem. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,11,42.95,48.89,But such a solution would not consider the order and dependency of the categories. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,12,48.89,53.4,_Intuitively, the features that can distinguish category 2 from 1, _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,13,53.4,58.38,_or rather rating 2 from 1, may be similar to _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,14,58.38,62.749,those that can distinguish k from k-1. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,15,62.749,68.61,_For example, positive words generally suggest a higher rating. _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,16,68.61,71.95,When we train categorization 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,17,71.95,76.67,problem by treating these categories as independent we would not capture this. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,18,77.7,78.76,So what's the solution? 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,19,78.76,83.83,Well in general we can order to classify and there are many different approaches. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,20,83.83,86.33,And here we're going to talk about one of them that 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,21,86.33,89.03,called ordinal logistic regression. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,22,89.03,93.218,_Now, let's first think about how we use logistical regression for _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,23,93.218,94.41,a binary sentiment. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,24,94.41,96.46000000000001,A categorization problem. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,25,96.46000000000001,100.7,So suppose we just wanted to distinguish a positive from a negative and 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,26,100.7,104.07,that is just a two category categorization problem. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,27,104.07,107.66,So the predictors are represented as X and these are the features. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,28,107.66,110.08,And there are M features all together. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,29,110.08,112.39,The feature value is a real number. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,30,112.39,115.36,And this can be representation of a text document. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,31,116.78999999999999,122.15,_And why it has two values, binary response variable 0 or 1. _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,32,122.15,124.94,_1 means X is positive, 0 means X is negative. _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,33,124.94,129.94,And then of course this is a standard two category categorization problem. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,34,129.94,131.99,We can apply logistical regression. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,35,131.99,137.62,_You may recall that in logistical regression, we assume the log _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,36,137.62,142.82,_of probability that the Y is equal to one, is _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,37,142.82,148.49,_assumed to be a linear function of these features, as shown here. _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,38,148.49,155.0,_So this would allow us to also write the probability of Y equals one, given X _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,39,156.03,161.82,in this equation that you are seeing on the bottom. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,40,163.02,167.30599999999998,So that's a logistical function and 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,41,167.30599999999998,172.421,_you can see it relates this probability to, _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,42,172.421,177.97,probability that y=1 to the feature values. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,43,177.97,182.96,_And of course beta i's are parameters here, so this is _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,44,182.96,187.4,just a direct application of logistical regression for binary categorization. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,45,188.79,191.73,_What if we have multiple categories, multiple levels? _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,46,191.73,196.6,Well we have to use such a binary logistical regression problem 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,47,196.6,200.0,to solve this multi level rating prediction. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,48,201.17000000000002,206.215,And the idea is we can introduce multiple binary class files. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,49,206.215,209.79,_In each case we asked the class file to predict the, _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,50,209.79,215.21,_whether the rating is j or above, or the rating's lower than j. _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,51,215.21,221.55,_So when Yj is equal to 1, it means rating is j or above. _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,52,221.55,224.07999999999998,_When it's 0, that means the rating is Lower than j. _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,53,225.36,231.52,_So basically if we want to predict a rating in the range of 1-k, _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,54,231.52,237.07,we first have one classifier to distinguish a k versus others. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,55,237.07,239.22,And that's our classifier one. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,56,239.22,242.275,And then we're going to have another classifier to distinguish it. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,57,242.275,245.85,At k-1 from the rest. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,58,245.85,246.7,That's Classifier 2. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,59,246.7,251.989,_And in the end, we need a Classifier to distinguish between 2 and 1. _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,60,251.989,256.281,So altogether we'll have k-1 classifiers. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,61,257.83,263.58,Now if we do that of course then we can also solve this problem 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,62,263.58,267.75,and the logistical regression program will be also very straight forward 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,63,267.75,270.91,as you have just seen on the previous slide. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,64,270.91,273.76,Only that here we have more parameters. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,65,273.76,277.56600000000003,_Because for each classifier, we need a different set of parameters. _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,66,277.56600000000003,281.889,_So now the logistical regression classifies index by J, _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,67,281.889,284.78,which corresponds to a rating level. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,68,286.19,291.90999999999997,And I have also used of J to replace beta 0. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,69,291.90999999999997,294.39,And this is to. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,70,294.39,297.451,_Make the notation more consistent, _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,71,297.451,302.8,than was what we can show in the ordinal logistical regression. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,72,302.8,309.0,So here we now have basically k minus one regular logistic regression classifiers. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,73,309.0,312.38,Each has it's own set of parameters. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,74,312.38,318.349,_So now with this approach, we can now do ratings as follows. _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,75,319.35,323.76,_After we have trained these k-1 logistic regression classifiers, _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,76,323.76,330.16,_separately of course, then we can take a new instance and _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,77,330.16,337.085,then invoke a classifier sequentially to make the decision. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,78,337.085,343.955,So first let look at the classifier that corresponds to level of rating K. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,79,343.955,349.01,So this classifier will tell us whether this object should 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,80,349.01,354.23,have a rating of K or about. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,81,354.23,358.36,If probability according to this logistical regression classifier is 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,82,358.36,360.65,_larger than point five, we're going to say yes. _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,83,360.65,361.31,The rating is K. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,84,362.54,366.75,_Now, what if it's not as large as twenty-five? _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,85,366.75,370.02,_Well, that means the rating's below K, right? _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,86,371.05,373.75,_So now, we need to invoke the next classifier, _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,87,373.75,377.53,which tells us whether it's above K minus one. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,88,378.69,380.66,It's at least K minus one. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,89,380.66,383.14,_And if the probability is larger than twenty-five, _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,90,383.14,386.4,_then we'll say, well, then it's k-1. _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,91,386.4,387.96,What if it says no? 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,92,387.96,390.28,_Well, that means the rating would be even below k-1. _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,93,390.28,394.99,And so we're going to just keep invoking these classifiers. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,94,394.99,401.34000000000003,And here we hit the end when we need to decide whether it's two or one. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,95,401.34000000000003,403.51,So this would help us solve the problem. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,96,403.51,404.35,Right? 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,97,404.35,409.32,So we can have a classifier that would actually give us a prediction of a rating 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,98,409.32,411.12,in the range of 1 through k. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,99,411.12,415.51,Now unfortunately such a strategy is not an optimal way of solving this problem. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,100,415.51,421.661,And specifically there are two problems with this approach. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,101,421.661,423.85,So these equations are the same as. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,102,423.85,425.11,You have seen before. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,103,426.25,430.1,Now the first problem is that there are just too many parameters. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,104,430.1,431.63,There are many parameters. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,105,431.63,435.54,_Now, can you count how many parameters do we have exactly here? _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,106,435.54,438.68,Now this may be a interesting exercise. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,107,438.68,439.44,To do. So 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,108,439.44,444.25,you might want to just pause the video and try to figure out the solution. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,109,444.25,447.06,How many parameters do I have for each classifier? 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,110,448.58,450.28,And how many classifiers do we have? 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,111,451.84,457.31,_Well you can see the, and so it is that for each classifier we have _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,112,457.31,462.68,_n plus one parameters, and we have k minus one classifiers all together, _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,113,462.68,469.03,so the total number of parameters is k minus one multiplied by n plus one. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,114,469.03,469.82,That's a lot. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,115,469.82,474.096,_A lot of parameters, so when the classifier has a lot of parameters, _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,116,474.096,478.53,_we would in general need a lot of data out to actually help us, training data, _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,117,478.53,483.22,to help us decide the optimal parameters of such a complex model. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,118,484.45,485.785,So that's not ideal. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,119,487.225,490.751,_Now the second problems is that these problems, _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,120,490.751,495.595,_these k minus 1 plus fives, are not really independent. _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,121,495.595,497.305,These problems are actually dependent. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,122,498.372,503.172,_In general, words that are positive would make the rating higher _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,123,505.04200000000003,507.082,for any of these classifiers. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,124,507.082,508.752,For all these classifiers. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,125,508.752,511.896,So we should be able to take advantage of this fact. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,126,513.016,517.846,Now the idea of ordinal logistical regression is precisely that. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,127,517.846,522.007,The key idea is just the improvement over the k-1 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,128,522.007,526.39,independent logistical regression classifiers. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,129,526.39,531.59,And that idea is to tie these beta parameters. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,130,531.59,539.07,And that means we are going to assume the beta parameters. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,131,539.07,545.29,These are the parameters that indicated the inference of those weights. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,132,545.29,549.49,And we're going to assume these beta values are the same for 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,133,549.49,550.92,all the K- 1 parameters. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,134,550.92,553.678,_And this just encodes our intuition that, _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,135,553.678,557.98,positive words in general would make a higher rating more likely. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,136,559.55,565.22,_So this is intuitively assumptions, so reasonable for our problem setup. _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,137,565.22,567.41,And we have this order in these categories. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,138,568.63,574.37,_Now in fact, this would allow us to have two positive benefits. _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,139,574.37,577.45,One is it's going to reduce the number of families significantly. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,140,578.75,582.88,And the other is to allow us to share the training data. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,141,582.88,585.86,Because all these parameters are similar to be equal. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,142,585.86,591.2,_So these training data, for different classifiers can then be _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,143,591.2,595.23,shared to help us set the optimal value for beta. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,144,596.28,600.01,So we have more data to help us choose a good beta value. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,145,601.79,602.84,_So what's the consequence, _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,146,602.84,608.01,_well the formula would look very similar to what you have seen before only that, _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,147,608.01,613.44,now the beta parameter has just one index that corresponds to the feature. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,148,613.44,617.82,It no longer has the other index that corresponds to the level of rating. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,149,619.26,621.34,So that means we tie them together. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,150,621.34,626.34,And there's only one set of better values for all the classifiers. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,151,626.34,631.18,_However, each classifier still has the distinct R for value. _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,152,631.18,633.06,The R for parameter. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,153,633.06,635.29,Except it's different. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,154,635.29,639.95,And this is of course needed to predict the different levels of ratings. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,155,639.95,643.84,_So R for sub j is different it depends on j, different than j, _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,156,643.84,646.02,has a different R value. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,157,646.02,648.89,_But the rest of the parameters, the beta i's are the same. _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,158,648.89,653.94,_So now you can also ask the question, how many parameters do we have now? _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,159,653.94,657.14,_Again, that's an interesting question to think about. _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,160,657.14,660.91,_So if you think about it for a moment, and _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,161,660.91,665.415,_you will see now, the param, we have far fewer parameters. _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,162,665.415,668.32,Specifically we have M plus K minus one. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,163,668.32,673.72,_Because we have M, beta values, and plus K minus one of our values. _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,164,675.55,677.575,_So let's just look basically, _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,165,677.575,681.931,that's basically the main idea of ordinal logistical regression. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,166,684.695,691.29,_So, now, let's see how we can use such a method to actually assign ratings. _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,167,691.29,699.73,_It turns out that with this, this idea of tying all the parameters, the beta values. _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,168,699.73,704.71,We also end up by having a similar way to make decisions. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,169,704.71,710.22,_And more specifically now, the criteria whether the predictor probabilities _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,170,710.22,715.44,_are at least 0.5 above, and now is equivalent to _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,171,715.44,720.81,whether the score of the object is larger than or 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,172,720.81,726.39,_equal to negative authors of j, as shown here. _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,173,726.39,731.13,_Now, the scoring function is just taking the linear combination of _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,174,731.13,734.38,all the features with the divided beta values. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,175,735.79,741.82,_So, this means now we can simply make a decision of rating, by looking at _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,176,741.82,747.9,_the value of this scoring function, and see which bracket it falls into. _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,177,747.9,753.121,_Now you can see the general decision rule is thus, _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,178,753.121,759.5840000000001,_when the score is in the particular range of all of our values, _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,179,759.5840000000001,766.569,then we will assign the corresponding rating to that text object. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,180,769.96,773.76,_So in this approach, we're going to score the object _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,181,775.14,779.09,by using the features and trained parameter values. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,182,780.15,784.49,This score will then be compared with a set of trained 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,183,784.49,789.02,alpha values to see which range the score is in. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,184,789.02,789.54,_And then, _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,185,789.54,794.22,_using the range, we can then decide which rating the object should be getting. _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,186,794.22,799.75,_Because, these ranges of alpha values correspond to the different _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,187,799.75,804.84,_levels of ratings, and that's from the way we train these alpha values. _
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,188,804.84,810.909,Each is tied to some level of rating. 
+5 - 3 - 4.3 Opinion Mining and Sentiment Analysis- Ordinal Logistic Regression (00-13-43).srt,189,810.909,820.909,[MUSIC] 

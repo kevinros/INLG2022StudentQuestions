@@ -1,0 +1,272 @@
+name,id,from,to,text
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,1,0.012,3.295,[SOUND]. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,2,7.503,10.086,This lecture is about a statistical language model. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,3,12.378,14.205,_In this lecture, we're go, _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,4,14.205,18.415,we're going to get an introduction to the probabilistic model. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,5,18.415,23.305,This has to do with how many models have to go into these models. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,6,23.305,28.295,_So, it's ready to how we model theory based on a document. _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,7,31.378,34.743,_We're going to talk about, what is a language model and, then, we're going to _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,8,34.743,38.72,talk about the simplest language model called a unigram language model. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,9,38.72,42.76,Which also happens to be the most useful model for text retrieval. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,10,42.76,45.42,And finally we'll discuss possible uses of an m model. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,11,47.2,48.75,What is a language model? 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,12,48.75,53.57,_Well, it's just a probability distribution over word sequences. _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,13,53.57,54.5,_So, here I show one. _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,14,55.88,63.31,This model gives the sequence today's Wednesday a probability of 0.001 it gives 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,15,63.31,68.55,_today Wednesday is a very very small probability, because it's algorithmatical. _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,16,71.59,75.82,You can see the probabilities given to these sentences or 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,17,75.82,79.67,sequences of words can vary a lot depending on the model. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,18,79.67,82.78999999999999,_Therefore, it's clearly context-dependent. _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,19,82.78999999999999,84.1,_In ordinary conversation, _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,20,84.1,88.5,probably today is Wednesday is most popular among these sentences. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,21,88.5,92.08,_But imagine in the context of discussing a private math, _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,22,92.08,96.09,maybe the higher values positive would have a higher probability. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,23,97.18,101.08,This means it can be used to represent as a topic of a test. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,24,102.24000000000001,105.92,The model can also be regarded as a probabilistic mechanism for 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,25,105.92,111.66,_generating text, and this is why it is often called a generating model. _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,26,111.66,112.9,_So, what does that mean? _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,27,112.9,118.134,We can image this is a mechanism that's visualized 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,28,118.134,125.34,here as a [INAUDIBLE] system that can generate a sequences of words. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,29,125.34,128.09,So we can ask for a sequence and 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,30,128.09,132.48,it's to sample a sequence from the device if you want. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,31,132.48,136.06,_And it might generate, for example, today is Wednesday, but _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,32,136.06,138.37,it could have generated many other sequences. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,33,138.37,141.97,_So for example, there are many possibilities, right? _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,34,144.07999999999998,145.77,_So this, in this sense, _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,35,145.77,152.29,we can view our data as basically a sample observed from such a generated model. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,36,152.29,153.86,So why is such a model useful? 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,37,153.86,159.72,_Well, it's mainly because it can quantify the uncertainties in natural language. _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,38,159.72,161.2,Where do uncertainties come from? 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,39,161.2,164.82,_Well, one source is simply the ambiguity in _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,40,164.82,168.87,natural language that we discussed earlier in the lecture. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,41,168.87,172.24,Another source is because we don't have complete understanding. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,42,172.24,175.3,We lack all the knowledge to understand language. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,43,175.3,178.42000000000002,In that case there will be uncertainties as well. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,44,178.42000000000002,181.82,So let me show some examples of questions that we can answer with an average model 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,45,181.82,186.23,that would have an interesting application in different ways. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,46,186.23,188.789,Given that we see John and feels. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,47,189.99,192.97,How likely will we see happy as opposed to habit 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,48,192.97,194.83,as the next word in a sequence of words? 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,49,196.06,199.95,Obviously this would be very useful speech recognition because happy and 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,50,199.95,203.38,habit would have similar acoustical sound. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,51,203.38,205.18,Acoustic signals. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,52,205.18,210.165,But if we look at the language model we know that John feels happy would be 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,53,210.165,212.92000000000002,far more likely than John feels habit. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,54,215.713,219.332,_Another example, given that we observe baseball three times and _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,55,219.332,223.73,gained once in the news article how likely is it about the sports? 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,56,223.73,227.644,This obviously is related to text categorization and information. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,57,228.72,232.15,_Also, given that a user is interested in sports news, _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,58,232.15,235.56,how likely would the user use baseball in a query? 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,59,235.56,240.24,Now this is clearly related to the query that we discussed in the previous lecture. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,60,242.18,245.72,So now let's look at the simplest language model. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,61,245.72,247.91,_Called a lan, unigram language model. _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,62,247.91,249.69,_In such a case, _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,63,249.69,253.57,we assume that we generate the text by generating each word independently. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,64,254.76,259.38,So this means the probability of a sequence of words would be then 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,65,259.38,261.47,the product of the probability of each word. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,66,261.47,265.8,_Now normally they are not independent, right? _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,67,265.8,269.09,So if you have seen a word like language. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,68,269.09,272.2,_Now, we'll make it far more likely to observe model _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,69,272.2,273.57,than if you haven't seen language. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,70,275.46,277.78,So this assumption is not necessary sure but 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,71,277.78,279.9,we'll make this assumption to simplify the model. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,72,281.21,287.06,_So now, the model has precisely n parameters, where n is vocabulary size. _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,73,287.06,291.38,_We have one probability for each word, and all these probabilities must sum to 1. _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,74,291.38,297.45,_So strictly speaking, we actually have N minus 1 parameters. _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,75,300.27,300.88,_As I said, _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,76,300.88,306.28,text can be then be assumed to be a sample drawn from this word distribution. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,77,308.07,312.68,_So for example, now we can ask the device, or the model, _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,78,312.68,318.02,to stochastically generate the words for us instead of in sequences. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,79,318.02,321.33,_So instead of giving a whole sequence like today is Wednesday, _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,80,321.33,323.89,it now gives us just one word. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,81,323.89,326.2,And we can get all kinds of words. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,82,326.2,329.51,And we can assemble these words in a sequence. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,83,329.51,333.64,_So, that would still allows you to compute the probability of today is Wed _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,84,333.64,336.40999999999997,as the product of the three probabilities. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,85,337.42,341.74,_As you can see even though we have not asked the model to generate the, _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,86,341.74,346.82,the sequences it actually allows us to compute the probability for 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,87,346.82,348.49,all the sequences. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,88,348.49,353.56,But this model now only needs N parameters to characterize. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,89,353.56,356.37,That means if we specify all the probabilities for 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,90,356.37,361.85,all the words then the model's behavior is completely specified. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,91,361.85,365.11,_Whereas if you, we don't make this assumption we would have to specify. _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,92,365.11,369.71,Find probabilities for all kinds of combinations of words in sequences. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,93,371.83,376.72,_So by making this assumption, it makes it much easier to estimate these parameters. _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,94,376.72,378.65,So let's see a specific example here. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,95,379.81,385.57,Here I show two unigram lambda models with some probabilities and 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,96,385.57,387.98,these are high probability words that are shown on top. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,97,389.8,393.29,The first one clearly suggests the topic of text mining 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,98,393.29,397.02,because the high probability words are all related to this topic. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,99,397.02,398.69,The second one is more related to health. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,100,399.79,404.36,_Now, we can then ask the question how likely we'll observe a particular text _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,101,404.36,406.52,from each of these three models. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,102,406.52,409.92,_Now suppose with sample words to form the document, _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,103,409.92,413.15,let's say we take the first distribution which are the sample words. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,104,413.15,416.07,What words do you think it would be generated or maybe text? 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,105,416.07,418.28,Or maybe mining maybe another word? 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,106,418.28,418.78,_Even food, _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,107,418.78,422.31,_which has a very small probability, might still be able to show up. _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,108,423.88,426.89,_But in general, high probability words will likely show up more often. _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,109,428.13,431.2,So we can imagine a generated text that looks like text mining. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,110,432.26,434.63,_A factor with a small probability, _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,111,434.63,439.89,you might be able to actually generate the actual text mining paper that 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,112,439.89,444.4,_would actually be meaningful, although the probability would be very, very small. _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,113,446.1,450.39,_In the extreme case, you might imagine we might be able to generate a, _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,114,450.39,455.99,_a text paper, text mining paper that would be accepted by a major conference. _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,115,455.99,458.78,And in that case the probability would be even smaller. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,116,458.78,461.83,_For instance nonzero probability, _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,117,461.83,465.85,if we assume none of the words will have a nonzero probability. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,118,467.43,471.22,_Similarly from the second topic, we can imagine we can generate a food and _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,119,471.22,471.78,nutrition paper. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,120,471.78,478.25,That doesn't mean we cannot generate this paper from text mining distribution. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,121,479.67,485.03,_We can, but the probability would be very, very small, maybe smaller than even _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,122,485.03,489.3,generating a paper that can be accepted by a major conference on text mining. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,123,490.4,492.47,_So the point of here is that given a distribution, _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,124,493.62,498.41,we can talk about the probability of observing a certain kind of text. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,125,498.41,501.73,Some text would have higher probabilities than others. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,126,501.73,503.9,_Now, let's look at the problem in a different way. _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,127,503.9,508.25,_Supposedly, we now have available a particular document. _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,128,508.25,511.96,_In this case, maybe the abstract or the text mining paper, and _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,129,511.96,514.33,we see these word accounts here. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,130,514.33,515.76,The total number of words is 100. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,131,515.76,519.53,Now the question you ask here is a estimation question. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,132,519.53,522.01,_We can ask the question, which model, _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,133,522.01,526.34,_which word distribution has been used to, to generate this text. _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,134,526.34,531.753,Assuming the text has been generated by assembling words from the distribution. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,135,531.753,533.962,So what would be your guess? 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,136,533.962,538.86,_What have to decide what probabilities test, mining, et cetera would have. _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,137,541.754,545.378,So pause a view for a second and try to think about your best guess. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,138,549.212,554.234,_If you're like a lot of people you would have guessed that well, _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,139,554.234,558.204,my best guess is text has a probability of 10 out of 100 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,140,558.204,563.086,because I have seen text ten times and there are a total of 100 words. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,141,563.086,565.99,_So we simply noticed, normalize these counts. _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,142,567.26,569.44,And that's in fact [INAUDIBLE] justified. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,143,569.44,573.65,And your intuition is consistent with mathematical derivation. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,144,573.65,576.16,And this is called a maximum likelihood [INAUDIBLE]. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,145,576.16,580.14,_In this estimator, we'll assume that the parameter settings,. _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,146,580.14,584.65,Are those that would give our observer the maximum probability. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,147,584.65,587.63,_That means if we change these probabilities, _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,148,587.63,593.319,then the probability of observing the particular text would be somewhat smaller. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,149,595.19,598.84,So we can see this has a very simple formula. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,150,598.84,603.83,_Basically, we just need to look at the count of a word _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,151,603.83,607.605,in the document and then divide it by the total number of words in the document. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,152,607.605,608.28,About the length. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,153,609.45,610.37,Normalize the frequency. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,154,611.62,612.93,_Well a consequence of this, _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,155,612.93,618.2,_is of course, we're going to assign 0 probabilities to unseen words. _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,156,618.2,620.35,_If we have an observed word, _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,157,620.35,625.28,there will be no incentive to assign a non-0 probability using this approach. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,158,625.28,626.21,Why? 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,159,626.21,630.628,Because that would take away probability mass for this observed words. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,160,630.628,634.92,And that obviously wouldn't maximize the probability of this 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,161,634.92,637.43,particular observed [INAUDIBLE] data. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,162,637.43,642.05,But one can still question whether this is our best estimator. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,163,642.05,647.82,_Well, the answer depends on what kind of model you want to find, right? _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,164,647.82,652.32,This is made if it's a best model based on this particular layer. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,165,652.32,656.955,But if you're interested in a model that can explain the content of the four 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,166,656.955,661.753,_paper of, for this abstract, then you might have a second thought, right? _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,167,661.753,668.71,So for one thing there should be other things in the body of that article. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,168,668.71,672.25,_So they should not have, zero probabilities, _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,169,672.25,674.48,even though they are not observing the abstract. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,170,674.48,678.803,_We're going to cover this later, in, _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,171,678.803,684.35,discussing the query model. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,172,684.35,689.52,_So, let's take a look at some possible uses of these language models. _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,173,689.52,692.82,One use is simply to use it to represent the topics. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,174,692.82,697.14,So here it shows some general English background that text. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,175,697.14,699.545,We can use this text to estimate a language model. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,176,699.545,702.421,And the model might look like this. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,177,702.421,705.687,Right? So on the top we'll have those all common 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,178,705.687,711.467,_words, is we, is, and then we'll see some common words like these, _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,179,711.467,715.34,_and then some very, very real words in the bottom. _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,180,715.34,717.46,This is the background image model. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,181,717.46,722.1,_It represents the frequency on words, in English in general, right? _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,182,722.1,724.14,This is the background model. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,183,724.14,726.95,_Now, let's look at another text. _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,184,726.95,729.979,_Maybe this time, we'll look at Computer Science research papers. _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,185,731.03,735.03,_So we have a correction of computer science research papers, we do again, _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,186,735.03,739.64,we can just use the maximum where we simply normalize the frequencies. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,187,740.68,743.84,_Now, in this case, we look at the distribution, that looks like this. _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,188,743.84,748.05,_On the top, it looks similar, because these words occur everywhere, _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,189,748.05,749.36,they are very common. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,190,749.36,754.83,But as we go down we'll see words that are more related to computer science. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,191,754.83,756.88,_Computer, or software, or text et cetera. _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,192,758.37,763.05,_So, although here, we might also see these words, for example, computer. _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,193,763.05,767.49,_But, we can imagine the probability here is much smaller than the probability here. _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,194,767.49,770.15,_And we will see many other words here that, _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,195,770.15,773.189,that would be more common in general in English. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,196,775.15,778.69,_So, you can see this distribution characterizes a topic _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,197,778.69,780.83,of the corresponding text. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,198,780.83,783.83,_We can look at the, even the smaller text. _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,199,783.83,786.85,_So, in this case let's look at the text mining paper. _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,200,786.85,789.12,Now if we do the same we have another. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,201,789.12,793.19,Distribution again the can be expected to occur on the top. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,202,793.19,796.15,_Soon we will see text, mining, association, clustering, _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,203,796.15,801.188,these words have relatively high probabilities in contrast 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,204,801.188,807.54,in this distribution has relatively small probability. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,205,807.54,810.14,_So this means, _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,206,810.14,813.87,again based on different text data that we can have a different model. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,207,813.87,816.29,And model captures the topic. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,208,818.04,822.36,So we call this document an LM model and we call this collection LM model. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,209,822.36,826.58,_And later, we'll see how they're used in a retrieval function. _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,210,827.66,830.378,_But now, let's look at the, another use of this model. _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,211,830.378,835.17,Can we statistically find what words are semantically related to computer? 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,212,836.88,838.79,Now how do we find such words? 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,213,838.79,842.169,Well our first thought is well let's take a look at the text that match. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,214,843.23,844.23,Computer. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,215,844.23,848.86,So we can take a look at all the documents that contain the word computer. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,216,848.86,850.93,Let's build a language model. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,217,850.93,853.22,_Okay, see what words we see there. _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,218,853.22,859.44,_Well, not surprisingly, we see these common words on top as we always do. _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,219,859.44,861.9,_So in this case, this language model gives us the. _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,220,861.9,865.38,Conditional probability of seeing a word in the context of computer. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,221,865.38,869.41,And these common words will naturally have high probabilities. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,222,869.41,871.77,_Other words will see computer itself, and _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,223,871.77,875.48,software will have relatively high probabilities. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,224,875.48,878.53,_But we, if we just use this model we cannot. _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,225,878.53,882.06,I just say all these words are semantically related to computer. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,226,883.21,890.7,So intuitively what we'd like to get rid of these these common words. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,227,890.7,891.37,How can we do that? 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,228,892.76,895.579,It turns out that it's possible to use language model to do that. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,229,897.62,900.02,Now I suggest you think about that. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,230,900.02,903.76,So how can we know what words are very common so 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,231,903.76,906.1,that we want to kind of get rid of them. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,232,907.71,910.2,What model will tell us that? 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,233,910.2,914.18,_Well, maybe you can think about that. _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,234,914.18,918.17,So the background language model precisely tells us this information. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,235,918.17,921.24,It tells us what words are common in general. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,236,921.24,923.69,_So if we use this background model, _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,237,923.69,928.4,we would know that these words are common words in general. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,238,928.4,932.07,So it's not surprising to observe them in the context of computer. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,239,932.07,935.89,Whereas computer has a very small probability in general. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,240,935.89,941.01,_So it's very surprising that we have seen computer in, with this probability. _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,241,941.01,942.76,And the same is true for software. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,242,944.21,948.75,So then we can use these two models to somehow figure out. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,243,948.75,952.6,The words that are related to computer. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,244,952.6,957.78,For example we can simply take the ratio of these two probabilities and normalize 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,245,957.78,962.9,the top of the model by the probability of the word in the background model. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,246,962.9,966.15,_So if we do that, we take the ratio, we'll see that then on the top, _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,247,966.15,969.8,_computer, is ramped, and then followed by software, _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,248,969.8,974.23,_program, all these words related to computer. _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,249,974.23,977.96,_Because they occur very frequently in the context of computer, but _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,250,977.96,980.52,not frequently in whole connection. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,251,980.52,983.95,Where as these common words will not have a high probability. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,252,983.95,987.85,_In fact, they have a ratio of about one down there. _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,253,987.85,990.78,Because they are not really related to computer. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,254,990.78,995.67,By taking the same ball of text that contains the computer we don't 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,255,995.67,1000.25,really see more occurrences of that in general. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,256,1000.25,1003.31,_So this shows that even with this simple LM models, _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,257,1003.31,1006.45,we can do some limited analysis of semantics. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,258,1008.37,1013.07,_So in this lecture, we talked about, language model, _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,259,1013.07,1016.36,which is basically a probability distribution over the text. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,260,1016.36,1020.13,We talked about the simplistic language model called unigram language model. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,261,1020.13,1022.76,Which is also just a word distribution. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,262,1022.76,1025.32,We talked about the two uses of a language model. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,263,1025.32,1030.36,_One is to represent the, the topic in a document, in a classing or in general. _
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,264,1030.36,1032.65,The other is discover word associations. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,265,1036.05,1038.68,In the next lecture we're going to talk about the how 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,266,1038.68,1041.51,language model can be used to design a retrieval function. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,267,1043.25,1044.97,Here are two additional readings. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,268,1044.97,1048.86,The first is a textbook on statistical and natural language processing. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,269,1050.572,1055.468,The second is a article that has a survey of statistical language 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,270,1055.468,1059.378,models with other pointers to research work. 
+4 - 2 - 3.2 Statistical Language Models (00-17-53) .srt,271,1059.378,1069.378,[MUSIC] 

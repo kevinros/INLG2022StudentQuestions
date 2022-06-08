@@ -1,0 +1,467 @@
+1
+00:00:00,025 --> 00:00:03,183
+[SOUND]
+
+2
+00:00:03,183 --> 00:00:07,606
+Hello.
+
+3
+00:00:07,606 --> 00:00:11,840
+Welcome to the course Text Mining and
+Analytics.
+
+4
+00:00:11,840 --> 00:00:13,940
+My name is ChengXiang Zhai.
+
+5
+00:00:13,940 --> 00:00:15,110
+I have a nickname, Cheng.
+
+6
+00:00:15,110 --> 00:00:19,830
+I am a professor of the Department of
+Computer Science at the University of
+
+7
+00:00:19,830 --> 00:00:24,240
+Illinois at Urbana-Champaign.
+
+8
+00:00:24,240 --> 00:00:27,740
+This course is a part of
+a data mining specialization
+
+9
+00:00:27,740 --> 00:00:32,320
+offered by the University of
+Illinois at Urbana-Champaign.
+
+10
+00:00:32,320 --> 00:00:37,770
+In addition to this course,
+there are four other courses offered by
+
+11
+00:00:39,380 --> 00:00:44,770
+Professor Jiawei Han,
+Professor John Hart and me, followed by
+
+12
+00:00:44,770 --> 00:00:49,370
+a capstone project course that
+all of us will teach together.
+
+13
+00:00:51,810 --> 00:00:58,207
+This course is particularly related to
+another course in the specialization,
+
+14
+00:00:58,207 --> 00:01:04,900
+mainly text retrieval and search engines
+in that both courses are about text data.
+
+15
+00:01:07,117 --> 00:01:12,463
+In contrast, pattern discovery and
+cluster analysis are about
+
+16
+00:01:12,463 --> 00:01:18,352
+algorithms more applicable to
+all kinds of data in general.
+
+17
+00:01:18,352 --> 00:01:23,110
+The visualization course is also
+relatively general in that the techniques
+
+18
+00:01:23,110 --> 00:01:25,351
+can be applied to all kinds of data.
+
+19
+00:01:28,312 --> 00:01:33,490
+This course addresses a pressing need for
+harnessing big text data.
+
+20
+00:01:35,708 --> 00:01:39,651
+Text data has been growing
+dramatically recently,
+
+21
+00:01:39,651 --> 00:01:44,582
+mostly because of the advance of
+technologies deployed on the web
+
+22
+00:01:44,582 --> 00:01:48,900
+that would enable people to
+quickly generate text data.
+
+23
+00:01:50,920 --> 00:01:55,070
+So, I listed some of
+the examples on this slide
+
+24
+00:01:57,030 --> 00:02:01,710
+that can show a variety of text
+data that are available today.
+
+25
+00:02:01,710 --> 00:02:05,670
+For example, if you think about
+the data on the internet, on the web,
+
+26
+00:02:07,350 --> 00:02:11,450
+everyday we are seeing many
+web pages being created.
+
+27
+00:02:13,160 --> 00:02:17,040
+Blogs are another kind
+of new text data that
+
+28
+00:02:17,040 --> 00:02:19,680
+are being generated quickly by people.
+
+29
+00:02:19,680 --> 00:02:23,040
+Anyone can write a blog
+article on the web.
+
+30
+00:02:23,040 --> 00:02:25,880
+New articles of course have always been
+
+31
+00:02:25,880 --> 00:02:30,090
+a main kind of text data that
+being generated everyday.
+
+32
+00:02:31,160 --> 00:02:34,168
+Emails are yet another kind of text data.
+
+33
+00:02:34,168 --> 00:02:41,290
+And literature is also representing
+a large portion of text data.
+
+34
+00:02:41,290 --> 00:02:46,048
+It's also especially very important
+because of the high quality
+
+35
+00:02:46,048 --> 00:02:50,570
+in the data.
+
+36
+00:02:50,570 --> 00:02:55,760
+That is,
+we encode our knowledge about the word
+
+37
+00:02:55,760 --> 00:03:03,350
+using text data represented by
+all the literature articles.
+
+38
+00:03:03,350 --> 00:03:06,630
+It's a vast amount of knowledge of
+
+39
+00:03:08,508 --> 00:03:12,999
+all the text and
+data in these literature articles.
+
+40
+00:03:14,300 --> 00:03:21,400
+Twitter is another representative
+text data representing social media.
+
+41
+00:03:21,400 --> 00:03:23,020
+Of course there are forums as well.
+
+42
+00:03:24,520 --> 00:03:27,690
+People are generating tweets very quickly
+
+43
+00:03:27,690 --> 00:03:32,920
+indeed as we are speaking perhaps many
+people have already written many tweets.
+
+44
+00:03:32,920 --> 00:03:35,990
+So, as you can see there
+are all kinds of text data
+
+45
+00:03:35,990 --> 00:03:37,739
+that are being generated very quickly.
+
+46
+00:03:38,740 --> 00:03:42,350
+Now these text data present
+some challenges for people.
+
+47
+00:03:43,380 --> 00:03:49,699
+It's very hard for anyone to
+digest all the text data quickly.
+
+48
+00:03:49,699 --> 00:03:55,577
+In particular, it's impossible for
+scientists to read all of the for
+
+49
+00:03:55,577 --> 00:03:58,970
+example or for
+anyone to read all the tweets.
+
+50
+00:04:01,170 --> 00:04:06,730
+So there's a need for tools to help
+people digest text data more efficiently.
+
+51
+00:04:09,110 --> 00:04:12,400
+There is also another
+interesting opportunity
+
+52
+00:04:12,400 --> 00:04:16,680
+provided by such big text data, and
+that is it's possible to leverage
+
+53
+00:04:16,680 --> 00:04:20,880
+the amount of text data to
+discover interesting patterns to
+
+54
+00:04:20,880 --> 00:04:25,800
+turn text data into actionable knowledge
+that can be useful for decision making.
+
+55
+00:04:27,140 --> 00:04:32,624
+So for example,
+product managers may be interested
+
+56
+00:04:32,624 --> 00:04:37,710
+in knowing the feedback of
+customers about their products,
+
+57
+00:04:37,710 --> 00:04:42,198
+knowing how well their
+products are being received as
+
+58
+00:04:42,198 --> 00:04:46,520
+compared with the products of competitors.
+
+59
+00:04:46,520 --> 00:04:48,240
+This can be a good opportunity for
+
+60
+00:04:48,240 --> 00:04:54,160
+leveraging text data as we have seen
+a lot of reviews of product on the web.
+
+61
+00:04:54,160 --> 00:04:59,830
+So if we can develop a master text
+mining techniques to tap into such
+
+62
+00:04:59,830 --> 00:05:07,210
+a [INAUDIBLE] to extract the knowledge and
+opinions of people about these products,
+
+63
+00:05:07,210 --> 00:05:12,298
+then we can help these product managers
+to gain business intelligence or
+
+64
+00:05:12,298 --> 00:05:16,419
+to essentially feedback
+from their customers.
+
+65
+00:05:18,410 --> 00:05:20,400
+In scientific research, for example,
+
+66
+00:05:20,400 --> 00:05:26,250
+scientists are interested in knowing
+the trends of research topics, knowing
+
+67
+00:05:29,270 --> 00:05:33,710
+about what related fields have discovered.
+
+68
+00:05:33,710 --> 00:05:37,920
+This problem is especially important
+in biology research as well.
+
+69
+00:05:37,920 --> 00:05:41,280
+Different communities tend to
+use different terminologies, yet
+
+70
+00:05:41,280 --> 00:05:44,960
+they're starting very similar problems.
+
+71
+00:05:44,960 --> 00:05:49,900
+So how can we integrate the knowledge
+that is covered in different communities
+
+72
+00:05:49,900 --> 00:05:52,360
+to help study a particular problem?
+
+73
+00:05:52,360 --> 00:05:56,459
+It's very important, and
+it can speed up scientific discovery.
+
+74
+00:05:57,900 --> 00:06:02,100
+So there are many such examples
+where we can leverage the text data
+
+75
+00:06:02,100 --> 00:06:05,680
+to discover useable knowledge
+to optimize our decision.
+
+76
+00:06:06,740 --> 00:06:08,090
+The main techniques for
+
+77
+00:06:08,090 --> 00:06:13,300
+harnessing big text data are text
+retrieval and text mining.
+
+78
+00:06:13,300 --> 00:06:17,480
+So these are two very much
+related technologies.Yet,
+
+79
+00:06:17,480 --> 00:06:20,800
+they have somewhat different purposes.
+
+80
+00:06:20,800 --> 00:06:29,167
+These two kinds of techniques are covered
+in the tool in this specialization.
+
+81
+00:06:29,167 --> 00:06:34,400
+So, text retrieval on search
+engines covers text retrieval,
+
+82
+00:06:34,400 --> 00:06:39,920
+and this is necessary to
+turn big text data into
+
+83
+00:06:39,920 --> 00:06:45,750
+a much smaller but more relevant text
+data, which are often the data that
+
+84
+00:06:45,750 --> 00:06:51,470
+we need to handle a particular problem or
+to optimize a particular decision.
+
+85
+00:06:51,470 --> 00:06:57,360
+This course covers text mining which
+is a second step in this pipeline
+
+86
+00:06:57,360 --> 00:07:04,340
+that can be used to further process
+the small amount of relevant data
+
+87
+00:07:04,340 --> 00:07:10,170
+to extract the knowledge or to help
+people digest the text data easily.
+
+88
+00:07:10,170 --> 00:07:13,940
+So the two courses are clearly related,
+in fact,
+
+89
+00:07:13,940 --> 00:07:19,810
+some of the techniques are shared by
+both text retrieval and text mining.
+
+90
+00:07:19,810 --> 00:07:24,790
+If you have already taken the text
+retrieval course, then you might see
+
+91
+00:07:24,790 --> 00:07:31,365
+some of the content being repeated
+in this text mining course, although
+
+92
+00:07:31,365 --> 00:07:35,200
+we'll be talking about the techniques
+from a very different perspective.
+
+93
+00:07:35,200 --> 00:07:39,820
+If you have not taken
+the text retrieval course,
+
+94
+00:07:39,820 --> 00:07:45,010
+it's also fine because this
+course is self-contained and
+
+95
+00:07:45,010 --> 00:07:50,270
+you can certainly understand all of
+the materials without a problem.
+
+96
+00:07:50,270 --> 00:07:55,116
+Of course, you might find it
+beneficial to take both courses and
+
+97
+00:07:55,116 --> 00:08:00,517
+that will give you a very complete set
+of skills to handle big text data.
+
+98
+00:08:02,758 --> 00:08:12,758
+[MUSIC]
+

@@ -1,0 +1,244 @@
+name,id,from,to,text
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,1,0.025,4.628,_[SOUND] This lecture is about, _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,2,4.628,11.073,_Opinion Mining and Sentiment Analysis, _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,3,11.073,15.133,_covering, Motivation. _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,4,15.133,18.208,_In this lecture, we're going to start, talking about, _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,5,18.208,21.17,mining a different kind of knowledge. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,6,21.17,27.15,_Namely, knowledge about the observer or humans that have generated the text data. _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,7,27.15,31.07,_In particular, we're going to talk about the opinion mining and sentiment analysis. _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,8,32.66,37.54,_As we discussed earlier, text data can be regarded as data generated _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,9,37.54,41.573,from humans as subjective sensors. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,10,43.45,50.88,_In contrast, we have other devices such as video recorder that can report what's _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,11,50.88,56.67,happening in the real world objective to generate the viewer data for example. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,12,58.29,63.495,_Now the main difference between test data and other data, like video data, _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,13,63.495,70.44,_is that it has rich opinions, _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,14,70.44,75.72,and the content tends to be subjective because it's generated from humans. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,15,76.73,82.17,_Now, this is actually a unique advantaged of text data, as compared with other data, _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,16,82.17,88.19,because the office is a great opportunity to understand the observers. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,17,88.19,91.74,We can mine text data to understand their opinions. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,18,91.74,95.024,_Understand people's preferences, how people think about something. _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,19,97.10499999999999,103.155,So this lecture and the following lectures will be mainly about how we can mine and 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,20,103.155,107.775,analyze opinions buried in a lot of text data. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,21,109.6,113.036,So let's start with the concept of opinion. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,22,113.036,117.58,_It's not that easy to formally define opinion, but _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,23,117.58,122.34,mostly we would define opinion as a subjective 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,24,122.34,127.0,statement describing what a person believes or thinks about something. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,25,128.77,131.14,_Now, I highlighted quite a few words here. _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,26,131.14,135.48,And that's because it's worth thinking a little bit more about these words. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,27,135.48,140.16,And that will help us better understand what's in an opinion. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,28,140.16,145.37,And this further helps us to define opinion more formally. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,29,145.37,150.99,Which is always needed to computation to resolve the problem of opinion mining. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,30,150.99,155.39,So let's first look at the key word of subjective here. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,31,155.39,159.579,This is in contrast with objective statement or factual statement. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,32,160.78,164.13,Those statements can be proved right or wrong. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,33,165.18,169.47,And this is a key differentiating factor from opinions 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,34,169.47,173.52,which tends to be not easy to prove wrong or 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,35,173.52,176.96,_right, because it reflects what the person thinks about something. _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,36,179.01,186.64,_So in contrast, objective statement can usually be proved wrong or correct. _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,37,187.66,195.17,_For example, you might say this computer has a screen and a battery. _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,38,196.7,198.6,Now that's something you can check. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,39,198.6,202.2,It's either having a battery or not. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,40,203.43,208.82,_But in contrast with this, think about the sentence such as, this laptop has _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,41,208.82,214.95,the best battery or this laptop has a nice screen. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,42,214.95,218.629,Now these statements are more subjective and 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,43,218.629,223.29,it's very hard to prove whether it's wrong or correct. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,44,225.68,229.0,_So opinion, is a subjective statement. _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,45,230.26,234.45,And next lets look at the keyword person here. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,46,234.45,236.94,And that indicates that is an opinion holder. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,47,236.94,242.31,_Because when we talk about opinion, it's about an opinion held by someone. _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,48,242.31,244.66,And then we notice that there is something here. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,49,244.66,246.86,So that is the target of the opinion. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,50,246.86,249.81,The opinion is expressed on this something. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,51,251.44,255.78,_And now, of course, believes or thinks implies that _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,52,255.78,261.01,an opinion will depend on the culture or background and the context in general. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,53,261.01,264.76,Because a person might think different in a different context. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,54,264.76,269.69,People from different background may also think in different ways. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,55,269.69,274.24,So this analysis shows that there are multiple elements that we need to include 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,56,274.24,276.58,in order to characterize opinion. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,57,278.15999999999997,282.47,_So, what's a basic opinion representation like? _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,58,282.47,286.83,_Well, it should include at least three elements, right? _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,59,286.83,289.52,_Firstly, it has to specify what's the opinion holder. _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,60,289.52,291.22,So whose opinion is this? 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,61,291.22,295.72,_Second, it must also specify the target, what's this opinion about? _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,62,297.23,300.83,_And third, of course, we want opinion content. _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,63,300.83,303.83,And so what exactly is opinion? 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,64,303.83,305.16,_If you can identify these, _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,65,305.16,310.75,we get a basic understanding of opinion and can already be useful sometimes. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,66,310.75,314.13,_You want to understand further, we want enriched opinion representation. _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,67,315.21,317.5,_And that means we also want to understand that, for example, _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,68,317.5,322.74,the context of the opinion and what situation was the opinion expressed. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,69,322.74,326.29,_For example, what time was it expressed? _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,70,326.29,332.31,_We, also, would like to, people understand the opinion sentiment, and this is _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,71,332.31,339.37,to understand that what the opinion tells us about the opinion holder's feeling. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,72,339.37,343.65999999999997,_For example, is this opinion positive, or negative? _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,73,343.65999999999997,347.911,_Or perhaps the opinion holder was happy or was sad, and _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,74,347.911,352.813,so such understanding obvious to those beyond just Extracting 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,75,352.813,356.527,_the opinion content, it needs some analysis. _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,76,360.484,363.86,So let's take a simple example of a product review. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,77,363.86,369.35,_In this case, this actually expressed the opinion holder, and expressed the target. _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,78,369.35,372.14,So its obviously whats opinion holder and 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,79,372.14,376.86,that's just reviewer and its also often very clear whats the opinion target and 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,80,376.86,381.34,that's the product review for example iPhone 6. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,81,381.34,386.21,When the review is posted usually you can't such information easier. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,82,387.35,390.54,_Now the content, of course, is a review text that's, in general, _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,83,390.54,392.29,also easy to obtain. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,84,392.29,395.92,So you can see product reviews are fairly 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,85,395.92,400.64,easy to analyze in terms of obtaining a basic opinion of representation. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,86,400.64,405.73,_But of course, if you want to get more information, you might know the Context, _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,87,405.73,407.3,for example. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,88,407.3,411.17,The review was written in 2015. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,89,411.17,417.19,_Or, we want to know that the sentiment of this review is positive. _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,90,417.19,422.499,_So, this additional understanding of course adds value to mining the opinions. _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,91,424.34,429.06,_Now, you can see in this case the task is relatively easy and that's _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,92,429.06,433.789,because the opinion holder and the opinion target have already been identified. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,93,434.82,437.23,Now let's take a look at the sentence in the news. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,94,437.23,441.41,_In this case, we have a implicit holder and a implicit target. _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,95,441.41,444.99,And the tasker is in general harder. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,96,444.99,451.7,_So, we can identify opinion holder here, and that's the governor of Connecticut. _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,97,452.79,455.71,We can also identify the target. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,98,455.71,459.15999999999997,_So one target is Hurricane Sandy, but _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,99,459.15999999999997,463.92,there is also another target mentioned which is hurricane of 1938. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,100,463.92,465.85,So what's the opinion? 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,101,465.85,469.65999999999997,_Well, there's a negative sentiment here _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,102,469.65999999999997,472.029,that's indicated by words like bad and worst. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,103,473.36,479.27,_And we can also, then, identify context, New England in this case. _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,104,480.42,483.3,_Now, unlike in the playoff review, _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,105,483.3,488.37,all these elements must be extracted by using natural RAM processing techniques. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,106,488.37,491.1,_So, the task Is much harder. _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,107,491.1,493.02,And we need a deeper natural language processing. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,108,494.86,496.2,And these examples also 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,109,497.55,502.26,suggest that a lot of work can be easy to done for product reviews. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,110,502.26,503.896,That's indeed what has happened. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,111,503.896,509.17,_Analyzing and assembling news is still quite difficult, _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,112,509.17,514.15,it's more difficult than the analysis of opinions in product reviews. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,113,516.81,519.33,Now there are also some other interesting variations. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,114,519.33,523.152,_In fact, here we're going to examine the variations of opinions, _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,115,523.152,524.08,more systematically. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,116,524.08,526.15,_First, let's think about the opinion holder. _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,117,527.3,530.87,The holder could be an individual or it could be group of people. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,118,530.87,533.19,_Sometimes, the opinion was from a committee. _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,119,533.19,535.06,Or from a whole country of people. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,120,536.45,538.77,Opinion target accounts will vary a lot. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,121,538.77,542.87,_It can be about one entity, a particular person, a particular product, _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,122,542.87,544.83,_a particular policy, ect. _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,123,544.83,548.02,But it could be about a group of products. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,124,548.02,550.63,Could be about the products from a company in general. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,125,551.86,554.99,_Could also be very specific about one attribute, though. _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,126,554.99,556.09,An attribute of the entity. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,127,556.09,561.22,_For example, it's just about the battery of iPhone. _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,128,561.22,563.3,It could be someone else's opinion. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,129,563.3,567.16,_And one person might comment on another person's Opinion, etc. _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,130,567.16,571.69,_So, you can see there is a lot of variation here that will cause _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,131,571.69,574.08,the problem to vary a lot. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,132,574.08,578.68,_Now, opinion content, of course, can also vary a lot on the surface, _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,133,578.68,582.05,you can identify one-sentence opinion or one-phrase opinion. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,134,582.05,585.82,_But you can also have longer text to express an opinion, _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,135,585.82,586.69,like the whole article. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,136,588.39,591.55,And furthermore we identify the variation in the sentiment or 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,137,591.55,596.52,emotion damage that's above the feeding of the opinion holder. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,138,596.52,600.46,_So, we can distinguish a positive versus negative or mutual or _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,139,600.46,602.42,_happy versus sad, separate. _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,140,603.82,605.93,_Finally, the opinion context can also vary. _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,141,605.93,610.76,_We can have a simple context, like different time or different locations. _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,142,610.76,613.36,_But there could be also complex contexts, _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,143,613.36,617.84,such as some background of topic being discussed. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,144,617.84,622.42,_So when opinion is expressed in particular discourse context, it has to _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,145,622.42,626.97,be interpreted in different ways than when it's expressed in another context. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,146,626.97,632.23,So the context can be very [INAUDIBLE] to entire discourse context of the opinion. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,147,632.23,634.17,_From computational perspective, _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,148,634.17,639.15,we're mostly interested in what opinions can be extracted from text data. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,149,639.15,642.69,_So, it turns out that we can also differentiate, distinguish, _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,150,642.69,646.81,different kinds of opinions in text data from computation perspective. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,151,646.81,650.44,_First, the observer might make a comment about opinion targeting, _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,152,650.44,654.25,observe the word So in case we have the author's opinion. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,153,654.25,656.83,_For example, I don't like this phone at all. _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,154,656.83,658.37,And that's an opinion of this author. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,155,659.99,667.94,_In contrast, the text might also report opinions about others. _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,156,667.94,673.94,So the person could also Make observation about another person's opinion and 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,157,673.94,675.31,reported this opinion. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,158,675.31,679.74,_So for example, I believe he loves the painting. _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,159,679.74,688.41,And that opinion is really about the It is really expressed by another person here. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,160,688.41,692.25,_So, it doesn't mean this author loves that painting. _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,161,693.64,698.97,_So clearly, the two kinds of opinions need to be analyzed in different ways, _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,162,698.97,700.43,_and sometimes in product reviews, _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,163,700.43,705.22,_you can see, although mostly the opinions are false from this reviewer. _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,164,705.22,709.01,_Sometimes, a reviewer might mention opinions of his friend or her friend. _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,165,711.4,716.24,Another complication is that there may be indirect opinions or 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,166,716.24,719.96,inferred opinions that can be obtained. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,167,719.96,722.5,By making inferences on 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,168,722.5,726.52,what's expressed in the text that might not necessarily look like opinion. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,169,726.52,730.19,_For example, one statement that might be, _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,170,730.19,734.26,this phone ran out of battery in just one hour. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,171,734.26,743.25,_Now, this is in a way a factual statement because It's either true or false, right? _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,172,743.25,747.12,_You can even verify that, but from this statement, _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,173,747.12,751.98,one can also infer some negative opinions about the quality of the battery of 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,174,751.98,757.16,_this phone, or the feeling of the opinion holder about the battery. _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,175,757.16,760.52,The opinion holder clearly wished that the battery do last longer. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,176,762.5,766.46,So these are interesting variations that we need to pay attention to when we 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,177,766.46,767.88,extract opinions. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,178,767.88,772.18,_Also, for this reason about indirect opinions, _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,179,773.79,778.3,it's often also very useful to extract whatever the person has said about 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,180,778.3,783.55,_the product, and sometimes factual sentences like these are also very useful. _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,181,783.55,785.32,_So, from a practical viewpoint, _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,182,785.32,790.09,sometimes we don't necessarily extract the subject of sentences. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,183,790.09,795.24,_Instead, again, all the sentences that are about the opinions are useful for _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,184,795.24,798.42,understanding the person or understanding the product that we commend. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,185,799.52,804.53,So the task of opinion mining can be defined as taking textualized input 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,186,804.53,807.5,to generate a set of opinion representations. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,187,807.5,812.01,_Each representation we should identify opinion holder, _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,188,812.01,814.75,_target, content, and the context. _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,189,814.75,819.07,Ideally we can also infer opinion sentiment from the comment and 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,190,819.07,821.26,the context to better understand. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,191,823.17,823.69,The opinion. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,192,824.7,828.27,_Now often, some elements of the representation are already known. _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,193,828.27,832.14,I just gave a good example in the case of product we'd use 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,194,832.14,837.78,where the opinion holder and the opinion target are often expressly identified. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,195,837.78,845.12,And that's not why this turns out to be one of the simplest opinion mining tasks. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,196,845.12,849.92,_Now, it's interesting to think about the other tasks that might be also simple. _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,197,849.92,852.88,Because those are the cases where you can easily build 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,198,852.88,855.791,applications by using opinion mining techniques. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,199,857.973,863.81,_So now that we have talked about what is opinion mining, we have defined the task. _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,200,863.81,869.26,Let's also just talk a little bit about why opinion mining is very important and 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,201,869.26,871.13,why it's very useful. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,202,871.13,875.79,_So here, I identify three major reasons, three broad reasons. _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,203,875.79,879.29,The first is it can help decision support. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,204,879.29,881.912,It can help us optimize our decisions. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,205,881.912,887.18,_We often look at other people's opinions, look at read the reviews _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,206,887.18,891.1,in order to make a decisions like buying a product or using a service. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,207,892.16,896.77,We also would be interested in others opinions 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,208,896.77,899.33,when we decide whom to vote for example. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,209,900.978,902.03,_And policy makers, _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,210,902.03,907.13,may also want to know people's opinions when designing a new policy. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,211,907.13,910.46,_So that's one general, kind of, applications. _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,212,910.46,912.54,_And it's very broad, of course. _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,213,912.54,917.83,_The second application is to understand people, and this is also very important. _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,214,917.83,922.2,_For example, it could help understand people's preferences. _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,215,922.2,924.46,And this could help us better serve people. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,216,924.46,930.01,_For example, we optimize a product search engine or optimize a recommender system _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,217,930.01,934.29,_if we know what people are interested in, what people think about product. _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,218,935.77,939.87,_It can also help with advertising, of course, and we can have targeted _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,219,939.87,947.17,advertising if we know what kind of people tend to like what kind of plot. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,220,948.56,953.8,Now the third kind of application can be called voluntary survey. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,221,953.8,959.36,_Now this is most important research that used to be done by doing surveys, _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,222,959.36,960.248,doing manual surveys. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,223,960.248,963.67,_Question, answer it. _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,224,963.67,967.68,People need to feel informs to answer their questions. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,225,967.68,973.61,_Now this is directly related to humans as sensors, and we can usually aggregate _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,226,973.61,978.68,opinions from a lot of humans through kind of assess the general opinion. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,227,978.68,984.49,Now this would be very useful for business intelligence where manufacturers 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,228,984.49,989.89,want to know where their products have advantages over others. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,229,991.12,993.7,_What are the winning features of their products, _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,230,993.7,995.65,winning features of competitive products. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,231,997.09,1000.59,Market research has to do with understanding consumers oppinions. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,232,1000.59,1003.535,And this create very useful directive for that. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,233,1003.535,1008.84,Data-driven social science research can benefit from this because they can 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,234,1008.84,1012.29,do text mining to understand the people's opinions. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,235,1012.29,1016.99,_And if you can aggregate a lot of opinions from social media, from a lot of, popular _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,236,1018.29,1024.54,information then you can actually do some study of some questions. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,237,1024.54,1032.31,_For example, we can study the behavior of people on social media on social networks. _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,238,1032.31,1037.89,And these can be regarded as voluntary survey done by those people. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,239,1039.35,1044.13,_In general, we can gain a lot of advantage in any prediction task because we can _
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,240,1044.13,1049.35,leverage the text data as extra data above any problem. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,241,1049.35,1054.371,And so we can use text based prediction techniques to help you 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,242,1054.371,1059.203,make predictions or improve the accuracy of prediction. 
+5 - 1 - 4.1 Opinion Mining and Sentiment Analysis- Motivation (00-17-51).srt,243,1059.203,1069.203,[MUSIC] 

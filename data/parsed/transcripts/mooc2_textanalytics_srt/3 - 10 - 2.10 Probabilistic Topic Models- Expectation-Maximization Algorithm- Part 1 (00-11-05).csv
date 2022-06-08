@@ -1,0 +1,154 @@
+name,id,from,to,text
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,1,0.333,3.735,[MUSIC] 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,2,6.974,10.928,This lecture is about the expectation maximization algorithms or 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,3,10.928,12.84,also called the EM algorithms. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,4,13.99,14.73,_In this lecture, _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,5,14.73,18.63,we're going to continue the discussion of probabilistic topic models. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,6,18.63,22.47,_In particular, we're going to introduce the EM algorithm. _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,7,22.47,27.0,Which is a family of useful algorithms for computing the maximum life or 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,8,27.0,28.88,estimate of mixture models. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,9,28.88,33.82,_So, this is now a familiar scenario of using two components, the mixture _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,10,33.82,39.18,model to try to fact out the background words from one topic or word distribution. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,11,39.18,39.68,Yeah. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,12,41.13,45.41,_So, we're interested in computing _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,13,45.41,50.55,this estimate and we're going to try to adjust these 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,14,50.55,55.81,probability values to maximize the probability of the observed documents. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,15,55.81,58.88,And know that we're assumed all the other parameters are known. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,16,58.88,63.65,_So, the only thing unknown is these water properties, this given by zero something. _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,17,64.87,70.505,_And in this lecture, we're going to look into how to compute this maximum like or _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,18,70.505,72.41,estimate. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,19,72.41,75.58,Now this started with the idea of 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,20,75.58,79.66,separating the words in the text data into two groups. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,21,79.66,83.36,One group will be explained by the background model. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,22,83.36,87.69,The other group will be explained by the unknown topical order. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,23,88.98,92.28,After all this is the basic idea of the mixture model. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,24,92.28,96.34,_But, suppose we actually know which word is from which distribution. _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,25,96.34,101.16,_So that would mean, for example, these words, the, is, and _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,26,101.16,104.7,_we, are known to be from this background origin, distribution. _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,27,105.89,108.47999999999999,_On the other hand, the other words, text mining, _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,28,108.47999999999999,113.33,_clustering, etcetera are known to be from the topic word, distribution. _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,29,114.33,117.46000000000001,_If you can see the color, that these are showing blue. _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,30,117.46000000000001,122.03,_These blue words are, they are assumed to be from the topic word, distribution. _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,31,123.22,127.11,If we already know how to separate these words. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,32,127.11,129.71,Then the problem of estimating the word distribution 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,33,129.71,131.86,_would be extremely simple, right? _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,34,131.86,136.34,_If you think about this for a moment, you'll realize that, well, _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,35,136.34,141.27,we can simply take all these words that are known to be from 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,36,141.27,144.3,_this word distribution, see that's a d and normalize them. _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,37,144.3,149.02,So indeed this problem would be very easy to solve if we had known 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,38,149.02,153.49,which words are from which it is written precisely. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,39,153.49,154.8,_And this is in fact, _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,40,156.47,160.77,making this model no longer a mystery model because we can already observe which 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,41,160.77,164.93,of these distribution has been used to generate which part of the data. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,42,164.93,171.06,_So we, actually go back to the single order distribution problem. _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,43,171.06,173.91,_And in this case, let's call these words _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,44,175.6,181.44,_that are known to be from theta d, a pseudo document of d prime. _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,45,181.44,186.315,And now all we have to do is just normalize these word 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,46,186.315,189.036,_accounts for each word, w sub i. _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,47,189.036,192.703,_And that's fairly straightforward, _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,48,192.703,197.51,and it's just dictated by the maximum estimator. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,49,197.51,203.05,_Now, this idea, however, doesn't work because we in practice, _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,50,203.05,206.39,don't really know which word is from which distribution. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,51,206.39,209.69,But this gives us an idea of perhaps 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,52,209.69,213.23,we can guess which word is from which distribution. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,53,214.45,216.65,_Specifically, given all the parameters, _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,54,217.87,220.55,can we infer the distribution a word is from? 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,55,221.91,227.55,So let's assume that we actually know tentative probabilities for 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,56,227.55,229.37,these words in theta sub d. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,57,230.45,233.28,So now all the parameters are known for this mystery model. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,58,235.39,239.11,_Now let's consider word, like a text. _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,59,239.11,243.611,_So the question is, do you think text is more likely, _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,60,243.611,248.525,having been generated from theta sub d or from theta sub b? 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,61,248.525,249.651,_So, in other words, _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,62,249.651,253.42,we are to infer which distribution has been used to generate this text. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,63,255.05,259.98,_Now, this inference process is a typical of basing an inference situation, _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,64,259.98,264.89,where we have some prior about these two distributions. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,65,264.89,267.86,So can you see what is our prior here? 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,66,267.86,273.37,_Well, the prior here is the probability of each distribution, right. _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,67,273.37,278.2,So the prior is given by these two probabilities. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,68,278.2,284.9,_In this case, the prior is saying that each model is equally likely. _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,69,284.9,288.37,But we can imagine perhaps a different apply is possible. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,70,288.37,292.02,So this is called a pry because this is our guess 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,71,292.02,295.03,of which distribution has been used to generate the word. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,72,295.03,297.95,Before we even observed the word. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,73,297.95,301.93,So that's why we call it a pry. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,74,301.93,305.76,If we don't observe the word we don't know what word has been observed. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,75,305.76,310.116,_Our best guess is to say, well, they're equally likely. _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,76,310.116,311.77,So it's just like flipping a coin. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,77,313.44,314.784,_Now in basic inference, _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,78,314.784,318.91,we typical them with our belief after we have observed the evidence. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,79,318.91,320.6,So what is the evidence here? 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,80,320.6,323.58,_Well, the evidence here is the word text. _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,81,325.01,329.13,Now that we know we're interested in the word text. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,82,329.13,331.786,So text can be regarded as evidence. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,83,331.786,336.87,And if we use base 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,84,336.87,341.7,_rule to combine the prior and the theta likelihood, _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,85,341.7,346.796,what we will end up with is to combine the prior 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,86,346.796,352.7,with the likelihood that you see here. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,87,352.7,357.43,Which is basically the probability of the word text from each distribution. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,88,357.43,360.791,And we see that in both cases text is possible. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,89,360.791,363.759,_Note that even in the background it is still possible, _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,90,363.759,365.83,it just has a very small probability. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,91,367.95,372.15,So intuitively what would be your guess seeing this case? 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,92,373.52,377.46,_Now if you're like many others, you would guess text is probably _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,93,377.46,382.69,_from c.subd it's more likely from c.subd, why? _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,94,382.69,387.902,And you will probably see that it's because text has 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,95,387.902,392.995,a much higher probability here by the C now sub D than 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,96,392.995,399.054,by the background model which has a very small probability. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,97,399.054,404.975,_And by this we're going to say well, text is more likely from theta sub d. _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,98,404.975,409.497,So you see our guess of which distributing has been used with 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,99,409.497,415.014,_the generated text would depend on how high the probability of the data, _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,100,415.014,419.15999999999997,_the text, is in each word distribution. _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,101,419.15999999999997,423.29,We can do tentative guess that distribution that gives is a word 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,102,423.29,424.63,higher probability. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,103,424.63,428.14,And this is likely to maximize the likelihood. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,104,428.14,435.87,_All right, so we are going to choose a word that has a higher likelihood. _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,105,435.87,439.61,_So, in other words we are going to compare these two probabilities _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,106,441.55,445.13,of the word given by each of these distributions. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,107,445.13,450.53,But our guess must also be affected by the prior. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,108,450.53,454.0,So we also need to compare these two priors. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,109,454.0,454.67,Why? 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,110,454.67,458.84000000000003,Because imagine if we adjust these probabilities. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,111,458.84000000000003,460.183,_We're going to say, _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,112,460.183,464.517,the probability of choosing a background model is almost 100%. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,113,464.517,469.5,_Now if we have that kind of strong prior, then that would affect your gas. _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,114,469.5,470.29,_You might think, _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,115,470.29,475.08,_well, wait a moment, maybe texter could have been from the background as well. _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,116,475.08,479.90999999999997,Although the probability is very small here the prior is very high. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,117,481.07,483.77,_So in the end, we have to combine the two. _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,118,483.77,488.25,And the base formula provides us a solid and 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,119,488.25,492.37,principle way of making this kind of guess to quantify that. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,120,493.42,498.01,_So more specifically, let's think about the probability that this word text _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,121,498.01,501.4,has been generated in fact from theta sub d. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,122,501.4,507.42,_Well, in order for text to be generated from theta sub d, two things must happen. _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,123,507.42,511.64,_First, the theta sub d must have been selected. _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,124,511.64,514.59,_So, we have the selection probability here. _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,125,514.59,521.06,And secondly we also have to actually have observed the text from the distribution. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,126,521.06,525.35,_So, when we multiply the two together, we get the probability _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,127,525.35,530.25,that text has in fact been generated from zero sub d. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,128,530.25,533.96,_Similarly, for the background model and _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,129,534.96,540.53,the probability of generating text is another product of similar form. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,130,540.53,545.438,Now we also introduced late in the variable z here to denote 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,131,545.438,551.73,whether the word is from the background or the topic. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,132,551.73,557.428,_When z is 0, it means it's from the topic, theta sub d. _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,133,557.428,561.99,_When it's 1, it means it's from the background, theta sub B. _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,134,561.99,566.92,_So now we have the probability that text is generated from each, _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,135,566.92,572.3,then we can simply normalize them to have estimate 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,136,572.3,576.939,of the probability that the word text is from 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,137,576.939,582.45,theta sub d or from theta sub B. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,138,582.45,586.876,_And equivalently the probability that Z is equal to zero, _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,139,586.876,590.14,given that the observed evidence is text. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,140,591.66,594.97,So this is application of base rule. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,141,596.01,600.3,But this step is very crucial for understanding the EM hours. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,142,601.95,606.857,_Because if we can do this, then we would be able to first, _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,143,606.857,612.0,initialize the parameter values somewhat randomly. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,144,612.0,617.49,_And then, we're going to take a guess of these Z values and _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,145,617.49,620.26,_all, which distributing has been used to generate which word. _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,146,621.38,626.385,And the initialize the parameter values would allow us to have a complete 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,147,626.385,631.226,_specification of the mixture model, which allows us to apply Bayes' _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,148,631.226,636.171,rule to infer which distribution is more likely to generate each word. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,149,636.171,640.88,And this prediction essentially helped us 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,150,640.88,644.87,to separate words from the two distributions. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,151,644.87,648.403,_Although we can't separate them for sure, _
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,152,648.403,653.188,but we can separate then probabilistically as shown here. 
+3 - 10 - 2.10 Probabilistic Topic Models- Expectation-Maximization Algorithm- Part 1 (00-11-05).srt,153,653.188,663.188,[MUSIC] 

@@ -1,0 +1,128 @@
+name,id,from,to,text
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,1,0.0,4.714,[SOUND] 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,2,6.455,9.677,_In general, we can use the empirical count _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,3,9.677,15.34,of events in the observed data to estimate the probabilities. 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,4,15.34,19.08,_And a commonly used technique is called a maximum likelihood estimate, _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,5,19.08,22.6,where we simply normalize the observe accounts. 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,6,22.6,30.33,_So if we do that, we can see, we can compute these probabilities as follows. _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,7,30.33,36.811,_For estimating the probability that we see a water current in a segment, _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,8,36.811,42.773,we simply normalize the count of segments that contain this word. 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,9,42.773,47.278,So let's first take a look at the data here. 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,10,47.278,52.97,_On the right side, you see a list of some, hypothesizes the data. _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,11,52.97,55.01,These are segments. 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,12,55.01,59.86,_And in some segments you see both words occur, they are indicated as ones for _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,13,59.86,61.63,both columns. 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,14,61.63,65.83,_In some other cases only one will occur, so only that column has one and _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,15,65.83,67.59,the other column has zero. 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,16,67.59,71.13,_And in all, of course, in some other cases none of the words occur, _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,17,71.13,73.93,so they are both zeros. 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,18,73.93,79.31,_And for estimating these probabilities, we simply need to collect the three counts. _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,19,80.34,83.56,_So the three counts are first, the count of W1. _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,20,83.56,87.337,And that's the total number of segments that contain word W1. 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,21,87.337,90.95,It's just as the ones in the column of W1. 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,22,90.95,94.47,We can count how many ones we have seen there. 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,23,94.47,100.46000000000001,_The segment count is for word 2, and we just count the ones in the second column. _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,24,100.46000000000001,105.425,And these will give us the total number of segments that contain W2. 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,25,105.425,109.65,The third count is when both words occur. 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,26,109.65,115.37,_So this time, we're going to count the sentence where both columns have ones. _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,27,116.58,120.06,_And then, so this would give us the total number of segments _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,28,120.06,123.51,where we have seen both W1 and W2. 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,29,123.51,128.112,_Once we have these counts, we can just normalize these counts by N, _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,30,128.112,131.019,_which is the total number of segments, and _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,31,131.019,136.706,this will give us the probabilities that we need to compute original information. 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,32,136.706,142.301,_Now, there is a small problem, when we have zero counts sometimes. _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,33,142.301,147.458,_And in this case, we don't want a zero probability because our data may be _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,34,147.458,153.365,_a small sample and in general, we would believe that it's potentially possible for _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,35,153.365,155.80599999999998,a [INAUDIBLE] to avoid any context. 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,36,155.80599999999998,159.63,_So, to address this problem, we can use a technique called smoothing. _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,37,159.63,163.78,_And that's basically to add some small constant to these counts, _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,38,163.78,168.41,and so that we don't get the zero probability in any case. 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,39,168.41,174.25,_Now, the best way to understand smoothing is imagine that we actually observed more _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,40,174.25,180.31,_data than we actually have, because we'll pretend we observed some pseudo-segments. _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,41,180.31,184.65,_I illustrated on the top, on the right side on the slide. _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,42,184.65,190.095,And these pseudo-segments would contribute additional counts 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,43,190.095,195.047,of these words so that no event will have zero probability. 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,44,195.047,198.169,_Now, in particular we introduce the four pseudo-segments. _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,45,198.169,200.99,Each is weighted at one quarter. 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,46,200.99,205.93,And these represent the four different combinations of occurrences of this word. 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,47,205.93,210.49,_So now each event, each combination will have _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,48,210.49,215.39,at least one count or at least a non-zero count from this pseudo-segment. 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,49,215.39,219.38,_So, in the actual segments that we'll observe, _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,50,219.38,224.231,it's okay if we haven't observed all of the combinations. 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,51,224.231,229.671,_So more specifically, you can see the 0.5 here after it comes from the two _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,52,229.671,235.56,_ones in the two pseudo-segments, because each is weighted at one quarter. _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,53,235.56,239.315,_We add them up, we get 0.5. _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,54,239.315,243.319,_And similar to this, 0.05 comes from one single _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,55,243.319,248.24,pseudo-segment that indicates the two words occur together. 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,56,249.45,254.0,And of course in the denominator we add the total number of pseudo-segments that 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,57,254.0,257.52,_we add, in this case, we added a four pseudo-segments. _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,58,257.52,261.78,_Each is weighed at one quarter so the total of the sum is, after the one. _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,59,261.78,264.11,_So, that's why in the denominator you'll see a one there. _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,60,265.99,271.46,_So, this basically concludes the discussion of how to compute a these _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,61,271.46,273.92,four syntagmatic relation discoveries. 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,62,276.09000000000003,282.05,_Now, so to summarize, syntagmatic relation can generally _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,63,282.05,286.24,be discovered by measuring correlations between occurrences of two words. 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,64,286.24,289.58,We've introduced the three concepts from information theory. 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,65,289.58,293.23,_Entropy, which measures the uncertainty of a random variable X. _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,66,293.23,299.06,_Conditional entropy, which measures the entropy of X given we know Y. _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,67,299.06,304.53,_And mutual information of X and Y, which matches the entropy reduction of X _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,68,304.53,311.24,_due to knowing Y, or entropy reduction of Y due to knowing X. _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,69,311.24,312.66,They are the same. 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,70,312.66,317.111,So these three concepts are actually very useful for other applications as well. 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,71,317.111,320.34,That's why we spent some time to explain this in detail. 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,72,320.34,323.15,_But in particular, they are also very useful for _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,73,323.15,325.96,discovering syntagmatic relations. 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,74,325.96,330.142,_In particular, mutual information is a principal way for _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,75,330.142,332.37,discovering such a relation. 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,76,332.37,337.241,It allows us to have values computed on different pairs of 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,77,337.241,342.211,words that are comparable and so we can rank these pairs and 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,78,342.211,348.20799999999997,discover the strongest syntagmatic from a collection of documents. 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,79,348.20799999999997,353.7,_Now, note that there is some relation between syntagmatic relation discovery and _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,80,353.7,355.90999999999997,[INAUDIBLE] relation discovery. 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,81,355.90999999999997,361.835,So we already discussed the possibility of using BM25 to achieve waiting for 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,82,361.835,366.683,terms in the context to potentially also suggest the candidates 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,83,366.683,371.187,that have syntagmatic relations with the candidate word. 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,84,371.187,377.95799999999997,_But here, once we use mutual information to discover syntagmatic relations, _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,85,377.95799999999997,384.436,we can also represent the context with this mutual information as weights. 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,86,384.436,389.567,So this would give us another way to represent 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,87,389.567,393.49,_the context of a word, like a cat. _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,88,393.49,397.394,_And if we do the same for all the words, then we can cluster these words or _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,89,397.394,402.32,compare the similarity between these words based on their context similarity. 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,90,402.32,405.85,So this provides yet another way to do term weighting for 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,91,405.85,408.8,paradigmatic relation discovery. 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,92,408.8,415.77,And so to summarize this whole part about word association mining. 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,93,415.77,419.19,_We introduce two basic associations, called a paradigmatic and _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,94,419.19,421.0,a syntagmatic relations. 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,95,421.0,425.71,_These are fairly general, they apply to any items in any language, so _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,96,425.71,430.009,_the units don't have to be words, they can be phrases or entities. _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,97,431.12,436.235,_We introduced multiple statistical approaches for discovering them, _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,98,436.235,440.762,_mainly showing that pure statistical approaches are visible, _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,99,440.762,444.84,are variable for discovering both kind of relations. 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,100,444.84,448.8,_And they can be combined to perform joint analysis, as well. _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,101,448.8,455.04,_These approaches can be applied to any text with no human effort, _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,102,455.04,459.94,_mostly because they are based on counting of words, yet _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,103,459.94,462.69,they can actually discover interesting relations of words. 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,104,464.36,467.88,_We can also use different ways with defining context and segment, and _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,105,467.88,471.36,this would lead us to some interesting variations of applications. 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,106,471.36,476.19,_For example, the context can be very narrow like a few words, around a word, or _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,107,476.19,480.76,_a sentence, or maybe paragraphs, as using differing contexts would _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,108,480.76,485.33,allows to discover different flavors of paradigmatical relations. 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,109,485.33,489.362,_And similarly, counting co-occurrences using let's say, _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,110,489.362,493.38,visual information to discover syntagmatical relations. 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,111,493.38,499.11,_We also have to define the segment, and the segment can be defined as a narrow _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,112,499.11,502.56,text window or a longer text article. 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,113,502.56,506.508,And this would give us different kinds of associations. 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,114,506.508,512.677,_These discovery associations can support many other applications, _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,115,512.677,517.701,in both information retrieval and text and data mining. 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,116,517.701,524.1,_So here are some recommended readings, if you want to know more about the topic. _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,117,524.1,526.88,_The first is a book with a chapter on collocations, _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,118,526.88,530.81,which is quite relevant to the topic of these lectures. 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,119,530.81,535.12,The second is an article about using various 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,120,535.12,538.16,statistical measures to discover lexical atoms. 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,121,538.16,543.764,Those are phrases that are non-compositional. 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,122,543.764,547.56,_For example, hot dog is not really a dog that's hot, _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,123,548.61,551.55,blue chip is not a chip that's blue. 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,124,551.55,556.18,And the paper has a discussion about some techniques for discovering such phrases. 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,125,557.4,563.227,The third one is a new paper on a unified way to discover both paradigmatical 
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,126,563.227,569.441,_relations and a syntagmatical relations, using random works on word graphs. _
+2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).srt,127,569.441,579.441,[SOUND] 

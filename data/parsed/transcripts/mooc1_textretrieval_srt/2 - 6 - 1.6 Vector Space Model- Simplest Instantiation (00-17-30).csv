@@ -1,0 +1,244 @@
+name,id,from,to,text
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,1,0.008,10.008,[SOUND]. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,2,11.025,16.226,_In this lecture, we're going to talk about how to instantiate a vector space model, _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,3,16.226,19.509,so that we can get a very specific ranking function. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,4,23.08,27.74,_So this is the, to continue the discussion of the vector space model. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,5,27.74,32.8,Which is one particular approach to design ranking function. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,6,34.44,38.547,And we are going to talk about how we use the general framework of 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,7,38.547,40.37,the the vector space model. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,8,40.37,48.27,As a guidance to instantiate the framework to derive a specific ranking function. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,9,48.27,53.36,And we're going to cover the simplest instantiation of the framework. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,10,55.36,58.39,So as we discussed in the previous lecture. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,11,58.39,60.59,The vector space model is really a framework. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,12,60.59,62.39,_It isn't, didn't say. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,13,65.46,71.03999999999999,_As we discussed in the previous lecture, vector space model is really a framework. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,14,71.03999999999999,73.16,_It doesn't, say many things. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,15,74.7,77.8,So for example here it shows that it did not say 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,16,77.8,79.47,how we should define the dimension. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,17,80.77,85.939,It also did not say how we place a documented vector in this space. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,18,87.13,91.22,It did not say how we place a query vector in this vector space. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,19,92.5,96.45,_And finally, it did not say how we should match a similarity _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,20,96.45,99.02000000000001,between the query vector and the document vector. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,21,100.58,104.87,_So, you can imagine, in order to implement this model. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,22,106.03999999999999,112.94,_We have to see specifically, how we are computing these vectors. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,23,112.94,116.7,What is exactly xi and what is exactly yi? 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,24,118.46000000000001,122.26,This will determine where we place the document vector. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,25,122.26,124.56,Where we place a query vector. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,26,124.56,128.869,_And of course, we also need to say exactly what will be the similarity function. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,27,131.12,135.449,So if we can provide a definition of the concepts that would 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,28,135.449,138.976,_define the dimensions and these xi's, or yi's. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,29,138.976,142.94,_And then, the waits of terms for query and document. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,30,144.81,148.683,Then we will be able to place document vectors and 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,31,148.683,153.07999999999998,query vector in this well defined space. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,32,153.07999999999998,156.313,_And then, if we also specify similarity function, _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,33,156.313,159.699,then we'll have well defined ranking function. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,34,161.44,163.79,So let's see how we can do that. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,35,163.79,167.63,And think about the the simpliciter instantiation. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,36,167.63,172.46,_Actually, I would suggest you to pause the lecture at this point _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,37,172.46,174.98,spend a couple of minute to think about. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,38,174.98,179.59,Suppose you are asked to implement this idea. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,39,179.59,182.25,You've come up with the idea of vector space model. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,40,183.8,187.687,_But you still haven't figured out how to compute this vector exactly, _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,41,187.687,190.32,how to define this similarity function. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,42,190.32,190.82,What would you do? 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,43,192.55,195.71,_So think for a couple of minutes and then, proceed. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,44,200.72,206.428,So let's think about some simplest ways of instantiating this vector space model. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,45,206.428,208.81,_First, how do we define a dimension. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,46,208.81,211.42000000000002,Well the obvious choice is we use 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,47,211.42000000000002,215.41,each word in our vocabulary to define a dimension. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,48,215.41,219.39,_And a whole issue that there are n words in our vocabulary, _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,49,219.39,221.16,therefore there are n dimensions. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,50,221.16,222.822,Each word defines one dimension. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,51,222.822,226.971,And this is basically the Bag of Words Instantiation. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,52,228.876,232.395,Now let's look at how we place vectors in this space. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,53,234.395,237.175,_Again here, the simplest of strategy is to _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,54,238.7,243.55,use a bit vector to represent both a query and a document. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,55,244.7,247.53,And that means each element xi and 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,56,247.53,252.029,yi would be taking a value of either zero or one. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,57,253.27,254.582,_When it's one, _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,58,254.582,260.499,it means the corresponding word is present in the document or in the query. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,59,260.499,265.18,_When it's zero, it's going to mean that it's absent. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,60,267.07,271.22,So you can imagine if the user types in a few word in your query. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,61,271.22,275.798,_Then the query vector, we only have a few ones, many, many zeros. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,62,275.798,281.45,_The document vector in general we have more ones of course, _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,63,281.45,283.12,but we also have many zeros. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,64,283.12,286.7,So it seems the vocabulary is generally very large. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,65,286.7,290.72,Many words don't really occur in a document. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,66,292.11,296.884,Many words will only occasionally occur in the document. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,67,298.428,302.178,A lot of words will be absent in a particular document. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,68,304.082,309.76,_So, now we have placed the documents and the query in the vector space. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,69,311.45,314.24,Let's look at how we match up the similarity. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,70,315.78,319.4,_So, a commonly used similarity measure here is Dot Product. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,71,320.75,325.59,The dot product of two vectors is simply defined as 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,72,325.59,330.58,the sum of the products of the corresponding elements of the two vectors. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,73,330.58,339.031,So here we see that it's the product of x1 and the y1. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,74,339.031,341.033,So here. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,75,341.033,344.043,_And then, x2 multiplied by y2. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,76,344.043,347.1,And then finally xn multiplied by yn. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,77,347.1,348.78,And then we take a sum here. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,78,350.63,352.61,So that's the dot product. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,79,352.61,357.58,_Now we can represent this in a more general way, using a sum here. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,80,358.74,364.11,So this only one of the many different ways of matching the similarity. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,81,364.11,370.61,_So now we see that we have defined the, the dimensions. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,82,370.61,373.16,_We have defined the, the vectors. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,83,373.16,376.05,And we have also defined the similarity function. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,84,376.05,379.49,So now we finally have the Simplest Vector Space Model. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,85,380.555,384.289,_Which is based on the bit vector representation, dot product similarity, _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,86,384.289,385.935,and bag of words instantiation. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,87,387.035,390.195,And the formula looks like this. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,88,390.195,392.415,So this is our formula. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,89,392.415,397.65999999999997,_And that's actually a particular retrieval function, a ranking function all right? _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,90,397.65999999999997,402.93,_Now, we can finally implement this function using a program language and _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,91,402.93,405.35,then rank documents for query. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,92,405.35,410.11,Now at this point you should again pause the lecture 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,93,410.11,413.4,to think about how we can interpret this score. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,94,413.4,416.96,So we have gone through the process of modeling the retrieval problem 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,95,418.93,420.62,using a vector space model. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,96,420.62,422.229,_And then, we make assumptions. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,97,423.95,429.78,About how we place vectors in the vector space and how we define the similarity. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,98,429.78,434.25,So in the end we've got a specific retrieval function shown here. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,99,435.37,438.34,Now the next step is to think about what of this individual function 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,100,438.34,439.6,actually makes sense? 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,101,440.61,444.14,_I, can we expect this function to actually perform well? _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,102,444.14,447.28,_Where we use it to ramp it up, for use in query. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,103,448.79,455.87,_So, it's worth thinking about, what is this value that we are calculating? _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,104,455.87,460.25,_So in the end, we've got a number, but what does this number mean? _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,105,460.25,460.99,Is it meaningful? 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,106,462.19,464.34000000000003,So spend a couple minutes to think about that. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,107,465.88,466.54,_And of course, _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,108,466.54,472.6,the general question here is do you believe this is a good ranking function? 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,109,472.6,474.5,Would it actually work well? 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,110,474.5,478.51,_So again, think about how to interpret this value. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,111,478.51,480.2,Is it actually meaningful? 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,112,481.29,483.21,Does it mean something? 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,113,483.21,486.56,So related to how well that document matches the query. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,114,488.25,491.53,So in order to assess whether this simplest 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,115,491.53,495.46,_vector space model actually works well, let's look at the example. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,116,497.16,502.57,So here I show some sample documents and a simple query. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,117,502.57,506.73,The query is news about the presidential campaign. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,118,506.73,508.58,And we have five documents here. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,119,508.58,512.22,_They cover different, terms in the query. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,120,514.72,517.67,_And if you look at the, these documents for a moment. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,121,518.88,519.89,You may realize that 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,122,521.88,526.91,some documents are probably relevant in some cases or probably not relevant. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,123,528.3,532.698,_Now if I ask you to rank these documents, how would you rank them? _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,124,534.336,536.16,This is basically our ideal ranking. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,125,536.16,537.27,Right. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,126,537.27,541.18,When humans can examine the documents and then try to rank them. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,127,543.45,547.241,_Now, so think for a moment and take a look at this slide. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,128,547.241,550.19,And perhaps by pausing the lecture. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,129,552.53,556.09,_So I think most of you would agree that d4, _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,130,556.09,559.62,_and d3, are probably better than others. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,131,559.62,563.64,Because they really cover the query well. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,132,563.64,566.87,_They match news, presidential, and campaign. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,133,567.9,573.05,_So, it looks like that these two documents are probably better than the others. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,134,573.05,574.47,They should be ranked on top. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,135,575.77,581.8,_And the other three, d1, d2, and d5, are really non-relavant. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,136,581.8,586.48,_So we can also say d4 and d3 are relevent documents, and d1, d2, and _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,137,586.48,588.525,d5 are non-relevant. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,138,590.15,595.44,_So, now lets see if our vector space model could do the same or _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,139,595.44,597.4,could do something closer. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,140,597.4,602.26,So let's first think about how we actually use this model to score documents. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,141,603.78,610.39,_Right here I show two documents, d1 and d3, and we have the query also here. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,142,610.39,615.13,_In the vector space model, of course we want to first compute the vectors for _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,143,615.13,616.83,these documents and the query. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,144,616.83,619.24,_Now I issue with the vocabulary here as well, so _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,145,619.24,622.85,these are the n dimensions that we'll be thinking about. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,146,622.85,626.62,So what do you think is the vector representation for the query? 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,147,627.7,632.87,Note that we are assuming that we only use zero and one 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,148,632.87,639.23,to indicate whether a term is absent or present in the query or in the document. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,149,639.23,642.38,_So these are zero, one bit vectors. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,150,643.88,645.75,So what do you think is the query vector? 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,151,647.82,651.2,Well the query has four words here. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,152,651.2,656.22,_So for these four words, there would be a one and for the rest, there will be zeros. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,153,657.68,659.29,Now what about the documents? 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,154,659.29,660.57,It's the same. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,155,660.57,663.43,_So d1 has two rows, news and about. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,156,663.43,666.218,So there are two ones here and the rest are zeros. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,157,666.218,672.22,_Similarly, so _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,158,672.22,676.38,_now that we have the two vectors, let's compute the similarity. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,159,677.47,679.55,And we're going to use dot product. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,160,679.55,685.69,_So you can see when we use dot product we just, multiply the corresponding elements. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,161,685.69,686.38,Right. So 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,162,686.38,691.71,_these two would be, form a, be forming a product. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,163,691.71,693.95,And these two will generate another product. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,164,693.95,697.41,And these two would generate yet another product. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,165,697.41,698.21,And so on and so forth. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,166,700.01,702.259,_Now you can, you need to see if we do that. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,167,704.47,708.86,We actually don't have to care about these zeroes 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,168,710.38,714.14,_because if whenever we have a zero, the product will be zero. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,169,714.14,717.53,_So, when we take a sum over all these pairs, _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,170,719.17,722.94,then the zero entries will be gone. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,171,724.4,728.24,_As long as you have one zero, then the product would be zero. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,172,728.24,735.09,_So in the fact, we're just counting how many pairs of one and one, right? _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,173,735.09,736.98,_In this case, we have seen two. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,174,736.98,738.22,So the result will be two. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,175,738.22,740.24,_So, what does that mean? _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,176,740.24,745.19,_Well that means, this number or the value of this scoring function. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,177,745.19,750.26,Is simply the count of how many unique query terms are matched in the document. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,178,752.05,756.92,_Because if a document, if a term is matched in the document, _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,179,756.92,759.325,then there will be two ones. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,180,761.39,764.74,_If it's not, then there will be zero on the document side. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,181,766.31,769.2,_Similarly, if the document has a term,. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,182,769.2,773.21,But the terms not in the query there will be zero in the query vector. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,183,773.21,775.02,So those don't count. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,184,775.02,778.74,So as a result this scoring function basically 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,185,778.74,783.82,meshes how many unique query terms are matched in a document. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,186,783.82,785.77,This is how we interpret this score. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,187,787.15,790.52,Now we can also take a look at the d3. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,188,790.52,795.77,_In this case, you can see the result is three. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,189,795.77,801.64,_Because d3 matched the three distinctive query words, news, presidential, campaign. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,190,801.64,803.14,Whereas d1 only matched two. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,191,803.14,808.21,_Now in this case, it seems reasonable to rank d3 on top of d1. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,192,809.26,813.44,And this simplest vector space model indeed does that. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,193,813.44,815.05,So that looks pretty good. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,194,815.05,820.03,_However, if we examine this model in detail, we likely will find some problems. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,195,820.03,825.22,So here I'm going to show all the scores for these five documents. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,196,826.62,829.02,And you can even verify they are correct. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,197,829.02,831.69,Because we're basically counting 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,198,831.69,835.11,the number of unique query terms matched in each document. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,199,836.47,838.91,Now note that this method actually makes sense. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,200,838.91,842.05,Right? It basically means if a document matches 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,201,842.05,847.21,_more unique query terms, then the document will be assuming to be more relevant. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,202,847.21,849.18,And that seems to make sense. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,203,849.18,856.87,_The only problem is here, we can note set there are three documents, d2, d3, and d4. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,204,856.87,862.29,_And they tied with a three, as a score. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,205,865.05,869.7,_So that's a problem, because if you look at them carefully it seems that _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,206,870.97,875.86,d4 should be right above d3. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,207,875.86,879.64,Because d3 only mentioned the presidential once. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,208,879.64,882.1,But d4 mentioned it much more times. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,209,882.1,887.365,_In case of d3, presidential could be extended mentioned. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,210,887.365,891.126,But d4 is clearly above presidential campaign. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,211,891.126,898.2,Another problem is that d2 and d3 also have the same soul. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,212,898.2,901.2,_But, if you look at the, the three words that are matched. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,213,901.2,907.02,_In the case of d2, it matched the news, about, and the campaign. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,214,907.02,911.5,_But in the case of d3, it match the news, presidential, and campaign. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,215,912.53,915.46,_So intuitively, d3 is better. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,216,915.46,921.91,Because matching presidential is more important though than matching about. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,217,921.91,924.92,Even though about and the presidential are both in the query. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,218,926.17,929.65,_So intuitively, we would like d3 to be ranked above d2. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,219,930.73,932.76,_But this model, doesn't do that. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,220,933.86,939.16,_So that means this is still not good enough, we have to solve these problems. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,221,941.34,942.22,_To summarize, _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,222,942.22,945.72,in this lecture we talked about how to instantiate a vector space model. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,223,947.63,949.54,We may need to do three things. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,224,949.54,951.89,One is to define the dimension. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,225,951.89,955.88,The second is to 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,226,955.88,961.67,decide how to place documents as vectors in the vector space. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,227,961.67,965.65,And to also place a query in the vector space as a vector. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,228,968.09,973.91,_And third is to define the similarity between two vectors, _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,229,973.91,975.74,particularly the query vector and the document vector. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,230,977.08,982.43,We also talked about a very simple way to instantiate the vector space model. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,231,982.43,987.92,_Indeed, that's probably the simplest vector space model that we can derive. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,232,987.92,991.48,_In this case, we use each word to define a dimension. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,233,991.48,997.43,We use a zero one bit vector to represent a document or a query. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,234,997.43,1002.69,_In this case, we basically only care about word presence or absence. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,235,1002.69,1003.78,We ignore the frequency. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,236,1005.56,1009.22,And we use the dot product as the similarity function. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,237,1010.36,1013.1,_And with such a, a, in situation. _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,238,1013.1,1018.87,And we showed that the scoring function is basically to score 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,239,1018.87,1023.25,a document based on the number of distinct query words matched in the document. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,240,1024.64,1029.6,_We also show that such a single vector space model still doesn't work well, _
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,241,1029.6,1030.79,and we need to improve it. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,242,1032.54,1038.741,And this is the topic that we're going to cover in the next lecture. 
+2 - 6 - 1.6 Vector Space Model- Simplest Instantiation (00-17-30).srt,243,1038.741,1048.741,[MUSIC] 

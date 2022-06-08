@@ -1,0 +1,131 @@
+name,id,from,to,text
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,1,7.54,10.17,[SOUND] This lecture is about Text Representation. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,2,12.829,17.957,In this lecture we're going to discuss text representation and discuss how 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,3,17.957,23.659,natural language processing can allow us to represent text in many different ways. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,4,25.25,27.54,Let's take a look at this example sentence again. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,5,29.65,33.08,We can represent this sentence in many different ways. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,6,34.8,41.33,_First, we can always represent such a sentence as a string of characters. _
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,7,42.87,45.37,This is true for all the languages. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,8,45.37,48.13,When we store them in the computer. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,9,50.4,56.19,When we store a natural language sentence as a string of characters. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,10,56.19,61.39,We have perhaps the most general way of representing text since 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,11,61.39,64.71,we can always use this approach to represent any text data. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,12,66.01,71.092,But unfortunately using such a representation will not help us to 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,13,71.092,77.03999999999999,_semantic analysis, which is often needed for many applications of text mining. _
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,14,78.16,81.96000000000001,The reason is because we're not even recognizing words. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,15,81.96000000000001,89.48,So as a string we are going to keep all of the spaces and these ascii symbols. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,16,89.48,93.97999999999999,We can perhaps count out what's the most frequent character in 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,17,93.97999999999999,99.25999999999999,the English text or the correlation between those characters. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,18,99.25999999999999,104.0,_But we can't really analyze semantics, yet _
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,19,104.0,108.8,this is the most general way of representing text because we 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,20,108.8,113.75999999999999,hadn't used this to represent any natural language or text. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,21,113.75999999999999,118.62,If we try to do a little bit more natural language processing by 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,22,118.62,123.62,_doing word segmentation, then we can obtain a representation _
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,23,123.62,127.76,_of the same text, but in the form of a sequence of words. _
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,24,128.9,135.64,_So here we see that we can identify words, like a dog is chasing, etc. _
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,25,138.34,144.32,Now with this level of representation we suddenly can do a lot of things. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,26,144.32,149.32999999999998,And this is mainly because words are the basic units of human communication and 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,27,149.32999999999998,150.66,natural language. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,28,150.66,152.5,So they are very powerful. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,29,153.59,158.57,_By identifying words, we can for example, easily count what _
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,30,158.57,164.515,_are the most frequent words in this document or in the whole collection, etc. _
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,31,165.75,168.915,And these words can be used to form topics. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,32,168.915,173.548,When we combine related words together and some words positive and 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,33,173.548,177.196,some words are negatives or we can also do analysis. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,34,179.517,184.265,So representing text data as a sequence of words opens up a lot of interesting 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,35,184.265,185.98,analysis possibilities. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,36,187.68,192.36,_However, this level of representation is slightly less general than string of _
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,37,192.36,193.13,characters. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,38,193.13,200.97,_Because in some languages, such as Chinese, it's actually not that easy to _
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,39,200.97,206.53,_identified all the word boundaries, because in such a language you see _
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,40,206.53,210.78,text as a sequence of characters with no space in between. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,41,211.96,215.93,So you have to rely on some special techniques to identify words. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,42,217.99,223.88,In such a language of course then we might make mistakes in segmenting words. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,43,223.88,230.66,So the sequence of words representation is not as robust as string of characters. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,44,230.66,236.11,_But in English, it's very easy to obtain this level of representation. _
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,45,236.11,238.361,So we can do that all the time. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,46,241.681,246.445,Now if we go further to do in that round of processing we can add a part of 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,47,246.445,247.36,these text. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,48,248.95,253.84,_Now once we do that we can count, for example, the most frequent nouns or _
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,49,253.84,258.77,_what kind of nouns are associated with what kind of verbs, etc. _
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,50,258.77,262.921,_So, this opens up a little bit more interesting opportunities for _
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,51,262.921,265.06,further analysis. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,52,265.06,268.09,Note that I use a plus sign here because 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,53,268.09,272.65,_by representing text as a sequence of part of speech tags, _
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,54,272.65,278.345,we don't necessarily replace the original word sequence written. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,55,278.345,284.115,_Instead, we add this as an additional way or representing text data. _
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,56,284.115,288.565,So now the data is represented as both a sequence of words and 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,57,288.565,291.395,a sequence of part of speech tags. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,58,291.395,294.983,_This enriches the representation of text data, and, _
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,59,294.983,298.185,thus also enables a more interesting analysis. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,60,301.181,302.433,_If we go further, _
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,61,302.433,307.36,then we'll be pausing the sentence to obtain a syntactic structure. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,62,308.78,313.39,Now this of course will further open up more 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,63,313.39,317.874,_interesting analysis of, for example, _
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,64,317.874,323.66,the writing styles or correcting grammar mistakes. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,65,323.66,326.57,If we go further for semantic analysis. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,66,326.57,332.04,Then we might be able to recognize dog as an animal. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,67,332.04,337.44,_And we also can recognize boy as a person, and playground as a location. _
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,68,338.75,340.7,And we can further analyse their relations. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,69,340.7,345.29,_For example, dog was chasing the boy, and boy is on the playground. _
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,70,346.48,352.04,_This will add more entities and relations, through entity relation recreation. _
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,71,352.04,357.74,_At this level, we can do even more interesting things. _
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,72,357.74,362.039,_For example, now we can counter easily the most frequent person _
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,73,362.039,366.65,that's managing this whole collection of news articles. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,74,366.65,368.69,Or whenever you mention this person 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,75,369.69,372.88,_you also tend to see mentioning of another person, etc. _
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,76,374.16,379.972,So this is very a useful representation. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,77,379.972,385.51,And it's also related to the knowledge graph that some of you may have heard of 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,78,385.51,390.96,that Google is doing as a more semantic way of representing text data. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,79,392.38,399.03,However it's also less robust sequence of words. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,80,399.03,403.29,_Or even syntactical analysis, because it's not always easy _
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,81,403.29,408.05,to identify all the entities with the right types and we might make mistakes. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,82,408.05,413.15999999999997,And relations are even harder to find and we might make mistakes. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,83,413.15999999999997,417.44,_This makes this level of representation less robust, yet it's very useful. _
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,84,419.06,423.435,Now if we move further to logic group condition then we have predicates and 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,85,423.435,424.76,inference rules. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,86,426.22,433.93,With inference rules we can infer interesting derived facts from the text. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,87,433.93,437.73,_So that's very useful but unfortunately, this level of _
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,88,437.73,442.92,representation is even less robust and we can make mistakes. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,89,444.47,449.066,And we can't do that all the time for all kinds of sentences. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,90,449.066,452.88,And finally speech acts would add a yet 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,91,452.88,459.0,another level of rendition of the intent of saying this sentence. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,92,459.0,461.9,So in this case it might be a request. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,93,461.9,466.46,So knowing that would allow us to you know analyze more even more interesting 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,94,466.46,471.98,things about the observer or the author of this sentence. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,95,471.98,474.02,What's the intention of saying that? 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,96,474.02,477.73,What scenarios or what kind of actions will be made? 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,97,477.73,486.15,_So this is, Another role of analysis that would be very interesting. _
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,98,486.15,491.29,_So this picture shows that if we move down, we generally see _
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,99,491.29,494.94,more sophisticated and natural language processing techniques will be used. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,100,496.01,499.739,And unfortunately such techniques would require more human effort. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,101,500.92,503.57,And they are less accurate. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,102,503.57,507.02,That means there are mistakes. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,103,507.02,513.04,So if we analyze our text at the levels that are representing 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,104,513.04,518.27,deeper analysis of language then we have to tolerate errors. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,105,518.27,523.99,So that also means it's still necessary to combine such deep analysis 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,106,523.99,528.91,_with shallow analysis based on, for example, sequence of words. _
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,107,528.91,535.62,_On the right side, you see the arrow points down to indicate that _
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,108,535.62,541.78,_as we go down, with our representation of text is closer to knowledge representation _
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,109,541.78,547.56,in our mind and need for solving a lot of problems. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,110,548.93,555.21,_Now, this is desirable because as we can represent text as a level of knowledge, _
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,111,555.21,557.61,we can easily extract the knowledge. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,112,557.61,559.53,That's the purpose of text mining. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,113,559.53,562.99,_So, there was a trade off here. _
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,114,562.99,566.95,Between doing deeper analysis that might have errors but 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,115,566.95,570.93,would give us direct knowledge that can be extracted from text. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,116,570.93,575.785,And doing shadow analysis which is more robust but 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,117,575.785,583.005,wouldn't actually give us the necessary deeper representation of knowledge. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,118,583.005,586.355,_I should also say that text data are generated by humans, _
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,119,586.355,588.319,and are meant to be consumed by humans. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,120,589.46,592.42,_So as a result, in text data analysis, _
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,121,592.42,596.22,_text mining, humans play a very important role. _
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,122,596.22,598.49,_They are always in the loop, _
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,123,598.49,603.009,meaning that we should optimize a collaboration of humans and computers. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,124,604.22,608.76,_So, in that sense it's okay that computers may not be able to _
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,125,609.94,614.01,have completely accurate representation of text data. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,126,614.01,622.423,And patterns that are extracted from text data can be interpreted by humans. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,127,622.423,627.032,And then humans can guide the computers to do more accurate analysis by annotating 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,128,627.032,631.107,_more data, by providing features to guide machine learning programs, _
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,129,631.107,633.195,to make them work more effectively. 
+2 - 5 - 1.5 Text Representation- Part 1 (00-10-46).srt,130,633.195,643.195,[MUSIC] 

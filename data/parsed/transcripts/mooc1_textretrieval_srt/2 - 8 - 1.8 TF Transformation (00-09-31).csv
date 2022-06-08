@@ -1,0 +1,119 @@
+name,id,from,to,text
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,1,0.354,1.185,[SOUND] 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,2,10.729,15.31,_In this lecture, we continue the discussion of Vector Space Model. _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,3,15.31,18.81,_In particular, we are going to talk about the TF transformation. _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,4,18.81,20.638,_In the previous lecture, _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,5,20.638,25.88,we have derived a TF-IDF weighting formula using the vector space model. 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,6,27.1,32.617,And we have shown that this model actually works pretty well for 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,7,32.617,37.302,_these examples as shown on this slide except for d5, _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,8,37.302,41.33,which has received a very high score. 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,9,41.33,46.258,_Indeed, it has received the highest score among all these documents. _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,10,46.258,53.084,_But this document is intuitively non-relevant, so this is not desirable. _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,11,53.084,57.343,_In this lecture, we're going to talk about how would you use TF _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,12,57.343,60.19,transformation to solve this problem. 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,13,60.19,65.237,_Before we discuss the details, let's take a look at the formula for _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,14,65.237,69.128,this symbol here for IDF weighting ranking function and 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,15,69.128,73.52,see why this document has received such a high score. 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,16,73.52,77.5,_So this is the formula, and if you look at the formula carefully, _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,17,77.5,83.81,then you will see it involves a sum over all the matched query terms. 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,18,83.81,88.14,_And inside the sum, each matched query sum has a particular weight. _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,19,88.14,90.259,And this weight is TF-IDF weighting. 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,20,91.58,96.655,So it has an IDF component where we see 2 variables. 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,21,96.655,101.45,_One is the total number of documents in the collection, and that is m. _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,22,101.45,105.88,The other is the documentive frequency. 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,23,105.88,112.25,This is the number of documents that contain this word w. 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,24,112.25,114.7,_The other variables in, involving the formula, _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,25,114.7,118.34,include the count of the query term. 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,26,121.44,126.1,_W in the query, and the count of the word in the document. _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,27,127.65,131.45,_If you look at this document again, now it's not hard to _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,28,131.45,136.71,realize that the reason why it has received a high score is because 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,29,136.71,141.016,it has a very high count of campaign. 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,30,141.016,147.15,_So the count of campaign in this document is a four, which is much higher than _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,31,147.15,151.572,_the other documents, and has contributed to the high score of this document. _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,32,151.572,157.24,_So intriguingly, in order to lower the score for this document, we need _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,33,157.24,163.279,_to somehow restrict the contribution of, the matching of this term in the document. _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,34,164.62,168.29,And if you think about the matching of terms in the document carefully you 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,35,168.29,173.059,actually would realize we probably shouldn't reward 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,36,173.059,178.36,multiple occurrences so generously. 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,37,178.36,184.525,_And by that I mean the first occurrence of a term says a lot about the, _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,38,184.525,189.72,_the matching of this term, because it goes from zero count _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,39,189.72,195.36,_to a count of one, and that increase means a lot. _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,40,197.16,199.09,_Once we see a word in the document, _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,41,199.09,201.69,it's very likely that the document is talking about this word. 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,42,203.37,206.8,_If we see an extra occurrence on top of the first occurrence, _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,43,208.15,214.94,_that is to go from one to two, then we also can say that well, the second _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,44,214.94,218.95,occurrence kind of confirmed that it's not a accidental mention of the word. 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,45,219.97,224.27,_Now, we are more sure that this document is talking about this word. _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,46,224.27,230.42000000000002,_But imagine we have seen, let's say, 50 times of the word in the document. _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,47,230.42000000000002,234.82,_Then, adding one extra occurrence is not going to test more about _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,48,234.82,239.57999999999998,evidence because we are already sure that this document is about this word. 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,49,241.16,244.33,So if you're thinking this way it seems that 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,50,244.33,248.525,we should restrict the contributing of a high account of term. 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,51,249.655,252.785,And that is the idea of TF Transformation. 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,52,252.785,257.98,So this transformation function is going to turn the raw count of word 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,53,257.98,262.99,_into a Term Frequency Weight, for the word in the document. _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,54,262.99,267.171,_So here I show in x-axis, that raw count, _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,55,267.171,271.47,and in y-axis I show the Term Frequency Weight. 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,56,273.36,277.981,_So, in the previous ranking functions we actually have increasingly, _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,57,277.981,280.40999999999997,used some kind of transformation. 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,58,280.40999999999997,284.764,So for example in the zero-one bit vector retentation we actually use 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,59,284.764,289.07,the Suchier transformation function as shown here. 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,60,289.07,293.42,Basically if the count is zero then it has zero weight. 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,61,293.42,295.81,Otherwise it would have a weight of one. 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,62,297.57,298.07,It's flat. 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,63,299.55,304.87,Now what about using Term Count as a TF weight. 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,64,304.87,306.41,_Well that's a linear function, right? _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,65,306.41,310.515,So it has just exactly the same weight as the count. 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,66,311.575,316.765,Now we have just seen that this is not desirable. 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,67,318.405,320.795,So what we want is something like this. 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,68,320.795,322.836,_So for example with a logarithm function, _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,69,322.836,326.62,we can have a sub-linear transformation that looks like this. 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,70,326.62,330.74,And this will control the influence of really high weight because it's going to 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,71,330.74,335.03499999999997,_lower its inference, yet it will retain the inference of small count. _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,72,336.11,341.55,Or we might want to even bend the curve more by applying logarithm twice. 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,73,342.73,346.99,Now people have tried all these methods and they are indeed working better than 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,74,346.99,352.0,_the linear form of the transformation, but so far what works the best _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,75,352.0,356.62,seems to be this special transformation called a BM25 transformation. 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,76,358.07,359.48,BM stands for best matching. 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,77,361.21,365.01,_Now in this transformation, you can see there's a parameter k here. _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,78,366.46,370.89,And this k controls the upper bound of this function. 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,79,370.89,375.71,It's easy to see this function has a upper bound because if you look at 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,80,375.71,382.18,_the x divided by x plus k where k is not an active number, _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,81,382.18,388.06,_then the numerator will never be able to exceed the denominator, right? _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,82,388.06,389.83,_So, it's upper bounded by k plus 1. _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,83,389.83,394.5,_Now, this is also difference between this transformation function and _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,84,394.5,395.65999999999997,the logarithm transformation. 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,85,397.01,399.442,Which it doesn't have upperbound. 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,86,399.442,404.49,_Now furthermore, one interesting property of this function is that as we vary K, _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,87,405.61,410.31,_we can actually simulate different transformation functions, _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,88,410.31,412.90999999999997,including the two extremes that are shown here. 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,89,412.90999999999997,417.48,_That is a zero one bit transformation, and the unit transformation. _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,90,417.48,421.93,_So for example, if we set k to zero, now you can see _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,91,423.63,425.95,the function value would be one. 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,92,427.09,433.25,_So we precisely, recover the zero one bit transformation. _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,93,435.63,439.03,_If you set k to a very large number, on the other hand, _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,94,439.03,442.919,_other hand, it's going to look more like the linear transformation function. _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,95,444.98,449.4,_So in this sense, this transformation is very flexible, _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,96,449.4,454.6,it allows us to control the shape of the transformation. 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,97,454.6,457.763,It also has a nice property of the upper bound. 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,98,457.763,463.637,And this upper bound is useful to control the inference of a particular term. 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,99,463.637,469.702,_And so that we can prevent a, a spammer from just increasing the count of _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,100,469.702,474.77,1 term to spam all queries that might match this term. 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,101,477.35,482.01,In other words this upper bound might also ensure that all terms 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,102,482.01,486.68,_will be counted when we aggregate the, the weights, to compute a score. _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,103,486.68,490.63,_As I said, this transformation function has worked well, so far. _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,104,492.3,494.308,_So to summarise this lecture, _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,105,494.308,499.91,the main point is that we need to do some sub linearity of TF Transformation. 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,106,499.91,504.34,And this is needed to capture the intuition of diminishing return from 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,107,504.34,505.55,high Term Counts. 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,108,506.62,511.02,It's also to avoid a dominance by one single term over all others. 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,109,511.02,517.23,_This BM25 Transformation, Transformation that we talked about is very interesting. _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,110,517.23,523.13,It's so far one of the best performing TF Transforming formation formulas. 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,111,523.13,527.414,_It has upper bound, and it's also robust and effective. _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,112,527.414,532.612,_Now, if we're plug in this function into our TF-IDF weighting _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,113,532.612,537.425,vector space model then we would end up having the following 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,114,537.425,541.77,_ranking function, which has a BM25 TF component. _
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,115,541.77,546.784,Now this is already very close to a state 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,116,546.784,551.94,of the art ranking function called a BM25. 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,117,551.94,559.602,And we will discuss how we can further improve this formula in the next lecture. 
+2 - 8 - 1.8 TF Transformation (00-09-31).srt,118,559.602,569.602,[MUSIC] 

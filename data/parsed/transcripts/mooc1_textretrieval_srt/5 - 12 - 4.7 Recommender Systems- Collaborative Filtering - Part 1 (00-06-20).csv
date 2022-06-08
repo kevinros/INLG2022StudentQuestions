@@ -1,0 +1,84 @@
+name,id,from,to,text
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,1,0.0,5.275,[SOUND] This lecture is about 
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,2,5.275,10.784,Collaborative Filtering. 
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,3,10.784,16.032,_In this lecture, we're going to continue the discussion of Recommender Systems. _
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,4,16.032,20.665,_In particular, we're going to look at the approach of collaborative filtering. _
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,5,20.665,25.161,You have seen this slide before when we talked about the two 
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,6,25.161,30.126,strategies to answer the basic question will user U like item X. 
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,7,30.126,33.723,_In the previous lecture, we looked at the item similarity, _
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,8,33.723,35.988,that's content-based filtering. 
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,9,35.988,39.332,_In this lecture, we're going to look at the user similarity. _
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,10,39.332,42.804,This is a different strategy called collaborative filtering. 
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,11,42.804,46.043,_So first of all, what is collaborative filtering? _
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,12,46.043,48.971,It is to make filtering decisions for 
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,13,48.971,53.504,individual user based on the judgement of other users and 
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,14,53.504,57.944,_that is to say, we will infer individual's interest or _
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,15,57.944,61.925,_preferences from that, of other similar users. _
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,16,61.925,64.35,So the general idea is the following. 
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,17,64.35,69.601,_Given a user u, we are going to first find the similar users, _
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,18,69.601,76.247,u1 through and then we're going to predict the used preferences based on 
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,19,76.247,81.52,_the preferences of these similar users, u1 through. _
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,20,81.52,86.711,Now the users similarity here can be judged based on their similarity. 
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,21,86.711,89.799,The preference is on a common set of items. 
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,22,89.799,95.836,Now here you'll see that the exact content of item doesn't really matter. 
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,23,95.836,99.691,_We're going to look at the only, the relationship between the users and _
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,24,99.691,100.35300000000001,the items. 
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,25,100.35300000000001,104.788,So this means this approach is very general if it can be 
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,26,104.788,109.23400000000001,applied to any items not just with text objects. 
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,27,109.23400000000001,113.436,_So this approach, it would work well under the following assumptions. _
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,28,113.436,119.00999999999999,First users with the same interests will have similar preferences. 
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,29,119.00999999999999,123.293,_Second, the users with similar preferences probably share the same interests. _
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,30,123.293,128.765,_So for example, if the interest of the user is in information retrieval, _
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,31,128.765,132.929,then we can infer the user probably favor SIGIR papers. 
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,32,132.929,137.758,And so those who are interested in information retrieval researches probably 
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,33,137.758,141.648,_all favor SIGIR papers, that's something that we make. _
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,34,141.648,143.473,_And if this assumption is true, _
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,35,143.473,147.335,then it would help collaborative filtering to work well. 
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,36,147.335,152.712,_We can also assume that if we see people favor SIGIR papers, _
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,37,152.712,158.016,then we can infer the interest is probably information retrieval. 
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,38,158.016,162.254,_So these simple examples, it seems what makes sense. _
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,39,162.254,167.96699999999998,And in many cases such as assumption actually does make sense. 
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,40,167.96699999999998,172.763,_So, another assumption you have to make is that there are a sufficiently large _
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,41,172.763,175.826,number of user preferences available to us. 
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,42,175.826,180.26,_So for example, if you see a lot of ratings of users for movies and _
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,43,180.26,183.255,those indicate their preferences in movies. 
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,44,183.255,185.367,_And if you have a lot of such data, _
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,45,185.367,189.153,then collaborative filtering can be very effective. 
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,46,189.153,194.505,_If not, there will be a problem and that's often called a cold start problem. _
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,47,194.505,198.485,_That means you don't have many preferences available, so _
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,48,198.485,203.805,the system could not fully take advantage of collaborative filtering yet. 
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,49,203.805,209.441,So let's look at the collaborative filtering problem in a more formal way. 
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,50,209.441,216.08100000000002,And so this picture shows that we are in general considering a lot of users and 
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,51,216.08100000000002,219.999,showing we're showing m users here. 
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,52,219.999,225.935,_So, u1 through and we're also considering a number of objects. _
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,53,225.935,230.267,_Let's say, n objects denoted as o1 through on and _
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,54,230.267,236.312,then we will assume that the users will be able to judge those objects and 
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,55,236.312,241.285,_the user could for example, give ratings to those items. _
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,56,241.285,245.923,_For example, those items could be movies, could be products and _
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,57,245.923,250.26,_then the users would give ratings one through five, let's say. _
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,58,250.26,254.859,So what you see here is that we have assumed some ratings available for 
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,59,254.859,256.203,some combinations. 
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,60,256.203,261.521,_So some users have watched movies, they have rated those movies. _
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,61,261.521,265.89300000000003,They obviously won't be able to watch all the movies and 
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,62,265.89300000000003,269.763,some users may actually only watch a few movies. 
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,63,269.763,274.581,_So this is in general a response matrix, right? _
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,64,274.581,279.104,So many item many entries have unknown values and 
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,65,279.104,284.234,what's interesting here is we could potentially infer 
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,66,284.234,289.36,the value of a element in this matrix based on other values and 
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,67,289.36,295.317,that's actually the central question in collaborative filtering. 
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,68,295.317,299.648,_And that is, we assume an unknown function here f, _
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,69,299.648,303.999,that would map a pair of user and object to a rating. 
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,70,303.999,309.027,And we have observed there are some values of this function and 
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,71,309.027,313.086,we want to infer the value of this function for 
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,72,313.086,318.615,_other pairs that we, that don't have values available here. _
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,73,318.615,324.401,_So this is ve, very similar to other machine learning problems, _
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,74,324.401,331.067,where we would know the values of the function on some training there that and 
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,75,331.067,337.168,we hope to predict the the values of this function on some test there. 
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,76,337.168,340.142,All right. So this is the function approximation. 
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,77,340.142,347.129,And how can we pick out the function based on the observed ratings? 
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,78,347.129,349.287,_So this is the, the setup. _
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,79,349.287,353.828,Now there are many approaches to solving this problem. 
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,80,353.828,357.287,_And in fact, this is a very active research area. _
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,81,357.287,362.97,A reason that there are special conferences dedicated to the problem 
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,82,362.97,366.39,is a major conference devoted to the problem. 
+5 - 12 - 4.7 Recommender Systems- Collaborative Filtering - Part 1 (00-06-20).srt,83,366.39,376.39,[MUSIC] 

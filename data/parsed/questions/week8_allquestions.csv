@@ -1,0 +1,52 @@
+filename,lecture in question,lecture,raw from,raw to,from,to,text
+week8_allquestions,8.6,3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).csv, 5'00",6'10",300,370, How do we determine if a word is too similar to a word that we already picked?
+week8_allquestions,8.2,2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).csv, 00'00" , 1'00",0,60, What is the defintition of conditional entropy?
+week8_allquestions,8.1,2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).csv, 4'00",5'35",240,335,$ When finding the entropy to measure the randomness of a random variable X, why do you use the log base 2 of the p(X =v) and not just the probability itself?$
+week8_allquestions,8.9,3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).csv, 9'19",10'20",559,620, Why are the posterior probabilities in between the likelihood and the prior distribution? How does this make intuitive sense?
+week8_allquestions,.1,MISSING, 3' 20",3' 50",200,230, Why is word prediction a binary variable instead of a continuous probability of that word occuring?
+week8_allquestions,8.7,3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).csv, 8'39",8'45",519,525, What is theta and pi exactly?
+week8_allquestions,8.3,2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).csv, 4'10" , 6'00",250,360,$ How are homonyms handled in the mutual information model? For example, the word address can be a  verb or noun, and can completely change the meaning of a sentence.$
+week8_allquestions,2.10,MISSING, 5'13'',10'00'',313,600, How would the process for discovering the topic be different if we were using Bayesian estimation instead of maximum likelihood?
+week8_allquestions,8.2,2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).csv, 4'30",5'20",270,320, Why does knowing more information never decrease the conditional entropy? Seems counter intuitive.
+week8_allquestions,8.7,3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).csv, 6'00",7'30",360,450, How expensive is the computation task?
+week8_allquestions,8.6,3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).csv, 4'30",6'00",270,360, Would it be better to return a variable amount of terms that represent the majority of topics in the documents rather than a selected k topical terms?
+week8_allquestions,8.8,3 - 4 - 2.4 Probabilistic Topic Models- Overview of Statistical Language Models- Part 1 (00-10-25).csv, 2'20",2'30",140,150, Why is it impossible to specify probability values for all the different sequences of words?
+week8_allquestions,2.1,MISSING, 4'52",5'01",292,301, Why do we take the log of the probability in the entropy formula?
+week8_allquestions,8.6,3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).csv, 04'45",06'10",285,370, How is similarity between terms determined? Would a dictionary/thesaurus be used for this?
+week8_allquestions,2.2,MISSING, 5'09",5'31",309,331,$If knowing something changes the probability from 0 to 0.5, does it increase its entropy?$
+week8_allquestions,8.9,3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).csv, 3'00", 5'45",180,345,$ Using Bayes Rule to calculate theta, where does the P(x) goes as it does not appeared in the equation?$
+week8_allquestions,8.9,3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).csv, 07'49'',08'20'',469,500,What exactly does maximum a posteriori estimate mean?
+week8_allquestions,8.3,2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).csv, 1'37",3'32",97,212, When does mutual information reach its maximum in terms of reduction of entropy of Y because of knowing X?
+week8_allquestions,8.4,2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).csv, 0'00",8'00",0,480, Should this be Pointwise Mutual Information? I think Mutual Information sums over all possible pairs of word types.
+week8_allquestions,8.9,3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).csv, 07'49'',08'20'',469,500,What exactly is (MAP) estimate?
+week8_allquestions,2.10,MISSING, 7'25",9'00",445,540, Why is Lagrange function used?
+week8_allquestions,7.9,MISSING, 1'23",2'33",83,153, How would the IUF impact the traditional function?
+week8_allquestions,8.3,2 - 12 - 1.12 Syntagmatic Relation Discovery- Mutual Information- Part 1 (00-13-55).csv, 4'30",6'15",270,375, Is there a dictionary of the mutual words? I'm trying to predict how/where these mutual values are stored.
+week8_allquestions,8.2,2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).csv, 3'14",4'24",194,264,$ Maybe not related to the course, but is entropy the same context as the entropy in physics?$
+week8_allquestions,2.2,MISSING, 10’30” , 11’30”,630,690, why H(Xw1|Xw2) and H(Xw1|Xw3) are comparable but H(Xw1|Xw2) and H(Xw2|Xw3) are not? Did not understand the explanation in the lecture very well.
+week8_allquestions,7.8,MISSING, 0'00",2'30",0,150,$ In order to find relations in context, how do our current systems actually understand what a dog is? Like we understand they can find the context through these relation patterns, but do these systems understand the dog entity itself and how a dog object relates to the general world?$
+week8_allquestions,8.4,2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).csv, 0'59",1'00",59,60, Why is the estimation of probabilities depend on the data
+week8_allquestions,2.7,MISSING, 10'07",11'58",607,718, Do we guess the parameters at first in order to build the model? Or the model is built without knowing the parameters?
+week8_allquestions,2.10,MISSING, 9'32",9'50",572,590, How is the second last step transformed to the last formula?
+week8_allquestions,2.1,MISSING, 4'33",5'10",273,310,$ If entropy is usually non-negative, I didn't understand why are we taking a summation of negative values?$
+week8_allquestions,8.6,3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).csv, 3'35",4'44",215,284,$ Should't design scoring function also be concerned with the context of some topics based on the country of their origin, the age group where that topic is popular, etc? How does all that dynamic information fit inside "generic statistic"?$
+week8_allquestions,2.3,MISSING, 1'48",2'22",108,142,$According to the presentation the reduction entropy is actually equal, is this in terms of X given Y and Y given X or in terms of not reduced and reduced?$
+week8_allquestions,8.2,2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).csv, 5'10",8'47",310,527, Examples of how to calculate entropy and in more detail?
+week8_allquestions,8.9,3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).csv, 12'45'',12'58'',765,778, What is the meaning of allows for inferring any derived value from theta?
+week8_allquestions,2.6,MISSING, 2'05",7'15",125,435,$ Can we do an analysis similar to what we did to detect Syntagmatic relations i.e. once we identify a group of words that frequently occur with each other through a syntagmatic relation, we can use that information as a basis for grouping words into terms with those appearing quite rarely with each other being related to different terms and vice versa?$
+week8_allquestions,8.7,3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).csv, 0'00" , 5'00",0,300, Can you explain more about how probabilistic topic models work to help analyze text?
+week8_allquestions,7.4,MISSING, 2'20",2'35",140,155, How can we adapt the vector space retrieval model to discover paradigmatic relations?
+week8_allquestions,2.4,MISSING, 4'00",4'10",240,250, Why is it bad to have zero probability of a word?
+week8_allquestions,8.2,2 - 11 - 1.11 Syntagmatic Relation Discovery- Conditional Entropy (00-11-57).csv, 5'29",5'31",329,331, How is it possible to create a lower bound on the probability of a word occurring using conditional entropy?
+week8_allquestions,2.9,MISSING, 9'45" , 11'47",585,707, what decide the difference between posterior and likeihood?
+week8_allquestions,8.4,2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).csv, 2'15",4'30",135,270, Is there only one way to handle the zero problem?
+week8_allquestions,8.1,2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).csv, 00’51”,03’10”,51,190,$ How accurate are correlated occurrences in the context of syntagmatic relations, since intuition is involved?$
+week8_allquestions,2.1,MISSING, 3'00",4'00",180,240, How does one quantitatively measure the randomness of a random variable like Xw?
+week8_allquestions,8.1,2 - 10 - 1.10 Syntagmatic Relation Discovery- Entropy (00-11-00).csv, 10'30",10'40",630,640, Why is the word "the" like a completely biased coin?
+week8_allquestions,8.4,2 - 13 - 1.13 Syntagmatic Relation Discovery- Mutual Information- Part 2 (00-09-42).csv, 01'30",02'15",90,135,$ How is mutual information in Vector space model (VSM)? It seems that here we are comparing independent words. However in VSM, aren't we somehow capturing the neighboor around the query word?$
+week8_allquestions,8.7,3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).csv, 8’55”,9’35”,535,575, Can you please go further in depth with the equation (listed in yellow)? I do not fully understand the implementation/application of it.
+week8_allquestions,2.1,MISSING, 4'27",4'47",267,287, How do people come up with the formula for entropy?
+week8_allquestions,8.7,3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).csv, 11'40" , 12'10",700,730,$ besides the median, do other local maximum points has specific meaning on the graph?$
+week8_allquestions,8.9,3 - 5 - 2.5 Probabilistic Topic Models- Overview of Statistical Language Models- Part 2 (00-13-11).csv, 10'31",15'11",631,911, Can you give an example of Bayesian inference? The meaning of the function f is pretty vague to me.
+week8_allquestions,2.7,MISSING, 8'19",14'17",499,857,$ How do we determine the initial input topic model, by manual input?$
+week8_allquestions,8.5,3 - 1 - 2.1 Topic Mining and Analysis- Motivation and Task Definition (00-07-36).csv, 6'48'',7'16'',408,436, Why can we assume that these probabilities sum to one?

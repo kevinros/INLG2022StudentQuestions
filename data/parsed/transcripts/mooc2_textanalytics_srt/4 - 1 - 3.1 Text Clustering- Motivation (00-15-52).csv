@@ -1,0 +1,137 @@
+name,id,from,to,text
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,1,0.012,7.427,[SOUND] This 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,2,7.427,10.46,lecture is the first one about the text clustering. 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,3,14.165,17.4,_In this lecture, we are going to talk about the text clustering. _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,4,18.43,24.59,This is a very important technique for doing topic mining and analysis. 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,5,24.59,25.1,_In particular, _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,6,25.1,30.43,in this lecture we're going to start with some basic questions about the clustering. 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,7,31.65,37.04,_And that is, what is text clustering and why we are interested in text clustering. _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,8,38.06,42.61,_In the following lectures, we are going to talk about how to do text clustering. _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,9,42.61,44.55,How to evaluate the clustering results? 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,10,47.06,48.4,So what is text clustering? 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,11,49.5,52.64,_Well, clustering actually is a very general technique for _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,12,52.64,55.67,data mining as you might have learned in some other courses. 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,13,56.76,60.25,The idea is to discover natural structures in the data. 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,14,61.25,65.04,_In another words, we want to group similar objects together. _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,15,65.04,69.17,_In our case, these objects are of course, text objects. _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,16,69.17,74.51,_For example, they can be documents, terms, passages, _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,17,74.51,81.51,_sentences, or websites, and then I'll go group similar text objects together. _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,18,81.51,86.56,_So let's see an example, well, here you don't really see text objects, but _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,19,86.56,91.56,I just used some shapes to denote objects that can be grouped together. 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,20,93.45,99.69,_Now if I ask you, what are some natural structures or natural groups where you, _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,21,99.69,107.78999999999999,_if you look at it and you might agree that we can group these objects based on chips, _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,22,107.78999999999999,111.74000000000001,or their locations on this two dimensional space. 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,23,113.24000000000001,115.11,So we got the three clusters in this case. 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,24,116.94,121.36,And they may not be so much this agreement about 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,25,121.36,126.22,these three clusters but it really depends on the perspective to look at the objects. 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,26,127.65,131.45,_Maybe some of you have also seen thing in a different way, so _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,27,131.45,134.05,we might get different clusters. 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,28,134.05,141.4,And you'll see another example about this ambiguity more clearly. 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,29,141.4,147.44,_But the main point of here is, the problem is actually not so well defined. _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,30,149.2,154.13,And the problem lies in how to define similarity. 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,31,154.13,156.22,And what do you mean by similar objects? 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,32,158.16,160.99,Now this problem has to be 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,33,160.99,164.537,clearly defined in order to have a well defined clustering problem. 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,34,166.315,169.29500000000002,And the problem is in general 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,35,169.29500000000002,173.445,that any two objects can be similar depending on how you look at them. 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,36,173.445,179.119,_So for example, this will kept the two words like car and horse. _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,37,180.3,182.65,So are the two words similar? 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,38,182.65,188.49,_Well, it depends on how if we look at the physical _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,39,191.07,196.0,properties of car and horse they are very different but 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,40,196.0,200.63,_if you look at them functionally, a car and a horse, _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,41,200.63,203.65,can both be transportation tools. 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,42,203.65,206.22,_So in that sense, they may be similar. _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,43,206.22,211.599,_So as we can see, it really depends on our perspective, to look at the objects. _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,44,212.74,217.7,And so it ought to make the clustering problem well defined. 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,45,217.7,223.05,A user must define the perspective for assessing similarity. 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,46,224.31,227.599,And we call this perspective the clustering bias. 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,47,229.27,234.18,_And when you define a clustering problem, it's important to specify _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,48,235.34,240.87,your perspective for similarity or for defining 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,49,240.87,245.83,the similarity that will be used to group similar objects. 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,50,245.83,251.795,_because otherwise, the similarity is not well defined and _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,51,251.795,256.87,one can have different ways to group objects. 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,52,256.87,259.91,So let's look at the example here. 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,53,259.91,264.21,_You are seeing some objects, or some shapes, _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,54,264.21,269.73,_that are very similar to what you have seen on the first slide, but _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,55,269.73,274.43,_if I ask you to group these objects, again, you might _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,56,278.04,282.052,feel there is more than here than on the previous slide. 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,57,282.052,287.81,_For example, you might think, well, we _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,58,287.81,293.51,_can steer a group by ships, so that would give us cluster that looks like this. _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,59,293.51,297.558,_However, you might also feel that, _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,60,297.558,302.38,_well, maybe the objects can be grouped based on their sizes. _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,61,302.38,307.02,So that would give us a different way to cluster the data if we look at 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,62,307.02,311.89,the size and look at the similarity in size. 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,63,312.91,316.44,_So as you can see clearly here, depending on the perspective, _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,64,316.44,318.86,we'll get different clustering result. 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,65,318.86,323.75,_So that also clearly tells us that in order to evaluate the clustering without, _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,66,323.75,327.06,we must use perspective. 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,67,327.06,332.054,_Without perspective, it's very hard to define what is the best clustering result. _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,68,336.152,340.97,So there are many examples of text clustering setup. 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,69,342.33,348.38,_And so for example, we can cluster documents in the whole text collection. _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,70,348.38,351.269,_So in this case, documents are the units to be clustered. _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,71,352.28,355.78,We may be able to cluster terms. 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,72,355.78,358.3,_In this case, terms are objects. _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,73,358.3,363.48,_And a cluster of terms can be used to define concept, or theme, or a topic. _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,74,363.48,368.53,_In fact, there's a topic models that you have seen some previous lectures can _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,75,368.53,373.85,give you cluster of terms in some sense if you take terms with 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,76,373.85,379.61,high probabilities from word distribution. 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,77,379.61,385.33,_Another example is just to cluster any text segments, for example, passages, _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,78,385.33,390.97,_sentences, or any segments that you can extract the former larger text objects. _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,79,392.1,396.3,_For example, we might extract the order text segments about the topic, _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,80,396.3,399.03,_let's say, by using a topic model. _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,81,399.03,403.62,Now once we've got those text objects then we can 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,82,405.12,410.85,cluster the segments that we've got to 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,83,410.85,416.908,discover interesting clusters that might also ripple in the subtopics. 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,84,416.908,420.86,So this is a case of combining text clustering with some other techniques. 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,85,420.86,423.762,And in general you will see a lot of text mining 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,86,425.14,429.67,can be accurate combined in a flexible way to achieve 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,87,429.67,434.84,the goal of doing more sophisticated mining and analysis of text data. 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,88,436.03,440.07,_We can also cluster fairly large text objects and by that, _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,89,440.07,444.6,I just mean text objects may contain a lot of documents. 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,90,444.6,447.44,_So for example, we might cluster websites. _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,91,447.44,451.228,Each website is actually compose of multiple documents. 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,92,451.228,459.065,_Similarly, we can also cluster articles written by the same author, for example. _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,93,459.065,464.573,So we can trigger all the articles published by also as one unit for 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,94,464.573,465.78499999999997,clustering. 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,95,465.78499999999997,470.652,_In this way, we might group authors together based on whether they're _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,96,470.652,472.77,published papers or similar. 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,97,475.15,480.29,For the more text clusters will be for the cluster to generate a hierarchy. 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,98,480.29,486.33,That's because we can in general cluster any text object at different levels. 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,99,488.21,491.75,So more generally why is text clustering interesting? 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,100,491.75,496.1,_Well, it's because it's a very useful technique for text mining, _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,101,496.1,498.71,particularly exploratory text analysis. 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,102,500.25,505.69,_And so a typical scenario is that you were getting a lot of text data, _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,103,505.69,510.3,_let's say all the email messages from customers in some time period, _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,104,510.3,512.07,_all the literature articles, etc. _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,105,512.07,515.96,And then you hope to get a sense about what are the overall content of 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,106,515.96,520.97,_the connection, so for example, you might be interested in getting _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,107,520.97,525.91,_a sense about major topics, or what are some typical or _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,108,525.91,529.36,representative documents in the connection. 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,109,529.36,533.164,And clustering to help us achieve this goal. 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,110,533.164,539.949,We sometimes also want to link a similar text objects together. 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,111,539.949,543.96,_And these objects might be duplicated content, for example. _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,112,543.96,544.83,_And in that case, _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,113,544.83,549.56,such a technique can help us remove redundancy and remove duplicate documents. 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,114,550.91,553.28,Sometimes they are about the same topic and 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,115,553.28,557.14,by linking them together we can have more complete coverage of a topic. 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,116,559.66,564.42,We may also used text clustering to create a structure on the text data and sometimes 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,117,564.42,568.84,we can create a hierarchy of structures and this is very useful for problems. 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,118,571.27,576.14,We may also use text clustering to induce additional features to represent text 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,119,576.14,580.206,_data when we cluster documents together, we can treat each cluster as a feature. _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,120,580.206,584.1,And then we can say when a document is in this cluster and 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,121,584.1,585.79,then the feature value would be one. 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,122,585.79,589.87,_And if a document is not in this cluster, then the feature value is zero. _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,123,589.87,594.298,And this helps provide additional discrimination that might be used for 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,124,594.298,597.9,text classification as we will discuss later. 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,125,599.87,603.32,_So there are, in general, many applications of text clustering. _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,126,603.32,606.218,And I just thought of two very specific ones. 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,127,606.218,608.49,_One is to cluster search results, for _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,128,608.49,612.36,_example, [INAUDIBLE] search engine can cluster such results so _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,129,612.36,619.02,that the user can see overall structure of the results of return the fall query. 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,130,619.02,622.454,And when the query's ambiguous this is particularly useful because 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,131,622.454,626.71,the clusters likely represent different senses of ambiguous word. 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,132,628.63,633.535,Another application is to understand the major complaints from customers based on 
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,133,633.535,634.943,_their emails, right. _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,134,634.943,640.238,_So in this case, we can cluster email messages and _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,135,640.238,644.903,_then find in the major clusters from there, _
+4 - 1 - 3.1 Text Clustering- Motivation (00-15-52).srt,136,644.903,651.355,we can understand what are the major complaints about them. 

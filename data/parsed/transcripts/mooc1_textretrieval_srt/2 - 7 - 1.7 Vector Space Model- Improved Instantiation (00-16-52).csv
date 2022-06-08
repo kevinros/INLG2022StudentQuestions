@@ -1,0 +1,221 @@
+name,id,from,to,text
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,1,0.012,4.774,[SOUND]. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,2,7.7379999999999995,12.706,_In this lecture, we're going to talk about how to improve the instant changing of _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,3,12.706,14.228,the Vector Space Model. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,4,17.458,22.11,This is the continued discussion of the Vector Space Model. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,5,22.11,30.01,We're going to focus on how to improve the instant changing of this model. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,6,30.01,34.934,_In a previous lecture, you have seen that with simple _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,7,34.934,39.477,_situations of the Vector Space Model, we can come up with _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,8,39.477,44.211,_a simple scoring function that would give us, basically, _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,9,44.211,49.44,a count of how many unique query terms are matching the document. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,10,50.57,56.902,We also have seen that this function has a problem as shown on this slide. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,11,56.902,60.26,_In particular, if you look at these three documents, _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,12,60.26,65.23,they will all get the same score because they match the three unique query words. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,13,66.28,70.53999999999999,_But intuitively we would like, d4 to be ranked above d3. _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,14,70.53999999999999,73.07,And d2 is really non relevant. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,15,74.76,80.47,So the problem here is that this function couldn't capture 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,16,80.47,82.59,the following characteristics. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,17,82.59,87.28,_First, we would like to give more gratitude to d4 _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,18,87.28,92.184,because it matches the presidential more times than d3. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,19,92.184,98.03999999999999,_Second, intuitively matching presidential should be more important _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,20,98.03999999999999,103.09,_than matching about, because about is a very common word that occurs everywhere. _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,21,103.09,104.97999999999999,It doesn't really carry that much content. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,22,107.47,108.94,_So, in this lecture, _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,23,108.94,112.191,let's see how we can improve the model to solve these two problems. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,24,113.95,119.99000000000001,It's worth thinking at this point about why do we have these four problems. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,25,121.42,124.69,If we look back at the assumptions we have made 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,26,124.69,128.996,_while substantiating the Vector Space Model, we will realize that _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,27,128.996,135.2,the problem is really coming from some of the assumptions. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,28,135.2,139.493,_In particular, it has to do with how we place the vectors in the vector space. _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,29,142.115,145.301,_So then, naturally, in order to fix these problems, _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,30,145.301,147.598,we have to revisit those assumptions. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,31,147.598,151.559,_Perhaps, you will have to use different ways to _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,32,151.559,154.735,instantiate the Vector Space Model. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,33,154.735,161.448,_In particular, we have to place the vectors in a different way. _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,34,161.448,165.722,_So, let's see how can we prove this? _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,35,165.722,170.71,_Well, our natural thought is in order to consider multiple times of a term _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,36,170.71,172.47,in a document. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,37,172.47,177.27,We should consider the term frequency instead of just the absence or presence. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,38,177.27,182.9,In order to consider the difference between a document where a query 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,39,182.9,187.62,term occurred multiple times and the one where the query term occurred just once. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,40,187.62,193.13,_We have to concede a term frequency, the count of a term being in the document. _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,41,193.13,198.2,_In the simplest model, we only model the presence and absence of a term. _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,42,198.2,205.32999999999998,We ignore the actual number of times that a term occurs in a document. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,43,205.32999999999998,206.75,So let's add this back. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,44,206.75,211.588,So we're going to do then represent a document by a vector with 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,45,211.588,214.34,term frequency as element. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,46,214.34,220.2,_So, that is to say, now, the elements of both the query vector and _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,47,220.2,223.87,_the document vector will not be zero once, but _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,48,223.87,229.49,instead there will be the counts of a word in the query or the document. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,49,232.13,235.21,So this would bring additional information about the document. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,50,235.21,240.64,So this can be seen as a more accurate representation of our documents. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,51,240.64,243.88,_So, now let's see what the formula would look like if we change _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,52,243.88,245.48,this representation. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,53,245.48,250.39,_So as you see on this slide, we still use that product, and, _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,54,250.39,254.27,so the formula looks very similar in the form. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,55,254.27,258.9,_In fact, it looks identical, but inside of the sum of cos xi and _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,56,258.9,260.39,yi are now different. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,57,261.39,268.34,They're now the counts of words i in the query and the document. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,58,270.45,275.91700000000003,_Now at this point, I also suggest you to pause the lecture for moment and _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,59,275.91700000000003,281.86,just we'll think about how we have interpret the score of this new function. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,60,281.86,287.71,It's doing something very similar to what the simplest VSM is doing. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,61,287.71,290.07,_But because of the change of the vector, _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,62,291.32,293.079,now the new score has a different interpretation. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,63,294.28,295.27,Can you see the difference? 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,64,296.39,300.17,And it has to do with the consideration of multiple 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,65,300.17,303.36,occurrences of the same time in the document. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,66,303.36,306.448,_More importantly, we''ll try to know whether this would fix the problem of _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,67,306.448,307.86,the simplest vector space model. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,68,307.86,312.31,_So, let's look at the this example again. _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,69,312.31,316.66,_So suppose, we change the vector to term frequency vectors. _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,70,316.66,320.628,_Now, let's look at these three documents again. _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,71,320.628,325.94,The query vector is the same because all these words occurred exactly once 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,72,325.94,327.23,in the query. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,73,327.23,329.36,So the vector is still 0 1 vector. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,74,331.21,335.8,_And in fact, d2 is also essential in representing _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,75,335.8,340.12,the same way because none of these words has been repeated many times. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,76,340.12,344.642,_As a result, the score is also the same, still three. _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,77,344.642,349.655,The same issue for d3 and we still have a 3. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,78,349.655,353.807,_But d4 would be different, because now, _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,79,353.807,357.391,presidential occurred twice here. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,80,357.391,364.022,So the end in the four presidential in the [INAUDIBLE] would be 2 instead of 1. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,81,364.022,368.327,_As a result, now the score for d4 is higher. _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,82,368.327,369.875,It's a four now. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,83,369.875,374.117,_So this means, by using term frequency, _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,84,374.117,379.101,we can now rank d4 above d2 and d3 as we hope to. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,85,379.101,383.83,So this solve the problem with default. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,86,386.19,392.69,_But, we can also see that d2 and d3 are still featured in the same way. _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,87,392.69,400.43,_They still have identical scores, so it did not fix the problem here. _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,88,400.43,402.975,_So, how can we fix this problem? _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,89,402.975,409.36,_We would like, to give more credit for matching presidential than matching about. _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,90,409.36,412.11,But how can we solve the problem in a general way? 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,91,413.29,417.89,Is there any way to determine which word should be treated more importantly and 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,92,417.89,421.27,_which word can be, basically ignored. _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,93,422.72,423.84,About is such a word. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,94,425.17,429.68,_And which it does not really carry that much content, _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,95,429.68,431.76,we can essentially ignore that. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,96,431.76,434.868,_We sometimes call such a word, a stock word. _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,97,434.868,438.346,_Those are generally very frequent and they occur everywhere, _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,98,438.346,441.245,_matching it, doesn't really mean anything. _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,99,441.245,444.718,But computation how can we capture that? 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,100,444.718,447.86,_So again, I encourage you to think a little bit about this. _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,101,449.46,452.532,Can you come up with any statistical approaches to somehow 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,102,452.532,454.67,distinguish presidential from about. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,103,457.43,461.375,_If you think about it for a moment, you realize that, _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,104,461.375,466.17,one difference is that a word like above occurs everywhere. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,105,466.17,470.93,So if you count the currents of the water in the whole collection that we 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,106,470.93,474.21,would see that about as much higher for 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,107,474.21,478.97,_this than presidential, which it tends to occur only in some documents. _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,108,481.0,485.59,So this idea suggests that we could somehow 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,109,485.59,490.568,use the global statistics of terms or some other formation to try to 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,110,490.568,495.34,down weight the element for 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,111,495.34,498.85,about in the vector representation of d2. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,112,498.85,501.73,_At the same time, _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,113,501.73,507.62,we hope to somehow increase the weight of presidential in the vector of d3. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,114,509.57,514.19,_If we can do that, then, we can expect that d2 will get _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,115,514.19,519.24,_the overall score to be less than three, while d3 will get the score about three. _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,116,519.24,522.55,_Then, we'll be able to rank d3 on top of d2. _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,117,525.38,527.896,So how can we do this systematically? 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,118,527.896,531.0409999999999,_Again, we can rely on some steps that people count. _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,119,531.0409999999999,535.85,_And in this case, the particular idea is called the Inverse Document Frequency. _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,120,537.36,539.27,We have seen document frequency. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,121,539.27,544.03,_As one signal used in, the moding retrieval functions. _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,122,545.8,548.5,We discussed this in a previous lecture. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,123,548.5,551.18,So here's the specific way of using it. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,124,551.18,555.9,Document frequency is the count of documents that contain a particular term. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,125,555.9,560.99,_Here, we say inverse document frequency because we actually want to reword a word _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,126,560.99,562.7,that doesn't occur in many documents. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,127,564.88,570.06,_And so, the way to incorporate this into our vector [INAUDIBLE] is _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,128,570.06,575.03,then to modify the frequency count by multiplying 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,129,575.03,580.2,it by the idea of the corresponding word as shown here. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,130,580.2,583.756,_If we didn't do that, then we can penalize common _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,131,583.756,588.33,_words which generally have a low idea of, and _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,132,588.33,594.29,_reward real words, which we're have a higher IDF. _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,133,596.34,601.302,So most specific [INAUDIBLE] IDF can be defined as the logarithm 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,134,601.302,606.18,_of M plus one divided by k, where M is the total number of _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,135,606.18,611.73,_documents in the collection,k is df or document frequency. _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,136,611.73,615.278,The total number of documents containing the word W. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,137,615.278,618.99,_Now, if you plot this function by varying k, _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,138,618.99,623.42,then you will see the curve that look like this. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,139,623.42,628.6,_In general, you can see it would give a higher value for _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,140,628.6,630.63,_a low DF word, a rare word. _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,141,630.63,638.71,You can also see the maximum value of this function is log of M plus 1. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,142,638.71,646.9,Will be interesting for you to think about what's minimum value for this function? 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,143,646.9,648.47,This could be interesting exercise. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,144,651.18,655.61,_Now, the specific function may not be as important as _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,145,655.61,659.6,the heuristic to simply penalize popular terms. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,146,661.76,665.78,But it turns out this particular function form has also worked very well. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,147,667.34,672.25,_Now, whether there is a better form of function here, _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,148,672.25,673.52,is the open research question. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,149,675.19,680.81,_But, it's also clear that if we use a linear kernalization like what's _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,150,680.81,687.2,_shown here with this line, then, it may not be as reasonable as the standard IDF. _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,151,687.2,694.27,_In particular, you can see the difference in the standard IDF, _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,152,695.92,701.11,_and we, somehow have a [INAUDIBLE] point here. _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,153,701.11,705.77,_After this point, we're going to say these terms are essentially not very useful. _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,154,705.77,708.18,They can be essentially ignored. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,155,708.18,712.11,_And this makes sense when the term occurs so frequently, and _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,156,712.11,717.31,let's say a term occurs in more than 50% of the documents. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,157,717.31,721.98,_Then the term is unlikely very important and it's, it's basically, a common term. _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,158,721.98,727.035,_It's not very important to match this word, so with the standard IDF, you can _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,159,727.035,734.01,_see it's, basically, assumed that they all have lower weights, there's no difference. _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,160,734.01,737.2,_But if you look at the linear kernelization, at this point there is, _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,161,737.2,737.749,there's some difference. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,162,739.45,746.22,_So intuitively, we want to focus more on the discrimination of low DF words, _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,163,746.22,752.99,rather than these common words. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,164,752.99,758.723,_Well, of course, which one works better, still has to be validated _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,165,758.723,763.39,by using the empirically related data set. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,166,763.39,766.91,And we have to use users to judge which results of that. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,167,768.59,773.18,So now let's see how this can solve problem two. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,168,773.18,775.0,_So now, let's look at the two documents again. _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,169,776.1,780.53,_Now without IDF weighting, before, we just have [INAUDIBLE] vectors, _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,170,780.53,785.72,but with IDF weighting we now can adjust the DF weight 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,171,785.72,789.5,_by multiplying the, with the IDF value. _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,172,789.5,794.95,_For example here, you can see is the adjustment in particular for _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,173,794.95,799.68,_about, there is an adjustment by using the IDF value of about _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,174,799.68,803.98,which is smaller than the IDF value of presidential. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,175,803.98,808.93,_So if you look at these, the IDF will distinguish these two words. _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,176,808.93,814.39,_As a result, adjustment here would be larger, would make this weight larger. _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,177,817.19,822.25,_So if we score with these new vectors, and _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,178,822.25,828.74,_what would happen is that the, of course, they share the same weights for news and _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,179,828.74,833.617,_the campaign, but the margin of about and presidential with this grouping may. _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,180,833.617,841.25,_So now as a result of IDF weighting, we will have d3 to be ranked above d2. _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,181,841.25,846.46,_Because it matched rail word, where as d2 matched common word. _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,182,846.46,850.055,So this shows that the idea of weighting can solve problem two. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,183,853.04,859.16,_So, how effective is this model in general when we use TF-IDF weighting? _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,184,859.16,863.23,_Well, let's look at all these documents that we have seen before. _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,185,863.23,868.09,These are the new scores of the new documents. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,186,868.09,871.06,But how effective is this new weighting method and 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,187,871.06,872.576,_new scoring function, all right? _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,188,873.77,878.51,So now let's see overall how effective is this new ranking function 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,189,878.51,880.61,with TF-IDF Weighting? 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,190,880.61,884.33,_Here, we show all the five documents that we have seen before, and _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,191,884.33,885.72,these are their scores. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,192,887.0,891.48,_Now, we can see the scores for the first four _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,193,891.48,896.41,documents here seem to be quite reasonable. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,194,896.41,897.65,They are as we expected. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,195,898.74,901.128,_However, we also see a new problem. _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,196,901.128,906.097,_Because now d5, here, which did not have a very high _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,197,906.097,910.46,score with our simplest vector space model. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,198,910.46,913.27,_Now, after it has a very high score. _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,199,913.27,915.13,_In fact, it has the highest score here. _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,200,916.85,918.99,_So, this creates a new problem. _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,201,918.99,923.07,This actually a common phenomenon in designing material functions. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,202,923.07,925.56,_Basically, when you try to fix one problem, _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,203,925.56,927.96,you tend to introduce other problems. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,204,927.96,933.45,And that's why it's very tricky how to design effective ranking function. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,205,933.45,939.73,And what's what's the best ranking function is the open research question. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,206,939.73,942.083,Researchers are still working on that. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,207,942.083,947.869,_But in the next few lecture, we're going to also talk about some additional _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,208,947.869,952.928,ideas to further improve this model and try to fix this problem. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,209,955.678,957.5360000000001,_So to summarize this lecture, _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,210,957.5360000000001,961.184,we've talked about how to improve this vector space model. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,211,961.184,965.907,And we've got to improve the [INAUDIBLE] of the vector space model based on 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,212,965.907,967.31,TF-IDF weighting. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,213,968.47,972.34,_So the improvement, most of it, is on the placement of the vector. _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,214,974.51,980.155,_Where we give higher weight to a term that occurred many times in the document, _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,215,980.155,983.33,but infrequently in the whole collection. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,216,983.33,988.116,And we have seen that this improved model indeed works better than 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,217,988.116,993.352,_the simplest vector space model, but it also still has some problems. _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,218,993.352,995.189,_In the next lecture, _
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,219,995.189,1001.019,we're going to look at the how to address these additional problems. 
+2 - 7 - 1.7 Vector Space Model- Improved Instantiation (00-16-52).srt,220,1001.019,1011.019,[MUSIC] 

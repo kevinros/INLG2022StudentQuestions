@@ -1,0 +1,127 @@
+name,id,from,to,text
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,1,0.012,3.386,[SOUND]. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,2,7.805,11.866,This lecture is about the vector space retrieval model. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,3,11.866,14.986,We're going to give an introduction to its basic idea. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,4,18.986,23.771,In the last lecture we talked about the different ways of designing 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,5,23.771,28.99,a retrieval model which would give us a different the ranking function. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,6,30.26,33.55,_In this lecture, we're going to talk about the, the specific way of _
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,7,33.55,36.55,design the ramping function called a vector space mutual model. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,8,37.75,41.5,And we're going to give a brief introduction to the basic idea. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,9,44.33,47.32,Vector space model is a special case of 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,10,47.32,50.81,similarity based models as we discussed before. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,11,50.81,55.156,_Which means, we assume relevance is roughly _
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,12,55.156,59.45,similarity between a document and a query. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,13,62.13,66.28,_Now whether this assumption is true, is actually a question. _
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,14,66.28,70.39,But in order to solve our search problem we have to 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,15,70.39,75.6,convert the vague notion of relevance into a more precise 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,16,75.6,81.67,definition that can be implemented with the programming language. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,17,81.67,86.43,So in this process we have to make a number of assumptions. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,18,86.43,91.51,This is the first assumption that we make here. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,19,91.51,94.78,Basically we assume that if a document is more 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,20,94.78,97.67,_similar to a query than another document, _
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,21,97.67,101.14,then the first document would be assumed to be more relevant than the second one. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,22,101.14,105.31,And this is the basis for ranking documents in this approach. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,23,106.8,112.053,_Again, it's questionable whether this is really the best definition for relevance. _
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,24,112.053,115.28,As we will see later there are other ways to model relevance. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,25,115.28,123.07,The first idea of vector space retrieval model is actually very easy to understand. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,26,123.07,130.3,_Imagine a high dimensional space, where each dimension corresponds to a term. _
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,27,131.65,136.34,_So, here, I show a three dimensional space with three words, _
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,28,136.34,139.27,_programming, library, and presidential. _
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,29,141.12,143.26,_So each term, here, defines one dimension. _
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,30,144.36,149.2,Now we can consider vectors in this three dimensional space. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,31,149.2,152.3,And we're going to assume all our documents and 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,32,152.3,155.16,the query will be placed in this vector space. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,33,155.16,162.84,_So, for example, one document that might be represented at by this vector, d1. _
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,34,164.25,170.36,Now this means this document probably covers library and presidential. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,35,170.36,172.77,But it doesn't really talk about programming. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,36,174.69,180.27,_All right, what does this mean in terms of presentation of document? _
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,37,180.27,181.53,_That just means, _
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,38,181.53,185.68,we're going to look at our document from the perspective of this vector. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,39,185.68,187.91,We're going to ignore everything else. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,40,187.91,192.92,Basically what we see here is only the vector of the document. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,41,194.47,196.39,Of course the document has other information. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,42,196.39,199.264,_For example, the orders of words are simply ignored and _
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,43,199.264,202.57999999999998,that's because we're assume that the words. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,44,204.95,208.43,_So with this representation you have already seen, d1, _
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,45,208.43,211.92000000000002,seems to suggest a topic in either presidential library. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,46,213.75,216.25,Now this is different from another document. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,47,216.25,219.07999999999998,_Which might be represented as a different vector, d2 here. _
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,48,219.07999999999998,223.216,_Now in this case, the document that covers programming and library, but _
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,49,223.216,225.429,it doesn't talk about presidential. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,50,226.94,228.82999999999998,So what does this remind you? 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,51,228.82999999999998,234.65,_Well, you can probably guess, the topic is likely about program language and _
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,52,234.65,236.92000000000002,_the library is software library, library. _
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,53,238.68,244.11,_So this shows that by using this vector space representation, _
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,54,244.11,248.19,we can actually capture the differences between topics of documents. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,55,249.6,252.19,Now you can also imagine there are other vectors. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,56,252.19,252.69,_For example, _
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,57,252.69,258.15,_d3 is pointing in that direction, that might be about presidential programming. _
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,58,258.15,261.71,And in fact we're going to place all the documents in this vector space. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,59,262.92,266.7,And they will be pointing to all kinds of directions. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,60,266.7,270.87,_And similarly, we're going to place our query also in this space, _
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,61,270.87,271.57,as another vector. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,62,272.62,277.61,And then we're going to measure the similarity between the query vector and 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,63,277.61,279.5,every document vector. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,64,279.5,285.11,_So, in this case for example, we can easily see d2 seems to be the closest of, _
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,65,285.11,290.04,to this query factor and therefore d2 will be ranked above others. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,66,291.89,296.57,_So this was a, basically the main idea of the, the vector space model. _
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,67,298.33,304.05,_So to be more pri, precise, be more precise. _
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,68,304.05,309.0,Vector space model is a framework. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,69,309.0,312.51,_In this framework, we make the following assumptions. _
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,70,312.51,317.34,_First, we represent a document and query by a term vector. _
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,71,318.65,321.67,So here a term can be any basic concept. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,72,321.67,328.92,_For example, a word or a phrase, or even enneagram of characters. _
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,73,328.92,332.88,Those are a sequence of characters inside a word. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,74,334.46,337.4,Each term is assumed to define one dimension. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,75,337.4,338.69,Therefore N terms. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,76,338.69,342.38,_In our vocabulary, we define N-dimensional space. _
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,77,344.06,349.61,A query vector would consist of a number of elements 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,78,349.61,354.064,corresponding to the weights of different terms. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,79,354.064,359.54,Each document vector is also similar. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,80,359.54,364.44,It has a number of elements and each value of each element 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,81,365.66,368.37,is indicating that weight of the corresponding term. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,82,369.61,372.41,_Here you can see, we have seen there are N dimensions. _
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,83,372.41,374.465,_Therefore, there are N elements, _
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,84,375.535,378.735,each corresponding to the weight on the particular term. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,85,381.385,386.17,So the relevance in this case would be assume to be the similarity 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,86,386.17,391.02,_between the two vectors, therefore our range in function is _
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,87,391.02,395.73,also defined as the similarity between the query vector and document vector. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,88,397.57,401.78,_Now, if I ask you to write the program to the internet this approach _
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,89,401.78,402.37,in the search engine. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,90,404.03,407.45,_You would realize that this was far from clear, right? _
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,91,408.46,411.90999999999997,We haven't seen a lot of things in detail 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,92,411.90999999999997,416.08,therefore it's impossible to actually write the program to implement this. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,93,416.08,418.11,That's why I said this is a framework. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,94,419.37,423.31,And this has to be refined in order to actually 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,95,424.35,428.72,_suggest a particular function, that you can implement on the computer. _
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,96,430.89,433.81,_So, what does this framework not serve? _
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,97,433.81,437.8,_Well, it actually hasn't set many things _
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,98,437.8,442.51,that would be required in order to implement this function. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,99,444.45,450.51,_First, it did not say how we should define or select the basic concepts exactly. _
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,100,452.55,456.18,_We clearly assume the concepts are orthogonal, _
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,101,456.18,458.65999999999997,otherwise there will be redundancy. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,102,458.65999999999997,465.52,_For example, if two synonyms are somehow distinguished as two different concepts. _
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,103,465.52,468.75,Then they would be defined in two different dimensions. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,104,468.75,473.47,And then that would clearly cause a redundancy here. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,105,474.87,481.61,Or overemphasizing of matching this concept. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,106,481.61,485.9,Because it would be as if you matched the two dimensions 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,107,485.9,488.73,when you actually matched one semantic concept. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,108,491.41,496.12,_Secondly, it did not say how we exactly should place documents and _
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,109,496.12,498.2,query in this space. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,110,498.2,502.97,Basically I show you some examples of query and document vectors. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,111,502.97,507.215,But where exactly should the vector for a particular document point to? 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,112,507.215,513.93,[INAUDIBLE] So this is equivalent to how to define the term weights. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,113,513.93,517.98,How do you computer use element values in those vectors? 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,114,519.42,524.1,This is a very important question because term weight 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,115,524.1,527.22,in the query vector indicates the importance of term. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,116,528.81,531.46,_So depending on how you assign the weight, _
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,117,531.46,536.6,you might prefer some terms to be matched over others. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,118,536.6,539.72,_Similarly, term weight in the document is also very meaningful. _
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,119,539.72,542.649,It indicates how well the term characterizes the document. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,120,543.83,548.62,_If you got it wrong, then you clearly don't represent this document accurately. _
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,121,550.15,553.257,_Finally, how we define the similarity measure is also not clear. _
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,122,555.6,560.4,So these questions must be addressed before we can have an operational 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,123,560.4,564.62,function that we can actually implement using a program language. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,124,565.89,572.081,So how do we solve these problems 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,125,572.081,579.43,is the main topic of the next lecture. 
+2 - 5 - 1.5 Vector Space Model- Basic Idea (00-09-44).srt,126,579.43,584.5889999999999,[MUSIC] 

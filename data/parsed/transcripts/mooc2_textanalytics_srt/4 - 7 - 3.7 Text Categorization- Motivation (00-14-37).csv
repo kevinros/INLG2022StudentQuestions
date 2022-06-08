@@ -1,0 +1,194 @@
+name,id,from,to,text
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,1,0.192,3.512,[SOUND] 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,2,6.614,9.66,This lecture is about text categorization. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,3,11.36,15.32,_In this lecture, we're going to talk about text categorization. _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,4,16.39,21.32,This is a very important technique for text data mining and analytics. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,5,22.47,27.035,It is relevant to discovery of various different kinds of 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,6,27.035,29.134,knowledge as shown here. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,7,29.134,33.38,_First, it's related to topic mining and analysis. _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,8,33.38,36.06,_And, that's because it has to do with _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,9,36.06,40.97,analyzing text to data based on some predefined topics. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,10,40.97,46.239,_Secondly, it's also related to opinion mining and sentiment analysis, _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,11,46.239,51.941,_which has to do with discovery knowledge about the observer, the human sensor. _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,12,51.941,56.301,_Because we can categorize the authors, for example, _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,13,56.301,61.813,_based on the content of the articles that they have written, right? _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,14,61.813,66.611,_We can, in general, categorize the observer _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,15,66.611,70.8,based on the content that they produce. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,16,72.3,76.72,_Finally, it's also related to text-based prediction. _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,17,76.72,81.76,_Because, we can often use text categorization techniques to predict some _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,18,81.76,86.18,variables in the real world that are only remotely related to text data. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,19,87.23,92.49000000000001,_And so, this is a very important technique for text to data mining. _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,20,94.82,97.86,This is the overall plan for covering the topic. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,21,97.86,100.75,_First, we're going to talk about what is text categorization and _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,22,100.75,104.50999999999999,why we're interested in doing that in this lecture? 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,23,104.50999999999999,107.92,_And now, we're going to talk about how to do text categorization for _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,24,107.92,110.78,how to evaluate the categorization results. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,25,110.78,116.14,_So, the problem of text categorization is defined as follows. _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,26,116.14,123.461,We're given a set of predefined categories possibly forming a hierarchy or so. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,27,123.461,127.462,_And often, also a set of training examples or _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,28,127.462,132.519,training set of labeled text objects which means the text 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,29,132.519,137.81,objects have already been enabled with known categories. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,30,137.81,143.04,_And then, the task is to classify any text object into one or _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,31,143.04,146.32,more of these predefined categories. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,32,146.32,149.139,_So, the picture on this slide shows what happens. _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,33,150.27,152.12,_When we do text categorization, _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,34,152.12,157.63,we have a lot of text objects to be processed by a categorization system and 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,35,157.63,163.82,_the system will, in general, assign categories through these documents. _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,36,163.82,169.11,_As shown on the right and the categorization results, _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,37,169.11,174.28,and we often assume the availability of training examples and 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,38,174.28,179.06,these are the documents that are tag with known categories. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,39,179.06,181.66,And these examples are very important for 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,40,181.66,186.11,helping the system to learn patterns in different categories. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,41,186.11,190.18,_And, this would further help the system then know how to recognize _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,42,191.28,196.56,the categories of new text objects that it has not seen. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,43,196.56,200.95,_So, here are some specific examples of text categorization. _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,44,200.95,206.14,_And in fact, there are many examples, here are just a few. _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,45,207.23,213.0,_So first, text objects can vary, so we can categorize a document, _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,46,213.0,216.73,_or a passage, or a sentence, or collections of text. _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,47,216.73,221.4,_As in the case of clustering, the units to be analyzed can vary a lot, so _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,48,221.4,224.09,this creates a lot of possibilities. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,49,224.09,226.69,_Secondly, categories can also vary. _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,50,226.69,229.88,_Allocate in general, there's two major kinds of categories. _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,51,229.88,231.56,One is internal categories. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,52,231.56,235.89,These are categories that categorize content of text object. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,53,235.89,240.85,_For example, topic categories or sentiment categories and _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,54,240.85,244.81,they generally have to do with the content of the text objects 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,55,244.81,246.93,throughout the categorization of the content. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,56,248.21,253.43,The other kind is external categories that can characterize an entity 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,57,253.43,256.12,associated with the text object. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,58,256.12,257.63,_For example, _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,59,257.63,262.81,authors are entities associated with the content that they produce. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,60,262.81,268.34,_And so, we can use their content in determining which author has written, _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,61,268.34,271.67,_which part, for example, and that's called author attribution. _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,62,273.54,278.048,_Or, we can have any other mininal categories _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,63,278.048,283.147,associate with text data as long as there is minimal 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,64,283.147,287.788,connection between the entity and text data. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,65,287.788,294.025,_For example, we might collect a lot of reviews about a restaurant or _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,66,294.025,298.073,_a lot of reviews about a product, and then, _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,67,298.073,304.77,this text data can help us infer properties of a product or a restaurant. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,68,304.77,307.77,_In that case, we can treat this as a categorization problem. _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,69,307.77,309.921,We can categorize restaurants or 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,70,309.921,313.924,categorize products based on their corresponding reviews. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,71,313.924,317.245,_So, this is an example for external category. _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,72,317.245,320.4,Here are some specific examples of the applications. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,73,320.4,325.11,News categorization is very common as being started a lot. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,74,325.11,330.009,News agencies would like to assign predefined 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,75,330.009,335.672,categories to categorize news generated everyday. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,76,335.672,339.824,_And, these virtual article categorizations are not important aspect. _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,77,339.824,343.65,_For example, in the biomedical domain, there's MeSH annotations. _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,78,343.65,347.93,_MeSH stands for Medical Subject Heading, and this is ontology of terms, _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,79,349.09000000000003,352.49,characterize content of literature articles in detail. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,80,354.59000000000003,359.86,_Another example of application is spam email detection or filtering, right? _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,81,359.86,364.94,_So, we often have a spam filter _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,82,364.94,370.26,to help us distinguish spams from legitimate emails and 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,83,370.26,373.0,this is clearly a binary classification problem. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,84,374.5,378.46,Sentiment categorization of product reviews or tweets is yet 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,85,378.46,383.12,_another kind of applications where we can categorize, comparing to positive or _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,86,383.12,386.38,negative or positive and negative or neutral. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,87,387.46,392.82,_So, you can have send them to categories, assign the two text content. _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,88,395.52,399.48,_Another application is automatic email routing or sorting, so, _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,89,399.48,403.75,you might want to automatically sort your emails into different folders and that's 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,90,403.75,407.32,one application of text categorization where each folder is a category. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,91,408.37,412.58,The results are another important kind of applications of routing emails 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,92,412.58,415.90999999999997,_to the right person to handle, so, in helpdesk, _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,93,415.90999999999997,421.89,email messaging is generally routed to a particular person to handle. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,94,421.89,425.82,Different people tend to handle different kinds of requests. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,95,425.82,431.22,_And in many cases, a person would manually assign the messages to the right people. _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,96,431.22,435.231,_But, if you can imagine, you can't be able to automatically _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,97,435.231,438.794,text categorization system to help routing request. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,98,438.794,444.969,_And, this is a class file, the incoming request in the one of the categories _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,99,444.969,451.265,where each category actually corresponds to a person to handle the request. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,100,451.265,455.975,_And finally, author attribution, as I just mentioned, is yet another application, and _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,101,455.975,459.759,it's another example of using text to actually infer properties of 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,102,461.48,462.96,some other entities. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,103,462.96,466.89,_And, there are also many variants of the problem formulation. _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,104,466.89,470.98,_And so, first, we have the simplest case, which is a binary categorization, _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,105,470.98,472.99,where there are only two categories. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,106,472.99,477.65999999999997,_And, there are many examples like that, information retrieval or search engine. _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,107,479.04,483.6,Applications with one distinguishing relevant documents from non-relevant 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,108,483.6,484.94,documents for a particular query. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,109,486.04,492.33,_Spam filtering just distinguishing spams from non-spams, so, also two categories. _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,110,492.33,496.8,_Sometimes, classifications of opinions can be in two categories, _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,111,496.8,497.8,positive and a negative. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,112,499.12,502.65,A more general case would be K-category categorization and there are also 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,113,502.65,506.755,_many applications like that, there could be more than two categories. _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,114,506.755,510.155,_So, topic categorization is often such an example where you can have _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,115,510.155,511.935,multiple topics. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,116,511.935,516.205,Email routing would be another example when you may have multiple folders or 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,117,516.205,519.322,_if you route the email to the right person to handle it, _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,118,519.322,524.55,then there are multiple people to classify. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,119,524.55,528.212,_So, in all these cases, there are more than two kinds of categories. _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,120,529.272,532.382,Another variation is to have hierarchical categorization 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,121,532.382,534.442,where categories form a hierarchy. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,122,534.442,536.602,_Again, topical hierarchy is very common. _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,123,538.232,540.742,Yet another variation is joint categorization. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,124,540.742,544.55,That's when you have multiple categorization tasks that are related and 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,125,544.55,548.15,then you hope to kind of join the categorization. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,126,548.15,553.34,Further leverage the dependency of these tasks to improve accuracy for 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,127,553.34,555.25,each individual task. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,128,555.25,559.87,Among all these binary categorizations is most fundamental and 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,129,559.87,565.17,part of it also is because it's simple and probably it's because 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,130,565.17,571.0,it can actually be used to perform all the other categorization tasks. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,131,571.0,574.8389999999999,_For example, a K-category categorization task can be actually _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,132,574.8389999999999,578.665,performed by using binary categorization. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,133,580.075,583.405,_Basically, we can look at each category separately and _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,134,583.405,589.385,then the binary categorization problem is whether object is in this category or 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,135,589.385,592.005,_not, meaning in other categories. _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,136,593.485,599.82,_And, the hierarchical categorization can also be done by progressively _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,137,599.82,604.3,doing flat categorization at each level. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,138,604.3,607.0,_So, we have, first, we categorize all the objects into, let's say, _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,139,607.0,609.14,_a small number of high-level categories, _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,140,609.14,613.74,_and inside each category, we have further categorized to sub-categories, etc. _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,141,615.0,616.728,_So, why is text categorization important? _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,142,616.728,621.4639999999999,_Well, I already showed that you, several applications but, in general, _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,143,621.4639999999999,623.244,there are several reasons. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,144,623.244,628.891,One is text categorization helps enrich text representation and that's to achieve 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,145,628.891,634.97,more understanding of text data that's all it was useful for text analysis. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,146,634.97,638.738,_So, now with categorization text can be represented in multiple levels. _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,147,638.738,647.31,The keyword conditions that's often used for a lot text processing tasks. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,148,647.31,652.455,But we can now also add categories and they provide two levels of transition. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,149,655.485,660.085,Semantic categories assigned can also be directly or indirectly useful for 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,150,660.085,661.145,application. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,151,661.145,667.869,_So, for example, semantic categories could be already very useful or _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,152,667.869,672.248,other attribution might be directly useful. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,153,672.248,678.118,Another example is when semantic categories can facilitate aggregation 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,154,678.118,684.66,of text content and this is another case of applications of text categorization. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,155,685.95,690.94,_For example, if we want to know the overall opinions about a product, we _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,156,692.01,697.83,could first categorize the opinions in each individual view 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,157,697.83,702.73,_as positive or negative and then, that would allow us to easy to aggregate all _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,158,702.73,707.81,_the sentiment, and it would tell us about _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,159,707.81,712.68,_the 70% of the views are positive and 30% are negative, etc. _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,160,713.81,716.865,_So, without doing categorization, _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,161,716.865,722.402,it will be much harder to aggregate such opinions to provide a concise 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,162,722.402,727.468,way of coding text in some sense based on all of the vocabulary. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,163,727.468,733.64,_And, sometimes you may see in some applications, text with categorizations _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,164,733.64,738.704,_called a text coded, encoded with some control of vocabulary. _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,165,738.704,742.316,The second kind of reasons is to use text 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,166,742.316,747.024,_categorization to infer properties of entities, _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,167,747.024,751.95,and text categories allows us to infer the properties 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,168,751.95,756.95,of such entities that are associate with text data. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,169,756.95,761.14,_So, this means we can use text categorization _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,170,761.14,764.09,to discover knowledge about the world. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,171,764.09,768.37,_In general, as long as we can associate the entity with text of data, _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,172,768.37,773.6,we can always the text of data to help categorize the corresponding entities. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,173,773.6,774.502,_So, it's used for _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,174,774.502,779.38,single information network that will connect the other entities with text data. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,175,779.38,783.75,The obvious entities that can be directly connected are authors. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,176,783.75,788.34,_But, you can also imagine the author's affiliations or the author's age and _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,177,788.34,794.09,other things can be actually connected to text data indirectly. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,178,794.09,798.86,_Once we have made the connection, then we can make a prediction about those values. _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,179,798.86,803.52,_So, this is a general way to allow us to use text mining through, so _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,180,803.52,806.89,the text categorization to discover knowledge about the world. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,181,806.89,812.33,_Very useful, especially in big text data analytics where we are often _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,182,812.33,818.15,just using text data as extra sets of data extracted from humans 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,183,818.15,823.93,to infer certain decision factors often together with non-textual data. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,184,823.93,825.71,_Specifically with text, for example, _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,185,825.71,829.22,we can also think of examples of inferring properties of entities. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,186,829.22,833.19,_For example, discovery of non-native speakers of a language. _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,187,833.19,839.46,_And, this can be done by categorizing the content of speakers. _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,188,840.68,845.566,Another example is to predict the party affiliation of a politician based 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,189,845.566,847.314,on the political speech. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,190,847.314,851.967,_And, this is again an example of using text data to infer _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,191,851.967,855.146,some knowledge about the real world. 
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,192,855.146,859.265,_In nature, the problems are all the same, and _
+4 - 7 - 3.7 Text Categorization- Motivation (00-14-37).srt,193,859.265,864.98,that's as we defined and it's a text categorization problem. 

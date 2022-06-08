@@ -1,0 +1,285 @@
+name,id,from,to,text
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,1,0.012,4.92,[SOUND] 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,2,7.211,10.243,This lecture is about using a time series 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,3,10.243,14.87,as context to potentially discover causal topics in text. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,4,14.87,18.5,_In this lecture, we're going to continue discussing Contextual Text Mining. _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,5,18.5,23.39,_In particular, we're going to look at the time series as a context for _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,6,23.39,27.6,_analyzing text, to potentially discover causal topics. _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,7,27.6,29.57,_As usual, it started with the motivation. _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,8,29.57,34.45,_In this case, we hope to use text mining to understand a time series. _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,9,34.45,39.43,_Here, what you are seeing is Dow Jones Industrial Average stock price curves. _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,10,39.43,41.775,And you'll see a sudden drop here. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,11,41.775,42.6,Right. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,12,42.6,45.75,So one would be interested knowing what might have caused the stock 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,13,45.75,46.53,market to crash. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,14,48.87,51.76,_Well, if you know the background, and you might be able to figure it out if you _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,15,51.76,56.18,_look at the time stamp, or there are other data that can help us think about. _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,16,56.18,60.39,But the question here is can we get some clues about this 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,17,60.39,62.76,from the companion news stream? 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,18,62.76,66.27,And we have a lot of news data that generated during that period. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,19,68.19,72.12,So if you do that we might actually discover the crash. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,20,72.12,76.48,_After it happened, at the time of the September 11 attack. _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,21,76.48,81.27,And that's the time when there is a sudden rise of the topic 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,22,81.27,83.84,about September 11 happened in news articles. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,23,86.1,92.02000000000001,Here's another scenario where we want to analyze the Presidential Election. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,24,92.02000000000001,96.792,And this is the time series that are from the Presidential Prediction Market. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,25,96.792,104.97999999999999,_For example, I write a trunk of market would have stocks for each candidate. _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,26,104.97999999999999,109.66,And if you believe one candidate that will win then you tend to buy the stock for 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,27,109.66,113.97,_that candidate, causing the price of that candidate to increase. _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,28,113.97,118.17,_So, that's a nice way to actual do survey of people's opinions about _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,29,118.17,119.0,these candidates. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,30,120.44,125.28,_Now, suppose you see something drop of price for one candidate. _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,31,125.28,128.88,And you might also want to know what might have caused the sudden drop. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,32,130.29,136.14,_Or in a social science study, you might be interested in knowing what method _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,33,136.14,140.93,_in this election, what issues really matter to people. _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,34,140.93,141.85,_Now again in this case, _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,35,141.85,145.37,we can look at the companion news stream and ask for the question. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,36,145.37,150.01,Are there any clues in the news stream that might provide insight about this? 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,37,150.01,152.96,_So for example, we might discover the mention of tax cut _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,38,155.75,158.36,has been increasing since that point. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,39,158.36,162.208,_So maybe, that's related to the drop of the price. _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,40,162.208,167.036,So all these cases are special cases of a general problem of joint 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,41,167.036,172.17000000000002,analysis of text and a time series data to discover causal topics. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,42,172.17000000000002,176.02,The input in this case is time series plus 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,43,176.02,180.58,_text data that are produced in the same time period, the companion text stream. _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,44,182.4,186.5,_And this is different from the standard topic models, _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,45,186.5,188.74,where we have just to text collection. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,46,188.74,191.96,_That's why we see time series here, it serves as context. _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,47,193.09,196.302,_Now, the output that we want to generate is the topics _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,48,196.302,201.27,whose coverage in the text stream has strong correlations with the time series. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,49,202.42000000000002,206.41,_For example, whenever the topic is managing the price tends to go down, etc. _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,50,208.65,210.89,Now we call these topics Causal Topics. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,51,210.89,215.73,_Of course, they're not, strictly speaking, causal topics. _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,52,215.73,221.12,_We are never going to be able to verify whether they are causal, or _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,53,221.12,223.09,there's a true causal relationship here. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,54,223.09,227.96,That's why we put causal in quotation marks. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,55,227.96,231.6,But at least they are correlating topics that might potentially 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,56,231.6,233.23,explain the cause and 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,57,233.23,238.09,humans can certainly further analyze such topics to understand the issue better. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,58,239.42000000000002,244.64,And the output would contain topics just like in topic modeling. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,59,244.64,248.74,But we hope that these topics are not just the regular topics with. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,60,248.74,253.45,_These topics certainly don't have to explain the data of the best in text, but _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,61,253.45,257.27,rather they have to explain the data in the text. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,62,257.27,261.477,Meaning that they have to reprehend the meaningful topics in text. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,63,261.477,263.87,_Cement but also more importantly, _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,64,263.87,269.76,they should be correlated with external hand series that's given as a context. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,65,269.76,273.58,_So to understand how we solve this problem, let's first adjust to _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,66,273.58,276.93,_solve the problem with reactive topic model, for example PRSA. _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,67,276.93,280.33,And we can apply this to text stream and 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,68,280.33,284.26,with some extension like a CPRSA or Contextual PRSA. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,69,284.26,289.33,Then we can discover these topics in the correlation and 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,70,289.33,291.44,also discover their coverage over time. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,71,293.26,299.3,_So, one simple solution is, to choose the topics from _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,72,299.3,304.0,this set that have the strongest correlation with the external time series. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,73,305.23,308.09,But this approach is not going to be very good. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,74,308.09,309.05,Why? Because 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,75,309.05,313.15,awareness pictured to the topics is that they will discover by PRSA or LDA. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,76,313.15,317.64,And that means the choice of topics will be very limited. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,77,317.64,320.905,And we know these models try to maximize the likelihood of the text data. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,78,320.905,324.685,So those topics tend to be the major topics that explain the text data well. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,79,324.685,328.71,aAnd they are not necessarily correlated with time series. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,80,328.71,333.65999999999997,_Even if we get the best one, the most correlated topics might still not be so _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,81,334.8,336.17,interesting from causal perspective. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,82,337.84000000000003,342.74,_So here in this work site here, a better approach was proposed. _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,83,342.74,346.32,And this approach is called Iterative Causal Topic Modeling. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,84,346.32,350.815,_The idea is to do an iterative adjustment of topic, _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,85,350.815,356.1,discovered by topic models using time series to induce a product. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,86,357.26,360.59,_So here's an illustration on how this work, how this works. _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,87,360.59,362.63,Take the text stream as input and 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,88,362.63,366.14,then apply regular topic modeling to generate a number of topics. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,89,366.14,367.3,Let's say four topics. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,90,367.3,367.81,Shown here. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,91,369.04,374.54,And then we're going to use external time series to assess 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,92,374.54,379.14,which topic is more causally related or correlated with the external time series. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,93,379.14,381.8,So we have something that rank them. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,94,381.8,384.972,And we might think that topic one and topic four are more correlated and 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,95,384.972,386.83,topic two and topic three are not. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,96,386.83,389.66,Now we could have stopped here and 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,97,389.66,393.53,that would be just like what the simple approached that I talked about earlier 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,98,393.53,398.15,then we can get to these topics and call them causal topics. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,99,398.15,401.68,But as I also explained that these topics are unlikely very good 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,100,401.68,405.85,because they are general topics that explain the whole text connection. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,101,405.85,406.7,They are not necessary. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,102,406.7,410.18,The best topics are correlated with our time series. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,103,411.43,417.46,So what we can do in this approach is to first zoom into word level and 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,104,417.46,422.83,we can look into each word and the top ranked word listed for each topic. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,105,422.83,427.81,Let's say we take Topic 1 as the target examined. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,106,427.81,433.03,We know Topic 1 is correlated with the time series. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,107,433.03,437.39,Or is at least the best that we could get from this set of topics so far. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,108,438.49,442.59,_And we're going to look at the words in this topic, the top words. _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,109,443.81,446.12,_And if the topic is correlated with the Time Series, _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,110,446.12,450.74,there must be some words that are highly correlated with the Time Series. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,111,450.74,455.48,_So here, for example, we might discover W1 and W3 are positively _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,112,455.48,460.63,_correlated with Time Series, but W2 and W4 are negatively correlated. _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,113,461.64,467.18,_So, as a topic, and it's not good to mix these words with different correlations. _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,114,467.18,470.3,So we can then for the separate of these words. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,115,470.3,474.98,We are going to get all the red words that indicate positive correlations. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,116,474.98,475.85,W1 and W3. And 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,117,475.85,478.59000000000003,we're going to also get another sub topic. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,118,480.89,482.02,If you want. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,119,482.02,486.93,_That represents a negatively correlated words, W2 and W4. _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,120,487.98,494.04,_Now, these subtopics, or these variations of topics, based on the correlation _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,121,494.04,500.1,_analysis, are topics that are still quite related to the original topic, Topic 1. _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,122,500.1,501.95,_But they are already deviating, _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,123,501.95,508.26,because of the use of time series information for bias selection of words. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,124,508.26,513.31,_So then in some sense, well we should expect so, some sense _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,125,513.31,517.86,more correlated with the time series than the original Topic 1. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,126,517.86,521.56,_Because the Topic 1 has mixed words, here we separate them. _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,127,522.65,525.21,So each of these two subtopics 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,128,526.21,529.69,can be expected to be better coherent in this time series. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,129,529.69,532.93,_However, they may not be so coherent as it mention. _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,130,532.93,537.76,So the idea here is to go back to topic model by using these 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,131,537.76,542.37,each as a prior to further guide the topic modeling. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,132,542.37,546.14,And that's to say we ask our topic models now discover topics that 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,133,546.14,550.08,are very similar to each of these two subtopics. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,134,550.08,557.11,And this will cause a bias toward more correlate to the topics was a time series. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,135,557.11,561.66,Of course then we can apply topic models to get another generation of topics. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,136,561.66,565.772,And that can be further ran to the base of the time series to set after the highly 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,137,565.772,567.227,correlated topics. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,138,567.227,572.18,And then we can further analyze the components at work in the topic and 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,139,572.18,575.38,then try to analyze.word level correlation. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,140,575.38,579.84,And then get the even more correlated subtopics that can be 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,141,579.84,584.42,further fed into the process as prior to drive the topic of model discovery. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,142,586.0,590.46,So this whole process is just a heuristic way of optimizing causality and 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,143,590.46,592.84,_coherence, and that's our ultimate goal. _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,144,592.84,593.88,Right? 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,145,593.88,598.55,So here you see the pure topic models will be very good at 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,146,598.55,601.98,_maximizing topic coherence, the topics will be all meaningful. _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,147,602.99,607.125,_If we only use causality test, or correlation measure, _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,148,607.125,612.15,_then we might get a set words that are strongly correlate with time series, _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,149,612.15,614.77,but they may not necessarily mean anything. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,150,614.77,617.82,It might not be cementric connected. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,151,617.82,620.33,_So, that would be at the other extreme, on the top. _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,152,621.49,625.43,_Now, the ideal is to get the causal topic that's scored high, _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,153,625.43,629.47,both in topic coherence and also causal relation. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,154,629.47,630.18,_In this approach, _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,155,630.18,635.69,it can be regarded as an alternate way to maximize both sine engines. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,156,635.69,640.21,So when we apply the topic models we're maximizing the coherence. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,157,640.21,644.2,But when we decompose the topic model words into sets 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,158,644.2,647.76,of words that are very strong correlated with the time series. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,159,647.76,651.23,We select the most strongly correlated words with the time series. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,160,651.23,654.83,We are pushing the model back to the causal 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,161,654.83,658.82,dimension to make it better in causal scoring. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,162,658.82,664.02,_And then, when we apply the selected words as a prior _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,163,664.02,668.69,_to guide a topic modeling, we again go back to optimize the coherence. _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,164,668.69,673.199,_Because topic models, we ensure the next generation of topics to be coherent and _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,165,673.199,677.461,we can iterate when they're optimized in this way as shown on this picture. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,166,680.52,685.445,So the only I think a component that you haven't seen such a framework is how 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,167,685.445,687.38,to measure the causality. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,168,687.38,690.66,Because the rest is just talking more on. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,169,690.66,693.05,So let's have a little bit of discussion of that. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,170,693.05,694.05,So here we show that. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,171,694.05,696.64,And let's say we have a topic about government response here. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,172,696.64,700.78,And then we just talking more of we can get coverage of the topic over time. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,173,700.78,702.24,_So, we have a time series, X sub t. _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,174,703.38,708.27,_Now, we also have, are give a time series that represents external information. _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,175,708.27,710.735,_It's a non text time series, Y sub t. _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,176,710.735,712.783,It's the stock prices. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,177,712.783,717.56,Now the the question here is does Xt cause Yt? 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,178,718.68,723.56,_Well in other words, we want to match the causality relation between the two. _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,179,723.56,727.21,Or maybe just measure the correlation of the two. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,180,728.36,731.84,There are many measures that we can use in this framework. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,181,731.84,734.48,_For example, pairs in correlation is a common use measure. _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,182,734.48,737.34,And we got to consider time lag here so 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,183,737.34,739.8,that we can try to capture causal relation. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,184,739.8,745.41,Using somewhat past data and using the data in the past 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,185,746.79,750.99,to try to correlate with the data on 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,186,750.99,756.01,_points of y that represents the future, for example. _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,187,756.01,761.24,_And by introducing such lag, we can hopefully capture some causal relation by _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,188,761.24,764.03,even using correlation measures like person correlation. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,189,765.06,770.85,_But a common use, the measure for causality here is Granger Causality Test. _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,190,772.5,775.04,And the idea of this test is actually quite simple. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,191,775.04,778.71,Basically you're going to have all the regressive model to 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,192,778.71,783.0,use the history information of Y to predict itself. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,193,783.0,786.2,And this is the best we could without any other information. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,194,786.2,788.47,So we're going to build such a model. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,195,788.47,792.83,And then we're going to add some history information of X into such model. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,196,792.83,796.34,To see if we can improve the prediction of Y. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,197,796.34,801.17,If we can do that with a statistically significant difference. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,198,801.17,805.7,_Then we just say X has some causal inference on Y, _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,199,805.7,810.57,or otherwise it wouldn't have causal improvement of prediction of Y. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,200,812.08,815.67,_If, on the other hand, the difference is insignificant and _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,201,815.67,819.15,that would mean X does not really have a cause or relation why. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,202,819.15,820.91,So that's the basic idea. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,203,820.91,825.31,_Now, we don't have time to explain this in detail so you could read, but _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,204,825.31,829.37,you would read at this cited reference here to know more about this measure. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,205,829.37,832.46,It's a very convenient used measure. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,206,832.46,833.85,Has many applications. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,207,835.79,840.44,_So next, let's look at some simple results generated by this approach. _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,208,840.44,842.42,And here the data is the New York Times and 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,209,842.42,846.11,in the time period of June 2000 through December of 2011. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,210,846.11,852.96,And here the time series we used is stock prices of two companies. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,211,852.96,855.04,American Airlines and Apple and 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,212,855.04,861.23,_the goal is to see if we inject the sum time series contest, _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,213,861.23,866.58,whether we can actually get topics that are wise for the time series. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,214,866.58,869.89,_Imagine if we don't use any input, we don't use any context. _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,215,869.89,875.33,Then the topics from New York times discovered by PRSA would be 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,216,875.33,878.25,just general topics that people talk about in news. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,217,878.25,880.56,All right. Those major topics in the news event. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,218,881.82,887.86,But here you see these topics are indeed biased toward each time series. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,219,887.86,891.03,And particularly if you look at the underlined words here 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,220,891.03,894.28,_in the American Airlines result, and you see airlines, _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,221,894.28,899.09,_airport, air, united trade, or terrorism, etc. _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,222,899.09,905.58,So it clearly has topics that are more correlated with the external time series. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,223,905.58,906.37,_On the right side, _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,224,906.37,911.54,_you see that some of the topics are clearly related to Apple, right. _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,225,911.54,917.11,_So you can see computer, technology, software, internet, com, web, etc. _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,226,917.11,919.88,So that just means the time series 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,227,919.88,924.41,has effectively served as a context to bias the discovery of topics. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,228,924.41,925.89,_From another perspective, _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,229,925.89,930.782,these results help us on what people have talked about in each case. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,230,930.782,936.2,_So not just the people, what people have talked about, _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,231,936.2,941.13,but what are some topics that might be correlated with their stock prices. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,232,941.13,943.69,And so these topics can serve as a starting point for 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,233,943.69,948.32,people to further look into issues and you'll find the true causal relations. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,234,948.32,954.136,Here are some other results from analyzing 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,235,954.136,958.98,Presidential Election time series. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,236,958.98,962.76,The time series data here is from Iowa Electronic market. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,237,962.76,964.77,And that's a prediction market. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,238,964.77,966.0,And the data is the same. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,239,966.0,969.54,New York Times from May 2000 to October 2000. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,240,969.54,973.108,That's for 2000 presidential campaign election. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,241,973.108,976.73,_Now, what you see here _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,242,976.73,980.389,are the top three words in significant topics from New York Times. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,243,981.68,986.52,_And if you look at these topics, and they are indeed quite related to the campaign. _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,244,986.52,990.92,Actually the issues are very much related to 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,245,990.92,995.71,the important issues of this presidential election. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,246,995.71,1000.26,Now here I should mention that the text data has been filtered by using 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,247,1000.26,1003.07,only the articles that mention these candidate names. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,248,1005.76,1010.11,It's a subset of these news articles. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,249,1010.11,1011.89,Very different from the previous experiment. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,250,1013.11,1018.23,But the results here clearly show that the approach can uncover some 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,251,1018.23,1022.2,important issues in that presidential election. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,252,1022.2,1027.65,_So tax cut, oil energy, abortion and gun control are all known _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,253,1027.65,1031.73,to be important issues in that presidential election. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,254,1031.73,1036.23,And that was supported by some literature in political science. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,255,1037.25,1041.96,_And also I was discussing Wikipedia, right. _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,256,1041.96,1046.75,So basically the results show that the approach can effectively 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,257,1046.75,1051.545,discover possibly causal topics based on the time series data. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,258,1055.33,1057.72,So there are two suggested readings here. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,259,1057.72,1064.81,One is the paper about this iterative topic modeling with time series feedback. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,260,1064.81,1068.38,Where you can find more details about how this approach works. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,261,1068.38,1072.965,And the second one is reading about Granger Casuality text. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,262,1075.73,1082.553,_So in the end, let's summarize the discussion of Text-based Prediction. _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,263,1082.553,1086.42,_Now, Text-based prediction is generally very useful for _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,264,1086.42,1089.07,big data applications that involve text. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,265,1089.07,1093.34,Because they can help us inform new knowledge about the world. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,266,1093.34,1096.25,And the knowledge can go beyond what's discussed in the text. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,267,1097.52,1103.95,As a result can also support optimizing of our decision making. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,268,1103.95,1105.609,And this has a wider spread application. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,269,1108.09,1111.67,Text data is often combined with non-text data for prediction. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,270,1111.67,1114.19,_because, for this purpose, the prediction purpose, _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,271,1114.19,1117.94,_we generally would like to combine non-text data and text data together, _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,272,1117.94,1121.74,as much cruel as possible for prediction. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,273,1121.74,1124.525,And so as a result during the analysis of text and 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,274,1124.525,1129.55,non-text is very necessary and it's also very useful. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,275,1129.55,1133.15,_Now when we analyze text data together with non-text data, _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,276,1133.15,1136.218,we can see they can help each other. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,277,1136.218,1140.65,_So non-text data, provide a context for mining text data, and _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,278,1140.65,1144.41,we discussed a number of techniques for contextual text mining. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,279,1144.41,1148.08,_And on the other hand, a text data can also help interpret _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,280,1148.08,1152.5,_patterns discovered from non-text data, and this is called a pattern annotation. _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,281,1154.68,1157.66,_In general, this is a very active research topic, and _
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,282,1157.66,1160.1,there are new papers being published. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,283,1160.1,1165.211,And there are also many open challenges that have to be solved. 
+5 - 10 - 4.10 Contextual Text Mining- Mining Casual Topics with Time Series Supervision (00-19-37).srt,284,1165.211,1175.211,[MUSIC] 

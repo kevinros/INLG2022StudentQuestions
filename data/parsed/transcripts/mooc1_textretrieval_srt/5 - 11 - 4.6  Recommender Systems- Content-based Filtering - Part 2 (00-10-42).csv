@@ -1,0 +1,153 @@
+name,id,from,to,text
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,1,0.0,3.093,[SOUND]. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,2,9.942,12.695,There are some interesting challenges in threshold. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,3,12.695,15.015,Would have known in the filtering problem. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,4,15.015,18.385,_So here I show the, sort of the data that you can collect in, _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,5,18.385,19.965,in the filtering system. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,6,19.965,25.475,So you can see the scores and the status of relevance. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,7,25.475,30.692,_So the first one has a score 36.5, and it's relevant. _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,8,30.692,34.62,The second one is not relevant. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,9,34.62,38.802,_Of course, we have a lot of documents for which we don't know the status, _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,10,38.802,40.91,because we will have to the user. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,11,40.91,42.06,_So as you can see here, _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,12,42.06,47.38,we only see the judgements of documents delivered to the user. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,13,47.38,50.05,So this is not a random sample. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,14,50.05,52.09,So it's a censored data. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,15,52.09,56.93,_It's kind of biased, so that creates some difficulty for learning. _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,16,57.95,63.98,_And secondly, there are in general very little labeled data and very few relevant _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,17,63.98,67.89,_data, so it's, it's also challenging for machine learning approaches. _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,18,67.89,72.619,Typically they require require more training data. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,19,73.82,75.94,_And in the extreme case at the beginning, _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,20,75.94,78.56,_we don't even have any, label there as well. _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,21,78.56,81.32,_The system still has to make a decision, so _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,22,81.32,84.44,that's a very difficult problem at the beginning. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,23,84.44,89.34,_Finally, the results of this issue of exploration versus exploitation tradeoff. _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,24,90.36,95.47,Now this means we also want to 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,25,95.47,101.55,_explore the document space a little bit, and to, to see if the user _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,26,101.55,107.03999999999999,might be interested in the documents that we have not yet labeled. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,27,107.03999999999999,111.33,_So, in other words, we're going to explore the space of user interests _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,28,111.33,114.92,by testing whether the user might be interested in some other documents that 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,29,116.53999999999999,120.0,currently are not matching the user's interest. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,30,120.0,120.53,This so well. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,31,121.66,122.65,So how do we do that? 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,32,122.65,127.55,Well we could lower the threshold a little bit and do we just deliver some near 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,33,127.55,133.25,misses to the user to see what the user would respond so 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,34,133.25,138.87,_see how the user will, would respond to this extra document. _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,35,139.88,144.76,_And, and this is a trade off, because on the one hand, you want to explore, _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,36,144.76,148.29,_but on the other hand, you don't want to really explore too much, _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,37,148.29,151.96,because then you would over-deliver non-relevant information. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,38,151.96,156.28,_So exploitation means you would, exploit what you learn about the user. _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,39,156.28,159.78,_And let's say you know the user is interested in this particular topic, so _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,40,159.78,162.11,you don't want to deviate that much. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,41,162.11,165.99,_And, but if you don't deviate at all, then you don't explore at all. _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,42,165.99,167.22,That's also not good. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,43,167.22,170.66,You might miss opportunity to learn another interest of the user. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,44,171.92000000000002,173.7,So this is a dilemma. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,45,174.78,177.7,And that's also a difficult problem to solve. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,46,178.89,180.32,Now how do we solve these problems? 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,47,180.32,184.565,_In general, I think why can't I used the empirical utility optimization strategy? _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,48,184.565,189.689,_And this strategy is basically to optimize the threshold based on, historical data, _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,49,189.689,193.15,_just as you have seen on the previous slide, right? _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,50,193.15,196.61,So you can just compute the utility on the training data for 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,51,196.61,198.94,each candidate score threshold. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,52,198.94,201.557,Pretend that [INAUDIBLE] cut at this point. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,53,201.557,206.90800000000002,_What if I cut out the [INAUDIBLE] threshold, what would happen? _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,54,206.90800000000002,208.765,What's utility? 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,55,209.813,213.71,_Compute the utility, right? _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,56,213.71,217.922,_We know the status, what's it based on _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,57,217.922,223.22,_approximation of click-throughs, right? _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,58,223.22,226.47,So then we can just choose this threshold that gives the maximum 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,59,226.47,227.95,utility on the training data. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,60,229.35,236.87,Now but this of course doesn't account for exploration that we just talked about. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,61,236.87,239.26,And there is also the difficulty of bias. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,62,239.26,241.53,_Training sample, as we mentioned. _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,63,241.53,247.3,_So in general, we can only get an upper bound or, for the true optimal threshold _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,64,247.3,253.17,_because the, the al, the threshold might be actually lower than this. _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,65,253.17,258.64,So it's possible that the discarded item might be actually interesting to the user. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,66,259.79,261.42,So how do we solve this problem? 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,67,261.42,267.19,Well we generally as I said we can lower the threshold to explore a little bit. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,68,267.19,270.76,So here's one particular approach called the beta-gamma threshold learning. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,69,270.76,272.68,_So the, the idea is foreign. _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,70,272.68,275.28,_So, here I show a ranked list of _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,71,275.28,278.34000000000003,all the training documents that we have seen so far. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,72,278.34000000000003,280.61,And they are ranked by their positions. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,73,280.61,283.1,_And on the Y-axis, we show the Utility. _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,74,283.1,286.95,_Of course, this function depends on how you specify the coefficients in _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,75,286.95,288.51,the Utility function. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,76,288.51,293.82,But we can not imagine depending on the cut off position we will have a utility. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,77,293.82,299.83,That means suppose I cut at this position and that will be the utility. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,78,301.17,305.74,So we can for example I then find some cut off point. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,79,306.74,311.7,The optimal point theta optimal is the point 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,80,311.7,316.42,when we would achieve the maximum utility if we had chosen this threshold. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,81,317.49,321.98,_And there is also 0 threshold, 0 utility threshold. _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,82,321.98,325.68,As you can see at this cut off. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,83,325.68,327.63,The utility is 0. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,84,327.63,328.74,_Now, what does that mean? _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,85,328.74,333.76,_That means if I lower the threshold, and then get the, and now I'm I reach this _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,86,333.76,337.875,_threshold, the utility would be lower, but it's still positive. _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,87,337.875,341.305,_Still non-elective, at least. _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,88,341.305,344.805,_So it's not as high as the optimal utility, but _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,89,345.855,351.492,it gives us a a safe point to explore the threshold. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,90,351.492,356.052,_As I just explained, it's desirable to explore the interest space. _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,91,356.052,359.622,So it's desirable to lower the threshold based on your training data. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,92,360.622,364.84,_So that means, in general, we want to set the threshold somewhere in this range. _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,93,364.84,369.84,It's the when user off fault to control the the deviation from 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,94,369.84,373.2,the optimal utility point. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,95,373.2,376.56,So you can see the formula of the threshold will be just the incorporation 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,96,376.56,381.17,of the zero utility threshold and the optimal between the threshold. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,97,382.48,387.59,_Now the question is how, how should we set r form, you know and _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,98,387.59,392.02,when should we deviate more from the optimal utility point. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,99,393.72,398.45,Well this can depend on multiple factors and the one way to solve the problem is to 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,100,398.45,403.86,encourage this threshold mechanism to explore 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,101,403.86,408.62,_up the 0 point, and that's a safe point, but _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,102,408.62,412.95,we're not going to necessarily reach all the way to the 0 point. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,103,412.95,418.26,But rather we're going to use other parameters to further define alpha. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,104,418.26,421.03,And this specifically is as follows. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,105,421.03,424.25,So there will be a beta parameter to control. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,106,424.25,427.05,The deviation from the optimal threshold. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,107,427.05,430.51,And this can be based on for example can be accounting for 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,108,430.51,434.627,the over throughout the training data let's say. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,109,434.627,437.96,And so this can be just the adjustment factor. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,110,437.96,442.91,_But what's more interesting is this gamma parameter here, and you can see in this _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,111,444.49,450.11,formula gamma is controlling the the influence 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,112,450.11,456.2,of the number of examples in training data set. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,113,456.2,463.33,So you can see in this formula as N which denotes the number of training examples. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,114,463.33,470.82,Becomes bigger than it would actually encourage less exploration. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,115,470.82,475.14,_In other words, when N is very small, it will try to explore more. _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,116,475.14,479.123,_And that just means if we have seen few examples, _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,117,479.123,484.094,we're not sure whether we have exhausted the space of interests. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,118,484.094,485.8,So [INAUDIBLE]. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,119,485.8,489.832,_But as we have seen many examples from the user, many data points, _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,120,489.832,493.51,then we feel that we probably dont' have to explore more. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,121,493.51,497.89,_So this gives us a dynamic of strategy for exploration, right? _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,122,497.89,501.47,_The more examples we have seen, the less exploration we are going to do. _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,123,501.47,505.82,_So, the threshold will be closer to the optimal threshold. _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,124,505.82,508.37,_So, that's the basic idea of this approach. _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,125,508.37,514.01,_Now, this approach actually, has been working well in some evaluation studies. _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,126,514.01,516.03,_And, particularly effective. _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,127,516.03,522.26,_And, also can welcome arbitrary utility with a appropriate lower bound. _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,128,523.71,527.84,And explicitly addresses exploration-exploration tradeoff. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,129,527.84,533.75,_And it kind of uses a zero in this threshold point as a, a safeguard. _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,130,533.75,536.81,For exploration and exploiting tradeoff. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,131,536.81,542.77,_We're not, never going to explore further than the zero utility point. _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,132,542.77,545.52,_So, if you take the analogy of gambling, and you, _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,133,545.52,548.64,you don't want to risk losing money. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,134,548.64,552.14,_You know, so it's a safe strategy, a conservative strategy for exploration. _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,135,553.26,558.03,_And the problem is, of course, this approach is purely heuristic. _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,136,558.03,562.79,And the zero utility lower bound is also often too conservative. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,137,562.79,566.105,_And there are, of course, calls are more advanced than machine learning _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,138,566.105,570.735,projects that have been proposed for solving these problems. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,139,570.735,573.855,And this is a very active research area. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,140,575.225,580.4,So to summarize there are two strategies for 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,141,580.4,583.17,recommending systems or filtering systems. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,142,583.17,587.07,_One is content based, which is looking at the item similarity. _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,143,587.07,591.29,_And the other is collaborative filtering, which is looking at the user similarity. _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,144,592.298,596.71,In this lecture we have covered content-based filtering approach. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,145,596.71,599.676,_In the next lecture, we're going to talk about collaborative filtering. _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,146,599.676,605.752,The content-based filtering system we generally have to solve 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,147,605.752,611.54,_several problems related to filtering decision and learning, etc. _
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,148,611.54,616.527,And such a system can actually be based on a search engine 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,149,616.527,620.347,system by adding a threshold mechanism and 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,150,620.347,625.335,adding adaptive learning algorithm to allow the system 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,151,625.335,630.02,to learn from long term feedback from the user. 
+5 - 11 - 4.6  Recommender Systems- Content-based Filtering - Part 2 (00-10-42).srt,152,630.02,640.02,[MUSIC] 

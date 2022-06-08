@@ -1,0 +1,209 @@
+name,id,from,to,text
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,1,6.75,12.04,This lecture is about Probabilistic Topic Models for topic mining and analysis. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,2,13.35,14.11,_In this lecture, _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,3,14.11,16.909,we're going to continue talking about the topic mining and analysis. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,4,18.19,20.49,We're going to introduce probabilistic topic models. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,5,22.41,26.14,_So this is a slide that you have seen earlier, _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,6,26.14,30.64,where we discussed the problems with using a term as a topic. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,7,30.64,35.37,_So, to solve these problems intuitively we need to use _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,8,35.37,37.95,more words to describe the topic. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,9,37.95,43.11,And this will address the problem of lack of expressive power. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,10,43.11,45.04,_When we have more words that we can use to describe the topic, _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,11,45.04,49.88,that we can describe complicated topics. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,12,49.88,54.03,To address the second problem we need to introduce weights on words. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,13,54.03,59.14,_This is what allows you to distinguish subtle differences in topics, and _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,14,59.14,64.6,to introduce semantically related words in a fuzzy manner. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,15,64.6,69.24,_Finally, to solve the problem of word ambiguity, we need to split _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,16,69.24,74.7,_ambiguous word, so that we can disambiguate its topic. _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,17,75.72,81.06,It turns out that all these can be done by using a probabilistic topic model. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,18,81.06,85.52,And that's why we're going to spend a lot of lectures to talk about this topic. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,19,85.52,88.13,_So the basic idea here is that, _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,20,88.13,92.6,improve the replantation of topic as one distribution. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,21,92.6,95.65,So what you see now is the older replantation. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,22,95.65,100.72999999999999,_Where we replanted each topic, it was just one word, or one term, or one phrase. _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,23,100.72999999999999,105.24000000000001,But now we're going to use a word distribution to describe the topic. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,24,105.24000000000001,107.11,So here you see that for sports. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,25,107.11,110.22,We're going to use the word distribution over 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,26,110.22,113.16,theoretical speaking all the words in our vocabulary. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,27,114.65,119.15,_So for example, the high probability words here are sports, _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,28,119.15,123.88,_game, basketball, football, play, star, etc. _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,29,123.88,126.1,These are sports related terms. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,30,126.1,130.15,And of course it would also give a non-zero probability to some other word 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,31,130.15,135.43,_like Trouble which might be related to sports in general, _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,32,135.43,137.42000000000002,not so much related to topic. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,33,138.9,143.03,In general we can imagine a non zero probability for all the words. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,34,143.03,147.89,_And some words that are not read and would have very, very small probabilities. _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,35,147.89,149.82999999999998,And these probabilities will sum to one. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,36,151.78,154.5,So that it forms a distribution of all the words. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,37,156.65,161.44,_Now intuitively, this distribution represents a topic in that if we assemble _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,38,161.44,166.78,_words from the distribution, we tended to see words that are ready to dispose. _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,39,168.47,173.236,_You can also see, as a very special case, if the probability of the mass _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,40,173.236,177.387,_is concentrated in entirely on just one word, it's sports. _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,41,177.387,181.67,And this basically degenerates to the symbol foundation 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,42,181.67,183.27,of a topic was just one word. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,43,184.64,190.42,_But as a distribution, this topic of representation can, _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,44,190.42,193.98,_in general, involve many words to describe a topic and _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,45,193.98,197.97,can model several differences in semantics of a topic. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,46,197.97,204.5,Similarly we can model Travel and Science with their respective distributions. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,47,204.5,210.12,_In the distribution for Travel we see top words like attraction, trip, flight etc. _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,48,211.67000000000002,216.11,_Whereas in Science we see scientist, spaceship, telescope, or _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,49,216.11,219.82,_genomics, and, you know, science related terms. _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,50,219.82,223.26,Now that doesn't mean sports related terms 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,51,223.26,226.32999999999998,will necessarily have zero probabilities for science. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,52,226.32999999999998,231.86,In general we can imagine all of these words we have now zero probabilities. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,53,231.86,235.25,_It's just that for a particular topic in some words we have very, _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,54,235.25,236.62,very small probabilities. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,55,238.2,242.77,Now you can also see there are some words that are shared by these topics. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,56,242.77,247.6,_When I say shared it just means even with some probability threshold, _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,57,247.6,250.99,you can still see one word occurring much more topics. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,58,250.99,253.14,In this case I mark them in black. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,59,253.14,257.11,_So you can see travel, for example, occurred in all the three topics here, but _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,60,257.11,259.42,with different probabilities. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,61,259.42,263.237,_It has the highest probability for the Travel topic, 0.05. _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,62,263.237,269.05,_But with much smaller probabilities for Sports and Science, which makes sense. _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,63,269.05,272.45,_And similarly, you can see a Star also occurred in Sports and _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,64,272.45,275.42,Science with reasonably high probabilities. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,65,275.42,279.69,Because they might be actually related to the two topics. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,66,279.69,283.42,So with this replantation it addresses the three problems that I mentioned earlier. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,67,283.42,286.75,_First, it now uses multiple words to describe a topic. _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,68,286.75,290.7,So it allows us to describe a fairly complicated topics. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,69,290.7,293.4,_Second, it assigns weights to terms. _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,70,293.4,297.06,So now we can model several differences of semantics. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,71,297.06,302.39,And you can bring in related words together to model a topic. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,72,302.39,307.93,_Third, because we have probabilities for the same word in different topics, _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,73,307.93,312.21,we can disintegrate the sense of word. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,74,312.21,316.93,_In the text to decode it's underlying topic, _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,75,316.93,322.48,to address all these three problems with this new way of representing a topic. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,76,322.48,327.65,So now of course our problem definition has been refined just slightly. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,77,327.65,332.09000000000003,The slight is very similar to what you've seen before except we have 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,78,332.09000000000003,334.92,added refinement for what our topic is. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,79,334.92,341.18,_Now each topic is word distribution, and for each word distribution we know _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,80,341.18,345.46,that all the probabilities should sum to one with all the words in the vocabulary. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,81,345.46,347.64,So you see a constraint here. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,82,347.64,353.06,_And we still have another constraint on the topic coverage, namely pis. _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,83,353.06,358.18,So all the Pi sub ij's must sum to one for the same document. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,84,359.62,361.25,So how do we solve this problem? 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,85,361.25,365.47,_Well, let's look at this problem as a computation problem. _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,86,365.47,367.56,So we clearly specify it's input and 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,87,367.56,371.19,output and illustrate it here on this side. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,88,371.19,372.92,Input of course is our text data. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,89,372.92,378.62,_C is our collection but we also generally assume we know the number of topics, k. _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,90,378.62,382.94,_Or we hypothesize a number and then try to bind k topics, _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,91,382.94,387.82,even though we don't know the exact topics that exist in the collection. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,92,387.82,392.96,And V is the vocabulary that has a set of words that determines what 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,93,392.96,398.88,units would be treated as the basic units for analysis. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,94,398.88,404.78,In most cases we'll use words as the basis for analysis. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,95,404.78,406.429,And that means each word is a unique. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,96,407.61,413.56,Now the output would consist of as first a set of topics represented by theta I's. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,97,413.56,415.28,Each theta I is a word distribution. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,98,416.43,422.86,And we also want to know the coverage of topics in each document. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,99,422.86,423.52,So that's. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,100,423.52,426.25,That the same pi ijs that we have seen before. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,101,427.47,433.46,So given a set of text data we would like compute all these distributions and 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,102,433.46,436.98,all these coverages as you have seen on this slide. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,103,438.13,441.52,Now of course there may be many different ways of solving this problem. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,104,441.52,444.67,_In theory, you can write the [INAUDIBLE] program to solve this problem, _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,105,444.67,447.05,but here we're going to introduce 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,106,447.05,452.2,a general way of solving this problem called a generative model. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,107,452.2,455.77,_And this is, in fact, a very general idea and _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,108,455.77,461.39,it's a principle way of using statistical modeling to solve text mining problems. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,109,461.39,466.19,And here I dimmed the picture that you have seen before 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,110,466.19,469.47,in order to show the generation process. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,111,469.47,475.96,So the idea of this approach is actually to first design a model for our data. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,112,475.96,482.07,So we design a probabilistic model to model how the data are generated. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,113,482.07,484.18,_Of course, this is based on our assumption. _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,114,484.18,488.06,The actual data aren't necessarily generating this way. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,115,488.06,491.93,So that gave us a probability distribution of the data 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,116,491.93,493.98,that you are seeing on this slide. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,117,493.98,498.84,Given a particular model and parameters that are denoted by lambda. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,118,498.84,502.04,So this template of actually consists of 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,119,502.04,504.38,all the parameters that we're interested in. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,120,504.38,507.78,And these parameters in general will control the behavior of 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,121,507.78,509.37,the probability risk model. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,122,509.37,512.53,Meaning that if you set these parameters with different values and 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,123,512.53,516.82,it will give some data points higher probabilities than others. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,124,516.82,519.91,_Now in this case of course, for our text mining problem or _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,125,519.91,524.1,more precisely topic mining problem we have the following plans. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,126,524.1,529.45,First of all we have theta i's which is a word distribution snd then we have 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,127,529.45,532.07,a set of pis for each document. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,128,532.07,538.98,_And since we have n documents, so we have n sets of pis, and each set the pi up. _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,129,538.98,541.43,The pi values will sum to one. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,130,541.43,546.37,So this is to say that we first would pretend we already 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,131,546.37,550.64,have these word distributions and the coverage numbers. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,132,550.64,558.01,And then we can see how we can generate data by using such distributions. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,133,558.01,561.95,So how do we model the data in this way? 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,134,561.95,565.28,And we assume that the data are actual symbols 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,135,565.28,569.53,drawn from such a model that depends on these parameters. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,136,569.53,571.29,Now one interesting question here is to 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,137,572.32,575.08,think about how many parameters are there in total? 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,138,575.08,581.36,Now obviously we can already see n multiplied by K parameters. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,139,581.36,582.14,For pi's. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,140,582.14,584.53,We also see k theta i's. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,141,584.53,589.11,_But each theta i is actually a set of probability values, right? _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,142,589.11,591.58,It's a distribution of words. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,143,591.58,594.0,So I leave this as an exercise for 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,144,594.0,599.98,you to figure out exactly how many parameters there are here. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,145,599.98,604.69,Now once we set up the model then we can fit the model to our data. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,146,604.69,607.9,Meaning that we can estimate the parameters or 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,147,607.9,611.01,infer the parameters based on the data. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,148,611.01,614.93,In other words we would like to adjust these parameter values. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,149,614.93,620.33,Until we give our data set the maximum probability. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,150,620.33,622.88,_I just said, depending on the parameter values, _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,151,622.88,627.09,some data points will have higher probabilities than others. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,152,627.09,628.62,_What we're interested in, here, _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,153,628.62,633.42,is what parameter values will give our data set the highest probability? 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,154,633.42,637.62,So I also illustrate the problem with a picture that you see here. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,155,637.62,641.72,_On the X axis I just illustrate lambda, the parameters, _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,156,641.72,644.26,as a one dimensional variable. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,157,644.26,649.36,_It's oversimplification, obviously, but it suffices to show the idea. _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,158,649.36,653.37,_And the Y axis shows the probability of the data, observe. _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,159,653.37,657.78,This probability obviously depends on this setting of lambda. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,160,657.78,661.48,So that's why it varies as you change the value of lambda. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,161,661.48,664.83,What we're interested here is to find the lambda star. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,162,665.88,669.259,That would maximize the probability of the observed data. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,163,670.44,675.47,_So this would be, then, our estimate of the parameters. _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,164,675.47,677.04,_And these parameters, _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,165,677.04,681.72,note that are precisely what we hoped to discover from text data. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,166,681.72,685.405,So we'd treat these parameters as actually the outcome or 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,167,685.405,688.046,the output of the data mining algorithm. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,168,688.046,692.966,So this is the general idea of using 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,169,692.966,698.231,a generative model for text mining. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,170,698.231,702.762,_First, we design a model with some parameter values to fit _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,171,702.762,704.804,the data as well as we can. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,172,704.804,707.207,_After we have fit the data, we will recover some parameter value. _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,173,707.207,708.827,We will use the specific parameter value And 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,174,708.827,710.91,those would be the output of the algorithm. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,175,710.91,715.88,And we'll treat those as actually the discovered knowledge from text data. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,176,715.88,719.46,By varying the model of course we can discover different knowledge. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,177,719.46,723.84,_So to summarize, we introduced a new way of representing topic, _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,178,723.84,729.02,namely representing as word distribution and this has the advantage of using 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,179,729.02,734.039,multiple words to describe a complicated topic.It also allow us to assign 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,180,734.039,739.39,weights on words so we have more than several variations of semantics. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,181,739.39,743.39,_We talked about the task of topic mining, and answers. _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,182,743.39,746.43,When we define a topic as distribution. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,183,746.43,750.14,So the importer is a clashing of text articles and a number of topics and 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,184,750.14,753.0,a vocabulary set and the output is a set of topics. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,185,753.0,755.47,Each is a word distribution and 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,186,755.47,758.73,also the coverage of all the topics in each document. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,187,758.73,763.87,And these are formally represented by theta i's and pi i's. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,188,763.87,768.71,And we have two constraints here for these parameters. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,189,768.71,773.32,The first is the constraints on the worded distributions. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,190,773.32,776.82,In each worded distribution the probability of all the words 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,191,776.82,779.4,_must sum to 1, all the words in the vocabulary. _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,192,779.4,783.96,The second constraint is on the topic coverage in each document. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,193,783.96,788.6,A document is not allowed to recover a topic outside of the set of topics that 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,194,788.6,790.2,we are discovering. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,195,790.2,797.22,_So, the coverage of each of these k topics would sum to one for a document. _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,196,797.22,801.58,We also introduce a general idea of using a generative model for text mining. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,197,801.58,807.92,_And the idea here is, first we're design a model to model the generation of data. _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,198,807.92,810.78,We simply assume that they are generative in this way. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,199,810.78,814.73,And inside the model we embed some parameters that we're interested in 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,200,814.73,815.65,denoted by lambda. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,201,816.77,820.605,_And then we can infer the most likely parameter values lambda star, _
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,202,820.605,821.935,given a particular data set. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,203,823.095,828.975,And we can then take the lambda star as knowledge discovered from the text for 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,204,828.975,829.495,our problem. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,205,830.555,833.115,And we can adjust the design of the model and 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,206,833.115,838.855,the parameters to discover various kinds of knowledge from text. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,207,838.855,844.999,As you will see later in the other lectures. 
+3 - 3 - 2.3 Topic Mining and Analysis- Probabilistic Topic Models (00-14-17).srt,208,844.999,854.999,[MUSIC] 

@@ -1,0 +1,170 @@
+name,id,from,to,text
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,1,0.012,7.295,[SOUND] This 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,2,7.295,11.39,lecture is about probabilistic and latent Semantic Analysis or PLSA. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,3,12.71,18.0,_In this lecture we're going to introduce probabilistic latent semantic analysis, _
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,4,18.0,18.77,often called PLSA. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,5,18.77,26.06,_This is the most basic topic model, also one of the most useful topic models. _
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,6,26.06,30.89,Now this kind of models can in general be used to 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,7,30.89,34.56,mine multiple topics from text documents. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,8,34.56,39.41,And PRSA is one of the most basic topic models for doing this. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,9,39.41,43.8,So let's first examine this power in the e-mail for more detail. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,10,43.8,47.71,Here I show a sample article which is a blog article about Hurricane Katrina. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,11,48.83,51.1,And I show some simple topics. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,12,51.1,55.87,_For example government response, flood of the city of New Orleans. _
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,13,55.87,57.42,Donation and the background. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,14,59.26,64.07,You can see in the article we use words from all these distributions. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,15,65.15,69.53999999999999,So we first for example see there's a criticism of government response and 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,16,69.53999999999999,74.74,this is followed by discussion of flooding of the city and donation et cetera. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,17,74.74,77.44,We also see background words mixed with them. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,18,78.84,83.74,So the overall of topic analysis here is to try to decode these topics behind 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,19,83.74,88.25,_the text, to segment the topics, to figure out which words are from which _
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,20,88.25,93.82,_distribution and to figure out first, what are these topics? _
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,21,93.82,96.42,How do we know there's a topic about government response. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,22,96.42,99.02000000000001,There's a topic about a flood in the city. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,23,99.02000000000001,101.85,So these are the tasks at the top of the model. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,24,102.87,106.11,_If we had discovered these topics can color these words, _
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,25,106.11,110.03,_as you see here, to separate the different topics. _
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,26,110.03,114.39,_Then you can do a lot of things, such as summarization, or segmentation, _
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,27,114.39,119.8,_of the topics, clustering of the sentences etc. _
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,28,119.8,124.22,So the formal definition of problem of mining multiple topics from text is 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,29,124.22,124.87,shown here. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,30,124.87,129.27,And this is after a slide that you have seen in an earlier lecture. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,31,129.27,134.1,_So the input is a collection, the number of topics, and a vocabulary set, and _
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,32,134.1,135.06,of course the text data. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,33,136.3,138.76,And then the output is of two kinds. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,34,138.76,141.72,_One is the topic category, characterization. _
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,35,141.72,142.52,Theta i's. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,36,142.52,144.79,Each theta i is a word distribution. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,37,144.79,148.16,_And second, it's the topic coverage for each document. _
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,38,148.16,150.13,These are pi sub i j's. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,39,150.13,153.49,And they tell us which document it covers. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,40,153.49,155.44,Which topic to what extent. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,41,155.44,157.96,So we hope to generate these as output. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,42,157.96,161.35,Because there are many useful applications if we can do that. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,43,162.88,167.1,So the idea of PLSA is actually very similar to 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,44,167.1,170.66,the two component mixture model that we have already introduced. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,45,170.66,174.76,The only difference is that we are going to have more than two topics. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,46,174.76,177.96,_Otherwise, it is essentially the same. _
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,47,177.96,183.73,So here I illustrate how we can generate the text that has multiple topics and 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,48,183.73,186.49,naturally in all cases 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,49,186.49,191.31,of Probabilistic modelling would want to figure out the likelihood function. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,50,191.31,193.4,_So we would also ask the question, _
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,51,193.4,198.2,what's the probability of observing a word from such a mixture model? 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,52,198.2,199.47,Now if you look at this picture and 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,53,199.47,201.84,_compare this with the picture that we have seen earlier, _
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,54,201.84,205.57999999999998,you will see the only difference is that we have added more topics here. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,55,206.94,212.9,_So, before we have just one topic, besides the background topic. _
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,56,212.9,215.99,But now we have more topics. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,57,215.99,218.26,_Specifically, we have k topics now. _
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,58,218.26,223.93,All these are topics that we assume that exist in the text data. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,59,223.93,229.45,So the consequence is that our switch for choosing a topic is now a multiway switch. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,60,229.45,231.21,Before it's just a two way switch. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,61,231.21,233.42000000000002,We can think of it as flipping a coin. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,62,233.42000000000002,235.11,But now we have multiple ways. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,63,235.11,239.66,First we can flip a coin to decide whether we're talk about the background. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,64,239.66,246.913,So it's the background lambda sub B versus non-background. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,65,246.913,251.49,1 minus lambda sub B gives us the probability of 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,66,251.49,256.3,actually choosing a non-background topic. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,67,256.3,257.86,_After we have made this decision, _
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,68,257.86,264.75,we have to make another decision to choose one of these K distributions. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,69,264.75,266.48,So there are K way switch here. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,70,266.48,270.12,_And this is characterized by pi, and this sum to one. _
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,71,271.45,273.775,This is just the difference of designs. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,72,273.775,276.745,Which is a little bit more complicated. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,73,276.745,280.655,But once we decide which distribution to use the rest is the same we are going to 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,74,280.655,285.145,just generate a word by using one of these distributions as shown here. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,75,286.885,290.92,So now lets look at the question about the likelihood. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,76,290.92,295.78,So what's the probability of observing a word from such a distribution? 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,77,295.78,297.25,What do you think? 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,78,297.25,301.15,Now we've seen this problem many times now and 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,79,301.15,305.21,_if you can recall, it's generally a sum. _
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,80,305.21,308.54,Of all the different possibilities of generating a word. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,81,308.54,314.26,So let's first look at how the word can be generated from the background mode. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,82,314.26,318.34,_Well, the probability that the word is generated from the background model _
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,83,318.34,322.7,is lambda multiplied by the probability of the word from the background mode. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,84,322.7,324.2,_Model, right. _
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,85,324.2,325.15,Two things must happen. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,86,325.15,328.27,_First, we have to have chosen the background model, _
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,87,328.27,331.73,_and that's the probability of lambda, of sub b. _
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,88,331.73,336.33,_Then second, we must have actually obtained the word w from the background, _
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,89,336.33,339.161,and that's probability of w given theta sub b. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,90,340.22,341.79,_Okay, so similarly, _
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,91,341.79,346.02,we can figure out the probability of observing the word from another topic. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,92,346.02,348.53,Like the topic theta sub k. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,93,348.53,351.89,Now notice that here's the product of three terms. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,94,351.89,357.023,_And that's because of the choice of topic theta sub k, _
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,95,357.023,360.63,only happens if two things happen. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,96,360.63,364.02,One is we decide not to talk about background. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,97,364.02,367.63,_So, that's a probability of 1 minus lambda sub B. _
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,98,367.63,373.29,_Second, we also have to actually choose theta sub K among these K topics. _
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,99,373.29,376.0,_So that's probability of theta sub K, or pi. _
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,100,377.9,381.46,_And similarly, the probability of generating a word from the second. _
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,101,381.46,386.48,The topic and the first topic are like what you are seeing here. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,102,386.48,387.25,And so 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,103,387.25,392.48,in the end the probability of observing the word is just a sum of all these cases. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,104,392.48,398.08,And I have to stress again this is a very important formula to know because this is 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,105,398.08,404.15,really key to understanding all the topic models and indeed a lot of mixture models. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,106,404.15,407.40999999999997,So make sure that you really understand the probability 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,107,409.40999999999997,413.39,of w is indeed the sum of these terms. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,108,416.54,420.62,_So, next, once we have the likelihood function, _
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,109,420.62,425.25,we would be interested in knowing the parameters. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,110,425.25,427.25,_All right, so to estimate the parameters. _
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,111,427.25,427.76,_But firstly, _
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,112,427.76,433.51,let's put all these together to have the complete likelihood of function for PLSA. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,113,433.51,439.01,The first line shows the probability of a word as illustrated on the previous slide. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,114,439.01,440.98,And this is an important formula as I said. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,115,442.56,444.25,So let's take a closer look at this. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,116,444.25,447.43,This actually commands all the important parameters. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,117,447.43,449.28,So first of all we see lambda sub b here. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,118,449.28,451.539,This represents a percentage of background words 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,119,452.61,455.56,that we believe exist in the text data. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,120,455.56,459.22,And this can be a known value that we set empirically. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,121,461.18,463.38,_Second, we see the background language model, and _
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,122,463.38,465.21,typically we also assume this is known. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,123,465.21,468.0,_We can use a large collection of text, or _
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,124,468.0,471.78,use all the text that we have available to estimate the world of distribution. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,125,472.89,475.008,Now next in the next stop this formula. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,126,475.008,477.96,[COUGH] Excuse me. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,127,477.96,480.16,_You see two interesting kind of parameters, _
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,128,480.16,481.886,those are the most important parameters. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,129,481.886,484.69,That we are. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,130,484.69,486.19,So one is pi's. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,131,486.19,490.06,And these are the coverage of a topic in the document. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,132,491.28,495.31,And the other is word distributions that characterize all the topics. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,133,498.53,503.78,_So the next line, then is simply to plug this _
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,134,503.78,506.28,in to calculate the probability of document. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,135,506.28,509.72,_This is, again, of the familiar form where you have a sum and _
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,136,509.72,512.05,you have a count of a word in the document. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,137,512.05,515.1,And then log of a probability. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,138,515.1,519.04,Now it's a little bit more complicated than the two component. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,139,519.04,523.89,_Because now we have more components, so the sum involves more terms. _
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,140,523.89,527.75,And then this line is just the likelihood for the whole collection. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,141,527.75,531.13,_And it's very similar, just accounting for more documents in the collection. _
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,142,532.47,534.06,So what are the unknown parameters? 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,143,534.06,535.96,I already said that there are two kinds. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,144,535.96,539.15,_One is coverage, one is word distributions. _
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,145,539.15,542.35,_Again, it's a useful exercise for you to think about. _
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,146,542.35,544.73,Exactly how many parameters there are here. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,147,545.75,547.94,How many unknown parameters are there? 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,148,547.94,548.68,_Now, try and _
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,149,548.68,553.09,think out that question will help you understand the model in more detail. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,150,553.09,557.76,And will also allow you to understand what would be the output that we generate 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,151,557.76,560.43,when use PLSA to analyze text data? 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,152,560.43,562.48,And these are precisely the unknown parameters. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,153,564.48,568.2,_So after we have obtained the likelihood function shown here, _
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,154,568.2,570.82,the next is to worry about the parameter estimation. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,155,572.05,574.77,_And we can do the usual think, maximum likelihood estimator. _
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,156,574.77,580.19,_So again, it's a constrained optimization problem, like what we have seen before. _
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,157,580.19,584.35,Only that we have a collection of text and we have more parameters to estimate. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,158,584.35,588.655,_And we still have two constraints, two kinds of constraints. _
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,159,588.655,590.145,One is the word distributions. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,160,591.245,596.525,All the words must have probabilities that's sum to one for one distribution. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,161,596.525,599.975,The other is the topic coverage distribution and 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,162,599.975,605.2,a document will have to cover precisely these k topics so 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,163,605.2,608.82,the probability of covering each topic that would have to sum to 1. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,164,608.82,613.19,_So at this point though it's basically a well defined applied math problem, _
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,165,613.19,616.37,you just need to figure out the solutions to optimization problem. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,166,616.37,618.67,There's a function with many variables. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,167,618.67,622.481,and we need to just figure out the patterns of these 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,168,622.481,626.397,variables to make the function reach its maximum. 
+3 - 13 - 2.13 Probabilistic Latent Semantic Analysis (PLSA)- Part 1 (00-10-38).srt,169,626.397,636.397,>> [MUSIC] 

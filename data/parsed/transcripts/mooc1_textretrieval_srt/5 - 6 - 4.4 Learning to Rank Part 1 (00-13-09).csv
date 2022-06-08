@@ -1,0 +1,75 @@
+name,id,from,to,text
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,1,0.0,6.657,[SOUND] This lecture is about 
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,2,6.657,10.606,learning to rank. 
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,3,10.606,14.731,_In this lecture, we're going to continue talking about web search. _
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,4,14.731,19.478,_In particular, we're going to talk about using machine running to combine definite _
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,5,19.478,21.799,features to improve ranking function. 
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,6,21.799,26.622,So the question that we address in this lecture is 
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,7,26.622,30.909,_how we can combine many features to generate a, _
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,8,30.909,35.963,a single ranking function to optimize search results. 
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,9,35.963,39.525,_In the previous lectures, we have talked about the, _
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,10,39.525,41.907,a number of ways to rank documents. 
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,11,41.907,47.142,_We have talked about some retrieval models, like a BM25 or clear light code. _
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,12,47.142,54.502,They can generate a content based scores for matching documents with a query. 
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,13,54.502,58.029,_And we also talked about the link-based approaches, _
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,14,58.029,63.176,like page rank that can give additional scores to help us improve ranking. 
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,15,63.176,67.029,Now the question now is how can we combine all these features and 
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,16,67.029,70.024,potentially many other features to do ranking? 
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,17,70.024,74.889,And this will be very useful for ranking web pages not only just to improve 
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,18,74.889,79.777,_accuracy, but also to improve the robustness of the ranking function. _
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,19,79.777,84.646,So that's it not easy for a spammer to just perturb a one or 
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,20,84.646,87.27799999999999,a few features to promote a page. 
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,21,87.27799999999999,92.108,So the general idea of learning to rank is to use machine learning to 
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,22,92.108,96.938,combine these features to optimize the weight on different features to 
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,23,96.938,99.768,generate the optimal ranking function. 
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,24,99.768,104.99600000000001,_So we would assume that the given a query document pair, _
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,25,104.99600000000001,109.125,_Q and D, we can define a number of features. _
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,26,109.125,114.905,And these features can vary from content based features such as 
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,27,114.905,119.735,a score of the document it was respected to the query 
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,28,119.735,124.378,_according to a retrieval function, such as BM25 or _
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,29,124.378,130.011,_Query Light or pivot commands from a machine or PL2, et cetera. _
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,30,130.011,135.111,It can also be linked based score like PageRank score. 
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,31,135.111,142.805,It can be also application of retrieval models to the anchor text of the page. 
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,32,142.805,143.526,Right? 
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,33,143.526,149.32999999999998,Those are the types of descriptions of links that pointed to this page. 
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,34,149.32999999999998,153.905,So these can all be clues about whether this document is relevant or not. 
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,35,153.905,161.101,_We can even include a, a feature such as whether the URL has a [INAUDIBLE], _
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,36,161.101,167.441,because this might be the indicator of home page or entry page. 
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,37,167.441,171.178,_So, all of these features can then be combined together to generate the ranking _
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,38,171.178,171.80700000000002,functions. 
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,39,171.80700000000002,174.954,_The question is of course, how can we combine them? _
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,40,174.954,180.61,_In this approach, we simply hypothesize that the probability _
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,41,180.61,187.573,that this document is random to this query is a function of all these features. 
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,42,187.573,192.38400000000001,So we can hypothesize this that the probability of 
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,43,192.38400000000001,197.719,relevance is related to these features through a particular 
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,44,197.719,201.917,form of the function that has some parameters. 
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,45,201.917,206.036,These parameters can control the influence of 
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,46,206.036,210.435,different features on the final relevance. 
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,47,210.435,213.573,_This is of course, just a assumption. _
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,48,213.573,218.798,_Whether this assumption really makes sense is still a, a big question. _
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,49,218.798,224.09199999999998,_However, you have to empirically evaluate the, the, the function. _
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,50,224.09199999999998,229.099,But by hypothesizing that the relevance is related to those features 
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,51,229.099,234.106,_in the particular way, we can then combine these futures to generate _
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,52,234.106,240.6,_the potentially more powerful ranking function, a more robust ranking function. _
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,53,240.6,244.687,_Naturally, the next question is how do we estimate loose parameters? _
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,54,244.687,248.733,_You know, how do we know which features should have high weight and _
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,55,248.733,251.198,which features should have low weight? 
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,56,251.198,254.543,So this is a task of training or learning. 
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,57,254.543,255.303,_All right. So, _
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,58,255.303,259.058,in this approach what we will do is use some training data. 
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,59,259.058,264.586,Those are the data that have been judged by users. 
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,60,264.586,267.139,So that we already know the relevance judgments. 
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,61,267.139,272.478,We already know which documents should be rather high for which queries and 
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,62,272.478,277.053,_this information can be based on real judgments by users or can, _
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,63,277.053,282.581,this can also be approximated by just using click through information. 
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,64,282.581,288.368,Where we can assume the clicked documents are better than the skipped documents or 
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,65,288.368,293.272,clicked documents are relevant and the skipped documents are not relevant. 
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,66,293.272,300.022,_So, in general, the fit such hypothesize ranging function to the training day, _
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,67,300.022,306.414,meaning that we will try to optimize its retrieval accuracy on the training data. 
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,68,306.414,312.804,And we adjust these parameters to see how we can optimize the performance 
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,69,312.804,319.8,of the function on the training data in terms of some measure such as map or NDCG. 
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,70,319.8,325.187,So the training data would look like a table of tuples. 
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,71,325.187,332.605,_H-tuple it has three elements, the query, the document and the judgment. _
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,72,332.605,337.56600000000003,_So, it looks very much like our relevance judgment that we _
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,73,337.56600000000003,341.323,talked about in evaluation of retrieval systems. 
+5 - 6 - 4.4 Learning to Rank Part 1 (00-13-09).srt,74,341.323,351.323,[MUSIC] 

@@ -1,0 +1,173 @@
+name,id,from,to,text
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,1,0.0,6.869,_[SOUND] This lecture is about the, the basic measures for _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,2,6.869,11.702,evaluation of text original systems. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,3,11.702,17.202,_In this lecture, we're going to discuss how we design basic _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,4,17.202,24.29,_measures [SOUND] to quantitatively, compare two original [SOUND] systems. _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,5,24.29,27.941,_This is a slide that you have seen earlier in the lecture, _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,6,27.941,32.49,where we talk about the grand evaluation methodology. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,7,32.49,37.35,_We can have a test collection that consists of queries, documents and _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,8,37.35,38.4,relevance judgements. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,9,39.44,44.299,_We can then run two systems on these da, data sets to, _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,10,44.299,49.5,quantitatively evaluate your performance. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,11,49.5,52.197,_And we raised to the question about, _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,12,52.197,57.14,[SOUND] which settles results is better is System A better or System B better? 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,13,57.14,62.318,[SOUND] So let's now talk about how to actually quantify their performance. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,14,62.318,64.233,_Suppose we have a total of, _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,15,64.233,69.13,of 10 random documents in the current folder for this query. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,16,69.13,71.73,_Now, the relevance judgements shown on the right, _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,17,72.95,75.41,did not include all the ten obviously. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,18,75.41,80.58,And we have only seen three rendered documents there but 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,19,80.58,86.33500000000001,we can imagine there are other random documents in judging for this query. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,20,86.33500000000001,90.945,_So now, intuitively we thought that _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,21,90.945,95.96000000000001,System A is better because it did not have much noise. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,22,95.96000000000001,101.41,_And in particular we have seen, amount of three results, _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,23,101.41,105.22,two of them are relevant but in System B we 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,24,106.34,111.4,have five results and only three of them are relevant. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,25,112.53999999999999,116.64,_So intuitively, it looks like System A is more accurate. _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,26,116.64,120.24,And this can be captured by a matching order precision. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,27,120.24,125.61,Where we simply compute to what extent all the retrieval results are relevant. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,28,125.61,131.84,If you have 100% precision that would mean all the retrieval documents are relevant. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,29,131.84,136.26,_So, in this case the system A has a Precision of two out of three. _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,30,136.26,139.79,System B as three over five. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,31,139.79,144.31,And this shows that System A is better by Precision. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,32,145.41,149.81,But we also talked about System B might be preferred by 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,33,149.81,155.22,some other users hold like to retrieve as many relevant documents as possible. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,34,155.22,158.05,_So, in that case we have to compare _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,35,158.05,159.89,the number of relevant documents that retrieve. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,36,159.89,162.94,And there is an other measure called a Recall. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,37,162.94,167.9,This measures the completeness of coverage of relevant documents 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,38,167.9,171.09,in your retriever result. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,39,171.09,177.51,_So, we just assume that there are ten relevant documents in the collection. _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,40,177.51,184.13,_And here we've got two of them in System A, so the recall is two out of ten. _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,41,184.13,187.031,_Where as system B has got a three, so it's a three out of ten. _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,42,188.11,192.225,_Now ,we can see by recall System B is better and these two _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,43,192.225,197.22,measures turned out to be the very basic measures for evaluating search engine. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,44,197.22,202.32,And they are very important because they are also widely used in many other 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,45,202.32,204.57,testing variation problems. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,46,204.57,209.49,_For example, if you look at the applications of machine learning you tend _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,47,209.49,214.21,to see precision recall numbers being reported for all kinds of tasks. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,48,215.29,218.63,_Okay, so now, let's define these two measures more precisely and _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,49,218.63,223.68,these measures are to evaluate a set of retrieval documents. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,50,223.68,226.95,So that means we are considering that approximation 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,51,226.95,228.94,of a set of relevant documents. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,52,230.1,233.3,_We can distinguish it four cases, depending on the situation of a document. _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,53,233.3,239.72,_A document that can be retrieved or not retrieved, right? _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,54,239.72,241.545,Because we're talking about the set of result. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,55,242.74,245.51,The document can be also relevant or 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,56,245.51,250.31,_not relevant, depending on whether the user thinks this is a useful document. _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,57,251.95,258.82,_So, we can now have counts of documents in each of the four categories. _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,58,258.82,263.97,We can have a to represent the number of documents that are retrieved and 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,59,263.97,270.625,_relevant, b for documents that are not retrieved but relevant, etc. _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,60,271.75,275.57,_Now, with this table, then we have defined precision. _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,61,276.69,282.44,_As the, ratio of, the relevant _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,62,282.44,287.45,retriever documents A to the total number of retriever documents. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,63,288.45,293.38,_So this is just you know, a divided by the sum of a and c. _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,64,293.38,295.65,The sum of this column. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,65,296.7,304.2,Signal recall is defined by dividing a by the sum of a and b. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,66,304.2,310.36,_So that's, again, to divide a by the sum of the rule, instead of the column. _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,67,310.36,315.11,_All right, so we going to see precision and recall is all focused on _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,68,315.11,319.683,_looking at the a, that's the number of retrieval relevant documents, but _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,69,319.683,322.449,we're going to use different denominators. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,70,323.58,327.3,_Okay, so what would be an ideal result? _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,71,327.3,332.86,_Well, you can able to see in ideal case we have precision and recall, all _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,72,334.35,340.89,to be 1.0 that means we have got 1% of all the random documents in our results. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,73,340.89,344.81,And all the results that we return are relevant. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,74,344.81,347.51,[INAUDIBLE] There's no single not relevant document returned. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,75,348.74,354.03,_The reality however, high recall tends to be associated with low precision And _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,76,354.03,356.21,you can imagine why that is the case. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,77,356.21,360.79,As you go down the distant to try to get as many relevant actions as possible. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,78,360.79,366.02,_You tend to in time a lot of non relevant documents, so the precision goes down. _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,79,366.02,373.01,_Look at this set, can also be defined by a cutoff in a ranked list. _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,80,373.01,376.2,_That's why, although these two measures are defined for a set of retrieved _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,81,376.2,379.905,_documents, they are actually very useful for evaluating a ranked list. _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,82,379.905,384.27,They are the fundamental measures in tension retrieval and many other tasks. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,83,384.27,388.5,We often are interested in to the precision up to ten documents for 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,84,388.5,390.01,web search. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,85,390.01,391.87,_This means we look at the, _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,86,391.87,396.64,how many documents among the top results are actually relevant. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,87,396.64,398.32,_Now, this is a very meaningful measure, _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,88,398.32,403.79,because it tells us how many relevant documents a user can expect to see. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,89,403.79,407.8,_On the first page of search results, where they typically show ten results. _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,90,410.0,414.23199999999997,_So, precision and recall are, the basic measures and _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,91,414.23199999999997,419.384,we need to use them to further evaluate a search engine but 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,92,419.384,422.34,they are the building blocks really. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,93,423.46,427.21,We just to say that there tends to be a trade off between precision and recall. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,94,427.21,430.969,_So, naturally it would be interesting to [SOUND] combine them and _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,95,430.969,434.531,_here's one measure that's often used, called f measure. _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,96,434.531,441.294,_And it's harmonic mean of precision and recall, it's defined on this slide. _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,97,441.294,446.661,_So you can see it first computed, _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,98,446.661,451.73199999999997,inverse of R and P here and then it would be 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,99,451.73199999999997,458.166,_interpreted to by using a co, coefficients. _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,100,458.166,461.185,Depending on the parameter Beta and 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,101,461.185,467.029,after some transformation we can easily see it would be of this form. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,102,469.02,472.22,And in many cases it's just a combination of precision and recall. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,103,473.53,477.19,_And, and Beta is a parameter that's often set to one. _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,104,477.19,480.99,It can control the emphasis on precision or recall. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,105,480.99,482.46,_When we set, _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,106,482.46,488.36,_beta to one we end up by having a special case of F measure, often called F1. _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,107,488.36,493.46,_This is a popular measure, that is often used as a combined precision and recall. _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,108,493.46,498.03,_And the formula looks very simple it's just this, here. _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,109,501.02,504.73,_Now it's easy to see that if you have, a larger precision or _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,110,504.73,508.57,larger recall than F measure would be high. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,111,508.57,512.94,_But what's interesting is that, the trade off between precision and _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,112,512.94,516.25,_recall, is captured in an interesting way in F1. _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,113,518.71,525.51,_So, in order to understand that, we, can first look at the natural question. _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,114,525.51,527.106,_Why not just the, _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,115,527.106,533.183,combining them using a simple arithmetic mean as a [INAUDIBLE] here. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,116,533.183,536.74,That would be likely the most natural way of combining them. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,117,539.45,540.73,_So, what do you think? _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,118,541.87,545.92,_If you want to think more, you can pause the media. _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,119,547.94,550.96,So why is this not as good as F1? 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,120,553.595,555.188,Or what's the problem with this? 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,121,555.188,561.203,_Now, if you think about the arithmetic mean, _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,122,561.203,568.31,_you can see that this is the sum of, of multiple terms. _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,123,568.31,571.87,_In this case, this is the sum of precision and recall. _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,124,571.87,576.58,_In the case of the sum, the total value tends to be dominated by the large values. _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,125,576.58,582.02,_That means if you have a very high P or a very high R, _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,126,582.02,586.17,_then you really don't care about the, whether the other varies is low. _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,127,586.17,587.82,_So, the whole sum would be high. _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,128,587.82,593.92,_Now, this is not the desirable because one can easily have a perfect recall. _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,129,593.92,597.11,We can have a perfect recall is it? 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,130,597.11,598.14,Can you imagine how? 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,131,599.81,602.3,It's probably very easy to imagine that 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,132,602.3,605.07,_we simply retrieve all the document in the collection, _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,133,605.07,609.27,then we have a perfect recall and this will give us 0.5 as the average. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,134,609.27,615.4,_But search results are clearly not very useful for users, _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,135,615.4,620.26,_even though the, the average using this formula would be relatively high. _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,136,620.26,625.93,_Now, in contrast, you can see F1 will reward a case where precision and _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,137,625.93,628.31,recall are roughly but similar. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,138,628.31,632.42,_So, it would paralyze a case where you have extremely high _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,139,632.42,633.36,matter for one of them. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,140,635.49,639.81,_So, this means F1 encodes a different trade off between that. _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,141,639.81,644.93,_Now this example shows actually, a very important methodology here. _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,142,644.93,649.96,_When we try to solve a problem, you might naturally think of one solution. _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,143,649.96,652.36,_Let's say, in this case, it's this arithmetic mean. _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,144,653.79,657.16,But it's important that not to settle on this solution. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,145,657.16,660.86,It's important to think whether you have other ways to combine them. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,146,662.17,664.74,And once you think about the multiple variance. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,147,664.74,667.5,It's important to analyze their difference and 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,148,667.5,670.93,then think about which one makes more sense. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,149,670.93,671.64,_In this case, _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,150,671.64,675.92,if you think more carefully you will feel that if one problem makes more sense. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,151,675.92,678.3,Then the simple arithmetic mean. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,152,678.3,681.67,_Although in other cases, there may be, different results. _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,153,681.67,686.05,_But in this case, the arithmetic mean, seems not reasonable. _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,154,686.05,689.172,_But if you don't pay attention to these subtle differences, _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,155,689.172,693.388,_you might just, take an easy way to combine them and then go ahead with it. _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,156,693.388,697.765,_And here later you'll find that, hm, the measure doesn't seem to work well. _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,157,697.765,701.421,_Right so, at this methodology is actually very important in _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,158,701.421,706.02,general in solving problem and try to think about the best solution. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,159,706.02,710.393,_Try to understand that the problem, very well and then know why _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,160,710.393,715.89,_you needed this measure, and why you need to combine precision and recall. _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,161,715.89,719.314,And then use that to guide you in finding a good way to solve the problem. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,162,723.029,727.97,_To summarize, we talk about precision, which addresses the question, _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,163,727.97,731.48,are the retrieval results all relevant? 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,164,731.48,735.02,_We'll also talk about the recall, which addresses the question, _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,165,735.02,737.26,have all the relevant documents been retrieved? 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,166,737.26,741.33,These two are the two basic measures in testing retrieval in variation. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,167,741.33,745.28,_They are are used for, for many other tasks as well. _
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,168,745.28,748.638,We'll talk about F measure as a way to combine precision and recall. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,169,749.97,753.6,We also talked about the trade off between precision and recall. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,170,753.6,757.924,And this turns out to depend on the users search tasks and 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,171,757.924,762.064,we'll discuss this point more in the later lecture. 
+3 - 5 - 2.5 Evaluation of TR Systems- Basic Measures (00-12-54).srt,172,762.064,772.064,[MUSIC] 

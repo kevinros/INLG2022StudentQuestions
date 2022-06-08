@@ -1,0 +1,153 @@
+name,id,from,to,text
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,1,0.025,4.912,[SOUND] This lecture is about how to 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,2,4.912,10.108,evaluate the text retrieval system when 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,3,10.108,15.162,we have multiple levels of judgments. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,4,15.162,19.97,In this lecture we will continue the discussion of evaluation. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,5,19.97,23.46,We're going to look at how to evaluate the text retrieval system. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,6,23.46,26.15,And we have multiple level of judgements. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,7,27.46,31.18,_So, so far we have talked about binding judgements, _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,8,31.18,34.159,that means a documents is judged as being relevant or not-relevant. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,9,35.27,40.31,_But earlier we will also talk about, relevance as a matter of degree. _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,10,40.31,45.57,_So we often can distinguish it very higher relevant options, _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,11,45.57,50.23,_those are very useful options, from you know, lower rated relevant options. _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,12,50.23,53.0,_They are okay, they are useful perhaps. _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,13,53.0,55.0,And further from non-relevant documents. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,14,55.0,56.08,Those are not useful. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,15,56.08,57.5,Right? 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,16,57.5,61.48,So imagine you can have ratings for these pages. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,17,61.48,65.39,Then you would have much more levels of ratings. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,18,65.39,70.32,_For example, here I show an example of three levels, three were relevant. _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,19,70.32,72.37,_Sorry, three were very relevant. _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,20,72.37,75.77,Two for marginally relevant and one for non-relevant. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,21,75.77,80.43,Now how do we evaluate such a new system using these judgements of use of the map 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,22,80.43,83.33,_doesn't work, average of precision doesn't work, precision and _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,23,83.33,86.839,record doesn't work because they rely on vinyl judgement. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,24,88.19,93.215,So let's look at the sum top regular results when using these judgments. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,25,93.215,96.24000000000001,Right? Imagine the user would be mostly 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,26,96.24000000000001,98.06,care about the top ten results here. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,27,99.50999999999999,100.00999999999999,Right. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,28,102.975,106.32300000000001,And we mark the the rating levels or 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,29,106.32300000000001,111.5,relevance levels for these documents as shown here. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,30,111.5,114.63,_Three, two, one, one, three, et cetera. _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,31,114.63,116.22999999999999,And we call these gain. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,32,117.36,123.38,_And the reason why we call it a gain, is because the measure that _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,33,123.38,128.86,_we are infusing is called, NTCG, normalizer discount of accumulative gain. _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,34,130.09,134.9,_So this gain basically can mesh your, how much gain of random _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,35,134.9,139.85,_information a user can obtain by looking at each document, alright. _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,36,139.85,144.03,So looking after the first document the user can gain three points. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,37,144.03,148.93,Looking at the non-relevant document the user would only gain one point. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,38,148.93,151.1,Right. Looking at the multi-level relevant or 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,39,151.1,155.898,marginally relevant document the user would get two points et cetera. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,40,155.898,161.89,So this gain usually matches the utility of a document from a user's perspective. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,41,161.89,166.14,_Of course if we assume the user stops at the ten documents, and _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,42,166.14,171.05,we're looking at the cutoff at ten we can look after the total gain of the user. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,43,171.05,173.855,_And what's that, well that's simply the sum of these and _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,44,173.855,175.815,we call it the cumulative gain. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,45,175.815,179.405,So if we use a stops at the positua that's just a three. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,46,179.405,183.705,If the user looks at another document that's a 3 plus 2. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,47,183.705,185.87,If the user looks at the more documents. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,48,185.87,188.22,Then the cumulative gain is more. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,49,188.22,193.2,_Of course, this is at the cost of spending more time to examine the list. _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,50,193.2,196.32,So cumulative gain gives us some idea about 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,51,196.32,201.69,how much total gain the user would have if the user examines all these documents. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,52,201.69,208.13,_Now, in NDCG, we also have another letter here, D, discounted cumulative gain. _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,53,209.19,212.03,So why do we want to do discounting? 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,54,212.03,216.765,_Well, if you look at this cumulative gain, there is one deficiency which is _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,55,216.765,221.975,it did not consider the rank position of these these documents. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,56,221.975,226.215,_So, for example looking at the, this sum here _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,57,228.095,231.665,_and we only know there is only one highly relevant document, _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,58,231.665,234.945,_one marginally relevant document, two non-relevant documents. _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,59,234.945,237.55,We don't really care where they are ranked. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,60,237.55,240.72,_Ideally, we want these two to be ranked on the top. _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,61,240.72,243.1,Which is the case here. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,62,243.1,246.33,But how can we capture that intuition? 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,63,246.33,252.42,_Well we have to say, well this 3 here is not as good as this 3 on the top. _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,64,252.42,256.65,_And that means the contribution of, _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,65,256.65,262.75,_the game from different positions, has to be weight by their position. _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,66,262.75,265.21,_And this is the idea of discounting, basically. _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,67,265.21,269.53,_So, we're going to say, well, the first one, doesn't it need to be discounted _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,68,269.53,274.03,_because the user can be assume that you always see this document, but _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,69,274.03,278.03,_the second one, this one will be discounted a little bit, _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,70,278.03,282.37,because there's a small possibility that the user wouldn't notice it. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,71,282.37,288.69,_So, we divide this gain by the weight, based on the position. _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,72,288.69,292.95,_So, log of two, two is the rank position of this document and, _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,73,292.95,295.81,_when we go to the third position, we, _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,74,295.81,301.27,_discount even more because the numbers is log of three, and so on and so forth. _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,75,301.27,306.74,So when we take a such a sum then a lowly ranked document would not contribute 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,76,306.74,310.0,contribute that much as a highly ranked document. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,77,310.0,315.11,_So that means if you, for example, switch the position of this and let's say _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,78,315.11,320.71,_this position and this one, and then you would get more discount if you put _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,79,322.8,327.05,_for example, very relevant document here as opposed to two here. _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,80,327.05,331.29,_Imagine if you put the three here, then it would have to be discounted. _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,81,331.29,334.63,So it's not as good as if you would put the three here. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,82,334.63,336.67,So this is the idea of discounting. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,83,337.9,343.21,_Okay, so n, now at this point that we have got this discounted cumulative gain for _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,84,343.21,350.0,measuring the utility of this ranked list with multiple levels of judgments. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,85,351.48,353.3,So are we happy with this? 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,86,353.3,355.68,Well we can use this rank systems. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,87,355.68,359.55,Now we still need to do a little bit more in order to 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,88,359.55,363.44,make this measure comfortable across different topics. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,89,363.44,364.67,And this is the last step. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,90,366.37,370.67,_And by the way, here we just show that DCG at the ten. _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,91,370.67,371.24,Alright. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,92,371.24,376.8,So this is the total sum of DCG over all these ten documents. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,93,376.8,380.89,_So the last step is called N, normalization. _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,94,380.89,385.16,And if we do that then we get normalized DCG. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,95,385.16,386.63,So how do we do that? 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,96,386.63,390.46,_Well, the idea here is within the Normalized DCG _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,97,390.46,394.24,by the Ideal DCG at the same cutoff. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,98,395.28,397.13,What is the Ideal DCG? 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,99,397.13,400.83,Well this is a DCG of ideal ranking. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,100,400.83,406.2,So imagine if we have nine documents in the whole collection 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,101,406.2,413.84000000000003,rated a three here and that means in total we have nine documents rated three. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,102,413.84000000000003,416.72,_Then, our ideal ranked the Lister _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,103,416.72,420.58,would have put all these nine documents on the very top. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,104,420.58,425.72,_So all these would have to be three and then this would be followed by a two here, _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,105,425.72,430.02,because that's the best we could do after we have run out of threes. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,106,430.02,431.86,But all these positions would be threes. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,107,431.86,432.36,Right? 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,108,434.17,436.09,So this would be our ideal ranked list. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,109,438.07,441.7,And then we can compute the DCG for this ideal rank list. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,110,443.25,448.04,_So this would be given by this formula you see here, and so _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,111,448.04,452.514,this idea DCG would be used as the normalizer DCG. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,112,453.915,460.015,_Like so here, and this IdealDCG would be used as a normalizer. _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,113,460.015,464.78499999999997,So you can imagine now normalization essentially is to compare the actual DCG 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,114,464.78499999999997,469.59000000000003,with the best decision you can possibly get for this topic. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,115,469.59000000000003,471.24,Now why do we want to do this? 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,116,471.24,477.47,_Well by doing this we'll map the DCG values in to a range of zero through one, _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,117,477.47,481.65,_so the best value, or the highest value for every query would be one. _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,118,481.65,486.27,That's when you're relevance is in fact the idealist. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,119,487.31,493.4,But otherwise in general you will be lower than one. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,120,493.4,494.9,Now what if we don't do that? 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,121,494.9,498.94,_Well, you can see this transformation or this numberization, _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,122,498.94,503.03,doesn't really affect the relative comparison of systems for 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,123,503.03,508.8,_just one topic, because this ideal DCG is the same for all the systems. _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,124,508.8,513.34,So the ranking of systems based on only DCG would be exactly the same. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,125,513.34,516.33,As if you rank them based on the normalized decision. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,126,516.33,521.72,The difference however is when we have multiple topics because 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,127,521.72,525.73,_if we don't do normalization, different topics will have different scales of DCG. _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,128,526.74,532.58,For a topic like this one we have nine highly relevant documents. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,129,532.58,535.34,The DCG can get really high. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,130,535.34,540.66,But imagine that in another case there are only two very relevant documents. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,131,540.66,542.73,In total in the whole collection. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,132,542.73,546.3,Then the highest DCG that any system could achieve for 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,133,546.3,549.19,such a topic would not be very high. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,134,549.19,556.03,So again we face the problem of different scales of DCG values and when we 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,135,556.03,561.06,take an average we don't want the average to be dominated by those high values. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,136,561.06,563.36,Those are again easy quires. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,137,563.36,567.21,_So by doing the normalization we have all, avoid the problem. _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,138,567.21,571.69,Making all the purists contribute equal to the average. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,139,571.69,573.93,So this is the idea of NDCG. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,140,573.93,580.47,It's used for measuring relevance based on much more level relevance judgments. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,141,581.53,584.64,_So more in the more general way, _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,142,584.64,590.62,this is basically a measure that can be applied through 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,143,590.62,595.93,_any ranked task with much more level of, of judgments. _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,144,595.93,601.79,And the scale of the judgments can be multiple 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,145,603.14,607.51,_can be more than binary, not only more than binary, they can be multiple levels, _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,146,607.51,611.49,_like one's or five, or even more depending on your application. _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,147,611.49,615.39,_And the main idea of this measure just to summarize, _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,148,615.39,620.2,is to measure the total utility of the top k documents. 
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,149,620.2,624.12,_So you always choose a cutoff, and then you measure the total utility. _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,150,624.12,629.535,_And it would discount the contribution from a lowly ranked document, _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,151,629.535,635.789,_and finally, it would do normalization to ensure comparability across queries _
+3 - 8 - 2.7 Evaluation of TR Systems- Multi-Level Judgements (00-10-48).srt,152,635.789,645.789,[MUSIC] 

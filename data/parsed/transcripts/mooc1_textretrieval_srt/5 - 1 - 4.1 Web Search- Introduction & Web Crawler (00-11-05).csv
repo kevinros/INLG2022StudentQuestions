@@ -1,0 +1,162 @@
+name,id,from,to,text
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,1,7.44,9.41,This lecture is about the web search. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,2,11.95,14.79,In this lecture we are going to talk about one of 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,3,14.79,19.15,_the most important applications of text retrieval, web search engines. _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,4,19.15,21.51,So let's first look at some general challenges and 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,5,21.51,23.38,opportunities in web search. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,6,23.38,27.45,_Now, many information retrieval algorithms had been developed at the, _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,7,27.45,29.01,before the web was born. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,8,29.01,33.89,_So, when the web was born, it created the best opportunity to apply _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,9,33.89,39.89,those algorithms to major application problem that everyone would care about. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,10,39.89,45.78,_So naturally, there had to be some further extensions of the classical _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,11,45.78,52.48,search algorithms to address some new challenges encountered in web search. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,12,53.48,56.2,So here are some general challenges. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,13,56.2,58.51,_Firstly, this is a scalability challenge. _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,14,58.51,60.04,_How we handle the size of the web, _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,15,60.04,62.76,and ensure completeness of coverage of all the information. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,16,63.87,67.79,_How to serve many users quickly, and by answering all their queries. _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,17,67.79,70.35,_All right, so, that's one major challenge. _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,18,70.35,75.99,_And before the web was born, the scale of search was relatively small. _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,19,75.99,80.11,The second problem is that there is low quality information. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,20,80.11,82.13,And there are often spams. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,21,82.13,84.35,The third challenge is dynamics of the web. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,22,84.35,87.41,The new pages are constantly created and 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,23,87.41,92.39,_some pages may be updated, eve-, very quickly. _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,24,92.39,96.47999999999999,_So it makes it harder to, keep the index fresh. _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,25,96.47999999999999,98.53999999999999,_So these are some of the challenges that the, _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,26,98.53999999999999,102.97,_we have to solve in order to, build a high quality web search engine. _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,27,104.1,106.9,_On the other hand, there are also some interesting opportunities that we can _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,28,106.9,109.93,leverage to improve search results. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,29,109.93,112.72999999999999,There are many additional heuristics. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,30,112.72999999999999,120.02,For example you know using links that we can leverage to improve scoring. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,31,120.02,123.633,Now the errors that we talked about such as the vector space model are general 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,32,123.633,124.32,algorithms. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,33,125.61,131.07,_And they can be applied to any search applications, so that's, the advantage. _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,34,131.07,135.88,_On the other hand, they also don't take advantage of special characteristics _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,35,135.88,141.375,_of pages, or documents, in the specific applications such as web search. _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,36,141.375,143.325,Web pages are linked with each other so 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,37,143.325,148.645,obviously the linking is something that we can also leverage. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,38,148.645,153.89,So because of these challenges and opportunities there are new techniques 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,39,153.89,159.11,_that have been developed for web search, or due to the need of a web search. _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,40,159.11,163.05,_One is parallel indexing and searching, and this is to address the issue of _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,41,163.05,168.07,_scalability, in particular Google's imaging of MapReduce _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,42,168.07,173.57,_is very inferential, and has been very helpful in that aspect. _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,43,173.57,176.72,_Second, there are techniques that are developed for, _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,44,176.72,178.57999999999998,addressing the problem of spams. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,45,178.57999999999998,180.49,_So, spam detection. _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,46,180.49,183.62,_We'll have to prevent those, spam pages from being ranked high. _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,47,184.68,187.66,And there are also techniques to achieve robust ranking. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,48,187.66,190.52,And we're going to use a lot of signals to rank pages so 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,49,190.52,195.41,that it's not easy to spam the search engine with particular tricks. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,50,195.41,200.71,And the third line of techniques is link analysis. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,51,201.77,205.61,And these are techniques that can allow us to 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,52,206.66,210.78,to improve search results by leveraging extra information. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,53,210.78,214.22,And in general in web search we're going to use 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,54,214.22,215.71,multiple features for ranking. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,55,215.71,221.7,Not just link analysis but also exploiting all kinds of crawls like 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,56,221.7,227.65,the layout of web pages or anchor text that describes a link to another page. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,57,227.65,231.31,So here's a picture showing the basic search engine technologies. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,58,231.31,235.7,_Basically, this is the web on the left and then user on the right side. _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,59,235.7,240.54,_And we're going to help these, this user get access to the web information. _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,60,240.54,244.72,And the first component is the crawler that with the crawl pages and 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,61,244.72,247.05,the second component is indexer. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,62,247.05,249.81,That will take these pages create an invert index. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,63,250.84,254.32,_The third component that is a retrieval, not with the using, _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,64,254.32,259.84,_but the index to answer user's query, by talking to the user's browser. _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,65,259.84,263.275,_And then, the search results would be, given to the user. _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,66,263.275,266.13,_And, and then the browser will show those results and, _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,67,266.13,269.11,to allow the user to interact with the web. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,68,269.11,272.5,So we're going to talk about each of these component. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,69,272.5,277.73,First we're going to talk about the crawler also called a spider or 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,70,277.73,283.4,a software robot that would do something like a crawling pages on the web. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,71,283.4,286.81,To build a toy crawler is relatively easy because you just need to start with a set 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,72,286.81,293.82,of seed pages and then fetch pages from the web and parse these pages new links. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,73,293.82,296.65999999999997,And then add them to the priority of q and 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,74,296.65999999999997,301.04,_then just explore those additional links, right. _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,75,301.04,305.5,But to build a real crawler actually is tricky and 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,76,305.5,309.59,there are some complicated issues that we have do deal with. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,77,309.59,313.65,_For example robustness, what if the server doesn't respond. _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,78,313.65,319.48,_What if there's a trap that generates dynamically generated webpages that might, _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,79,319.48,323.68,attract your crawler to keep crawling the same site and 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,80,323.68,326.69,to fetch dynamically generated pages. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,81,326.69,328.96,The results of this issue of crawling and 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,82,328.96,332.739,you don't want to overload one particular server with many crawling requests. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,83,334.32,339.02,_And you have to respect the, the robot exclusion protocol. _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,84,339.02,342.56,You also need to handle different types of files. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,85,342.56,346.23,_There are images, PDF files, all kinds of formats on the web. _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,86,347.53,351.49,And you have to also consider URL extensions. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,87,351.49,357.63,_So, sometimes those are cgi scripts, and, you know, internal references, etc., and _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,88,357.63,363.995,_sometimes, you have JavaScripts on the page that, they also create challenges. _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,89,363.995,367.495,And you ideally should also recognize [INAUDIBLE] the pages 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,90,367.495,371.495,_because you don't have to duplicate to the, those pages. _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,91,371.495,375.365,_And finally, you may be interesting to discover hidden URLs. _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,92,375.365,379.385,_Those are URLs that may not be linked, to any page. _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,93,379.385,382.028,_But if you truncate the URL to, shorter pass, _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,94,382.028,384.499,you might be able to get some additional pages. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,95,387.17,389.36,_So, what are the major crawling strategies? _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,96,389.36,392.577,_In general, Breadth-First, is most common, _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,97,392.577,396.56,_because it naturally balance, balances server load. _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,98,396.56,402.625,_You would not, keep probing a particular server [INAUDIBLE]. _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,99,402.625,406.505,_Also parallel crawling is very natural, because this task is very easy _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,100,406.505,411.135,to parallelise and there are some variations of the crawling task. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,101,411.135,414.568,One interesting variation is called focused crawling. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,102,414.568,419.86,In this kind we're going to crawl just some pages about a particular topic. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,103,419.86,422.18,_For example, all pages about automobiles. _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,104,424.11,428.13,_And, and, this is typically going to start with a query, _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,105,428.13,431.44,and then you can use the query to get some results. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,106,431.44,432.69,From the major search engine. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,107,432.69,438.78,And then you can start it with those results and gradually crawl more. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,108,438.78,445.4,_So one challenge in crawling is to find the new pages that people have created, _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,109,445.4,450.32,_and people probably are creating new pages all the time, and this is _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,110,450.32,455.93,very challenging if the new pages have not been actually linked to any old page. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,111,455.93,460.539,_If they are, then you can probably refine them by recrawling the older page. _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,112,461.89,465.94,_So these are also some um,interesting challenges that have to be solved. _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,113,467.12,472.93,And finally we might face the scenario of incremental crawling or repeated crawling. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,114,472.93,473.588,_Right? So your first, _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,115,473.588,475.76,let's say if you want to be able to web search engine. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,116,475.76,478.58,And you were the first to crawl a lot of data from the web. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,117,478.58,483.9,_And then, but then once you have collected all the data and _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,118,483.9,488.63,_in future we just need to crawl the, the update pages. _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,119,488.63,493.105,_You, you, in general you don't have to re-crawl everything, right? _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,120,493.105,494.96,Or it's not necessary. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,121,496.55,501.48,_So, in this case you, you go as you minimize a resource overhead _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,122,501.48,506.37,_by using minimum resource to, to just still crawl updated pages. _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,123,507.43,511.948,So this is after a very interesting research question here. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,124,511.948,518.592,And [INAUDIBLE] research question is that there aren't 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,125,518.592,526.81,_many standard algorithms [INAUDIBLE] for doing this, this task. _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,126,526.81,528.85,_Right? But in general, you can imagine, _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,127,528.85,531.08,you can learn from the past experience. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,128,532.68,533.64,Right. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,129,533.64,538.33,_So the two major factors that you have to consider are first, _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,130,538.33,540.76,will this page be updated frequently? 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,131,540.76,543.61,And do I have to crawl this page again? 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,132,543.61,547.48,If the page is a static page that hasn't been changed for 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,133,547.48,551.51,_months you probably don't have to re-crawl it everyday, right? _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,134,551.51,554.6,Because it's unlikely that it will be changed frequently. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,135,554.6,556.72,_On the other hand if it's you know, _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,136,556.72,559.98,sports score page that gets updated very frequently and 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,137,559.98,565.78,_you may need to re-crawl it maybe even multiple times, on the same day. _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,138,565.78,571.12,_The other factor to consider is, is this page frequently accessed by users? _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,139,571.12,575.19,_If it, if it is, that means it's a high utility page, and _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,140,575.19,579.849,then thus it's more important to ensure such a page to be fresh. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,141,580.96,585.75,Compare it with another page that has never been fetched by any users for 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,142,585.75,586.62,a year. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,143,586.62,589.75,_Than, even though that page has been changed a lot, then, _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,144,589.75,595.81,_it's probably not necessary to crawl that page or at least it's not as urgent as, _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,145,595.81,601.78,to maintain the freshness of frequently accessed page by users. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,146,601.78,602.81,_So to summarize, _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,147,602.81,606.07,web search is one of the most important applications of text retrieval. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,148,606.07,608.932,_And there are some new challenges particularly scalability, _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,149,608.932,610.66,_efficiency, quality information. _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,150,610.66,615.48,_There are also new opportunities particularly, rich link information and _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,151,615.48,616.78,_layout, et cetera. _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,152,618.04,622.14,Crawler is an essential component of web search applications. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,153,622.14,624.29,_And, in general, we can classify two scenarios. _
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,154,624.29,628.73,Once is initial crawling and here we want to have complete crawling 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,155,630.1,633.16,of the web if you are doing a general search engine or 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,156,633.16,637.55,focus crawling if you want to just target it at a certain type of pages. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,157,638.6,643.28,And then there is another scenario that's incremental updating of the crawl data or 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,158,643.28,644.74,incremental crawling. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,159,644.74,647.83,In this case you need to optimize the resource. 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,160,647.83,652.17,For to use minimum resource we get the [INAUDIBLE] 
+5 - 1 - 4.1 Web Search- Introduction & Web Crawler (00-11-05).srt,161,654.381,664.381,[MUSIC]. 

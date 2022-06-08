@@ -1,0 +1,167 @@
+name,id,from,to,text
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,1,0.0,2.974,[MUSIC] 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,2,7.749,11.32,This lecture is about topic mining and analysis. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,3,12.76,17.13,We're going to talk about using a term as topic. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,4,17.13,20.7,This is a slide that you have seen in a earlier lecture 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,5,20.7,25.12,where we define the task of topic mining and analysis. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,6,25.12,30.7,_We also raised the question, how do we exactly define the topic of theta? _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,7,31.78,36.02,_So in this lecture, we're going to offer one way to define it, and _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,8,36.02,37.78,that's our initial idea. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,9,37.78,40.98,Our idea here is defining a topic simply as a term. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,10,42.02,44.2,A term can be a word or a phrase. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,11,45.24,49.5,_And in general, we can use these terms to describe topics. _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,12,49.5,54.2,So our first thought is just to define a topic as one term. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,13,54.2,58.82,_For example, we might have terms like sports, travel, or science, _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,14,58.82,59.44,as you see here. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,15,59.44,62.603,_Now if we define a topic in this way, _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,16,62.603,69.2,we can then analyze the coverage of such topics in each document. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,17,69.2,70.51,_Here for example, _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,18,70.51,75.56,we might want to discover to what extent document one covers sports. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,19,75.56,81.26,And we found that 30% of the content of document one is about sports. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,20,81.26,83.73,_And 12% is about the travel, etc. _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,21,83.73,88.88,We might also discover document two does not cover sports at all. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,22,88.88,91.24,_So the coverage is zero, etc. _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,23,92.63,99.03999999999999,_So now, of course, as we discussed in the task definition for _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,24,99.03999999999999,102.9,_topic mining and analysis, we have two tasks. _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,25,102.9,104.96000000000001,One is to discover the topics. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,26,104.96000000000001,108.11,And the second is to analyze coverage. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,27,108.11,111.55,So let's first think about how we can discover 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,28,111.55,115.08,topics if we represent each topic by a term. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,29,115.08,119.39,So that means we need to mine k topical terms from a collection. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,30,121.05,124.08,_Now there are, of course, many different ways of doing that. _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,31,125.67,128.617,_And we're going to talk about a natural way of doing that, _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,32,128.617,130.75,which is also likely effective. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,33,130.75,131.641,_So first of all, _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,34,131.641,136.655,we're going to parse the text data in the collection to obtain candidate terms. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,35,136.655,140.665,Here candidate terms can be words or phrases. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,36,140.665,145.475,Let's say the simplest solution is to just take each word as a term. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,37,145.475,149.145,These words then become candidate topics. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,38,149.145,152.79,Then we're going to design a scoring function to match how good each term 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,39,152.79,153.65,is as a topic. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,40,155.46,157.15,So how can we design such a function? 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,41,157.15,160.14,Well there are many things that we can consider. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,42,160.14,164.18,_For example, we can use pure statistics to design such a scoring function. _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,43,165.55,168.82,_Intuitively, we would like to favor representative terms, _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,44,168.82,173.95,meaning terms that can represent a lot of content in the collection. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,45,173.95,178.61,So that would mean we want to favor a frequent term. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,46,178.61,183.99,_However, if we simply use the frequency to design the scoring function, _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,47,183.99,187.982,then the highest scored terms would be general terms or 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,48,187.982,190.876,_functional terms like the, etc. _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,49,190.876,193.51,Those terms occur very frequently English. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,50,194.65,199.34,So we also want to avoid having such words on the top so 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,51,199.34,202.15,we want to penalize such words. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,52,202.15,206.48,_But in general, we would like to favor terms that are fairly frequent but _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,53,206.48,208.02,not so frequent. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,54,208.02,214.03,So a particular approach could be based on TF-IDF weighting from retrieval. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,55,215.14,217.23,And TF stands for term frequency. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,56,217.23,220.42000000000002,IDF stands for inverse document frequency. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,57,220.42000000000002,223.31,We talked about some of these 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,58,223.31,228.09,ideas in the lectures about the discovery of word associations. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,59,228.09,230.766,_So these are statistical methods, _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,60,230.766,236.28,meaning that the function is defined mostly based on statistics. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,61,236.28,239.07999999999998,So the scoring function would be very general. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,62,239.07999999999998,242.89,_It can be applied to any language, any text. _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,63,242.89,246.65,_But when we apply such a approach to a particular problem, _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,64,246.65,252.02,we might also be able to leverage some domain-specific heuristics. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,65,252.02,256.815,_For example, in news we might favor title words actually general. _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,66,256.815,261.34,We might want to favor title words because the authors tend to 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,67,261.34,266.1,use the title to describe the topic of an article. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,68,267.75,272.48,_If we're dealing with tweets, we could also favor hashtags, _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,69,272.48,277.43,which are invented to denote topics. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,70,277.43,283.63,_So naturally, hashtags can be good candidates for representing topics. _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,71,284.78,290.43,_Anyway, after we have this design scoring function, then we can discover _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,72,290.43,295.96,the k topical terms by simply picking k terms with the highest scores. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,73,295.96,297.24,_Now, of course, _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,74,297.24,302.04,we might encounter situation where the highest scored terms are all very similar. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,75,302.04,306.91,_They're semantically similar, or closely related, or even synonyms. _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,76,306.91,308.86,So that's not desirable. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,77,308.86,312.28,So we also want to have coverage over all the content in the collection. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,78,312.28,315.08,So we would like to remove redundancy. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,79,315.08,319.6,_And one way to do that is to do a greedy algorithm, _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,80,319.6,324.45,which is sometimes called a maximal marginal relevance ranking. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,81,324.45,329.33,_Basically, the idea is to go down the list based on our scoring _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,82,329.33,334.38,function and gradually take terms to collect the k topical terms. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,83,334.38,336.84000000000003,_The first term, of course, will be picked. _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,84,336.84000000000003,340.5,_When we pick the next term, we're going to look at what terms have already _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,85,340.5,345.12,been picked and try to avoid picking a term that's too similar. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,86,345.12,350.61,_So while we are considering the ranking of a term in the list, _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,87,350.61,354.26,we are also considering the redundancy of the candidate term 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,88,354.26,356.97,with respect to the terms that we already picked. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,89,358.09000000000003,362.933,_And with some thresholding, then we can get a balance of _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,90,362.933,368.33,the redundancy removal and also high score of a term. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,91,368.33,371.99,_Okay, so after this that will get k topical terms. _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,92,371.99,377.55,And those can be regarded as the topics that we discovered from the connection. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,93,377.55,381.98,_Next, let's think about how we're going to compute the topic coverage pi sub ij. _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,94,383.43,386.971,_So looking at this picture, we have sports, travel and science and _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,95,386.971,388.13,these topics. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,96,388.13,391.19,And now suppose you are give a document. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,97,391.19,395.04,How should we pick out coverage of each topic in the document? 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,98,396.65999999999997,402.69,_Well, one approach can be to simply count occurrences of these terms. _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,99,402.69,406.77,_So for example, sports might have occurred four times in this this document and _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,100,406.77,409.57,_travel occurred twice, etc. _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,101,409.57,414.42,And then we can just normalize these counts as our estimate of the coverage 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,102,414.42,416.57,probability for each topic. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,103,416.57,421.78,_So in general, the formula would be to collect the counts of _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,104,421.78,425.24,all the terms that represent the topics. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,105,425.24,430.22,And then simply normalize them so that the coverage of each 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,106,430.22,433.48,topic in the document would add to one. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,107,435.12,441.2,This forms a distribution of the topics for the document to characterize coverage 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,108,441.2,446.56,of different topics in the document. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,109,446.56,450.1,_Now, as always, when we think about idea for _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,110,450.1,454.94,_solving problem, we have to ask the question, how good is this one? _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,111,454.94,457.18,Or is this the best way of solving problem? 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,112,458.69,461.11,So now let's examine this approach. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,113,461.11,464.94,_In general, we have to do some empirical evaluation _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,114,466.01,470.28,by using actual data sets and to see how well it works. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,115,472.36,477.34000000000003,_Well, in this case let's take a look at a simple example here. _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,116,477.34000000000003,483.26,And we have a text document that's about a NBA basketball game. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,117,484.8,487.7,_So in terms of the content, it's about sports. _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,118,488.95,494.6,_But if we simply count these words that represent our topics, _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,119,494.6,499.07,_we will find that the word sports actually did not occur in the article, _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,120,499.07,501.42,even though the content is about the sports. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,121,502.52,505.75,So the count of sports is zero. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,122,505.75,511.939,That means the coverage of sports would be estimated as zero. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,123,511.939,516.723,_Now of course, the term science also did not occur in _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,124,516.723,520.98,the document and it's estimate is also zero. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,125,520.98,522.23,And that's okay. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,126,522.23,527.257,But sports certainly is not okay because we know the content is about sports. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,127,527.257,529.15,So this estimate has problem. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,128,530.88,536.05,_What's worse, the term travel actually occurred in the document. _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,129,536.05,539.94,_So when we estimate the coverage of the topic travel, _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,130,539.94,542.14,we have got a non-zero count. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,131,542.14,545.0,So its estimated coverage will be non-zero. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,132,545.0,547.77,So this obviously is also not desirable. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,133,548.8,553.91,So this simple example illustrates some problems of this approach. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,134,553.91,557.704,_First, when we count what words belong to to the topic, _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,135,557.704,560.46,we also need to consider related words. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,136,560.46,564.285,We can't simply just count the topic word sports. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,137,564.285,566.44,_In this case, it did not occur at all. _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,138,566.44,571.34,_But there are many related words like basketball, game, etc. _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,139,571.34,573.86,So we need to count the related words also. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,140,573.86,578.91,The second problem is that a word like star can be actually ambiguous. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,141,578.91,582.9,_So here it probably means a basketball star, but _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,142,582.9,587.6,we can imagine it might also mean a star on the sky. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,143,587.6,593.12,_So in that case, the star might actually suggest, perhaps, a topic of science. _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,144,594.21,596.36,So we need to deal with that as well. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,145,596.36,602.325,_Finally, a main restriction of this approach is that we have only one _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,146,602.325,608.52,_term to describe the topic, so it cannot really describe complicated topics. _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,147,608.52,612.04,_For example, a very specialized topic in sports would be harder to _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,148,612.04,615.21,describe by using just a word or one phrase. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,149,615.21,617.15,We need to use more words. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,150,617.15,620.76,So this example illustrates some general problems with 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,151,620.76,623.31,this approach of treating a term as topic. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,152,623.31,626.725,_First, it lacks expressive power. _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,153,626.725,630.729,_Meaning that it can only represent the simple general topics, but _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,154,630.729,636.035,it cannot represent the complicated topics that might require more words to describe. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,155,637.055,640.66,_Second, it's incomplete in vocabulary coverage, _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,156,640.66,644.93,meaning that the topic itself is only represented as one term. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,157,644.93,648.82,It does not suggest what other terms are related to the topic. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,158,648.82,652.37,_Even if we're talking about sports, there are many terms that are related. _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,159,652.37,657.06,_So it does not allow us to easily count related terms to order, _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,160,657.06,659.2,conversion to coverage of this topic. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,161,659.2,662.41,_Finally, there is this problem of word sense disintegration. _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,162,662.41,665.862,A topical term or related term can be ambiguous. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,163,665.862,668.54,_For example, basketball star versus star in the sky. _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,164,670.57,674.125,_So in the next lecture, we're going to talk _
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,165,674.125,678.806,about how to solve the problem with of a topic. 
+3 - 2 - 2.2 Topic Mining and Analysis- Term as Topic (00-11-31).srt,166,678.806,688.806,[MUSIC] 

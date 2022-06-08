@@ -1,0 +1,121 @@
+name,id,from,to,text
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,1,0.025,7.001,[SOUND] Now lets look at another behaviour of the Mixed Model and 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,2,7.001,14.659,in this case lets look at the response to data frequencies. 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,3,14.659,19.46,So what you are seeing now is basically the likelihood of function for 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,4,19.46,24.62,the two word document and we now in this case the solution is text. 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,5,24.62,28.75,A probability of 0.9 and the a probability of 0.1. 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,6,28.75,31.31,Now it's interesting to 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,7,31.31,35.7,think about a scenario where we start adding more words to the document. 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,8,35.7,39.36,So what would happen if we add many the's to the document? 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,9,41.34,44.38,_Now this would change the game, right? _
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,10,44.38,45.43,_So, how? _
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,11,45.43,50.41,_Well, picture, what would the likelihood function look like now? _
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,12,50.41,54.99,_Well, it start with the likelihood function for the two words, right? _
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,13,54.99,56.83,_As we add more words, we know that. _
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,14,56.83,59.8,But we have to just multiply the likelihood function by 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,15,59.8,62.37,additional terms to account for the additional. 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,16,62.37,64.06,occurrences of that. 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,17,64.06,65.12,_Since in this case, _
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,18,65.12,69.67,_all the additional terms are the, we're going to just multiply by this term. _
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,19,69.67,71.14,Right? For the probability of the. 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,20,72.44,77.05,_And if we have another occurrence of the, we'd multiply again by the same term, _
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,21,77.05,80.0,and so on and forth. 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,22,80.0,85.67,_Add as many terms as the number of the's that we add to the document, d'. _
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,23,85.67,90.84,Now this obviously changes the likelihood function. 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,24,90.84,96.0,So what's interesting is now to think about how would that change our solution? 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,25,96.0,97.47,So what's the optimal solution now? 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,26,98.7,102.59,_Now, intuitively you'd know the original solution, _
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,27,102.59,106.61,_pulling the 9 versus pulling the ,will no longer be optimal for this new function. _
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,28,106.61,107.11,Right? 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,29,108.27000000000001,110.91,_But, the question is how should we change it. _
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,30,110.91,113.22999999999999,What general is to sum to one. 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,31,113.22999999999999,117.87,So he know we must take away some probability the mass from one word and 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,32,117.87,120.41,add the probability mass to the other word. 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,33,120.41,124.52,The question is which word to have reduce the probability and 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,34,124.52,127.16,which word to have a larger probability. 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,35,127.16,130.29,_And in particular, let's think about the probability of the. _
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,36,130.29,132.9,Should it be increased to be more than 0.1? 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,37,132.9,136.51,Or should we decrease it to less than 0.1? 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,38,136.51,137.36,What do you think? 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,39,139.89,143.95,Now you might want to pause the video a moment to think more about. 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,40,143.95,144.62,This question. 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,41,144.62,150.82999999999998,Because this has to do with understanding of important behavior of a mixture model. 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,42,150.82999999999998,155.327,_And indeed, other maximum likelihood estimator. _
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,43,155.327,160.31,_Now if you look at the formula for a moment, then you will see it seems like _
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,44,160.31,165.34,another object Function is more influenced by the than text. 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,45,165.34,168.48,_Before, each computer. _
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,46,168.48,173.27,_So now as you can imagine, it would make sense to actually _
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,47,173.27,177.85,assign a smaller probability for text and lock it. 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,48,177.85,181.07,To make room for a larger probability for the. 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,49,181.07,184.21,Why? Because the is repeated many times. 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,50,184.21,188.38,_If we increase it a little bit, it will have more positive impact. _
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,51,188.38,193.33,Whereas a slight decrease of text will have relatively small impact 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,52,193.33,197.37,_because it occurred just one, right? _
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,53,197.37,203.63,So this means there is another behavior that we observe here. 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,54,203.63,209.41,That is high frequency words generated with high probabilities 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,55,209.41,211.31,from all the distributions. 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,56,211.31,213.47,_And, this is no surprise at all, _
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,57,213.47,217.37,_because after all, we are maximizing the likelihood of the data. _
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,58,217.37,224.41,_So the more a word occurs, then it makes more sense to give such a word _
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,59,224.41,228.46,a higher probability because the impact would be more on the likelihood function. 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,60,228.46,233.41,This is in fact a very general phenomenon of all the maximum likelihood estimator. 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,61,233.41,237.88,_But in this case, we can see as we see more occurrences of a term, _
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,62,237.88,242.13,it also encourages the unknown distribution theta sub d 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,63,242.13,245.02,to assign a somewhat higher probability to this word. 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,64,247.12,251.61,Now it's also interesting to think about the impact of probability of Theta sub B. 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,65,251.61,256.27,The probability of choosing one of the two component models. 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,66,256.27,260.44,Now we've been so far assuming that each model is equally likely. 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,67,260.44,261.66,And that gives us 0.5. 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,68,261.66,266.03,But you can again look at this likelihood function and try to picture what would 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,69,266.03,270.3,happen if we increase the probability of choosing a background model. 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,70,270.3,274.03,_Now you will see these terms for the, _
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,71,274.03,278.98,we have a different form where the probability that would be 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,72,280.02,285.27,even larger because the background has a high probability for the word and 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,73,285.27,291.17,the coefficient in front of 0.9 which is now 0.5 would be even larger. 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,74,291.17,294.61,_When this is larger, the overall result would be larger. _
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,75,294.61,297.407,And that also makes this the less important for 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,76,297.407,301.24,theta sub d to increase the probability before the. 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,77,301.24,303.16,Because it's already very large. 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,78,303.16,307.622,So the impact here of increasing the probability of the is somewhat 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,79,307.622,310.9,_regulated by this coefficient, the point of i. _
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,80,310.9,313.2,_If it's larger on the background, _
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,81,313.2,317.04,then it becomes less important to increase the value. 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,82,317.04,320.395,_So this means the behavior here, _
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,83,320.395,325.345,_which is high frequency words tend to get the high probabilities, are effected or _
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,84,325.345,330.215,regularized somewhat by the probability of choosing each component. 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,85,330.215,333.38,The more likely a component is being chosen. 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,86,333.38,337.90999999999997,It's more important that to have higher values for these frequent words. 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,87,337.90999999999997,344.1,_If you have a various small probability of being chosen, then the incentive is less. _
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,88,344.1,350.24,_So to summarize, we have just discussed the mixture model. _
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,89,350.24,355.97,And we discussed that the estimation problem of the mixture model and 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,90,355.97,361.42,particular with this discussed some general behavior of the estimator and 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,91,361.42,367.07,that means we can expect our estimator to capture these infusions. 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,92,367.07,370.18,First every component model 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,93,370.18,374.33,attempts to assign high probabilities to high frequent their words in the data. 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,94,374.33,378.09,And this is to collaboratively maximize likelihood. 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,95,378.09,383.52,_Second, different component models tend to bet high probabilities on different words. _
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,96,383.52,388.13,And this is to avoid a competition or waste of probability. 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,97,388.13,391.081,And this would allow them to collaborate more efficiently to maximize 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,98,391.081,392.117,the likelihood. 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,99,393.58,399.49,_So, the probability of choosing each component regulates the collaboration and _
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,100,399.49,402.13,the competition between component models. 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,101,402.13,407.23,_It would allow some component models to respond more to the change, _
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,102,407.23,411.08,_for example, of frequency of the theta point in the data. _
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,103,413.15999999999997,416.6,We also talked about the special case of fixing one component to a background 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,104,416.6,417.95,_word distribution, right? _
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,105,417.95,422.52,_And this distribution can be estimated by using a collection of documents, _
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,106,422.52,427.7,_a large collection of English documents, by using just one distribution and _
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,107,427.7,432.02,then we'll just have normalized frequencies of terms to 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,108,432.02,434.64,give us the probabilities of all these words. 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,109,434.64,437.95,_Now when we use such a specialized mixture model, _
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,110,437.95,442.53,we show that we can effectively get rid of that one word in the other component. 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,111,443.94,446.76,And that would make this cover topic more discriminative. 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,112,447.78,452.42,This is also an example of imposing a prior on the model parameter and 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,113,452.42,457.45,the prior here basically means one model must be exactly the same as the background 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,114,457.45,462.33,_language model and if you recall what we talked about in Bayesian estimation, and _
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,115,462.33,468.65999999999997,this prior will allow us to favor a model that is consistent with our prior. 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,116,468.65999999999997,473.54,_In fact, if it's not consistent we're going to say the model is impossible. _
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,117,473.54,476.0,So it has a zero prior probability. 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,118,476.0,479.79,That effectively excludes such a scenario. 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,119,479.79,483.369,This is also issue that we'll talk more later. 
+3 - 9 - 2.9 Probabilistic Topic Models- Mixture Model Estimation- Part 2 (00-08-15).srt,120,483.369,493.369,[MUSIC] 
