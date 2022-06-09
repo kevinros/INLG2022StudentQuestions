@@ -962,7 +962,7 @@ class T5Stack(T5PreTrainedModel):
             #out = self.linear3(x)
             #x = self.sigmoid(x)
 
-            reshaped = torch.reshape(x, (1,100,768))
+            reshaped = torch.reshape(x, (1,100,768)) # second number should be length of prefix model output
             inputs_embeds = torch.cat((reshaped, inputs_embeds), 1)
             input_shape = inputs_embeds.size()[:-1]
 
